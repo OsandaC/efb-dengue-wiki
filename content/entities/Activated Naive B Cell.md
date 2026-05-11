@@ -1,0 +1,56 @@
+---
+type: entity
+tags: [b-cell-subsets, activated-naive, extrafollicular, SLE, plasmablast-precursor, flow-cytometry]
+created: 2026-05-02
+updated: 2026-05-07
+sources: 5
+---
+
+# Activated Naive B Cell
+
+## Overview
+
+Activated naive (acN) B cells are a distinct subset within the broader CD19⁺IgD⁺CD27⁻ "naive" compartment identified by multi-parameter flow cytometry in SLE flares. They are nearly absent in healthy subjects but can expand substantially during active autoimmune disease. They are distinguished from resting naive B cells and transitional B cells by combined MitoTracker Green (MTG) retention and CD24 negativity, alongside a CD19^hi, CD21⁻, CD38^lo, IgM^lo, CD23⁻ surface phenotype.
+
+acN cells represent an important extrafollicular precursor pool: a substantial fraction differentiates directly into circulating plasmablasts (ASCs), and individual acN cell clones can persist in the circulation for months while continuously seeding new ASC progeny.
+
+## Key Points from Literature
+
+- **Phenotype:** IgD⁺, CD27⁻, MTG⁺, CD24⁻, CD19^hi, CD21⁻, CD38^lo, IgM^lo, CD23⁻. The combination of MTG⁺ and CD24⁻ within the IgD⁺CD27⁻ gate distinguishes acN cells from both resting naive cells (MTG⁻CD24⁺) and transitional cells (MTG⁺CD24⁺) (see [[Tipton2015 - ASC Diversity and Origin in SLE]], multi-color flow cytometry of SLE flare patients).
+- **Absence from healthy subjects:** In healthy non-vaccinated individuals, the CD24⁻MTG⁺ population within IgD⁺CD27⁻ B cells is nearly absent (<1%). In SLE acute flares, it expands to 20–45% of the IgD⁺CD27⁻ compartment (see [[Tipton2015 - ASC Diversity and Origin in SLE]], n=15 SLE flares, n=6 healthy).
+- **High ASC connectivity:** Up to 32.5% of all acN cell BCR sequences share clonal identity with co-circulating ASC sequences. Nine of ten largest acN cell clones were direct clonal precursors of ASCs (see [[Tipton2015 - ASC Diversity and Origin in SLE]], NGS of sorted populations).
+- **High clonality:** acN cells have a D20 index 28.7-fold higher than naive cells from healthy subjects — consistent with antigen-driven selection rather than passive bystander activation (see [[Tipton2015 - ASC Diversity and Origin in SLE]]).
+- **Elevated SHM for naive B cells:** acN cells carry an average 2.37% VH mutation frequency vs. 0.95% for resting naive cells — confirming antigen experience or EF activation-associated AID activity (see [[Tipton2015 - ASC Diversity and Origin in SLE]]).
+- **Long persistence:** acN cells persist in circulation for months. Single-cell analysis identified acN B cells clonally related to mutated ASCs detected by NGS 4 months earlier. Individual clones generated ASC progeny with mutation loads up to 21.5% — implying weeks to months of ongoing diversification from an unmutated acN precursor (see [[Tipton2015 - ASC Diversity and Origin in SLE]]).
+- **Autoreactive enrichment:** CD19^hi activated B cell fractions are significantly enriched for 9G4⁺ autoreactive cells compared with the CD19⁺ resting naive fraction (see [[Tipton2015 - ASC Diversity and Origin in SLE]], VH4-34 idiotype staining). This autoreactive enrichment is consistent with the prominent contribution of VH4-34⁺ naive precursors to ASC clonal expansions.
+- **Germline-encoded autoreactivity:** acN-derived ASC clone 652-F6 had zero mutations in both VH and VL regions yet displayed strong autoreactivity to ANA, dsDNA, chromatin, and ribosomal P antigens — proving that germline-encoded BCRs from naive B cells can confer full lupus-specific autoreactivity without any SHM (see [[Tipton2015 - ASC Diversity and Origin in SLE]]).
+- **Temporal relationship with disease activity:** acN cell frequency (measured as CD23⁻ cells among IgD⁺CD27⁻ naive B cells) tracked with disease activity across longitudinal time points in three patients, including shifts between moderate and severe flares (see [[Tipton2015 - ASC Diversity and Origin in SLE]], 13 longitudinal experiments).
+- **CD23⁻ phenotype reflects sustained activation:** CD23 downregulation on acN cells is consistent with sustained BCR activation, TLR9 signalling, and IFN-α/γ exposure — all prominent pathways in SLE (see [[Tipton2015 - ASC Diversity and Origin in SLE]]).
+
+## Contradictions & Debates
+
+- Whether acN cells differentiate into ASCs via extrafollicular pathways, germinal centre pathways, or both is not resolved by this study. The phylogenetic clone trees observed are consistent with a model of asymmetric differentiation through both EF and GC reactions simultaneously. The presence of low-SHM (~0%) acN precursors co-existing with high-SHM (~21%) ASC progeny most parsimoniously fits an EF model with prolonged AID-driven diversification occurring outside canonical GC structures.
+- The use of MitoTracker Green (MTG) to identify activated B cells is sensitive but non-standard. MTG is retained by cells with high mitochondrial membrane potential, a property shared by transitional and activated B cells but not resting naive cells. Its use is validated indirectly by the phenotypic concordance of MTG⁺CD24⁻ cells with activated B cell markers (CD19^hi, CD21⁻, CD23⁻) and their disease-activity correlation. Whether this approach translates directly to dengue cohort studies (where transitional B cells may also expand) requires careful attention to the CD24 discriminator.
+
+- **Shared identity with DN2 cells:** aNAV cells are the only B cell population sharing multiple DN2 markers: CXCR5⁻, CD24⁻, CD38⁻, CD11c⁺, MTG⁺, and CD19^hi. RNA-seq of aNAV and DN2 cells from additional SLE patients confirmed highly similar transcriptomes. Both populations express high T-bet and ZEB2, lack BACH2 and FOXO1, and have elevated BLIMP-1 and IRF4. aNAV cells represent the only non-DN2 B cell population with TLR7 hyper-responsiveness (see [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]], RNA-seq + flow cytometry).
+- **Developmental link to DN2 cells:** In vitro, rNAV cells stimulated with TLR7 + IFN-γ + IL-21 generate aNAV cells by day 3 and DN2 cells by day 3–5. aNAV cells directly differentiate into DN2 cells in 3-day cultures, with aNAV generating significantly more DN2 cells than rNAV. Day 5 cultures started with aNAV contain significantly more PC than rNAV cultures. BCR sequencing demonstrates clonal sharing between aNAV, DN2, and PC populations in vivo (see [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]).
+- **CD40L and IL-4 inhibit aNAV generation:** CD40L stimulation inhibits differentiation of rNAV into aNAV and DN2 but does not affect DN1 generation. Substitution of IFN-γ by IL-4 also inhibits aNAV/DN2/PC generation (see [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]).
+- **In primary responses, aNAV cells are the largest source of ABC-phenotype cells:** In human primary responses (SLE flares, acute SARS-CoV-2), the highest CD11c and T-bet expression is found in aNAV (IgD⁺CD27⁻CD11c⁺⁺T-bet⁺⁺) and DN2 cells. CD27⁺ switched memory cells express lower levels. This means most "ABC" cells counted in primary responses are naïve-derived effectors, not memory cells (see [[Sanz2025 - Human Atypical B Cells Overview]], invited review).
+- **Extended aNAV phenotype includes SLAMF7:** The full shared phenotype between aNAV and DN2 includes: CD27⁻, CD21lo, CXCR5⁻, CD11c⁺⁺, T-bet⁺⁺, FcRL5⁺, [[SLAMF7]]⁺. These are all markers commonly used to identify "atypical" B cells, but in primary responses they predominantly identify naïve-derived aNAV/DN2, not memory cells (see [[Sanz2025 - Human Atypical B Cells Overview]]).
+- **Expanded in severe COVID-19 — first infection context:** aN cells (CD11c⁺ within the naive IgD⁺CD27⁻ gate) were significantly expanded in ICU-C patients compared with HD and OUT-C (P ≤ 0.01). aN cells had the highest CD11c and T-bet expression of any B cell population by intracellular staining (n=4). In hierarchical clustering, aN expansion grouped with DN2, DN3, and ASC expansion to define the CoV-A (EF-high) cluster. Region 1 of the UMAP differential analysis demarcated aN and DN2 as the populations uniquely enriched in ICU patients (see [[Woodruff2020 - EF B Cell Responses in COVID-19]], 24-marker spectral FCM, n=10 ICU-C).
+- **aN cells in COVID-19 gated as CD11c⁺ within naive B cells:** The Woodruff2020 gating scheme identifies aN as CD11c⁺ and rN as CD11c⁻ within the naive (CD19⁺CD27⁻CD38⁻CD24⁻IgD⁺) gate. This is a simpler gating approach than the MTG/CD24 strategy used in Tipton2015, and may be more readily adaptable to dengue studies (see [[Woodruff2020 - EF B Cell Responses in COVID-19]], Table 1).
+- **Epigenetically closer to DN2 in SLE than in healthy controls:** PCA of chromatin accessibility (DARs) and gene expression (DEGs) showed that activated naive and DN2 cells had fewer differences in SLE than in HC, clustering tightly together. This supports the aNAV→DN2 differentiation axis being accelerated or amplified in SLE (see [[Scharer2019 - Epigenetic Programming in SLE B Cells]], ATAC-seq + RNA-seq, n=9 SLE + n=12 HC).
+- **AP-1 and EGR motif accessibility enhanced in SLE aN cells:** The core SLE AP-1 and EGR motif accessibility was already present in activated naive cells (relative to rN and T3) and increased further in DN2 — but was largely absent in isotype-switched memory. This positions aN cells as the stage where disease-specific chromatin remodelling is first engaged (see [[Scharer2019 - Epigenetic Programming in SLE B Cells]]).
+- **T3 cells as an early activation state of naive B cells:** DNA methylation, chromatin accessibility, and transcriptomic data all placed T3 cells between resting naive and activated naive. In active SLE, T3 cells represent an early phase of naive B cell activation rather than true transitional cells (see [[Scharer2019 - Epigenetic Programming in SLE B Cells]]).
+
+## Related Pages
+
+[[DN2 B Cell]], [[Plasmablast]], [[Extrafollicular Response]], [[Double-Negative B Cell]], [[CD19]], [[CD21]], [[CD23]], [[CD24]], [[CD38]], [[CD11c]], [[T-bet]], [[CXCR5]], [[IgD]], [[Somatic Hypermutation]], [[BCR Sequencing]], [[TLR7]], [[CD10]]
+
+## Sources
+
+- [[Tipton2015 - ASC Diversity and Origin in SLE]]
+- [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]
+- [[Sanz2025 - Human Atypical B Cells Overview]]
+- [[Woodruff2020 - EF B Cell Responses in COVID-19]]
+- [[Scharer2019 - Epigenetic Programming in SLE B Cells]]

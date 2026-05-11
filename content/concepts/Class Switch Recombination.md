@@ -1,0 +1,55 @@
+---
+type: concept
+tags: [class-switch-recombination, isotype-switching, IgG, IgA, AID, germinal-center, extrafollicular-response]
+created: 2026-05-02
+updated: 2026-05-10
+sources: 13
+---
+
+# Class Switch Recombination
+
+## Overview
+
+Class switch recombination (CSR) is a DNA recombination event in which the constant region of the immunoglobulin heavy chain is replaced, changing the antibody isotype from IgM (and IgD) to IgG, IgA, or IgE while preserving antigen specificity. CSR is catalysed by activation-induced cytidine deaminase (AID) and typically requires CD40–CD154-mediated T cell help within germinal centres. However, CD40-independent CSR has been demonstrated, particularly via BAFF/BLyS-APRIL signalling from dendritic cells, providing an extrafollicular route to isotype-switched antibodies.
+
+## Key Points from Literature
+
+- DN B cells contain sizable isotype-switched fractions (~44% IgG⁺, ~15% IgM⁺, and IgA⁺ cells) despite their proposed extrafollicular origin — demonstrating that CSR can occur, or its products can accumulate, outside of canonical GC reactions (see [[Wei2007 - DN Memory B Cells in SLE]], n=29 healthy + n=36 SLE cross-sectional).
+- CD40-independent class switching via BLyS and APRIL by dendritic cells was shown by Litinskiy et al. (2002, *Nat Immunol*) — cited in [[Wei2007 - DN Memory B Cells in SLE]] as a mechanism by which EF B cells could acquire isotype-switched phenotypes without full GC participation.
+- The presence of IgG⁺ and IgA⁺ cells within the DN compartment is one of the features supporting their classification as memory B cells rather than simply naive cells that failed to enter GCs (see [[Wei2007 - DN Memory B Cells in SLE]]).
+- **CSR in low-SHM EF-derived ASCs:** Approximately 30–33% of circulating ASC sequences in SLE have <3% VH mutation, consistent with EF differentiation. These low-SHM sequences include switched isotypes (IgG + IgA = majority of ASC sequences in both SLE and vaccination). This confirms that CSR can occur concurrently with, or prior to, substantial SHM accumulation — consistent with extrafollicular CSR mechanisms (see [[Tipton2015 - ASC Diversity and Origin in SLE]]).
+
+- **PRDM1 progressive demethylation and accessibility confirms CSR-competent state in EF precursors:** RRBS shows progressive demethylation of the PRDM1 (BLIMP-1) promoter from resting naive through to DN2, and ATAC-seq shows increasing accessibility at the same locus. Since BLIMP-1 expression is required for plasma cell differentiation (which follows CSR), this progressive epigenetic opening across the aNAV→DN2 EF trajectory confirms these cells are primed for both CSR and terminal differentiation independently of GC transit (see [[Scharer2019 - Epigenetic Programming in SLE B Cells]], RRBS + ATAC-seq, n=9 SLE + 12 HC).
+
+- **IgG3 enrichment in DN2 cells suggests IFN-γ-driven EF class switching:** DN2 cells show higher IgG3⁺ frequency than SWM or DN1 in both healthy donors and SLE. IgG3 is the isotype most strongly induced by IFN-γ in human CSR. Since the EF pathway is IFN-γ-dependent (rNAV → aNAV → DN2 driven by TLR7 + IFN-γ + IL-21), IgG3 enrichment in DN2 may directly reflect the cytokine milieu of EF differentiation — a potential EF biomarker distinct from the IgG1-dominant GC output (see [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]], flow cytometry + in vitro differentiation).
+- **CSR occurs infrequently in germinal centres:** Roco et al. (2019, *Immunity*) demonstrated that CSR occurs infrequently within GCs, with the majority of CSR happening before GC entry. This undermines the premise that isotype-switched B cells are necessarily GC-derived (see [[Sanz2025 - Human Atypical B Cells Overview]], review citing Roco et al. 2019).
+- **Ongoing CSR directly demonstrated in COVID-19 ASCs:** >3% of all ASC clonotypes from a CoV-A patient had cellular members in both unswitched (IgM) and switched (IgG1, IgA1) compartments; 60% of the top 15 clonotypes showed contemporaneous IgM↔IgG1/IgA1 connections. This establishes real-time class switching within the EF-derived ASC pool during acute viral infection — not a relic of prior GC reactions. Balanced IgM/IgG1/IgA1 representation with low SHM throughout confirms that CSR is occurring in newly recruited, EF-derived clones (see [[Woodruff2020 - EF B Cell Responses in COVID-19]], 10x Chromium scV(D)J, Circos analysis).
+- **DENV-specific class-switched MBCs accumulate with repeat exposure:** DENV-specific IgD⁻ class-switched MBCs were significantly higher in 2° than 1° dengue (median 105 vs 53 per 10,000; p<0.001), and DENV-specific IgG+ MBCs similarly elevated (median 84 vs 43; p<0.001). At 18M, IgD⁻/IgM⁻/IgG⁻ MBCs (likely IgA+) trended higher in 2° immunity (p=0.1). Naïve-like IgD+/IgM+ DENV-specific cells — which have not undergone CSR — persisted but diminished with multiple exposures (14% vs 8% of DENV-specific B cells at 18M after 1° vs 2° dengue). This pattern suggests progressive CSR accumulation across the DENV-specific compartment with repeat infections (see [[Singh2026 - DENV-Specific Memory B Cell Subsets]], n=58 samples, 18 patients).
+- **IgG dominance with minimal IgM confirms CSR completion in dengue plasmablasts:** In predominantly secondary dengue (42/46), ELISpot showed ≥70% of all IgG-secreting plasmablasts were DENV-specific, with IgA ~100-fold lower and IgM near-absent. The overwhelming IgG:IgM ratio in secondary infections confirms that class switch recombination was completed before or during the plasmablast burst. Primary responders (n=4) retained detectable IgM, consistent with ongoing CSR during the first encounter (see [[Wrammert2012 - Plasmablast Responses in Acute Dengue]], ELISpot, n=46 cohort).
+- **IgG-dominant PBs vs. IgM-enriched DENV-binding MBCs — CSR segregates the two compartments:** In Appanna2016, plasmablasts were overwhelmingly IgG-expressing in both primary and secondary infection, while DENV-binding MBCs contained a disproportionately large IgM fraction. Non-DENV-binding MBCs were IgG-dominant, matching the PB isotype profile. The CSR status thus distinguishes the two DENV-binding B cell compartments: PBs are class-switched (IgG), while a substantial fraction of the antigen-specific MBC pool retains IgM. The IgM⁺ DENV-binding MBCs may represent germline-encoded polyreactive binders or GC-independent IgM memory (see [[Appanna2016 - Plasmablasts as Subset of Memory B Cell Pool]], 454 + Sanger, n=12 dengue).
+
+- **CSR decoupled from SHM in acute dengue — direct evidence for T-independent class switching:** GodoyLozano2016 observed IgG class-switched B cells with near-germline VH mutation levels during acute dengue. The paradox of IgG expression (requiring CSR) with low SHM (suggesting no GC transit) is the molecular hallmark of T-independent CSR. The authors propose that TLR7-mediated endosomal DENV recognition synergises with BCR signalling to drive AID expression and CSR independently of CD40–CD154 T cell help, analogous to the BLyS/APRIL mechanism described in Wei2007. This provides the first dengue-specific evidence that CSR and SHM are functionally uncoupled during acute infection (see [[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]], n=19 acute dengue, 454 pyrosequencing of IgG VH cDNA).
+
+- **IgG dominance confirmed by mAb cloning in secondary dengue:** All 53 mAbs generated from single-cell sorted plasmablasts in Priyamvada2016 were IgG, with ELISpot showing 36–95% of IgG ASCs were DENV-specific. The completeness of CSR in secondary dengue PBs is consistent with memory B cell recall (prior GC-mediated CSR) rather than de novo switching during the acute response (see [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]], n=4 secondary DHF, single-cell mAb cloning).
+
+## Contradictions & Debates
+
+None documented in current wiki sources.
+
+## Related Pages
+[[Double-Negative B Cell]], [[DN2 B Cell]], [[Plasmablast]], [[Germinal Center]], [[Extrafollicular Response]], [[Somatic Hypermutation]], [[IgG]], [[IgA]], [[IgM]]
+
+## Sources
+- [[Wei2007 - DN Memory B Cells in SLE]]
+- [[Tipton2015 - ASC Diversity and Origin in SLE]]
+- [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]
+- [[Sanz2025 - Human Atypical B Cells Overview]]
+- [[Woodruff2020 - EF B Cell Responses in COVID-19]]
+- [[Singh2026 - DENV-Specific Memory B Cell Subsets]]
+- [[Scharer2019 - Epigenetic Programming in SLE B Cells]]
+- [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]
+- [[Wrammert2012 - Plasmablast Responses in Acute Dengue]]
+- [[GarciaBates2013 - Plasmablast Response and Dengue Severity]]
+- [[Appanna2016 - Plasmablasts as Subset of Memory B Cell Pool]]
+- [[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]]
+- [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]]
