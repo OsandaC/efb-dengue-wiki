@@ -4,13 +4,21 @@
 
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $wikiDir   = Join-Path $scriptDir "..\efb-dengue-wiki\wiki"
+$councilDir = Join-Path $scriptDir "..\efb-dengue-wiki\Claude-council"
 $contentDir = Join-Path $scriptDir "content"
+$contentCouncilDir = Join-Path $contentDir "council"
 
 Write-Host "Syncing wiki -> content..." -ForegroundColor Cyan
 # Mirror the wiki directory into content/
 # Using robocopy for reliable handling of paths with spaces
 $excludeFile = Join-Path $scriptDir "sync-exclude.txt"
-robocopy $wikiDir $contentDir /E /PURGE /XF (Get-Content $excludeFile -ErrorAction SilentlyContinue) | Out-Null
+robocopy $wikiDir $contentDir /E /PURGE /XF (Get-Content $excludeFile -ErrorAction SilentlyContinue) /XD "council" | Out-Null
+
+# Sync council reports into content/council/
+if (Test-Path $councilDir) {
+    Write-Host "Syncing council reports -> content/council..." -ForegroundColor Cyan
+    robocopy $councilDir $contentCouncilDir /E /PURGE | Out-Null
+}
 Write-Host "Sync complete." -ForegroundColor Green
 
 Write-Host "Updating dependencies..." -ForegroundColor Cyan
