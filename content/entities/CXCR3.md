@@ -19,9 +19,6 @@ The CXCR5⁻/CXCR3⁺ chemokine receptor switch on extrafollicular B cell popula
 - **CXCR3 upregulated on EF populations in severe COVID-19:** In CoV-A (EF-high) patients, aN and DN2 cells showed increased CXCR3 surface expression compared with follicular populations (rN and DN1). Concurrently, CXCR5 was decreased on these same populations. This reciprocal CXCR5↓/CXCR3↑ pattern is consistent with homing away from B cell follicles toward IFN-γ-inflamed peripheral tissues (see [[Woodruff2020 - EF B Cell Responses in COVID-19]], spectral flow cytometry, n=9 CoV-A patients).
 - **Included in 24-marker spectral flow cytometry panel:** CXCR3 was part of the comprehensive homing marker set (alongside CXCR5, CXCR4, CD62L) used to characterise B cell migration potential in COVID-19 (see [[Woodruff2020 - EF B Cell Responses in COVID-19]], Supplementary Table 1).
 - **CXCL10 (IP-10) elevated in EF-high patients:** Plasma CXCL10 was significantly elevated in CoV-A patients and correlated with CRP (r² = 0.58, P = 0.004). CXCL10 is both a CXCR3 ligand and an established biomarker of COVID-19 severity, linking the tissue-homing programme of EF B cells to the inflammatory milieu that drives their generation (see [[Woodruff2020 - EF B Cell Responses in COVID-19]]).
-
-## Contradictions & Debates
-
 - **CXCR3 expressed on dengue acute-phase plasmablasts:** Plasmablasts in acute dengue carry the phenotype CD20⁻CD38⁺⁺CD27⁺Ki67⁺CD71⁺**CXCR3⁺**, confirming that CXCR3 expression on EF-derived ASCs is not unique to COVID-19 but extends to dengue (see [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]], multi-color FCM, n=170 dengue cohort).
 
 ## Contradictions & Debates

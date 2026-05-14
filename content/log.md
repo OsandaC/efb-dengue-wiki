@@ -2,6 +2,56 @@
 
 ---
 
+## [2026-05-14] deep lint | Council-augmented deep lint (8 parallel agents + advisor)
+
+**Protocol:** Three-phase audit combining structural lint (3 parallel sub-agents by folder batch) + council-style specialist review (5 parallel agents: Epistemic Quality, Cross-Reference & Synthesis, Completeness & Gap, Consistency & Style, Reviewer 2) + advisor meta-review. All 8 agents dispatched in parallel. Advisor consulted before applying fixes.
+
+**Scope:** Full wiki — 84 pages (15 sources, 41 entities, 7 concepts, 17 methods, 4 analyses).
+
+**Issues found and fixed (7):**
+
+| Category | Issue | Fix |
+|----------|-------|-----|
+| Broken wikilinks | 5 piped wikilinks in Ansari2025 source page used invented short titles instead of actual filenames (Jenks2018 ×2, Woodruff2020 ×3, Singh2026 ×1, GodoyLozano2016 ×1, Priyamvada2016 ×1) | Corrected all to actual page names |
+| Structural | CXCR3.md had duplicate `## Contradictions & Debates` sections; dengue PB bullet misplaced in first C&D section | Merged sections; moved dengue PB bullet to Key Points |
+| Factual | HOPX.md stated "n=4 patients" for Ansari2025 scRNA-seq; correct count is n=3 | Corrected to n=3 |
+| Frontmatter | Notable Findings.md `updated:` field had parenthetical annotation `(Priyamvada2016 ingest)` | Removed parenthetical; bare date only |
+| Watch items | state.md: "Dengue plasmablast kinetics benchmark" open (line 94) duplicated by resolved entry (line 147) | Removed open duplicate |
+| Watch items | state.md: SHM resolved item (line 98) duplicated by more detailed resolved item (line 165) | Removed older duplicate |
+| Index | index.md "Last updated" date was 2026-05-10 | Updated to 2026-05-14 |
+
+**Curator Highlights refreshed:** 1 highlight found — `==(acute cells died in culture)==` in Ansari2025 source page. Index updated from "(empty)" to "(1 highlight)".
+
+**Flagged for curator review (not auto-fixed):**
+
+1. **Dual-pathway model framing.** Multiple agents flagged "resolves" language as overclaiming — the dual-pathway model (memory-derived high-SHM + de novo EF low-SHM) is a working hypothesis, not a resolution. Consider softening to "working hypothesis" across EF Response, SHM, and state.md.
+2. **"DN2" vs. "DN2-phenotype" terminology.** Ansari2025 shows CD21⁻CD11c⁺ but lacks T-bet/CXCR5/FCRL5 — formally "DN2-phenotype" not confirmed DN2. A systematic rewrite of entity/concept pages to use "DN2-phenotype" where only Ansari2025 is the dengue source would improve epistemic precision.
+3. **CXCL13 is not GC-specific.** Wiki pages referencing "concurrent EF+GC" based on Ansari2025 CXCL13 data should soften to "suggested by" rather than "demonstrated by." CXCL13 can originate from Tph themselves.
+4. **Tph identity caveat.** The CXCR5⁻PD-1⁺ cells in dengue have Th1 signatures (CXCR3⁺, T-bet, IFN-γ), not canonical Tph (MAF⁺, CXCL13⁺ per Rao2017). Consider noting this tension on the Peripheral Helper T Cell entity page.
+5. **OAS/ADE page thickening.** Both concept pages are single-source (Priyamvada2016). Existing wiki sources (GarciaBates2013 for ADE context, Woodruff2020 for neutralizing Ab paradox) could thicken them.
+6. **IFN-gamma entity page missing.** Referenced across multiple pages (T-bet signalling, CXCR3 induction, Tph cytokine) but has no entity page.
+7. **Evidence weight annotations.** ~33% of Key Points bullets across early-ingested pages lack study type and sample size annotations. Concentrated in Wei2007/Tipton2015-era pages.
+8. **Missing cross-folder links.** Method pages rarely link to concept pages and vice versa (e.g., BCR Sequencing ↛ Somatic Hypermutation).
+
+**Reviewer 2 (Devil's Advocate) top critiques:**
+- FATAL FLAW: The entire EF-in-dengue narrative rests on a single paper (Ansari2025) that lacks T-bet, BCR sequencing, and tissue confirmation. One paper ≠ a paradigm.
+- MAJOR CONCERN: Cross-disease extrapolation from SLE/COVID-19 is treated as transferable when it should be treated as hypothesis-generating. Different diseases, different immunological contexts.
+- MAJOR CONCERN: The dual-pathway model is presented as resolution when it's two datasets that happen to give different numbers — no study has tested both simultaneously.
+- MINOR NITPICK: The Research Plan assumes DN2 will be found in dengue based on one paper's CD21⁻CD11c⁺ data without formal DN2 confirmation.
+
+**Recommendations:**
+- Next ingest priority: papers with T-bet staining in dengue B cells (confirms/denies DN2), or longitudinal BCR sequencing resolving the SHM paradox.
+- Consider creating IFN-gamma entity page (referenced in 5+ pages).
+- Queue papers: balakrishnan2011, kwissa2014 may provide additional plasmablast kinetics and severity data to thicken thin pages.
+
+---
+
+## [2026-05-14] ops | Web deployment updated — council folder added to sync
+
+**Action:** Updated `efbwebshare/sync-and-build.ps1` to sync `Claude-council/` into `content/council/` (nested under wiki content). Rebuilt and pushed — 89 files processed (2 new council report pages). Cloudflare auto-redeploys.
+
+---
+
 ## [2026-05-14] ops | Cloudflare Pages reconnect and redeploy
 
 **Action:** Cloudflare Pages had disconnected from the Git account, blocking deployments. Curator reconnected in the Cloudflare dashboard. Ran `sync-and-build.ps1` — build succeeded (87 files). Initial push rejected (remote ahead); pulled remote changes (Dependabot updates to package.json/package-lock.json). Pushed empty commit to trigger redeploy. Site confirmed live.

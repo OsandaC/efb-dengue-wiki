@@ -2,8 +2,8 @@
 type: analysis
 tags: [meta, curator-highlights]
 created: 2026-05-02
-updated: 2026-05-02
-highlights_count: 0
+updated: 2026-05-14
+highlights_count: 1
 ---
 
 # Curator Highlights
@@ -12,4 +12,6 @@ Mechanical snapshot of all `==highlighted==` text and `%%comments%%` placed by t
 
 ---
 
-*No active highlights. Add `==highlights==` and `%%comments%%` in any wiki page; they will appear here on the next refresh.*
+## [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]
+
+- ==(acute cells died in culture)==

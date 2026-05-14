@@ -1,6 +1,6 @@
 # EFB Dengue Wiki — Master Index
 
-*Last updated: 2026-05-10 | Sources: 15 | Total pages: 84*
+*Last updated: 2026-05-14 | Sources: 15 | Total pages: 84*
 
 ---
 
@@ -121,5 +121,5 @@
 
 - [[Research Plan - DN B Cell Expansion in Dengue]] — wet-lab protocol: flow cytometry panel, cohort design (DF/DHF/HC), DN1/DN2/DN3 subdivision without CXCR5, sample size estimates
 - [[Notable Findings]] — running log of striking cross-cutting observations (13 entries)
-- [[Curator Highlights]] — aggregated `==highlights==` and `%%comments%%` from wiki pages (empty)
+- [[Curator Highlights]] — aggregated `==highlights==` and `%%comments%%` from wiki pages (1 highlight)
 - [[External Citation Audit]] — catalog of 54 external papers cited inline across ~25 wiki pages; DOIs, backlinks, verification status

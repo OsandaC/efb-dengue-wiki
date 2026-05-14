@@ -14,7 +14,7 @@ HOPX (Homeodomain-Only Protein X) is an atypical homeodomain protein that functi
 
 ## Key Points from Literature
 
-- **HOPX marks cytotoxic Tph in acute dengue:** scRNA-seq of 4,361 activated CD4⁺ T cells from acute dengue patients identified a cytotoxic Tph cluster expressing HOPX, GZMB (granzyme B), NKG7, and KLRB1. This cluster is distinct from the IL-21⁺ helper Tph cluster (ICOS, MAF, [[TOX2]]) by gene expression and largely by TCR clonotype (only 13 shared clonotypes) (see [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]], 10x Genomics scRNA-seq + scTCR-seq, n=4 patients).
+- **HOPX marks cytotoxic Tph in acute dengue:** scRNA-seq of 4,361 activated CD4⁺ T cells from acute dengue patients identified a cytotoxic Tph cluster expressing HOPX, GZMB (granzyme B), NKG7, and KLRB1. This cluster is distinct from the IL-21⁺ helper Tph cluster (ICOS, MAF, [[TOX2]]) by gene expression and largely by TCR clonotype (only 13 shared clonotypes) (see [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]], 10x Genomics scRNA-seq + scTCR-seq, n=3 patients).
 - **Functional role unclear:** Whether the GZMB⁺HOPX⁺ Tph subset directly kills target cells, regulates the B cell response, or contributes to immunopathology in dengue is not addressed. HOPX expression is associated with cytotoxic effector memory differentiation in CD4⁺ T cells (see [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]).
 
 ## Contradictions & Debates
