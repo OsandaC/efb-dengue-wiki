@@ -2,6 +2,52 @@
 
 ---
 
+## [2026-05-14] council-update | Ansari2025 source page updated from council findings
+
+**Action:** Updated `wiki/sources/Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue.md` with corrections and nuances from the PDF-based council review.
+**Key changes:** (1) scRNA-seq patient count corrected to 3; (2) activated gate clarified as ICOS⁺Ki67⁺; (3) Tph identity tension noted (Th1 signature, not canonical Tph); (4) coculture T cell source specified (seropositive donor memory); (5) day-of-sampling confounder added; (6) CXCL13 non-specificity noted; (7) Tfh coculture comparison documented (Figure 6H exists; blocking Figure 6J is Tph-only); (8) HD sex imbalance, serotype undocumented, FRNT DENV-2-only noted; (9) "first direct evidence" softened to "first phenotypic evidence consistent with"; (10) council-derived questions added.
+**Pages affected:** 1 source page, state.md (5 new Watch Items, Current Focus updated)
+
+---
+
+## [2026-05-14] schema-update | Added poppler fallback path to Council workflow
+
+**Change:** CLAUDE.md §Workflows → Summon the Council → Step 2 now includes a hardcoded local fallback path for `pdftoppm.exe` (WinGet install location) when the command is not on PATH.
+**Scope:** CLAUDE.md §Workflows → Summon the Council
+**Pages affected:** 0
+**Reason:** Poppler installed via WinGet but not on system PATH; fallback prevents unnecessary halts during council reviews.
+
+---
+
+## [2026-05-14] schema-update | Added "Summon the Council" workflow
+
+**Change:** New workflow in CLAUDE.md §Workflows — multi-agent critical review panel for papers. Architecture block updated to include `Claude-council/` folder.
+**Scope:** CLAUDE.md §Architecture + §Workflows (new section after Remove/Merge Axis)
+**Pages affected:** 0 (reports-only workflow, no wiki page changes)
+**Reason:** Curator wants a structured multi-perspective critical review process for evaluating papers. First council review (Ansari2025) completed same session; workflow codified from that precedent.
+
+---
+
+## [2026-05-14] council-review | Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue
+
+**Council:** 4 members (Methodology Critic, Claims Validator, Contextual Critic, Strengths Advocate) + Council Head
+**Output:** `Claude-council/raw thinking minutes-Ansari2025.md`, `Claude-council/council final report-Ansari2025.md`
+**Verdict:** Landmark for Tph→IL-21→memory B cell axis identification. IL-21 blocking coculture is strongest evidence. scRNA-seq subclustering underpowered (n=4). DN2 identity inferred not confirmed. SHM paradox unresolved.
+
+---
+
+## [2026-05-11] infra | Web deployment to Cloudflare Pages
+
+- `efbwebshare/` — Quartz v4 setup (sibling of `efb-dengue-wiki/`), cloned from `webforshare/` and adapted
+- `efbwebshare/quartz.config.ts` — pageTitle set to "EFB Dengue Literature Review", baseUrl set to `efb-dengue-wiki.pages.dev`
+- `efbwebshare/sync-and-build.ps1` — syncs `efb-dengue-wiki/wiki/` → `efbwebshare/content/`, builds, commits, pushes
+- GitHub repo: `OsandaC/efb-dengue-wiki` (branch `main`)
+- Cloudflare Pages: `efb-dengue-wiki.pages.dev`
+- `CLAUDE.md` — added `### Update Web` workflow
+- `wiki/state.md` — web deployment watch item resolved; decision recorded
+
+---
+
 ## [2026-05-11] deep lint | Full wiki health check (84 pages, 3 parallel agents)
 
 **Scope:** All 84 pages scanned — sources (15), entities (41), concepts (7), methods (17), analyses (4). Three parallel sub-agents (sources, entities, concepts+methods+analyses) with manual cross-verification.
