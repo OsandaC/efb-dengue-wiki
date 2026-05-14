@@ -2,6 +2,12 @@
 
 ---
 
+## [2026-05-14] ops | Cloudflare Pages reconnect and redeploy
+
+**Action:** Cloudflare Pages had disconnected from the Git account, blocking deployments. Curator reconnected in the Cloudflare dashboard. Ran `sync-and-build.ps1` — build succeeded (87 files). Initial push rejected (remote ahead); pulled remote changes (Dependabot updates to package.json/package-lock.json). Pushed empty commit to trigger redeploy. Site confirmed live.
+
+---
+
 ## [2026-05-14] council-update | Ansari2025 source page updated from council findings
 
 **Action:** Updated `wiki/sources/Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue.md` with corrections and nuances from the PDF-based council review.
