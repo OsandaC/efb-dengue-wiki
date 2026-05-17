@@ -2,6 +2,63 @@
 
 ---
 
+## [2026-05-17] lint + council review | wiki/concepts/Extrafollicular Response.md
+
+**Council composition:** Custom 4-member panel — Accuracy Auditor, Claims Validator, Contextual Critic, Structural Auditor
+
+**Verdict:** The wiki's best-populated concept page with strong numerical fidelity (10/12 verifiable claims accurate). Carries one fatal claim error, four major concerns, two structural defects from displaced bullets, two unverified numerical claims, and two mechanistic gaps.
+
+**Key findings:**
+- [FATAL FLAW] "This resolves the SHM paradox" — dual-pathway model is a working hypothesis, not a resolution; n=4 + n=19, non-overlapping studies
+- [STRUCTURAL DEFECT] 5 positive-finding bullets displaced from Dengue Context into Contradictions & Debates (Singh2026 ×2, Appanna2016 ×1, GarciaBates2013 ×2) — end-of-file insertion recurrence
+- [MAJOR CONCERN] Dengue EF pathway (Tph-dependent, IL-21-mediated) framed as analogous to SLE TLR7-autonomous B cell activation — divergence nowhere flagged
+- [MAJOR CONCERN] BCR-independent DN2→PC generation absent from page (present on DN2 B Cell and Plasmablast pages)
+- [MAJOR CONCERN] Memory DN2 cells (Sanz2025/Faliti2024) absent — page frames EF output as exclusively short-lived
+- [MAJOR CONCERN] GodoyLozano2016 "385,206 lineages" not in source page — unverifiable
+- [MAJOR CONCERN] Jenks2018 "IgG at higher per-cell levels than DN1 or SWM" not in source page; source page states surface IgG 50% lower on DN2
+
+**Output:** `Claude-council/raw thinking minutes-ExtrafollicularResponse.md`, `Claude-council/council final report-ExtrafollicularResponse.md`
+
+---
+
+## [2026-05-15] council review | Jenks2018 - DN2 B Cells and EF Pathway in SLE
+
+**Council composition:** Default 4-member panel (Methodology Critic, Claims Validator, Contextual Critic, Strengths Advocate)
+
+**Verdict:** Genuinely important paper — most rigorous available DN2 definition and EF pathway model (~900 citations). Two STRONG claims (DN2 distinctness, pre-PC identity) supported by convergent multi-omic evidence. Five MODERATE claims: developmental pathway (in vitro only, no lineage tracing), TLR7/TRAF5 mechanism (correlational, no rescue), clinical associations (confounding not disentangled), DN1/DN2 separation (inferred), EF prominence in SLE (peripheral blood only).
+
+**Key concerns:** (1) RNA-seq/ATAC-seq underpowered (n=3+3); (2) in vitro differentiation system supraphysiological (R848+IFN-γ+IL-21 at pharmacological doses); (3) naive-origin model non-transferable to secondary dengue (conflicts with Ansari2025 memory-dominated pathway and Priyamvada2016 high-SHM PBs).
+
+**Cross-member insight:** BCR-independent DN2→PC differentiation (Figure 7F) provides a mechanistic explanation for non-DENV-specific bystander plasmablasts in the dengue PB wave — not currently documented in any wiki page.
+
+**Output:** `Claude-council/raw thinking minutes-Jenks2018.md`, `Claude-council/council final report-Jenks2018.md`
+
+---
+
+## [2026-05-15] council review | Sanz2025 - Human Atypical B Cells Overview
+
+**Council composition:** Default 4-member panel (Methodology Critic, Claims Validator, Contextual Critic, Strengths Advocate)
+**Verdict:** Valuable reference-class review from DN2 defining lab; functions as position paper. Central thesis (abandon AtB for DN) rated WEAK evidence — conceptual argument, not experimental validation. Key new concept: memory DN2 cells (>1 year persistence post-vaccination). Dengue literature entirely absent from cross-disease synthesis. Three new watch items added: memory DN2 in dengue, context-dependence for Ansari2025 secondary cohort, DN classification validation status.
+**Output:** `Claude-council/raw thinking minutes-Sanz2025.md`, `Claude-council/council final report-Sanz2025.md`
+
+---
+
+## [2026-05-15] council review | Woodruff2020 - EF B Cell Responses in COVID-19
+
+**Protocol:** Full 4-member council (Methodology Critic, Claims Validator, Contextual Critic, Strengths Advocate) dispatched in parallel. PDF read directly from `raw/Woodruff2020.pdf`. Wiki source page, Extrafollicular Response concept page, and Double-Negative B Cell entity page provided as context to Contextual Critic.
+
+**Verdict:** Conceptually important paper — first EF pathway demonstration in acute viral infection. Flow cytometry phenotyping (24-marker spectral panel) is the durable contribution. Strongest claims (EF *origin* of ASC repertoire, SLE *equivalence*, neutralizing Ab *paradox*) rest on underpowered data (n=1 scVDJ, n=7 SLE, n=3-4 FRNT).
+
+**Claim ratings:** 5 claims assessed — 2 MODERATE (phenotypic EF activation, severity correlation), 3 WEAK (neutralizing Ab paradox, ASC repertoire EF origin, DN3 as novel EF population).
+
+**Key concerns:** n=1 scVDJ (FATAL for repertoire claim), demographic confounding (MAJOR), underpowered FRNT (MAJOR).
+
+**Wiki maintenance items identified:** (1) CXCR3 entity page should note pre-PB vs. mature ASC distinction; (2) naive vs. memory EF precursor gap between COVID-19 and dengue should be explicitly flagged. Both added to state.md Watch Items.
+
+**Output:** `Claude-council/raw thinking minutes-Woodruff2020.md`, `Claude-council/council final report-Woodruff2020.md`
+
+---
+
 ## [2026-05-14] deep lint | Council-augmented deep lint (8 parallel agents + advisor)
 
 **Protocol:** Three-phase audit combining structural lint (3 parallel sub-agents by folder batch) + council-style specialist review (5 parallel agents: Epistemic Quality, Cross-Reference & Synthesis, Completeness & Gap, Consistency & Style, Reviewer 2) + advisor meta-review. All 8 agents dispatched in parallel. Advisor consulted before applying fixes.
