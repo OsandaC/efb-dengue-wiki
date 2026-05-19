@@ -2,8 +2,8 @@
 type: method
 tags: [BCR-sequencing, VH-genes, somatic-hypermutation, immunoglobulin-repertoire, Sanger-sequencing, NGS, clonality]
 created: 2026-05-02
-updated: 2026-05-10
-sources: 8
+updated: 2026-05-18
+sources: 9
 ---
 
 # BCR Sequencing
@@ -37,12 +37,14 @@ BCR (B cell receptor) sequencing refers to the sequencing of rearranged immunogl
 - **Monte Carlo simulation for B cell subpopulation deconvolution:** A second-order Monte Carlo simulation estimated the probability of sampling memory B cells vs. ASCs in unsorted IgG⁺ repertoire data, modelling individual variation in mB:ASC ratios and differential Ig transcription (ASCs ~12-fold higher than mB cells, gamma-distributed). At the expected acute dengue plasmablast proportion (56% of IgG⁺ per Wrammert2012), the probability of sampling a single read from a memory B cell was 0.015. During post-convalescence (mB ~95.8%), lineages ≥30 reads were estimated to derive exclusively from ASCs (p = 2.06E-06 for mB origin). This approach enables in silico sorting of repertoire data by Ig expression level, partially compensating for the lack of physical cell sorting (see [[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]]).
 - **De novo convergent CDRH3 identification:** Beyond testing against previously published signatures (Parameswaran2013), GodoyLozano2016 identified de novo convergent CDRH3s by screening for identical amino acid sequences shared in ≥3 individuals. Found 1,365 clonotypes representing 269 identical CDRH3s; 70% had a predominant 10-residue length. Two CDRH3s (ARQFGNWFDS, ARQWGNWFDL) were shared in 10/19 (52%) of individuals. Convergent clones carried significantly lower SHM than non-convergent clones (p<0.001) (see [[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]]).
 
+- **Microdissection + Vκ PCR sequencing — the original EF SHM method.** William2002 pioneered the use of microdissection to isolate B cells from defined anatomical sites for BCR sequencing. Id⁺ B cell clusters at the T zone–red pulp border were captured with a glass micropipette (Eppendorf Transferman micromanipulator), and Vκ8/Jκ4 rearranged sequences were amplified by nested PCR using Pfu Turbo (Stratagene) from picks of 5–50 cells. Amplified DNA was cloned into bacterial vectors and colonies sequenced with T3 primers. From 8 mice, 45 independent PCR libraries yielded 305 total sequences and 125 unique sequences. Sequences were assigned to genealogical trees based on shared/unique mutations and VJ junctions. This approach — physical isolation of cells from a defined tissue site followed by clonal sequencing — provides spatial resolution that no other BCR sequencing method in the wiki achieves, and was essential for proving that SHM was occurring in situ at EF sites rather than in GCs followed by migration (see [[William2002 - Extrafollicular Somatic Hypermutation in Autoimmune Mice]], Pfu-based nested PCR from microdissected frozen sections).
+
 ## Contradictions & Debates
 
 None documented in current wiki sources.
 
 ## Related Pages
-[[FACS Sorting]], [[Somatic Hypermutation]], [[Double-Negative B Cell]], [[DN2 B Cell]], [[Activated Naive B Cell]], [[Memory B Cell]], [[Plasmablast]]
+[[FACS Sorting]], [[Somatic Hypermutation]], [[Double-Negative B Cell]], [[DN2 B Cell]], [[Activated Naive B Cell]], [[Memory B Cell]], [[Plasmablast]], [[Immunohistochemistry]], [[Extrafollicular Response]]
 
 ## Sources
 - [[Wei2007 - DN Memory B Cells in SLE]]
@@ -53,3 +55,4 @@ None documented in current wiki sources.
 - [[Appanna2016 - Plasmablasts as Subset of Memory B Cell Pool]]
 - [[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]]
 - [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]]
+- [[William2002 - Extrafollicular Somatic Hypermutation in Autoimmune Mice]]

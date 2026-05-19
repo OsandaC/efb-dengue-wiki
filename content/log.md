@@ -2,6 +2,51 @@
 
 ---
 
+## [2026-05-18] ingest | William2002 - Extrafollicular Somatic Hypermutation in Autoimmune Mice
+
+**LANDMARK INGEST — first direct demonstration that somatic hypermutation occurs outside germinal centres; foundational murine evidence for the entire EF pathway framework.**
+
+**Source:** `raw/william2002.pdf` (DOI: 10.1126/science.1073924)
+
+**Pages created (2):**
+- `sources/William2002 - Extrafollicular Somatic Hypermutation in Autoimmune Mice.md` — MRL/lpr lupus-prone mice; RF B cells at T zone–red pulp border; SHM at ~0.3 mut/gene/gen; genealogical trees; FDC-absent, CD11c⁺ DC-rich EF niche; TLR9 co-stimulation; tolerance escape
+- `methods/Immunohistochemistry.md` (new: tissue-based protein localisation; multi-colour IHC for EF B cell localisation)
+
+**Pages updated (6):**
+- `concepts/Extrafollicular Response.md` (MAJOR: first direct EF SHM proof; tolerance escape mechanism; TLR co-stimulation as unifying feature; external citation converted to wikilink; sources 15→16)
+- `concepts/Somatic Hypermutation.md` (MAJOR: EF SHM at GC-comparable rates; external citation converted to wikilink; sources 14→15)
+- `concepts/Germinal Center.md` (GCs not required for SHM; external citation converted to wikilink; sources 14→15)
+- `entities/CD11c.md` (CD11c⁺ DCs at EF sites; murine precedent for DC-B cell interaction; sources 5→6)
+- `entities/TLR7.md` (TLR9 as mechanistic precedent for TLR-driven EF SHM; sources 3→4)
+- `methods/BCR Sequencing.md` (microdissection + Vκ PCR genealogical trees; sources 8→9)
+
+**External citations resolved (3):** Converted "William et al. 2002, *Science*" bare citations to proper `[[William2002 - ...]]` wikilinks on Extrafollicular Response, Somatic Hypermutation, and Germinal Center concept pages.
+
+**Citations:** Semantic Scholar 585, CrossRef 448 (retrieved 2026-05-18)
+
+---
+
+## [2026-05-18] council-directed edits | wiki/concepts/Extrafollicular Response.md
+
+**Based on:** Council final report (2026-05-17)
+
+**Fixes applied:**
+1. [STRUCTURAL] Moved 5 displaced bullets (Singh2026 ×2, Appanna2016 ×1, GarciaBates2013 ×2) from Contradictions & Debates to Dengue Context
+2. [FATAL FLAW] "resolves the SHM paradox" → "offers a plausible reconciliation of" + added hypothesis caveat
+3. [MAJOR] Added Tph-dependent vs. TLR7-autonomous mechanistic divergence note to Dengue Context
+4. [MAJOR] Added BCR-independent DN2→PC generation (Jenks2018) to Key Points
+5. [MAJOR] Added memory DN2 cells (Sanz2025/Faliti2024) to Dengue Context
+6. [MAJOR] Fixed CXCL13 claim — no longer presented as GC biomarker; Tph-derived CXCL13 acknowledged
+7. [MAJOR] Softened Ansari2025 "establishes dominant" → "identifies a major"
+8. [MAJOR] Fixed Jenks2018 IgG claim — removed unverifiable "higher per-cell IgG" claim, replaced with verified ELISPOT data
+9. [STRUCTURAL] Added CXCR3 to Related Pages
+10. [STRUCTURAL] Added memory vs. naive precursor contrast as named Contradictions & Debates entry
+11. [VERIFIED] GodoyLozano2016 "385,206 lineages" confirmed against original PDF (page 6: "reconstructed 385,206 heavy chain lineages derived from 146,565 heavy chain clonotypes") — also added to source page
+
+**Also updated:** `wiki/sources/GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue.md` (added dataset scale bullet with verified lineage count)
+
+---
+
 ## [2026-05-17] lint + council review | wiki/concepts/Extrafollicular Response.md
 
 **Council composition:** Custom 4-member panel — Accuracy Auditor, Claims Validator, Contextual Critic, Structural Auditor

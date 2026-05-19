@@ -25,15 +25,10 @@ Each entry lists: citation as it appears, DOI (where found), the ingested source
 
 ---
 
-### 1. William et al. 2002, *Science*
+### 1. ~~William et al. 2002, *Science*~~ ✅ INGESTED 2026-05-18
 **Topic:** SHM can occur outside germinal centres (murine EF)
 **DOI:** `10.1126/science.1073924`
-**Cited via:** [[Wei2007 - DN Memory B Cells in SLE]], [[Sanz2025 - Human Atypical B Cells Overview]]
-**Wiki locations:**
-- [[Double-Negative B Cell]] — line 51 (bare: "cited but not yet ingested")
-- [[Extrafollicular Response]] — line 19
-- [[Germinal Center]] — line 22
-- [[Somatic Hypermutation]] — lines 21, 37
+**Status:** Now ingested as [[William2002 - Extrafollicular Somatic Hypermutation in Autoimmune Mice]]. All bare citations converted to wikilinks.
 
 ---
 

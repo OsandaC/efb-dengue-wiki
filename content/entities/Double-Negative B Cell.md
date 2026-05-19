@@ -51,7 +51,7 @@ In healthy peripheral blood, DN B cells are a minor population (~5% of CD19⁺ B
 Wei et al. propose that DN cells represent B cells that failed to complete a productive germinal centre reaction and instead differentiated via extrafollicular pathways. The reasoning is:
 1. CD27 is normally acquired via CD40–CD154-mediated B–T cognate interactions within the GC.
 2. DN cells show lower SHM rates than CD27⁺ cells, consistent with less extensive GC passage or GC-independent hypermutation.
-3. Murine studies demonstrate that SHM can occur outside GCs (William et al. 2002, *Science* — cited but not yet ingested).
+3. Murine studies demonstrate that SHM can occur outside GCs at GC-comparable rates (see [[William2002 - Extrafollicular Somatic Hypermutation in Autoimmune Mice]]).
 4. CD11c⁺ dendritic cells can activate extrafollicular B cells and induce CD40-independent class switching via BLyS-BAFF-R interactions.
 
 This EF origin model directly links DN B cells to the concept of [[Extrafollicular Response]] and makes them the prototypical human EF memory B cell population. See [[Wei2007 - DN Memory B Cells in SLE]] for the full mechanistic argument.
