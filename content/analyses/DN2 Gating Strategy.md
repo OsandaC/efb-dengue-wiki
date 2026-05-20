@@ -79,24 +79,24 @@ STEP 4 ─ EXCLUDE TRANSITIONAL B CELLS
   
 STEP 5 ─ DN GATE (IgD vs CD27 quadrant)
   BV785 (IgD) vs APC (CD27)
-  ┌──────────────────┬──────────────────┐
-  │ Unswitched Memory │ Naive            │
-  │ IgD⁺ CD27⁺       │ IgD⁺ CD27⁻      │
-  ├──────────────────┼──────────────────┤
-  │ Switched Memory   │ ★ DN ★           │
-  │ IgD⁻ CD27⁺       │ IgD⁻ CD27⁻      │
-  └──────────────────┴──────────────────┘
+  ┌──────────────┬─────────────────┐
+  │ Naive        │Unswitched Memory│
+  │ IgD⁺ CD27⁻   │ IgD⁺ CD27⁺      │
+  ├──────────────┼─────────────────┤
+  │ ★ DN ★      │ Switched Memory │
+  │IgD⁻ CD27⁻    │  IgD⁻ CD27⁺     │
+  └──────────────┴─────────────────┘
   → Gate on the IgD⁻CD27⁻ (lower-right) quadrant = DN B cells
   
 STEP 6 ─ DN SUBGATING (CD21 vs CD11c)
   FITC (CD21) vs PE (CD11c) — within DN gate only
-  ┌──────────────────┬──────────────────┐
-  │ DN1-like          │                  │
-  │ CD21⁺ CD11c⁻     │ CD21⁺ CD11c⁺    │
-  ├──────────────────┼──────────────────┤
-  │ DN3-like          │ ★ DN2-phenotype ★│
-  │ CD21⁻ CD11c⁻     │ CD21⁻ CD11c⁺    │
-  └──────────────────┴──────────────────┘
+  ┌──────────────────┬───────────────────┐
+  │ DN1-like         │                   │
+  │ CD21⁺ CD11c⁻     │ CD21⁺ CD11c⁺      │
+  ├──────────────────┼───────────────────┤
+  │ DN3-like         │ ★ DN2-phenotype ★│
+  │ CD21⁻ CD11c⁻     │ CD21⁻ CD11c⁺      │
+  └──────────────────┴───────────────────┘
   → DN2-phenotype = CD21⁻CD11c⁺
   → DN1-like = CD21⁺CD11c⁻
   → DN3-like = CD21⁻CD11c⁻
@@ -138,7 +138,7 @@ After gating, verify all subsets by backgating onto parent populations:
 
 The formal Jenks2018 DN2 definition requires: IgD⁻, CD27⁻, **CXCR5⁻**, CD21⁻, CD11c⁺, CD19ʰⁱ, **T-bet⁺**, **FCRL5⁺**. This panel lacks CXCR5, T-bet, and FCRL5. The population isolated at Step 6 is therefore "DN2-phenotype" — enriched for but not formally confirmed DN2.
 
-This is the same limitation Ansari et al. 2025 had. In SLE, Jenks2018 showed >90% concordance between CD21⁻CD11c⁺ and T-bet⁺ within the DN gate, and CD21⁻ is a strong surrogate for CXCR5⁻ (discordant fraction <5–10%). Whether this concordance holds in dengue is unknown.
+This is the same limitation Ansari et al. 2025 had. In SLE, Jenks2018 showed >90% concordance between CD21⁻CD11c⁺ and T-bet⁺ within the DN gate, and CD21⁻ is a strong surrogate for CXCR5⁻ (discordant fraction <5–10%). ==Whether this concordance holds in dengue is unknown.==
 
 All reporting should use "DN2-phenotype" throughout, following Ansari2025 precedent.
 
