@@ -2,8 +2,8 @@
 type: entity
 tags: [b-cell-subsets, plasmablast, antibody-secreting-cells, CD38, CD27, extrafollicular, SLE, rituximab]
 created: 2026-05-02
-updated: 2026-05-10
-sources: 14
+updated: 2026-05-19
+sources: 15
 ---
 
 # Plasmablast
@@ -57,6 +57,7 @@ Plasmablasts are short-lived, rapidly dividing antibody-secreting B cells that a
 - **VH4-34 and VH1-69 (autoantigen-binding VH genes) enriched in plasmablasts:** Some VH gene families with self-antigen-binding potential were observed specifically among PB-derived DENV-specific Abs but not MBC-derived Abs, suggesting the acute PB wave may include autoreactive/polyreactive antibodies (see [[Appanna2016 - Plasmablasts as Subset of Memory B Cell Pool]], single-cell VH sequencing).
 - **Comparable VH mutation frequencies between PBs and MBCs despite clonal unrelatedness:** Despite being clonally distinct, plasmablast-derived and MBC-derived antibodies showed similar VH nucleotide mutation rates and N-addition counts (not significantly different by ANOVA). This argues against a model where MBCs undergo substantially more GC maturation than PBs and suggests both derive from similarly matured precursors with different specificities (see [[Appanna2016 - Plasmablasts as Subset of Memory B Cell Pool]], IMGT analysis, n=12 patients).
 - **HIGH SHM IN SORTED SECONDARY DENGUE PLASMABLASTS — strongest evidence for memory origin:** Single-cell VH sequencing of sorted plasmablasts from 4 secondary DHF patients (DENV2) revealed high SHM: per-patient averages of 14.5–21.7 VH mutations (overall mean 18.1, range 5–39), significantly higher than IgG⁺ GC B cells (p<0.005) and comparable to influenza recall responses. CDR R:S ratios >2.9 confirmed antigenic selection. 23% of plasmablast VH sequences were clonally related (range 15–28%), further supporting recall of pre-existing memory clones. 53 mAbs were generated: 70% E-specific (all cross-reactive to ≥2 serotypes), 46/53 neutralising, 45/53 ADE-competent. Evidence of [[Original Antigenic Sin]] in 2/4 patients — DENV1-biased neutralisation despite DENV2 infection, with DENV1-specific mAbs more potent (FRNT₅₀ 0.16 µg/ml) than DENV2-specific (1.2 µg/ml). Nearly universal [[Antibody-Dependent Enhancement]] regardless of neutralisation potency (see [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]], n=4 secondary DHF, single-cell mAb cloning, 53 mAbs).
+- **Plasmablast analysis alone is an insufficient correlate of long-term DENV immunity:** Because the PB wave represents only a narrow, E-specific IgG⁺ subset of the broader DENV-specific memory B cell pool (Appanna2016), measuring plasmablast magnitude or specificity does not capture MBC diversity, bone marrow-resident long-lived plasma cells, or potentially tissue-retained PBs. The isotype-fate segregation model (IgG⁺ MBCs → PBs, IgM⁺ MBCs → GC re-entry; Seifert et al. 2015) provides a mechanistic explanation for this selective recruitment (see [[Bhattacharya2016 - Memory B Cell Subset Selection in Secondary Dengue]], commentary — no original data).
 - **Dengue acute-phase plasmablasts carry paradoxically low SHM — lower in severe and secondary disease:** HTS of IgG VH cDNA (enriching for ASCs by RNA abundance) revealed that acute-phase IgG B cells have globally lower SHM than post-convalescent IgG B cells (p<0.001), with SHM further reduced in DWS+ vs. DWS− and in secondary vs. primary infections. Monte Carlo simulation confirmed the acute signal derives predominantly from plasmablasts (probability of sampling mB cell = 0.015). Convergent CDRH3 signatures shared across up to 52% of patients were found specifically among the most hypomutated clones. The low SHM in plasmablasts with class-switched (IgG) status indicates CSR without extensive SHM — consistent with GC-independent (extrafollicular) differentiation (see [[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]], n=19 acute dengue, 454 pyrosequencing, 385,206 lineages).
 
 ## Contradictions & Debates
@@ -85,3 +86,4 @@ Plasmablasts are short-lived, rapidly dividing antibody-secreting B cells that a
 - [[Appanna2016 - Plasmablasts as Subset of Memory B Cell Pool]]
 - [[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]]
 - [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]]
+- [[Bhattacharya2016 - Memory B Cell Subset Selection in Secondary Dengue]]

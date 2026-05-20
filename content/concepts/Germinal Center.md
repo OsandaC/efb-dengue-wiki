@@ -2,8 +2,8 @@
 type: concept
 tags: [germinal-center, B-cell-activation, somatic-hypermutation, affinity-maturation, class-switch-recombination, memory-formation]
 created: 2026-05-02
-updated: 2026-05-18
-sources: 15
+updated: 2026-05-19
+sources: 16
 ---
 
 # Germinal Center
@@ -44,6 +44,7 @@ In the context of this wiki, the germinal centre response is the primary counter
 - **Low SHM in acute dengue IgG B cells argues against dominant GC origin of the plasmablast wave:** GodoyLozano2016 found paradoxically low global SHM during acute dengue, lower in DWS+ than DWS−, and lower in secondary than primary infections — the opposite of what GC-dependent memory recall would predict (increased SHM with antigen re-exposure). Influenza vaccination produced the expected GC pattern (SHM *increase* at day 7). The authors propose that a rapid GC-independent pathway operating concurrently with the GC pathway is responsible, consistent with the concurrent Tph + CXCL13 activity in Ansari2025 (see [[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]], n=19 acute dengue + 10 TIV controls, 454 pyrosequencing).
 
 - **LANDMARK: GCs are not required for somatic hypermutation.** William2002 demonstrated that in MRL/lpr mice, RF B cells underwent active SHM at the T zone–red pulp border at rates comparable to GC mutation (~0.3 mut/gene/generation), while Id⁻ GCs in the same spleens contained no mutating RF B cells. Some mice had ongoing EF mutation with no GCs of any type. This is qualitatively different from the low-level, unidentified-site mutation in severely immunodeficient mice (CD40L⁻/⁻, LTα⁻/⁻) — AM14 RF B cells mutate at high rates at a defined anatomical site in immunocompetent mice that retain the capacity for normal GC formation. The paper proposes that SHM is induced by sufficient B cell cycling in the presence of antigen + T cell signals, regardless of anatomical location (see [[William2002 - Extrafollicular Somatic Hypermutation in Autoimmune Mice]], in vivo murine model, 8 mice, 305 sequences).
+- **IgM⁺ memory B cells re-initiate GCs while IgG⁺ memory cells yield PBs:** The isotype-fate segregation model (Seifert et al. 2015, cited in [[Bhattacharya2016 - Memory B Cell Subset Selection in Secondary Dengue]], commentary) proposes that IgM⁺ memory B cells preferentially re-initiate germinal center reactions for affinity maturation toward new pathogens, while IgG⁺ memory cells are predisposed to plasmablast/plasma cell differentiation. In dengue, this predicts that the IgM⁺ DENV-binding MBCs identified by Appanna2016 and Singh2026 may re-enter GCs upon re-exposure, contributing to the prolonged GC activity suggested by CXCL13 elevation (Ansari2025) and delayed MBC peaks (Singh2026) — while E-specific IgG⁺ memory feeds the acute PB wave.
 - **High SHM in sorted secondary dengue PBs argues FOR GC-experienced memory origin:** Priyamvada2016 found mean 18.1 VH mutations per plasmablast (range 5–39), significantly higher than IgG⁺ GC B cells (p<0.005) and comparable to influenza recall responses. CDR R:S ratios >2.9 confirmed antigenic selection. This SHM level is best explained by prior GC transit of the memory B cells that gave rise to these PBs — contrasting with GodoyLozano2016's low-SHM finding in bulk IgG and suggesting two concurrent populations: GC-experienced memory recall (high SHM) and de novo EF differentiation (low SHM) (see [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]], n=4 secondary DHF, single-cell BCR sequencing).
 
 ## Contradictions & Debates
@@ -70,3 +71,4 @@ In the context of this wiki, the germinal centre response is the primary counter
 - [[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]]
 - [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]]
 - [[William2002 - Extrafollicular Somatic Hypermutation in Autoimmune Mice]]
+- [[Bhattacharya2016 - Memory B Cell Subset Selection in Secondary Dengue]]

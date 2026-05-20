@@ -2,8 +2,8 @@
 type: concept
 tags: [antibody-dependent-enhancement, ADE, Fc-receptor, cross-reactivity, dengue-severity, secondary-dengue]
 created: 2026-05-10
-updated: 2026-05-10
-sources: 1
+updated: 2026-05-19
+sources: 2
 ---
 
 # Antibody-Dependent Enhancement
@@ -28,3 +28,4 @@ Antibody-dependent enhancement (ADE) is a mechanism by which pre-existing cross-
 
 ## Sources
 - [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]]
+- [[Bhattacharya2016 - Memory B Cell Subset Selection in Secondary Dengue]]

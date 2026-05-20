@@ -2,8 +2,8 @@
 type: concept
 tags: [original-antigenic-sin, cross-reactivity, memory-b-cells, secondary-dengue, immune-imprinting]
 created: 2026-05-10
-updated: 2026-05-10
-sources: 1
+updated: 2026-05-19
+sources: 2
 ---
 
 # Original Antigenic Sin
@@ -27,3 +27,4 @@ Original antigenic sin (OAS), also termed "immune imprinting," describes the phe
 
 ## Sources
 - [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]]
+- [[Bhattacharya2016 - Memory B Cell Subset Selection in Secondary Dengue]]

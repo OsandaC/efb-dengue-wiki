@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, immunoglobulin, isotype, class-switch-recombination, memory-b-cells]
 created: 2026-05-02
-updated: 2026-05-10
-sources: 12
+updated: 2026-05-19
+sources: 13
 ---
 
 # IgG
@@ -34,6 +34,8 @@ IgG is the predominant antibody isotype in human serum and the primary product o
 - **Cross-reactive E-specific IgG mAbs with near-universal ADE capacity:** 53 mAbs cloned from single-cell sorted secondary DHF plasmablasts were predominantly IgG; 37/53 (70%) targeted E protein, all cross-reactive to ≥2 serotypes. 45/53 mAbs enhanced DENV infection of U937 cells (5–161-fold) regardless of neutralisation potency — even the most potently neutralising IgG mAbs caused ADE at sub-neutralising concentrations or against heterotypic serotypes. This establishes that the IgG produced during the secondary dengue plasmablast wave is intrinsically ADE-competent (see [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]], n=4 secondary DHF, mAb cloning + ADE assay).
 - **OAS demonstrated at the IgG mAb level:** In 2/4 secondary DENV2 patients, plasmablast-derived IgG mAbs preferentially neutralised DENV1 (median FRNT₅₀ 0.16 µg/ml) over the infecting DENV2 (median FRNT₅₀ 1.2 µg/ml), providing the strongest functional evidence for original antigenic sin in the dengue IgG response. These DENV1-biased IgG mAbs bound DENV2 weakly — the precise profile predicted to mediate ADE during secondary heterotypic infection (see [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]], n=4 secondary DHF, FRNT + capture virus ELISA).
 
+- **IgG⁺ memory B cells are predisposed to plasmablast fate:** The isotype-fate segregation model (Seifert et al. 2015, cited in [[Bhattacharya2016 - Memory B Cell Subset Selection in Secondary Dengue]], commentary) proposes that IgG⁺ memory B cells preferentially differentiate into plasmablasts and plasma cells upon recall, while IgM⁺ memory B cells re-initiate germinal centers. This explains the overwhelming IgG dominance of the dengue PB wave (Wrammert2012: ≥70% DENV-specific IgG; IgM near-absent in secondary infection) and the E-specific IgG⁺ bias of PB-derived mAbs vs. the prM/complex epitope specificity of MBC-derived mAbs (Appanna2016) — the IgG⁺ E-specific memory subset is selectively recruited to PB fate.
+
 ## Contradictions & Debates
 
 None documented in current wiki sources.
@@ -54,3 +56,4 @@ None documented in current wiki sources.
 - [[Appanna2016 - Plasmablasts as Subset of Memory B Cell Pool]]
 - [[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]]
 - [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]]
+- [[Bhattacharya2016 - Memory B Cell Subset Selection in Secondary Dengue]]

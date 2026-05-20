@@ -2,6 +2,55 @@
 
 ---
 
+## [2026-05-20] analysis | DN2 Gating Strategy
+
+**Type:** Council-reviewed analysis — gating strategy design for DN/DN2-phenotype isolation from dengue PBMCs.
+**Panel:** 11-color fixed panel (CD19, CD66b, CD11c, CD21, CD38, L/D, CD3+CD14, IgD, CD27, CD24, CD45).
+**Council:** 4-member review (Methodology Critic, Claims Validator, Contextual Critic, Strengths Advocate). Strategy endorsed with 4 modifications (generous FSC/SSC, polygon gates, CD11c FMO mandatory, "DN2-phenotype" terminology).
+**Pages created:** 1 analysis page (`DN2 Gating Strategy.md`) + 2 council files
+**Key outcome:** 6-step hierarchy replicating Ansari2025 core gates. Passes Sanz2025 IgD audit. Direct comparability to the only dengue DN2 dataset. Three MAJOR technical concerns documented (PE-Cy7→PE spread, CD27 shedding, CD38 compression).
+
+---
+
+## [2026-05-19] ingest | Bhattacharya2016 - Memory B Cell Subset Selection in Secondary Dengue
+
+**Type:** Commentary / Editorial (EBioMedicine, companion to Appanna2016)
+**Key contribution:** Isotype-fate segregation model (Seifert 2015): IgM⁺ MBCs → GC re-initiation, IgG⁺ MBCs → PB differentiation. PB analysis alone insufficient as correlate of long-term DENV immunity.
+**Pages created:** 1 (source page)
+**Pages updated:** 7 (Memory B Cell, Plasmablast, IgG, IgM, Germinal Center, Original Antigenic Sin, Antibody-Dependent Enhancement) + index
+**Notable findings:** None (commentary with no original data)
+**Citations:** Semantic Scholar: 1, CrossRef: 1 (retrieved 2026-05-19)
+
+---
+
+## [2026-05-19] deep lint | Health Check
+
+**Scope:** All 86 pages scanned (16 sources, 41 entities, 7 concepts, 18 methods, 4 analyses). Parallel sub-agents + direct structural checks.
+
+**Structural health: EXCELLENT**
+- Frontmatter source counts: 0 mismatches (all match body source lists)
+- Required sections: 0 missing across all pages
+- Section ordering: 0 insertion-order defects (no displaced content after Related Pages/Sources)
+- Broken wikilinks: 0 in wiki pages (4 shorthand-only in log.md — cosmetic)
+- Orphan pages: 0
+- Wikilink validity: 100% — all targets resolve to existing files
+- William2002 propagation: verified complete (all 8 linked pages updated)
+
+**Known issues confirmed (no change from prior lint):**
+- Thin entity pages (1 source): ATF3, B220, CD23, CD71, EGR, HOPX, Peripheral Helper T Cell, TOX2 (8 pages)
+- Thin method pages (1 source): Spectral Flow Cytometry, PRNT, Serum Proteomics, Phospho-Flow Cytometry, RRBS, Activation-Induced Marker Assay, Single-Cell RNA Sequencing, T-B Coculture Assay, Immunohistochemistry (9 pages)
+- Thin concept pages (1 source): Original Antigenic Sin, Antibody-Dependent Enhancement (2 pages)
+- Evidence weight annotations: ~15 Key Points bullets across Wei2007/Tipton2015-era entity pages still lack study type/sample size annotations (CD19, CD27, CD38, CD10, IgD, IgA, B220, CD24)
+- External Citation Audit: 54 external papers catalogued, pending curator review
+- CD24 lists Scharer2019 in Sources with no Key Points content
+
+**New finding:**
+- William2002 Notable Findings entry: absent. The ingest was the foundational EF SHM paper (585 citations, *Science*) but its finding was already well-known to the wiki via bare citations. Debatable whether a Notable Findings entry is warranted given the finding was not *new* to the wiki, only newly sourced. Left as curator decision.
+
+**Curator Highlights refreshed:** 1 highlight (unchanged — `==(acute cells died in culture)==` in Ansari2025).
+
+---
+
 ## [2026-05-18] ingest | William2002 - Extrafollicular Somatic Hypermutation in Autoimmune Mice
 
 **LANDMARK INGEST — first direct demonstration that somatic hypermutation occurs outside germinal centres; foundational murine evidence for the entire EF pathway framework.**

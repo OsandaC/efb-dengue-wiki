@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, immunoglobulin, isotype, memory-b-cells, marginal-zone]
 created: 2026-05-02
-updated: 2026-05-10
-sources: 7
+updated: 2026-05-19
+sources: 8
 ---
 
 # IgM
@@ -22,6 +22,8 @@ IgM is the first immunoglobulin isotype produced by B cells and the default surf
 - **IgM near-absent in secondary dengue plasmablast wave:** In a predominantly secondary dengue cohort (42/46), IgM-secreting DENV-specific plasmablasts were detectable in only a minority of patients and were never IgM-only — all had concurrent IgG responses. The 4 primary responders all had detectable IgM by ELISpot, with one (Den01-066) showing an IgM response exceeding IgG. This confirms that the secondary dengue plasmablast response is overwhelmingly class-switched, with IgM production restricted to primary infection (see [[Wrammert2012 - Plasmablast Responses in Acute Dengue]], ELISpot, n=46).
 - **IgM⁺ DENV-binding MBCs dominate the virus-specific memory compartment and harbour the only PB-shared clones:** In Appanna2016, a large fraction of DENV-binding convalescent MBCs expressed IgM (vs. IgG-dominant plasmablasts and IgG-dominant non-DENV-binding MBCs). The rare CDR3 sequences shared between PBs and DENV-binding MBCs were exclusively IgM, and shared clones that were expanded in the MBC compartment were also IgM. The authors interpret this as potential enrichment of low-affinity IgM binders during virus-based sorting (DENV binding was also observed in non-immune individuals). This connects to the Singh2026 finding that IgM⁺ DENV-specific MBCs are the only subset significantly elevated during acute secondary dengue (see [[Appanna2016 - Plasmablasts as Subset of Memory B Cell Pool]], 454 + Sanger sequencing, n=12 dengue).
 
+- **IgM⁺ memory B cells are predisposed to GC re-initiation, not PB differentiation:** The isotype-fate segregation model (Seifert et al. 2015, cited in [[Bhattacharya2016 - Memory B Cell Subset Selection in Secondary Dengue]], commentary) proposes that IgM⁺ memory B cells preferentially re-initiate germinal center reactions rather than differentiating into plasmablasts. This provides a mechanistic explanation for the IgM dominance of DENV-binding convalescent MBCs (Appanna2016) and the IgM⁺ MBC elevation during acute secondary dengue (Singh2026) — these IgM⁺ cells may be maintained or expanded via GC re-entry rather than contributing to the PB wave.
+
 ## Contradictions & Debates
 
 None documented in current wiki sources.
@@ -37,3 +39,4 @@ None documented in current wiki sources.
 - [[Wrammert2012 - Plasmablast Responses in Acute Dengue]]
 - [[Appanna2016 - Plasmablasts as Subset of Memory B Cell Pool]]
 - [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]]
+- [[Bhattacharya2016 - Memory B Cell Subset Selection in Secondary Dengue]]
