@@ -79,24 +79,26 @@ STEP 4 ─ EXCLUDE TRANSITIONAL B CELLS
   
 STEP 5 ─ DN GATE (IgD vs CD27 quadrant)
   BV785 (IgD) vs APC (CD27)
-  ┌──────────────┬─────────────────┐
-  │ Naive        │Unswitched Memory│
-  │ IgD⁺ CD27⁻   │ IgD⁺ CD27⁺      │
-  ├──────────────┼─────────────────┤
-  │ ★ DN ★      │ Switched Memory │
-  │IgD⁻ CD27⁻    │  IgD⁻ CD27⁺     │
-  └──────────────┴─────────────────┘
-  → Gate on the IgD⁻CD27⁻ (lower-right) quadrant = DN B cells
+```
+
+<table>
+<tr><td><strong>Naive</strong><br>IgD⁺ CD27⁻</td><td><strong>Unswitched Memory</strong><br>IgD⁺ CD27⁺</td></tr>
+<tr><td><strong>★ DN ★</strong><br>IgD⁻ CD27⁻</td><td><strong>Switched Memory</strong><br>IgD⁻ CD27⁺</td></tr>
+</table>
+
+```
+  → Gate on the IgD⁻CD27⁻ (lower-left) quadrant = DN B cells
   
 STEP 6 ─ DN SUBGATING (CD21 vs CD11c)
   FITC (CD21) vs PE (CD11c) — within DN gate only
-  ┌──────────────────┬───────────────────┐
-  │ DN1-like         │                   │
-  │ CD21⁺ CD11c⁻     │ CD21⁺ CD11c⁺      │
-  ├──────────────────┼───────────────────┤
-  │ DN3-like         │ ★ DN2-phenotype ★│
-  │ CD21⁻ CD11c⁻     │ CD21⁻ CD11c⁺      │
-  └──────────────────┴───────────────────┘
+```
+
+<table>
+<tr><td><strong>DN1-like</strong><br>CD21⁺ CD11c⁻</td><td>CD21⁺ CD11c⁺</td></tr>
+<tr><td><strong>DN3-like</strong><br>CD21⁻ CD11c⁻</td><td><strong>★ DN2-phenotype ★</strong><br>CD21⁻ CD11c⁺</td></tr>
+</table>
+
+```
   → DN2-phenotype = CD21⁻CD11c⁺
   → DN1-like = CD21⁺CD11c⁻
   → DN3-like = CD21⁻CD11c⁻
