@@ -63,7 +63,7 @@ The authors conclude that plasmablasts represent a small, non-representative sub
 
 ## Concepts Addressed
 
-[[Memory B Cell]], [[Somatic Hypermutation]], [[Extrafollicular Response]], [[Germinal Center]], [[Class Switch Recombination]]
+[[Memory B Cell]], [[Somatic Hypermutation]], [[Extrafollicular Response]], [[Germinal Center]], [[Class Switch Recombination]], [[Original Antigenic Sin]]
 
 ## Relevance & Notes
 

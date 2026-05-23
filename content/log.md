@@ -2,6 +2,16 @@
 
 ---
 
+## [2026-05-23] thicken | OAS and ADE concept pages — Category 5 thin page resolution
+
+**Scope:** Both pages expanded from 2 sources each to 7 (OAS) and 5 (ADE). Deep lint Category 5 resolved.
+**OAS (Original Antigenic Sin):** Added 5 Key Points bullets (GodoyLozano2016 lower SHM, Parameswaran2013 convergent CDR3s, Appanna2016 selective E-specific recruitment, Bhattacharya2016 isotype-fate segregation, Ansari2025 Tph recall engine). Added 1 Contradiction (GarciaBates2013 infecting-serotype dominance as counter-evidence). Page reframed from "OAS in dengue" to "OAS in dengue is contested/conditional."
+**ADE (Antibody-Dependent Enhancement):** Added 4 Key Points bullets (GarciaBates2013 PRNT₅₀ disconnect, Ansari2025 nAb paradox replication, Woodruff2020 cross-disease nAb paradox, Bhattacharya2016 PB insufficiency). Updated Contradictions to note nAb paradox as cross-disease pattern with explicit gap: no study has assayed ADE activity of EF-phenotype-derived antibodies.
+**Source page back-links added:** GarciaBates2013 (→OAS, ADE), GodoyLozano2016 (→OAS), Appanna2016 (→OAS), Ansari2025 (→OAS, ADE), Woodruff2020 (→ADE).
+**Pages edited:** 9 (2 concept, 5 source, index, log).
+
+---
+
 ## [2026-05-23] deep-lint-fix | Concepts folder — 4 categories, 24 fixes applied
 
 **Scope:** All 7 concept pages audited by 4 parallel sub-agents (structural, bidirectional links, content quality, council cross-check). Full report in `tempstate-lint.md`.

@@ -72,6 +72,8 @@ B cells in dengue patients showed increased proliferation (Ki-67⁺), activation
 - [[Somatic Hypermutation]] (implied — cross-serotype reactivity and anamnestic kinetics imply affinity-matured repertoire; SHM not directly measured)
 - [[Class Switch Recombination]] — IgG-dominant plasmablast output in secondary infection
 - [[Memory B Cell]] — naive B cell contraction, atypical memory identified
+- [[Original Antigenic Sin]] — infecting-serotype preference (counter-evidence to OAS); cross-serotype reactivity
+- [[Antibody-Dependent Enhancement]] — PRNT₅₀ disconnect; massive non-neutralising antibody output
 
 ## Relevance & Notes
 

@@ -25,7 +25,7 @@ Persistent operational context for the **extrafollicular B cell dynamics in deng
 
 ## Queue
 
-**Next session first step:** Thicken OAS and ADE concept pages (Category 5 from deep lint). See `tempstate-lint.md` for source suggestions.
+**Next session first step:** Resume paper ingest queue (balakrishnan2011, kwissa2014, woda2016, zompi2012).
 
 Papers waiting to be ingested (add new entries at the top):
 
@@ -179,7 +179,7 @@ Tracked issues, gaps, and follow-ups. Resolve and remove as addressed.
 - [ ] **[2026-05-18] William2002 — EF tolerance escape and dengue autoreactivity.** The paper proposes that EF mutation escapes GC tolerance checkpoints because FDCs and Fas-mediated apoptosis are absent at EF sites. If this mechanism operates in dengue, it could explain the VH4-34/VH1-69 autoreactive enrichment in dengue plasmablasts (Appanna2016) and the transient autoreactivity model (Sanz2025). Testing requires paired BCR sequencing + autoreactivity assays on sorted acute dengue B cells.
 - [ ] **[2026-05-19] Bhattacharya2016 — tissue-resident PBs in secondary dengue?** The commentary raises the possibility that additional PB subsets form during secondary dengue but are retained in secondary lymphoid organs rather than circulating. If so, circulating PB analysis (Wrammert2012, GarciaBates2013) would undercount the total PB response, and the tissue-retained subset might have different specificities (e.g., prM/NS rather than E). No dengue study in the wiki addresses this — would require paired blood + tissue sampling.
 - [ ] **[2026-05-14 deep lint] Evidence weight annotations — early-ingested pages.** ~33% of Key Points bullets across Wei2007/Tipton2015-era entity pages lack study type and sample size annotations. Concentrated in CD24, IgD, CD10, IgM, IgA, B220, Double-Negative B Cell, CD38, CD27. Low priority maintenance task.
-- [ ] **[2026-05-14 deep lint] OAS/ADE pages — single-source, thickenable.** Both concept pages are Priyamvada2016-only. GarciaBates2013 (serotype cross-reactivity, PRNT disconnect) and Woodruff2020 (neutralizing Ab paradox) could thicken ADE; GarciaBates2013 (infecting-serotype preference patterns) could thicken OAS. Curator to direct.
+- [x] **[2026-05-14 deep lint, resolved 2026-05-23] OAS/ADE pages — thickened.** OAS: 2→7 sources (added GodoyLozano2016, Parameswaran2013, Appanna2016, Bhattacharya2016, Ansari2025, GarciaBates2013). ADE: 2→5 sources (added GarciaBates2013, Ansari2025, Woodruff2020). GarciaBates2013 added as OAS counter-evidence (infecting-serotype dominance in Brazilian cohort).
 - [ ] **[2026-05-14 deep lint] Missing cross-folder links (method↔concept).** Method pages rarely link to concept pages and vice versa (e.g., BCR Sequencing ↛ Somatic Hypermutation). Low priority structural improvement.
 - [ ] **[2026-05-15 council] Woodruff2020 — CXCR3 entity page should note pre-PB vs. mature ASC distinction.** Woodruff2020 documents CXCR5↓/CXCR3↑ on pre-PB EF populations (aN, DN2), not on mature ASCs. The CXCR3 entity page currently does not make this distinction — relevant for interpreting Ansari2025 dengue CXCR3 data.
 - [ ] **[2026-05-15 council] Woodruff2020 — naive vs. memory EF precursors cross-disease gap.** The naive-derived, germline-dominant EF response in COVID-19 (primary infection) contrasts with memory-dominated, high-SHM response in secondary dengue (Priyamvada2016). Wiki should explicitly flag this distinction: Woodruff2020 benchmarks what a *primary* EF ASC response looks like. Whether primary dengue produces a similar germline-dominant pattern is untested.

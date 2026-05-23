@@ -61,7 +61,7 @@ The authors propose a dual-pathway model: concurrent GC-dependent and GC-indepen
 
 ## Concepts Addressed
 
-[[Somatic Hypermutation]], [[Extrafollicular Response]], [[Germinal Center]], [[Class Switch Recombination]], [[Memory B Cell]]
+[[Somatic Hypermutation]], [[Extrafollicular Response]], [[Germinal Center]], [[Class Switch Recombination]], [[Memory B Cell]], [[Original Antigenic Sin]]
 
 ## Relevance & Notes
 

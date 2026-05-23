@@ -99,6 +99,8 @@ Severity analysis revealed that CXCR5⁻PD-1⁺ cell frequency and anti-NS1/anti
 - [[Memory B Cell]] — preferential Tph-driven differentiation of memory (not naive) B cells
 - [[Class Switch Recombination]] — class-switched memory B cells as Tph responders
 - [[Somatic Hypermutation]] — implied by memory B cell origin of plasmablasts
+- [[Original Antigenic Sin]] — Tph→memory B cell→PB axis as cellular engine of OAS recall
+- [[Antibody-Dependent Enhancement]] — neutralising Ab paradox (FRNT₅₀ flat by severity, binding IgG elevated)
 
 ## Relevance & Notes
 

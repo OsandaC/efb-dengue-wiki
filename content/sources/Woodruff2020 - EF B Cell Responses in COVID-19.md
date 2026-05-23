@@ -79,7 +79,7 @@ Single-cell V(D)J sequencing of ASCs from a CoV-A patient revealed a balanced Ig
 
 ## Concepts Addressed
 
-[[Extrafollicular Response]], [[Germinal Center]], [[Somatic Hypermutation]], [[Class Switch Recombination]], [[Memory B Cell]]
+[[Extrafollicular Response]], [[Germinal Center]], [[Somatic Hypermutation]], [[Class Switch Recombination]], [[Memory B Cell]], [[Antibody-Dependent Enhancement]]
 
 ## Relevance & Notes
 
