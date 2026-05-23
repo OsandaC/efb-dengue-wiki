@@ -2,7 +2,7 @@
 type: concept
 tags: [original-antigenic-sin, cross-reactivity, memory-b-cells, secondary-dengue, immune-imprinting]
 created: 2026-05-10
-updated: 2026-05-19
+updated: 2026-05-23
 sources: 2
 ---
 
@@ -15,7 +15,7 @@ Original antigenic sin (OAS), also termed "immune imprinting," describes the phe
 ## Key Points from Literature
 
 - **Direct evidence of OAS in secondary dengue plasmablast response:** In 2/4 patients with secondary DENV2 infection, sorted plasmablast-derived mAbs preferentially neutralised DENV1 over the infecting DENV2. DENV1-specific mAbs were more potent (median FRNT₅₀ = 0.16 µg/ml) than DENV2-specific mAbs (median FRNT₅₀ = 1.2 µg/ml). The DENV1 bias was reflected at the serum level (FRNT₅₀) and at the mAb level in both binding (capture virus ELISA) and neutralisation. DENV1-specific mAbs did not bind monomeric rE but showed clear DENV1 preference on intact virions, with low-level DENV2 cross-reactivity sufficient to trigger their activation during DENV2 infection (see [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]], n=4 secondary DHF, 53 mAbs).
-- **OAS is consistent with memory origin of the plasmablast response:** The high SHM (mean 18.1 VH mutations), CDR R:S >2.9 (antigenic selection), and 23% clonal relatedness in these plasmablasts all support recall of affinity-matured memory B cells from prior DENV exposure. The OAS-biased neutralisation pattern is the functional consequence of this memory recall — the strongest evidence that secondary dengue plasmablasts are memory-derived (see [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]]).
+- **OAS is consistent with memory origin of the plasmablast response:** The high SHM (mean 18.1 VH mutations), CDR R:S >2.9 (antigenic selection), and 23% clonal relatedness in these plasmablasts all support recall of affinity-matured memory B cells from prior DENV exposure. The OAS-biased neutralisation pattern is the functional consequence of this memory recall — the strongest evidence that secondary dengue plasmablasts are memory-derived (see [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]], n=4 secondary DHF, single-cell VH sequencing of sorted PBs, 53 mAbs).
 
 ## Contradictions & Debates
 
@@ -23,7 +23,7 @@ Original antigenic sin (OAS), also termed "immune imprinting," describes the phe
 - The low SHM reported by [[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]] in secondary dengue (lower than primary) is consistent with an alternative interpretation: that OAS activates germline-coded cross-reactive B cells that bypass GC maturation, rather than recalling heavily mutated GC-derived memory. Priyamvada2016 and GodoyLozano2016 may be capturing different subsets — high-SHM memory-derived PBs (sorted by Priyamvada) vs. the global IgG pool including low-SHM de novo PBs (bulk sequencing by GodoyLozano).
 
 ## Related Pages
-[[Memory B Cell]], [[Plasmablast]], [[Antibody-Dependent Enhancement]], [[Somatic Hypermutation]], [[IgG]], [[Extrafollicular Response]]
+[[Memory B Cell]], [[Plasmablast]], [[Antibody-Dependent Enhancement]], [[Somatic Hypermutation]], [[IgG]], [[Extrafollicular Response]], [[Germinal Center]], [[Class Switch Recombination]]
 
 ## Sources
 - [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]]

@@ -2,8 +2,8 @@
 type: method
 tags: [flow-cytometry, immunophenotyping, B-cell-subsets, PBMC, panel-design]
 created: 2026-05-02
-updated: 2026-05-10
-sources: 13
+updated: 2026-05-21
+sources: 15
 ---
 
 # Conventional Flow Cytometry
@@ -40,6 +40,9 @@ In dengue and related infection studies, conventional flow cytometry has been us
 - **Appanna2016 panel (5-marker sort panel + antigen-specific probes, FACSAria) — first dengue panel with CD138 and live virus antigen probes:** Markers: CD19, CD20, CD27, CD38, CD138 for B cell subset sorting; Alexa Fluor-labelled live DENV-1, -2, -3 virions for antigen-specific MBC identification. Gating: (1) Plasmablasts: CD19⁺CD20⁻CD27^hiCD38^hi (acute phase, days 3–7); (2) DENV-specific MBCs: CD19⁺CD20⁺CD27⁺, gated by binding to fluorescent live DENV particles (convalescence, days 16–166). **Includes CD138** — first dengue study to incorporate this marker in sorting, though used only to refine subset boundaries rather than CD138⁺/CD138⁻ ASC subdivision (cf. Tipton2015, Woodruff2020). **Lacks IgD** (fails Sanz2025 audit — cannot distinguish naive from unswitched memory within CD27⁻). **Lacks CD21, CD11c, CXCR5, T-bet** (cannot resolve DN subsets or EF populations). The live virus antigen probe approach enables direct identification of DENV-binding B cells without recombinant protein; however, it selects for surface-accessible epitopes on intact virions and cannot resolve specificity for individual viral proteins (E vs. prM vs. NS1) by flow cytometry alone (see [[Appanna2016 - Plasmablasts as Subset of Memory B Cell Pool]], FACSAria, n=12 dengue).
 - **Singh2026 panel (12-color, BD LSRFortessa) — first dengue MBC subset panel with antigen-specific detection:** Dump: CD3-V500, CD14-V500, CD16-V500. Viability: Aqua L/D. B cell: CD19-APC-Cy7. Subset: CD20-PerCP-Cy5.5, IgD-V450, IgM-BV605, IgG-BV786, CD21-PE-CF594, CD27-PE-Cy7, CD38-PE. Antigen probes: AF488-DENV (1+2+3), AF647-DENV (1+2+3) — 6-antigen cocktail using whole virions grown on Vero-furin cells, dual-labelled for double-positive gating. DENV-specific B cells defined as AF488+/AF647+ double-positive. Defines 9 B cell subsets: naive (CD20+/IgD+), IgD+/IgM+ naive, class-switched MBC (CD20+/IgD⁻), activated MBC (CD20+/IgD⁻/CD27+/CD21⁻), resting MBC (CD20+/IgD⁻/CD27+/CD21+), atypical MBC (CD20+/IgD⁻/CD27⁻/CD21⁻), IgG+ MBC (CD20+/IgD⁻/IgG+), IgM+ MBC (CD20+/IgD⁻/IgM+), IgD⁻/IgM⁻/IgG⁻ MBC. FMO for CD21 and CD27; no-antigen control for DENV-specific threshold. **Includes IgD** (passes Sanz2025 audit); **lacks CXCR5 and CD11c** (cannot resolve DN1/DN2/DN3) (see [[Singh2026 - DENV-Specific Memory B Cell Subsets]]).
 
+- **Sutton2021 validation panel (multi-color) — flow cytometry validation of transcriptomic clusters:** A conventional flow cytometry panel including CD19, CD20, CD21, CD27, CD11c, IgD, IgG was applied to 18 donors (11 malaria-exposed, 7 non-exposed) to validate the transcriptomically-defined alternative lineage from scRNA-seq/CITE-seq. This confirmed that CD11c⁺ cells are present in non-exposed donors and that the alternative lineage is a substantial (~20%) component of the B cell repertoire. The panel was designed to test the CITE-seq prediction that CD11c outperforms CD21⁻CD27⁻ as a gating marker (see [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]], n=18 donors).
+- **CITE-seq reveals CD21⁻CD27⁻ gating captures only ~45% of transcriptomic atBCs:** This finding (see [[CITE-seq]] for details) has direct implications for all flow cytometry studies using CD21⁻CD27⁻ or IgD⁻CD27⁻ gates — including every dengue panel in this wiki. Studies using these gates have likely underestimated the true size of the atypical/alternative lineage B cell population (see [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]).
+
 ## Contradictions & Debates
 
 - Conventional panels with limited colour capacity may undercount DN B cells or conflate them with transitional B cells if CD10 or CD24 are not included. The Wei2007 data (Fig. 2B) show that DN cells are CD10⁻, which resolves this ambiguity — but earlier studies using 4- or 5-color panels may have misclassified these cells.
@@ -63,3 +66,5 @@ In dengue and related infection studies, conventional flow cytometry has been us
 - [[GarciaBates2013 - Plasmablast Response and Dengue Severity]]
 - [[Appanna2016 - Plasmablasts as Subset of Memory B Cell Pool]]
 - [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]]
+- [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]
+- [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]

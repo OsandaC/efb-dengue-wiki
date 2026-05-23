@@ -2,8 +2,8 @@
 type: entity
 tags: [transcription-factors, T-bet, TBX21, atypical-b-cells, DN2, age-associated-b-cells, extrafollicular]
 created: 2026-05-02
-updated: 2026-05-08
-sources: 5
+updated: 2026-05-21
+sources: 7
 ---
 
 # T-bet
@@ -32,7 +32,9 @@ T-bet (encoded by *TBX21*) is a T-box transcription factor originally identified
 - **T-BET autoregulatory loop confirmed by ChIP-seq:** ENCODE ChIP-seq data showed T-BET binding at an upstream distal element of its own TBX21 locus, with enhanced chromatin accessibility at this element in both aN and DN2 cells. This confirms the autoregulatory positive feedback suggested by Sanz2025 (see [[Scharer2019 - Epigenetic Programming in SLE B Cells]], ATAC-seq + ENCODE ChIP-seq from GM12878 B cells).
 - **T-BET binding confirmed at key DN2 marker genes:** T-BET ChIP-seq peaks mapped to accessible chromatin at GAS7, TNFRSF1B, ITGAX (CD11c), ZAP70, and TBX21 loci — all in regions specifically accessible in aN and DN2 cells (see [[Scharer2019 - Epigenetic Programming in SLE B Cells]]).
 
+- **T-bet⁺ CD4⁺ T cell expansion in COVID-19 lymphoid tissue — TH1 skewing at the anatomical level:** Multi-color immunofluorescence of post-mortem COVID-19 lymph nodes and spleens showed T-bet⁺ CD4⁺ T cells consistently increased in both organs, in both early and late disease. TH2 (GATA-3⁺) decreased; TH17 (RORγt⁺) variably increased. This TH1 skewing at the tissue level is consistent with the TNF-α-mediated GC TFH block — T-bet expression in CD4⁺ T cells is associated with IFN-γ and TNF-α production, which may suppress Bcl-6 expression required for GC-TFH differentiation (see [[Kaneko2020 - GC Loss and TFH Block in COVID-19]], n=11 COVID + controls, multi-color immunofluorescence).
 - **T-bet expected but not directly stained in acute dengue:** CD21⁻CD11c⁺ B cells within the IgD⁻CD27⁻ gate are significantly expanded during acute dengue — a phenotype consistent with T-bet⁺ DN2 identity based on the Jenks2018, Woodruff2020, and Scharer2019 characterisations. However, T-bet was not directly stained in this study. Formal confirmation of T-bet expression on dengue EF B cells remains outstanding and is the single most important pending phenotypic validation (see [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]], n=170 acute dengue, multi-color FCM without intracellular T-bet).
+- **TBX21 (T-bet) defines the alternative B cell lineage at the transcriptomic level:** scRNA-seq of >12,000 B cells placed *TBX21* expression as one of three core genes (alongside *ITGAX*/CD11c and *FCRL5*) defining the alternative lineage. T-bet expression was consistent across all alternative lineage clusters (atBC1, atBC2, atBC3, MBC1) and absent from the classical lineage (MBC2, MBC3, actBC), confirming T-bet as a lineage-defining rather than activation-state marker in this framework (see [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]], n=4, 10x Chromium scRNA-seq).
 
 ## Contradictions & Debates
 
@@ -47,3 +49,5 @@ None documented in current wiki sources.
 - [[Woodruff2020 - EF B Cell Responses in COVID-19]]
 - [[Scharer2019 - Epigenetic Programming in SLE B Cells]]
 - [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]
+- [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]
+- [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]

@@ -2,6 +2,57 @@
 
 ---
 
+## [2026-05-23] deep-lint-fix | Concepts folder — 4 categories, 24 fixes applied
+
+**Scope:** All 7 concept pages audited by 4 parallel sub-agents (structural, bidirectional links, content quality, council cross-check). Full report in `tempstate-lint.md`.
+**Categories fixed:**
+- **Category 1 (Mechanical):** Cross-links added to OAS (→GC, CSR), ADE (→GC, SHM), CSR (→MBC, OAS). Evidence weight annotations added to OAS (1 bullet) and ADE (2 bullets). Anolik2004 added to SHM/CSR sources with frontmatter count updates.
+- **Category 2 (Propagation):** GC page CXCL13 hedging propagated from EF page (HIGH — was a direct contradiction). SHM/CSR Woodruff2020 n=1 caveats added. SHM dual-pathway labeled "working hypothesis". CSR Contradictions & Debates populated (was empty).
+- **Category 3 (Content rewordings):** 3 HIGH + 7 MEDIUM applied to EF Response page. Key changes: Woodruff n=1 scVDJ "confirms"→"consistent with"; nAb paradox "establishes"→"suggests" + n=3-4 caveat; self-limited autoreactivity generalizability caveat; Tph sampling confounder noted; Th1 signature mismatch noted; Jenks2018 "mapped"→"proposed"; TRAF5 "explains"→"correlates with"; SLE comparison "nearly indistinguishable"→"phenotypically similar"; alternative lineage presence ≠ non-pathological function; coculture memory T cell caveat added to EF + MBC pages.
+- **Category 4 (Verification):** Wrammert2012 GC link confirmed (implied, no bullet needed). Anolik2004 added to SHM/CSR. Priyamvada2016→GC bidirectional link fixed.
+**Pages edited:** Germinal Center, Somatic Hypermutation, Class Switch Recombination, Original Antigenic Sin, Antibody-Dependent Enhancement, Extrafollicular Response, Memory B Cell, Priyamvada2016 source page.
+**Deferred:** Category 5 (thin page thickening for OAS/ADE) — curator-directed. Item #27 (8 content coverage gaps) — needs source-page verification. Item #28 (EF Dengue Context non-standard section) — intentional.
+
+---
+
+## [2026-05-22] ingest | Kaneko2020 - GC Loss and TFH Block in COVID-19
+
+**Source:** `raw/Kaneko2020.pdf` (DOI: 10.1016/j.cell.2020.08.025)
+**Key contribution:** Post-mortem tissue (LN/spleen, n=11 COVID + controls) + peripheral blood (n=68) analysis demonstrating complete GC absence in COVID-19. Bcl-6⁺ GC B cells and Bcl-6⁺ GC-TFH absent despite AID⁺ B cell preservation — establishing that SHM/CSR enzymatic machinery operates at EF sites. TNF-α accumulation proposed as the mechanism blocking TFH differentiation. TH1 (T-bet⁺) CD4⁺ expansion in tissue. FDC network intact. 13-color B cell panel (BD Symphony) confirms DN, aN, PB expansion; dual-fluorophore probes demonstrate SARS-CoV-2 RBD specificity in aN, DN2, DN3, and PB populations. This is the tissue-level histopathological foundation for the EF dominance model in acute viral infection.
+**Pages created:** 6 (source page, Bcl-6, AID, TNF-alpha, ICOS, Multi-color Immunofluorescence)
+**Pages updated:** 23 (10 with substantive Key Points: Germinal Center, Extrafollicular Response, Double-Negative B Cell, DN2 B Cell, DN3 B Cell, Plasmablast, Activated Naive B Cell, T-bet, CXCR5, Notable Findings; 11 source-line-only entities: CD19, CD27, IgD, IgG, CD38, CD21, CD11c, CD138, CD10, Somatic Hypermutation, Class Switch Recombination; 2 method source-line-only: Conventional Flow Cytometry, FACS Sorting)
+**Notable Finding:** AID preserved without Bcl-6 — enzymatic machinery for antibody diversification operates outside GCs in fatal COVID-19 (entry #15)
+**Citations:** Semantic Scholar 649, CrossRef 662 (retrieved 2026-05-22)
+
+---
+
+## [2026-05-22] deep lint | Health check (90 pages, 18 sources)
+
+**Scope:** Full wiki audit — parallel sub-agents scanned sources/ (18 files), entities/ + concepts/ (48 files), methods/ + analyses/ (24 files), plus log.md and state.md.
+
+**Findings:**
+- **Sources (18):** All clean. Full frontmatter, template compliance, cross-references intact. Minor notes: Singh2026 DOI format atypical (bioRxiv); Ansari2025 has inline council caveats (intentional, not a compliance issue).
+- **Entities + Concepts (48):** All structurally sound. No content displacement (insertion-order guard holding since 2026-05-08 fix). No source count mismatches. No broken wikilinks. No orphans.
+- **Methods + Analyses (24):** All clean. Source counts accurate. Template compliance complete.
+- **Thin pages (sources ≤ 1):** 8 entities (B220, CD23, CD71, ATF3, EGR, HOPX, Peripheral Helper T Cell, TOX2) + 9 methods (Spectral FCM, PRNT, Serum Proteomics, Phospho-Flow, AIM Assay, scRNA-seq, T-B Coculture, IHC, RRBS, CITE-seq) — all previously tracked; will thicken with future ingests.
+- **Evidence weight annotations:** ~20 Key Points bullets across early-ingested entity pages (Wei2007/Tipton2015 era) still lack inline n= and study type. Previously tracked watch item.
+- **Curator Highlights refreshed:** 2 highlights (up from 1) — new highlight in DN2 Gating Strategy added to snapshot.
+
+**No new structural defects found. Wiki is in excellent health.**
+
+---
+
+## [2026-05-22] ingest | Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection
+
+**Source:** `raw/Sutton2021.pdf` (DOI: 10.1016/j.celrep.2020.108684)
+**Key contribution:** scRNA-seq (Smart-seq2 + 10x Chromium) + CITE-seq defines "alternative lineage" (atBC1-3 + MBC1) vs "classical lineage" in malaria-exposed and healthy donors. T-bet/CD11c/FCRL5 as defining markers. CD21⁻CD27⁻ gating captures only 44.7% of transcriptomic atBCs — CD11c is the best single marker. ~20% of B cells in healthy donors belong to alternative lineage. No PC maintenance genes in atBCs — challenges EF pre-PB model (context-dependent reconciliation with Jenks2018). MBC1 = quiescent alternative memory (confirms Sanz2025/Faliti2024 prediction). IgG3 enriched in alternative lineage. Vaccination primes alternative lineage.
+**Pages created:** 2 (source page, CITE-seq method page)
+**Pages updated:** 21 (12 entities: Double-Negative B Cell, DN2 B Cell, CD11c, CD21, CD27, CXCR3, FCRL5, T-bet, IgG, Plasmablast, IRF4, BLIMP-1; 4 concepts: Extrafollicular Response, Memory B Cell, Germinal Center, Somatic Hypermutation; 5 methods: Single-Cell RNA Sequencing, Conventional Flow Cytometry, FACS Sorting, BCR Sequencing + CITE-seq [new])
+**Notable Finding:** Alternative lineage abundant (~20%) in healthy donors and missed by CD21⁻CD27⁻ gating (entry #14)
+**Citations:** Semantic Scholar 186, CrossRef 228 (retrieved 2026-05-21)
+
+---
+
 ## [2026-05-20] analysis | DN2 Gating Strategy
 
 **Type:** Council-reviewed analysis — gating strategy design for DN/DN2-phenotype isolation from dengue PBMCs.

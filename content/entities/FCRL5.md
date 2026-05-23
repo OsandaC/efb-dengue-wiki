@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, Fc-receptor-homologs, FCRL5, DN2, atypical-b-cells, BCR-signalling]
 created: 2026-05-02
-updated: 2026-05-03
-sources: 2
+updated: 2026-05-21
+sources: 3
 ---
 
 # FCRL5
@@ -21,6 +21,7 @@ FCRL5 (Fc Receptor-Like 5; also FcRH5) is a member of the Fc receptor-like famil
 - **FcRL5 as therapeutic target:** FCRL5 is one of two preferred surface targets (alongside [[SLAMF7]]) for selective ABC/DN2 depletion within the B cell compartment — sparing resting naive and conventional memory cells (see [[Sanz2025 - Human Atypical B Cells Overview]], review).
 - **T-bet⁺/FcRL5⁺ defines memory ABC within CD27⁺ compartment:** In influenza vaccination responses, T-bet⁺/FcRL5⁺ CD27⁺ memory ABC cells are poised for ASC differentiation and correlate with long-lived antibody responses, while T-bet⁻/FcRL5⁻ canonical memory cells have stem-like central memory properties (see [[Sanz2025 - Human Atypical B Cells Overview]], review citing Nellore et al. 2023).
 - **T-bet or FcRL5 can substitute for CD11c in gating:** These markers identify similar populations when used vs. CXCR5 in the DN gate, providing flexibility for panel design (see [[Sanz2025 - Human Atypical B Cells Overview]], review, Figure 2).
+- **FCRL5 is a defining transcriptomic marker of the alternative B cell lineage:** scRNA-seq placed *FCRL5* among the core genes defining the alternative lineage (alongside *TBX21* and *ITGAX*/CD11c). FCRL5 expression was consistent across atBC1, atBC2, atBC3, and MBC1 clusters, confirming it as a lineage-level marker rather than an activation-state marker (see [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]], n=4, 10x Chromium scRNA-seq).
 
 ## Contradictions & Debates
 
@@ -32,3 +33,4 @@ None documented in current wiki sources.
 ## Sources
 - [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]
 - [[Sanz2025 - Human Atypical B Cells Overview]]
+- [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]

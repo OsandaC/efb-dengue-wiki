@@ -2,8 +2,8 @@
 type: entity
 tags: [b-cell-subsets, DN2, extrafollicular, T-bet, CD11c, pre-plasmablast, SLE, comparative-immunology]
 created: 2026-05-02
-updated: 2026-05-08
-sources: 5
+updated: 2026-05-21
+sources: 7
 ---
 
 # DN2 B Cell
@@ -48,6 +48,12 @@ DN2 cells are pre-plasmablasts: they express a T-bet/ZEB2 transcriptional progra
 
 - **FIRST DENGUE EVIDENCE — CD21⁻CD11c⁺ B cells in acute dengue:** Within the IgD⁻CD27⁻ (DN) gate, CD21⁻CD11c⁺ B cells — phenotypically consistent with DN2 — are significantly expanded in acute dengue vs. HD and convalescence. These cells emerge in the context of massive [[Peripheral Helper T Cell]] (CXCR5⁻PD-1⁺) activation providing [[IL-21]], the same cytokine required for the aNAV→DN2→plasmablast pathway in SLE. Formal confirmation requires T-bet and CXCR5 staining within the DN gate, but the CD21/CD11c phenotype and cytokine milieu are consistent with DN2 identity (see [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]], multi-color FCM, n=170 acute dengue adults).
 
+- **SARS-CoV-2 antigen specificity of DN2 confirmed by dual-fluorophore RBD probes:** In the peripheral blood of COVID-19 patients, dual-fluorophore RBD probe staining demonstrated that DN2 cells (alongside DN3, aN, SWM, and PB populations) contain SARS-CoV-2-specific cells. DN2 and DN3 were CXCR5-low; DN1 and DN4 were CXCR5-high. This independent confirmation (separate cohort from Woodruff2020) establishes that the DN2 expansion in COVID-19 is antigen-driven, not bystander. The parallel tissue study showed IgD⁻CD27⁻ DN B cells present at both follicular and extra-follicular sites with T-B conjugates (see [[Kaneko2020 - GC Loss and TFH Block in COVID-19]], blood: n=68, 13-color FCM + RBD probes; tissue: n=11, multi-color immunofluorescence).
+- **ALTERNATIVE LINEAGE FRAMEWORK — DN2/atBC cells are NOT pre-plasmablasts in healthy/infection contexts:** scRNA-seq of >12,000 B cells from malaria-exposed and non-exposed donors placed atBC populations (which overlap with DN2 by phenotype: T-bet⁺, CD11c⁺, FCRL5⁺) on an "alternative lineage" pseudotime branch, separate from classical memory. No atBC cluster upregulated PC maintenance genes (*XBP1*, *IRF4*, *PRDM1*), and PCs were detached from the pseudotime manifold with no intermediate population. Sutton reconciles this with Jenks2018 as context-dependent: in SLE, chronic TLR7 can drive atBCs to PCs, but in healthy/vaccination/infection contexts they are an alternative memory lineage rather than obligate pre-plasmablasts (see [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]], n=4, 10x Chromium).
+- **MBC1 cluster = quiescent alternative lineage memory ("memory DN2"):** The MBC1 cluster at the base of the alternative lineage pseudotime branch represents a quiescent memory state within the T-bet⁺/CD11c⁺ lineage. This provides transcriptomic evidence for the "memory DN2" population predicted by Sanz2025 and Faliti2024 (see [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]], n=4, 10x Chromium).
+- **CD21⁻CD27⁻ gating captures only ~45% of transcriptomic atBCs:** CITE-seq demonstrated that the conventional DN gate misses the majority of transcriptomically-defined alternative lineage cells. CD11c protein is a superior single marker. This implies prior estimates of DN2 frequency by flow cytometry are underestimates (see [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]], n=4, CITE-seq).
+- **Alternative lineage primed by vaccination:** PfSPZ vaccination (n=15) and influenza vaccination (n=9) both activate alternative lineage B cells, with repeated boosting shifting cells toward increasingly atypical surface phenotype (CD21⁻CD27⁻). This establishes that the DN2/atBC phenotype is a normal vaccination response, not restricted to pathological contexts (see [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]).
+
 ## Contradictions & Debates
 
 - DN2 cells were defined in SLE, where dysregulated TLR7 signalling is a disease-intrinsic feature. Whether the same DN2 phenotype and TLR7 hyper-responsiveness characterise EF B cells in acute viral infections (dengue, SARS-CoV-2, malaria) is not yet established. In infections, the TLR7 ligand is exogenous viral ssRNA rather than endogenous self-RNA; the signalling outcome may differ.
@@ -64,3 +70,5 @@ DN2 cells are pre-plasmablasts: they express a T-bet/ZEB2 transcriptional progra
 - [[Woodruff2020 - EF B Cell Responses in COVID-19]]
 - [[Scharer2019 - Epigenetic Programming in SLE B Cells]]
 - [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]
+- [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]
+- [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]

@@ -9,7 +9,7 @@ citations_semantic_scholar: 1
 citations_crossref: 1
 citations_retrieved: 2026-05-19
 created: 2026-05-19
-updated: 2026-05-19
+updated: 2026-05-22
 ---
 
 # Bhattacharya2016 - Memory B Cell Subset Selection in Secondary Dengue
@@ -51,7 +51,7 @@ None (commentary — no original experimental methods).
 
 ## Concepts Addressed
 
-[[Memory B Cell]], [[Original Antigenic Sin]], [[Antibody-Dependent Enhancement]], [[Germinal Center]]
+[[Memory B Cell]], [[Original Antigenic Sin]], [[Antibody-Dependent Enhancement]], [[Germinal Center]], [[Extrafollicular Response]]
 
 ## Relevance & Notes
 

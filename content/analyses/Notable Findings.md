@@ -2,12 +2,29 @@
 type: analysis
 tags: [meta, notable-findings]
 created: 2026-05-02
-updated: 2026-05-10
+updated: 2026-05-22
 ---
 
 # Notable Findings
 
 A running log of atomic observations from the literature that are striking, unexpected, or carry implications beyond the paper they came from. See CLAUDE.md → §Notable Findings for the entry bar and format.
+
+---
+
+## [2026-05-22] Alternative lineage B cells are abundant in healthy donors and missed by conventional CD21⁻CD27⁻ gating
+
+**Source:** [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]
+
+**Finding:** scRNA-seq + CITE-seq of >12,000 B cells reveals that ~20% of B cells in healthy, non-malaria-exposed Australian donors belong to a transcriptomically distinct "alternative lineage" (atBC1, atBC2, atBC3, MBC1) defined by T-bet, CD11c, and FCRL5 expression. The conventional CD21⁻CD27⁻ flow cytometry gate — the standard method for identifying these cells across malaria, SLE, COVID-19, and dengue studies — captures only 44.7% of the transcriptomically-defined atBC1 population. CD11c protein is the best single surface marker.
+
+**Why notable:** This finding has two major implications for the wiki. First, it means every prior study using CD21⁻CD27⁻ or IgD⁻CD27⁻ gates — including all dengue studies in this wiki — has substantially undercounted alternative lineage B cells. The ~20% prevalence in healthy donors reframes these cells from a pathology-driven expansion to a baseline population that is amplified (not created) by infection or autoimmunity. Second, the absence of plasma cell maintenance genes (*XBP1*, *IRF4*, *PRDM1*) in any atBC cluster, combined with pseudotime disconnection of plasma cells, argues against the Jenks2018 model that atypical B cells are obligate EF pre-plasmablasts — though Sutton's own Discussion reconciles this as context-dependent (SLE TLR7 may drive PC fate; healthy/infection contexts maintain alternative memory identity). This context-dependent framing — where the same cells can be either memory or pre-plasmablast depending on the inflammatory milieu — is directly relevant to dengue, where the immune environment during severe secondary infection shares features of both acute viral infection and autoimmune dysregulation.
+
+**Follow-up questions:**
+- How much have dengue studies using CD21⁻CD27⁻ gating underestimated alternative lineage cells? Would re-analysis with CD11c-based gating change the magnitude and kinetics reported by Ansari2025?
+- Is the context-dependent PC fate model applicable to severe secondary dengue, which shares features of immune dysregulation with SLE (high IL-6, TNF, IFN-γ)?
+- Does the MBC1 (quiescent alternative memory) population accumulate with repeated dengue exposure, potentially representing a reservoir for cross-reactive recall?
+
+**Related pages:** [[Double-Negative B Cell]], [[DN2 B Cell]], [[CD11c]], [[CD21]], [[CD27]], [[CITE-seq]], [[Conventional Flow Cytometry]], [[Extrafollicular Response]], [[Memory B Cell]]
 
 ---
 
@@ -262,5 +279,22 @@ A running log of atomic observations from the literature that are striking, unex
 - Does the IGHV1-2/IGHV1-69 bias in DWS+ correspond to specific cross-reactive or ADE-competent antibody clones?
 
 **Related pages:** [[Somatic Hypermutation]], [[Extrafollicular Response]], [[Germinal Center]], [[Memory B Cell]], [[Plasmablast]], [[IgG]], [[TLR7]], [[Class Switch Recombination]]
+
+---
+
+## [2026-05-22] AID preserved without Bcl-6 — the enzymatic machinery for antibody diversification operates outside germinal centers in fatal COVID-19
+
+**Source:** [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]
+
+**Finding:** In post-mortem COVID-19 lymph nodes and spleens, Bcl-6⁺ GC B cells were near-absent (LN: p<0.001; spleen: p<0.01 vs. controls), yet AID⁺ B cells were quantitatively preserved at normal levels — diffusely distributed throughout tissue rather than concentrated in GC structures. This dissociation (Bcl-6 lost, AID preserved) demonstrates that the enzymatic machinery for SHM and CSR continues to operate in the complete absence of germinal center formation.
+
+**Why notable:** The wiki's framework has established two independent lines of evidence for extrafollicular antibody diversification: the murine proof-of-concept (William2002: EF SHM at GC-comparable rates) and the human blood-level correlate (Woodruff2020: germline-dominant ASC repertoire in COVID-19). Kaneko2020 adds the missing middle layer — tissue-level histological evidence from human secondary lymphoid organs showing that AID expression persists at extrafollicular sites when GCs are ablated. Combined with the specific block in Bcl-6⁺ GC-TFH differentiation (not a general T cell deficiency — pre-GC TFH are present), this establishes a precise mechanism: TNF-α at the T-B interface prevents the final Bcl-6⁺ TFH maturation step → no GC formation → B cell activation continues via AID at EF sites → class-switched but low-SHM antibodies. For dengue, the key question is whether the cytokine storm during severe dengue (which includes elevated TNF-α) produces a partial version of this GC block — potentially explaining the paradoxically low SHM in acute dengue IgG (GodoyLozano2016).
+
+**Follow-up questions:**
+- Does severe dengue produce sufficient TNF-α to block Bcl-6⁺ GC-TFH differentiation, as occurs in COVID-19?
+- Is there a dose-response relationship: mild dengue with partial GC suppression (concurrent EF+GC per Ansari2025's CXCL13 data) vs. severe dengue with more complete GC ablation?
+- Can AID expression be measured in circulating B cells during acute dengue as a proxy for ongoing EF diversification?
+
+**Related pages:** [[AID]], [[Bcl-6]], [[TNF-alpha]], [[Germinal Center]], [[Extrafollicular Response]], [[Somatic Hypermutation]], [[Class Switch Recombination]]
 
 ---

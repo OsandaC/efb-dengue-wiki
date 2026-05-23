@@ -3,7 +3,7 @@ type: entity
 tags: [b-cell-subsets, DN3, pre-plasmablast, extrafollicular, COVID-19, SLE, IgG4-RD]
 created: 2026-05-03
 updated: 2026-05-04
-sources: 2
+sources: 3
 ---
 
 # DN3 B Cell
@@ -24,6 +24,7 @@ DN3 cells should **not** be classified as atypical B cells or age-associated B c
 - **Not ABC despite CD21lo phenotype:** The expression of low levels of both CD21 and the defining ABC/DN2 markers (CD11c, T-bet) emphasises the importance of comprehensive phenotyping. CD21lo alone cannot be used to identify ABC/AtB (see [[Sanz2025 - Human Atypical B Cells Overview]]).
 - **Primary data: DN3 significantly expanded in ICU COVID-19:** DN3 cells (CD11c⁻CD21⁻ within IgD⁻CD27⁻) were significantly expanded in ICU-C patients compared with HD (P ≤ 0.01). In hierarchical clustering of B cell population frequencies, DN3 consistently grouped with aN and DN2 populations — not with DN1 — supporting its association with the EF effector pathway. CD38 expression on DN3 cells from ICU patients was observable but heterogeneous (see [[Woodruff2020 - EF B Cell Responses in COVID-19]], 24-marker spectral FCM, Extended Data Fig. 2).
 - **DN3 first described in this paper:** Although the Sanz2025 review cites DN3 as a known entity, Woodruff2020 is the original description. The formal gating definition — IgD⁻CD27⁻CD11c⁻CD21⁻ within the CD19⁺CD24⁻CD38⁻ DN gate — was established here. The paper notes that DN3 was "previously unreported in other conditions" at the time of publication (see [[Woodruff2020 - EF B Cell Responses in COVID-19]]).
+- **DN3 cells contain SARS-CoV-2-specific cells (independent cohort confirmation):** Dual-fluorophore RBD probe staining of COVID-19 peripheral blood demonstrated that DN3 cells (alongside DN2, aN, SWM, and PB) contain virus-specific B cells. DN3 was CXCR5-low (like DN2), consistent with EF pathway identity. This confirms the antigen-driven nature of the DN3 expansion originally reported by [[Woodruff2020 - EF B Cell Responses in COVID-19]] in a separate cohort (see [[Kaneko2020 - GC Loss and TFH Block in COVID-19]], n=68 blood cohort, 13-color FCM + RBD probes).
 - **UMAP heterogeneity within DN3:** UMAP projections indicated a split in the DN3 compartment driven by HLA-DR and CD19 expression — suggesting internal heterogeneity that requires further interrogation (see [[Woodruff2020 - EF B Cell Responses in COVID-19]], Fig. 2e).
 
 ## Contradictions & Debates
@@ -36,4 +37,5 @@ DN3 cells should **not** be classified as atypical B cells or age-associated B c
 
 ## Sources
 - [[Woodruff2020 - EF B Cell Responses in COVID-19]]
+- [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]
 - [[Sanz2025 - Human Atypical B Cells Overview]]

@@ -2,8 +2,8 @@
 type: entity
 tags: [transcription-factors, BLIMP-1, PRDM1, plasma-cell-differentiation, DN2]
 created: 2026-05-02
-updated: 2026-05-07
-sources: 4
+updated: 2026-05-21
+sources: 5
 ---
 
 # BLIMP-1
@@ -22,6 +22,7 @@ BLIMP-1 (B Lymphocyte-Induced Maturation Protein 1; encoded by *PRDM1*) is an IR
 - **BLIMP-1/PRDM1 pathway operative in COVID-19 EF ASCs:** The massive germline-dominant ASC expansion in severe COVID-19 — with >50% unmutated VH, ongoing CSR, and EF cellular hallmarks (aN/DN2/DN3 expansion) — is consistent with BLIMP-1-driven terminal differentiation of naive-derived precursors via the EF pathway, as defined by the PRDM1 locus opening in DN2/aNAV cells (see [[Woodruff2020 - EF B Cell Responses in COVID-19]], n=17 COVID-19 prospective cohort; repertoire data from n=1 single-cell + n=2 bulk V(D)J).
 - **PRDM1/Blimp-1 is part of the DN2 ASC-poised TF network:** In the comprehensive SLE DN2 characterisation, overexpression of PRDM1/Blimp-1 alongside IRF4 and Zbtb32 positions DN2 cells for rapid ASC differentiation — a programme confirmed across mouse and human ABC (see [[Sanz2025 - Human Atypical B Cells Overview]], review).
 - **PRDM1 promoter shows progressive demethylation and increased accessibility across B cell differentiation:** RRBS and ATAC-seq data confirmed increasing PRDM1 promoter accessibility and decreasing DNA methylation from resting naive through to DN2 and switched memory, most pronounced in DN2. This epigenetic priming was accompanied by transcriptional upregulation of PRDM1 and SLAMF7 (see [[Scharer2019 - Epigenetic Programming in SLE B Cells]], RRBS + ATAC-seq + RNA-seq, n=9 SLE + n=12 HC).
+- **PRDM1 (BLIMP-1) NOT upregulated in alternative lineage atBC clusters:** scRNA-seq showed that *PRDM1* was not upregulated in any atBC cluster or MBC1, with PCs detached from the alternative lineage pseudotime manifold. Combined with absent *XBP1* and *IRF4*, this argues that the BLIMP-1-driven PC programme is not activated in atBCs outside of pathological contexts (SLE). The contrast with elevated BLIMP-1 protein in SLE DN2 cells (Jenks2018) suggests that BLIMP-1 upregulation in DN2 is disease-specific rather than intrinsic to the alternative lineage (see [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]], n=4, 10x Chromium).
 
 ## Contradictions & Debates
 
@@ -35,3 +36,4 @@ None documented in current wiki sources.
 - [[Sanz2025 - Human Atypical B Cells Overview]]
 - [[Woodruff2020 - EF B Cell Responses in COVID-19]]
 - [[Scharer2019 - Epigenetic Programming in SLE B Cells]]
+- [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]

@@ -1,10 +1,10 @@
 # EFB Dengue Wiki — Master Index
 
-*Last updated: 2026-05-20 | Sources: 17 | Total pages: 88*
+*Last updated: 2026-05-22 | Sources: 19 | Total pages: 96*
 
 ---
 
-## Sources (17)
+## Sources (19)
 
 | Page | Year | Journal | Disease Context |
 |------|------|---------|-----------------|
@@ -24,86 +24,96 @@
 | [[Wei2007 - DN Memory B Cells in SLE]] | 2007 | J Immunol | SLE (comparative immunology baseline) |
 | [[William2002 - Extrafollicular Somatic Hypermutation in Autoimmune Mice]] | 2002 | Science | **SLE/Autoimmunity (LANDMARK: first direct demonstration of SHM outside GCs; ~0.3 mut/gene/gen at T zone–red pulp border; genealogical trees; FDC-absent, DC-rich EF niche; TLR9 co-stimulation; tolerance escape; 585 citations)** |
 | [[Bhattacharya2016 - Memory B Cell Subset Selection in Secondary Dengue]] | 2016 | EBioMedicine | **Commentary on Appanna2016: isotype-fate segregation (IgM→GC, IgG→PB); PB analysis insufficient as DENV immunity correlate; MBC subset recruitment** |
+| [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]] | 2021 | Cell Reports | **Malaria/Vaccination (LANDMARK: scRNA-seq + CITE-seq defines "alternative lineage" (atBC1-3 + MBC1) vs "classical lineage"; T-bet/CD11c/FCRL5 defining markers; CD21⁻CD27⁻ gating captures only 44.7% of transcriptomic atBCs; ~20% of B cells in healthy donors; no PC genes in atBCs — challenges EF pre-PB model; MBC1 = quiescent alternative memory; IgG3 enrichment; n=4 10x Chromium + n=11 Smart-seq2)** |
+| [[Kaneko2020 - GC Loss and TFH Block in COVID-19]] | 2020 | Cell | COVID-19 (LANDMARK TISSUE: GC loss + TFH block in post-mortem LN/spleen; Bcl-6⁺ GC B cell depletion; AID⁺ preservation; TNF-α-mediated TFH block; DN/aN/PB expansion with RBD specificity; tissue-level foundation for EF dominance model) |
 | [[Anolik2004 - Rituximab and B Cell Abnormalities in SLE]] | 2004 | Arthritis Rheum | SLE (B cell homeostasis; rituximab trial) |
 
 ---
 
-## Entities (41)
+## Entities (45)
 
 
 ### B Cell Subsets
-- [[Double-Negative B Cell]] — IgD⁻CD27⁻ memory B cells; DN1/DN2/DN3 subdivision; CD21⁻CD11c⁺ EF phenotype now confirmed in dengue (sources: 10)
-- [[DN2 B Cell]] — IgD⁻CD27⁻CXCR5⁻CD21⁻CD11c⁺CD19^hi; EF pre-plasmablast; first dengue evidence from Ansari2025 (sources: 5)
-- [[DN3 B Cell]] — IgD⁻CD27⁻CXCR5⁻CD21⁻CD11c⁻T-bet⁻; pre-plasmablast; first described in COVID-19 (sources: 2)
-- [[Plasmablast]] — CD20⁻CD38⁺⁺CD27⁺Ki67⁺CD71⁺CXCR3⁺; 47% of B cells/30% of lymphocytes (Wrammert2012); 46% mean/87% peak in severe 2° dengue; >70% DENV-specific; Tph-driven via IL-21; plasmablast–neutralization disconnect; clonally unrelated to co-circulating DENV-binding MBCs; high SHM + OAS + near-universal ADE; PB analysis insufficient as DENV immunity correlate (sources: 15)
-- [[Activated Naive B Cell]] — CD19^hi, MTG⁺/CD11c⁺, CD24⁻, CD21⁻; EF ASC precursor; epigenetically closer to DN2 in SLE (sources: 5)
+- [[Double-Negative B Cell]] — IgD⁻CD27⁻ memory B cells; DN1/DN2/DN3 subdivision; CD21⁻CD11c⁺ EF phenotype now confirmed in dengue; tissue-level DN in COVID-19 follicular + EF sites; alternative lineage framework recontextualises DN (sources: 12)
+- [[DN2 B Cell]] — IgD⁻CD27⁻CXCR5⁻CD21⁻CD11c⁺CD19^hi; EF pre-plasmablast; first dengue evidence from Ansari2025; RBD-specific in COVID-19; alternative lineage framework (Sutton2021) (sources: 7)
+- [[DN3 B Cell]] — IgD⁻CD27⁻CXCR5⁻CD21⁻CD11c⁻T-bet⁻; pre-plasmablast; first described in COVID-19; RBD-specific (sources: 3)
+- [[Plasmablast]] — CD20⁻CD38⁺⁺CD27⁺Ki67⁺CD71⁺CXCR3⁺; tissue-level IgG⁺ PBs in follicular + EF sites (Kaneko2020); 47% of B cells (Wrammert2012); 46% mean/87% peak in severe 2° dengue; plasmablast–neutralization disconnect; high SHM + OAS + near-universal ADE; atBCs do NOT upregulate PC genes (Sutton2021) (sources: 17)
+- [[Activated Naive B Cell]] — CD19^hi, MTG⁺/CD11c⁺, CD24⁻, CD21⁻; EF ASC precursor; RBD-specific in COVID-19; epigenetically closer to DN2 in SLE (sources: 6)
 - [[Memory B Cell]] — *see Concepts* (foundational concept page)
 
 ### T Cell Subsets
 - [[Peripheral Helper T Cell]] — CXCR5⁻PD-1⁺ CD4⁺; ~75% of activated CD4⁺ T cells in dengue; IL-21⁺ helper vs GZMB⁺ cytotoxic subclusters; drives memory B cell→PB differentiation (sources: 1)
 
 ### Surface Markers & Receptors
-- [[CD19]] — pan-B cell marker; CD19^hi marks DN2 and acN cells; CD19^lo marks plasmablasts (sources: 13)
+- [[CD19]] — pan-B cell marker; CD19^hi marks DN2 and acN cells; CD19^lo marks plasmablasts (sources: 14)
 - [[CD20]] — B cell marker lost on plasmablasts; rituximab target; PB gating in dengue (sources: 7)
-- [[CD21]] — complement receptor; CD21⁻ defines EF populations; CD21⁻CD11c⁺ B cells expanded in dengue (sources: 6)
+- [[CD21]] — complement receptor; CD21⁻ defines EF populations; CD21⁻CD11c⁺ B cells expanded in dengue; progressive CD21 loss along alternative lineage pseudotime (sources: 8)
 - [[CD23]] — low-affinity IgE receptor; CD23⁻ marks acN cells; disease-activity proxy (sources: 1)
 - [[CD24]] — CD24⁻ shared by acN and DN2 cells; discriminates from transitional B cells (sources: 4)
-- [[CD27]] — canonical memory marker; obsolete as sole memory marker; CD27 can be modulated (sources: 12)
-- [[CD38]] — activation/differentiation marker; CD38^hi on plasmablasts; CD38⁺HLA-DR⁺ on activated T cells (sources: 13)
-- [[CD10]] — transitional/GC marker; CD10⁻ on DN cells and acN cells; mature B cell gate in dengue (sources: 3)
-- [[CD11c]] — ITGAX integrin; defining marker of DN2/aNAV; CD11c⁺ EF B cells confirmed in dengue; CD11c⁺ DCs at EF sites (William2002) (sources: 6)
-- [[CD138]] — plasmablast maturation marker; CD138⁺ enriched in severe COVID-19 ASCs; first dengue panel inclusion (sources: 3)
+- [[CD27]] — canonical memory marker; obsolete as sole memory marker; CD27 can be modulated; CD27⁻ does not cleanly separate alternative from classical lineage (sources: 14)
+- [[CD38]] — activation/differentiation marker; CD38^hi on plasmablasts; CD38⁺HLA-DR⁺ on activated T cells (sources: 14)
+- [[CD10]] — transitional/GC marker; CD10⁻ on DN cells and acN cells; mature B cell gate in dengue (sources: 4)
+- [[CD11c]] — ITGAX integrin; defining marker of DN2/aNAV; CD11c⁺ EF B cells confirmed in dengue; CD11c⁺ DCs at EF sites (William2002); best single surface marker for alternative lineage by CITE-seq (sources: 8)
+- [[CD138]] — plasmablast maturation marker; CD138⁺ enriched in severe COVID-19 ASCs; first dengue panel inclusion (sources: 4)
 - [[CD40L]] — CD154; T-B costimulation; inhibits EF pathway from naive cells; expressed on Tph in dengue (sources: 2)
 - [[CD71]] — transferrin receptor; proliferation marker on dengue plasmablasts (sources: 1)
-- [[CXCR5]] — follicle-homing receptor; absent on DN2 B cells and Tph T cells; CXCL13 elevated in dengue (sources: 5)
-- [[CXCR3]] — IFN-γ-driven tissue homing; CXCR3⁺ on dengue plasmablasts and COVID-19 EF populations (sources: 2)
-- [[FCRL5]] — Fc receptor-like 5; expressed on DN2/aNAV; therapeutic target candidate (sources: 2)
+- [[ICOS]] — co-stimulatory receptor; CD4⁺ICOS⁺ TFH diminished in COVID-19 tissue (sources: 1)
+- [[CXCR5]] — follicle-homing receptor; absent on DN2 B cells and Tph T cells; CXCR5⁺ pre-GC TFH present but Bcl-6⁺CXCR5⁺ GC-TFH absent in COVID-19; CXCL13 elevated in dengue (sources: 6)
+- [[CXCR3]] — IFN-γ-driven tissue homing; CXCR3⁺ on dengue plasmablasts and COVID-19 EF populations; measured by CITE-seq on alternative lineage (sources: 3)
+- [[FCRL5]] — Fc receptor-like 5; expressed on DN2/aNAV; therapeutic target candidate; defining marker of alternative lineage (sources: 3)
 - [[FcRH4]] — inhibitory Fc receptor homolog; absent on circulating DN cells and DN2 (sources: 3)
 - [[SLAMF7]] — CD319; expressed on DN2/aNAV/PC; therapeutic target (approved for myeloma) (sources: 2)
-- [[IgD]] — surface immunoglobulin; retained on acN cells; lost at DN2 transition; used for DN gating (sources: 9)
-- [[IgG]] — predominant switched isotype; DENV-specific IgG massive but non-neutralizing; anti-NS1/anti-prM elevated in severe dengue; PB IgG 85% E-specific and more neutralizing; near-universal ADE; OAS bias; IgG⁺ MBCs predisposed to PB fate (sources: 13)
+- [[IgD]] — surface immunoglobulin; retained on acN cells; lost at DN2 transition; used for DN gating (sources: 10)
+- [[IgG]] — predominant switched isotype; DENV-specific IgG massive but non-neutralizing; anti-NS1/anti-prM elevated in severe dengue; PB IgG 85% E-specific and more neutralizing; near-universal ADE; OAS bias; IgG⁺ MBCs predisposed to PB fate; IgG3 enriched in alternative lineage (sources: 15)
 - [[IgM]] — unswitched isotype; balanced with IgG1/IgA1 in COVID-19 ASC; ongoing CSR to switched isotypes; IgM-dominant in DENV-binding MBCs; IgM⁺ MBCs predisposed to GC re-initiation (sources: 8)
 - [[IgA]] — mucosal isotype; IgA1 in COVID-19 ASC repertoire; anti-RBD IgA elevated in severe COVID (sources: 7)
 - [[B220]] — CD45R isoform; heterogeneous in memory B cells (sources: 1)
 
 ### Transcription Factors & Signalling
-- [[T-bet]] — TBX21; highest in DN2/aNAV; T-BET motifs top enriched in DN2 chromatin; expected but not stained in dengue (sources: 5)
+- [[Bcl-6]] — GC master TF; Bcl-6⁺ GC B cells and GC-TFH strikingly absent in COVID-19; DN1 Bcl-6-pathway associated; link to GC failure→EF dominance (sources: 3)
+- [[T-bet]] — TBX21; highest in DN2/aNAV; T-BET motifs top enriched in DN2 chromatin; TH1 CD4⁺ T-bet⁺ expansion in COVID-19 tissue; expected but not stained in dengue; defines alternative lineage at transcriptomic level (sources: 7)
 - [[ZEB2]] — primary driver of ABC formation; represses Mef2b (GC TF); cooperates with T-bet (sources: 2)
 - [[ATF3]] — stress-response TF; key SLE DN2-specific regulator; 98 target genes (sources: 1)
 - [[EGR]] — EGR1-4 family; EGR4 highest PageRank in SLE network (sources: 1)
 - [[PD-1]] — PDCD1; ~60% PD-1⁺ on DN2 B cells; defining marker of Tph T cells in dengue (sources: 2)
-- [[IRF4]] — PC differentiation TF; high IRF4/low IRF8 ratio in DN2 (sources: 4)
-- [[BLIMP-1]] — PRDM1-encoded; elevated in DN2/aNAV; progressive demethylation (sources: 4)
+- [[IRF4]] — PC differentiation TF; high IRF4/low IRF8 ratio in DN2; NOT upregulated in atBC clusters (Sutton2021) (sources: 5)
+- [[BLIMP-1]] — PRDM1-encoded; elevated in DN2/aNAV; progressive demethylation; NOT upregulated in atBC clusters (Sutton2021) (sources: 5)
 - [[BACH2]] — terminal differentiation repressor; absent in DN2/aNAV (sources: 2)
 - [[TRAF5]] — negative TLR regulator; uniquely low in DN2/aNAV (sources: 2)
 - [[TLR7]] — ssRNA sensor; TLR7 GoF causes SLE; monogenic + indirect mutations drive ABC/DN2; TLR9 EF precedent (William2002) (sources: 4)
 - [[HOPX]] — marks cytotoxic GZMB⁺ Tph subcluster in dengue scRNA-seq (sources: 1)
 - [[TOX2]] — marks IL-21⁺ helper Tph subcluster; Tfh-associated TF on CXCR5⁻ cells (sources: 1)
 
+### Enzymes
+- [[AID]] — activation-induced cytidine deaminase; initiates SHM and CSR; AID⁺ B cells preserved in COVID-19 despite GC loss; EF SHM at GC-comparable rates (William2002) (sources: 2)
+
 ### Cytokines
+- [[TNF-alpha]] — pleiotropic pro-inflammatory cytokine; aberrant accumulation in COVID-19 LNs blocks GC-TFH differentiation; dose-dependent GC role; murine TNF-α blockade rescues GCs (sources: 1)
 - [[IL-21]] — key EF differentiation cytokine; produced by Tph and Tfh; blocking reduces PB output ~60% in dengue (sources: 2)
 
 ---
 
 ## Concepts (7)
 
-- [[Extrafollicular Response]] — **FIRST DENGUE EVIDENCE:** Tph→IL-21→memory B cell→PB axis; CD21⁻CD11c⁺ EF B cells; 47%/87% PB severity association; plasmablast–neutralization disconnect; concurrent EF+GC; intermediate SHM in dengue BCR data; PB/MBC clonal disconnect consistent with EF origin; **LANDMARK murine proof of EF SHM** (William2002) (sources: 16)
-- [[Germinal Center]] — canonical differentiation; SM vs DN2 epigenetic bifurcation; GC loss in fatal COVID-19; concurrent GC activity in dengue (CXCL13↑); convergent CDR3 mutation compatible with GC transit; GCs not required for SHM (William2002); IgM⁺ MBCs re-initiate GCs (sources: 16)
-- [[Memory B Cell]] — Tph preferentially drive memory (not naive) B cell→PB in dengue; DENV-specific qualitative reprogramming in 2°; convergent CDR3s from affinity-matured memory B cells; PBs non-representative subset of MBC pool; OAS = strongest functional evidence of memory origin; isotype-fate segregation (IgM→GC, IgG→PB) (sources: 16)
-- [[Somatic Hypermutation]] — **LANDMARK:** EF SHM at GC-comparable rates (William2002); epigenetic confirmation of EF vs GC origin; >50% germline VH in COVID-19 ASCs; **FIRST DENGUE BCR DATA:** 4.4–6.9% V mutation in convergent CDR3-bearing cells; comparable SHM in clonally unrelated PBs and MBCs; paradoxically low in acute dengue, lower in secondary; HIGH SHM (18.1 VH) in sorted 2° PBs = memory origin (sources: 15)
-- [[Class Switch Recombination]] — EF CSR-competence confirmed; class-switched memory B cells are Tph responders in dengue; IgG-dominant PBs vs IgM-enriched DENV-binding MBCs (sources: 13)
+- [[Extrafollicular Response]] — **FIRST DENGUE EVIDENCE:** Tph→IL-21→memory B cell→PB axis; CD21⁻CD11c⁺ EF B cells; tissue-level GC suppression + EF dominance (Kaneko2020): antigen-driven expansion, FDC-preserved lymphocyte block, naive/transitional consumption; 47%/87% PB severity association; plasmablast–neutralization disconnect; isotype-fate segregation (IgG→PB, IgM→GC); **LANDMARK murine proof of EF SHM** (William2002); alternative lineage challenges EF pre-PB model — context-dependent (sources: 19)
+- [[Germinal Center]] — canonical differentiation; SM vs DN2 epigenetic bifurcation; **tissue-level GC loss in fatal COVID-19** (Kaneko2020): Bcl-6⁺ GC B cells and GC-TFH absent, TNF-α implicated; concurrent GC activity in dengue (CXCL13↑); GCs not required for SHM (William2002); alternative lineage SHM consistent with post-GC origin (sources: 18)
+- [[Memory B Cell]] — Tph preferentially drive memory (not naive) B cell→PB in dengue; DENV-specific qualitative reprogramming in 2°; convergent CDR3s from affinity-matured memory B cells; PBs non-representative subset of MBC pool; OAS = strongest functional evidence of memory origin; isotype-fate segregation (IgM→GC, IgG→PB); MBC1 = quiescent alternative lineage memory (Sutton2021) (sources: 17)
+- [[Somatic Hypermutation]] — **LANDMARK:** EF SHM at GC-comparable rates (William2002); AID⁺ B cells preserved despite GC loss (Kaneko2020); >50% germline VH in COVID-19 ASCs; **FIRST DENGUE BCR DATA:** 4.4–6.9% V mutation in convergent CDR3-bearing cells; paradoxically low in acute dengue; HIGH SHM (18.1 VH) in sorted 2° PBs = memory origin; significant SHM in alternative lineage clusters (sources: 17)
+- [[Class Switch Recombination]] — EF CSR-competence confirmed; AID preserved outside GCs (Kaneko2020); class-switched memory B cells are Tph responders in dengue; IgG-dominant PBs vs IgM-enriched DENV-binding MBCs (sources: 14)
 - [[Original Antigenic Sin]] — memory recall bias toward prior serotype; 2/4 patients preferentially neutralise DENV1 over infecting DENV2; OAS at mAb level (sources: 2)
 - [[Antibody-Dependent Enhancement]] — 45/53 dengue PB mAbs enhance infection regardless of neutralisation potency; ADE-competent IgG from memory recall; future-exposure risk (sources: 2)
 
 ---
 
-## Methods (18)
+## Methods (20)
 
 - [[Spectral Flow Cytometry]] — 24-marker Cytek Aurora panels; UMAP; Woodruff2020 Table 1 standardised B cell definitions (sources: 1)
-- [[Conventional Flow Cytometry]] — multi-color panels; Wrammert2012 (5-color) + GarciaBates2013 + Appanna2016 + Ansari2025 + Priyamvada2016 dengue panels (sources: 13)
+- [[CITE-seq]] — multi-modal scRNA-seq + surface protein (ADT); CD21⁻CD27⁻ captures only 44.7% of transcriptomic atBCs; CD11c best single marker (sources: 1)
+- [[Multi-color Immunofluorescence]] — tissue-based imaging; TissueFAXS/TissueQuest/StrataQuest; 5–7-color multispectral; cell-to-cell contact quantification; FFPE tissue analysis (sources: 1)
+- [[Conventional Flow Cytometry]] — multi-color panels; Wrammert2012 (5-color) + GarciaBates2013 + Appanna2016 + Ansari2025 + Priyamvada2016 + Kaneko2020 (13-color) panels; CITE-seq gating validation (sources: 15)
 - [[Bm Classification]] — IgD/CD38 Bm1–Bm5 developmental staging framework (sources: 2)
-- [[FACS Sorting]] — multi-population sort for multi-omic profiling; antigen-specific live virus sorting; activated CD4⁺ T cell sorting for scRNA-seq (sources: 8)
-- [[BCR Sequencing]] — Sanger, NGS, 10x Chromium scV(D)J, 454 pyrosequencing, microdissection+Vκ PCR; germline-dominant repertoire in COVID-19 EF ASCs; first dengue BCR data (Parameswaran2013); PB/MBC clonal overlap analysis; ImmunediveRsity pipeline + Monte Carlo deconvolution; EF genealogical trees (William2002) (sources: 9)
+- [[FACS Sorting]] — multi-population sort for multi-omic profiling; antigen-specific live virus sorting; RBD dual-fluorophore probes (Kaneko2020); activated CD4⁺ T cell sorting for scRNA-seq; tetramer-based sorting for Smart-seq2 (sources: 10)
+- [[BCR Sequencing]] — Sanger, NGS, 10x Chromium scV(D)J, 454 pyrosequencing, microdissection+Vκ PCR, Smart-seq2 full-length BCR; germline-dominant repertoire in COVID-19 EF ASCs; first dengue BCR data (Parameswaran2013); PB/MBC clonal overlap analysis; ImmunediveRsity pipeline + Monte Carlo deconvolution; EF genealogical trees (William2002) (sources: 10)
 - [[RNA Sequencing]] — 5,090 DEGs; PageRank TF network; EGR4 apex; ATF3 DN2-specific (sources: 2)
 - [[ATAC-seq]] — comprehensive multi-subset comparison; T-BET/AP-1/EGR motifs in DN2 (sources: 2)
 - [[RRBS]] — reduced-representation bisulfite sequencing; progressive hypomethylation hierarchy (sources: 1)
@@ -112,11 +122,12 @@
 - [[Phospho-Flow Cytometry]] — pERK/pMAPKp38 TLR7 readout; DN2/aNAV hyper-responsiveness (sources: 1)
 - [[Serum Proteomics]] — LC-MS/MS identification of serum antibodies from NGS databases (sources: 1)
 - [[Activation-Induced Marker Assay]] — CD25⁺OX40⁺ AIM assay for DENV-specific T cell responses (sources: 1)
-- [[Single-Cell RNA Sequencing]] — 10x Genomics scRNA-seq + scTCR-seq; Tph subcluster identification in dengue (sources: 1)
+- [[Single-Cell RNA Sequencing]] — 10x Genomics scRNA-seq + scTCR-seq; Tph subcluster identification in dengue; Smart-seq2 + 10x Chromium + CITE-seq for B cell lineage definition (sources: 2)
 - [[T-B Coculture Assay]] — Tph-driven memory B cell→PB differentiation; IL-21 blocking (sources: 1)
 - [[FRNT]] — focus reduction neutralization test; neutralizing titers not different by dengue severity; OAS demonstrated at mAb FRNT₅₀ level (sources: 2)
 - [[PRNT]] — plaque reduction neutralization test; PRNT₅₀ not correlated with plasmablast frequency in dengue (sources: 1)
 - [[Immunohistochemistry]] — tissue-based protein localisation; EF B cell localisation at T zone–red pulp border (sources: 1)
+
 
 ---
 
@@ -124,6 +135,6 @@
 
 - [[DN2 Gating Strategy]] — council-reviewed 11-color gating strategy for DN/DN2-phenotype isolation in dengue PBMCs; Ansari2025-comparable; Sanz2025 IgD-audit compliant
 - [[Research Plan - DN B Cell Expansion in Dengue]] — wet-lab protocol: flow cytometry panel, cohort design (DF/DHF/HC), DN1/DN2/DN3 subdivision without CXCR5, sample size estimates
-- [[Notable Findings]] — running log of striking cross-cutting observations (13 entries)
-- [[Curator Highlights]] — aggregated `==highlights==` and `%%comments%%` from wiki pages (1 highlight)
+- [[Notable Findings]] — running log of striking cross-cutting observations (14 entries)
+- [[Curator Highlights]] — aggregated `==highlights==` and `%%comments%%` from wiki pages (2 highlights)
 - [[External Citation Audit]] — catalog of 54 external papers cited inline across ~25 wiki pages; DOIs, backlinks, verification status

@@ -63,6 +63,7 @@ This paper is from the Wrammert laboratory and directly extends [[Wrammert2012 -
 - [[Class Switch Recombination]]
 - [[Original Antigenic Sin]]
 - [[Antibody-Dependent Enhancement]]
+- [[Germinal Center]]
 
 ## Relevance & Notes
 

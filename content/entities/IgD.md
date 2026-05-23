@@ -3,7 +3,7 @@ type: entity
 tags: [surface-markers, immunoglobulin, isotype, B-cell-subsets, naive-b-cells]
 created: 2026-05-02
 updated: 2026-05-08
-sources: 9
+sources: 10
 ---
 
 # IgD
@@ -38,3 +38,4 @@ None documented in current wiki sources.
 - [[Scharer2019 - Epigenetic Programming in SLE B Cells]]
 - [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]
 - [[GarciaBates2013 - Plasmablast Response and Dengue Severity]]
+- [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]

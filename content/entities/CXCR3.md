@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, chemokine-receptor, homing, IFN-gamma, extrafollicular, tissue-inflammation]
 created: 2026-05-04
-updated: 2026-05-10
-sources: 2
+updated: 2026-05-21
+sources: 3
 ---
 
 # CXCR3
@@ -20,6 +20,7 @@ The CXCR5⁻/CXCR3⁺ chemokine receptor switch on extrafollicular B cell popula
 - **Included in 24-marker spectral flow cytometry panel:** CXCR3 was part of the comprehensive homing marker set (alongside CXCR5, CXCR4, CD62L) used to characterise B cell migration potential in COVID-19 (see [[Woodruff2020 - EF B Cell Responses in COVID-19]], Supplementary Table 1).
 - **CXCL10 (IP-10) elevated in EF-high patients:** Plasma CXCL10 was significantly elevated in CoV-A patients and correlated with CRP (r² = 0.58, P = 0.004). CXCL10 is both a CXCR3 ligand and an established biomarker of COVID-19 severity, linking the tissue-homing programme of EF B cells to the inflammatory milieu that drives their generation (see [[Woodruff2020 - EF B Cell Responses in COVID-19]]).
 - **CXCR3 expressed on dengue acute-phase plasmablasts:** Plasmablasts in acute dengue carry the phenotype CD20⁻CD38⁺⁺CD27⁺Ki67⁺CD71⁺**CXCR3⁺**, confirming that CXCR3 expression on EF-derived ASCs is not unique to COVID-19 but extends to dengue (see [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]], multi-color FCM, n=170 dengue cohort).
+- **CXCR3 measured by CITE-seq on alternative lineage B cells:** CITE-seq surface protein measurement confirmed CXCR3 expression on alternative lineage (atBC) populations in both malaria-exposed and non-exposed donors, consistent with the CXCR5⁻/CXCR3⁺ homing switch seen on EF pathway cells in COVID-19 and dengue (see [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]], n=4, CITE-seq).
 
 ## Contradictions & Debates
 
@@ -33,3 +34,4 @@ The CXCR5⁻/CXCR3⁺ chemokine receptor switch on extrafollicular B cell popula
 
 - [[Woodruff2020 - EF B Cell Responses in COVID-19]]
 - [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]
+- [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]

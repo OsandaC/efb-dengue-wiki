@@ -3,7 +3,7 @@ type: entity
 tags: [b-cell-subsets, activated-naive, extrafollicular, SLE, plasmablast-precursor, flow-cytometry]
 created: 2026-05-02
 updated: 2026-05-07
-sources: 5
+sources: 6
 ---
 
 # Activated Naive B Cell
@@ -43,6 +43,8 @@ acN cells represent an important extrafollicular precursor pool: a substantial f
 - **AP-1 and EGR motif accessibility enhanced in SLE aN cells:** The core SLE AP-1 and EGR motif accessibility was already present in activated naive cells (relative to rN and T3) and increased further in DN2 — but was largely absent in isotype-switched memory. This positions aN cells as the stage where disease-specific chromatin remodelling is first engaged (see [[Scharer2019 - Epigenetic Programming in SLE B Cells]]).
 - **T3 cells as an early activation state of naive B cells:** DNA methylation, chromatin accessibility, and transcriptomic data all placed T3 cells between resting naive and activated naive. In active SLE, T3 cells represent an early phase of naive B cell activation rather than true transitional cells (see [[Scharer2019 - Epigenetic Programming in SLE B Cells]]).
 
+- **Independent cohort confirmation: activated naive expansion in severe COVID-19 blood:** In a separate COVID-19 cohort (n=68), activated naive B cells (IgD⁺CD27⁻CD21ˡᵒCD11cʰⁱ) were expanded in severe CRP-high patients. The expanded activated naive cells were confirmed SARS-CoV-2 RBD-specific by dual-fluorophore probe staining, establishing that the aN expansion is antigen-driven. This independently replicates the aN expansion reported in ICU patients by [[Woodruff2020 - EF B Cell Responses in COVID-19]] (see [[Kaneko2020 - GC Loss and TFH Block in COVID-19]], n=68 blood cohort, 13-color FCM + RBD probes).
+
 ## Related Pages
 
 [[DN2 B Cell]], [[Plasmablast]], [[Extrafollicular Response]], [[Double-Negative B Cell]], [[CD19]], [[CD21]], [[CD23]], [[CD24]], [[CD38]], [[CD11c]], [[T-bet]], [[CXCR5]], [[IgD]], [[Somatic Hypermutation]], [[BCR Sequencing]], [[TLR7]], [[CD10]]
@@ -53,4 +55,5 @@ acN cells represent an important extrafollicular precursor pool: a substantial f
 - [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]
 - [[Sanz2025 - Human Atypical B Cells Overview]]
 - [[Woodruff2020 - EF B Cell Responses in COVID-19]]
+- [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]
 - [[Scharer2019 - Epigenetic Programming in SLE B Cells]]

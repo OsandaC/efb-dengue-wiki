@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, CD11c, ITGAX, integrin, DN2, age-associated-b-cells, extrafollicular]
 created: 2026-05-02
-updated: 2026-05-18
-sources: 6
+updated: 2026-05-21
+sources: 8
 ---
 
 # CD11c
@@ -29,6 +29,7 @@ CD11c (encoded by *ITGAX*) is an alpha integrin primarily expressed on dendritic
 
 - **CD11c⁺ marks EF B cells in acute dengue:** CD21⁻**CD11c⁺** B cells within the IgD⁻CD27⁻ (DN) gate are significantly expanded during acute dengue infection. This is the first demonstration of CD11c⁺ EF-phenotype B cells in dengue, validating the SLE/COVID-19 DN2 phenotype in a third disease context. CD11c was used alongside CD21 to identify EF B cells without CXCR5 staining (see [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]], multi-color FCM, n=170 acute dengue).
 
+- **CD11c is the best single surface marker for the alternative B cell lineage by CITE-seq:** Combined transcriptome + surface protein measurement (CITE-seq) on >12,000 B cells showed that CD11c protein expression most cleanly identified the transcriptomically-defined alternative lineage (atBC1, atBC2, atBC3, MBC1), outperforming CD21⁻CD27⁻ gating which captured only 44.7% of atBC1 cells. This provides the strongest primary-source evidence that CD11c should replace or supplement CD21⁻CD27⁻ as the principal gating marker for this population (see [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]], n=4, CITE-seq + 10x Chromium).
 - **CD11c⁺ DCs interact with B cells at extrafollicular sites (murine precedent).** In the foundational William2002 EF SHM study, CD11c⁺ dendritic cells were abundant within RF B cell clusters at the T zone–red pulp border and showed close physical interaction with Id⁺ B cells, in contrast to GCs where CD11c⁺ DCs are rare. This established CD11c⁺ DCs as a cellular component of the EF microenvironment, distinct from FDCs that define the GC niche. In the context of this wiki's B cell focus, CD11c on B cells marks EF-pathway cells (DN2/aNAV), while CD11c on DCs marks the innate cellular partners at EF sites — both uses reflect the extrafollicular niche (see [[William2002 - Extrafollicular Somatic Hypermutation in Autoimmune Mice]], IHC of splenic sections, MRL/lpr mice).
 
 ## Contradictions & Debates
@@ -45,3 +46,5 @@ None documented in current wiki sources.
 - [[Scharer2019 - Epigenetic Programming in SLE B Cells]]
 - [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]
 - [[William2002 - Extrafollicular Somatic Hypermutation in Autoimmune Mice]]
+- [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]
+- [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]

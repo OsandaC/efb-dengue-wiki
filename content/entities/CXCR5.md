@@ -3,7 +3,7 @@ type: entity
 tags: [surface-markers, chemokine-receptors, CXCR5, follicle-homing, DN1-DN2-distinction]
 created: 2026-05-02
 updated: 2026-05-08
-sources: 5
+sources: 6
 ---
 
 # CXCR5
@@ -24,6 +24,7 @@ CXCR5 is a chemokine receptor for CXCL13, the follicle-associated chemokine. CXC
 - **CXCR5 decreased in EF populations during acute COVID-19:** In CoV-A patients, CXCR5 surface expression was reduced on EF populations (aN, DN2) relative to follicular populations (rN, DN1). Concurrently, [[CXCR3]] (IFN-γ-driven tissue homing receptor) was increased on the same populations. This reciprocal CXCR5↓/CXCR3↑ switch is the most direct in vivo evidence in human infection that EF pathway B cells are programmed for inflammatory tissue homing rather than follicular entry (see [[Woodruff2020 - EF B Cell Responses in COVID-19]], spectral FCM, n=9 CoV-A patients).
 - **CXCR5 included in 24-marker spectral B cell panel:** CXCR5 was part of the homing marker module (alongside CXCR3, CXCR4, CD62L) in the standardised Woodruff2020 panel design (see [[Woodruff2020 - EF B Cell Responses in COVID-19]], Table 1 / Supplementary Table 1).
 
+- **CXCR5⁺ pre-GC TFH cells present but Bcl-6⁺CXCR5⁺ GC-TFH near-absent in COVID-19:** In post-mortem COVID-19 lymphoid tissue, CD4⁺CXCR5⁺ pre-GC TFH cells were present but reduced, while CD4⁺Bcl-6⁺CXCR5⁺ GC-type TFH cells were strikingly depleted (LN: p<0.001; spleen: p<0.01). This indicates a specific block in the final maturation step from pre-GC (Bcl-6⁻CXCR5⁺) to GC-TFH (Bcl-6⁺CXCR5⁺), occurring at the T-B interface where excessive TNF-α may prevent Bcl-6 upregulation (see [[Kaneko2020 - GC Loss and TFH Block in COVID-19]], n=11 COVID + controls, multi-color immunofluorescence).
 - **CXCR5 absence defines Tph cells in dengue:** The dominant activated CD4⁺ T cell subset in acute dengue is CXCR5⁻PD-1⁺ ([[Peripheral Helper T Cell]]), not CXCR5⁺PD-1⁺ (cTfh). ~75% of activated CD4⁺ T cells lack CXCR5. CXCR5 absence on both Tph (T cells) and DN2 (B cells) positions CXCR5 loss as the unifying marker of EF pathway commitment across both lymphocyte lineages (see [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]], n=170 acute dengue).
 - **Concurrent CXCL13 elevation despite Tph dominance:** Despite the overwhelming dominance of CXCR5⁻ Tph cells, plasma CXCL13 (the CXCR5 ligand and GC biomarker) is elevated in acute dengue. This suggests concurrent GC activity alongside the dominant EF response — EF and GC may not be mutually exclusive in dengue (see [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]).
 
@@ -39,4 +40,5 @@ None documented in current wiki sources.
 - [[Sanz2025 - Human Atypical B Cells Overview]]
 - [[Woodruff2020 - EF B Cell Responses in COVID-19]]
 - [[Scharer2019 - Epigenetic Programming in SLE B Cells]]
+- [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]
 - [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]
