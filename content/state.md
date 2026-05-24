@@ -1,7 +1,7 @@
 ---
 type: meta
-updated: 2026-05-23
-last_session: 2026-05-23
+updated: 2026-05-24
+last_session: 2026-05-24
 ---
 
 # Wiki State
@@ -76,6 +76,11 @@ Structural and workflow decisions with rationale. Append-only.
 **Decision:** CLAUDE.md §Workflows → Summon the Council → Step 2 now includes a hardcoded fallback path for `pdftoppm.exe` at `C:\Users\user\AppData\Local\Microsoft\WinGet\Packages\...\poppler-25.07.0\Library\bin\pdftoppm.exe`, used when `pdftoppm` is not on the system PATH.
 **Why:** Poppler installed via WinGet but not added to PATH. Without the fallback, council workflow would halt unnecessarily.
 **How to apply:** If poppler is updated to a newer version or moved, update the path in CLAUDE.md.
+
+### [2026-05-24] Schema refactor — lazy-load council, rename governance, trim fat
+**Decision:** Three-part CLAUDE.md refactor: (1) Council workflow (106 lines) extracted to lazy-loaded `CLAUDE_COUNCIL.md` — read only when curator summons the council; (2) `CLAUDE_UPDATE.md` renamed to `CLAUDE_GOVERNANCE.md` — clearer name, baseline improvements table moved to log.md; (3) New Axis / Remove Axis stubs replaced with pointer to governance file, eliminating duplicate source-of-truth. Net: 114 lines (~2,400 tokens) removed from per-session context load.
+**Why:** Curator-directed efficiency refactor. Council protocol loaded every session (~1-in-10 usage). Axis stubs duplicated governance file. Baseline table was historical commentary, not operational.
+**How to apply:** When council is summoned, read `CLAUDE_COUNCIL.md` (not CLAUDE.md — it only has a stub). When axis changes are requested, read `CLAUDE_GOVERNANCE.md` §Change Types. The governance file is still the authority for all schema changes.
 
 ### [2026-05-02] Wiki initialised
 **Decision:** Scaffold created as a sibling to the dengue-wiki, focused on extrafollicular B cell dynamics in dengue via flow cytometry. Adapted from dengue-wiki schema with three differences: (1) `geography/` axis dropped (clinical cohort source captured in source page metadata only); (2) `Update Web` workflow removed (web deployment deferred); (3) Domain Context rewritten for B cell / cytometry scope.

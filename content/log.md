@@ -2,6 +2,32 @@
 
 ---
 
+## [2026-05-24] schema-update | CLAUDE.md refactor — lazy-load council, rename governance, trim fat
+
+**Change:** Three-part schema refactor to reduce per-session token load: (1) Council workflow extracted from CLAUDE.md to lazy-loaded `CLAUDE_COUNCIL.md`; (2) `CLAUDE_UPDATE.md` renamed to `CLAUDE_GOVERNANCE.md` with baseline improvements table removed; (3) New Axis / Remove Axis stubs in CLAUDE.md replaced with pointer to governance file.
+**Scope:** CLAUDE.md §Architecture, §Workflows (Summon the Council, New Axis, Remove/Merge Axis); CLAUDE_GOVERNANCE.md (renamed, trimmed); CLAUDE_COUNCIL.md (new file)
+**Pages affected:** 0 (schema-only change; no wiki pages modified)
+**Reason:** Curator-directed refactor to improve per-session token efficiency. Council protocol (~2,300 tokens) loaded every session but used ~1 in 10. Axis stubs duplicated governance file content. Baseline table was historical, not operational.
+**Net savings:** ~2,400 tokens removed from per-session CLAUDE.md context load (~115 lines).
+
+**Baseline Improvements table (moved here for historical record):**
+
+The following changes were identified as structural deficiencies in the original instruction set and incorporated into `CLAUDE.md` as defaults. Previously tracked in `CLAUDE_UPDATE.md` (now `CLAUDE_GOVERNANCE.md`); moved here 2026-05-24 as the changes are applied and no longer need governance-file prominence.
+
+| Change | Rationale | Applied to |
+|---|---|---|
+| Context-scaling note in Lint | Wiki growth will exceed single-context scan capacity | § Lint |
+| Git snapshot step in Ingest and governance | No rollback without version history | § Ingest + governance file |
+| Citation count usage guidance | Raw counts mislead without age/field context | § Conventions → Frontmatter |
+| Evidence-weighting on concept pages | All sources weighted equally by default; RCTs ≠ case reports | § Conventions → Concept pages |
+| "Questions Raised" → Watch Item propagation | Questions were being written but never acted on | § Ingest step 12 |
+| Minimal analyses/ template | Analyses folder had no structure; heterogeneous content | § Conventions |
+| Retraction/correction workflow | No mechanism to handle superseded papers | § Workflows |
+| Notable Findings bootstrapping note | Early wiki has a low bar problem | § Notable Findings |
+| Fast-track ingest flag | Bulk ingests stalled on mandatory discussion step | § Ingest |
+
+---
+
 ## [2026-05-23] thicken | OAS and ADE concept pages — Category 5 thin page resolution
 
 **Scope:** Both pages expanded from 2 sources each to 7 (OAS) and 5 (ADE). Deep lint Category 5 resolved.
