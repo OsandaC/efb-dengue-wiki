@@ -2,6 +2,14 @@
 
 ---
 
+## [2026-05-24] revision | Research Plan - DN B Cell Expansion in Dengue → Revision 4
+
+**Change:** Major update to the Research Plan analysis page. Systematic "DN2" → "DN2-phenotype" / "DN1" → "DN1-like" / "DN3" → "DN3-like" terminology correction throughout (per Sanz2025/DN2 Gating Strategy — panel lacks CXCR5/T-bet/FCRL5). Three new Background subsections: tissue-level GC loss (Kaneko2020), EF SHM precedent (William2002), alternative lineage framework caveat (Sutton2021). H4 softened from strict precursor–product to co-variation model (informed by Sutton2021 no-PC-genes finding). Two new limitations (Sutton2021 44.7% gating capture; Bhattacharya2016 tissue-retained PBs). Gating strategy cross-referenced to DN2 Gating Strategy analysis; council-identified warnings integrated. New Follow-Up Study 8 (CD11c-primary gating reanalysis). Sources Used expanded by 7 references. Related Pages expanded with new entities (TNF-alpha, Bcl-6, AID, FCRL5, IgM), methods (CITE-seq, scRNA-seq), and all new source pages.
+**Pages affected:** 1 (wiki/analyses/Research Plan - DN B Cell Expansion in Dengue.md)
+**Sources integrated:** Kaneko2020, William2002, Sutton2021, Bhattacharya2016, Priyamvada2016, Singh2026, GarciaBates2013
+
+---
+
 ## [2026-05-24] schema-update | CLAUDE.md refactor — lazy-load council, rename governance, trim fat
 
 **Change:** Three-part schema refactor to reduce per-session token load: (1) Council workflow extracted from CLAUDE.md to lazy-loaded `CLAUDE_COUNCIL.md`; (2) `CLAUDE_UPDATE.md` renamed to `CLAUDE_GOVERNANCE.md` with baseline improvements table removed; (3) New Axis / Remove Axis stubs in CLAUDE.md replaced with pointer to governance file.

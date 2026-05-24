@@ -134,7 +134,7 @@
 ## Analyses (5)
 
 - [[DN2 Gating Strategy]] — council-reviewed 11-color gating strategy for DN/DN2-phenotype isolation in dengue PBMCs; Ansari2025-comparable; Sanz2025 IgD-audit compliant
-- [[Research Plan - DN B Cell Expansion in Dengue]] — wet-lab protocol: flow cytometry panel, cohort design (DF/DHF/HC), DN1/DN2/DN3 subdivision without CXCR5, sample size estimates
+- [[Research Plan - DN B Cell Expansion in Dengue]] — wet-lab protocol (Rev 4): flow cytometry panel, cohort design (DF/DHF/HC), DN1-like/DN2-phenotype/DN3-like surrogate subdivision, sample size estimates
 - [[Notable Findings]] — running log of striking cross-cutting observations (14 entries)
 - [[Curator Highlights]] — aggregated `==highlights==` and `%%comments%%` from wiki pages (2 highlights)
 - [[External Citation Audit]] — catalog of 54 external papers cited inline across ~25 wiki pages; DOIs, backlinks, verification status
