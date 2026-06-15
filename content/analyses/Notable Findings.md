@@ -2,12 +2,29 @@
 type: analysis
 tags: [meta, notable-findings]
 created: 2026-05-02
-updated: 2026-05-22
+updated: 2026-06-14
 ---
 
 # Notable Findings
 
 A running log of atomic observations from the literature that are striking, unexpected, or carry implications beyond the paper they came from. See CLAUDE.md → §Notable Findings for the entry bar and format.
+
+---
+
+## [2026-06-14] "ABC" is a superset that only partly overlaps "DN" — and is transcriptomically distinct from DN2 even where they overlap
+
+**Source:** [[Lamprinou2026 - ABCs and DN B Cells]]
+
+**Finding:** The age-associated B cell (ABC) population is heterogeneous, comprising CD27⁺ B cells, IgD⁺ B cells, and — predominantly — IgD⁻CD27⁻ (DN) cells (Tangye 2023). Only the IgD⁻CD27⁻ ABC subset corresponds to [[DN2 B Cell|DN2]]; CD27⁺ and IgD⁺ ABCs cannot be classified as DN, and the DN subsets lacking CD11c/T-bet (DN1, DN3, DN4) cannot be classified as ABCs. Moreover, comparative transcriptomics show that ABCs are distinct from *other* CD11c⁺ B cells including DN2, with elevated cytokine/chemokine expression not seen in the others (Maul 2021).
+
+**Why notable:** This sharply qualifies a shorthand the wiki has been using since the spine reframe — the [[Atypical B Cell]] umbrella's synonymy row treated "ABC" as roughly equivalent to "DN2 / CD11c⁺ switched memory." Lamprinou2026 reframes the relationship as **partial, asymmetric overlap**: ABC ⊅ DN and DN ⊅ ABC, intersecting only at the IgD⁻CD27⁻/DN2 node — and even that intersection is a *phenotypic* approximation, not a transcriptomic identity (Maul 2021). For a wiki whose entire spine is "atypical (DN) B cells & plasmablasts," this is a load-bearing distinction: it means cross-disease (and future dengue) studies that gate "ABC" by CD11c/T-bet vs. "DN" by IgD⁻CD27⁻ are sampling overlapping-but-non-identical populations, and that a finding about one cannot be silently transferred to the other. It also flags that the IgD⁺ fraction of ABCs is antigen-experienced (SHM⁺), so IgD does not mark naivety within this cluster.
+
+**Follow-up questions:**
+- Does the Maul2021 "ABC ≠ DN2" cytokine/chemokine distinction persist *within* the IgD⁻CD27⁻ fraction, or only across the whole ABC superset? (Requires paired transcriptomics of sorted IgD⁻CD27⁻ ABCs vs. DN2.)
+- Should the wiki's umbrella synonymy map be revised from "ABC ≈ DN2" to an explicit asymmetric-overlap diagram?
+- In dengue, would a panel that gates ABC (CD11c/T-bet) capture a different population than the IgD⁻CD27⁻ gate used by Ansari2025/Singh2026?
+
+**Related pages:** [[Age-Associated B Cell]], [[Atypical B Cell]], [[Double-Negative B Cell]], [[DN2 B Cell]], [[T-bet]], [[CD11c]], [[CD27]], [[IgD]]
 
 ---
 

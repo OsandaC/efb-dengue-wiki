@@ -2,7 +2,7 @@
 type: analysis
 tags: [flow-cytometry, DN2, gating-strategy, panel-design, extrafollicular, dengue]
 created: 2026-05-20
-updated: 2026-05-20
+updated: 2026-05-25
 ---
 
 # DN2 Gating Strategy for Dengue EF B Cell Identification
@@ -46,39 +46,52 @@ The strategy follows Ansari et al. 2025 (dengue) as the primary template, with W
 
 ```
 STEP 0a ─ SINGLETS
-  FSC-A vs FSC-H → Exclude doublets
+  X-axis: FSC-A    Y-axis: FSC-H
+  → Draw a diagonal gate along the FSC-A = FSC-H line
+  → Exclude doublets (events that fall below the diagonal)
   
 STEP 0b ─ MORPHOLOGICAL GATE
-  FSC vs SSC → Generous gate including lymphoblast region
+  X-axis: FSC-A    Y-axis: SSC-A
+  → Generous gate including lymphoblast region
   ⚠ Do NOT draw a tight lymphocyte gate — activated B cell blasts
     (higher FSC/SSC) will be systematically excluded.
     Alternative: skip this gate and rely on lineage markers only.
   
 STEP 1 ─ LIVE LEUKOCYTES
-  APC-Fire750 (CD45⁺) → eFluor506 (L/D⁻)
+  X-axis: APC-Fire750 (CD45)    Y-axis: eFluor506 (L/D)
+  → Gate on CD45⁺ (right) and L/D⁻ (bottom) = live leukocytes
   
-STEP 2 ─ B CELL LINEAGE
-  BV711 (CD3⁻ CD14⁻) → PE-Cy7 (CD66b⁻) → RB705 (CD19⁺)
+STEP 2a ─ DUMP GATE
+  X-axis: BV711 (CD3 + CD14)    Y-axis: SSC-A
+  → Gate on BV711⁻ (left) = exclude T cells and monocytes
+
+STEP 2b ─ GRANULOCYTE EXCLUSION
+  X-axis: PE-Cy7 (CD66b)    Y-axis: SSC-A
+  → Gate on CD66b⁻ (left) = exclude granulocytes
+
+STEP 2c ─ B CELL SELECTION
+  X-axis: RB705 (CD19)    Y-axis: SSC-A
+  → Gate on CD19⁺ (right) = B cells
   ⚠ CD3 and CD14 antibodies must be titrated independently before
     pooling in BV711 channel.
   
 STEP 3 ─ EXCLUDE PLASMABLASTS / ASCs
-  APC (CD27) vs BV421 (CD38)
+  X-axis: APC (CD27)    Y-axis: BV421 (CD38)
   → Polygon gate around CD27ʰⁱCD38ʰⁱ cluster (upper-right)
   → Exclude this population
   ⚠ Use a polygon gate hugging the PB cluster, NOT a quadrant line.
     A quadrant risks losing CD27⁺CD38ᵐⁱᵈ activated memory B cells.
   
 STEP 4 ─ EXCLUDE TRANSITIONAL B CELLS
-  AF700 (CD24) vs BV421 (CD38)
-  → Polygon gate around CD24ʰⁱCD38ʰⁱ cluster
+  X-axis: AF700 (CD24)    Y-axis: BV421 (CD38)
+  → Polygon gate around CD24ʰⁱCD38ʰⁱ cluster (upper-right)
   → Exclude this population
   ⚠ Set this gate on the POST-Step-3 population specifically.
     CD38 dynamic range is compressed after PB removal.
     Validate with CD10 in a separate tube if available.
   
 STEP 5 ─ DN GATE (IgD vs CD27 quadrant)
-  BV785 (IgD) vs APC (CD27)
+  X-axis: BV785 (IgD)    Y-axis: APC (CD27)
 ```
 
 <table>
@@ -90,7 +103,8 @@ STEP 5 ─ DN GATE (IgD vs CD27 quadrant)
   → Gate on the IgD⁻CD27⁻ (lower-left) quadrant = DN B cells
   
 STEP 6 ─ DN SUBGATING (CD21 vs CD11c)
-  FITC (CD21) vs PE (CD11c) — within DN gate only
+  X-axis: FITC (CD21)    Y-axis: PE (CD11c)
+  — within DN gate only
 ```
 
 <table>
@@ -210,4 +224,4 @@ Tight lymphocyte morphological gates exclude activated B cell blasts (larger, mo
 
 ## Related Pages
 
-[[Double-Negative B Cell]], [[DN2 B Cell]], [[DN3 B Cell]], [[Plasmablast]], [[CD21]], [[CD11c]], [[CD27]], [[IgD]], [[CD38]], [[CD24]], [[CXCR5]], [[T-bet]], [[FCRL5]], [[Extrafollicular Response]], [[Conventional Flow Cytometry]], [[Spectral Flow Cytometry]], [[FACS Sorting]], [[Research Plan - DN B Cell Expansion in Dengue]]
+[[B Cell Panel Variant 1]] (intracellular-capable successor — adds T-bet/CXCR5), [[Double-Negative B Cell]], [[DN2 B Cell]], [[DN3 B Cell]], [[Plasmablast]], [[CD21]], [[CD11c]], [[CD27]], [[IgD]], [[CD38]], [[CD24]], [[CXCR5]], [[T-bet]], [[FCRL5]], [[Extrafollicular Response]], [[Conventional Flow Cytometry]], [[Spectral Flow Cytometry]], [[FACS Sorting]], [[Compensation and FMO Controls]], [[DN2 Panel - Staining, Compensation, and Gating Protocol]], [[Research Plan - DN B Cell Expansion in Dengue]]

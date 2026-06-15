@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, immunoglobulin, isotype, class-switch-recombination, memory-b-cells]
 created: 2026-05-02
-updated: 2026-05-21
-sources: 15
+updated: 2026-06-14
+sources: 16
 ---
 
 # IgG
@@ -36,13 +36,14 @@ IgG is the predominant antibody isotype in human serum and the primary product o
 
 - **IgG3 overrepresented in alternative lineage B cells in malaria:** In malaria-exposed donors, alternative lineage B cells (transcriptomically defined by scRNA-seq) were enriched for IgG3 isotype compared to classical lineage cells, consistent with the IgG3 enrichment on DN2 cells reported in SLE by Jenks2018. IgG3 is the dominant IFN-γ-driven subclass and the default product of T-bet-dependent class switching (see [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]], n=4, 10x Chromium scRNA-seq).
 - **IgG⁺ memory B cells are predisposed to plasmablast fate:** The isotype-fate segregation model (Seifert et al. 2015, cited in [[Bhattacharya2016 - Memory B Cell Subset Selection in Secondary Dengue]], commentary) proposes that IgG⁺ memory B cells preferentially differentiate into plasmablasts and plasma cells upon recall, while IgM⁺ memory B cells re-initiate germinal centers. This explains the overwhelming IgG dominance of the dengue PB wave (Wrammert2012: ≥70% DENV-specific IgG; IgM near-absent in secondary infection) and the E-specific IgG⁺ bias of PB-derived mAbs vs. the prM/complex epitope specificity of MBC-derived mAbs (Appanna2016) — the IgG⁺ E-specific memory subset is selectively recruited to PB fate.
+- **IgG is the predominant isotype of the ABC/atypical population.** The majority of [[Age-Associated B Cell|ABCs]] are class-switched, predominantly expressing IgG (or [[IgA]]), although scRNA-seq shows the population also retains an unswitched IgD⁺ fraction. This is consistent with the switched-isotype dominance of the EF/atypical compartment across SLE (DN2: IgG/IgG3), COVID-19 (IgG1), and malaria (IgG3) (see [[Lamprinou2026 - ABCs and DN B Cells]], opinion, citing Ambegaonkar 2022 / Tangye 2023).
 
 ## Contradictions & Debates
 
 None documented in current wiki sources.
 
 ## Related Pages
-[[Double-Negative B Cell]], [[DN2 B Cell]], [[Plasmablast]], [[Memory B Cell]], [[Class Switch Recombination]], [[IgM]], [[IgA]], [[Somatic Hypermutation]], [[Original Antigenic Sin]], [[Antibody-Dependent Enhancement]]
+[[Double-Negative B Cell]], [[DN2 B Cell]], [[Age-Associated B Cell]], [[Plasmablast]], [[Memory B Cell]], [[Class Switch Recombination]], [[IgM]], [[IgA]], [[Somatic Hypermutation]], [[Original Antigenic Sin]], [[Antibody-Dependent Enhancement]]
 
 ## Sources
 - [[Wei2007 - DN Memory B Cells in SLE]]
@@ -60,3 +61,4 @@ None documented in current wiki sources.
 - [[Bhattacharya2016 - Memory B Cell Subset Selection in Secondary Dengue]]
 - [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]
 - [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]
+- [[Lamprinou2026 - ABCs and DN B Cells]]

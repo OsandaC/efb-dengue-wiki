@@ -2,8 +2,8 @@
 type: entity
 tags: [b-cell-subsets, DN3, pre-plasmablast, extrafollicular, COVID-19, SLE, IgG4-RD]
 created: 2026-05-03
-updated: 2026-05-04
-sources: 3
+updated: 2026-06-13
+sources: 4
 ---
 
 # DN3 B Cell
@@ -26,6 +26,8 @@ DN3 cells should **not** be classified as atypical B cells or age-associated B c
 - **DN3 first described in this paper:** Although the Sanz2025 review cites DN3 as a known entity, Woodruff2020 is the original description. The formal gating definition — IgD⁻CD27⁻CD11c⁻CD21⁻ within the CD19⁺CD24⁻CD38⁻ DN gate — was established here. The paper notes that DN3 was "previously unreported in other conditions" at the time of publication (see [[Woodruff2020 - EF B Cell Responses in COVID-19]]).
 - **DN3 cells contain SARS-CoV-2-specific cells (independent cohort confirmation):** Dual-fluorophore RBD probe staining of COVID-19 peripheral blood demonstrated that DN3 cells (alongside DN2, aN, SWM, and PB) contain virus-specific B cells. DN3 was CXCR5-low (like DN2), consistent with EF pathway identity. This confirms the antigen-driven nature of the DN3 expansion originally reported by [[Woodruff2020 - EF B Cell Responses in COVID-19]] in a separate cohort (see [[Kaneko2020 - GC Loss and TFH Block in COVID-19]], n=68 blood cohort, 13-color FCM + RBD probes).
 - **UMAP heterogeneity within DN3:** UMAP projections indicated a split in the DN3 compartment driven by HLA-DR and CD19 expression — suggesting internal heterogeneity that requires further interrogation (see [[Woodruff2020 - EF B Cell Responses in COVID-19]], Fig. 2e).
+- **Distinctive transcriptomic signature — proliferation + UPR, lowest activation markers.** Among DN subsets, DN3 displays a strong proliferation and unfolded-protein-response signature together with the **lowest** levels of CD22, CD72, CD69, and BAFFR — a profile distinguishing it from DN1, DN2, and DN4 (see [[Lamprinou2026 - ABCs and DN B Cells]], opinion, citing Castleman 2022 / Allard-Chamard 2023).
+- **Broader disease spectrum: IgG4-RD fibrosis, hypoxia, and SLE activity.** Beyond severe COVID-19, DN3 has been implicated in autoimmune fibrosis in IgG4-related disease (tissue-infiltrating) and in SLE, where extrafollicular CD19^low CXCR5⁻CD11c⁻ DN3 cells correlate significantly with disease activity in female patients; DN3 has also been associated with hypoxic conditions (see [[Lamprinou2026 - ABCs and DN B Cells]], opinion, citing Allard-Chamard 2023 / Chizzolini 2024 / Castleman 2022).
 
 ## Contradictions & Debates
 
@@ -33,9 +35,10 @@ DN3 cells should **not** be classified as atypical B cells or age-associated B c
 - Whether DN3 cells are an obligate intermediate in the EF pathway (aNAV → DN2 → DN3 → PB) or arise independently of DN2 is unclear.
 
 ## Related Pages
-[[Double-Negative B Cell]], [[DN2 B Cell]], [[Plasmablast]], [[Extrafollicular Response]], [[CXCR5]], [[CD11c]], [[T-bet]]
+[[Double-Negative B Cell]], [[DN2 B Cell]], [[Atypical B Cell]], [[Age-Associated B Cell]], [[Plasmablast]], [[Extrafollicular Response]], [[CXCR5]], [[CD11c]], [[T-bet]]
 
 ## Sources
 - [[Woodruff2020 - EF B Cell Responses in COVID-19]]
 - [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]
 - [[Sanz2025 - Human Atypical B Cells Overview]]
+- [[Lamprinou2026 - ABCs and DN B Cells]]

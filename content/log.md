@@ -2,6 +2,126 @@
 
 ---
 
+## [2026-06-14] new method page | DN2 Panel - Staining, Compensation, and Gating Protocol
+
+**What:** Created `wiki/methods/DN2 Panel - Staining, Compensation, and Gating Protocol.md` — an end-to-end operational SOP for the curator's 11-color DN2 panel, covering fresh whole-blood prep, control-tube construction (unstained, single-stain beads + the cells-based AmCyan/L-D exception, and the four FMOs), acquisition/CST routine, FlowJo compensation, and FMO-anchored gating, with worked examples, analogies, a possible-issues/mitigations table, and an honest "True Protocol Limitations" section.
+
+**Scope:** This page owns the bench-to-screen procedure; it links to (rather than reproduces) the numeric spillover/FMO tables in [[Compensation and FMO Controls]] and the Step 0–6 gating hierarchy in [[DN2 Gating Strategy]]. Real fluorochrome names used throughout (APC-H7=CD45, AmCyan=L/D, PerCP-Cy5-5=CD19, BV786=IgD), per the existing naming-drift watch item.
+
+**Pages updated:** `index.md` (Methods 21→22, pages 101→102), `methods/Compensation and FMO Controls.md` (Related Pages link), `analyses/DN2 Gating Strategy.md` (Related Pages link), `state.md`.
+
+**Session:** governed by `~/.claude/plans/we-need-to-check-cosmic-taco.md`; advisor consulted twice (plan scope-fencing, then final review).
+
+---
+
+## [2026-06-14] new method page | Compensation and FMO Controls
+
+**What:** Created `wiki/methods/Compensation and FMO Controls.md` — general compensation-vs-FMO principles (sourced from [[Wei2007 - DN Memory B Cells in SLE]], [[Singh2026 - DENV-Specific Memory B Cell Subsets]]) plus the curator's empirical worked example from the 11-color [[DN2 Gating Strategy]] panel pilot.
+
+**Worked example summary:** Compensation matrix validated as sound (cond=6.22, det=0.907); the CD21→CD11c spillover (~20%, the DN2-axis pair) confirmed clean. Four FMOs (CD11c-PE, CD21-FITC, CD27-APC, IgD-BV786) showed the working DN cutoffs (IgD<0.8, CD27<1.0) were **undercounts** relative to FMO-negative 99th percentiles (1.98 / 1.76). Curator adopted the FMO-anchored box (IgD<1.98 & CD27<1.76) as DN, quadrupling DN from 591 (1.99% of B cells) to 2,640 (8.90%); DN2 (CD21<0.69 & CD11c>0.72 within DN) = 211/2,640 = 7.99% of DN.
+
+**Pages updated:** `index.md` (Methods 20→21), `analyses/DN2 Gating Strategy.md` (Related Pages link), `state.md` (Watch Items — resolved compensation/FMO item, added naming-drift, bead-validation, and CD11c-precision follow-ups).
+
+**Session:** governed by `~/.claude/plans/we-need-to-check-cosmic-taco.md`; full numeric/script trail in `Flowdata/STEP5_FINDINGS.md`.
+
+---
+
+## [2026-06-14] consult | Compensation & CD11c-FMO cadence (11-color DN2 panel)
+
+**Question:** Curator asked how to compensate better on the fixed 11-color **whole-blood** DN2 panel ([[DN2 Gating Strategy]]) and whether the CD11c-PE FMO is needed per-sample or "one or two." Plan-mode consultation; advisor-reviewed; plan approved (`~/.claude/plans/memoized-finding-cloud.md`).
+
+**Setup facts gathered (drive the answer):** whole blood + RBC lyse; daily CST standardization; single aliquoted CD66b-PE-Cy7 lot; small cohort (<20, a few staining days); FlowJo v10.
+
+**Recommendation (pending empirical validation):** **per-batch (per-staining-day) CD11c-PE FMO, not per-sample.** Rationale: compensation corrects the spillover *median*, not the *spreading* that widens the negative (the FMO's job); the three cadence drivers — PMT drift, lot-to-lot tandem variation, degradation window — are all controlled here; and DN2 cells are **CD66b⁻ / CD21-low**, i.e. the low-PE-spread corner. Whole-blood risk is granulocyte contamination (a gating-hygiene fix: tight doublet + CD66b/CD45 exclusion), not boundary drift. Pull-back trigger: FMO 99.5th-pct PE boundary drifts >~0.5 log across batches.
+
+**Next:** interactive FlowJo walkthrough (control inventory → spillover-spreading-matrix PE row → PE-Cy7→PE degradation tail → cross-batch CD11c boundary test) → then write `wiki/methods/Compensation and FMO Controls.md` (general principles + this panel's worked example) with standard cross-links + index/log/state updates. **No wiki pages created yet** — walkthrough pending curator's FlowJo data.
+
+---
+
+## [2026-06-14] analysis | B Cell Panel Variant 1
+
+**Created:** `wiki/analyses/B Cell Panel Variant 1.md` — first design iteration of an **intracellular-capable** B-cell panel for the curator's **3-laser (405/488/633), 14-detector conventional cytometer** (config supplied this session: no 561/no UV → PE-family forced onto blue laser; 6 BV on violet). Leans toward atypical/DN sub-populations + plasmablasts. Advisor-reviewed once before drafting.
+
+**Design spine:** intracellular capability adds **T-bet** (converts "DN2-phenotype" → confirmed DN2/ABC) and the panels add **CXCR5** (unlocks the DN2:DN1 ratio centerpiece — impossible on the surface-only [[DN2 Gating Strategy]] 11-color). Premium-channel scarcity (only APC + BV421 truly bright/low-spread; PE a crowded third) forces the four dim defining markers (CXCR5/CD11c/T-bet/FCRL5) to compete → **FCRL5 yields** (corroborating, not defining per Jenks). Three defining axes (CD11c⁺/CXCR5⁻/T-bet⁺) kept on premium channels in every panel.
+
+**Curator-directed shape:** single tube is the realistic constraint → **Panel 4 (13-color single-tube workhorse) is the lead recommendation**, with the 14th (PE-Cy7) slot deliberately left empty to eliminate the wiki-flagged PE-Cy7→CD11c-PE false-positive artifact. Panels 1–3 reframed as the multi-tube suite (Panel 1 anchor = +IgM/CD24; Panel 2 = ASC/effector output; Panel 3 = isotype×chemokine). Panel 4 covers both halves of the thesis (DN2 confirmation + DN2:DN1 ratio + plasmablast/EF-effector) in one acquisition.
+
+**Honest caveats embedded:** 14-color is the feasibility ceiling not a target (clean 13 > saturated 14); fluorophore *slots* not SKUs (must verify conjugates + run spreading matrix before ordering); fixable L/D + surface-before-fix (CXCR5/CXCR3 at 37 °C) + TF perm + tandem-survival checks; CD11c-PE FMO mandatory; none resolve DENV-antigen specificity (grant-level).
+
+**Bookkeeping:** index Analyses 6→7, Total pages 100→101. Inbound links added from [[DN2 Gating Strategy]] (as successor) and [[Thesis Objectives and Grant Pitch]] Related Pages (no orphan). Dropped a dangling `[[Ki-67]]` link (no entity page exists — Ki-67 referenced inline across wiki but unbuilt; noted as a gap in state). All other wikilinks resolve.
+
+---
+
+## [2026-06-14] analysis | Thesis Objectives and Grant Pitch
+
+**Created:** `wiki/analyses/Thesis Objectives and Grant Pitch.md` — strategic/objectives layer for the curator's dengue atypical-B-cell pilot, complementing the wet-lab `[[Research Plan - DN B Cell Expansion in Dengue]]` (Rev 4). Built across a multi-turn brainstorm (gating strategies → fixed-panel resolution ceiling → pilot design → grant pitch), advisor-reviewed once mid-session.
+
+**Core content:** central thesis (one low-fidelity antibody property — cross-reactive/polyreactive/near-germline — with two faces: autoreactivity + non-neutralization/ADE; EF/DN2-phenotype + plasmablast compartment as proposed source, SLE-imported and unproven in dengue); 5 falsifiable objectives with **O1 = cells→ANA correlation as the novel primary** (continuous, full-cohort); statistical-honesty framing (continuous-correlation-first at n≈10–15/arm; severity as exploratory/effect-size-generating); confounder pre-emption.
+
+**Key analytical contributions this session:** (1) **age & sex are first-order confounders for ABCs** (age-defined; female-biased via X-linked TLR7) — current arms imbalanced (DHF male-skewed/older; DF female-skewed/younger) → **fix by balanced recruitment now**, not adjustment; (2) the **d5–8 window is a built-in timing control** that de-risks the severity confounder that sank Ansari2025's severity claim; (3) **both faces measurable in-pilot** now that ANA + FRNT×4 (all serotypes grown) + IgG/IgM are available; (4) **LFA→capture-ELISA κ-validation** design for serostatus; (5) WHO-2009-binary-primary + WHO-1997-leak-sensitivity severity recommendation (flagged as curator's call).
+
+**Sample reality captured:** 19 cases (DF=8, DHF=11), cross-sectional, d5–8, single serum timepoint; target ≥10–15/arm; recruitment ongoing.
+
+**Bookkeeping:** index Analyses 5→6, Total pages 99→100; inbound link added from Research Plan Related Pages (no orphan). All wikilinks resolve to existing pages.
+
+---
+
+## [2026-06-14] deep lint | Post-reframe + Lamprinou2026 health check (100 pages, 3 parallel agents)
+
+**Scope:** Full wiki audit by three parallel read-only sub-agents — sources/ (20), entities/ (47), concepts/+methods/+analyses/ (33). First deep lint since the 2026-06-13 spine reframe and the Lamprinou2026 ingest. Agents ran standard structural checks + reframe-consistency checks (stale "ABC = DN2" flat equivalence; EF-as-organizing-frame framing; DN1–DN3 vs DN1–DN4 nomenclature; new hub-page reciprocity).
+
+**Structural health: EXCELLENT.** 0 HIGH findings across 100 pages. Zero broken wikilinks, zero orphans, zero displaced content (insertion-order guard holding since 2026-05-08), zero frontmatter source-count mismatches, 100% template compliance. The reframe propagated cleanly — no stale flat ABC=DN2 equivalence found; asymmetric-overlap nuance consistent across hub and sub-pages. Lamprinou2026 ingest verified clean across all touched pages.
+
+**Issues found and fixed (8):**
+
+| Severity | Issue | Fix |
+|----------|-------|-----|
+| MED ×6 | Source pages cited as Sources ON the new hub pages but not linking back in their own "Entities Mentioned" (reframe created hubs citing pre-existing sources; reverse link not propagated) | Added `[[Atypical B Cell]]` to Jenks2018, Woodruff2020, Ansari2025, Singh2026; added both `[[Atypical B Cell]]` + `[[Age-Associated B Cell]]` to Sanz2025, Sutton2021 |
+| MED ×1 | `Extrafollicular Response` Overview still framed EF as "the central biological focus of this wiki" (pre-reframe) | Reworded to position EF as the generating pathway under the atypical (DN) B-cell + plasmablast spine |
+| LOW ×1 | `T-bet` Overview leaned toward flat ABC/atypical/DN2 equivalence | Softened to "overlapping (but non-identical) labels" + pointer to [[Atypical B Cell]] synonymy map |
+
+**Curator Highlights refreshed:** 2 highlights, both current (Ansari2025 `(acute cells died in culture)`; DN2 Gating Strategy `Whether this concordance holds in dengue is unknown.`). No content change; `updated:` bumped to 2026-06-14.
+
+**Deferred (already-tracked LOW items, no action):** evidence-weight annotations missing on early marker pages (CD19/CD27/CD38/CD10); `IgA`/`IRF4` list a source not cited in any Key Points bullet; `External Citation Audit` is a 2026-05-08 snapshot now stale vs. 20 sources (Lamprinou2026's external cites uncatalogued); thin single-source method/entity pages (expected). All remain in state.md Watch Items.
+
+---
+
+## [2026-06-14] ingest | Lamprinou2026 - ABCs and DN B Cells
+
+**Source:** `raw/Lamprinou2026.pdf` (DOI: 10.3389/fragi.2026.1752452) → [[Lamprinou2026 - ABCs and DN B Cells]]
+**Type:** Opinion / narrative conceptual synthesis (*Frontiers in Aging*); no original data. Taxonomy and several core claims are self-cited to the author group (Sachinidis/Garyfallos); weighted accordingly throughout.
+**Key contribution:** First wiki source dedicated to the **ABC ↔ DN identity question** the [[Atypical B Cell]] umbrella was built to map. Establishes ABC as a **heterogeneous superset** (CD27⁺ + IgD⁺ + predominantly IgD⁻CD27⁻) whose IgD⁻CD27⁻ fraction maps to [[DN2 B Cell|DN2]]; CD27⁺/IgD⁺ ABCs and the CXCR5⁺/T-bet⁻ DN subsets fall outside the overlap, which is partial and context-dependent. Even within the shared T-bet⁺CD11c⁺ phenotype, ABCs are transcriptomically distinct from DN2 (Maul 2021). Mechanistic refinement: **IL-21 → CD11c, IFN-γ → T-bet** in the TLR7/9-driven ABC differentiation programme. Introduces a **four-subset DN taxonomy** (adds DN4: CXCR5⁺CD11c⁻T-bet⁻, allergy-associated) vs. the wiki's default three (DN1/DN2/DN3) — logged as nomenclature drift, not a contradiction. No dengue data.
+**Pages created:** 2 (source page; `entities/Age-Associated B Cell.md` — new)
+**Pages updated:** 20 (15 entities: Atypical B Cell, Double-Negative B Cell, DN2 B Cell, DN3 B Cell, T-bet, CD11c, CXCR5, CD27, IgD, IgG, IgA, TLR7, IL-21, CD20 + Age-Associated B Cell [new]; 4 concepts: Extrafollicular Response, Germinal Center, Somatic Hypermutation, Class Switch Recombination; index)
+**Notable Finding:** "ABC" is a superset that only partly overlaps "DN" — and is transcriptomically distinct from DN2 even where they overlap (entry #16). Qualifies the post-reframe "ABC ≈ DN2" shorthand on the [[Atypical B Cell]] umbrella.
+**Citations:** Semantic Scholar 1, CrossRef 1 (retrieved 2026-06-14 — null on first attempt 2026-06-13, paper too new to be indexed).
+**Note:** Ingest began 2026-06-13 and was interrupted before the closing steps (citations retry, log, state.md, commit); resumed and completed 2026-06-14. Propagation verified clean across all 19 updated pages (insertion-order guard held).
+
+---
+
+## [2026-06-13] reframe | Atypical B Cell umbrella + spine reframe (complete)
+
+**Change:** Executed the spine reframe toward atypical/age-associated B cells + plasmablasts (per CLAUDE_GOVERNANCE pre-change checklist; pre-reframe git snapshot `8471e8c`). Created the `[[Atypical B Cell]]` umbrella/hub entity page — a synonymy map (atypical/ABC/T-bet⁺/CD11c⁺/DN/alternative-lineage → precise sub-populations) that foregrounds the Sanz2025 "atypical is misleading" debate and routes to [[Double-Negative B Cell]], [[DN2 B Cell]], [[DN3 B Cell]], [[Activated Naive B Cell]] without restating their content. Reframed the Double-Negative B Cell page to defer to the umbrella (resolves the "two primary-home pages" ambiguity).
+**Conflict resolved:** Supersedes the [2026-05-02] decision against splitting atypical/ABC out of Double-Negative B Cell (curator-sanctioned via the greenlit watch item). DN nomenclature remains the *precise* classification; "atypical" is the field-level umbrella only.
+**Pages affected:** 3 — created `entities/Atypical B Cell.md`; updated `entities/Double-Negative B Cell.md`, `index.md`, `state.md`.
+**CLAUDE.md identity — APPLIED (hybrid "Atypical (DN)" term, curator's choice):** Rewrote CLAUDE.md H1 (→ "Atypical (DN) B Cells & Plasmablasts in Dengue"), mission, and Domain Context intro to lead with "atypical B cells (the DN / age-associated cluster, IgD⁻CD27⁻) and plasmablasts," with EF reframed as the generating pathway and the flow-cytometry methodological focus retained. Minimal diffs per CLAUDE_GOVERNANCE; no other CLAUDE.md sections touched. Rollback point: snapshot `8471e8c`.
+
+---
+
+## [2026-06-13] direction | New high-level direction + bridge-wiki created
+
+**Change:** Curator set a new high-level research direction — "plasmablasts and atypical/age-associated B cells and their association with autoantibodies and neutralizing antibodies in dengue." Scope brainstormed with advisor review. Resolved into a three-wiki architecture: `dengue-wiki/` (antibodies/ANA/autoimmunity — canonical; ~45 sources), `efb-dengue-wiki/` (this — cells/EF/atypical B cells/plasmablasts/flow — canonical), and a new `bridge-wiki/` (synthesis layer connecting cells→autoantibodies).
+
+**Central thesis:** the atypical/plasmablast compartment produces one low-fidelity antibody property (cross-reactive, polyreactive, near-germline) with two clinical faces — autoreactivity (molecular mimicry) and non-neutralization/ADE; anti-NS1 and anti-prM are the linchpin specificities. The novel/unbuilt arm is **cells→autoantibodies**; neut/ADE/OAS is already double-covered in both parents (reconcile, not build).
+
+**Created:** `bridge-wiki/` (sibling folder under `Literature Review Dengue/`) — seam option (c): standalone bridge artifact with its own `CLAUDE.md`, `state.md`, `log.md`, `index.md`, and seed synthesis `syntheses/Atypical B Cells to Autoantibodies - Bridge Thesis.md`. No merge of the parent wikis (both exceed comfortable session-context limits). Memory updated (`three-wiki-architecture`, `lean-structures-context-limits`).
+
+**Pages affected (efb-wiki):** 0 wiki pages modified. `state.md` updated (Current Focus direction note, Decisions entry, 3 Watch Items for proposed efb changes).
+
+**Proposed (NOT done — need curator go-ahead):** (1) split out an `[[Atypical B Cell]]` umbrella page (reopens [2026-05-02] fold-into-DN decision); (2) reframe efb spine from "extrafollicular response" to atypical B cells + plasmablasts, EF demoted to a pathway.
+
+---
+
 ## [2026-05-24] revision | Research Plan - DN B Cell Expansion in Dengue → Revision 4
 
 **Change:** Major update to the Research Plan analysis page. Systematic "DN2" → "DN2-phenotype" / "DN1" → "DN1-like" / "DN3" → "DN3-like" terminology correction throughout (per Sanz2025/DN2 Gating Strategy — panel lacks CXCR5/T-bet/FCRL5). Three new Background subsections: tissue-level GC loss (Kaneko2020), EF SHM precedent (William2002), alternative lineage framework caveat (Sutton2021). H4 softened from strict precursor–product to co-variation model (informed by Sutton2021 no-PC-genes finding). Two new limitations (Sutton2021 44.7% gating capture; Bhattacharya2016 tissue-retained PBs). Gating strategy cross-referenced to DN2 Gating Strategy analysis; council-identified warnings integrated. New Follow-Up Study 8 (CD11c-primary gating reanalysis). Sources Used expanded by 7 references. Related Pages expanded with new entities (TNF-alpha, Bcl-6, AID, FCRL5, IgM), methods (CITE-seq, scRNA-seq), and all new source pages.

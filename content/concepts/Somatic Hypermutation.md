@@ -2,8 +2,8 @@
 type: concept
 tags: [somatic-hypermutation, BCR-sequencing, memory-b-cells, germinal-center, extrafollicular-response, affinity-maturation]
 created: 2026-05-02
-updated: 2026-05-23
-sources: 18
+updated: 2026-06-14
+sources: 19
 ---
 
 # Somatic Hypermutation
@@ -43,6 +43,7 @@ Somatic hypermutation (SHM) is the process by which activation-induced cytidine 
 
 - **All non-naive alternative lineage clusters carry significant SHM — post-GC origin evidence:** BCR analysis from Smart-seq2 scRNA-seq showed that all memory and atBC clusters (atBC1, atBC2, atBC3, MBC1) carry somatic hypermutation, consistent with post-GC origin rather than purely extrafollicular derivation. Combined with the absence of PC maintenance genes, this suggests these cells exited GCs and adopted the T-bet⁺ programme without committing to terminal differentiation. The SHM in alternative lineage cells is consistent with Wei2007's original observation of lower SHM in DN vs CD27⁺ cells, but reinterprets it: the SHM is GC-acquired, and the T-bet⁺ programme is adopted after GC exit (see [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]], Smart-seq2, n=11, 163 cells — limited throughput).
 - **HIGH SHM IN SORTED SECONDARY DENGUE PLASMABLASTS — contrasts with GodoyLozano2016 bulk data:** Single-cell VH sequencing of FACS-sorted plasmablasts from 4 secondary DHF patients (all DENV2) showed per-patient average VH mutations of 14.5–21.7 (overall mean 18.1, range 5–39 per sequence). This is significantly higher than IgG⁺ GC B cells (p<0.005) and comparable to influenza recall responses. CDR R:S ratios >2.9 in all patients confirmed antigenic selection. These SHM levels (~6.5% nucleotide mutation) are above the Tipton2015 vaccination benchmark (~7.3%) and far above the GodoyLozano2016 acute dengue bulk IgG data. The discrepancy is methodological: Priyamvada2016 sorted plasmablasts from exclusively secondary DHF (all memory-derived), while GodoyLozano2016 captured bulk IgG cDNA from a mix of primary and secondary infections. The Priyamvada data demonstrate that the memory-recall component of secondary dengue plasmablasts is genuinely highly mutated — the low global SHM from GodoyLozano2016 must therefore reflect additional low-SHM clones (possibly de novo EF-derived) that are diluted out by the cell-sorting approach (see [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]], n=4 secondary DHF, single-cell VH sequencing of sorted PBs, 53 mAbs).
+- **ABCs carry SHM throughout — including the unswitched IgD⁺ fraction.** The age-associated B cell population expresses a diverse Ig repertoire marked by somatic hypermutation and antigen-driven activation, and even its IgD⁺ members carry SHM and are clonally related to IgD⁻ cells (i.e., are antigen-experienced, not naive). This is one basis for the proposed GC-experienced origin of at least a subset of ABCs — though homeostatic and EF routes are not excluded — and it cautions that SHM presence cannot by itself assign GC vs EF origin within the atypical cluster (see [[Lamprinou2026 - ABCs and DN B Cells]], opinion, citing Cancro 2020 / Maul 2021; [[Age-Associated B Cell]]).
 
 ## Contradictions & Debates
 
@@ -51,7 +52,7 @@ Somatic hypermutation (SHM) is the process by which activation-induced cytidine 
 - **Previously framed as two-way:** GodoyLozano2016 reports globally lower SHM during acute dengue vs. post-convalescence (p<0.001) from unsorted IgG cDNA. Appanna2016 reports comparable VH mutation frequencies between FACS-sorted plasmablasts and DENV-specific memory B cells (no significant difference by ANOVA). These findings are in apparent tension. Likely reconciliation: GodoyLozano2016 captures the full IgG⁺ B cell pool (dominated by plasmablasts in acute phase, pulling the average down), while Appanna2016 compares two sorted populations that may represent similarly matured cells selected for DENV binding. The Appanna2016 result does not contradict low global SHM — it shows that the subset of PBs that are DENV-specific have comparable mutation to DENV-specific MBCs, consistent with both being memory-derived. The GodoyLozano2016 result captures additional non-DENV-specific, germline-coded PBs that dilute the global average.
 
 ## Related Pages
-[[Double-Negative B Cell]], [[DN2 B Cell]], [[Activated Naive B Cell]], [[Memory B Cell]], [[Germinal Center]], [[Extrafollicular Response]], [[BCR Sequencing]], [[Class Switch Recombination]], [[Immunohistochemistry]]
+[[Double-Negative B Cell]], [[DN2 B Cell]], [[Age-Associated B Cell]], [[Activated Naive B Cell]], [[Memory B Cell]], [[Germinal Center]], [[Extrafollicular Response]], [[BCR Sequencing]], [[Class Switch Recombination]], [[Immunohistochemistry]]
 
 ## Sources
 - [[Wei2007 - DN Memory B Cells in SLE]]
@@ -72,3 +73,4 @@ Somatic hypermutation (SHM) is the process by which activation-induced cytidine 
 - [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]
 - [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]
 - [[Anolik2004 - Rituximab and B Cell Abnormalities in SLE]]
+- [[Lamprinou2026 - ABCs and DN B Cells]]

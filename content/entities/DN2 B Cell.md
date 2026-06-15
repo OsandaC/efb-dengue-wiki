@@ -2,8 +2,8 @@
 type: entity
 tags: [b-cell-subsets, DN2, extrafollicular, T-bet, CD11c, pre-plasmablast, SLE, comparative-immunology]
 created: 2026-05-02
-updated: 2026-05-21
-sources: 7
+updated: 2026-06-13
+sources: 8
 ---
 
 # DN2 B Cell
@@ -53,6 +53,8 @@ DN2 cells are pre-plasmablasts: they express a T-bet/ZEB2 transcriptional progra
 - **MBC1 cluster = quiescent alternative lineage memory ("memory DN2"):** The MBC1 cluster at the base of the alternative lineage pseudotime branch represents a quiescent memory state within the T-bet⁺/CD11c⁺ lineage. This provides transcriptomic evidence for the "memory DN2" population predicted by Sanz2025 and Faliti2024 (see [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]], n=4, 10x Chromium).
 - **CD21⁻CD27⁻ gating captures only ~45% of transcriptomic atBCs:** CITE-seq demonstrated that the conventional DN gate misses the majority of transcriptomically-defined alternative lineage cells. CD11c protein is a superior single marker. This implies prior estimates of DN2 frequency by flow cytometry are underestimates (see [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]], n=4, CITE-seq).
 - **Alternative lineage primed by vaccination:** PfSPZ vaccination (n=15) and influenza vaccination (n=9) both activate alternative lineage B cells, with repeated boosting shifting cells toward increasingly atypical surface phenotype (CD21⁻CD27⁻). This establishes that the DN2/atBC phenotype is a normal vaccination response, not restricted to pathological contexts (see [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]).
+- **DN2 is the human counterpart of the murine ABC — and the only DN subset that is ABC-like.** In current usage "ABC" denotes murine cells and human DN2 is regarded as the closest counterpart; among DN subsets, DN2 is the **only** subset that highly expresses T-bet and efficiently differentiates into plasma cells, so the [[Age-Associated B Cell|ABC]]↔DN correspondence runs specifically through DN2 (and only through the IgD⁻CD27⁻ fraction of the heterogeneous ABC superset) (see [[Lamprinou2026 - ABCs and DN B Cells]], opinion, citing Chung 2023 / Ricker 2021 / Satterthwaite 2021 / Jenks 2018).
+- **Caveat — ABC ≈ DN2 phenotypically but not transcriptomically.** Comparative transcriptomics show ABCs are distinct from other CD11c⁺ B cells including DN2, with elevated cytokine/chemokine expression not seen in DN2 — so the equivalence is a phenotypic approximation, not a molecular identity (see [[Lamprinou2026 - ABCs and DN B Cells]], opinion, citing Maul 2021; see [[Age-Associated B Cell]] Contradictions).
 
 ## Contradictions & Debates
 
@@ -62,7 +64,7 @@ DN2 cells are pre-plasmablasts: they express a T-bet/ZEB2 transcriptional progra
 - Whether the autoreactivity attributed to DN2 cells in SLE is a general property of the phenotype or specific to the autoimmune context is unresolved. Sanz (2025) argues that autoreactivity is context-dependent and should not be assumed from phenotype alone (see [[Sanz2025 - Human Atypical B Cells Overview]]).
 
 ## Related Pages
-[[Double-Negative B Cell]], [[Activated Naive B Cell]], [[Plasmablast]], [[T-bet]], [[CD11c]], [[CXCR5]], [[FCRL5]], [[IRF4]], [[BLIMP-1]], [[BACH2]], [[TRAF5]], [[TLR7]], [[ZEB2]], [[ATF3]], [[EGR]], [[PD-1]], [[Extrafollicular Response]], [[Germinal Center]]
+[[Double-Negative B Cell]], [[Age-Associated B Cell]], [[Atypical B Cell]], [[Activated Naive B Cell]], [[Plasmablast]], [[T-bet]], [[CD11c]], [[CXCR5]], [[FCRL5]], [[IRF4]], [[BLIMP-1]], [[BACH2]], [[TRAF5]], [[TLR7]], [[ZEB2]], [[ATF3]], [[EGR]], [[PD-1]], [[Extrafollicular Response]], [[Germinal Center]]
 
 ## Sources
 - [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]
@@ -72,3 +74,4 @@ DN2 cells are pre-plasmablasts: they express a T-bet/ZEB2 transcriptional progra
 - [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]
 - [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]
 - [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]
+- [[Lamprinou2026 - ABCs and DN B Cells]]

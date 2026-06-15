@@ -75,6 +75,7 @@ Severity analysis revealed that CXCR5⁻PD-1⁺ cell frequency and anti-NS1/anti
 - [[IL-21]] — key Tph-derived cytokine driving B cell differentiation
 - [[Double-Negative B Cell]] — IgD⁻CD27⁻ compartment with CD21⁻CD11c⁺ EF phenotype expanding in dengue
 - [[DN2 B Cell]] — CD21⁻CD11c⁺ within DN gate (phenotypically consistent with DN2)
+- [[Atypical B Cell]] — umbrella for the expanded CD21⁻CD11c⁺ (DN2-phenotype) cluster in acute dengue
 - [[Plasmablast]] — CD20⁻CD38⁺⁺CD27⁺Ki67⁺CD71⁺CXCR3⁺
 - [[PD-1]] — defining marker of Tph cells; also expressed on DN2 B cells
 - [[CD21]] — loss marks EF B cell populations

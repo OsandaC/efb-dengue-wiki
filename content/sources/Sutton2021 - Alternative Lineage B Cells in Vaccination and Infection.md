@@ -52,6 +52,8 @@ CITE-seq data reveal that the conventional CD21⁻CD27⁻ flow cytometry gate ca
 - [[BCR Sequencing]] (V gene usage analysis, SHM quantification from Smart-seq2 data)
 
 ## Entities Mentioned
+- [[Atypical B Cell]] (umbrella; the "alternative lineage" is the transcriptomic correlate of the atypical/ABC cluster)
+- [[Age-Associated B Cell]] (alternative lineage = transcriptomic correlate of the ABC/T-bet⁺CD11c⁺ population)
 - [[Double-Negative B Cell]] (CD21⁻CD27⁻ — shown to be an incomplete proxy for the alternative lineage)
 - [[DN2 B Cell]] (atBC populations overlap with DN2 definition; alternative lineage framework recontextualizes DN2)
 - [[CD11c]] (best single surface marker for alternative lineage by CITE-seq)

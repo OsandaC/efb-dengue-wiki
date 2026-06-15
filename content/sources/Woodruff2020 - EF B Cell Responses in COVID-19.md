@@ -75,7 +75,7 @@ Single-cell V(D)J sequencing of ASCs from a CoV-A patient revealed a balanced Ig
 
 ## Entities Mentioned
 
-[[Double-Negative B Cell]], [[DN2 B Cell]], [[DN3 B Cell]], [[Activated Naive B Cell]], [[Plasmablast]], [[CD19]], [[CD27]], [[CD38]], [[CD21]], [[CD11c]], [[CD138]], [[CXCR5]], [[CXCR3]], [[T-bet]], [[IgD]], [[IgG]], [[IgM]], [[IgA]], [[IRF4]], [[BLIMP-1]]
+[[Atypical B Cell]], [[Double-Negative B Cell]], [[DN2 B Cell]], [[DN3 B Cell]], [[Activated Naive B Cell]], [[Plasmablast]], [[CD19]], [[CD27]], [[CD38]], [[CD21]], [[CD11c]], [[CD138]], [[CXCR5]], [[CXCR3]], [[T-bet]], [[IgD]], [[IgG]], [[IgM]], [[IgA]], [[IRF4]], [[BLIMP-1]]
 
 ## Concepts Addressed
 

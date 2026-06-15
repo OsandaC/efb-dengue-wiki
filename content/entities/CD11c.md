@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, CD11c, ITGAX, integrin, DN2, age-associated-b-cells, extrafollicular]
 created: 2026-05-02
-updated: 2026-05-21
-sources: 8
+updated: 2026-06-14
+sources: 9
 ---
 
 # CD11c
@@ -31,13 +31,14 @@ CD11c (encoded by *ITGAX*) is an alpha integrin primarily expressed on dendritic
 
 - **CD11c is the best single surface marker for the alternative B cell lineage by CITE-seq:** Combined transcriptome + surface protein measurement (CITE-seq) on >12,000 B cells showed that CD11c protein expression most cleanly identified the transcriptomically-defined alternative lineage (atBC1, atBC2, atBC3, MBC1), outperforming CD21⁻CD27⁻ gating which captured only 44.7% of atBC1 cells. This provides the strongest primary-source evidence that CD11c should replace or supplement CD21⁻CD27⁻ as the principal gating marker for this population (see [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]], n=4, CITE-seq + 10x Chromium).
 - **CD11c⁺ DCs interact with B cells at extrafollicular sites (murine precedent).** In the foundational William2002 EF SHM study, CD11c⁺ dendritic cells were abundant within RF B cell clusters at the T zone–red pulp border and showed close physical interaction with Id⁺ B cells, in contrast to GCs where CD11c⁺ DCs are rare. This established CD11c⁺ DCs as a cellular component of the EF microenvironment, distinct from FDCs that define the GC niche. In the context of this wiki's B cell focus, CD11c on B cells marks EF-pathway cells (DN2/aNAV), while CD11c on DCs marks the innate cellular partners at EF sites — both uses reflect the extrafollicular niche (see [[William2002 - Extrafollicular Somatic Hypermutation in Autoimmune Mice]], IHC of splenic sections, MRL/lpr mice).
+- **CD11c is the integrin that helped define the ABC, and IL-21 is its primary inducer.** CD11c (with T-bet) was one of the two markers used to define age-associated B cells in aged mice; in the ABC/atypical differentiation programme **IL-21 robustly induces CD11c** whereas IFN-γ primarily drives T-bet — a clean division of labour between the two cytokines that cooperate (with TLR7/9) to generate the phenotype (see [[Lamprinou2026 - ABCs and DN B Cells]], opinion, citing Hao 2011 / Naradikian 2016 / Liu 2024). This complements the wiki's existing evidence that CD11c can also be induced without IFN-γ/T-bet (Sanz2025) — i.e., CD11c acquisition is cytokine-context-dependent.
 
 ## Contradictions & Debates
 
 None documented in current wiki sources.
 
 ## Related Pages
-[[DN2 B Cell]], [[Activated Naive B Cell]], [[T-bet]], [[CXCR5]], [[Double-Negative B Cell]], [[Extrafollicular Response]], [[FCRL5]], [[CXCR3]], [[CD21]], [[Peripheral Helper T Cell]]
+[[DN2 B Cell]], [[Age-Associated B Cell]], [[Atypical B Cell]], [[Activated Naive B Cell]], [[T-bet]], [[IL-21]], [[CXCR5]], [[Double-Negative B Cell]], [[Extrafollicular Response]], [[FCRL5]], [[CXCR3]], [[CD21]], [[Peripheral Helper T Cell]]
 
 ## Sources
 - [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]
@@ -48,3 +49,4 @@ None documented in current wiki sources.
 - [[William2002 - Extrafollicular Somatic Hypermutation in Autoimmune Mice]]
 - [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]
 - [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]
+- [[Lamprinou2026 - ABCs and DN B Cells]]

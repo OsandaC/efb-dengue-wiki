@@ -2,8 +2,8 @@
 type: entity
 tags: [innate-immunity, toll-like-receptors, TLR7, ssRNA-sensor, DN2, extrafollicular, SLE]
 created: 2026-05-02
-updated: 2026-05-18
-sources: 4
+updated: 2026-06-14
+sources: 5
 ---
 
 # TLR7
@@ -27,16 +27,19 @@ TLR7 (Toll-like Receptor 7) is an endosomal pattern recognition receptor that se
 - **Dengue relevance:** Dengue virus is an ssRNA flavivirus; during viraemia, TLR7 ligands are physiologically abundant. Whether the TLR7-driven EF differentiation programme operates during acute dengue — potentially driving the massive plasmablast expansion at days 7–10 — is a key open question.
 - **TLR9 as mechanistic precedent for TLR-driven EF SHM (murine).** In the foundational EF SHM study (William2002), the authors propose that TLR co-stimulation is a unifying feature of dominant autoantigens, citing Leadbetter et al. (2002) showing chromatin-containing immune complexes co-stimulate RF B cells via TLR9. TLR9 (DNA-sensing) and TLR7 (ssRNA-sensing) are structurally and functionally related endosomal TLRs that share the MyD88 signalling adaptor. The TLR9-driven EF pathway in the murine RF system is the direct precursor to the TLR7-driven human DN2 pathway described by Jenks2018 — different TLRs sensing different ligands but driving analogous outcomes of sustained B cell proliferation, SHM, and autoantibody production outside GCs (see [[William2002 - Extrafollicular Somatic Hypermutation in Autoimmune Mice]], citing Leadbetter et al. 2002, *Nature*).
 - **Proposed mechanism for T-independent CSR in dengue via TLR7:** GodoyLozano2016 explicitly proposes that endosomal DENV recognition by TLR7 provides a synergic signal with the BCR for T-independent class switch recombination, producing IgG-switched but poorly mutated antibodies. In mice, TLR7 and TLR9 synergise with BCR signalling to promote AID expression (required for both CSR and SHM); T-independent IgG responses against Polyomavirus require MyD88 (the canonical TLR adaptor). This provides a mechanistic link between the abundant TLR7 ligand (DENV ssRNA during viraemia) and the paradoxically low-SHM IgG observed in acute dengue — CSR is induced via TLR7+BCR but without the iterative SHM cycling of GC reactions (see [[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]], proposed model, citing Pone et al. 2012 and Raval et al. 2013).
+- **Endosomal TLR7 and TLR9 together drive the ABC/atypical phenotype.** ABCs are hyper-responsive to both endosomal TLR7 and TLR9 and are driven to differentiate by TLR stimulation in combination with IFN-γ and/or IL-21 (IFN-γ → T-bet, IL-21 → CD11c). BCR signalling contributes (with CD40) but cannot drive differentiation alone (see [[Lamprinou2026 - ABCs and DN B Cells]], opinion, citing Cancro 2020 / Rubtsov 2011 / Naradikian 2016 / Liu 2024 / Imabayashi 2025; [[Age-Associated B Cell]]).
+- **TLR7 is X-linked — a proposed basis for the female autoimmunity bias.** Because *TLR7* is encoded on the X chromosome and is closely tied to ABC activation, its gene dosage is offered as a partial explanation for the higher incidence of autoimmunity in females (see [[Lamprinou2026 - ABCs and DN B Cells]], opinion, citing Sachinidis 2020). This complements the wiki's existing Sanz2025 evidence (XIST ligand, defective X-inactivation) converging on amplified TLR7 signalling in female SLE.
 
 ## Contradictions & Debates
 
 None documented in current wiki sources.
 
 ## Related Pages
-[[TRAF5]], [[DN2 B Cell]], [[Activated Naive B Cell]], [[Plasmablast]], [[Extrafollicular Response]], [[ZEB2]]
+[[TRAF5]], [[DN2 B Cell]], [[Age-Associated B Cell]], [[Atypical B Cell]], [[Activated Naive B Cell]], [[Plasmablast]], [[Extrafollicular Response]], [[ZEB2]], [[T-bet]], [[CD11c]], [[IL-21]]
 
 ## Sources
 - [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]
 - [[Sanz2025 - Human Atypical B Cells Overview]]
 - [[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]]
 - [[William2002 - Extrafollicular Somatic Hypermutation in Autoimmune Mice]]
+- [[Lamprinou2026 - ABCs and DN B Cells]]

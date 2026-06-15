@@ -2,15 +2,15 @@
 type: entity
 tags: [transcription-factors, T-bet, TBX21, atypical-b-cells, DN2, age-associated-b-cells, extrafollicular]
 created: 2026-05-02
-updated: 2026-05-21
-sources: 7
+updated: 2026-06-14
+sources: 8
 ---
 
 # T-bet
 
 ## Overview
 
-T-bet (encoded by *TBX21*) is a T-box transcription factor originally identified as the master regulator of Th1 CD4⁺ T cell differentiation. In B cells, T-bet expression defines a distinct population variously termed age-associated B cells (ABCs), atypical B cells, or DN2 B cells, depending on the disease context and the surface markers used. T-bet cooperates with [[ZEB2]] to promote effector cell differentiation through inhibition of *TCF7* (a TF critical for central memory fate), and its expression is induced by TLR7 signalling and IFN-γ.
+T-bet (encoded by *TBX21*) is a T-box transcription factor originally identified as the master regulator of Th1 CD4⁺ T cell differentiation. In B cells, T-bet marks a cluster referred to by several overlapping (but non-identical) labels — age-associated B cells (ABCs), atypical B cells, or DN2 B cells — depending on disease context and the surface markers used; these labels intersect rather than coincide (see [[Atypical B Cell]] for the synonymy map). T-bet cooperates with [[ZEB2]] to promote effector cell differentiation through inhibition of *TCF7* (a TF critical for central memory fate), and its expression is induced by TLR7 signalling and IFN-γ.
 
 ## Key Points from Literature
 
@@ -35,13 +35,15 @@ T-bet (encoded by *TBX21*) is a T-box transcription factor originally identified
 - **T-bet⁺ CD4⁺ T cell expansion in COVID-19 lymphoid tissue — TH1 skewing at the anatomical level:** Multi-color immunofluorescence of post-mortem COVID-19 lymph nodes and spleens showed T-bet⁺ CD4⁺ T cells consistently increased in both organs, in both early and late disease. TH2 (GATA-3⁺) decreased; TH17 (RORγt⁺) variably increased. This TH1 skewing at the tissue level is consistent with the TNF-α-mediated GC TFH block — T-bet expression in CD4⁺ T cells is associated with IFN-γ and TNF-α production, which may suppress Bcl-6 expression required for GC-TFH differentiation (see [[Kaneko2020 - GC Loss and TFH Block in COVID-19]], n=11 COVID + controls, multi-color immunofluorescence).
 - **T-bet expected but not directly stained in acute dengue:** CD21⁻CD11c⁺ B cells within the IgD⁻CD27⁻ gate are significantly expanded during acute dengue — a phenotype consistent with T-bet⁺ DN2 identity based on the Jenks2018, Woodruff2020, and Scharer2019 characterisations. However, T-bet was not directly stained in this study. Formal confirmation of T-bet expression on dengue EF B cells remains outstanding and is the single most important pending phenotypic validation (see [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]], n=170 acute dengue, multi-color FCM without intracellular T-bet).
 - **TBX21 (T-bet) defines the alternative B cell lineage at the transcriptomic level:** scRNA-seq of >12,000 B cells placed *TBX21* expression as one of three core genes (alongside *ITGAX*/CD11c and *FCRL5*) defining the alternative lineage. T-bet expression was consistent across all alternative lineage clusters (atBC1, atBC2, atBC3, MBC1) and absent from the classical lineage (MBC2, MBC3, actBC), confirming T-bet as a lineage-defining rather than activation-state marker in this framework (see [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]], n=4, 10x Chromium scRNA-seq).
+- **T-bet is the defining transcription factor of the ABC population — and IFN-γ is its primary inducer.** ABCs were defined by T-bet from their first description (CD19⁺CD21⁻CD23⁻T-bet⁺CD11c⁺ in aged mice); in the ABC differentiation programme **IFN-γ primarily promotes T-bet** while IL-21 induces CD11c. In autoimmunity, elevated T-bet in B cells drives increased antibody production, antigen presentation, and even germinal-center formation (see [[Lamprinou2026 - ABCs and DN B Cells]], opinion, citing Hao 2011 / Naradikian 2016 / Liu 2024 / Rubtsov 2017).
+- **T-bet is the marker that separates DN2 from the other DN subsets.** Among the DN subsets (DN1–DN4), **DN2 is the only one that highly expresses T-bet**; DN1 and DN4 are T-bet⁻ and DN3 is T-bet^low. T-bet is thus the single axis that aligns DN2 with the ABC/atypical cluster while excluding the CXCR5⁺ DN subsets (see [[Lamprinou2026 - ABCs and DN B Cells]], opinion; [[Double-Negative B Cell]]).
 
 ## Contradictions & Debates
 
 None documented in current wiki sources.
 
 ## Related Pages
-[[DN2 B Cell]], [[Activated Naive B Cell]], [[ZEB2]], [[Double-Negative B Cell]], [[CD11c]], [[TLR7]], [[Extrafollicular Response]], [[FCRL5]], [[CXCR3]], [[ATF3]], [[EGR]], [[Peripheral Helper T Cell]]
+[[DN2 B Cell]], [[Age-Associated B Cell]], [[Atypical B Cell]], [[Activated Naive B Cell]], [[ZEB2]], [[Double-Negative B Cell]], [[CD11c]], [[TLR7]], [[IL-21]], [[Extrafollicular Response]], [[FCRL5]], [[CXCR3]], [[ATF3]], [[EGR]], [[Peripheral Helper T Cell]]
 
 ## Sources
 - [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]
@@ -51,3 +53,4 @@ None documented in current wiki sources.
 - [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]
 - [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]
 - [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]
+- [[Lamprinou2026 - ABCs and DN B Cells]]

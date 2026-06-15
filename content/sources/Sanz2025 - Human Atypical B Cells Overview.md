@@ -59,7 +59,7 @@ A major contribution is the synthesis of evidence across diseases — SLE, SARS-
 
 ## Entities Mentioned
 
-[[Double-Negative B Cell]], [[DN2 B Cell]], [[DN3 B Cell]], [[Activated Naive B Cell]], [[Plasmablast]], [[CD27]], [[CD21]], [[CD11c]], [[T-bet]], [[CXCR5]], [[FCRL5]], [[FcRH4]], [[SLAMF7]], [[ZEB2]], [[IRF4]], [[BLIMP-1]], [[BACH2]], [[TRAF5]], [[TLR7]], [[CD19]], [[CD38]], [[IgD]], [[IgG]]
+[[Atypical B Cell]], [[Age-Associated B Cell]], [[Double-Negative B Cell]], [[DN2 B Cell]], [[DN3 B Cell]], [[Activated Naive B Cell]], [[Plasmablast]], [[CD27]], [[CD21]], [[CD11c]], [[T-bet]], [[CXCR5]], [[FCRL5]], [[FcRH4]], [[SLAMF7]], [[ZEB2]], [[IRF4]], [[BLIMP-1]], [[BACH2]], [[TRAF5]], [[TLR7]], [[CD19]], [[CD38]], [[IgD]], [[IgG]]
 
 ## Concepts Addressed
 

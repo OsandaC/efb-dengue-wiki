@@ -51,7 +51,7 @@ This is the fourth paper from the Sanz lab ingested into this wiki (after Wei200
 [[Conventional Flow Cytometry]], [[FACS Sorting]], [[BCR Sequencing]], [[RNA Sequencing]], [[ATAC-seq]], [[ELISpot]], [[In Vitro B Cell Stimulation]], [[Phospho-Flow Cytometry]]
 
 ## Entities Mentioned
-[[DN2 B Cell]], [[Double-Negative B Cell]], [[Activated Naive B Cell]], [[Plasmablast]], [[T-bet]], [[CD11c]], [[CXCR5]], [[FCRL5]], [[FcRH4]], [[ZEB2]], [[IRF4]], [[BLIMP-1]], [[BACH2]], [[TRAF5]], [[TLR7]], [[CD19]], [[CD27]], [[CD38]], [[CD24]], [[IgG]], [[IgD]]
+[[Atypical B Cell]], [[DN2 B Cell]], [[Double-Negative B Cell]], [[Activated Naive B Cell]], [[Plasmablast]], [[T-bet]], [[CD11c]], [[CXCR5]], [[FCRL5]], [[FcRH4]], [[ZEB2]], [[IRF4]], [[BLIMP-1]], [[BACH2]], [[TRAF5]], [[TLR7]], [[CD19]], [[CD27]], [[CD38]], [[CD24]], [[IgG]], [[IgD]]
 
 ## Concepts Addressed
 [[Extrafollicular Response]], [[Germinal Center]], [[Memory B Cell]], [[Somatic Hypermutation]], [[Class Switch Recombination]]

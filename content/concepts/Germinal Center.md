@@ -2,8 +2,8 @@
 type: concept
 tags: [germinal-center, B-cell-activation, somatic-hypermutation, affinity-maturation, class-switch-recombination, memory-formation]
 created: 2026-05-02
-updated: 2026-05-23
-sources: 18
+updated: 2026-06-14
+sources: 19
 ---
 
 # Germinal Center
@@ -47,6 +47,7 @@ In the context of this wiki, the germinal centre response is the primary counter
 - **IgM⁺ memory B cells re-initiate GCs while IgG⁺ memory cells yield PBs:** The isotype-fate segregation model (Seifert et al. 2015, cited in [[Bhattacharya2016 - Memory B Cell Subset Selection in Secondary Dengue]], commentary) proposes that IgM⁺ memory B cells preferentially re-initiate germinal center reactions for affinity maturation toward new pathogens, while IgG⁺ memory cells are predisposed to plasmablast/plasma cell differentiation. In dengue, this predicts that the IgM⁺ DENV-binding MBCs identified by Appanna2016 and Singh2026 may re-enter GCs upon re-exposure, contributing to the prolonged GC activity suggested by CXCL13 elevation (Ansari2025) and delayed MBC peaks (Singh2026) — while E-specific IgG⁺ memory feeds the acute PB wave.
 - **All non-naive alternative lineage clusters show significant SHM — consistent with post-GC origin:** BCR analysis from Smart-seq2 scRNA-seq (n=11, 163 cells) showed that all memory and atBC clusters within the alternative lineage carry somatic hypermutation. Combined with the absence of PC maintenance genes in these clusters, this suggests the alternative lineage comprises post-GC cells that do not proceed to plasmablast fate in healthy/infection contexts — they exited GC reactions and adopted the T-bet⁺/CD11c⁺ programme without committing to terminal differentiation (see [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]], Smart-seq2, n=11, 163 cells — low-throughput, limiting statistical power).
 - **High SHM in sorted secondary dengue PBs argues FOR GC-experienced memory origin:** Priyamvada2016 found mean 18.1 VH mutations per plasmablast (range 5–39), significantly higher than IgG⁺ GC B cells (p<0.005) and comparable to influenza recall responses. CDR R:S ratios >2.9 confirmed antigenic selection. This SHM level is best explained by prior GC transit of the memory B cells that gave rise to these PBs — contrasting with GodoyLozano2016's low-SHM finding in bulk IgG and suggesting two concurrent populations: GC-experienced memory recall (high SHM) and de novo EF differentiation (low SHM) (see [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]], n=4 secondary DHF, single-cell BCR sequencing).
+- **ABCs are (at least partly) GC-experienced — and T-bet⁺ B cells can promote GC formation in autoimmunity.** A GC-experienced origin is proposed for at least a subset of [[Age-Associated B Cell|ABCs]] (diverse SHM⁺ repertoire, antigen-driven activation), distinguishing them from the strongly EF-tied DN2/DN3 subsets. Moreover, in autoimmunity, elevated T-bet in B cells drives not only increased antibody production and antigen presentation but also **germinal-center formation** — so the atypical/ABC cluster can be both a product of, and a contributor to, GC reactions, not solely an EF phenomenon (see [[Lamprinou2026 - ABCs and DN B Cells]], opinion, citing Cancro 2020 / Rubtsov 2017). This complements the wiki's existing Sanz2025 evidence that ABCs can sustain GC responses as APCs.
 
 ## Contradictions & Debates
 
@@ -54,7 +55,7 @@ In the context of this wiki, the germinal centre response is the primary counter
 - **ABC can be both GC-sustaining and GC-excluded:** Sanz2025 reveals a paradox — Zeb2-driven ABC/DN2 cells are molecularly excluded from entering GCs (Zeb2 represses Mef2b), yet ABC can sustain GC responses as APCs. These functions need not be contradictory if ABC provide TFH support from extrafollicular positions without themselves entering GCs.
 
 ## Related Pages
-[[Extrafollicular Response]], [[Somatic Hypermutation]], [[Class Switch Recombination]], [[Memory B Cell]], [[Double-Negative B Cell]], [[DN2 B Cell]], [[CD27]], [[Plasmablast]]
+[[Extrafollicular Response]], [[Somatic Hypermutation]], [[Class Switch Recombination]], [[Memory B Cell]], [[Double-Negative B Cell]], [[Age-Associated B Cell]], [[DN2 B Cell]], [[CD27]], [[T-bet]], [[Plasmablast]]
 
 ## Sources
 - [[Wei2007 - DN Memory B Cells in SLE]]
@@ -75,3 +76,4 @@ In the context of this wiki, the germinal centre response is the primary counter
 - [[Bhattacharya2016 - Memory B Cell Subset Selection in Secondary Dengue]]
 - [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]
 - [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]
+- [[Lamprinou2026 - ABCs and DN B Cells]]

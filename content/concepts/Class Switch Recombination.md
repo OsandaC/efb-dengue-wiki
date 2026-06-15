@@ -2,8 +2,8 @@
 type: concept
 tags: [class-switch-recombination, isotype-switching, IgG, IgA, AID, germinal-center, extrafollicular-response]
 created: 2026-05-02
-updated: 2026-05-23
-sources: 15
+updated: 2026-06-14
+sources: 16
 ---
 
 # Class Switch Recombination
@@ -31,6 +31,7 @@ Class switch recombination (CSR) is a DNA recombination event in which the const
 - **CSR decoupled from SHM in acute dengue — direct evidence for T-independent class switching:** GodoyLozano2016 observed IgG class-switched B cells with near-germline VH mutation levels during acute dengue. The paradox of IgG expression (requiring CSR) with low SHM (suggesting no GC transit) is the molecular hallmark of T-independent CSR. The authors propose that TLR7-mediated endosomal DENV recognition synergises with BCR signalling to drive AID expression and CSR independently of CD40–CD154 T cell help, analogous to the BLyS/APRIL mechanism described in Wei2007. This provides the first dengue-specific evidence that CSR and SHM are functionally uncoupled during acute infection (see [[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]], n=19 acute dengue, 454 pyrosequencing of IgG VH cDNA).
 
 - **IgG dominance confirmed by mAb cloning in secondary dengue:** All 53 mAbs generated from single-cell sorted plasmablasts in Priyamvada2016 were IgG, with ELISpot showing 36–95% of IgG ASCs were DENV-specific. The completeness of CSR in secondary dengue PBs is consistent with memory B cell recall (prior GC-mediated CSR) rather than de novo switching during the acute response (see [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]], n=4 secondary DHF, single-cell mAb cloning).
+- **The ABC/atypical population is predominantly class-switched, but retains an unswitched fraction.** Most [[Age-Associated B Cell|ABCs]] are class-switched (predominantly IgG or IgA), yet scRNA-seq shows the population also contains unswitched IgD⁺ cells — and those IgD⁺ ABCs are themselves antigen-experienced (SHM⁺, clonally related to IgD⁻ cells). CSR is part of the TLR7/9 + IFN-γ/IL-21 ABC differentiation programme, reinforcing that switched isotypes arise across the GC-independent atypical compartment (see [[Lamprinou2026 - ABCs and DN B Cells]], opinion, citing Ambegaonkar 2022 / Maul 2021; [[Age-Associated B Cell]]).
 
 ## Contradictions & Debates
 
@@ -38,7 +39,7 @@ Class switch recombination (CSR) is a DNA recombination event in which the const
 - **Woodruff2020 n=1 scV(D)J evidence for ongoing EF CSR:** The strongest direct evidence for real-time CSR in EF-derived ASCs comes from a single COVID-19 patient's repertoire — insufficient to establish generalizability. Whether ongoing CSR occurs in the dengue EF-derived plasmablast pool has not been tested.
 
 ## Related Pages
-[[Double-Negative B Cell]], [[DN2 B Cell]], [[Plasmablast]], [[Germinal Center]], [[Extrafollicular Response]], [[Somatic Hypermutation]], [[IgG]], [[IgA]], [[IgM]], [[Memory B Cell]], [[Original Antigenic Sin]]
+[[Double-Negative B Cell]], [[DN2 B Cell]], [[Age-Associated B Cell]], [[Plasmablast]], [[Germinal Center]], [[Extrafollicular Response]], [[Somatic Hypermutation]], [[IgG]], [[IgA]], [[IgM]], [[Memory B Cell]], [[Original Antigenic Sin]]
 
 ## Sources
 - [[Wei2007 - DN Memory B Cells in SLE]]
@@ -56,3 +57,4 @@ Class switch recombination (CSR) is a DNA recombination event in which the const
 - [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]]
 - [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]
 - [[Anolik2004 - Rituximab and B Cell Abnormalities in SLE]]
+- [[Lamprinou2026 - ABCs and DN B Cells]]

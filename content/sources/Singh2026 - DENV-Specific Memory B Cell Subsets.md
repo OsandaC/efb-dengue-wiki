@@ -104,6 +104,7 @@ A hypothetical working model built from temporal correlations posits IgD+ naive 
 ## Entities Mentioned
 - [[Plasmablast]] — IgM+ vs IgM⁻ PBs quantified in acute infection
 - [[Double-Negative B Cell]] — "atypical MBCs" (CD27⁻/CD21⁻) = DN B cells by wiki nomenclature
+- [[Atypical B Cell]] — umbrella; the paper's "atypical MBC" terminology maps to the DN cluster (panel lacks CXCR5/CD11c, so DN1–DN4 subset unresolved)
 - [[CD19]], [[CD20]], [[CD27]], [[CD21]], [[CD38]]
 - [[IgD]], [[IgG]], [[IgM]], [[IgA]]
 
