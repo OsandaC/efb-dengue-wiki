@@ -1,13 +1,14 @@
 # EFB Dengue Wiki — Master Index
 
-*Last updated: 2026-06-29 | Sources: 21 | Total pages: 106*
+*Last updated: 2026-06-29 | Sources: 22 | Total pages: 107*
 
 ---
 
-## Sources (21)
+## Sources (22)
 
 | Page | Year | Journal | Disease Context |
 |------|------|---------|-----------------|
+| [[Morra2018 - Defining Warning Signs and Severe Dengue]] | 2018 | Rev Med Virol | **Clinical classification (LANDMARK): PRISMA systematic review of how 44 WHO-2009 studies operationally define warning signs / severe-dengue signs; only 2 of 16 signs (liver enlargement, liver involvement = AST/ALT >1000) had consensus definitions — both WHO-2009-predefined; "shock" defined via 23 distinct parameter-combinations; hematocrit/platelet/respiratory-rate cutoffs all divergent. Within-scheme definitional heterogeneity compounds Narvaez2011's between-scheme heterogeneity; contains Narvaez2011 as its ref #40. No own diagnostic-accuracy data (73.0% vs 93.4% specificity borrowed from Macedo et al)** |
 | [[Narvaez2011 - Evaluating WHO Dengue Severity Classifications]] | 2011 | PLoS Negl Trop Dis | **Clinical classification (LANDMARK): evaluates WHO-1997 (DF/DHF/DSS) vs WHO-2009 (Dengue±Warning Signs / Severe Dengue) against clinical intervention level; n=544 pediatric Nicaragua; Severe Dengue sens/spec 92.1%/78.5% vs DHF/DSS 39.0%/75.5%; schemes agree only κ=0.25; DENV-2→DHF/DSS association lost under the revised scheme** |
 | [[Lamprinou2026 - ABCs and DN B Cells]] | 2026 | Front Aging | **Opinion (ABC↔DN identity): ABC is a heterogeneous superset (CD27⁺ + IgD⁺ + predominantly IgD⁻CD27⁻); only its IgD⁻CD27⁻ subset ≈ DN2; DN1–DN4 taxonomy (adds DN4); IL-21→CD11c, IFN-γ→T-bet; no dengue data; self-cited framework** |
 | [[Wrammert2012 - Plasmablast Responses in Acute Dengue]] | 2012 | J Virol | **Dengue (FOUNDATIONAL: first systematic PB characterisation; 47% of B cells; >1,000-fold expansion; day 6–7 peak; ≥70% DENV-specific IgG; cross-serotype reactive; no severity correlation [confounded])** |
@@ -107,7 +108,7 @@
 - [[Class Switch Recombination]] — EF CSR-competence confirmed; AID preserved outside GCs (Kaneko2020); class-switched memory B cells are Tph responders in dengue; IgG-dominant PBs vs IgM-enriched DENV-binding MBCs; ABCs predominantly switched (IgG/IgA) with unswitched IgD⁺ fraction (sources: 16)
 - [[Original Antigenic Sin]] — memory recall bias toward prior serotype; 2/4 patients preferentially neutralise DENV1 over infecting DENV2; OAS at mAb level; lower SHM in secondary (GodoyLozano2016); convergent CDR3s more prevalent in secondary (Parameswaran2013); selective E-specific IgG memory recruitment (Appanna2016); Tph→MBC→PB recall engine (Ansari2025); contested — Brazilian cohort shows infecting-serotype dominance (GarciaBates2013) (sources: 7)
 - [[Antibody-Dependent Enhancement]] — 45/53 dengue PB mAbs enhance infection regardless of neutralisation potency; ADE-competent IgG from memory recall; future-exposure risk; plasmablast–PRNT₅₀ disconnect (GarciaBates2013); neutralizing Ab paradox across dengue and COVID-19 (Ansari2025, Woodruff2020); unmeasured BMPC compartment (Bhattacharya2016) (sources: 5)
-- [[Dengue Severity Classification]] — clinical-context anchor for the severity axis; WHO-1997 (DF/DHF/DSS = plasma-leakage syndrome) vs WHO-2009 (Dengue±Warning Signs / Severe Dengue); revised scheme more sensitive for triage (92.1% vs 39.0%) but dissolves the pathogenic entity; schemes agree only κ=0.25 → severity findings are scheme-dependent, not cross-comparable (sources: 1)
+- [[Dengue Severity Classification]] — clinical-context anchor for the severity axis; WHO-1997 (DF/DHF/DSS = plasma-leakage syndrome) vs WHO-2009 (Dengue±Warning Signs / Severe Dengue); revised scheme more sensitive for triage (92.1% vs 39.0%) but dissolves the pathogenic entity; schemes agree only κ=0.25 → severity findings are scheme-dependent (Narvaez2011, *between*-scheme); and "WHO-2009" is not one operational definition — only 2 of 16 signs have a consensus definition (Morra2018, *within*-scheme) → the two heterogeneities stack (sources: 2)
 
 ---
 

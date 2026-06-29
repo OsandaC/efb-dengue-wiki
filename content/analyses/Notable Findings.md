@@ -11,6 +11,23 @@ A running log of atomic observations from the literature that are striking, unex
 
 ---
 
+## [2026-06-29] Even within one WHO scheme, dengue severity signs are defined inconsistently — heterogeneity compounds across AND within schemes
+
+**Source:** [[Morra2018 - Defining Warning Signs and Severe Dengue]]
+
+**Finding:** A PRISMA systematic review of 44 studies (screened from 490) all using WHO-2009 found that, of 16 warning-sign/severe-dengue signs, only **2 had a consensus operational definition** — "liver enlargement" (warning) and "liver involvement" (severe, = AST/ALT >1000 IU/L in 94.7% of studies) — and both were the signs WHO-2009 already pre-defines. The other 14 varied widely, most starkly "shock," which was defined via **23 distinct parameter-combinations** across studies (hematocrit-rise, platelet, and respiratory-rate cutoffs likewise varied: >20% vs >15%, <20k–<150k, 24–60 breaths/min).
+
+**Why notable:** The wiki already flags *between-scheme* heterogeneity via [[Narvaez2011 - Evaluating WHO Dengue Severity Classifications]] (WHO-1997 vs WHO-2009 agree only κ=0.25; a DENV-2 severity signal present under 1997 vanishes under 2009). Morra2018 adds the *within-scheme* layer: even two studies both labelled "WHO-2009" may have operationalized the signs differently, so a shared scheme label is not a shared case definition. The two caveats **stack** — a severity-stratified finding must carry not just *which scheme* but, ideally, *which operational definitions* produced it. This bites directly on the wiki's own content: its dengue sources do not share severity definitions (WHO-2009 in Ansari2025/GodoyLozano2016, Brazil's DF/DFC in GarciaBates2013, older DHF/DSS elsewhere), so "severe disease" B-cell findings rest on at best a shared scheme label and not necessarily comparable case definitions. (Morra's Discussion cites specificity 73.0% for 2009 vs 93.4% for 1997 to **Macedo et al** — a different cohort and gold standard than Narvaez's intervention-anchored 78.5%; Morra runs no accuracy meta-analysis of its own.)
+
+**Follow-up questions:**
+- Do the wiki's "severe disease" B-cell findings (Tph, plasmablast, DN expansion) rest on comparable operational definitions of *severe*, or only on a shared scheme label?
+- Would harmonized sign definitions reshuffle which cohorts count as "severe" — and would any of the wiki's severity-associated cellular signals survive that re-binning?
+- Which operational definitions of warning signs / severe dengue should a B-cell pilot pre-register so its severity strata are reproducible and poolable with the literature?
+
+**Related pages:** [[Dengue Severity Classification]], [[Narvaez2011 - Evaluating WHO Dengue Severity Classifications]]
+
+---
+
 ## [2026-06-29] Severity associations are classification-scheme-dependent — a DENV-2 signal present under WHO-1997 vanishes under WHO-2009
 
 **Source:** [[Narvaez2011 - Evaluating WHO Dengue Severity Classifications]]

@@ -2,6 +2,18 @@
 
 ---
 
+## [2026-06-29] ingest | Morra ME 2018 - Defining Warning Signs and Severe Dengue
+
+**Created (1):** `sources/Morra2018 - Defining Warning Signs and Severe Dengue.md` (Rev Med Virol; PRISMA systematic review of how 44 WHO-2009 studies operationally define the warning-sign / severe-dengue signs — only 2 of 16 signs (liver enlargement; liver involvement = AST/ALT >1000) reach consensus, both WHO-2009-predefined; "shock" defined 23 distinct ways).
+**Updated (6):** `index.md` (Sources 21→22, total 106→107 — sections still sum: 22+48+8+22+7=107; `Dengue Severity Classification` sources 1→2; new Morra row); `concepts/Dengue Severity Classification.md` (+2 Key-Points bullets on within-scheme heterogeneity + the attributed Macedo 73.0%/93.4% line, inserted before `## Contradictions & Debates`; +a "two axes that stack" Contradictions note; Morra added to `## Sources`); `analyses/Notable Findings.md` (+1 entry, new top, extending the same-date Narvaez between-scheme entry); curated propagation links into `sources/GarciaBates2013 - Plasmablast Response and Dengue Severity.md` and `sources/GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue.md` (lightweight inline parentheticals, house style — no ⚠ banner).
+**Sub-agents:** 3 used — 1 read-only propagation mapper (Explore), 2 parallel page drafters (general-purpose, non-overlapping files: source page vs concept+Notable Findings). Mapper scoped to the sharp question (which pages assume *same-scheme* comparability that Morra qualifies), returned GarciaBates2013 + GodoyLozano2016 as the top curated targets; Thesis Objectives assessed and deferred as lower-value.
+**Scope discipline:** No entity or method pages created — clinical-classification review outside the wiki's B-cell/flow-cytometry scope; PRISMA method + clinical signs kept as plain text on the source page (mirrors Narvaez2011). Tight propagation per curator's choice; corpus-wide backlink of the ~35 severity-mentioning pages still deferred to the lint watch item (now also covering Morra2018).
+**Accuracy guard:** the "73.0% (2009) vs 93.4% (1997)" specificity figures are attributed to **Macedo et al (cited in Morra)**, a different cohort/gold-standard than Narvaez's intervention-anchored 78.5% — explicitly fenced as *not* a contradiction on both the source and concept pages. Morra itself pools no diagnostic accuracy.
+**Citations:** Semantic Scholar 50 (influential 1), CrossRef 48 (retrieved 2026-06-29).
+**Notable finding added:** Within one WHO scheme, dengue severity signs are defined inconsistently — only 2 of 16 signs reach consensus under WHO-2009; "shock" defined 23 ways; compounds the between-scheme (Narvaez) finding.
+
+---
+
 ## [2026-06-29] ingest | Narvaez F 2011 - Evaluating WHO Dengue Severity Classifications
 
 **Created (2):** `sources/Narvaez2011 - Evaluating WHO Dengue Severity Classifications.md` (PLoS NTD; landmark WHO-1997 vs WHO-2009 classification evaluation, n=544 pediatric Nicaragua); `concepts/Dengue Severity Classification.md` (new canonical hub for the severity axis — both WHO schemes defined side by side + the Narvaez evaluation + the cross-scheme comparability caveat).
