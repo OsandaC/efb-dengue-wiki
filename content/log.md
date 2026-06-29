@@ -2,6 +2,129 @@
 
 ---
 
+## [2026-06-29] ingest | Narvaez F 2011 - Evaluating WHO Dengue Severity Classifications
+
+**Created (2):** `sources/Narvaez2011 - Evaluating WHO Dengue Severity Classifications.md` (PLoS NTD; landmark WHO-1997 vs WHO-2009 classification evaluation, n=544 pediatric Nicaragua); `concepts/Dengue Severity Classification.md` (new canonical hub for the severity axis — both WHO schemes defined side by side + the Narvaez evaluation + the cross-scheme comparability caveat).
+**Updated (6):** `index.md` (Sources 20→21, Concepts 7→8, total 103→106 — the +1 beyond the two new pages corrects a pre-existing total-count drift; section counts now sum to the total); `analyses/Notable Findings.md` (+1 entry: severity associations are scheme-dependent); curated propagation links to `analyses/Research Plan - DN B Cell Expansion in Dengue.md`, `analyses/Thesis Objectives and Grant Pitch.md`, and source pages `GarciaBates2013`, `GodoyLozano2016`, `Ansari2025` (lightweight inline `see [[Dengue Severity Classification]]` references, each noting the scheme that source actually used).
+**Sub-agents:** 3 used — 1 read-only propagation mapper (Explore), 2 parallel page drafters (general-purpose). Mapper caught that GarciaBates2013 uses Brazil's national DF/DFC criteria (not WHO-1997) and Ansari2025 uses WHO-2009 (not WHO-1997); both drafter attributions were corrected before writing.
+**Scope discipline:** No serotype entity pages and no clinical-epi method pages created (out of the wiki's B-cell/flow scope); clinical methods listed as plain text on the source page. Concept page `## Sources` deliberately anchored on Narvaez2011 only — full backlinking of the remaining ~35 severity-mentioning pages deferred to a future lint (logged as a Watch Item).
+**Citations:** Semantic Scholar 238 (influential 11), CrossRef 191 (retrieved 2026-06-29).
+**Notable finding added:** Severity associations are classification-scheme-dependent — DENV-2→DHF/DSS (p<0.001) under WHO-1997 vanishes under WHO-2009 Severe Dengue (p=0.104) in the same cohort; schemes agree only κ=0.25.
+
+---
+
+## [2026-06-27] page | DN2 Gating Strategy — added canonical start→finish gating tree
+
+**Updated:** `analyses/DN2 Gating Strategy.md` — added "Canonical Gating Tree (Start → All Subpopulations)" as the first subsection of Synthesis: a single consolidated hierarchy (singlets → CD19⁺ → PB pulled first → IgD×CD27 quadrant → sM resting/activated split → DN CD21×CD11c 2×2) plus a flat 9-population terminal checklist and the FMO-anchored cuts. Summarizes and links the existing Step 0–6 detail, sM split, and 4-overlap reconciliation — does not duplicate them. Frontmatter `updated` → 2026-06-27.
+**Reason:** Curator asked for the full gating plan, start to all needed sub-populations, in one summary. The page held all the pieces but had no single at-a-glance map; this adds the entry-point overview before the per-step detail.
+
+---
+
+## [2026-06-27] page | Switched Memory B Cell entity created + DN2 Gating Strategy reconciled
+
+**Created:** `wiki/entities/Switched Memory B Cell.md` (IgD⁻CD27⁺ GC-derived memory; 11 sources synthesized from existing wiki pages — no new ingest). Anchors the curator's new flow gate as the germinal-center comparator to DN/DN2.
+**Updated:** `analyses/DN2 Gating Strategy.md` — added "Isolating Switched Memory (sM)" subsection (resting CD21⁺ / activated CD21⁻ split) + a 4-point reconciliation of the expanded full-B-cell gating tree. Inbound `[[Switched Memory B Cell]]` links added to Memory B Cell, DN2 B Cell, Double-Negative B Cell, CD27, IgD, Scharer2019, Jenks2018. Index Entities 47→48.
+**Reason:** Curator is expanding the 11-color panel to isolate switched memory (sM, IgD⁻CD27⁺) as a population of interest. Briefing flagged 4 gating-tree overlaps to reconcile: (1) memory gates not IgD-anchored (mix switched + unswitched), (2) "ABCs" ≡ "DN CD21⁻CD11c⁺" ≡ DN2-phenotype double-label, (3) missing CD21⁻CD11c⁻ (DN3-like) quadrant, (4) CD24 double-duty (transitional exclusion vs memory inclusion).
+
+---
+
+## [2026-06-27] schema-update | Voice (TTS) Mode workflow added to CLAUDE.md
+
+**Change:** Added a `### Voice (TTS) Mode` subsection to CLAUDE.md §Workflows documenting the `/tts-on` and `/tts-off` global slash commands, which now couple the shared Kokoro TTS server (`127.0.0.1:8880`, GPU) lifecycle to the voice mode so it is not resident when unused.
+**Scope:** CLAUDE.md §Workflows only (inserted between Update Web and Lint). Entry explicitly marks these as global/infra commands, not wiki operations.
+**Pages affected:** none (CLAUDE.md + log + state only).
+**Reason:** Curator: server was running constantly; wanted a terminal trigger to start/stop it with the voice mode. Built `start_kokoro_detached.ps1` (idempotent detached launch, waits for `/health` 200) and `stop_kokoro.ps1` (kills the 8880 listener), wired into `/tts-on` (start → set flag, aborts if server fails) and `/tts-off` (remove flag → stop server). Round-trip tested: stop→health 000, detached start→health 200 in ~2s. Scripts/commands live under `~/.claude/`, outside this repo.
+
+---
+
+## [2026-06-26] prep | Pre-meeting reframe — prelim meeting is wiki-first, not pitch-first
+
+**Context:** Morning-of, in-lab session immediately before the meeting with Prof. Rukie. Curator clarified the framing: this is the **preliminary** meeting, so Prof. Rukie is most likely interested in **the wiki as a tool/method** rather than the PhD pitch, and it is the **first time the wiki + Claude are being introduced to her**. Reoriented the last-minute prep accordingly.
+
+**Reframe delivered (no plan file edits — verbal prep only):**
+- **One-breath intro:** living literature-review knowledge base — 20 papers, 100+ interlinked pages — that Claude maintains (summarize → cross-link cells/markers/methods/concepts → flag contradictions).
+- **Three rigor talking points** (lead with these if skeptical): (1) evidence weighting — study type + n inline on every claim; (2) it flags contradictions and *downgrades* claims (Ansari severity downgrade; Tph-identity doubt) rather than smoothing them; (3) the Council adversarial-review layer (Ansari2025 report on standby).
+- **Demo order by impact:** Obsidian graph → one source page (Ansari2025 structure) → live site `efb-dengue-wiki.pages.dev`.
+- **Introducing Claude:** "Claude summarizes/cross-references/maintains; I curate and direct." Honesty stance is the selling point — if asked "does it hallucinate," answer plainly: everything traces to a source page, fact-checked pre-meeting (caught the GodoyLozano n=175→19 error yesterday).
+
+**No wiki pages modified** — prep/consult only. Next sign-in will be live, in front of Prof. Rukie.
+
+---
+
+## [2026-06-25] prep | PhD meeting fact-check pass + corrections + cold rehearsal
+
+**Context:** Final prep for tomorrow's (2026-06-26) PhD-upgrade meeting. Fact-checked every spoken number in the meeting plan (`~/.claude/plans/pure-zooming-adleman.md`) against the wiki sources + the Ansari2025 council report — the tool-pitch rests on "every number traces to a paper," so a wrong figure in front of these PIs is the highest-cost failure.
+
+**Defects found & fixed in the meeting plan:**
+- **GodoyLozano2016 cited as n=175 in TWO places** (Act 1 narration + the SHM-contradiction Q&A answer) → corrected to **n=19 acute patients** ("385,206" is the *lineage* count, not patients). Highest-value catch — a wrong cohort size in front of immunologists who know the paper would undercut the whole traceability pitch.
+- **"99 interconnected pages"** → **"over 100 … built from 20 papers"** (actual: 103 content pages / 106 with infra; live site 118). Robust to whatever's on screen tomorrow.
+
+**Additions to the meeting plan:**
+- O1-is-novel one-liner in Act 1 + mirrored on the Act 4 primary-objective bullet (Ansari correlated Tph with the DN2-phenotype cells; nobody has correlated those cells with antibody quality/ANA — that correlation is O1).
+- 7th expert-question row targeting O1 directly ("your primary endpoint is a ratio of populations you can't definitively identify") with a concede-then-redirect answer.
+- Sharpened the 4 explicit asks into direct spoken questions (+ delivery note: ask as questions, pause on each).
+
+**Verified accurate (no change needed):** Ansari2025 n=170 (council-confirmed); pilot n=19 (DF=8/DHF=11); Sutton ~45% undercount (44.7% of atBC1, CD11c best single marker); Tph = Th1-signature concern + IL-21 coculture STRONG; severity downgraded for day-of-sampling (8±4 vs 5±2 d). Council report present and on-message.
+
+**Cold rehearsal:** ran all 7 hard Q&A as spoken answers with second-order follow-ups; flagged Q1 (Tph identity) + Q2 (SHM paradox) as the two that can spiral, with the same safety-pivot for both — don't defend the weak link, redirect to what the pilot actually measures (cells→ANA).
+
+**No wiki pages modified** — prep/consult only.
+
+---
+
+## [2026-06-25] ops | PhD upgrade pitch prep — meeting with Prof. Rukie and Prof. Neelika
+
+**Context:** Osanda is presenting his MSc→PhD upgrade case tomorrow to co-PIs Prof. Rukie and Prof. Neelika. The meeting has two goals: (1) validate the EF/atypical-B-cell direction as scientifically novel and fundable; (2) secure upgrade endorsement pending pilot results.
+
+**Plan created:** `~/.claude/plans/pure-zooming-adleman.md` — full meeting structure including narrative arc, expert Q&A bank, demo moments, and explicit asks.
+
+**Key structure:**
+- Act 1 (Osanda): the gap — GodoyLozano2016 low SHM + Ansari2025 cellular phenotype + the unbuilt cells→ANA bridge
+- Act 2 (Osanda + demo): Obsidian graph + source/entity page walkthrough — every claim is traceable
+- Act 3 (PIs → Claude cold): expert Q&A; PIs are deep B-cell immunologists; six hard questions pre-prepared (GC/EF balance, CXCR5/T-bet absence, Sutton44.7% undercount, GodoyLozano/Priyamvada SHM contradiction, Tph identity, age confounding)
+- Act 4 (Osanda): pilot design → PhD trajectory → explicit upgrade ask
+
+**Pre-meeting checklist:** fresh Claude session pre-loaded with project context; Obsidian graph open; `Claude-council/council final report-Ansari2025.md` on standby as proof of adversarial review.
+
+**Explicit ask to PIs:** (1) O1 is a scientifically novel primary objective; (2) d5–8 n≈20 design is appropriate for a pilot; (3) positive pilot justifies a funded mechanism study; (4) support upgrade application.
+
+---
+
+## [2026-06-25] consult | Gating strategy for rN/aN/usM/sM in 11-color panel
+
+**Question:** What is the best gating strategy for naive B cell subsets (rN = resting naive, aN = activated naive), unswitched memory (usM, IgD⁺CD27⁺), and switched memory (sM, IgD⁻CD27⁺) in the existing panel?
+
+**Panel:** RB705-CD19 · BV785-IgD · APC-CD27 · FITC-CD21 · PE-CD11c · BV421-CD38 · PE-Cy7-CD66b · eFluor506-L/D · BV711-CD3/CD14 · AF700-CD24 · APC-Fire750-CD45.
+
+**Answer summary:**
+- **Tier 1 (IgD × CD27 quad):** usM = IgD⁺CD27⁺; sM = IgD⁻CD27⁺; total naive parent = IgD⁺CD27⁻. No new gating structure needed — same quad already used for DN.
+- **Tier 2 (within naive — CD21 × CD11c):** rN = CD21-high/CD11c⁻ (follicular); aN = CD21-low/neg/CD11c⁺ (pre-ABC, matches the existing aNAV gate). **Critical caveat:** the FMO-anchored CD21 cut (0.33, arcsinh) was calibrated in the DN context — naive B cells sit dramatically higher on CD21 (follicular phenotype). The rN/aN CD21 boundary must be set visually within the naive gate, not by transferring the DN-context cut. CD11c cut (0.28, FMO p99.5) transfers well.
+- **Panel constraints:** CD24 is comp-compromised (large spill from CD3/CD14→CD24 1.44) — cannot use for transitional exclusion. CD38 has batch drift — use per-batch cut for transitional exclusion from usM if needed.
+- **usM transitional contamination:** optional exclusion via CD38-bright (per-batch cut required).
+
+**Pages not modified** — consultation only; no wiki updates triggered.
+
+---
+
+## [2026-06-16] flowjo check | CD66b dump gate vs CD19+ spread (Specimen_001_HT 82_002.fcs)
+
+**Purpose:** Verify the CD66b-PE-Cy7 dump gate is not excluding B cells from the B cell denominator (the highest-priority pre-cohort QC check).
+
+**Method:** Built CD19 (PerCP-Cy5-5) vs CD66b (PE-Cy7) 2D plot on the live leukocyte parent population; gated the CD19+CD66b+ region; checked FSC-A vs FSC-H for doublets; checked whether CD66b scales with CD19 brightness (spillover test).
+
+**Findings:**
+- Main B cell cluster (CD19~10⁴, CD66b 10¹–10²): clean and well below dump threshold — no B cells lost here
+- CD19+CD66b+ population: **5,789 events**, 1.70% of 336,780 live leukocytes, ~19.5% of current B cell denominator (29,665)
+- Confirmed **singlets** — FSC-A vs FSC-H tight diagonal; two prior singlet gates already in hierarchy; doublet hypothesis eliminated
+- **Spillover ruled out** — brightest CD19 events (main B cell cluster) are the most CD66b-negative; PerCP-Cy5-5→PE-Cy7 artifact would produce the opposite pattern
+- These are real CD19+CD66b+ single cells being actively excluded by the dump gate
+
+**Decision pending:** See Watch Item [2026-06-16]. Options: (a) widen dump boundary to recover them; (b) keep gate, note as formal limitation. If recovered: true B cell N = 35,454; DN% = 7.45% (vs current 8.90%).
+
+**Next step (resume point):** Decide dump gate strategy, then characterise CD19+CD66b+ events on IgD/CD27/CD21/CD11c to assess whether plasmablast-enriched.
+
+---
+
 ## [2026-06-14] new method page | DN2 Panel - Staining, Compensation, and Gating Protocol
 
 **What:** Created `wiki/methods/DN2 Panel - Staining, Compensation, and Gating Protocol.md` — an end-to-end operational SOP for the curator's 11-color DN2 panel, covering fresh whole-blood prep, control-tube construction (unstained, single-stain beads + the cells-based AmCyan/L-D exception, and the four FMOs), acquisition/CST routine, FlowJo compensation, and FMO-anchored gating, with worked examples, analogies, a possible-issues/mitigations table, and an honest "True Protocol Limitations" section.

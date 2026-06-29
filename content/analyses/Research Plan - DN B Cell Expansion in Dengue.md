@@ -109,6 +109,8 @@ Three independent lines of evidence now converge on the EF pathway in dengue: ce
 | Dengue fever (DF) | 25 | WHO 1997 criteria or WHO 2009 "dengue without warning signs"; PCR/NS1-confirmed acute dengue; days 5–9 post-fever-onset |
 | Dengue haemorrhagic fever (DHF) | 25 | WHO 1997 DHF grade I–IV or WHO 2009 "severe dengue"; PCR/NS1-confirmed; days 5–9 post-fever-onset |
 
+> **Severity classification:** both WHO schemes are recorded per arm; see [[Dengue Severity Classification]] for definitions and the cross-scheme comparability caveat (the two agree only at κ=0.25; Narvaez2011), and [[Thesis Objectives and Grant Pitch]] for the pre-registration decision (WHO-2009 binary primary + WHO-1997 leak-defined sensitivity analysis).
+
 **Sampling window:** Days 5–9 post-fever-onset. The minimum is day 5, capturing the plasmablast peak and expected DN expansion window (based on COVID-19 kinetics peaking around days 7–10; see [[Woodruff2020 - EF B Cell Responses in COVID-19]]). Earlier timepoints (days 1–4) are excluded to ensure the EF response has had time to develop.
 
 **Setting:** Sri Lanka (dengue-endemic region); hospital-based recruitment of hospitalised dengue patients with paired healthy community controls. Because Sri Lanka is hyperendemic for dengue, dengue-naïve individuals are not practically recruitable. Healthy controls are therefore seropositive subjects with no acute illness, with anti-DENV IgG titres recorded to enable post-hoc stratification by prior exposure intensity.

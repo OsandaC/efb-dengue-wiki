@@ -1,13 +1,14 @@
 # EFB Dengue Wiki — Master Index
 
-*Last updated: 2026-06-14 | Sources: 20 | Total pages: 102*
+*Last updated: 2026-06-29 | Sources: 21 | Total pages: 106*
 
 ---
 
-## Sources (20)
+## Sources (21)
 
 | Page | Year | Journal | Disease Context |
 |------|------|---------|-----------------|
+| [[Narvaez2011 - Evaluating WHO Dengue Severity Classifications]] | 2011 | PLoS Negl Trop Dis | **Clinical classification (LANDMARK): evaluates WHO-1997 (DF/DHF/DSS) vs WHO-2009 (Dengue±Warning Signs / Severe Dengue) against clinical intervention level; n=544 pediatric Nicaragua; Severe Dengue sens/spec 92.1%/78.5% vs DHF/DSS 39.0%/75.5%; schemes agree only κ=0.25; DENV-2→DHF/DSS association lost under the revised scheme** |
 | [[Lamprinou2026 - ABCs and DN B Cells]] | 2026 | Front Aging | **Opinion (ABC↔DN identity): ABC is a heterogeneous superset (CD27⁺ + IgD⁺ + predominantly IgD⁻CD27⁻); only its IgD⁻CD27⁻ subset ≈ DN2; DN1–DN4 taxonomy (adds DN4); IL-21→CD11c, IFN-γ→T-bet; no dengue data; self-cited framework** |
 | [[Wrammert2012 - Plasmablast Responses in Acute Dengue]] | 2012 | J Virol | **Dengue (FOUNDATIONAL: first systematic PB characterisation; 47% of B cells; >1,000-fold expansion; day 6–7 peak; ≥70% DENV-specific IgG; cross-serotype reactive; no severity correlation [confounded])** |
 | [[Parameswaran2013 - Convergent Antibody Signatures in Dengue]] | 2013 | Cell Host Microbe | **Dengue (FIRST BCR REPERTOIRE: convergent CDR3s across patients; 4.4–6.9% V mutation = memory-derived; higher clonality in secondary; convergent evolution from multiple V genes; n=60)** |
@@ -31,7 +32,7 @@
 
 ---
 
-## Entities (47)
+## Entities (48)
 
 
 ### B Cell Subsets
@@ -42,6 +43,7 @@
 - [[DN3 B Cell]] — IgD⁻CD27⁻CXCR5⁻CD21⁻CD11c⁻T-bet⁻; pre-plasmablast; proliferation+UPR signature; COVID-19/IgG4-RD/SLE-activity (sources: 4)
 - [[Plasmablast]] — CD20⁻CD38⁺⁺CD27⁺Ki67⁺CD71⁺CXCR3⁺; tissue-level IgG⁺ PBs in follicular + EF sites (Kaneko2020); 47% of B cells (Wrammert2012); 46% mean/87% peak in severe 2° dengue; plasmablast–neutralization disconnect; high SHM + OAS + near-universal ADE; atBCs do NOT upregulate PC genes (Sutton2021) (sources: 17)
 - [[Activated Naive B Cell]] — CD19^hi, MTG⁺/CD11c⁺, CD24⁻, CD21⁻; EF ASC precursor; RBD-specific in COVID-19; epigenetically closer to DN2 in SLE (sources: 6)
+- [[Switched Memory B Cell]] — IgD⁻CD27⁺ GC-derived memory; the germinal-center comparator to DN/DN2 (side-by-side in the IgD/CD27 quadrant, differ only by CD27); resting (CD21⁺) vs activated (CD21⁻) split; sM↔DN boundary blurred by CD27 shedding; recall reservoir for the IgG⁺ PB burst in 2° dengue (sources: 11)
 - [[Memory B Cell]] — *see Concepts* (foundational concept page)
 
 ### T Cell Subsets
@@ -96,7 +98,7 @@
 
 ---
 
-## Concepts (7)
+## Concepts (8)
 
 - [[Extrafollicular Response]] — **FIRST DENGUE EVIDENCE:** Tph→IL-21→memory B cell→PB axis; CD21⁻CD11c⁺ EF B cells; tissue-level GC suppression + EF dominance (Kaneko2020): antigen-driven expansion, FDC-preserved lymphocyte block, naive/transitional consumption; 47%/87% PB severity association; plasmablast–neutralization disconnect; isotype-fate segregation (IgG→PB, IgM→GC); **LANDMARK murine proof of EF SHM** (William2002); alternative lineage challenges EF pre-PB model — context-dependent; ABC differentiation programme (TLR7/9+IFN-γ/IL-21) as comparative backbone (sources: 20)
 - [[Germinal Center]] — canonical differentiation; SM vs DN2 epigenetic bifurcation; **tissue-level GC loss in fatal COVID-19** (Kaneko2020): Bcl-6⁺ GC B cells and GC-TFH absent, TNF-α implicated; concurrent GC activity in dengue (CXCL13↑); GCs not required for SHM (William2002); alternative lineage SHM consistent with post-GC origin; ABCs partly GC-experienced + T-bet⁺ B cells promote GC formation (sources: 19)
@@ -105,6 +107,7 @@
 - [[Class Switch Recombination]] — EF CSR-competence confirmed; AID preserved outside GCs (Kaneko2020); class-switched memory B cells are Tph responders in dengue; IgG-dominant PBs vs IgM-enriched DENV-binding MBCs; ABCs predominantly switched (IgG/IgA) with unswitched IgD⁺ fraction (sources: 16)
 - [[Original Antigenic Sin]] — memory recall bias toward prior serotype; 2/4 patients preferentially neutralise DENV1 over infecting DENV2; OAS at mAb level; lower SHM in secondary (GodoyLozano2016); convergent CDR3s more prevalent in secondary (Parameswaran2013); selective E-specific IgG memory recruitment (Appanna2016); Tph→MBC→PB recall engine (Ansari2025); contested — Brazilian cohort shows infecting-serotype dominance (GarciaBates2013) (sources: 7)
 - [[Antibody-Dependent Enhancement]] — 45/53 dengue PB mAbs enhance infection regardless of neutralisation potency; ADE-competent IgG from memory recall; future-exposure risk; plasmablast–PRNT₅₀ disconnect (GarciaBates2013); neutralizing Ab paradox across dengue and COVID-19 (Ansari2025, Woodruff2020); unmeasured BMPC compartment (Bhattacharya2016) (sources: 5)
+- [[Dengue Severity Classification]] — clinical-context anchor for the severity axis; WHO-1997 (DF/DHF/DSS = plasma-leakage syndrome) vs WHO-2009 (Dengue±Warning Signs / Severe Dengue); revised scheme more sensitive for triage (92.1% vs 39.0%) but dissolves the pathogenic entity; schemes agree only κ=0.25 → severity findings are scheme-dependent, not cross-comparable (sources: 1)
 
 ---
 
@@ -142,6 +145,6 @@
 - [[DN2 Gating Strategy]] — council-reviewed 11-color gating strategy for DN/DN2-phenotype isolation in dengue PBMCs; Ansari2025-comparable; Sanz2025 IgD-audit compliant
 - [[Research Plan - DN B Cell Expansion in Dengue]] — wet-lab protocol (Rev 4): flow cytometry panel, cohort design (DF/DHF/HC), DN1-like/DN2-phenotype/DN3-like surrogate subdivision, sample size estimates
 - [[Thesis Objectives and Grant Pitch]] — strategic layer for the pilot: central thesis (one low-fidelity antibody, two faces), falsifiable objectives (cells→ANA bridge as primary), statistical-honesty framing, confounder pre-emption (age/sex first-order for ABCs), antibody layer (ANA + FRNT×4 + IgG/IgM), severity-scheme decision, pilot→grant trajectory; complements the Research Plan
-- [[Notable Findings]] — running log of striking cross-cutting observations (15 entries)
+- [[Notable Findings]] — running log of striking cross-cutting observations (16 entries)
 - [[Curator Highlights]] — aggregated `==highlights==` and `%%comments%%` from wiki pages (2 highlights)
 - [[External Citation Audit]] — catalog of 54 external papers cited inline across ~25 wiki pages; DOIs, backlinks, verification status

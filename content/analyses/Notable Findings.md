@@ -2,12 +2,29 @@
 type: analysis
 tags: [meta, notable-findings]
 created: 2026-05-02
-updated: 2026-06-14
+updated: 2026-06-29
 ---
 
 # Notable Findings
 
 A running log of atomic observations from the literature that are striking, unexpected, or carry implications beyond the paper they came from. See CLAUDE.md → §Notable Findings for the entry bar and format.
+
+---
+
+## [2026-06-29] Severity associations are classification-scheme-dependent — a DENV-2 signal present under WHO-1997 vanishes under WHO-2009
+
+**Source:** [[Narvaez2011 - Evaluating WHO Dengue Severity Classifications]]
+
+**Finding:** In the same 544-patient pediatric cohort, DENV-2 was significantly associated with severe disease under the traditional WHO-1997 scheme (DHF/DSS; p<0.001, and likewise with plasma leakage and thrombocytopenia) but showed **no** significant association under the revised WHO-2009 scheme (Severe Dengue; p=0.104). The two schemes agree only *fairly* on who counts as "severe" (κ=0.25) and bin very different case fractions (DHF+DSS ≈29% vs Severe Dengue ≈44.5% of the same patients).
+
+**Why notable:** This wiki reports "severity associations" repeatedly — Tph frequency scaling with severity ([[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]), plasmablast expansion in severe secondary infection ([[GarciaBates2013 - Plasmablast Response and Dengue Severity]]), lower SHM in DWS+ ([[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]]) — yet those sources do not share a severity scheme (WHO-2009 in Ansari2025/GodoyLozano2016; Brazil's national DF/DFC in GarciaBates2013; the older DHF/DSS framing elsewhere). Narvaez2011 demonstrates that the *choice of scheme* can manufacture or erase a severity association on identical data. The implication is wiki-wide: every severity-stratified claim must be read relative to the scheme that produced it, and findings across schemes are not directly poolable. This is a methodological caveat with reach beyond its source paper — it conditions how the wiki should interpret all of its severity- and serotype-association content.
+
+**Follow-up questions:**
+- Would the wiki's severity-stratified cellular findings (Tph, plasmablast, DN expansion "in severe disease") survive re-classification under the *other* scheme, or are some of them boundary artifacts like the DENV-2 association?
+- Does the plasma-leakage syndrome that WHO-1997 isolates (and WHO-2009 dissolves) have a specific B-cell / extrafollicular correlate that only WHO-1997 stratification would reveal?
+- Which severity endpoint should a B-cell pilot pre-register to avoid diluting a cellular signal across a heterogeneous "severe" bin? (See [[Thesis Objectives and Grant Pitch]].)
+
+**Related pages:** [[Dengue Severity Classification]], [[Antibody-Dependent Enhancement]], [[Original Antigenic Sin]]
 
 ---
 

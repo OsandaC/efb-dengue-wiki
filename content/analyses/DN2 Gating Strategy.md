@@ -2,14 +2,14 @@
 type: analysis
 tags: [flow-cytometry, DN2, gating-strategy, panel-design, extrafollicular, dengue]
 created: 2026-05-20
-updated: 2026-05-25
+updated: 2026-06-27
 ---
 
 # DN2 Gating Strategy for Dengue EF B Cell Identification
 
 ## Research Question
 
-What is the optimal gating strategy to isolate DN (IgD⁻CD27⁻) B cells and DN2-phenotype (CD21⁻CD11c⁺) B cells from dengue patient PBMCs using the curator's fixed 11-color panel?
+What is the optimal gating strategy to isolate DN (IgD⁻CD27⁻) B cells and DN2-phenotype (CD21⁻CD11c⁺) B cells from dengue patient whole-blood leukocytes (RBC-lysed whole blood, not Ficoll-separated PBMCs) using the curator's fixed 11-color panel?
 
 ## Sources Used
 
@@ -24,21 +24,48 @@ What is the optimal gating strategy to isolate DN (IgD⁻CD27⁻) B cells and DN
 
 | Fluorochrome | Marker | Role |
 |---|---|---|
-| RB705 | CD19 | B cell lineage |
+| PerCP-Cy5-5 | CD19 | B cell lineage |
 | PE-Cy7 | CD66b | Dump (granulocytes) |
 | PE | CD11c | DN2 subgating |
 | FITC | CD21 | DN2 subgating |
 | BV421 | CD38 | PB exclusion + transitional exclusion |
-| eFluor506 | L/D | Viability |
+| AmCyan | L/D | Viability |
 | BV711 | CD3 + CD14 | Dump (T cells + monocytes) |
 | BV785 | IgD | DN gating |
 | APC | CD27 | PB exclusion + DN gating |
 | AF700 | CD24 | Transitional exclusion |
-| APC-Fire750 | CD45 | Leukocyte gate |
+| APC-H7 | CD45 | Leukocyte gate |
 
 **Sanz2025 IgD audit: PASS.** IgD (BV785) is included, distinguishing true IgD⁻CD27⁻ (DN) cells from activated memory B cells that may lose CD27 but retain IgD.
 
 ## Synthesis
+
+### Canonical Gating Tree (Start → All Subpopulations)
+
+At-a-glance map of the full B-cell immunophenotype the panel resolves. Per-step detail, FMO mandates, and double-count fixes follow in the subsections below — this block summarizes and links, it does not replace them.
+
+```
+Singlets → Live (L/D⁻) → Dump⁻ (CD3/CD14/CD66b⁻) → CD19⁺ B cells
+│
+├─ Plasmablasts ── CD27ʰⁱ CD38ʰⁱ            ← pulled out FIRST (Step 3)
+│
+└─ Non-PB B cells → IgD × CD27 quadrant (Step 5)
+   ├─ Naïve ─────────────── IgD⁺ CD27⁻
+   ├─ Unswitched memory ─── IgD⁺ CD27⁺ ─┐
+   ├─ Switched memory (sM)─ IgD⁻ CD27⁺ ─┤→ split CD21: resting (CD21⁺) / activated (CD21⁻)
+   └─ DN ────────────────── IgD⁻ CD27⁻
+         └─ CD21 × CD11c (Step 6)
+            ├─ DN1-like ──────────── CD21⁺ CD11c⁻
+            ├─ (transitional-DN) ─── CD21⁺ CD11c⁺
+            ├─ DN2-phenotype / ABC ─ CD21⁻ CD11c⁺   ★ EF target
+            └─ DN3-like ──────────── CD21⁻ CD11c⁻
+```
+
+The CD21 **resting (CD21⁺) / activated (CD21⁻)** split applies across the whole CD27⁺ memory pool — both unswitched and switched — but is only switched-specific once gated IgD⁻ first (see reconciliation #1 below). Transitional B cells (CD24ʰⁱCD38ʰⁱ, Step 4) are excluded before the quadrant, not a terminal subset.
+
+**Terminal populations isolated (9):** Plasmablasts · Naïve · Unswitched memory · Resting sM · Activated sM · DN1-like · transitional-DN (CD21⁺CD11c⁺) · DN2-phenotype/ABC · DN3-like.
+
+**Cuts:** IgD/CD27/CD21/CD11c boundaries are FMO-anchored from the HT82 worked example — IgD<1.98, CD27<1.76, CD21<0.69, CD11c>0.72 (arcsinh/500), see [[Compensation and FMO Controls]]. The four definitional overlaps to avoid double-counting are resolved in [§ Reconciling the Expanded Gating Tree](#reconciling-the-expanded-gating-tree-4-overlaps).
 
 ### Gating Hierarchy
 
@@ -58,7 +85,7 @@ STEP 0b ─ MORPHOLOGICAL GATE
     Alternative: skip this gate and rely on lineage markers only.
   
 STEP 1 ─ LIVE LEUKOCYTES
-  X-axis: APC-Fire750 (CD45)    Y-axis: eFluor506 (L/D)
+  X-axis: APC-H7 (CD45)    Y-axis: AmCyan (L/D)
   → Gate on CD45⁺ (right) and L/D⁻ (bottom) = live leukocytes
   
 STEP 2a ─ DUMP GATE
@@ -70,7 +97,7 @@ STEP 2b ─ GRANULOCYTE EXCLUSION
   → Gate on CD66b⁻ (left) = exclude granulocytes
 
 STEP 2c ─ B CELL SELECTION
-  X-axis: RB705 (CD19)    Y-axis: SSC-A
+  X-axis: PerCP-Cy5-5 (CD19)    Y-axis: SSC-A
   → Gate on CD19⁺ (right) = B cells
   ⚠ CD3 and CD14 antibodies must be titrated independently before
     pooling in BV711 channel.
@@ -124,6 +151,25 @@ STEP 6 ─ DN SUBGATING (CD21 vs CD11c)
     fluorochrome and FITC→PE spread must be compensated.
 ```
 
+### Isolating Switched Memory (sM) and the Resting/Activated Memory Split
+
+Switched memory (sM = IgD⁻CD27⁺) is the Step-5 **lower-right** quadrant — previously read only as a reference population, now isolated as the germinal-center comparator to the DN/DN2 extrafollicular cells (see [[Switched Memory B Cell]]). It sits directly beside DN (IgD⁻CD27⁻): both are class-switched, differing only by CD27. Within sM, subdivide on CD21:
+
+<table>
+<tr><td><strong>Resting switched memory</strong><br>CD21⁺ CD38⁻</td><td><strong>Activated switched memory</strong><br>CD21⁻ (continuum toward atypical/DN2)</td></tr>
+</table>
+
+This makes the sM and DN gates a matched GC-vs-EF pair: comparing them (SHM, repertoire, isotype, autoreactivity, kinetics) is the readout that tests whether DN is a distinct EF lineage or CD27-shed switched memory.
+
+### Reconciling the Expanded Gating Tree (4 Overlaps)
+
+When the panel is run as a **full B-cell immunophenotype** (plasmablasts + CD27⁺ memory subsets + naïve + sM + DN subgates) rather than DN-only, four definitional overlaps must be resolved to avoid double-counting:
+
+1. **Memory gates must be IgD-anchored.** A `CD27⁺CD38⁻CD24⁺` memory gate split only by CD21 mixes *switched* (IgD⁻) and *unswitched* (IgD⁺) memory. For a clean switched-memory resting/activated split, gate **IgD⁻ first** (= sM), then split by CD21 — otherwise "resting/activated memory" is not switched-specific and overlaps the sM quadrant.
+2. **"ABCs" ≡ "DN CD21⁻CD11c⁺" ≡ DN2-phenotype** — these are the same gate (the CD21⁻CD11c⁺ quadrant within IgD⁻CD27⁻ DN). Use a single label ("DN2-phenotype," per Ansari2025/Sanz2025 convention) so the population is not listed twice.
+3. **The DN 2×2 needs all four quadrants.** DN1-like (CD21⁺CD11c⁻), CD21⁺CD11c⁺ (unnamed transitional-DN), DN2-phenotype (CD21⁻CD11c⁺), and **DN3-like (CD21⁻CD11c⁻)**. Omitting CD21⁻CD11c⁻ means the DN subsets will not sum to 100% of DN.
+4. **CD24 serves two roles — keep the levels distinct.** CD24 is used for transitional *exclusion* (CD24ʰⁱCD38ʰⁱ, Step 4); if it is also used for memory *inclusion* (CD24-intermediate), that level must be clearly separated from the CD24ʰⁱ transitional gate, or the channel double-counts.
+
 ### Backgating Verification
 
 After gating, verify all subsets by backgating onto parent populations:
@@ -176,7 +222,7 @@ Dengue is a high-TNF/IL-6 environment. ADAM17-mediated CD27 cleavage on activate
 
 After removing CD38ʰⁱ plasmablasts (Step 3), the remaining CD38 dynamic range is compressed, making the CD24ʰⁱCD38ʰⁱ transitional gate harder to resolve.
 
-**Mitigation:** Always set the Step 4 gate on the post-Step-3 population. If a separate validation tube with CD10 is available, use CD10⁺ to validate the transitional gate boundary. In adult dengue PBMCs, transitional B cells are typically rare, so modest imprecision has limited quantitative impact.
+**Mitigation:** Always set the Step 4 gate on the post-Step-3 population. If a separate validation tube with CD10 is available, use CD10⁺ to validate the transitional gate boundary. In adult dengue whole blood, transitional B cells are typically rare, so modest imprecision has limited quantitative impact.
 
 #### MAJOR: FSC/SSC Blast Exclusion (Methodology Critic)
 
@@ -190,6 +236,7 @@ Tight lymphocyte morphological gates exclude activated B cell blasts (larger, mo
 - DN2-phenotype (CD21⁻CD11c⁺) frequency — directly comparable to Ansari2025
 - DN1-like (CD21⁺CD11c⁻) and DN3-like (CD21⁻CD11c⁻) frequencies
 - All four IgD/CD27 B cell quadrants (naive, unswitched memory, switched memory, DN)
+- Resting (CD21⁺) vs activated (CD21⁻) switched memory split within the sM (IgD⁻CD27⁺) quadrant
 - Plasmablast (CD27ʰⁱCD38ʰⁱ) frequency
 - Transitional B cell (CD24ʰⁱCD38ʰⁱ) frequency
 - Cross-disease DN2-phenotype benchmarking vs. SLE (Jenks2018) and COVID-19 (Woodruff2020)
@@ -224,4 +271,4 @@ Tight lymphocyte morphological gates exclude activated B cell blasts (larger, mo
 
 ## Related Pages
 
-[[B Cell Panel Variant 1]] (intracellular-capable successor — adds T-bet/CXCR5), [[Double-Negative B Cell]], [[DN2 B Cell]], [[DN3 B Cell]], [[Plasmablast]], [[CD21]], [[CD11c]], [[CD27]], [[IgD]], [[CD38]], [[CD24]], [[CXCR5]], [[T-bet]], [[FCRL5]], [[Extrafollicular Response]], [[Conventional Flow Cytometry]], [[Spectral Flow Cytometry]], [[FACS Sorting]], [[Compensation and FMO Controls]], [[DN2 Panel - Staining, Compensation, and Gating Protocol]], [[Research Plan - DN B Cell Expansion in Dengue]]
+[[B Cell Panel Variant 1]] (intracellular-capable successor — adds T-bet/CXCR5), [[Double-Negative B Cell]], [[DN2 B Cell]], [[DN3 B Cell]], [[Switched Memory B Cell]], [[Plasmablast]], [[CD21]], [[CD11c]], [[CD27]], [[IgD]], [[CD38]], [[CD24]], [[CXCR5]], [[T-bet]], [[FCRL5]], [[Extrafollicular Response]], [[Conventional Flow Cytometry]], [[Spectral Flow Cytometry]], [[FACS Sorting]], [[Compensation and FMO Controls]], [[DN2 Panel - Staining, Compensation, and Gating Protocol]], [[Research Plan - DN B Cell Expansion in Dengue]]

@@ -53,7 +53,7 @@ Severity analysis revealed that CXCR5⁻PD-1⁺ cell frequency and anti-NS1/anti
 - **IL-21 blocking reduces plasmablast output by ~60%:** IL-21R-Fc fusion protein in coculture (Figure 6J); anti-IL-10 ~25% reduction; anti-IL-4 no effect. Establishes cytokine hierarchy. **⚠ Note:** Blocking was performed only with CXCR5⁻PD-1⁺ T cells — no parallel Tfh blocking arm to determine if Tfh help uses the same or different cytokine axis. No isotype controls for blocking reagents reported.
 
 ### Antibody and Severity Findings
-- **Anti-NS1 and anti-prM/M/E IgG elevated in severe dengue** (p=0.04 and p=0.03 respectively vs DF-with-WS) — binding (non-neutralizing) antibodies correlate with severity.
+- **Anti-NS1 and anti-prM/M/E IgG elevated in severe dengue** (p=0.04 and p=0.03 respectively vs DF-with-WS; severity per WHO-2009, see [[Dengue Severity Classification]]) — binding (non-neutralizing) antibodies correlate with severity.
 - **Neutralizing antibody titers (FRNT₅₀) do NOT differ between mild and severe groups** — FRNT₅₀ tested against DENV-2 only (strain S-16803); severe subgroup n=10 only. Replicates the neutralizing Ab paradox direction from COVID-19 ([[Woodruff2020 - EF B Cell Responses in COVID-19|Woodruff2020]]) but underpowered and single-serotype-limited.
 - **CXCL13 elevated in acute dengue plasma** (p<0.01 vs HD at 2–5 days) — authors interpret as concurrent GC activity. **⚠ Council note:** CXCL13 is not GC-specific; it can be produced by Tph cells themselves, macrophages, and inflamed endothelium. No direct GC assessment (no CD10⁺ B cells, no GC histology).
 - **Secondary infection:** Higher anti-DENV IgG titers than primary, as expected; higher plasmablast frequencies in both primary and secondary.

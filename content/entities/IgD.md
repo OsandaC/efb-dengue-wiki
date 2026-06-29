@@ -14,7 +14,7 @@ IgD (Immunoglobulin D) is a surface immunoglobulin isotype co-expressed with IgM
 
 ## Key Points from Literature
 
-- IgD/CD27 dual staining defines the four canonical PBL B cell compartments: naive (IgD⁺CD27⁻), nonswitched memory (IgD⁺CD27⁺), switched memory (IgD⁻CD27⁺), and double-negative/DN (IgD⁻CD27⁻) (see [[Wei2007 - DN Memory B Cells in SLE]]).
+- IgD/CD27 dual staining defines the four canonical PBL B cell compartments: naive (IgD⁺CD27⁻), nonswitched memory (IgD⁺CD27⁺), [[Switched Memory B Cell|switched memory]] (IgD⁻CD27⁺), and double-negative/DN (IgD⁻CD27⁻) (see [[Wei2007 - DN Memory B Cells in SLE]]).
 - DN B cells are IgD⁻ and contain both isotype-switched (~44% IgG⁺) and IgM⁺ cells; critically, the IgM⁺ fraction of DN cells lacks IgD co-expression, distinguishing it from the IgM⁺IgD⁺ fraction of conventional unswitched CD27⁺ memory cells (see [[Wei2007 - DN Memory B Cells in SLE]]).
 - Bm1–Bm5 classification uses IgD (combined with CD38) as an axis: Bm1 (IgD⁺CD38⁻), Bm2 (IgD⁺CD38^dull), Bm2ʹ (IgD⁺CD38⁺ pre-GC), Bm3–4 (IgD⁻CD38⁺ GC), early Bm5 (IgD⁻CD38^dull), Bm5 (IgD⁻CD38⁻) (see [[Wei2007 - DN Memory B Cells in SLE]]).
 - **IgD⁺ retained on acN cells:** Activated naive (acN) B cells remain IgD⁺ (and CD27⁻), placing them within the naive compartment gate even though they are functionally distinct from resting naive B cells. IgD expression is not lost until class switch recombination or differentiation into ASCs (IgD⁻CD27^hiCD38^hi). This means IgD staining alone cannot distinguish resting from activated naive B cells — the MTG + CD24 combination or CD19^hi + CD21⁻ markers are required to resolve acN cells within the IgD⁺CD27⁻ gate (see [[Tipton2015 - ASC Diversity and Origin in SLE]]).

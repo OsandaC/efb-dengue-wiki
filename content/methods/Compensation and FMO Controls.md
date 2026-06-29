@@ -65,7 +65,7 @@ These figures supersede the provisional pre-FMO estimates (DN ≈ 1.99% of B cel
 2. Use the FMO 99th percentile (arcsinh/500-transformed) as the default DN/DN2 boundary rather than a fixed/arbitrary cutoff — the magnitude of the discrepancy found here (IgD: 0.8→1.98; CD27: 1.0→1.76) is too large to treat as a rounding choice.
 3. The 3 spillover coefficients >100% (BV711→AF700/BV786, PE-Cy7→CD19) warrant bead-level re-validation if single-stain bead files become available, though they are non-blocking for the DN/DN2 gates as currently structured.
 4. The CD11c FMO threshold (0.72) rests on a small tail (n≈4 of 387 DN-cell events) — report DN2% as approximate pending a larger FMO acquisition or pooled-sample validation.
-5. Naming drift noted between this pilot's confirmed fluorochrome assignments and [[DN2 Gating Strategy]]'s documented panel table: APC-Fire750→APC-H7 (CD45), eFluor506→AmCyan (L/D), RB705→PerCP-Cy5-5 (CD19). To be corrected in the gating strategy page.
+5. Naming drift noted between this pilot's confirmed fluorochrome assignments and [[DN2 Gating Strategy]]'s documented panel table: APC-Fire750→APC-H7 (CD45), eFluor506→AmCyan (L/D), RB705→PerCP-Cy5-5 (CD19). **Corrected in the gating strategy page 2026-06-27.**
 
 ## Contradictions & Debates
 

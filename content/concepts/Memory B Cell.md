@@ -64,7 +64,7 @@ Human memory B cells are heterogeneous. Classical subsets include isotype-switch
 - **New complication — memory DN2 cells:** The discovery of durable antigen-specific DN2 cells post-vaccination blurs the effector/memory distinction. DN2 may be a phenotypic state that can be occupied by both effector cells (in acute responses) and memory cells (long-term), with different underlying transcriptional and epigenetic programmes. Studies using DN2 phenotype alone cannot distinguish these two states (see [[Sanz2025 - Human Atypical B Cells Overview]]).
 
 ## Related Pages
-[[Double-Negative B Cell]], [[DN2 B Cell]], [[Activated Naive B Cell]], [[CD27]], [[IgD]], [[Somatic Hypermutation]], [[Extrafollicular Response]], [[Germinal Center]], [[Class Switch Recombination]], [[Plasmablast]], [[Original Antigenic Sin]], [[Antibody-Dependent Enhancement]]
+[[Double-Negative B Cell]], [[DN2 B Cell]], [[Switched Memory B Cell]], [[Activated Naive B Cell]], [[CD27]], [[IgD]], [[Somatic Hypermutation]], [[Extrafollicular Response]], [[Germinal Center]], [[Class Switch Recombination]], [[Plasmablast]], [[Original Antigenic Sin]], [[Antibody-Dependent Enhancement]]
 
 ## Sources
 - [[Wei2007 - DN Memory B Cells in SLE]]

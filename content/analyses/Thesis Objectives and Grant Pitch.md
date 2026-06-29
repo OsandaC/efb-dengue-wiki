@@ -104,6 +104,8 @@ Cross-sectional; **day 5–8 post-fever-onset**; fresh blood (flow) + serum (sin
 
 **Recommendation:** pre-register **WHO-2009, collapsed to binary (non-severe vs severe)** as primary (translatable, reviewer-expected, better powered than 4-way grading at this n); run the **WHO-1997 leak-defined contrast as a declared sensitivity analysis** (free, since both classifications exist). **Classify on the full clinical course, not status-at-sampling** (some d5 "non-severe" patients declare leak by d7). Do not fish across schemes for the best p-value.
 
+See [[Dengue Severity Classification]] for the two WHO schemes side by side and the evidence behind this trade-off — Narvaez2011 (n=544) shows WHO-2009 is far more sensitive for intervention-level disease (92.1% vs 39.0%) but dissolves the plasma-leakage entity, and the two schemes agree only at κ=0.25.
+
 ### Serology plan
 
 - **IgG/IgM:** LFA on **all** samples (cheap first-pass serostatus) → capture-ELISA IgM/IgG **ratio on a calibration subset** (~25–30 spanning the spectrum + all LFA-borderline/discordant) → compute **LFA↔ELISA concordance (κ)** against a pre-set threshold. High κ → trust LFA for the bulk; low κ → ELISA broadly. *(The statistically sound inversion of "LFA to check if ELISA is worth it" — only ELISA can validate LFA.)*

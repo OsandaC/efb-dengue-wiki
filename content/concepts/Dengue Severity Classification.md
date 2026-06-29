@@ -1,0 +1,55 @@
+---
+type: concept
+tags: [dengue, severity, clinical-classification, who-classification]
+created: 2026-06-29
+updated: 2026-06-29
+sources: 1
+---
+
+# Dengue Severity Classification
+
+## Overview
+Dengue disease severity has been graded by two successive WHO frameworks, and the difference between them is structural, not cosmetic. *(The framing in this section is background; the evaluation numbers are reserved for Key Points.)*
+
+**Traditional WHO (1997).** This scheme sorts symptomatic dengue into three tiers:
+
+- **Dengue Fever (DF):** an acute febrile illness with ≥2 of: headache, retro-orbital pain, myalgia, arthralgia, leukopenia, rash, hemorrhagic manifestations, supportive serology (or occurrence at the same place/time as confirmed cases).
+- **Dengue Hemorrhagic Fever (DHF):** requires **all four** of — (1) fever or history of acute fever lasting 2–7 days; (2) hemorrhagic manifestations (positive tourniquet test; petechiae/ecchymosis/purpura or mucosal/GI/injection-site bleeding; or hematemesis/melena); (3) thrombocytopenia (<100,000 platelets/mm³); and (4) evidence of plasma leakage from increased vascular permeability (pleural effusion, ascites, hemoconcentration ≥20%, or hypoproteinemia). Graded I–IV.
+- **Dengue Shock Syndrome (DSS):** DHF (grades III–IV) **plus** hypotension for age or narrow pulse pressure (<20 mmHg) **plus** signs of shock (rapid weak pulse; cold clammy skin; restlessness).
+
+The defining feature of DHF/DSS is that it is built on the **conjunction of four criteria**. It is therefore a relatively specific clinical entity — essentially the **plasma-leakage syndrome** — but a case that is clinically severe yet missing any one criterion (e.g. shock without documented plasma leakage or without thrombocytopenia <100,000) falls outside the DHF/DSS net.
+
+**Revised WHO (2009).** Prompted by the difficulty of applying DHF at the bedside and by severe cases the 1997 scheme missed, this scheme reorganizes dengue into:
+
+- **Dengue without Warning Signs:** fever plus 2 of: nausea/vomiting, rash, aches and pains, leukopenia, positive tourniquet test.
+- **Dengue with Warning Signs:** dengue plus any of: abdominal pain or tenderness, persistent vomiting, clinical fluid accumulation, mucosal bleeding, lethargy/restlessness, liver enlargement >2 cm, **or** a laboratory finding (rising hematocrit concurrent with a rapid platelet drop). The warning signs function as triage flags for patients at risk of deterioration.
+- **Severe Dengue:** dengue with ≥1 of: severe plasma leakage (leading to shock [DSS] or to fluid accumulation with respiratory distress); severe bleeding (clinician-assessed); or severe organ involvement (liver AST/ALT ≥1000; CNS impaired consciousness; heart or other organ failure).
+
+The structural pivot is that 2009 flags severity on **any single criterion** rather than a conjunction. This makes it far more sensitive as a triage instrument, but also broader — "severe dengue" is no longer coextensive with the specific plasma-leakage syndrome that DHF was built around.
+
+## Key Points from Literature
+
+- **Severity findings are classification-scheme-dependent, and cross-scheme comparability is limited — this is the most wiki-relevant point.** The two WHO schemes agree only *fairly* and capture overlapping-but-different patient sets, so a "severity association" reported in one paper cannot be assumed to mean the same thing as one reported under another scheme (see [[Narvaez2011 - Evaluating WHO Dengue Severity Classifications]], n=544 cross-sectional, pediatric). Concretely, the wiki's dengue sources do not use a common scheme: GodoyLozano2016 and Ansari2025 stratify by WHO-2009 (dengue with/without warning signs, severe dengue), GarciaBates2013 uses Brazil's national DF/DFC (complicated dengue) criteria, and the WHO-1997 DHF/DSS framing common in the older literature is different again. Severity-stratified findings across these papers are therefore **not directly comparable** and must each be read relative to the scheme used.
+- **Sensitivity/specificity contrast against a clinical gold standard.** Using clinical intervention level as the gold standard (Category III = ICU / inotropes / ventilation / organ failure = "severe"), DHF/DSS captured Cat III with sensitivity 39.0%, specificity 75.5%, PPV 43.4%, NPV 71.9%; the 2009 "Severe Dengue" category captured the same Cat III with sensitivity 92.1%, specificity 78.5%, PPV 67.4%, NPV 95.4% (see [[Narvaez2011 - Evaluating WHO Dengue Severity Classifications]], n=544 cross-sectional, pediatric). The revised scheme is dramatically more sensitive and has a high NPV, i.e. it rarely misses a child who will need intensive intervention.
+- **Inter-scheme agreement is only fair.** The two schemes agree at kappa = 0.25 (fair) on the same cohort — direct quantitative support for the comparability caveat above (see [[Narvaez2011 - Evaluating WHO Dengue Severity Classifications]], n=544 cross-sectional, pediatric).
+- **Clinician usability favors the revised scheme.** Agreement between clinician judgment and the classification algorithm was kappa 0.46 (moderate) for the traditional scheme — DHF was hard to apply, with only 12.5% of cases classified correctly — versus kappa 0.62 (substantial) for the revised scheme (see [[Narvaez2011 - Evaluating WHO Dengue Severity Classifications]], n=544 cross-sectional, pediatric).
+- **Category distributions differ markedly.** Traditional: DF 70.8% / DHF 19.5% / DSS 9.7%. Revised: Dengue without warning signs 6.6% / Dengue with warning signs 48.9% / Severe Dengue 44.5% (see [[Narvaez2011 - Evaluating WHO Dengue Severity Classifications]], n=544 cross-sectional, pediatric). The bulk of patients shift into the "with warning signs" and "severe" bins under 2009.
+- **Serotype × scheme flip.** In the *same cohort*, DENV-2 was significantly associated with DHF/DSS under the traditional scheme (p<0.001) but there was **no** significant serotype–severity association under the revised scheme (p=0.104) (see [[Narvaez2011 - Evaluating WHO Dengue Severity Classifications]], n=544 cross-sectional, pediatric). A determinant-of-severity signal can thus appear or vanish purely as a function of which classification is applied.
+- **The trade-off, stated plainly.** The revised scheme is the better *triage* tool (high sensitivity and NPV for intervention-level disease) but loses *pathogenic-entity specificity* — it dissolves the distinct plasma-leakage syndrome into a broad "severe" bin (see [[Narvaez2011 - Evaluating WHO Dengue Severity Classifications]], n=544 cross-sectional, pediatric).
+
+## Contradictions & Debates
+
+The central tension is purpose-dependent and should not be collapsed into a verdict that one scheme is simply "better."
+
+- **Triage vs. research pull in opposite directions.** For clinical management, the 2009 scheme wins: it is more sensitive, has a high NPV, and is easier for clinicians to apply (kappa 0.62 vs 0.46). For pathogenesis research, the same breadth is a liability — by flagging severity on any single criterion, "severe dengue" no longer isolates the specific plasma-leakage syndrome that DHF was designed to capture. Narvaez et al. explicitly argue that studies of viral, host, and immunological *determinants* of severity need a **more specific definition than "severe dengue"** to avoid lumping mechanistically distinct presentations together.
+- **The serotype example makes the stakes concrete.** Because a DENV-2 severity signal is significant under the traditional scheme and absent under the revised one in the *same* patients, any immunological or virological "severity association" is partly an artifact of the classification chosen, not a free-standing biological fact.
+- **Comparability caveat (restated).** Mixing DHF/DSS-classified cohorts with WHO-2009-classified cohorts (or with national criteria such as Brazil's DF/DFC) in a synthesis risks false equivalence: at kappa 0.25 the two WHO schemes are only *fairly* concordant, so "severe" in one paper and "severe" in another may denote substantially different patient populations. When this wiki juxtaposes severity-stratified flow-cytometry or repertoire findings, the scheme each source used must travel with the finding.
+
+## Related Pages
+
+- [[Thesis Objectives and Grant Pitch]] — the curator's pilot must choose and pre-register a severity scheme; that decision lives on that page and is not restated here.
+- [[Antibody-Dependent Enhancement]] — severity / secondary-infection mechanism whose study is sensitive to how severity is defined.
+- [[Original Antigenic Sin]] — secondary-infection-linked concept relevant to severity stratification.
+
+## Sources
+- [[Narvaez2011 - Evaluating WHO Dengue Severity Classifications]]

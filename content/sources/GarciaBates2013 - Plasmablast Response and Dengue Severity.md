@@ -32,7 +32,7 @@ B cells in dengue patients showed increased proliferation (Ki-67⁺), activation
 - **Sample size:** n=84 laboratory-confirmed dengue (15 primary DF, 23 secondary DF, 18 primary DFC, 28 secondary DFC), n=15 OFI, n=10 healthy naive, n=13 healthy recovered
 - **Setting:** Hospital cohort in Recife, northeast Brazil, 2004–2006; DENV-3 was the circulating serotype
 - **Population:** Ages ≥5 years; mixed pediatric and adult (primary DF median age 7 years; secondary DFC median age 37 years); PBMC sampled at 1–9 days post-symptom onset; peak plasmablast analyses restricted to days 4–7
-- **Classification:** DF vs. DFC (complicated dengue fever per Brazilian Ministry of Health criteria — includes neurologic signs, cardiopulmonary dysfunction, liver insufficiency, GI bleeding, plasma leakage, thrombocytopenia, leukopenia, or death); primary vs. secondary by acute/convalescent IgG/IgM serology
+- **Classification:** DF vs. DFC (complicated dengue fever per Brazilian Ministry of Health criteria — includes neurologic signs, cardiopulmonary dysfunction, liver insufficiency, GI bleeding, plasma leakage, thrombocytopenia, leukopenia, or death); primary vs. secondary by acute/convalescent IgG/IgM serology. *(DFC is a national scheme, not the WHO standards — see [[Dengue Severity Classification]] for cross-scheme comparability.)*
 
 ## Key Findings
 

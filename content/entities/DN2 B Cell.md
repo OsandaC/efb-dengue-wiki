@@ -10,7 +10,7 @@ sources: 8
 
 ## Overview
 
-DN2 B cells are a subset of IgD⁻CD27⁻ (double-negative) B cells defined by the phenotype **CXCR5⁻, CD21⁻, CD11c⁺, CD19^hi**. They were formally defined by Jenks et al. (2018) as the dominant expanded DN population in active SLE, distinct from DN1 cells (CXCR5⁺, CD21⁺, CD19 intermediate) which transcriptionally resemble switched memory B cells.
+DN2 B cells are a subset of IgD⁻CD27⁻ (double-negative) B cells defined by the phenotype **CXCR5⁻, CD21⁻, CD11c⁺, CD19^hi**. They were formally defined by Jenks et al. (2018) as the dominant expanded DN population in active SLE, distinct from DN1 cells (CXCR5⁺, CD21⁺, CD19 intermediate) which transcriptionally resemble [[Switched Memory B Cell|switched memory B cells]].
 
 DN2 cells are pre-plasmablasts: they express a T-bet/ZEB2 transcriptional programme, have high IRF4 and BLIMP-1, lack BACH2 and FOXO1, and differentiate into autoantibody-secreting plasmablasts in response to TLR7 + IL-21 + IFN-γ without requiring BCR stimulation or extensive cell division. They share phenotypic markers and a near-identical transcriptome with activated naive (aNAV) B cells, forming the intermediate step in the extrafollicular differentiation pathway: **rNAV → aNAV → DN2 → plasmablast**.
 

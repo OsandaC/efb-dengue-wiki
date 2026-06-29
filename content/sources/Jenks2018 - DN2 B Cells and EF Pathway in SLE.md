@@ -45,7 +45,7 @@ This is the fourth paper from the Sanz lab ingested into this wiki (after Wei200
 - **Clonal connectivity:** BCR sequencing demonstrates clonal sharing between aNAV, DN2, and PC — in vivo evidence of the developmental pathway. IgG mutation rate similar in DN2 and PC but lower than SWM — arguing against DN2 derivation from memory cells.
 - **Autoantibody production:** DN2 cell cultures produce anti-Sm, anti-RNP, and anti-Ro autoantibodies at titers comparable to SWM cultures, confirming pathogenic relevance.
 - **Clinical associations:** DN2 expansion highest in African-American patients (cohort-independent), patients with active nephritis, high SLEDAI scores, anti-Sm and anti-RNA autoantibodies. Modest correlation with type I IFN activity. No age relationship (present in young children). DN2 frequency correlates with anti-Sm/RNP titers (LIPS assay, p=0.009/0.0017).
-- **DN1 as SWM precursor:** DN1 and SWM share nearly identical transcriptomes; DN1 express TCF7 (central memory TF) and CXCR5. DN1 likely represent early SWM cells that have not yet acquired CD27, belonging to a separate (GC-associated) differentiation pathway from DN2.
+- **DN1 as SWM precursor:** DN1 and SWM share nearly identical transcriptomes; DN1 express TCF7 (central memory TF) and CXCR5. DN1 likely represent early [[Switched Memory B Cell|SWM]] cells that have not yet acquired CD27, belonging to a separate (GC-associated) differentiation pathway from DN2.
 
 ## Methods Used
 [[Conventional Flow Cytometry]], [[FACS Sorting]], [[BCR Sequencing]], [[RNA Sequencing]], [[ATAC-seq]], [[ELISpot]], [[In Vitro B Cell Stimulation]], [[Phospho-Flow Cytometry]]
