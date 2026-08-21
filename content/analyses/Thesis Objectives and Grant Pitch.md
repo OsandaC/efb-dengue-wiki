@@ -2,7 +2,7 @@
 type: analysis
 tags: [research-strategy, grant, pilot, DN2, dengue, autoantibody, ANA, neutralization, severity, flow-cytometry]
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-08-16
 ---
 
 # Thesis Objectives and Grant Pitch
@@ -23,6 +23,7 @@ Can a **budget-frozen, surface-only 11-color flow panel** generate enough signal
 - [[Sanz2025 - Human Atypical B Cells Overview]] — IgD-audit; "DN2-phenotype" terminology discipline; context-dependent autoreactivity
 - [[Lamprinou2026 - ABCs and DN B Cells]] — ABC age/sex biology (X-linked TLR7, female bias); ABC ⊋ DN2
 - [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]] — surface gating undercounts (CD11c best single marker); "phenotype" caveat
+- [[Cancro2020 - Age-Associated B Cells]] — blood/tissue ABC pool disequilibrium; HIV/ART blood ABC frequency fall; canonical citation for continuous age-accumulation of ABCs
 
 ## Synthesis
 
@@ -46,7 +47,7 @@ Dengue's pathogenic antibody problem and its autoimmune signal may be **two face
 
 Cross-sectional; **day 5–8 post-fever-onset**; fresh blood (flow) + serum (single timepoint). Target **≥10–15 per arm**; recruitment ongoing.
 
-> **⚠ Age and sex are first-order biology here, not nuisance covariates.** Atypical/age-associated B cells are *age-defined*, and the T-bet⁺ ABC program is **female-biased via X-linked [[TLR7]]** (see [[Lamprinou2026 - ABCs and DN B Cells]], [[Age-Associated B Cell]]). The current arms are imbalanced on both — **DHF skews male (7M/4F) and older; DF skews female (5F/3M) and younger** (and the 4 DHF females are markedly older, median 35). A naive DF-vs-DHF "atypical B cell" contrast therefore partly measures age and sex. At n≈10–15/arm, multivariable adjustment is weak (~1 covariate per 10–15 subjects), so **the fix is balanced recruitment now, not statistics later.** Recruit the remaining cases to even sex and age across arms; match the healthy/comparator arm the same way.
+> **⚠ Age and sex are first-order biology here, not nuisance covariates.** Atypical/age-associated B cells are *age-defined* — the canonical citation for continuous age-accumulation of ABCs is [[Cancro2020 - Age-Associated B Cells]] (review — no original data; mouse: undetectable in juvenile spleen, up to half of all splenic B cells by 24–30 months) — and the T-bet⁺ ABC program is **female-biased via X-linked [[TLR7]]** (see [[Lamprinou2026 - ABCs and DN B Cells]], [[Age-Associated B Cell]]). The current arms are imbalanced on both — **DHF skews male (7M/4F) and older; DF skews female (5F/3M) and younger** (and the 4 DHF females are markedly older, median 35). A naive DF-vs-DHF "atypical B cell" contrast therefore partly measures age and sex. At n≈10–15/arm, multivariable adjustment is weak (~1 covariate per 10–15 subjects), so **the fix is balanced recruitment now, not statistics later.** Recruit the remaining cases to even sex and age across arms; match the healthy/comparator arm the same way.
 
 ### Fixed constraints
 
@@ -60,6 +61,7 @@ Cross-sectional; **day 5–8 post-fever-onset**; fresh blood (flow) + serum (sin
 
 **Derived metrics (free — ratios multiply endpoints):**
 - **DN2:DN1 ratio — centerpiece.** Most robust single EF-activation metric across SLE and COVID-19, and a *ratio* (internally normalized, panel-independent), so more defensible than absolute counts (see [[Woodruff2020 - EF B Cell Responses in COVID-19]], [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]).
+- **★ [2026-08-16] Blood/tissue disequilibrium (Cancro2020) — cuts both ways, and constrains the wording of every claim this pilot makes.** *(a) The caveat:* murine blood and splenic ABC pools are **not in equilibrium**, and Cancro explicitly cautions against studies that track ABCs only in peripheral blood; in humans, **blood ABC frequency falls in HIV patients on antiretroviral therapy**, consistent with circulating ABCs being a mobilised rather than accumulated pool (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse + human, observational). So a peripheral blood DN frequency from this pilot is **not a proxy for total ABC burden**, and every result must be worded as **"circulating DN frequency," never "DN expansion"** — the latter implies a pool-size claim this cross-sectional, blood-only design cannot support. *(b) The reframe:* if circulating ABCs are instead read as an **activated or mobilised state**, then blood frequency measured during acute **d5–8 dengue** is arguably the ***more* appropriate readout for an acute-response question** than a pool-size measure would be — mobilisation is exactly what an acute-infection pilot should want to capture. Both halves belong in the write-up: the wording constraint is real, but it does not make the blood-only design a weaker choice for this specific research question — it changes what the numbers are allowed to claim.
 - **EF composite** (aNAV-phenotype + DN2-phenotype + DN3-like + PB) — Woodruff's hierarchical EF cluster; a composite severity correlate.
 - CD11c⁺ fraction of B cells (best single atypical marker per [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]); CD21⁻ fraction; CD19 MFI on DN2-phenotype/aNAV.
 
@@ -92,6 +94,7 @@ Cross-sectional; **day 5–8 post-fever-onset**; fresh blood (flow) + serum (sin
 | **CD27 shedding** | High-TNF dengue milieu can shed CD27 → inflate the DN gate; unmeasurable on this panel; acknowledge (sCD27 in serum could quantify it later). |
 | **ANA transience** | Acute-infection ANA can be transient/polyclonal; single timepoint can't show resolution → **specificity rests on the within-cohort correlation** (ANA tracks the EF metric and serostatus), not prevalence. Convalescent-resolution = a grant aim. |
 | **"DN2-phenotype" ≠ DN2** | No CXCR5/T-bet/FCRL5; Ansari2025-comparable; confirmation = grant aim. |
+| **Blood ≠ tissue ABC pool** | Murine blood and splenic ABC pools are **not in equilibrium** (Cancro2020); human blood ABC frequency **falls** in HIV patients on antiretroviral therapy. A peripheral blood DN frequency is **not a validated proxy for total ABC burden** — report as "circulating DN frequency," never "DN expansion" (see Derived metrics above). |
 
 ### Severity scheme decision (flagged — curator's call)
 
@@ -103,6 +106,8 @@ Cross-sectional; **day 5–8 post-fever-onset**; fresh blood (flow) + serum (sin
 | Standing | Older, being retired | **Current clinical standard; reviewer/clinician expectation** |
 
 **Recommendation:** pre-register **WHO-2009, collapsed to binary (non-severe vs severe)** as primary (translatable, reviewer-expected, better powered than 4-way grading at this n); run the **WHO-1997 leak-defined contrast as a declared sensitivity analysis** (free, since both classifications exist). **Classify on the full clinical course, not status-at-sampling** (some d5 "non-severe" patients declare leak by d7). Do not fish across schemes for the best p-value.
+
+> **Operationalization.** The deterministic binarization that produces both labels from the raw clinical database — 28 binary leaf atoms, the locked operational-definition table (Morra-contested thresholds flagged), the decision logic, and Excel formula templates — lives in the **Dengue Severity Binarization Spec** (maintained **off the public wiki** as of 2026-06-30, since it now embeds the clinical-DB column schema; held privately in `_private/`). It bakes in the "full clinical course" rule via MIN/MAX over admission day-columns.
 
 See [[Dengue Severity Classification]] for the two WHO schemes side by side and the evidence behind this trade-off — Narvaez2011 (n=544) shows WHO-2009 is far more sensitive for intervention-level disease (92.1% vs 39.0%) but dissolves the plasma-leakage entity, and the two schemes agree only at κ=0.25.
 
@@ -126,4 +131,4 @@ See [[Dengue Severity Classification]] for the two WHO schemes side by side and 
 
 ## Related Pages
 
-[[Research Plan - DN B Cell Expansion in Dengue]], [[DN2 Gating Strategy]], [[B Cell Panel Variant 1]], [[DN2 B Cell]], [[Atypical B Cell]], [[Age-Associated B Cell]], [[Plasmablast]], [[Activated Naive B Cell]], [[Extrafollicular Response]], [[Peripheral Helper T Cell]], [[Antibody-Dependent Enhancement]], [[Original Antigenic Sin]], [[FRNT]], [[CD11c]], [[CD21]], [[CXCR5]], [[T-bet]], [[TLR7]], [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]], [[Woodruff2020 - EF B Cell Responses in COVID-19]], [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]], [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]], [[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]]
+[[Research Plan - DN B Cell Expansion in Dengue]], [[DN2 Gating Strategy]], [[B Cell Panel Variant 1]], [[DN2 B Cell]], [[Atypical B Cell]], [[Age-Associated B Cell]], [[Plasmablast]], [[Activated Naive B Cell]], [[Extrafollicular Response]], [[Peripheral Helper T Cell]], [[Antibody-Dependent Enhancement]], [[Original Antigenic Sin]], [[FRNT]], [[CD11c]], [[CD21]], [[CXCR5]], [[T-bet]], [[TLR7]], [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]], [[Woodruff2020 - EF B Cell Responses in COVID-19]], [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]], [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]], [[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]], [[Cancro2020 - Age-Associated B Cells]]

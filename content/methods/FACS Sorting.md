@@ -2,8 +2,8 @@
 type: method
 tags: [FACS-sorting, cell-sorting, flow-cytometry, BCR-sequencing, B-cell-subsets]
 created: 2026-05-02
-updated: 2026-05-21
-sources: 10
+updated: 2026-08-16
+sources: 12
 ---
 
 # FACS Sorting
@@ -26,12 +26,16 @@ Fluorescence-activated cell sorting (FACS sorting) uses the same principles as a
 
 - **Antigen-specific B cell sorting with tetramers for BCR analysis:** Sutton2021 used FACS sorting with Plasmodium falciparum circumsporozoite protein (PfCSP) and hemagglutinin (HA) tetramers to isolate antigen-specific B cells for Smart-seq2 scRNA-seq (163 cells from 11 donors). This enabled BCR analysis specifically on antigen-experienced cells within defined transcriptomic clusters — complementing the 10x Chromium unbiased approach on total B cells (see [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]], FACSAria, n=11 donors).
 
+- **CD80/PD-L2 sorting resolves memory B cells by developmental origin — with a naming trap.** Memory B cells are commonly sorted into **DP (CD80⁺PD-L2⁺)**, **SP (CD80⁻PD-L2⁺)**, and **DN (CD80⁻PD-L2⁻)** fractions. Validated against GC-specific genetic fate mapping, **DP is enriched for GC-derived memory and "DN" consists almost exclusively of GC-independent [[Early Memory B Cell|early memory]] cells** — though the mapping is imperfect, with a considerable proportion of DP cells arising non-GC (see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review, **no original data**, mouse). ⚠ **This "DN" means CD80⁻PD-L2⁻ and is unrelated to this wiki's IgD⁻CD27⁻ [[Double-Negative B Cell|DN]] sort gate** — see [[Atypical B Cell]].
+- **★ No surface sort gate cleanly separates GC-derived from GC-independent memory.** Fate mapping shows the surrogate criteria the field used — cell-surface markers, class-switch status, and SHM load — are each "insufficient to definitively distinguish" the two populations, whose phenotypes overlap substantially and whose transcriptomes differ only subtly (review). Any sorted "GC-derived memory" fraction in the literature is an enrichment, not a purification.
+- **ABCs sorted per Hao criteria for BCR sequencing (Russell Knode et al. 2017).** Sorted murine ABC heavy and light chains were sequenced to assess repertoire diversity and somatic mutation, finding germline V_H/V_κ usage largely congruent with the follicular pool alongside a substantial mutated fraction (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse).
+
 ## Contradictions & Debates
 
 None documented in current wiki sources.
 
 ## Related Pages
-[[Conventional Flow Cytometry]], [[BCR Sequencing]], [[RNA Sequencing]], [[ATAC-seq]], [[ELISpot]], [[Activated Naive B Cell]], [[DN2 B Cell]], [[Double-Negative B Cell]], [[Single-Cell RNA Sequencing]]
+[[Conventional Flow Cytometry]], [[BCR Sequencing]], [[RNA Sequencing]], [[ATAC-seq]], [[ELISpot]], [[Activated Naive B Cell]], [[DN2 B Cell]], [[Double-Negative B Cell]], [[Single-Cell RNA Sequencing]], [[Early Memory B Cell]], [[Memory B Cell]]
 
 ## Sources
 - [[Wei2007 - DN Memory B Cells in SLE]]
@@ -44,3 +48,5 @@ None documented in current wiki sources.
 - [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]]
 - [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]
 - [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]
+- [[Glaros2025 - Multilayered Identity of B Cell Memory]]
+- [[Cancro2020 - Age-Associated B Cells]]

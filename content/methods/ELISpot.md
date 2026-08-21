@@ -2,8 +2,8 @@
 type: method
 tags: [ELISpot, antibody-secreting-cells, ASC-quantification, antigen-specific, functional-assay]
 created: 2026-05-02
-updated: 2026-05-10
-sources: 7
+updated: 2026-08-16
+sources: 8
 ---
 
 # ELISpot
@@ -26,6 +26,7 @@ ELISpot provides functional single-cell resolution that flow cytometry cannot �
 - **First DENV-specific ELISpot in acute dengue (Wrammert2012):** ELISPOT plates coated with purified formalin-inactivated DENV-2 (strain 16681, Microbix Biosystems; 10 µg/ml) or polyvalent anti-human Ig (10 µg/ml, Jackson ImmunoResearch). PBMCs plated in 3–5-fold dilution series from 10 × 10⁵. Detection with biotinylated anti-human IgG, IgA, or IgM (Invitrogen) + avidin-HRP (Vector Labs) + AEC substrate. Automated counting (CTL). Results: ≥70% of IgG spots were DENV-specific; IgA ~100-fold lower; IgM near-absent in secondary infections (42/46). DENV-2 antigen detected cross-serotype responses equivalently in DENV-1 and DENV-3 patients, confirming shared epitope targeting. Non-dengue febrile illness controls (hepatitis A, unidentified) showed substantial total PB responses but zero DENV-specific spots — validating assay specificity (see [[Wrammert2012 - Plasmablast Responses in Acute Dengue]], n=46 dengue + controls, adapted from Crotty et al. 2004).
 
 - **DENV-specific plasmablast quantification by ELISpot in acute dengue:** UV-inactivated DENV-1 (Hawaii), DENV-2 (16681), and DENV-3 (H87) whole virus particles were used as capture antigens. PBMC plated without prior stimulation (spontaneous secretion). Secondary DFC patients (n=9) had ~40,000 DENV-3-reactive IgG spots per 10⁶ PBMC (72% of all IgG spots); healthy naive had zero DENV-reactive spots. Cross-serotype testing (n=14) showed plasmablasts reacted with all three serotypes but with 3-fold preference for the infecting serotype (DENV-3, p<0.01). Minor influenza virus reactivity (520 spots/10⁶ PBMC, 0.7% of IgG ASCs) was also detected. Cryopreserved PBMC validated for this assay (see [[GarciaBates2013 - Plasmablast Response and Dengue Severity]], adapted from Crotty et al. 2003).
+- **ELISpot used to establish murine ABC cytokine output ex vivo.** On TLR7/9 activation, ABCs produce higher IFN-γ and exceptionally high IL-10 than follicular B cells, confirmed by transcriptional array plus ELISpot (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse).
 
 ## Contradictions & Debates
 
@@ -44,3 +45,4 @@ None documented in current wiki sources.
 - [[Wrammert2012 - Plasmablast Responses in Acute Dengue]]
 - [[GarciaBates2013 - Plasmablast Response and Dengue Severity]]
 - [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]]
+- [[Cancro2020 - Age-Associated B Cells]]

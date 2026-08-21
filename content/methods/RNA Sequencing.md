@@ -2,8 +2,8 @@
 type: method
 tags: [RNA-seq, transcriptomics, gene-expression, B-cell-subsets, GSEA]
 created: 2026-05-02
-updated: 2026-05-07
-sources: 2
+updated: 2026-08-16
+sources: 3
 ---
 
 # RNA Sequencing
@@ -21,14 +21,16 @@ RNA sequencing (RNA-seq) is a high-throughput method for profiling gene expressi
 
 - **Scharer2019 RNA-seq — 5,090 DEGs across SLE B cell subsets:** RNA-seq on the same 5 sorted populations (rN, T3, aN, SM, DN2) from 9 SLE and 12 HC donors. Key results: (1) 5,090 DEGs define a common SLE transcriptional signature, with pathways including IFN-γ/IFN-α response, inflammatory response, WNT/Notch, estrogen response, IL-6/IL-2 signalling, p53, apoptosis; (2) DN2 uniquely showed negative enrichment for UPR and G2/M checkpoint pathways — suggesting apoptosis resistance; (3) GSEA confirmed progressive enrichment of ASC programme (ALDOA, E2F1, XBP1, PRDM1, SLAMF7) from rN through DN2 (see [[Scharer2019 - Epigenetic Programming in SLE B Cells]]).
 - **PageRank transcription factor network analysis:** PageRank algorithm applied to a TF regulatory network (TF binding sites from ATAC-seq DARs × DEG expression) identified 31 TFs enriched in ≥3 SLE B cell subsets. EGR4 was the highest-scoring factor; EGR target genes were enriched in 19/22 (86%) upregulated SLE gene sets. ATF3 was identified as a key DN2-specific regulator with 98 target genes (87% upregulated in SLE). This network analysis approach — integrating ATAC-seq motif data with RNA-seq expression — represents a methodological advance over simple DEG lists for identifying regulatory hierarchies (see [[Scharer2019 - Epigenetic Programming in SLE B Cells]]).
+- **Transcriptional array design separating T-bet-dependent from cytokine-direct ABC features.** To determine which ABC phenotypic features require T-bet versus which are direct cytokine effects, transcriptional arrays compared IFN-γ- or IL-21-treated **wild-type versus T-bet-deficient** murine B cells. This design showed that while some ABC features depend strongly on T-bet, others — notably CD11c expression — were largely direct effects of each cytokine rather than downstream T-bet targets (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse, transcriptional array). A methodological approach the wiki has not previously logged: comparing genetic-KO transcriptomes under matched cytokine stimulation to separate a transcription factor's direct targets from cytokine-driven, TF-independent gene induction — distinct from the DEG/GSEA approach used in [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]] and [[Scharer2019 - Epigenetic Programming in SLE B Cells]] above.
 
 ## Contradictions & Debates
 
 None documented in current wiki sources.
 
 ## Related Pages
-[[ATAC-seq]], [[RRBS]], [[FACS Sorting]], [[DN2 B Cell]], [[Activated Naive B Cell]], [[Conventional Flow Cytometry]], [[ATF3]], [[EGR]]
+[[ATAC-seq]], [[RRBS]], [[FACS Sorting]], [[DN2 B Cell]], [[Activated Naive B Cell]], [[Conventional Flow Cytometry]], [[ATF3]], [[EGR]], [[T-bet]], [[Age-Associated B Cell]]
 
 ## Sources
 - [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]
 - [[Scharer2019 - Epigenetic Programming in SLE B Cells]]
+- [[Cancro2020 - Age-Associated B Cells]]

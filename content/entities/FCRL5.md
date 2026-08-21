@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, Fc-receptor-homologs, FCRL5, DN2, atypical-b-cells, BCR-signalling]
 created: 2026-05-02
-updated: 2026-05-21
-sources: 3
+updated: 2026-08-16
+sources: 4
 ---
 
 # FCRL5
@@ -23,14 +23,20 @@ FCRL5 (Fc Receptor-Like 5; also FcRH5) is a member of the Fc receptor-like famil
 - **T-bet or FcRL5 can substitute for CD11c in gating:** These markers identify similar populations when used vs. CXCR5 in the DN gate, providing flexibility for panel design (see [[Sanz2025 - Human Atypical B Cells Overview]], review, Figure 2).
 - **FCRL5 is a defining transcriptomic marker of the alternative B cell lineage:** scRNA-seq placed *FCRL5* among the core genes defining the alternative lineage (alongside *TBX21* and *ITGAX*/CD11c). FCRL5 expression was consistent across atBC1, atBC2, atBC3, and MBC1 clusters, confirming it as a lineage-level marker rather than an activation-state marker (see [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]], n=4, 10x Chromium scRNA-seq).
 
+- **★ FCRL5 is an INHIBITORY receptor whose engagement may explain why ABCs looked incapable of plasma-cell differentiation.** Early in vitro work reported limited PC-differentiation capacity for atypical B cells (citing Portugal 2015 *eLife* and Sullivan 2015 *PLoS Pathog*, malaria-associated human atypical MBCs — note the latter is the paper that *delineated* FCRL5 on these cells). Later work attributes this substantially to **stimulation mode**: **soluble** anti-Ig fails to drive PC differentiation whereas **membrane-bound** anti-Ig succeeds, because inhibitory receptors — **FcγRIIB**, and per the review FCRL5 — must be **physically excluded from the B cell immune synapse** for BCR signalling to proceed, which only membrane-associated antigen achieves (see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review, **no original data**, citing Ambegaonkar 2020 *Sci Adv*).
+  > **Verification note (2026-08-16).** The Ambegaonkar primary abstract was independently checked during ingest because the review's paraphrase and the paper's title appear to point in opposite directions. **The direction is confirmed:** atypical MBCs "are unable to respond to soluble antigens" but "robustly respond to antigens that associate with cell surfaces, such as antigens in immune complexes" — the title's "restricts responses to membrane-associated antigens" means responses are *restricted to* that antigen form. The abstract names **FcγRIIB** as the receptor characterized; FCRL5's role is the review's attribution.
+- **⚠ Assay-design consequence for dengue work.** If FCRL5⁺/FcγRIIB^hi atypical cells cannot respond to soluble antigen, in vitro restimulation assays using **soluble DENV E or NS1** would systematically under-report the functional capacity of precisely the population this wiki tracks. Membrane-associated or immune-complexed antigen presentation would be the informative comparator. See [[DN2 B Cell]] and [[In Vitro B Cell Stimulation]].
+- **A constraint on the cells→autoantibody bridge.** The same verified abstract notes these cells are "unable to respond to fully soluble antigens, **such as self-antigens**." A DN2/ABC cell bearing an autoreactive BCR would therefore be poorly activated by soluble self-antigen, implying that any atypical-cell route to autoantibody must run through **membrane-associated or immune-complexed** self-antigen. Relevant to the `bridge-wiki/` thesis; see [[Atypical B Cell]].
+
 ## Contradictions & Debates
 
 None documented in current wiki sources.
 
 ## Related Pages
-[[DN2 B Cell]], [[FcRH4]], [[Activated Naive B Cell]], [[Double-Negative B Cell]], [[SLAMF7]], [[T-bet]], [[Extrafollicular Response]]
+[[DN2 B Cell]], [[FcRH4]], [[Activated Naive B Cell]], [[Double-Negative B Cell]], [[SLAMF7]], [[T-bet]], [[Extrafollicular Response]], [[Atypical B Cell]], [[Age-Associated B Cell]], [[Plasmablast]]
 
 ## Sources
 - [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]
 - [[Sanz2025 - Human Atypical B Cells Overview]]
 - [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]
+- [[Glaros2025 - Multilayered Identity of B Cell Memory]]

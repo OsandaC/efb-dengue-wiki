@@ -2,8 +2,8 @@
 type: concept
 tags: [class-switch-recombination, isotype-switching, IgG, IgA, AID, germinal-center, extrafollicular-response]
 created: 2026-05-02
-updated: 2026-06-14
-sources: 16
+updated: 2026-08-16
+sources: 18
 ---
 
 # Class Switch Recombination
@@ -33,13 +33,19 @@ Class switch recombination (CSR) is a DNA recombination event in which the const
 - **IgG dominance confirmed by mAb cloning in secondary dengue:** All 53 mAbs generated from single-cell sorted plasmablasts in Priyamvada2016 were IgG, with ELISpot showing 36–95% of IgG ASCs were DENV-specific. The completeness of CSR in secondary dengue PBs is consistent with memory B cell recall (prior GC-mediated CSR) rather than de novo switching during the acute response (see [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]], n=4 secondary DHF, single-cell mAb cloning).
 - **The ABC/atypical population is predominantly class-switched, but retains an unswitched fraction.** Most [[Age-Associated B Cell|ABCs]] are class-switched (predominantly IgG or IgA), yet scRNA-seq shows the population also contains unswitched IgD⁺ cells — and those IgD⁺ ABCs are themselves antigen-experienced (SHM⁺, clonally related to IgD⁻ cells). CSR is part of the TLR7/9 + IFN-γ/IL-21 ABC differentiation programme, reinforcing that switched isotypes arise across the GC-independent atypical compartment (see [[Lamprinou2026 - ABCs and DN B Cells]], opinion, citing Ambegaonkar 2022 / Maul 2021; [[Age-Associated B Cell]]).
 
+- **★ CSR occurs primarily BEFORE germinal-center entry — switching is not evidence of GC transit.** The long-standing use of class-switch status as an indirect marker of GC participation rested on the assumption that CSR happens predominantly within GCs. Newer work indicates CSR **takes place primarily prior to GC entry**, with switched cells then gaining a **competitive advantage inside the GC** and thereby becoming enriched over the course of the reaction (see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review, **no original data**). Switching is therefore a *pre*-GC event whose products are *selected* in GCs — the enrichment is real, the inference from it is not.
+- **Fate mapping confirms the proxy fails in both directions.** GC-specific fate mapping shows that GC-independent [[Early Memory B Cell|early MBCs]] include a **significant fraction of class-switched cells**, while GC-derived MBCs can remain **IgM⁺ or even IgM⁺IgD⁺**. The review's conclusion is that class-switch status "is insufficient to definitively discriminate" the two subsets, and that even the IgD⁺ compartment contains antigen-experienced cells of both GC and non-GC origin (review, mouse). **Wiki consequence:** the isotype-fate segregation model ([[Bhattacharya2016 - Memory B Cell Subset Selection in Secondary Dengue]], citing Seifert 2015) remains useful as a *fate-bias* model — IgG⁺ memory→PB, IgM⁺ memory→GC reentry — but should not be read as an *origin* model.
+- **AID activity outside GCs undermines *Aicda*-based origin inference.** Many tissue-resident memory B cell studies infer GC origin from *Aicda*-based fate mapping, but because [[AID]]-driven CSR and SHM also occur outside the GC, these systems **do not definitively establish GC provenance** (review). See [[Tissue-Resident Memory B Cell]] and, for the wiki's existing statements of the same principle, [[William2002 - Extrafollicular Somatic Hypermutation in Autoimmune Mice]] and [[Kaneko2020 - GC Loss and TFH Block in COVID-19]].
+- **Tissue context dictates switched isotype.** After respiratory infection the lung resident-memory pool is predominantly **[[IgA]]⁺** with a smaller [[IgG]]⁺ fraction, and IgA⁺ memory localizes to lung parenchyma alongside IgA-secreting PCs and iBALT; systemic immunization fails to induce lung IgA⁺ memory whereas intranasal immunization does. Skin-associated B cells within *S. epidermidis*-induced dermal tertiary lymphoid structures switch locally to IgG2b/IgG2c (review, mouse). CSR outcome is therefore set by anatomical niche, not only by cytokine milieu.
+- **ABCs comprise both switched and unswitched cells, with isotype skewing toward IgG2a/c in mice and IgG1 in humans — and an open progenitor question.** Hao-defined ABCs include IgM⁻ (switched) and IgM⁺ (largely unswitched) cells; a speculative mapping assigns switched (IgM⁻IgD⁻) and unswitched (IgM⁺IgD⁻) cells to antigen-driven memory, versus homeostatically expanded primary cells (IgM⁺IgD⁺). Effector isotype is skewed toward **IgG2a/c in mice and IgG1 in humans**, favouring inflammatory effector function including ADCC (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse + human). **Open question, explicitly unresolved:** are unswitched, unmutated IgM⁺ ABCs the progenitors of class-switched, mutated ABCs, or are these stable parallel pools?
+
 ## Contradictions & Debates
 
 - **TLR7-mediated vs. Tph-mediated CSR in dengue:** GodoyLozano2016 proposes T-independent CSR via TLR7-mediated endosomal DENV recognition, while Ansari2025 demonstrates Tph-dependent B cell help via IL-21. Whether CSR in acute dengue is driven by TLR7-autonomous B cell activation, T cell help (Tph→IL-21), or both concurrently is unresolved.
 - **Woodruff2020 n=1 scV(D)J evidence for ongoing EF CSR:** The strongest direct evidence for real-time CSR in EF-derived ASCs comes from a single COVID-19 patient's repertoire — insufficient to establish generalizability. Whether ongoing CSR occurs in the dengue EF-derived plasmablast pool has not been tested.
 
 ## Related Pages
-[[Double-Negative B Cell]], [[DN2 B Cell]], [[Age-Associated B Cell]], [[Plasmablast]], [[Germinal Center]], [[Extrafollicular Response]], [[Somatic Hypermutation]], [[IgG]], [[IgA]], [[IgM]], [[Memory B Cell]], [[Original Antigenic Sin]]
+[[Double-Negative B Cell]], [[DN2 B Cell]], [[Age-Associated B Cell]], [[Plasmablast]], [[Germinal Center]], [[Extrafollicular Response]], [[Somatic Hypermutation]], [[IgG]], [[IgA]], [[IgM]], [[Memory B Cell]], [[Original Antigenic Sin]], [[Early Memory B Cell]], [[Tissue-Resident Memory B Cell]]
 
 ## Sources
 - [[Wei2007 - DN Memory B Cells in SLE]]
@@ -58,3 +64,5 @@ Class switch recombination (CSR) is a DNA recombination event in which the const
 - [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]
 - [[Anolik2004 - Rituximab and B Cell Abnormalities in SLE]]
 - [[Lamprinou2026 - ABCs and DN B Cells]]
+- [[Glaros2025 - Multilayered Identity of B Cell Memory]]
+- [[Cancro2020 - Age-Associated B Cells]]

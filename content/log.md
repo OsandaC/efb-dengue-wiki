@@ -2,6 +2,42 @@
 
 ---
 
+## [2026-06-30] mapping + relocate | Dengue Severity Binarization Spec — Input (2) column-map DONE, Input (3) moved OFF-SITE
+
+**Step 0 column mapping (Input 2):** mapped all 28 severity-spec atoms to the curator's raw clinical DB `raw/A2D 2026.xlsx` (sheet `Heshan FlowT (Day 6 & above)`; 3-row header section→sign/lab→serial day-cols `On Ad./D1–D9/D10`; **n≈53 filled rows**). Header-only extraction (no patient data read). Concrete Excel range bindings recorded (Platelets IV:JE, PCV/HCT IK:IU w/ baseline IK, ALT KJ:KS, AST KT:LC, Pulse Pressure EY:FH, Blood Pressure EO:EX, RR FS:GB, Creatinine LD:LM, transfusions OO).
+**PHI hardening:** added `*.xlsx`/`*.xls` and `_private/` to `.gitignore` **before** anything could `git add -A` the workbook (the pre-ingest snapshot step would have swept it); confirmed the workbook was never committed and this repo has no git remote (not web-exposed; `sync-and-build` copies only `wiki/`).
+**Empirical resolutions (non-PHI aggregate diagnostic, n=53):** (a) **empty-lab coding = blank, never literal 0** (zero-count=0 across all lab blocks) → MIN/MAX/COUNT-NA formulas safe as written; (b) **★ UNIT BUG fixed** — platelets stored **×10³/µL** (range 5–262), so `platelet_le_100k`/`lab_warning` threshold corrected **≤100 (not ≤100000)** — would have flagged 100% of patients thrombocytopenic; creatinine = **µmol/L**, BP = **"SBP/DBP" text** (SBP parse via helper cols), HCT = %; (c) in the n=53 sample no RR≥30 / no AST·ALT≥1000 yet.
+**Spec amendments [curator answers]:** Q1 col 24 `DF/DHF` = ward **working** dx (not retrospective final) → demoted to a lower-tier cross-check, not the validation gold standard. Q2 binary signs coded **1/0, empty=0** → the ~20 hand-entered signs can **never be NA**; **NA survives only on computed lab atoms**; undocumented sign→absent→under-detection bias, rewritten into the missing-data section as a documented limitation. Q3 BP parse. Q4 days-since-symptom is retrospective-at-interview + interview date absent → illness-day↔serial-col alignment deferred (curator to supply a date field).
+**Data-collection GAPS (no source column):** tourniquet, petechiae, **albumin**, cold/clammy, restlessness, lethargy/GCS/CNS, SpO₂+ventilation. **Endpoints survive** — `WHO2009_severe` (primary) computable on plasma-leak/bleeding/transaminase routes; only rare CNS/cardiac routes degraded; `DHF_all_four` computable.
+**Relocation (Input 3):** curator chose **move the whole spec off-site**. `git rm -f wiki/analyses/Dengue Severity Binarization Spec.md`; rewrote+expanded it to gitignored **`_private/Dengue Severity Binarization Spec.md`** (not web-published, not version-controlled). Delinked inbound refs: `index.md` (Analyses **8→7**, off-site breadcrumb) + `analyses/Thesis Objectives and Grant Pitch.md` (wikilink→plain-text off-site note). Log entries below kept as history; the spec page no longer exists in `wiki/`.
+**New inputs surfaced — RESOLVED same session [curator]:** #28 = **documented-organ-failure-only** (no creatinine cutoff, not auto-wired); #18 = **manual hospital-record review coded `UD`** (undetectable); **radiology leak signs counted into `plasma_leak_any`** (new `radiology_leak` member); **Ecchymosis → Grade I** (#3; #4 stays GAP); location = **in-repo gitignored `_private/` confirmed**. **Still open:** interview/onset date; (4) DHF I–IV SEARO verification. **Advisor-caught blocker fixed:** GAP atoms must be **0/omitted in derived booleans, NOT NA** (else `severe_dengue_any`=NA collapses `WHO2009_severe` to Unclassifiable for every non-severe patient); sign coding verified empirically (1=present/blank=absent → `COUNTA>0`; NS1/IgG-IgM are text result fields). Memory `severity-spec-a2d-db-mapping` created.
+
+---
+
+## [2026-06-30] analysis-update | Dengue Severity Binarization Spec — ★ threshold sign-off
+
+**Updated (1):** `analyses/Dengue Severity Binarization Spec.md` — pre-registration sign-off pass on the locked operational-definition table.
+**Sign-off [curator]:** all six ★ Morra-contested thresholds confirmed **at WHO-handbook default** (HCT rise ≥20%; lenient shock = narrow PP ≤20 OR SBP <90; respiratory distress RR ≥30 / SpO₂ <92% / support; persistent vomiting ≥3/24h; severe bleeding = transfusion/hemodynamic compromise; lab warning plt + HCT). Added a sign-off box under the locked table with the HCT-baseline dependency welded to it (atoms #9, #23 hinge on baseline *availability*, not cutoff) and the `lab_warning` materiality note (feeds only D/DWS — cannot move the primary endpoint `WHO2009_severe`).
+**Decisions [curator, AskUserQuestion ×2]:** (1) `shock_strict` sensitivity column = **literal Macedo** (`≥2 of {narrow PP, SBP<90, rapid/weak pulse, poor perfusion}`, narrow PP alone insufficient) — emitted as a **parallel reporting column**, NOT wired into any label; not nested in lenient `shock`; pre-reg framing = *primary lenient / sensitivity Macedo-strict*. (2) Respiratory distress: **plasma-leak path kept WHO-2009-literal** (plain distress RR≥30/SpO₂<92 severe only with documented fluid accumulation); **ventilation split resolved as option (ii)** — respiratory failure requiring mechanical ventilation (invasive/NIPPV) → #28 `cardiac_or_other_organ_failure`=1 → Severe via organ involvement, regardless of fluid accumulation. Made deterministic by an explicit #28 inclusion criterion in the leaf table (resolved a post-write contradiction the advisor caught, where #28 silently re-opened the ventilated-patient case the binary "No" had ruled non-severe).
+**Agent refinement:** aligned `lab_warning` platelet threshold `<100000` → `≤100000` to match `platelet_le_100k` (pure consistency). Added `shock_strict` to derived-booleans list + Excel templates (count-based NA-aware formula) + a validation note (row 2 = the lenient/strict divergence case: `shock`=1 → DSS-III stands, `shock_strict`=0).
+**Process:** advisor-reviewed before writing — caught that the originally-proposed ≥2-of-5 `shock_strict` was not nested in lenient (breaking the "tightening" framing) and that agent-introduced changes must not be stamped as curator sign-off; both corrected (Macedo definition verified against the Morra2018 source page, not reconstructed; sign-off attribution made precise). Closes open input #1 of the spec's 4. **Not git-committed** (curator's call, consistent with the 2026-06-29 spec creation).
+
+---
+
+## [2026-06-29] analysis | Dengue Severity Binarization Spec created
+
+**Created (1):** `analyses/Dengue Severity Binarization Spec.md` — design spec / data dictionary for a deterministic binarization that maps the curator's raw clinical DB → per-patient WHO-1997 (DF/DHF I–IV/DSS) **and** WHO-2009 (D/DWS/SD) labels. Three layers: 28 binary leaf atoms (`1`/`0`/`NA`; computed-from-raw-serial-labs vs hand-entered) → NA-aware derived booleans → highest-wins final labels. Includes the locked operational-definition table (Morra2018-contested thresholds flagged ★), 1997 two-step conjunction-then-grade logic, 2009 disjunction logic, asymmetric missing-data handling (`Unclassifiable` states + completeness flags), Excel/Sheets `IFS`/`MIN`/`MAX` formula templates, and 6 hand-built edge-case validation rows. **Scope = design spec only** (no real-data implementation, no validation run); methodology only, **no PHI** (filled patient workbook stays external, never committed — wiki auto-deploys to public web).
+**Updated (2):** `index.md` (Analyses 7→8, new top row); `analyses/Thesis Objectives and Grant Pitch.md` (+Operationalization pointer in the severity-scheme section, linking the spec as the concrete implementation of its pre-registered WHO-2009-primary / WHO-1997-sensitivity decision and the "classify on full clinical course" rule).
+**Design notes:** logic derived top-down from WHO (scheme-fixed, DB-independent); only the leaf→source-column mapping awaits the curator's DB headers (Step 0). Advisor-flagged traps baked in: all DHF grades require the 4-criterion conjunction first (Grade I ≠ mild+tourniquet); highest-tier-wins precedence; HCT-baseline fragility → lean on radiology effusion/ascites; PHI/web-deploy leak boundary made explicit. DHF I–IV grade definitions reconstructed (flagged for SEARO-handbook verification + possible addition to `Dengue Severity Classification`, a documented gap).
+
+---
+
+## [2026-06-29] web-deploy | Morra2018 ingest synced to live site
+
+Ran `sync-and-build.ps1` from `efbwebshare/` after the Morra2018 ingest commit (`ece28fa`). Quartz v4.5.2 synced `wiki/` → `content/` and built 122 input files → 578 output files; pushed to GitHub `OsandaC/efb-dengue-wiki` `main` (`c80efd4`); Cloudflare auto-redeploys (~1 min). Live: efb-dengue-wiki.pages.dev.
+
+---
+
 ## [2026-06-29] ingest | Morra ME 2018 - Defining Warning Signs and Severe Dengue
 
 **Created (1):** `sources/Morra2018 - Defining Warning Signs and Severe Dengue.md` (Rev Med Virol; PRISMA systematic review of how 44 WHO-2009 studies operationally define the warning-sign / severe-dengue signs — only 2 of 16 signs (liver enlargement; liver involvement = AST/ALT >1000) reach consensus, both WHO-2009-predefined; "shock" defined 23 distinct ways).
@@ -1264,3 +1300,183 @@ Updated `Research Plan - DN B Cell Expansion in Dengue.md` (Revision 2) to incor
 **Scope:** Adapted from `dengue-wiki/` template. Removed `geography/` axis and `Update Web` workflow. Rewrote Domain Context for extrafollicular B cell dynamics in dengue (flow cytometry focus).
 **Pages affected:** none (no content yet)
 **Reason:** Curator initialising a focused literature review on a new research area — extrafollicular B cell dynamics in dengue.
+
+## [2026-08-16] ingest | Glaros, Francis & Kreslavsky 2026 - The Multilayered Identity of B Cell Memory
+
+**Source:** `raw/glaros2025.pdf` — Cell Mol Immunol 2026;23:150–167. DOI `10.1038/s41423-025-01377-5`. Open access (CC-BY), Karolinska Institutet (Kreslavsky lab). Citations at ingest: Semantic Scholar 3, CrossRef 4 (retrieved 2026-08-16). Pre-ingest snapshot `df3595a`.
+
+**Mode:** standard ingest. Step 3 discussion was satisfied by the curator's mid-turn direction — *"specifically give more space to Atypical MBCs sections"* — so the source page and propagation are deliberately weighted toward the review's **Atypical MBCs** section (journal pp. 160–161), with the GC-derived-vs-early-memory backbone, tissue-resident memory, and GC molecular regulation covered at lower depth.
+
+**Naming decision:** filed as **Glaros2025** (matches raw filename + DOI slug `-025-`, accepted Nov 2025, © 2025) with frontmatter `year: 2026` (journal citation line; published online 6 Jan 2026). Recorded in a note box on the source page so it is cheap to overrule.
+
+**What kind of source this is:** a narrative review with **zero original data** and no systematic-search protocol. Roughly ten named primaries are threaded through it; **only one — Ambegaonkar 2020 *Sci Adv* — was independently verified** (abstract, during ingest). All bullets are weighted by the *primary's* study type, not the review's authority, and the mouse-vs-human boundary is carried explicitly on every load-bearing claim.
+
+**Verification performed:** the review paraphrases Ambegaonkar 2020 as "soluble antibodies may dampen BCR signaling… through FcRL5 and FcγRIIB," while that paper's title reads "…**restricts responses to membrane-associated antigens**" — apparently the opposite direction. Abstract pulled via Semantic Scholar: **direction confirmed** (the title means responses are *restricted to* membrane-associated antigen; atypical MBCs "are unable to respond to soluble antigens"). The abstract also names **FcγRIIB** as the characterized receptor — FCRL5's involvement is the review's attribution — and adds a line load-bearing for the cross-wiki bridge: these cells respond to immune-complexed antigen "but are unable to respond to fully soluble antigens, **such as self-antigens**." Recorded as audit entry #55.
+
+**Pages created (3):**
+- `sources/Glaros2025 - Multilayered Identity of B Cell Memory.md`
+- `entities/Early Memory B Cell.md` — eMBC / GC-independent memory; the tripotent AP → ePC / eMBC / GCBC branch point; "differentiation by default"; eMBCs outnumber GC-derived MBCs
+- `entities/Tissue-Resident Memory B Cell.md` — BRM; lung / skin / gut / **liver** / LN-SCS / splenic MZ / bone marrow. Created on the liver hook: GC-independent somatically hypermutated IgM⁺T-bet⁺ MBCs resident in liver in a GC-absent infection model, plus atypical MBCs in chronic-HBV liver — hepatic involvement being a consensus severe-dengue criterion (cf. [[Morra2018 - Defining Warning Signs and Severe Dengue]]). Splenic-MZ material folded in rather than given its own page.
+
+**Pages updated (35):** entities — [[Atypical B Cell]] (deep), [[Age-Associated B Cell]] (deep), [[Double-Negative B Cell]], [[DN2 B Cell]], [[T-bet]], [[ZEB2]], [[CD11c]], [[CD21]], [[CD27]], [[CXCR3]], [[FCRL5]], [[FcRH4]], [[IgM]], [[IgG]], [[IgA]], [[IgD]], [[IL-21]], [[TLR7]], [[BACH2]], [[BLIMP-1]], [[Bcl-6]], [[IRF4]], [[AID]], [[Plasmablast]], [[Switched Memory B Cell]]; concepts — [[Memory B Cell]] (deep), [[Extrafollicular Response]] (deep), [[Germinal Center]], [[Somatic Hypermutation]], [[Class Switch Recombination]], [[Original Antigenic Sin]]; methods — [[Conventional Flow Cytometry]], [[FACS Sorting]], [[BCR Sequencing]], [[ATAC-seq]], [[In Vitro B Cell Stimulation]], [[Single-Cell RNA Sequencing]], [[T-B Coculture Assay]]; analyses — [[B Cell Panel Variant 1]], [[External Citation Audit]], [[Notable Findings]]; plus a cross-reference block added to the [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]] source page.
+
+**Propagation rule applied.** Broader than the deliberately-tight Narvaez2011 / Morra2018 ingests, because those were off-spine severity papers whereas Glaros sits squarely on the cellular spine. Rule used: **deep update where Glaros qualifies or contradicts an existing wiki claim; one citation bullet where he merely confirms; skip where he only mentions.**
+
+**Four things this ingest changed rather than added:**
+1. **★ T-bet demoted from definitional to confirmatory.** The wiki held both positions in different bullets with an empty Contradictions section on [[T-bet]] — "the defining transcription factor of the ABC population" (Lamprinou2026, Sutton2021) versus "not absolutely required" (Sanz2025 citing Yang 2022 / Du 2019). Glaros independently restates the dispensability result from two further mouse conditional-KO primaries (Du 2019, Levack 2020) and promotes [[ZEB2]] as the shared driver. Contradiction now written up with a reconciliation — descriptive evidence for "definitional," genetic evidence for "dispensable," both can hold — and an actionable consequence recorded on [[B Cell Panel Variant 1]]: **report T-bet⁺ as a fraction within a CD11c/CD21/CXCR5 gate rather than requiring T-bet for the DN2 call**, since a T-bet-gated count is a lower bound.
+2. **★ A new open contradiction on [[ZEB2]].** Gao 2024 *Sci Immunol* (new to the wiki) shows B-cell-specific *Zeb2* deletion **reduces** GC B cells in persistent *Plasmodium* infection — ZEB2-driven atypical cells **sustain** that GC. This pulls against the Dai 2024 / Sanz2025 result that ZEB2 represses *Mef2b* and blocks GC entry. Logged as unresolved with a candidate cell-intrinsic-exclusion / cell-extrinsic-support reconciliation, cross-linked from [[Germinal Center]], which already carried a weaker version of the same paradox.
+3. **★ The DN false friend.** The murine memory literature's **"DN MBC" means CD80⁻PD-L2⁻**, a proxy for GC-independent origin — not IgD⁻CD27⁻. In that scheme a "DN MBC" is quiescent, low-SHM and largely unswitched, close to the inverse of this wiki's activated CD21⁻CD11c⁺ effector. Documented as a synonymy-map row plus a warning box on [[Atypical B Cell]] and a Key Points entry on [[Double-Negative B Cell]]. **No `CD80` or `PD-L2` entity pages created** — neither marker appears in the 11-color or Panel-4 designs, so two 1-source pages would be lint debt; the collision documents better on the synonymy map.
+4. **Origin proxies weakened across the wiki.** Fate mapping shows **CSR happens mostly pre-GC**, and SHM loads **overlap in both directions** between GC-derived and GC-independent memory. Any wiki claim inferring GC-vs-EF origin from isotype or mutation load alone is weaker than it reads — flagged on [[Somatic Hypermutation]], [[Class Switch Recombination]], [[Germinal Center]], [[BCR Sequencing]], [[Conventional Flow Cytometry]], [[FACS Sorting]]. The dengue low-SHM findings survive, but on their *independent* arguments (GodoyLozano's Monte Carlo ASC deconvolution; Tipton's clonal genealogies), not on mutation load per se.
+
+**Notable Findings — 2 entries appended** (total 20 → 22): (a) GC-specific fate mapping assigns the majority of acute-viral-infection ABCs to a GC-independent pathway — the wiki's central premise tested directly for the first time, with the murine / one-model caveat carried; (b) the "atypical B cells can't become plasma cells" result rests on a soluble-antigen assay these cells are constitutionally unable to respond to.
+
+**Deliberately NOT made a Notable Finding:** the epigenetic-recording → secondary-dengue hypothesis. Glaros's Fig. 4 model (cumulative stimulation opens *Prdm1*, biasing memory toward PC over GC reentry) would, if applied to dengue, predict the observed triad of a massive plasmablast burst + *lower* SHM in secondary than primary + OAS-biased output — because a PC-biased recall bypasses the GC and therefore adds no new mutation. **That application is wiki-generated synthesis, not a finding in the paper**, and Glaros makes no dengue claim. Routed instead to the source page's Questions Raised (Q2, marked ★ and explicitly labelled), a bullet on [[Original Antigenic Sin]], a testable-design note on [[ATAC-seq]], and a new Watch Item.
+
+**Editorial decision — GC molecular-regulator scope.** No entity pages created for **BCL2, HHEX, ZBTB18, MYC, IL-9, IL-4** (or CD80 / PD-L2). These are GC-memory-regulation nodes with no current dengue, atypical-cell, or flow-panel application here; eight 1-source pages would add orphan and lint debt against a standing lean-infrastructure constraint. Covered descriptively on [[Germinal Center]], [[BACH2]], [[Bcl-6]], and the source page instead. Recorded as a Decisions entry in `state.md`.
+
+**Index housekeeping.** Sources 22 → 23; Entities 48 → 50; Total pages 107 → **110** (counts verified against the filesystem: 23 sources / 50 entities / 8 concepts / 22 methods / 7 analyses). Notable Findings count corrected **16 → 22** (the index entry was stale by 4 before this session). Source counts resynced on all 37 touched index lines — one pre-existing drift surfaced and was corrected: **In Vitro B Cell Stimulation was listed as 3 in the index but 4 in its frontmatter** (now 5).
+
+**Limitations carried into every page.** Zero original data; predominantly murine; the two claims the wiki leans on hardest (GC-independent ABC origin, eMBC dominance) are both mouse GC-fate-mapping with no human equivalent — human corroboration (CD40L deficiency, BCL6 deficiency) establishes that GC-independent memory *exists*, not that it dominates; and the "differentiation by default" model rests partly on **author self-citation** (Glaros 2021 *Immunity*), flagged on [[Early Memory B Cell]] and as audit entry #63.
+
+**★ Second-pass correction — two claims re-qualified after initial propagation.** A review of the ingest caught that p.156 attributes **both** the eMBC numerical-dominance claim and the eMBC/gcMBC transcriptional-similarity claim to published refs **plus the authors' own unpublished data** — verbatim: *"outnumber their GC-derived counterparts across multiple immunization scenarios (**[92] and unpublished results**)"* and *"only relatively subtle differences detected between the two subsets (**[129, 132] and unpublished observations**)"*. Both had been propagated unqualified. Verified against the PDF, then attribution caveats were added to the source page (Summary + Key Findings §B), [[Early Memory B Cell]], [[Memory B Cell]], the index row, and `state.md` — so the dominance claim (which is also anchored on the Glaros 2021 self-citation) **no longer sits as joint justification for the wiki's spine** alongside the published Song 2022 origin result, which is the claim that actually carries that weight.
+
+**Audit entries extended to #66.** Two high-priority primaries the first pass had left unnamed were added: **Shao 2024 *Nat Immunol*** (#64) — the epigenetic-recording primary underpinning the whole *Prdm1*/BACH2–BLIMP1 thread and the wiki-generated secondary-dengue hypothesis, and the paper that would have to be ingested to make Questions Raised Q2 real — and **Trivedi 2019 *Immunity*** (#65), the liver/*Ehrlichia* primary that justified creating [[Tissue-Resident Memory B Cell]]. Both are now named inline where they are used ([[ATAC-seq]], [[Original Antigenic Sin]], [[Tissue-Resident Memory B Cell]]); Shao's author list is marked unconfirmed (transcribed from a page render, not from a retrieved record).
+
+---
+
+## [2026-08-16] ingest | Cancro MP 2020 - Age-Associated B Cells
+
+**Source added:** [[Cancro2020 - Age-Associated B Cells]] — *Annual Review of Immunology* 2020;38:315–340. doi:10.1146/annurev-immunol-092419-031130. Citations: Semantic Scholar 397 / CrossRef 434 (retrieved 2026-08-16). **Narrative review, ZERO original data, predominantly murine**, by the investigator who co-defined the ABC subset. **Sources 23 → 24; total pages 110 → 111.**
+
+**Mode.** Standard ingest (not fast-track). Step 3 discussion held: curator selected **broad propagation** (Glaros-style), weighting **§3 signalling requisites / §4 origins in vivo / §5 microbe-specific immunity**, and **3 Notable Findings**. Executed with **2 sub-agents** at the curator's direction (Agent A = 18 entity + method pages; Agent B = 16 TF/cytokine/concept/method/analysis pages), with the source page written in the main context first so both agents worked against a fixed link list, and all shared files (index, log, state, Notable Findings, External Citation Audit) reserved to the main context to avoid concurrent-write conflicts. **34 pages updated + 1 created.**
+
+**★ Curator directive mid-session — PDF-only sourcing.** The curator directed that wiki content for this ingest come from the Cancro2020 PDF **only**, and that internet searching not be undertaken without asking first. Applied immediately: an in-flight sub-agent instruction was reversed, all externally-sourced content was stripped before publication, and a whole-tree grep confirmed no trace remained. The step-11 citation-count fetch (Semantic Scholar / CrossRef) is mandated by the ingest workflow itself and was retained. All bibliographic detail in audit entries 67–77 was **transcribed from the review's own Literature Cited section**, not retrieved externally.
+
+**★ The T-bet → Blimp-1 problem.** Cancro states that few if any plasma cells express T-bet and that "there is evidence that T-bet represses Blimp-1," implying ABC→plasma-cell differentiation requires losing T-bet — and **attaches no numbered reference** to that sentence, unusual in a 185-reference Annual Reviews article. This was originally slated to become both a Notable Finding *and* the resolution of the wiki's tracked [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]] ↔ [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]] contradiction (no PC-programme genes at rest vs efficient plasmablast precursor). It was **not** adopted. The claim is recorded on [[T-bet]], [[BLIMP-1]] and [[Plasmablast]] explicitly flagged as an **unreferenced assertion — the author's synthesis, not a sourced finding**; the Sutton/Jenks contradiction is left **open** on [[BLIMP-1]], with the T-bet→Blimp-1 route named as not a sound basis for closing it. Curator is obtaining the relevant primary for a future ingest, at which point these claims get updated from that PDF. Tracked as a Watch Item and a queue entry.
+
+**3 Notable Findings appended (22 → 25):**
+1. **The canonical ABC review's mechanism for ABC→plasma-cell differentiation carries no citation** — recorded as an evidentiary-gap finding, deliberately making no claim about the mechanism itself. Notes the second-order pattern: this and the Ambegaonkar/soluble-antigen artefact (same date) are both cases where a widely-repeated claim about atypical-cell PC capacity rested on weaker ground than its circulation suggested.
+2. **Circulating ABC frequency may measure mobilisation, not pool size.** Murine blood/spleen non-equilibrium plus the human observation that blood ABC frequencies fall on antiretroviral therapy. Written with **both halves** per the epistemic-honesty principle: it invalidates "DN expansion" as phrasing for a blood-only study, *and* it means blood is arguably the correct compartment for an acute-response question.
+3. **ABCs proposed as the cellular substrate of original antigenic sin** (Cancro's own §6.3 + dedicated sidebar, not wiki synthesis). Dengue is the paradigm sequential-heterologous-viral-infection system, and the wiki holds both halves separately — OAS at antibody level ([[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]]) and DN expansion at cell level ([[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]) — with nothing joining them. Yields a falsifiable prediction (DN2-phenotype gate enriched for prior-serotype specificity) and two honest constraints (age-driven decades-long accumulation vs transient infection-driven expansion; sidebar speculation, not finding).
+
+**4 contradictions logged, none smoothed:**
+- [[Age-Associated B Cell]] — Cancro reads the somatic-mutation evidence as *not* establishing GC origin; [[Lamprinou2026 - ABCs and DN B Cells]] reads the same category of evidence as supporting it. Same data, opposite conclusions.
+- [[Germinal Center]] — Cancro's "inference only" position set directly against the existing Lamprinou2026 "ABCs are GC-experienced" bullet, both retained.
+- [[IgG]] — Cancro's human-ABC **IgG1** skew vs Sutton2021's **IgG3** enrichment in the alternative lineage; different measurement bases (effector-function isotype skew vs cluster-level transcriptomic enrichment), logged unreconciled.
+- [[CD40L]] — Cancro holds **both** a CD40-requirement finding (CD154-KO mice fail to develop natural ABCs) and a CD40-dispensability finding (bystander IFN-γ suffices) within the same review.
+
+**★ Convergent support for the T-bet demotion, arriving from a different direction and five years earlier.** The wiki's open T-bet thread rested on [[Glaros2025 - Multilayered Identity of B Cell Memory]] citing mouse conditional knockouts (Du 2019, Levack 2020) — *genetic* evidence. Cancro 2020 reports that transcriptional analysis of IFN-γ/IL-21-treated wild-type versus T-bet-deficient cells found **CD11c induction to be largely a direct cytokine effect rather than a T-bet target**, and calls the in vivo picture "somewhat controversial," attributing the discrepancy to differing routes of ABC formation. Written onto [[T-bet]] as independent convergence, with the evidence types kept distinct (transcriptional/in vitro vs genetic). Strengthens the standing panel recommendation on [[B Cell Panel Variant 1]]: gate on CD11c/CD21/CXCR5, report T-bet⁺ as a percentage within that gate.
+
+**★ New quantitative prior for the panel.** Within the murine CD21⁻CD23⁻ splenic pool only **~2/3 are T-bet⁺**, and **~half of those are CD11c⁺** — at least three populations inside the ABC gate. Consequences written to [[B Cell Panel Variant 1]]: a T-bet-gated call is a lower bound of *estimable* magnitude, and a CD21⁻-anchored gate over-calls ABC by roughly 50%. Flagged as murine and splenic — transfer to human blood is untested.
+
+**★ New mechanism for the bridge thesis that does not need soluble self-antigen.** Cancro §8: TLR7 and TLR9 act in **opposite** directions on autoimmunity (TLR9 knockouts *exacerbate* disease). BCR-delivered TLR9 ligand normally triggers programmed death after an initial proliferative burst; survival cytokines or CD40 rescue the cell, and **in the presence of IFN-γ or IL-21 the rescued cell assumes the ABC phenotype**. So ABCs may be what survives a failed tolerance checkpoint. This matters because a tracked Watch Item established that atypical cells cannot respond to soluble antigen — including soluble self-antigen — which constrained the bridge-wiki cells→autoantibody arm. Secondary dengue supplies immune complexes, apoptotic debris and viral ssRNA, i.e. BCR-delivered TLR7/9 ligand, plus IFN-γ and IL-21.
+
+**[[TNF-alpha]] gains a second, distinct mechanism** (1 → 2 sources): ABC-derived TNF-α suppresses B lymphopoiesis via pre-B cell apoptosis and BM microenvironment effects (Ratliff/Riley). Explicitly distinguished on the page from Kaneko2020's TNF-α-mediated GC-TFH block — same cytokine, different axis, not conflated.
+
+**Editorial decisions.** No entity page created for **IRF5** (single mention, no dengue relevance, absent from every panel design) — cited as plain text on [[IL-21]] and [[Age-Associated B Cell]]. Likewise no pages for Di Niro 2015, Zumaquero 2019, Naradikian 2016, Racine 2008, Sindhava 2017 — all plain-text citations plus External Citation Audit entries, avoiding dangling wikilinks. The [[Extrafollicular Response]] update was written to respect the standing Watch Item against conflating "GC-independent memory" with "extrafollicular effector."
+
+**Audit entries 67–77 added.** Cancro2020 is zero-original-data, so its entire evidentiary content is external citation. **Seven of eleven entries are author self-citations** (Hao 2011, Naradikian 2016, Russell Knode 2017, Sindhava 2017 among them) — expected for a founding investigator's review, but it concentrates the evidentiary base in one laboratory and is recorded as a structural feature of the source. **None independently verified** (PDF-only directive). Highest-value ingest candidates surfaced: **Naradikian 2016** (the two-signal primary), **Di Niro 2015** (a second EF-SHM primary, bacterial rather than autoimmune), **Zumaquero 2019** (human, CD40-independent, co-authored by two existing wiki source authors), **Moir 2008 / Weiss 2009** (canonical human atypical-memory primaries).
+
+**Index housekeeping.** Sources 23 → 24; total pages 110 → **111** (verified against filesystem: 24 sources / 50 entities / 8 concepts / 22 methods / 7 analyses). Source counts resynced on **32 index lines**; no pre-existing drift found this pass. Notable Findings 22 → 25. External Citation Audit description updated (54 → ~89 external papers).
+
+**Limitations carried onto every page.** Zero original data; the mechanistic core (§3, §4) is essentially all mouse and the single human signalling observation is an *exception* to the model; zero dengue content — the comparative extension rests on dengue meeting Cancro's "intracellular infection" criterion (cytoplasmic ssRNA → TLR7 ligand, strong IFN-γ) and on its kinetics matching the acute/transient pattern (influenza, yellow fever, vaccinia) rather than the sustained chronic pattern (HIV, HCV, TB).
+
+---
+
+## [2026-08-18] analysis | Why DN B Cells Matter — Disease Relevance and the Infectious Disease Case
+
+**Trigger:** Curator query — "why are DN B cells important in disease, and what is their usefulness in the infectious disease context?", answered from existing wiki literature first. Run with 1 Explore sub-agent (curator-specified) sweeping all 111 pages; main context handled orientation, source verification, and drafting.
+
+**Created:** `analyses/Why DN B Cells Matter - Disease Relevance and Infectious Disease Case.md` (Analyses 7 → 8; total pages 111 → **112**).
+
+**Method — provenance tiering.** Every source row is tiered **A** (ingested primary with original DN/atypical-phenotype data) vs **B** (claim held only through a zero-original-data review's characterization of un-ingested work). This was the organizing decision: an HIV-ART observation and an n=68 COVID cohort must not appear as equivalent bullets.
+
+**Headline findings recorded:**
+1. **Only 3 non-dengue infection primaries exist in the corpus** — Woodruff2020, Kaneko2020 (both COVID-19), Sutton2021 (malaria/vaccination, core n=4). All HIV, TB, influenza, LCMV, γHV68, *Ehrlichia* and HCV content is review-carried (Sanz2025, Cancro2020, Glaros2025, Lamprinou2026), and per [[External Citation Audit]] only 1 of ~89 external papers is independently verified.
+2. **Dengue DN evidence is two papers with non-matching gates** — Ansari2025 (IgD⁻CD27⁻ → CD21⁻CD11c⁺, n=170) and Singh2026 (CD27⁻CD21⁻ on DENV-specific cells, n=18 pediatric, preprint). Neither stains T-bet, CXCR5, FCRL5 or ZEB2 in the DN gate, so DN1/DN2/DN3 has never been resolved in dengue.
+3. **★ The protective counter-case is stated in the open**, not buried: LCMV T-bet⁺ B cells required for chronic control; γHV68 ABC expansion reduces viral load; *Ehrlichia* protective multipotential T-bet⁺ memory; naive-derived DN2 participate in generating neutralizing antibody in primary SARS-CoV-2; influenza T-bet⁺FcRL5⁺ memory correlates with long-lived antibody; ZEB2 deletion helps lupus but costs GCs in persistent *Plasmodium*. Depletion is **not** unidirectionally beneficial.
+4. **★ The asymmetry named** — the biomarker/activity-correlate case is far stronger in autoimmunity (SLEDAI, R²=0.8 vs VH4.34 IgG, nephritis p=0.025, rituximab/belimumab response) than in infection (one r²=0.39 CRP correlation in n=10 ICU patients; dengue severity association council-downgraded for day-of-sampling confounding). The wiki's infectious-disease case runs substantially on **transfer from autoimmunity**, licensed by a Tier-B transcriptomic convergence claim that is itself internally contested (Maul 2021; FCRL4⁻ vs FCRL4⁺ functional split).
+5. **★ No functional antibody output has ever been measured from sorted DN cells in any infection** — Sutton2021 states this as its own limitation. The wiki's central "these cells make the harmful antibodies" claim has no direct infection evidence in the corpus.
+6. Measurement counterweights consolidated: blood ≠ pool (Cancro murine disequilibrium + human HIV/ART fall); CD21⁻CD27⁻ captures only 44.7% of transcriptomic atBCs; CD21⁻-anchored gates over-call ~50%. These are two different errors on two different axes and do not cancel.
+
+**Sourcing:** wiki-only, per the standing PDF-only decision and explicit curator confirmation this session. Moir 2008, Weiss 2009, Portugal 2015 and Holla 2021 appear **only** as un-ingested Queue candidates, never as sources of claims. No external retrieval performed.
+
+**Also flagged:** ⚠ **Ebola** appears exactly once wiki-wide — an Overview line on [[Double-Negative B Cell]] with no source attribution. Recorded as a bare assertion to be sourced or removed.
+
+**Updated:** `index.md` (Analyses 7→8, page count 111→112, header date); `entities/Double-Negative B Cell.md` + `entities/Atypical B Cell.md` (Related Pages backlink, inserted before `## Sources`); `state.md` (Queue + Watch Items).
+
+---
+
+## [2026-08-18] correction | Double-Negative B Cell — unsourced Ebola claim removed
+
+**Found during** the DN-importance synthesis sweep. The Overview listed Ebola among infections with described atypical/T-bet⁺ B cell expansions, **with no source attribution** — the only Ebola mention in the wiki, and a CLAUDE.md Rule 6 violation (every claim on an entity page must trace to a source page).
+
+**Fixed in the same session rather than deferred.** The sentence now names only contexts the ingested corpus supports, each wikilinked: malaria → [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]; SARS-CoV-2 → [[Woodruff2020 - EF B Cell Responses in COVID-19]] + [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]; dengue → [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]] + [[Singh2026 - DENV-Specific Memory B Cell Subsets]]. An inline note records the removal and its date.
+
+**Not a scope change.** CLAUDE.md Domain Context still names Ebola as an intended comparative benchmark — this is now recorded as an **evidence gap** (no Ebola source ingested) rather than an unsourced assertion. Watch Item opened and resolved the same session.
+
+---
+
+## [2026-08-18] ingest x4 + mechanism layer | Song2022, Kwissa2014, Zumaquero2019, Sanz2019
+
+**Curator ask:** go below phenotype into receptor-level mechanism — what builds DN/DN2 cells and
+what they enhance or suppress. Asked whether the Sanz lab had more; answer was that three of the
+four best mechanism papers were already in `raw/` un-ingested. Curator added `Zumaquero2019.pdf`
+mid-session.
+
+**Ingested (4 sources, 24 -> 28):**
+- `song2022.pdf` — Song et al. Immunity 2022;55:290-307. Tfh-outside-GC drive T-bet+CD11c+ B cells.
+  GC-independence by 4 orthogonal methods (GL-7/EphrinB1, RNA-seq, S1pr2 fate map >80% unlabelled,
+  Bcl6 mixed chimera). Repertoire: 0.64% vs 0.99% mutation load, <10% clonal overlap with GC.
+  **First positional mechanism in the wiki** — marginal-zone relocation, LFA-1/VLA-4 retention shown
+  by 3 h in vivo blockade. Cites 117 (S2) / 142 (CrossRef).
+- `kwissa2014.pdf` — Kwissa et al. Cell Host Microbe 2014;16:115-127. **Dengue extrinsic driver.**
+  CD14+CD16+ monocytes -> plasmablasts via **BAFF/APRIL and IL-10** (blockade); IL-6/IP-10 blockade
+  negative. Whole-blood transcriptome tracks VL and illness duration but gives **no DF/DHF signal**.
+  Type I IFN top upstream regulator. Cites 228 / 225.
+- `Zumaquero2019.pdf` — Zumaquero et al. eLife 2019;8:e41641. **PARTIAL INGEST** (pp.1-19 of 36;
+  Discussion tail + Methods unread). The IFN-gamma mechanism paper. Two-step model: BCR+IFN-gamma
+  prime (d0-3) -> pre-ASC; TLR7/8+IL-21 differentiate (d3-6) -> ASC. IFN-gamma obligate for
+  T-bet-hi pre-ASC; IL-21 obligate for ASC; BCR must be **transient** (2.8% vs 49% ASC).
+  15,917 DARs; PRDM1 and IL21R remodelling; IL-21R protein up 5.5-6x; pSTAT3 up after IL-21.
+  Cites 157 / 176.
+- `Sanz2019.pdf` — Sanz et al. Front Immunol 2019;10:2458. Tier B review, zero original data.
+  7-marker core panel (CD19/IgD/CD27/CD38/CD24/CD21 + dump); canonical DN1/DN2 phenotype table;
+  **FcRL4/FcRL5 reciprocal between HIV and SLE DN cells**. Cites 480 / 539.
+
+**Structural finding that motivated the build:** the wiki had ~50 entity pages for *nodes* and
+**zero pages for edges** — no signalling concept existed at all. IFN-gamma, one of the three
+canonical DN2 drivers, had no page despite 18 mentions in Cancro2020 alone.
+
+**Created — 5 concept pages (the edge layer), concepts 8 -> 13:**
+Atypical B Cell Effector Output; Toll-like Receptor Signaling in B Cells; Follicular Exclusion;
+Extrafollicular T Cell Help; B Cell Receptor Signaling.
+
+**Created — 13 entity pages, entities 50 -> 63:**
+IFN-gamma; Type I Interferon; TLR9; IL-21R; STAT3; BAFF; APRIL; TACI; LFA-1; VLA-4; S1PR3; XBP1;
+Inflammatory Monocyte. (BCMA folded into BAFF rather than stubbed — failed the >=2-bullet gate.)
+
+**Created — 1 analysis page, analyses 8 -> 9:**
+Mechanistic Case for DN and DN2 Cells in Dengue — curator-requested manuscript Discussion source
+for the `ABC stat analysis` project. Written around the **compositional** result, not around
+"severe dengue has more DN2".
+
+**Contradictions opened (Rule 4, all left open):**
+- **BAFF three-way:** Cancro2020 BAFF-independence (murine review) vs GarciaBates2013 serum null
+  (dengue primary) vs Kwissa2014 functional blockade (dengue primary) vs Zumaquero2019
+  contributory-not-obligate. Synthesis offered: contributory, locally delivered, serum uninformative.
+- **XBP1:** high in murine T-bet+CD11c+ (Song2022) vs negative in human atypical B cells
+  (Sutton2021) vs UPR negatively enriched in DN2 (Scharer2019) vs UPR as DN3 signature (Lamprinou2026).
+- **CD32b-hi/CD22-hi paradox:** DN2 high for two ITIM receptors yet TLR7-hyper-responsive.
+- **S1PR3:** in vitro necessity vs in vivo redundancy, in the same paper.
+- **DN taxonomy clash:** Sanz2019's FcRL4+ DN row vs Lamprinou2026's DN1-DN4 — not the same partition.
+
+**Audit correction:** External Citation Audit entry #31 gave Zumaquero2019 the DOI
+`10.1038/s41467-019-11290-x` (Nat Commun, flagged "verify"). **Wrong** — it is eLife
+`10.7554/eLife.41641`. Corrected on the source page; **audit page itself not yet edited.**
+
+**Not done — see state.md Queue:** propagation into pre-existing entity pages (T-bet, CD11c, TLR7,
+TRAF5, BACH2, ZEB2, PD-1, SLAMF7, BLIMP-1, IRF4, CXCR5, CXCR3, CD21, Peripheral Helper T Cell,
+DN2 B Cell, Double-Negative B Cell, Atypical B Cell, Plasmablast, Extrafollicular Response,
+Germinal Center); External Citation Audit DOI fix; Notable Findings entries; external Sanz-lab
+search (curator approved, shopping-list only).

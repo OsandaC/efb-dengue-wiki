@@ -20,7 +20,7 @@ updated: 2026-05-02
 
 ## Summary
 
-Wei et al. provide the first detailed characterisation of IgD⁻CD27⁻ "double-negative" (DN) B cells as a distinct memory subset in human peripheral blood. While prior reports had noted their existence in SLE, this paper formally establishes their memory credentials — somatic hypermutation of VH genes, inability to extrude Rhodamine 123, and CpG-driven proliferation without BCR crosslinking — and distinguishes them from conventional CD27⁺ memory cells and from the tissue-resident FcRH4⁺ CD27⁻ population described by Ehrhardt et al. in tonsil.
+Wei et al. provide the first detailed characterization of IgD⁻CD27⁻ "double-negative" (DN) B cells as a distinct memory subset in human peripheral blood. While prior reports had noted their existence in SLE, this paper formally establishes their memory credentials — somatic hypermutation of VH genes, inability to extrude Rhodamine 123, and CpG-driven proliferation without BCR crosslinking — and distinguishes them from conventional CD27⁺ memory cells and from the tissue-resident FcRH4⁺ CD27⁻ population described by Ehrhardt et al. in tonsil.
 
 The study documents a striking disease-specific expansion in SLE: healthy subjects carry ~4.6% DN B cells among total PBL B cells, whereas 50% of SLE patients exceed 10% (mean 19.4% in that subgroup), and in some patients DN cells constitute the single largest B cell compartment. This expansion is not observed in rheumatoid arthritis or chronic hepatitis C. Within SLE, DN-high patients show significantly elevated nephritis rates, anti-dsDNA and anti-RNP/Sm autoantibodies, 9G4 autoreactive B cells, and higher disease activity scores.
 

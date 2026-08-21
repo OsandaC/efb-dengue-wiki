@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, chemokine-receptor, homing, IFN-gamma, extrafollicular, tissue-inflammation]
 created: 2026-05-04
-updated: 2026-05-21
-sources: 3
+updated: 2026-08-16
+sources: 4
 ---
 
 # CXCR3
@@ -22,16 +22,20 @@ The CXCR5⁻/CXCR3⁺ chemokine receptor switch on extrafollicular B cell popula
 - **CXCR3 expressed on dengue acute-phase plasmablasts:** Plasmablasts in acute dengue carry the phenotype CD20⁻CD38⁺⁺CD27⁺Ki67⁺CD71⁺**CXCR3⁺**, confirming that CXCR3 expression on EF-derived ASCs is not unique to COVID-19 but extends to dengue (see [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]], multi-color FCM, n=170 dengue cohort).
 - **CXCR3 measured by CITE-seq on alternative lineage B cells:** CITE-seq surface protein measurement confirmed CXCR3 expression on alternative lineage (atBC) populations in both malaria-exposed and non-exposed donors, consistent with the CXCR5⁻/CXCR3⁺ homing switch seen on EF pathway cells in COVID-19 and dengue (see [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]], n=4, CITE-seq).
 
+- **CXCR3 is listed among the defining surface markers of human atypical B cells.** Human ABCs "often express the transcription factor [[T-bet]] along with distinct surface markers, including [[CD11c]], CXCR3, [[FcRH4|FCRL4]], and [[FCRL5]]" (see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review, **no original data**). This places CXCR3 in the review-level ABC marker set alongside the markers this wiki already tracks — relevant because CXCR3 is already documented on dengue plasmablasts.
+- **CXCR3 mediates recruitment of resident memory B cells to infected tissue — including antigen-irrelevant ones.** In the lung, B resident memory cells of **diverse specificities, including those unrelated to the invading pathogen**, are rapidly recruited to the infection site via an alveolar-macrophage-initiated cascade: IFN-γ from NK cells → **CXCL9/CXCL10** → recruitment of **CXCR3-expressing** memory B cells. Some of these differentiate into plasma cells on innate signals alone, without specificity for the current threat (review, mouse). See [[Tissue-Resident Memory B Cell]]. Lung BRMs also express CCR6 alongside CXCR3.
+
 ## Contradictions & Debates
 
 - Whether CXCR3 expression on EF B cells reflects functional tissue homing or is simply a marker of IFN-γ exposure without homing consequence has not been directly tested in humans. The murine literature supports functional CXCR3-mediated B cell homing to inflamed tissues, but human in vivo trafficking data are lacking.
 
 ## Related Pages
 
-[[CXCR5]], [[DN2 B Cell]], [[Activated Naive B Cell]], [[Extrafollicular Response]], [[T-bet]], [[CD11c]], [[Plasmablast]], [[CD71]]
+[[CXCR5]], [[DN2 B Cell]], [[Activated Naive B Cell]], [[Extrafollicular Response]], [[T-bet]], [[CD11c]], [[Plasmablast]], [[CD71]], [[Atypical B Cell]], [[Tissue-Resident Memory B Cell]], [[Age-Associated B Cell]]
 
 ## Sources
 
 - [[Woodruff2020 - EF B Cell Responses in COVID-19]]
 - [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]
 - [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]
+- [[Glaros2025 - Multilayered Identity of B Cell Memory]]

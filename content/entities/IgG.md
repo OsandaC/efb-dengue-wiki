@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, immunoglobulin, isotype, class-switch-recombination, memory-b-cells]
 created: 2026-05-02
-updated: 2026-06-14
-sources: 16
+updated: 2026-08-16
+sources: 18
 ---
 
 # IgG
@@ -38,12 +38,17 @@ IgG is the predominant antibody isotype in human serum and the primary product o
 - **IgG⁺ memory B cells are predisposed to plasmablast fate:** The isotype-fate segregation model (Seifert et al. 2015, cited in [[Bhattacharya2016 - Memory B Cell Subset Selection in Secondary Dengue]], commentary) proposes that IgG⁺ memory B cells preferentially differentiate into plasmablasts and plasma cells upon recall, while IgM⁺ memory B cells re-initiate germinal centers. This explains the overwhelming IgG dominance of the dengue PB wave (Wrammert2012: ≥70% DENV-specific IgG; IgM near-absent in secondary infection) and the E-specific IgG⁺ bias of PB-derived mAbs vs. the prM/complex epitope specificity of MBC-derived mAbs (Appanna2016) — the IgG⁺ E-specific memory subset is selectively recruited to PB fate.
 - **IgG is the predominant isotype of the ABC/atypical population.** The majority of [[Age-Associated B Cell|ABCs]] are class-switched, predominantly expressing IgG (or [[IgA]]), although scRNA-seq shows the population also retains an unswitched IgD⁺ fraction. This is consistent with the switched-isotype dominance of the EF/atypical compartment across SLE (DN2: IgG/IgG3), COVID-19 (IgG1), and malaria (IgG3) (see [[Lamprinou2026 - ABCs and DN B Cells]], opinion, citing Ambegaonkar 2022 / Tangye 2023).
 
+- **IgG1⁺ memory is biased toward plasma-cell differentiation on recall — and is enriched for GC origin.** IgG1⁺ MBCs (enriched for GC-derived cells) are biased toward PC differentiation, whereas IgM⁺ MBCs (enriched for GC-independent cells) more readily reenter secondary GCs (see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review, **no original data**). This independently supports the isotype-fate segregation model the wiki carries from [[Bhattacharya2016 - Memory B Cell Subset Selection in Secondary Dengue]] — though the review stresses isotype cannot be used to *infer origin* (see [[Class Switch Recombination]]).
+- **IgG is a minority isotype among lung resident memory but drives the faster local recall.** After respiratory infection the lung memory pool is predominantly [[IgA]]⁺ with a smaller IgG⁺ fraction; IgG⁺ memory is distributed across both lung and mediastinal lymph nodes. Circulating IgG⁺ memory showed **delayed** differentiation into PCs and was less able to generate PCs near infected alveoli than lung-resident IgG⁺ counterparts, which mounted a rapid local response (review, mouse). See [[Tissue-Resident Memory B Cell]].
+- **Most ABCs are class-switched, predominantly to IgG or [[IgA]]** — consistent with their antigen-experienced status, and with some carrying somatically hypermutated BCRs (review). See [[Age-Associated B Cell]].
+- **ABC/atypical isotype skewing toward IgG2a/c (mouse) and IgG1 (human), favouring ADCC as the preferred effector mechanism.** Adoptive transfer of virus-specific IgG2a only partially restored viral control in a chronic-infection model, indicating additional functional distinctions exist beyond isotype alone (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse and human).
+
 ## Contradictions & Debates
 
-None documented in current wiki sources.
+- **★ Apparent isotype tension: Cancro's human ABC IgG1 skew vs. Sutton2021's IgG3 enrichment.** Cancro states human ABC/atypical isotype skewing favours **IgG1** (paralleling murine IgG2a/c), from a general effector-function argument about the dominant anti-hemagglutinin isotypes in original-antigenic-sin contexts. [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]] instead reports **IgG3** enrichment in the alternative lineage relative to classical lineage cells in malaria-exposed donors, at the level of cluster-specific transcriptomic enrichment. The two claims likely rest on different measurement bases — a general isotype-skew argument versus a cluster-level transcriptomic enrichment — and are not reconciled in either source; both positions are recorded here rather than smoothed into consensus (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; human; and [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]], n=4, 10x Chromium scRNA-seq).
 
 ## Related Pages
-[[Double-Negative B Cell]], [[DN2 B Cell]], [[Age-Associated B Cell]], [[Plasmablast]], [[Memory B Cell]], [[Class Switch Recombination]], [[IgM]], [[IgA]], [[Somatic Hypermutation]], [[Original Antigenic Sin]], [[Antibody-Dependent Enhancement]]
+[[Double-Negative B Cell]], [[DN2 B Cell]], [[Age-Associated B Cell]], [[Plasmablast]], [[Memory B Cell]], [[Class Switch Recombination]], [[IgM]], [[IgA]], [[Somatic Hypermutation]], [[Original Antigenic Sin]], [[Antibody-Dependent Enhancement]], [[Early Memory B Cell]], [[Tissue-Resident Memory B Cell]]
 
 ## Sources
 - [[Wei2007 - DN Memory B Cells in SLE]]
@@ -62,3 +67,5 @@ None documented in current wiki sources.
 - [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]
 - [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]
 - [[Lamprinou2026 - ABCs and DN B Cells]]
+- [[Glaros2025 - Multilayered Identity of B Cell Memory]]
+- [[Cancro2020 - Age-Associated B Cells]]

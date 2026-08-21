@@ -2,8 +2,8 @@
 type: entity
 tags: [transcription-factors, IRF4, plasma-cell-differentiation, DN2, extrafollicular]
 created: 2026-05-02
-updated: 2026-05-21
-sources: 5
+updated: 2026-08-16
+sources: 6
 ---
 
 # IRF4
@@ -22,12 +22,15 @@ IRF4 (Interferon Regulatory Factor 4) is a transcription factor essential for pl
 - **IRF4 motifs enriched in ABC chromatin:** In SWEF-deficient lupus mice, ABC chromatin shows enhanced accessibility in areas enriched for T-bet, AP-1, and IRF4 binding motifs — the same motifs enriched in human SLE DN2 cells. IRF4 is thus part of a conserved mouse-human ABC regulatory programme (see [[Sanz2025 - Human Atypical B Cells Overview]], review).
 - **IRF4 NOT upregulated in alternative lineage atBC clusters:** scRNA-seq of >12,000 B cells showed that *IRF4* was not upregulated in any atBC cluster (atBC1, atBC2, atBC3) or in MBC1 — only in PCs, which were detached from the alternative lineage pseudotime trajectory. This absence of IRF4 upregulation is one of three lines of evidence (alongside absent *XBP1* and *PRDM1*) that alternative lineage cells are not pre-plasmablasts in healthy/infection contexts. The contrast with the high IRF4 in SLE DN2 cells (Jenks2018) underscores the context-dependence of PC programming (see [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]], n=4, 10x Chromium).
 
+- **Intermediate IRF4 marks the tripotent activated precursor — the pre-GC branch point.** Activated B cells at the follicular perimeter acquire a surface phenotype coexpressing naive/memory markers (CD38, CCR6) and activated/GC markers (CD95, GL7), express **intermediate levels of IRF4**, and exhibit absent or low [[Bcl-6|BCL6]]. IRF4 "is required for both PC and GC B cell differentiation," so its intermediate level is characteristic of the uncommitted precursor rather than of either destination (see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review, **no original data**, mouse). This precursor is tripotent — a single naive B cell can give rise to early plasma cells, [[Early Memory B Cell|early memory B cells]], and GC B cells.
+- **⚠ Note the unresolved tension the wiki already tracks.** [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]] found IRF4 (with *PRDM1* and *XBP1*) **not** upregulated in human atBC clusters, whereas [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]] reports a high IRF4/low IRF8 ratio in DN2. Glaros2025 cites primaries reporting PC-associated gene expression in ABCs, and attributes the contrary functional literature partly to soluble-antigen stimulation artefact — see [[DN2 B Cell]] Contradictions.
+
 ## Contradictions & Debates
 
 None documented in current wiki sources.
 
 ## Related Pages
-[[BLIMP-1]], [[DN2 B Cell]], [[Plasmablast]], [[BACH2]], [[Extrafollicular Response]]
+[[BLIMP-1]], [[DN2 B Cell]], [[Plasmablast]], [[BACH2]], [[Extrafollicular Response]], [[Early Memory B Cell]], [[Extrafollicular Response]], [[Germinal Center]]
 
 ## Sources
 - [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]
@@ -35,3 +38,4 @@ None documented in current wiki sources.
 - [[Woodruff2020 - EF B Cell Responses in COVID-19]]
 - [[Scharer2019 - Epigenetic Programming in SLE B Cells]]
 - [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]
+- [[Glaros2025 - Multilayered Identity of B Cell Memory]]

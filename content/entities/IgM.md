@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, immunoglobulin, isotype, memory-b-cells, marginal-zone]
 created: 2026-05-02
-updated: 2026-05-19
-sources: 8
+updated: 2026-08-16
+sources: 10
 ---
 
 # IgM
@@ -24,12 +24,19 @@ IgM is the first immunoglobulin isotype produced by B cells and the default surf
 
 - **IgM⁺ memory B cells are predisposed to GC re-initiation, not PB differentiation:** The isotype-fate segregation model (Seifert et al. 2015, cited in [[Bhattacharya2016 - Memory B Cell Subset Selection in Secondary Dengue]], commentary) proposes that IgM⁺ memory B cells preferentially re-initiate germinal center reactions rather than differentiating into plasmablasts. This provides a mechanistic explanation for the IgM dominance of DENV-binding convalescent MBCs (Appanna2016) and the IgM⁺ MBC elevation during acute secondary dengue (Singh2026) — these IgM⁺ cells may be maintained or expanded via GC re-entry rather than contributing to the PB wave.
 
+- **★ IgM⁺ (and IgM⁺IgD⁺) memory is enriched for GC-INDEPENDENT origin — but the marker is not decisive.** GC-specific fate mapping shows GC-independent [[Early Memory B Cell|early MBCs]] are enriched for **unswitched IgM⁺IgD⁺** cells with low SHM, while GC-derived MBCs are more commonly class-switched. **However, the distinction is not absolute:** early MBCs include a significant fraction of class-switched cells, and GC-derived MBCs can retain an **IgM⁺ or even IgM⁺IgD⁺** phenotype (see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review, **no original data**). Class-switch status is "insufficient to definitively discriminate" the two — see [[Class Switch Recombination]].
+- **IgM⁺ memory preferentially reenters secondary germinal centers — with a caveat.** IgM⁺ MBCs (early-MBC-enriched) are more likely to reenter secondary GCs, whereas IgG1⁺ MBCs (GC-derived-enriched) are biased toward PC differentiation — consistent with the isotype-fate segregation model the wiki already carries from [[Bhattacharya2016 - Memory B Cell Subset Selection in Secondary Dengue]]. **The caveat:** GC-specific fate mapping found the secondary GC B cell pool was dominated by non-fate-mapped cells, and a follow-up study showed those derived **primarily from naive B cells** rather than from IgM⁺ memory (review).
+- **Germline-encoded high-affinity precursors yield IgM⁺-dominated memory.** Mice whose naive precursors bear germline-encoded, high-affinity BCRs develop memory compartments **dominated by IgM⁺ MBCs**, a subset likely enriched for early (GC-independent) MBCs (review, mouse).
+- **Somatically hypermutated IgM⁺T-bet⁺ memory persists in tissue after a GC-absent infection.** In murine *Ehrlichia muris* infection, where splenic GCs are absent, hypermutated **IgM⁺[[T-bet]]⁺** MBC-like cells reside in liver and spleen and persist after clearance (review, mouse). See [[Tissue-Resident Memory B Cell]].
+- **Both IgM⁻ and IgM⁺ ABCs exist, with a range of surface IgD within the IgM⁺ fraction.** Cancro's speculative mapping: switched (IgM⁻IgD⁻) and unswitched (IgM⁺IgD⁻) memory arising from antigen-driven responses, versus homeostatically-expanded primary cells (IgM⁺IgD⁺) arising from a proposed non-antigen-driven route — consistent with ABCs including both somatically mutated and germline-configuration Ig genes (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse).
+- **IgM⁺CD11c⁺ extrafollicular splenic plasmablasts drive CD4-T-independent antibody responses in murine *Ehrlichia* infection** (Racine et al. 2008, *J Immunol*), alongside protective T-bet⁺ memory B cells (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse).
+
 ## Contradictions & Debates
 
 None documented in current wiki sources.
 
 ## Related Pages
-[[Double-Negative B Cell]], [[Memory B Cell]], [[Activated Naive B Cell]], [[IgD]], [[IgG]], [[Class Switch Recombination]]
+[[Double-Negative B Cell]], [[Memory B Cell]], [[Activated Naive B Cell]], [[IgD]], [[IgG]], [[Class Switch Recombination]], [[Early Memory B Cell]], [[Tissue-Resident Memory B Cell]]
 
 ## Sources
 - [[Wei2007 - DN Memory B Cells in SLE]]
@@ -40,3 +47,5 @@ None documented in current wiki sources.
 - [[Appanna2016 - Plasmablasts as Subset of Memory B Cell Pool]]
 - [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]]
 - [[Bhattacharya2016 - Memory B Cell Subset Selection in Secondary Dengue]]
+- [[Glaros2025 - Multilayered Identity of B Cell Memory]]
+- [[Cancro2020 - Age-Associated B Cells]]

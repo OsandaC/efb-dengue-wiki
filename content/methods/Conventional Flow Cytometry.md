@@ -2,8 +2,8 @@
 type: method
 tags: [flow-cytometry, immunophenotyping, B-cell-subsets, PBMC, panel-design]
 created: 2026-05-02
-updated: 2026-05-21
-sources: 15
+updated: 2026-08-16
+sources: 17
 ---
 
 # Conventional Flow Cytometry
@@ -43,6 +43,11 @@ In dengue and related infection studies, conventional flow cytometry has been us
 - **Sutton2021 validation panel (multi-color) — flow cytometry validation of transcriptomic clusters:** A conventional flow cytometry panel including CD19, CD20, CD21, CD27, CD11c, IgD, IgG was applied to 18 donors (11 malaria-exposed, 7 non-exposed) to validate the transcriptomically-defined alternative lineage from scRNA-seq/CITE-seq. This confirmed that CD11c⁺ cells are present in non-exposed donors and that the alternative lineage is a substantial (~20%) component of the B cell repertoire. The panel was designed to test the CITE-seq prediction that CD11c outperforms CD21⁻CD27⁻ as a gating marker (see [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]], n=18 donors).
 - **CITE-seq reveals CD21⁻CD27⁻ gating captures only ~45% of transcriptomic atBCs:** This finding (see [[CITE-seq]] for details) has direct implications for all flow cytometry studies using CD21⁻CD27⁻ or IgD⁻CD27⁻ gates — including every dengue panel in this wiki. Studies using these gates have likely underestimated the true size of the atypical/alternative lineage B cell population (see [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]).
 
+- **★ Surface phenotype cannot assign memory B cell origin — a general limit on flow-based subsetting.** Benchmarked against GC-specific genetic fate mapping, the surrogate criteria used to infer germinal-center vs GC-independent origin — **cell-surface markers, class-switch status, and SHM load** — are each "insufficient to definitively distinguish" the two populations. Their phenotypes overlap substantially and their transcriptomes differ only subtly (see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review, **no original data**, mouse). Flow cytometry remains the right tool for *enumerating* subsets; it cannot certify their developmental provenance.
+- **The CD80/PD-L2 axis, and its naming collision with this wiki's DN gate.** Memory B cells are widely resolved by flow into **DP (CD80⁺PD-L2⁺)**, **SP (CD80⁻PD-L2⁺)**, and **DN (CD80⁻PD-L2⁻)** — an origin-enriching, not origin-defining, partition. ⚠ That "DN" is **CD80⁻PD-L2⁻**, not IgD⁻CD27⁻; see the false-friend note on [[Atypical B Cell]]. Neither marker is in the curator's current 11-color or Panel-4 designs.
+- **⚠ Marker-set caution for atypical B cell gating.** The review's human ABC definition is **CD27⁻CD21⁻** with [[T-bet]], [[CD11c]], [[CXCR3]], [[FcRH4|FCRL4]], and [[FCRL5]] — a CD27/CD21-based definition that does **not** map one-to-one onto this wiki's IgD⁻CD27⁻ DN gate, and which includes FCRL4 even though DN2 is defined as FCRL4⁻. Papers using this definition enumerate a partly different population. Separately, **T-bet is not strictly required** for CD11c⁺ ABC formation, so a T-bet-gated definition is a lower bound — see [[T-bet]] Contradictions and [[B Cell Panel Variant 1]].
+- **★ The Hao/Rubtsov divergence is a genuine methods lesson in single-axis gating.** The two founding murine ABC definitions used entirely different marker sets — Hao et al. (loss of CD21, CD23, CD95, CD43) versus Rubtsov et al. (gain of CD11c) — on the same B220⁺CD19⁺ splenocyte population, yielding "largely overlapping" but non-identical populations both called "ABC." Compounding this, within the CD21⁻CD23⁻ gate only ~2/3 of cells are T-bet⁺, and only about half of those are CD11c⁺ — at least three populations sit inside a single-axis ABC gate. Together these are a direct caution against relying on any one marker axis to define this cell population, in flow panels of any species (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse).
+
 ## Contradictions & Debates
 
 - Conventional panels with limited colour capacity may undercount DN B cells or conflate them with transitional B cells if CD10 or CD24 are not included. The Wei2007 data (Fig. 2B) show that DN cells are CD10⁻, which resolves this ambiguity — but earlier studies using 4- or 5-color panels may have misclassified these cells.
@@ -50,7 +55,7 @@ In dengue and related infection studies, conventional flow cytometry has been us
 - **Lack of IgD is a common omission:** Many studies defining AtB/ABC do not include IgD in the panel, which means they cannot distinguish naïve-derived aNAV (IgD⁺) from DN2 (IgD⁻) among CD11c⁺ T-bet⁺ cells. This conflation is a major source of confusion in the literature (see [[Sanz2025 - Human Atypical B Cells Overview]]).
 
 ## Related Pages
-[[Bm Classification]], [[FACS Sorting]], [[Double-Negative B Cell]], [[DN2 B Cell]], [[Activated Naive B Cell]], [[Memory B Cell]], [[Plasmablast]], [[CD27]], [[IgD]], [[CD38]], [[CD19]], [[CD20]], [[CXCR5]], [[CD11c]], [[T-bet]], [[PD-1]], [[ATF3]]
+[[Bm Classification]], [[FACS Sorting]], [[Double-Negative B Cell]], [[DN2 B Cell]], [[Activated Naive B Cell]], [[Memory B Cell]], [[Plasmablast]], [[CD27]], [[IgD]], [[CD38]], [[CD19]], [[CD20]], [[CXCR5]], [[CD11c]], [[T-bet]], [[PD-1]], [[ATF3]], [[Early Memory B Cell]], [[Tissue-Resident Memory B Cell]], [[Atypical B Cell]]
 
 ## Sources
 - [[Wei2007 - DN Memory B Cells in SLE]]
@@ -68,3 +73,5 @@ In dengue and related infection studies, conventional flow cytometry has been us
 - [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]]
 - [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]
 - [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]
+- [[Glaros2025 - Multilayered Identity of B Cell Memory]]
+- [[Cancro2020 - Age-Associated B Cells]]

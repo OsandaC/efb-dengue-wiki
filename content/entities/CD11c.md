@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, CD11c, ITGAX, integrin, DN2, age-associated-b-cells, extrafollicular]
 created: 2026-05-02
-updated: 2026-06-14
-sources: 9
+updated: 2026-08-16
+sources: 11
 ---
 
 # CD11c
@@ -33,12 +33,21 @@ CD11c (encoded by *ITGAX*) is an alpha integrin primarily expressed on dendritic
 - **CD11c⁺ DCs interact with B cells at extrafollicular sites (murine precedent).** In the foundational William2002 EF SHM study, CD11c⁺ dendritic cells were abundant within RF B cell clusters at the T zone–red pulp border and showed close physical interaction with Id⁺ B cells, in contrast to GCs where CD11c⁺ DCs are rare. This established CD11c⁺ DCs as a cellular component of the EF microenvironment, distinct from FDCs that define the GC niche. In the context of this wiki's B cell focus, CD11c on B cells marks EF-pathway cells (DN2/aNAV), while CD11c on DCs marks the innate cellular partners at EF sites — both uses reflect the extrafollicular niche (see [[William2002 - Extrafollicular Somatic Hypermutation in Autoimmune Mice]], IHC of splenic sections, MRL/lpr mice).
 - **CD11c is the integrin that helped define the ABC, and IL-21 is its primary inducer.** CD11c (with T-bet) was one of the two markers used to define age-associated B cells in aged mice; in the ABC/atypical differentiation programme **IL-21 robustly induces CD11c** whereas IFN-γ primarily drives T-bet — a clean division of labour between the two cytokines that cooperate (with TLR7/9) to generate the phenotype (see [[Lamprinou2026 - ABCs and DN B Cells]], opinion, citing Hao 2011 / Naradikian 2016 / Liu 2024). This complements the wiki's existing evidence that CD11c can also be induced without IFN-γ/T-bet (Sanz2025) — i.e., CD11c acquisition is cytokine-context-dependent.
 
+- **★ CD11c⁺ ABCs form without [[T-bet]] — CD11c is the more robust axis of the two.** Although T-bet was long believed essential for ABC development, CD11c⁺ ABCs still arise in both infection and autoimmune models **in the absence of T-bet**, with [[ZEB2]] proposed as the shared programme driver instead (see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review, **no original data**, citing Du 2019 *Eur J Immunol* + Levack 2020 *J Immunol*, mouse conditional-KO). This converges with the CITE-seq finding that CD11c is the best single surface marker for the alternative lineage ([[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]). **Panel consequence:** gate CD11c as primary and report T-bet as a fraction within it, rather than requiring T-bet positivity for the DN2/ABC call — see [[T-bet]] Contradictions and [[B Cell Panel Variant 1]].
+- **CD11c⁺ B cell depletion is therapeutic in autoimmunity but not risk-free.** Depletion of CD11c⁺ or T-bet⁺ B cells decreased autoantibody levels and ameliorated disease in autoimmune models, with the review's own caveat that such depletion also removes other activated B cell subsets. Countervailing evidence: in persistent *Plasmodium* infection, loss of the ZEB2-driven CD11c⁺ compartment **reduced** germinal-center B cells, indicating a supportive role for humoral immunity in infection (review). See [[ZEB2]] Contradictions.
+- **★ CD11c induction may be a direct cytokine effect, not a T-bet-downstream event (F2) — and in vivo status remains controversial.** Transcriptional analysis of IFN-γ- or IL-21-treated WT versus T-bet-deficient B cells found that while some ABC features depend strongly on T-bet, **CD11c expression was largely a direct effect of each cytokine rather than a T-bet target**. Cancro calls this "somewhat controversial" in vivo — T-bet has been shown necessary for CD11c induction in some systems but not others — and attributes the discrepancy to **differing routes of ABC formation** (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse). This corroborates, from an independent mechanistic angle, the wiki's existing position that CD11c is the more robust axis than T-bet.
+- **CD11c was Rubtsov's primary defining marker for the murine ABC.** Of the two founding 2011 definitions, Hao et al. defined ABCs by loss of CD21/CD23/CD95/CD43, while Rubtsov et al. used CD11c⁺ expression on B220⁺CD19⁺ splenocytes as the primary criterion — the two schemes yield largely overlapping but non-identical populations (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse).
+- **Only about half of T-bet⁺ ABCs are CD11c⁺ (F4).** Within the murine CD21⁻CD23⁻ splenic B cell pool, ~2/3 are T-bet⁺, and among those, roughly half are CD11c⁺ — so CD11c and T-bet identify overlapping but non-identical fractions of the ABC gate, and whether this reflects stable subsets or differentiation stages is unresolved (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse, splenic).
+- **★ Open question: is CD11c⁺ a differentiation state derived from CD11c⁻ ABCs?** Cancro lists this among the field's unresolved progenitor–successor relationships. If CD11c⁺ status is a state rather than a stable compartment, a CD11c-gated frequency measures activation, not the size of the ABC pool — a direct consequence for any panel, including this wiki's, that uses CD11c as the primary gating axis (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse).
+- **IgM⁺CD11c⁺ extrafollicular plasmablasts drive CD4-T-independent antibody responses in murine *Ehrlichia* infection.** The Winslow group (Racine et al. 2008, *J Immunol*) described IgM⁺CD11c⁺ extrafollicular splenic plasmablasts responsible for this response, alongside protective, multipotential T-bet⁺ memory B cells (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse).
+- **CD11c⁺T-bet⁺ ABCs are required for anti-chromatin antibodies in the bm12 chronic-GVH SLE model** — direct functional evidence that the CD11c⁺T-bet⁺ compartment contributes causally to autoantibody production in murine lupus, not merely correlates with it (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse).
+
 ## Contradictions & Debates
 
 None documented in current wiki sources.
 
 ## Related Pages
-[[DN2 B Cell]], [[Age-Associated B Cell]], [[Atypical B Cell]], [[Activated Naive B Cell]], [[T-bet]], [[IL-21]], [[CXCR5]], [[Double-Negative B Cell]], [[Extrafollicular Response]], [[FCRL5]], [[CXCR3]], [[CD21]], [[Peripheral Helper T Cell]]
+[[DN2 B Cell]], [[Age-Associated B Cell]], [[Atypical B Cell]], [[Activated Naive B Cell]], [[T-bet]], [[IL-21]], [[CXCR5]], [[Double-Negative B Cell]], [[Extrafollicular Response]], [[FCRL5]], [[CXCR3]], [[CD21]], [[Peripheral Helper T Cell]], [[ZEB2]], [[Tissue-Resident Memory B Cell]]
 
 ## Sources
 - [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]
@@ -50,3 +59,5 @@ None documented in current wiki sources.
 - [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]
 - [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]
 - [[Lamprinou2026 - ABCs and DN B Cells]]
+- [[Glaros2025 - Multilayered Identity of B Cell Memory]]
+- [[Cancro2020 - Age-Associated B Cells]]

@@ -2,8 +2,8 @@
 type: method
 tags: [ATAC-seq, chromatin-accessibility, epigenomics, B-cell-subsets, PRDM1]
 created: 2026-05-02
-updated: 2026-05-07
-sources: 2
+updated: 2026-08-16
+sources: 3
 ---
 
 # ATAC-seq
@@ -22,13 +22,17 @@ ATAC-seq (Assay for Transposase-Accessible Chromatin using sequencing) maps regi
 - **ATF3 motif accessibility highest in SLE DN2:** ATAC-seq DARs in SLE DN2 cells were enriched for ATF3 binding motifs. Combined with RNA-seq (ATF3 mRNA upregulated) and intracellular flow cytometry (ATF3 protein elevated), this multi-omic validation made ATF3 the top novel TF candidate from the Scharer2019 study. 98 ATF3 target genes were identified by intersecting ATF3 motif-containing DARs with DEGs (see [[Scharer2019 - Epigenetic Programming in SLE B Cells]]).
 - **PDCD1 (PD-1) locus accessibility in DN2:** The PDCD1 promoter and cis-regulatory elements showed highest chromatin accessibility in DN2 cells by ATAC-seq, concordant with highest PD-1 protein expression (~60% PD-1⁺ on DN2 by flow). This multi-layered validation (chromatin → mRNA → protein) exemplifies how ATAC-seq identifies epigenetically primed loci that translate to functional protein expression (see [[Scharer2019 - Epigenetic Programming in SLE B Cells]]).
 
+- **★ Chromatin accessibility as a record of antigenic history — the proposed readout for memory B cell fate.** Accumulated stimulation progressively increases accessibility at plasma-cell-associated gene loci, notably ***Prdm1***, thereby raising baseline [[BLIMP-1]] expression and biasing memory B cells toward PC differentiation over germinal-center reentry; DN and DP memory subsets carry **distinct epigenetic profiles that may predetermine their responsiveness** to secondary antigen encounter, acting in part through [[BACH2]]/BLIMP1 regulation (see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review, **no original data**; flagged by the authors as remaining to be tested; primary is **Shao 2024 *Nat Immunol*** — audit entry #64, not yet ingested). Because the corresponding **transcriptomes differ only subtly**, accessibility profiling is the assay positioned to detect what expression profiling misses.
+- **Application this suggests for dengue (wiki-generated, untested).** ATAC-seq at the *PRDM1* locus on sorted DENV-specific memory B cells from **primary vs secondary** donors would test whether repeat DENV exposure epigenetically pre-commits memory to a plasmablast recall — the candidate mechanism for the secondary-dengue plasmablast-burst / low-SHM / OAS triad. See [[Original Antigenic Sin]] and [[Glaros2025 - Multilayered Identity of B Cell Memory]] Questions Raised.
+
 ## Contradictions & Debates
 
 None documented in current wiki sources.
 
 ## Related Pages
-[[RNA Sequencing]], [[RRBS]], [[BLIMP-1]], [[DN2 B Cell]], [[Activated Naive B Cell]], [[FACS Sorting]], [[ATF3]], [[EGR]], [[PD-1]], [[T-bet]]
+[[RNA Sequencing]], [[RRBS]], [[BLIMP-1]], [[DN2 B Cell]], [[Activated Naive B Cell]], [[FACS Sorting]], [[ATF3]], [[EGR]], [[PD-1]], [[T-bet]], [[BACH2]], [[BLIMP-1]], [[Memory B Cell]], [[Original Antigenic Sin]]
 
 ## Sources
 - [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]
 - [[Scharer2019 - Epigenetic Programming in SLE B Cells]]
+- [[Glaros2025 - Multilayered Identity of B Cell Memory]]

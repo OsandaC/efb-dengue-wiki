@@ -9,7 +9,7 @@ citations_semantic_scholar: 186
 citations_crossref: 228
 citations_retrieved: 2026-05-21
 created: 2026-05-21
-updated: 2026-05-21
+updated: 2026-08-16
 ---
 
 # Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection
@@ -80,6 +80,10 @@ This paper is a landmark for the wiki's core question about the identity and fun
 **Relationship to Jenks2018:** Sutton explicitly addresses and partially challenges the Jenks2018 model where DN2 cells are extrafollicular pre-plasmablasts in SLE. The absence of PC maintenance genes in any atBC cluster, combined with pseudotime disconnection of PCs, argues against this model in healthy/vaccination/infection contexts. However, Sutton's own Discussion reconciles this as context-dependent: in SLE, chronic TLR7 stimulation may drive atBCs toward PC fate, while in acute infection or vaccination they remain within the alternative memory lineage. The wiki should frame this as **context-dependent identity** rather than a flat contradiction.
 
 **Relationship to Sanz2025/Faliti2024:** The MBC1 cluster provides transcriptomic evidence for a quiescent "memory DN2" population — partially confirming the predictions from Sanz2025 and Faliti2024 about DN2 memory persistence.
+
+**[2026-08-16] Relationship to Glaros2025 — a methodological reframing of the PC-capacity half of this debate.** [[Glaros2025 - Multilayered Identity of B Cell Memory]] (review, no original data) attributes the field's foundational "atypical B cells differentiate poorly into plasma cells" results — including **Portugal 2015 *eLife*** and **Sullivan 2015 *PLoS Pathog***, the same malaria-associated atypical MBC literature this paper builds on — substantially to **stimulation mode**: soluble anti-Ig fails to drive PC differentiation from these cells, whereas membrane-bound anti-Ig succeeds, because inhibitory receptors (**FcγRIIB**, and per the review [[FCRL5]]) must be physically excluded from the immune synapse for BCR signalling to proceed (citing Ambegaonkar 2020 *Sci Adv*; primary abstract independently verified at ingest). Glaros further cites primaries reporting **PC-associated gene expression in ABCs** and increased PC propensity in **T cell coculture**.
+
+**This is not a direct refutation of the finding above, and should not be recorded as one.** Sutton's result is *transcriptomic and at steady state* — no upregulation of *XBP1*, *IRF4*, *PRDM1* in atBC clusters, PCs detached from the pseudotime manifold. Glaros's is *functional and stimulated*. A cell need not express PC-programme genes at rest to be capable of the fate given the right signal, so the two observations coexist. What the reframing does change is the strength of the surrounding prior: the field's belief that atypical cells are functionally incapable of PC differentiation rested partly on an assay that systematically disadvantaged them. The defensible synthesis is **conditional capacity** — capable, often primed, but not committed (Glaros also cites adoptive-transfer evidence that ABCs can become GC B cells and self-renew) — which sits closer to this paper's "alternative lineage, not obligate pre-plasmablast" reading than to the strict Jenks2018 pre-plasmablast model. Tracked on [[DN2 B Cell]] Contradictions.
 
 **CD11c gating implication:** The CITE-seq finding that CD21⁻CD27⁻ captures only ~45% of transcriptomic atBCs has direct implications for the DN2 Gating Strategy analysis and validates the wiki's existing caution about "DN2 vs DN2-phenotype" terminology.
 

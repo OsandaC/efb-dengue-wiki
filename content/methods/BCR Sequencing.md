@@ -2,8 +2,8 @@
 type: method
 tags: [BCR-sequencing, VH-genes, somatic-hypermutation, immunoglobulin-repertoire, Sanger-sequencing, NGS, clonality]
 created: 2026-05-02
-updated: 2026-05-21
-sources: 10
+updated: 2026-08-16
+sources: 12
 ---
 
 # BCR Sequencing
@@ -40,12 +40,17 @@ BCR (B cell receptor) sequencing refers to the sequencing of rearranged immunogl
 - **Smart-seq2 full-length BCR from scRNA-seq of alternative lineage B cells:** Sutton2021 obtained BCR sequences from 163 FACS-sorted antigen-specific B cells (PfCSP- and HA-tetramer⁺) processed by Smart-seq2 plate-based scRNA-seq. The full-length mRNA capture enabled V gene usage analysis and SHM quantification alongside transcriptomic cluster assignment. All non-naive clusters (including atBC1, atBC2, atBC3, MBC1) showed significant somatic hypermutation, consistent with post-GC origin for the alternative lineage. The low throughput (163 cells) limits statistical power for rare clonotype detection but provides paired transcriptome + BCR data at single-cell resolution (see [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]], Smart-seq2, n=11 donors).
 - **Microdissection + Vκ PCR sequencing — the original EF SHM method.** William2002 pioneered the use of microdissection to isolate B cells from defined anatomical sites for BCR sequencing. Id⁺ B cell clusters at the T zone–red pulp border were captured with a glass micropipette (Eppendorf Transferman micromanipulator), and Vκ8/Jκ4 rearranged sequences were amplified by nested PCR using Pfu Turbo (Stratagene) from picks of 5–50 cells. Amplified DNA was cloned into bacterial vectors and colonies sequenced with T3 primers. From 8 mice, 45 independent PCR libraries yielded 305 total sequences and 125 unique sequences. Sequences were assigned to genealogical trees based on shared/unique mutations and VJ junctions. This approach — physical isolation of cells from a defined tissue site followed by clonal sequencing — provides spatial resolution that no other BCR sequencing method in the wiki achieves, and was essential for proving that SHM was occurring in situ at EF sites rather than in GCs followed by migration (see [[William2002 - Extrafollicular Somatic Hypermutation in Autoimmune Mice]], Pfu-based nested PCR from microdissected frozen sections).
 
+- **★ Mutation load alone cannot assign germinal-center vs GC-independent origin.** Benchmarked against GC-specific genetic fate mapping, GC-derived memory B cells carry **higher mean SHM** than GC-independent [[Early Memory B Cell|early memory]] cells, but the load within each population is **highly variable**, with "some gcMBCs displaying SHM levels similar to those of eMBCs and vice versa" (see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review, **no original data**, mouse). Repertoire-based origin inference is therefore probabilistic; see [[Somatic Hypermutation]] for the consequences for the wiki's dengue SHM readings.
+- **Repertoire analysis can establish tissue compartmentalization.** In murine *Ehrlichia muris* infection, repertoire comparison of liver and spleen memory B cells suggested approximately **half of liver clones were liver-exclusive**, supporting genuine tissue residency rather than recirculation; separately, bone-marrow memory B cells carried a BCR repertoire **distinct from splenic** memory, indicating incomplete exchange between compartments (review, mouse). See [[Tissue-Resident Memory B Cell]].
+- **Russell Knode et al. 2017: ABC repertoire rules out clonal expansion but does not settle origin.** Sequencing of sorted murine ABC heavy and light chains found a diverse array of germline V_H and V_κ genes, largely congruent with the follicular pool — ruling out age-associated clonal expansion of the kind seen in T cells — with many ABC V regions somatically mutated. **Cancro's own caveat: mutation load alone does not establish germinal-centre origin**, since SHM can occur independent of GC formation (citing Di Niro et al. 2015, extrafollicular affinity maturation in murine *Salmonella* infection) (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse).
+- **Malaria "atypical memory" B cells show diverse V_H gene usage** (Weiss et al. 2009), consistent with the broad, non-clonal repertoire pattern also seen in murine ABCs (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; human, observational).
+
 ## Contradictions & Debates
 
 None documented in current wiki sources.
 
 ## Related Pages
-[[FACS Sorting]], [[Somatic Hypermutation]], [[Double-Negative B Cell]], [[DN2 B Cell]], [[Activated Naive B Cell]], [[Memory B Cell]], [[Plasmablast]], [[Immunohistochemistry]], [[Extrafollicular Response]]
+[[FACS Sorting]], [[Somatic Hypermutation]], [[Double-Negative B Cell]], [[DN2 B Cell]], [[Activated Naive B Cell]], [[Memory B Cell]], [[Plasmablast]], [[Immunohistochemistry]], [[Extrafollicular Response]], [[Early Memory B Cell]], [[Tissue-Resident Memory B Cell]]
 
 ## Sources
 - [[Wei2007 - DN Memory B Cells in SLE]]
@@ -58,3 +63,5 @@ None documented in current wiki sources.
 - [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]]
 - [[William2002 - Extrafollicular Somatic Hypermutation in Autoimmune Mice]]
 - [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]
+- [[Glaros2025 - Multilayered Identity of B Cell Memory]]
+- [[Cancro2020 - Age-Associated B Cells]]

@@ -2,8 +2,8 @@
 type: entity
 tags: [innate-immunity, toll-like-receptors, TLR7, ssRNA-sensor, DN2, extrafollicular, SLE]
 created: 2026-05-02
-updated: 2026-06-14
-sources: 5
+updated: 2026-08-16
+sources: 7
 ---
 
 # TLR7
@@ -30,12 +30,19 @@ TLR7 (Toll-like Receptor 7) is an endosomal pattern recognition receptor that se
 - **Endosomal TLR7 and TLR9 together drive the ABC/atypical phenotype.** ABCs are hyper-responsive to both endosomal TLR7 and TLR9 and are driven to differentiate by TLR stimulation in combination with IFN-γ and/or IL-21 (IFN-γ → T-bet, IL-21 → CD11c). BCR signalling contributes (with CD40) but cannot drive differentiation alone (see [[Lamprinou2026 - ABCs and DN B Cells]], opinion, citing Cancro 2020 / Rubtsov 2011 / Naradikian 2016 / Liu 2024 / Imabayashi 2025; [[Age-Associated B Cell]]).
 - **TLR7 is X-linked — a proposed basis for the female autoimmunity bias.** Because *TLR7* is encoded on the X chromosome and is closely tied to ABC activation, its gene dosage is offered as a partial explanation for the higher incidence of autoimmunity in females (see [[Lamprinou2026 - ABCs and DN B Cells]], opinion, citing Sachinidis 2020). This complements the wiki's existing Sanz2025 evidence (XIST ligand, defective X-inactivation) converging on amplified TLR7 signalling in female SLE.
 
+- **Endosomal TLR signalling is a stated requirement for ABC differentiation.** ABCs arise following BCR stimulation in an inflammatory cytokine milieu, "with their differentiation requiring additional signals from **endosomal TLRs**, as well as from IFN-γ and [[IL-21]]" (see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review, **no original data**). The review generalizes to endosomal TLRs rather than naming TLR7 specifically — consistent with the wiki's TLR9 precedent from [[William2002 - Extrafollicular Somatic Hypermutation in Autoimmune Mice]] and the TLR7 pathway from [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]].
+- **But TLR/inflammatory signals alone are not sufficient — antigen and T cell help are also required.** The review is explicit that ABCs are "not merely byproducts of inflammation": ABC frequencies fall significantly in patients with **CD40/CD40L mutations**, and ABCs **do not develop in mice with fixed BCR specificity** under steady-state conditions. Chronic BCR signalling converts **anergic** B cells into ABCs (citing Imabayashi 2025 *Sci Adv*). This qualifies any purely innate-driven reading of the TLR7→DN2 axis: TLR7 is a required co-signal, not a standalone driver of the in vivo population.
+- **TLR7/TLR9 poising is necessary but not sufficient for ABC fate — must be followed by IFN-γ or IL-21.** Endosomal TLR7 or TLR9 signalling poises a naive B cell for the ABC fate, but poising alone is not sufficient: it must be followed by IFN-γ or IL-21. Neither BCR ligation alone nor BCR ligation with CD40 costimulation enables ABC fate, though BCR does synergise with TLR signalling for proliferation. Coculture experiments established that both the TLR and the cytokine requisites are **cell-intrinsic** (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse, in vitro + in vivo). This sharpens the wiki's existing TLR7-centric framing from [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]] and [[Glaros2025 - Multilayered Identity of B Cell Memory]] into an explicit two-signal model with TLR9 as an alternative first signal to TLR7.
+- **ABCs proliferate robustly to TLR7/TLR9 while remaining largely BCR-refractory.** ABCs do not divide in response to BCR cross-linking alone (unlike FO B cells) but remain viable (unlike MZ and transitional B cells, which die rapidly under the same conditions); they proliferate strongly to TLR7 or TLR9 ligands, and BCR cross-linking synergises with TLR signalling for additional rounds of division rather than acting alone. HIV "tissue-like memory" B cells show the identical pattern — BCR-hyporesponsive, TLR9-responsive — reinforcing the cross-species generality of this signature (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse + human, functional assay).
+- **★ TLR7 and TLR9 act in OPPOSITE directions on autoimmunity — TLR9 is a tolerance checkpoint, not merely a redundant activator.** TLR7 gene-dose duplications foster autoimmune disease and TLR7 deficiency ameliorates it, but **TLR9 knockouts *exacerbate* autoimmune manifestations** — earlier disease onset, more severe glomerulonephritis — indicating TLR9 normally helps *maintain* peripheral B cell tolerance rather than simply drive ABC pathology alongside TLR7 (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse, knockout). This qualifies every TLR7-only framing elsewhere on this page and on [[Extrafollicular Response]] — TLR9 is not interchangeable with TLR7 in its net effect on autoimmunity even though both can poise the ABC fate.
+- **The TLR9-tolerance mechanism (Sindhava et al. 2017): BCR-delivered TLR9 ligand triggers programmed death, rescuable into the ABC fate.** B cells stimulated with antigen that delivers a TLR9 ligand via the BCR undergo cell-cycle arrest and mitochondrial cell death after an initial proliferative burst. This programmed death is circumvented by survival cytokines or CD40 costimulation — and critically, **in the presence of IFN-γ or IL-21 the rescued cells assume the ABC phenotype**. The interpretation: the ABC–autoimmunity association may reflect failure of, or rescue from, this tolerance mechanism, and more broadly that **pattern-recognition parsing of internalised antigen components — not BCR epitope specificity per se — underlies peripheral B cell tolerance** (Sindhava et al. 2017, *J Clin Invest*, cited in [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse). This is a candidate mechanism for the `bridge-wiki/` cells→autoantibody arm that does not require a soluble self-antigen route — see the source page's Questions Raised.
+
 ## Contradictions & Debates
 
 None documented in current wiki sources.
 
 ## Related Pages
-[[TRAF5]], [[DN2 B Cell]], [[Age-Associated B Cell]], [[Atypical B Cell]], [[Activated Naive B Cell]], [[Plasmablast]], [[Extrafollicular Response]], [[ZEB2]], [[T-bet]], [[CD11c]], [[IL-21]]
+[[TRAF5]], [[DN2 B Cell]], [[Age-Associated B Cell]], [[Atypical B Cell]], [[Activated Naive B Cell]], [[Plasmablast]], [[Extrafollicular Response]], [[ZEB2]], [[T-bet]], [[CD11c]], [[IL-21]], [[Atypical B Cell]], [[Age-Associated B Cell]]
 
 ## Sources
 - [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]
@@ -43,3 +50,5 @@ None documented in current wiki sources.
 - [[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]]
 - [[William2002 - Extrafollicular Somatic Hypermutation in Autoimmune Mice]]
 - [[Lamprinou2026 - ABCs and DN B Cells]]
+- [[Glaros2025 - Multilayered Identity of B Cell Memory]]
+- [[Cancro2020 - Age-Associated B Cells]]

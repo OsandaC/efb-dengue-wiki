@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, immunoglobulin, isotype, mucosal-immunity, class-switch-recombination]
 created: 2026-05-02
-updated: 2026-06-14
-sources: 8
+updated: 2026-08-16
+sources: 9
 ---
 
 # IgA
@@ -22,12 +22,16 @@ IgA is the predominant immunoglobulin isotype at mucosal surfaces. In peripheral
 - **IgA detected as a minor component in dengue PB and MBC BCR repertoires:** In 454 sequencing of sorted plasmablast and MBC pools, IgA sequences were present alongside IgG and IgM. The isotype distribution showed IgG dominance in plasmablasts and non-DENV-binding MBCs, with IgM enrichment in DENV-binding MBCs. IgA contributed a minor fraction across all compartments (see [[Appanna2016 - Plasmablasts as Subset of Memory B Cell Pool]], 454 sequencing, n=4 patients).
 - **IgA is one of the two dominant switched isotypes of the ABC population.** The majority of [[Age-Associated B Cell|ABCs]] are class-switched, predominantly expressing IgG **or IgA** — confirming that the EF/atypical class-switching machinery produces IgA as well as IgG (consistent with the IgA⁺ fraction in the DN compartment) (see [[Lamprinou2026 - ABCs and DN B Cells]], opinion, citing Ambegaonkar 2022).
 
+- **★ IgA dominates the lung resident-memory compartment, and only mucosal immunization induces it.** After respiratory infection the B resident memory (BRM) pool is **predominantly IgA⁺**, with a smaller [[IgG]]⁺ fraction. IgG⁺ memory distributes across both lung and mediastinal lymph nodes, whereas **IgA⁺ memory localizes primarily within the lung parenchyma**, spatially associated with IgA-secreting plasma cells and inducible bronchus-associated lymphoid tissue (iBALT). Critically, **systemic immunization fails to induce lung IgA⁺ memory, while intranasal immunization induces it effectively** (see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review, **no original data**, mouse + human). See [[Tissue-Resident Memory B Cell]].
+- **Gut IgA⁺ memory is long-lived, clonally linked to lamina propria plasma cells, and substantially early-life in origin.** IgA⁺ MBCs persist in Peyer's patches and mesenteric lymph nodes more than a year after priming, are clonally related to lamina propria plasma cells, and contribute to replenishing that PC pool after depletion. A large share of both IgA⁺ PCs in the small intestinal lamina propria and bone marrow, and a significant fraction of GC-derived MBCs in Peyer's patches, derive from **B cell clones generated within the first two weeks of life** (review, mouse lineage tracing).
+- **IgA is one of the two dominant switched isotypes of ABCs**, alongside IgG (review). See [[Age-Associated B Cell]].
+
 ## Contradictions & Debates
 
 None documented in current wiki sources.
 
 ## Related Pages
-[[Double-Negative B Cell]], [[Age-Associated B Cell]], [[IgG]], [[IgM]], [[Class Switch Recombination]]
+[[Double-Negative B Cell]], [[Age-Associated B Cell]], [[IgG]], [[IgM]], [[Class Switch Recombination]], [[Tissue-Resident Memory B Cell]], [[Early Memory B Cell]]
 
 ## Sources
 - [[Wei2007 - DN Memory B Cells in SLE]]
@@ -38,3 +42,4 @@ None documented in current wiki sources.
 - [[Appanna2016 - Plasmablasts as Subset of Memory B Cell Pool]]
 - [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]]
 - [[Lamprinou2026 - ABCs and DN B Cells]]
+- [[Glaros2025 - Multilayered Identity of B Cell Memory]]

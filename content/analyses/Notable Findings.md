@@ -2,7 +2,7 @@
 type: analysis
 tags: [meta, notable-findings]
 created: 2026-05-02
-updated: 2026-06-29
+updated: 2026-08-16
 ---
 
 # Notable Findings
@@ -347,5 +347,115 @@ A running log of atomic observations from the literature that are striking, unex
 - Can AID expression be measured in circulating B cells during acute dengue as a proxy for ongoing EF diversification?
 
 **Related pages:** [[AID]], [[Bcl-6]], [[TNF-alpha]], [[Germinal Center]], [[Extrafollicular Response]], [[Somatic Hypermutation]], [[Class Switch Recombination]]
+
+---
+
+## [2026-08-16] Fate mapping says atypical B cells are made *outside* germinal centers — the wiki's central premise, tested directly for the first time
+
+**Source:** [[Glaros2025 - Multilayered Identity of B Cell Memory]] (review, no original data; citing Song et al. 2022 *Immunity*, mouse)
+
+**Finding:** Using **GC-specific genetic fate mapping** — tamoxifen-inducible Cre driven by GC-restricted genes (*S1pr2* / *Gcsam*), which permanently labels cells that have transited a germinal center — the **majority of antigen-specific age-associated/atypical B cells generated after acute viral infection in mice were shown to arise via a GC-independent pathway.** The same review reports that GC-independent "early" memory B cells outnumber GC-derived memory B cells across multiple immunization scenarios.
+
+**Why notable:** This wiki's entire spine rests on the proposition that the atypical/DN cluster is generated extrafollicularly. Until now that proposition was supported by **inference from surrogate markers** — CD27 absence, low SHM, absent CXCR5, the ZEB2→Mef2b repression mechanism — plus one murine demonstration that SHM *can* occur outside GCs ([[William2002 - Extrafollicular Somatic Hypermutation in Autoimmune Mice]]). None of that assigns origin; it only shows origin is *consistent with* EF derivation. Fate mapping assigns origin directly, and it comes out on the wiki's side. It also **outranks and qualifies** the position the wiki had been carrying from [[Lamprinou2026 - ABCs and DN B Cells]] — that ABCs are "commonly thought to be at least partly GC-experienced" — an inference drawn from repertoire diversity and SHM, i.e. exactly the surrogate reasoning fate mapping supersedes.
+
+The same review simultaneously **loosens a criterion the wiki treats as definitional**: T-bet is not strictly required for CD11c⁺ ABC formation, with [[ZEB2]] proposed as the shared cross-context driver instead. So the origin claim strengthens at the same moment the identity criteria weaken.
+
+**The caveats travel with it, and they are not small.** This is **one murine acute viral infection model**. The review states plainly that whether it holds "across other immune contexts that give rise to ABCs remains to be elucidated" — notably the *chronic* settings (malaria, HIV, SLE) where atypical B cells were first described and from which this wiki draws most of its comparative benchmarks. There is no human equivalent of GC fate mapping, so this can never be replicated in the curator's cohort. And it says nothing about the dengue cells specifically, which have never been origin-mapped.
+
+**Follow-up questions:**
+- Does GC-independent generation hold in chronic / repeat-exposure settings — the ones that actually resemble secondary dengue in an endemic population?
+- Can any human-tractable proxy for origin be constructed, given that surface markers, isotype, and SHM load are each now shown to fail as origin proxies?
+- If dengue DN2-phenotype cells are GC-independent in origin, does that predict a ZEB2⁺ T-bet-variable rather than uniformly T-bet⁺ population?
+
+**Related pages:** [[Atypical B Cell]], [[Age-Associated B Cell]], [[DN2 B Cell]], [[Extrafollicular Response]], [[Germinal Center]], [[T-bet]], [[ZEB2]], [[Early Memory B Cell]]
+
+---
+
+## [2026-08-16] The belief that atypical B cells cannot become plasma cells rests on an assay that could not have detected it
+
+**Source:** [[Glaros2025 - Multilayered Identity of B Cell Memory]] (review; citing Ambegaonkar et al. 2020 *Sci Adv* — **primary abstract independently verified during ingest**)
+
+**Finding:** The foundational reports that atypical / age-associated B cells have **limited plasma-cell differentiation capacity** (Portugal 2015 *eLife*; Sullivan 2015 *PLoS Pathog*, both malaria-associated human atypical MBCs) stimulated the cells with **soluble** anti-Ig. Atypical B cells carry a high load of inhibitory receptors — **FcγRIIB**, and per the review also [[FCRL5]] — which suppress BCR signalling unless they are **physically excluded from the immune synapse**. Only **membrane-associated** antigen achieves that exclusion. With membrane-bound anti-Ig, BCR signalling proceeds and these cells **do** differentiate into plasma cells. The verified primary abstract states it directly: atypical MBCs "are unable to respond to soluble antigens" but "robustly respond to antigens that associate with cell surfaces, such as antigens in immune complexes."
+
+**Why notable:** The wiki tracks a genuine contradiction — [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]] finds DN2 cells poised for plasmablast differentiation, while [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]] finds no PC-programme genes in atBC clusters and argues for an alternative memory lineage. This does **not** resolve that contradiction and should not be recorded as if it does: Sutton's observation is *transcriptomic and at steady state*, this one is *functional and stimulated*, and a cell can lack PC-programme transcripts at rest while retaining the capacity. What it does is undercut the **surrounding prior** — the field's confidence that these cells are functionally impaired came substantially from an assay format that systematically disadvantaged them. The defensible position becomes **conditional capacity**: capable, often primed (PC-associated gene expression; increased PC propensity in T-cell coculture), but not committed — the same review cites adoptive-transfer work showing they can also become GC B cells and self-renew.
+
+Note the wiki was **already carrying half of this**, via [[Sanz2025 - Human Atypical B Cells Overview]] citing Holla 2019: atypical cells may respond to membrane-associated antigen and immune complexes despite appearing hyporesponsive to soluble antigen. What is new is the **mechanism** (inhibitory-receptor exclusion from the synapse) and its **extension to the plasma-cell-differentiation question specifically**.
+
+**Two consequences that are actionable rather than theoretical:**
+1. **Assay design.** In vitro restimulation of dengue patient B cells with **soluble DENV E or NS1** would under-report the functional capacity of precisely the population this wiki tracks. A negative result from soluble antigen alone is not evidence of impaired function; coculture or membrane-presented / immune-complexed antigen is the informative comparator.
+2. **A constraint on the cross-wiki bridge thesis.** The same verified abstract notes these cells cannot respond to "fully soluble antigens, **such as self-antigens**." The `bridge-wiki/` proposal that atypical cells are the cellular source of dengue autoantibodies therefore cannot assume a simple soluble-self-antigen route — it must run through **membrane-associated or immune-complexed** self-antigen. Secondary dengue is immune-complex-rich, so the route plausibly exists, but it now has to be argued rather than assumed.
+
+**Follow-up questions:**
+- Are dengue immune complexes — the same ones implicated in [[Antibody-Dependent Enhancement|ADE]] — the antigen form that actually activates DN2-phenotype cells in secondary infection?
+- Do dengue DN2-phenotype cells carry the same high FcγRIIB / FCRL5 load as malaria-associated atypical MBCs? Neither has been measured in dengue.
+- Should [[FCRL5]] return to the panel — not as a corroborating identity marker, but as a *functional* readout of antigen responsiveness?
+
+**Related pages:** [[FCRL5]], [[DN2 B Cell]], [[Atypical B Cell]], [[Age-Associated B Cell]], [[In Vitro B Cell Stimulation]], [[T-B Coculture Assay]], [[Plasmablast]], [[Antibody-Dependent Enhancement]]
+
+---
+
+## [2026-08-16] The canonical ABC review explains how ABCs become plasma cells — and attaches no citation to the explanation
+
+**Source:** [[Cancro2020 - Age-Associated B Cells]] (review, zero original data)
+
+**Finding:** Cancro concedes that "how T-bet⁺ ABCs eventually give rise to antibody-secreting cells remains very poorly understood," then offers the field's working answer: "few if any plasma cells express T-bet, and **there is evidence that T-bet represses Blimp-1**, suggesting that the formation of plasma cells from ABCs likely involves the loss of T-bet expression." **No numbered reference is attached to that sentence** — unusual in an Annual Reviews article where essentially every other assertion carries one, and it sits in a review with 185 references by the investigator who co-defined the subset.
+
+**Why notable:** This is not a quibble about citation hygiene. The claim is the field's default mechanism for the ABC→plasmablast transition, and this wiki was one step away from promoting it to a *resolution* of a tracked contradiction — [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]] finds no PC-programme genes (PRDM1, XBP1, IRF4) in atBC clusters at rest, while [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]] finds DN2 cells are efficient plasmablast precursors on stimulation. T-bet-mediated repression of Blimp-1 would have explained both at once, elegantly. That is exactly the kind of claim that should not be adopted on an unreferenced assertion, however authoritative the author.
+
+**Position the wiki takes:** Cancro's claim is recorded on [[T-bet]] and [[BLIMP-1]] **flagged as an unreferenced assertion** — the author's synthesis, not a sourced finding. The Sutton/Jenks contradiction **remains open**, and the T-bet→Blimp-1 route is not a sound basis for closing it. This also means the [[Plasmablast]] page's ABC-as-precursor material carries an unresolved mechanism at its centre: the wiki has good evidence that atypical cells *can* become ASCs (Jenks2018; Cancro citing Wang 2018) and no verified account of *how* the transcriptional handover happens.
+
+**A second-order point worth keeping:** the wiki now has two independent instances — this one and the Ambegaonkar/soluble-antigen artefact (2026-08-16 entry above) — where a widely-repeated claim about atypical B cell plasma-cell capacity turned out to rest on weaker ground than its circulation suggested. Both concern the same question. That is a pattern, and it argues for treating *any* confident statement about ABC→PC differentiation as provisional until traced to a primary.
+
+**Follow-up questions:**
+- What is the primary evidence, if any, that T-bet represses Blimp-1 in B cells? Verification against the primary literature is required before the wiki relies on this in either direction.
+- Do T-bet⁺ ABCs and T-bet⁻ plasmablasts in dengue form a precursor–product pair, or are they parallel outputs? The wiki's own [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]] data (CD21⁻CD11c⁺ expansion alongside a plasmablast burst) cannot distinguish these without intracellular T-bet on the plasmablast gate.
+- Should [[B Cell Panel Variant 1]] Panel 4 report T-bet on the plasmablast gate as well as within DN? If the transition truly involves T-bet loss, a T-bet⁻ plasmablast population is the expected product — and that is measurable in the pilot.
+
+**Related pages:** [[T-bet]], [[BLIMP-1]], [[Plasmablast]], [[Age-Associated B Cell]], [[DN2 B Cell]], [[B Cell Panel Variant 1]]
+
+---
+
+## [2026-08-16] Circulating ABC frequency may measure mobilisation, not pool size — a direct constraint on any blood-only design
+
+**Source:** [[Cancro2020 - Age-Associated B Cells]] (review, zero original data; murine tissue-distribution data + human HIV observational data)
+
+**Finding:** Two observations that the review deliberately connects. **(1)** In mice, ABCs are consistently spleen-enriched and scarce in lymph nodes and lymphatics; they are present in blood and bone marrow but with substantial variability between animals and within one animal over time, and their proportional representation in blood "does not necessarily parallel that observed in the spleen." Cancro sounds "a cautionary interpretive note for studies that track ABCs only in peripheral blood." **(2)** In humans, peripheral blood ABC frequencies are **reduced during antiretroviral therapy** in HIV infection. He proposes the unifying reading: circulating T-bet⁺ ABCs "may represent an **activated or mobilized differentiation state** that wanes upon viral clearance, despite their retention in the spleen or other tissues as T-bet⁺ ABC memory cells."
+
+**Why notable:** Every cellular measurement in this wiki's dengue corpus, and every measurement the pilot will make, is peripheral blood. The wiki has been treating blood DN/DN2-phenotype frequency as a proxy for the size of the atypical compartment. If Cancro is right, it is not one — it is a readout of how much of that compartment is currently activated and in circulation. The two quantities can move in opposite directions, and the HIV/ART observation is a worked example of exactly that.
+
+**This cuts both ways, and the second half matters more than the first.** The caveat is real: "DN expansion" is not a defensible phrasing for a blood-only study, and cross-sectional acute-vs-convalescent comparisons measure mobilisation rather than accumulation. But if circulating ABCs are an *activated, mobilised* state, then blood frequency during acute d5–8 dengue is arguably the **more** appropriate readout for an acute-response question than a pool-size measure would be. The pilot is asking whether an acute infection drives this population into an activated state — which is what blood can actually see. The fix is verbal precision, not a design change.
+
+**Actionable consequences:**
+1. **Wording, wiki-wide and in the thesis:** write "circulating DN2-phenotype frequency," never "DN2 expansion," unless a tissue or kinetic measurement supports the stronger word. Carried to [[Thesis Objectives and Grant Pitch]].
+2. **This is a strength, not just a limitation, if framed correctly** — state in the pilot's limitations that blood cannot measure compartment size, and in the rationale that blood is the correct compartment for measuring acute mobilisation.
+3. **It weakens the convalescent-arm argument in one specific way:** a fall in DN frequency at convalescence would be consistent with de-mobilisation *without* any change in the underlying pool, and could not be reported as contraction.
+
+**Follow-up questions:**
+- Does the murine blood/spleen disequilibrium hold in humans? Cancro's human evidence for it is indirect (HIV/ART) and observational.
+- Is there any human-tractable readout that distinguishes mobilisation from accumulation without tissue — e.g. a proliferation marker within the DN2 gate, pairing [[CD71]] or Ki-67 with the atypical phenotype?
+- Does this reframe the [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]] severity association, already downgraded by the council for a day-of-sampling confounder? A mobilisation readout is precisely the kind of measure that would be sensitive to sampling day.
+
+**Related pages:** [[Age-Associated B Cell]], [[Atypical B Cell]], [[DN2 B Cell]], [[Double-Negative B Cell]], [[Thesis Objectives and Grant Pitch]], [[Research Plan - DN B Cell Expansion in Dengue]], [[Tissue-Resident Memory B Cell]]
+
+---
+
+## [2026-08-16] Cancro proposes ABCs as the cellular substrate of original antigenic sin — and dengue is the paradigm case the wiki has never connected
+
+**Source:** [[Cancro2020 - Age-Associated B Cells]] (review, zero original data; §6.3 plus a dedicated sidebar, "ABCs and Original Antigenic Sin")
+
+**Finding:** Cancro's argument runs: ABCs accumulate continuously with age at the direct expense of the follicular pool (their sum stays roughly constant), so as the ABC:FO ratio rises, "antigenic challenges will be progressively less likely to draw responses from the naive FO pool but will instead increasingly recruit ABCs." The consequence he draws: "the repertoire participating in primary or recall responses will be increasingly **colored by previous antigenic exposures**, suggesting the ABC pool may be involved in **antigenic imprinting characteristic of some sequential viral infections**." The sidebar nominates influenza as the test case, noting that the dominant anti-hemagglutinin isotypes — IgG2a/c in mice, IgG1 in humans — are precisely the T-bet-driven ones.
+
+**Why notable:** This is a mechanistic proposal for OAS at the level of *which cells get recruited*, rather than the usual framing at the level of which antibodies get recalled — and the wiki holds both halves of the dengue version separately, with nothing joining them. On one side, [[Original Antigenic Sin]] carries antibody-level OAS in dengue: 2 of 4 secondary-DHF patients preferentially neutralised DENV1 over the infecting DENV2 ([[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]]), plus convergent CDRH3s more prevalent in secondary infection ([[Parameswaran2013 - Convergent Antibody Signatures in Dengue]]) and selective E-specific memory recruitment ([[Appanna2016 - Plasmablasts as Subset of Memory B Cell Pool]]). On the other, [[DN2 B Cell]] carries CD21⁻CD11c⁺ expansion in acute dengue ([[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]). Cancro supplies a candidate bridge: **the atypical pool is the imprinted pool**, and recruiting it preferentially is what produces a prior-serotype-biased response.
+
+**Why this matters beyond tidiness.** Dengue is the canonical sequential-heterologous-viral-infection system — better suited to testing Cancro's proposal than influenza, because the serotypes are discrete and the prior exposure is serologically identifiable. If the atypical compartment is the imprinted compartment, then in secondary dengue the DN2-phenotype gate should be **enriched for prior-serotype specificity relative to the plasmablast gate or to naive B cells** — a directional, falsifiable prediction the wiki did not previously have. It also supplies a cellular mechanism for the [[Antibody-Dependent Enhancement]] story, since prior-serotype-biased, cross-reactive, non-neutralising IgG is exactly the ADE-competent output described by Priyamvada2016 (45/53 mAbs ADE-competent).
+
+**Two honest constraints.** Cancro's argument is built on *age-driven* ABC accumulation over decades; secondary dengue involves a *transient, infection-driven* atypical expansion in patients who may be young. Whether the same recruitment logic applies on that timescale is unaddressed and not obviously transferable. And Cancro offers this as speculation in a sidebar — it is a hypothesis he flags as worth investigating, not a finding.
+
+**Follow-up questions:**
+- Are DENV-specific cells within the DN2-phenotype gate biased toward the *prior* serotype relative to the infecting one? Requires serotype-resolved antigen probes on a DN-gated population — not in the current pilot, but a well-defined follow-up.
+- Does OAS strength correlate with atypical-compartment size within secondary dengue patients? This is testable with the pilot's existing design if serology can identify prior serotype.
+- Does this compete with, or complement, the memory-recall account of OAS the wiki already holds ([[Memory B Cell]])? Cancro's version does not require the recalled cells to be conventional memory — which would fit [[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]]'s low-SHM finding better than a classical memory-recall model does.
+
+**Related pages:** [[Original Antigenic Sin]], [[Age-Associated B Cell]], [[Atypical B Cell]], [[DN2 B Cell]], [[Antibody-Dependent Enhancement]], [[Memory B Cell]], [[T-bet]], [[IgG]]
 
 ---

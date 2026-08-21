@@ -2,8 +2,8 @@
 type: entity
 tags: [b-cell-subsets, memory-b-cells, IgD-negative, CD27-negative, atypical-b-cells, extrafollicular, SLE, comparative-immunology]
 created: 2026-05-02
-updated: 2026-06-13
-sources: 13
+updated: 2026-08-16
+sources: 15
 ---
 
 # Double-Negative B Cell
@@ -14,7 +14,9 @@ sources: 13
 
 Double-negative (DN) B cells are a peripheral blood memory B cell subset defined by the co-absence of surface IgD and CD27 (IgD⁻CD27⁻ CD19⁺). They are distinct from both conventional CD27⁺ memory B cells (switched and unswitched) and from naive B cells (IgD⁺CD27⁻). Despite lacking CD27 — long considered a universal memory B cell marker — DN B cells carry hallmarks of antigen-experienced memory: somatic hypermutation of VH genes, inability to extrude Rhodamine 123, and proliferative responses to TLR9 stimulation (CpG DNA) without BCR crosslinking.
 
-In healthy peripheral blood, DN B cells are a minor population (~5% of CD19⁺ B cells). They are substantially expanded in systemic lupus erythematosus (SLE) and, by extension, serve as the foundational reference population for the "atypical B cell" or "T-bet⁺ B cell" expansions subsequently described in acute infections including malaria, SARS-CoV-2, Ebola, and — of primary interest to this wiki — dengue.
+In healthy peripheral blood, DN B cells are a minor population (~5% of CD19⁺ B cells). They are substantially expanded in systemic lupus erythematosus (SLE) and, by extension, serve as the foundational reference population for the "atypical B cell" or "T-bet⁺ B cell" expansions subsequently described in infection — in this wiki's ingested corpus: malaria ([[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]), SARS-CoV-2 ([[Woodruff2020 - EF B Cell Responses in COVID-19]], [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]), and — of primary interest here — dengue ([[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]], [[Singh2026 - DENV-Specific Memory B Cell Subsets]]).
+
+> *Ebola was previously listed here without attribution and has been removed [2026-08-18]: no ingested source in this wiki reports DN/atypical B cell data in Ebola. CLAUDE.md Domain Context names Ebola as an intended comparative benchmark, so this is an evidence gap, not a scope change.*
 
 **DN1/DN2/DN3 subdivision:** Jenks et al. (2018) resolved the DN compartment into two functionally distinct subsets: **DN1** (CXCR5⁺, CD21⁺, CD11c^lo) and **DN2** (CXCR5⁻, CD21⁻, CD11c⁺, CD19^hi). DN1 cells predominate in healthy donors and transcriptionally resemble switched memory cells (only 22 DEGs by RNA-seq); DN2 cells predominate in active SLE and represent extrafollicular pre-plasmablasts. These subsets belong in separate differentiation pathways — DN1 are likely early SWM precursors that have not yet acquired CD27, while DN2 are effector cells derived from activated naive B cells via the EF pathway. A third subset, **DN3** (CXCR5⁻, CD21⁻, CD11c⁻, T-bet⁻), was subsequently described in acute COVID-19 and active SLE, representing pre-plasmablasts distinct from both DN2 and ABC (see [[DN3 B Cell]]). See [[DN2 B Cell]] for the full DN2 characterisation.
 
@@ -58,6 +60,14 @@ In healthy peripheral blood, DN B cells are a minor population (~5% of CD19⁺ B
 - **Only DN2 corresponds to the ABC/T-bet⁺ population — and only one ABC subset corresponds to DN.** Among DN subsets, only [[DN2 B Cell|DN2]] highly expresses T-bet and CD11c and efficiently differentiates into plasma cells; DN1, DN3, and DN4 lack CD11c/T-bet and so fall outside the [[Age-Associated B Cell|ABC]] definition. Conversely, ABC is a heterogeneous superset (CD27⁺ + IgD⁺ + predominantly IgD⁻CD27⁻ cells), so only its IgD⁻CD27⁻ fraction maps onto DN — CD27⁺ ABCs are excluded because DN is CD27⁻ by definition (see [[Lamprinou2026 - ABCs and DN B Cells]], opinion, citing Jenks 2018 / Tangye 2023 / Rubtsov 2011). ABC and DN frequencies nonetheless correlate in both health and lupus (citing Sachinidis 2025 / Chizzolini 2024).
 - **DN4 — a poorly defined, allergy-associated CXCR5⁺ subset.** In the four-subset scheme, DN4 (CXCR5⁺CD11c⁻T-bet⁻) is allergy-associated and expresses Notch-signalling and protein-ubiquitination genes distinguishing it from DN1; being CXCR5⁺ and T-bet⁻, it is not an EF effector and not an ABC. Its evidence base is largely secondary/self-cited (see [[Lamprinou2026 - ABCs and DN B Cells]], opinion, citing Somers 2022 / Castleman 2022 / Allard-Chamard 2023).
 - **A cytoplasmic-FOXO1⁺ DN population in SLE awaits subset assignment.** A DN B cell population marked by cytoplasmic FOXO1 (a TF central to B-cell development) has been described in SLE, but whether it corresponds to DN2, DN3, or a distinct subset is unknown (see [[Lamprinou2026 - ABCs and DN B Cells]], opinion, citing Hritzo Ahye & Golding 2018).
+- **⚠★ FALSE FRIEND — a second, unrelated "DN B cell" exists in the murine memory literature, and it means the opposite kind of cell.** The GC-fate-mapping and Shlomchik-lab memory literature subsets MBCs on **CD80 and PD-L2**, yielding **DP (CD80⁺PD-L2⁺)**, **SP (CD80⁻PD-L2⁺)**, and **DN (CD80⁻PD-L2⁻)**. In that scheme **DP is enriched for GC-derived MBCs and "DN" consists almost exclusively of GC-independent [[Early Memory B Cell|early MBCs]]** — so "DN" is a proxy for *developmental origin* and has nothing to do with IgD or CD27 (see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review, citing mouse GC-specific fate mapping). Practical consequences when importing murine memory papers:
+  - A "DN MBC" there is **quiescent, low-SHM, largely unswitched IgM⁺**, and biased toward **secondary GC reentry** — close to the inverse of this wiki's activated CD21⁻CD11c⁺ DN2 effector.
+  - Functional claims about "DN MBCs" from that literature (e.g. "DN MBCs more efficiently reenter secondary GCs") **must not** be transplanted onto IgD⁻CD27⁻ DN cells.
+  - The mapping is not even clean within its own scheme: a considerable proportion of DP cells originate from the non-GC pathway.
+  - Where a paper's DN definition is ambiguous, check whether IgD/CD27 or CD80/PD-L2 was used before citing it here. See the synonymy map on [[Atypical B Cell]].
+
+- **Cancro treats human DN cells as the ABC counterpart.** The review describes "ABC-like cells termed double negative (DN)" (Ettinger and Sanz groups) as the human population corresponding to murine ABCs, noting that both TLR7 and IL-21 are key signals in the human DN differentiation programme, and that many unique transcriptional characteristics are shared between murine ABCs and human DN cells (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; human and mouse).
+- **Wang et al. 2018: blood ABC/DN frequency correlates with SLEDAI and is highly enriched for autoantibody specificities.** In a belimumab trial, loss of the ABC-phenotype population correlated with therapeutic response (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; human, clinical cohort).
 
 ## Proposed Origin and Relationship to Extrafollicular Response
 
@@ -88,7 +98,9 @@ This EF origin model directly links DN B cells to the concept of [[Extrafollicul
 - **Three-subset vs four-subset DN taxonomy.** Sanz2025 (and most wiki pages) use DN1/DN2/DN3; the Sachinidis/Garyfallos lineage adds DN4 (allergy-associated, CXCR5⁺). This is granularity/nomenclature drift, not a factual disagreement, but consumers of dengue data should be aware that CXCR5⁺ DN subsets (DN1, DN4) are systematically discarded by CXCR5⁻-focused EF gating.
 
 ## Related Pages
-[[Atypical B Cell]], [[Age-Associated B Cell]], [[DN2 B Cell]], [[DN3 B Cell]], [[CD27]], [[IgD]], [[FcRH4]], [[FCRL5]], [[CD38]], [[CD11c]], [[CXCR5]], [[T-bet]], [[Memory B Cell]], [[Extrafollicular Response]], [[Germinal Center]], [[Somatic Hypermutation]], [[B220]]
+[[Atypical B Cell]], [[Age-Associated B Cell]], [[DN2 B Cell]], [[DN3 B Cell]], [[Early Memory B Cell]], [[CD27]], [[IgD]], [[FcRH4]], [[FCRL5]], [[CD38]], [[CD11c]], [[CXCR5]], [[T-bet]], [[Memory B Cell]], [[Extrafollicular Response]], [[Germinal Center]], [[Somatic Hypermutation]], [[B220]]
+
+**Analysis:** [[Why DN B Cells Matter - Disease Relevance and Infectious Disease Case]] — the corpus-wide justification case for this population, with every argument tiered by evidence provenance.
 
 ## Sources
 - [[Wei2007 - DN Memory B Cells in SLE]]
@@ -102,5 +114,7 @@ This EF origin model directly links DN B cells to the concept of [[Extrafollicul
 - [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]
 - [[GarciaBates2013 - Plasmablast Response and Dengue Severity]]
 - [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]
+- [[Glaros2025 - Multilayered Identity of B Cell Memory]]
 - [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]
 - [[Lamprinou2026 - ABCs and DN B Cells]]
+- [[Cancro2020 - Age-Associated B Cells]]

@@ -2,8 +2,8 @@
 type: entity
 tags: [switched-memory, B-cell-subsets, CD27, IgD, class-switch, germinal-center, memory-b-cells]
 created: 2026-06-27
-updated: 2026-06-27
-sources: 11
+updated: 2026-08-16
+sources: 12
 ---
 
 # Switched Memory B Cell
@@ -24,6 +24,10 @@ In the IgD-vs-CD27 gating quadrant, sM (IgD⁻CD27⁺, lower-right) sits directl
 - **CD27 is not a stable lineage marker — this blurs the sM↔DN boundary:** CD27 can be downregulated or shed (CD70/TLR/cytokine-induced; ADAM17 cleavage in high-inflammatory settings), so CD27⁻ status does not prove a cell never expressed CD27. Within the CD27⁺ memory compartment, T-bet⁺/FcRL5⁺ "memory ABC" cells are poised for ASC differentiation, while T-bet⁻/FcRL5⁻ canonical memory cells are stem-like (see [[Sanz2025 - Human Atypical B Cells Overview]], invited review).
 - **Dengue — switched memory is reprogrammed and recalled:** DENV-specific class-switched IgD⁻ MBCs are significantly higher in secondary than primary immunity (p<0.001) and durable to 18 months (see [[Singh2026 - DENV-Specific Memory B Cell Subsets]], n=58 samples, longitudinal). The acute IgG-dominant plasmablast burst reflects recall of class-switched memory (see [[Wrammert2012 - Plasmablast Responses in Acute Dengue]], n=46 cohort), is functionally memory-derived via original-antigenic-sin serotype bias (see [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]], n=4 secondary DHF), and is driven by a [[Peripheral Helper T Cell|Tph]]→IL-21→class-switched memory→plasmablast axis (see [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]], n=170 cohort, T-B coculture). sM is the resting reservoir this recall draws from.
 
+- **★ Switched memory is NOT a reliable proxy for germinal-center origin.** The use of class-switch status as indirect evidence of GC participation assumed [[Class Switch Recombination|CSR]] occurs predominantly within GCs; newer work indicates CSR takes place **primarily prior to GC entry**, with switched cells then gaining a competitive advantage inside GCs and becoming enriched over the reaction. GC-specific fate mapping confirms the proxy fails in both directions: GC-independent [[Early Memory B Cell|early MBCs]] include a **significant fraction of class-switched cells**, while GC-derived MBCs can remain **IgM⁺ or IgM⁺IgD⁺** (see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review, **no original data**, mouse). **Wiki consequence:** the sM (IgD⁻CD27⁺) gate remains the best available *GC-comparator* population for the DN/EF story, but it should be described as the **canonical/classical memory** comparator rather than as a GC-origin-certified one.
+- **Long-lived switched memory can be marginal-zone-phenotype.** Long-lived anti-smallpox memory B cells with a **marginal-zone phenotype and transcriptional signature dominated the switched memory compartment** in the spleens of individuals immunized decades earlier — though whether this reflects preferential generation by that vaccine or preferential long-term survival is unclear (review, human). See [[Tissue-Resident Memory B Cell]].
+- **Where a booster is given can change what switched memory does.** Memory B cells in **draining** lymph nodes reenter secondary GCs more efficiently than those in non-draining nodes, with transcriptional differences underpinning distinct intranodal localization — implying that administering a booster in the same versus the opposite arm can influence the quality of the resulting response (review, mouse).
+
 ## Contradictions & Debates
 
 - **sM-vs-DN ontology — lineage or artefact?** Two readings of the side-by-side IgD⁻CD27⁺ / IgD⁻CD27⁻ quadrants coexist. (a) Some DN cells are switched memory that have *shed* CD27 — making the boundary partly a labelling artefact of CD27 instability (see [[Sanz2025 - Human Atypical B Cells Overview]]). (b) sM and DN2 are *genuinely distinct endpoints* on epigenetic grounds (different TF programmes; see [[Scharer2019 - Epigenetic Programming in SLE B Cells]]). The DN1/DN2 subdivision partly reconciles these: DN1 ≈ sM-like (memory), DN2 ≈ EF effector (see [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]). In acute dengue's high-TNF environment, CD27 shedding could specifically inflate the DN gate at sM's expense — a measurement caveat carried in [[DN2 Gating Strategy]].
@@ -31,7 +35,7 @@ In the IgD-vs-CD27 gating quadrant, sM (IgD⁻CD27⁺, lower-right) sits directl
 
 ## Related Pages
 
-[[Memory B Cell]], [[Double-Negative B Cell]], [[DN2 B Cell]], [[Activated Naive B Cell]], [[CD27]], [[IgD]], [[CD21]], [[Class Switch Recombination]], [[Somatic Hypermutation]], [[Germinal Center]], [[Plasmablast]], [[Extrafollicular Response]], [[Original Antigenic Sin]], [[DN2 Gating Strategy]]
+[[Memory B Cell]], [[Double-Negative B Cell]], [[DN2 B Cell]], [[Activated Naive B Cell]], [[CD27]], [[IgD]], [[CD21]], [[Class Switch Recombination]], [[Somatic Hypermutation]], [[Germinal Center]], [[Plasmablast]], [[Extrafollicular Response]], [[Original Antigenic Sin]], [[DN2 Gating Strategy]], [[Early Memory B Cell]], [[Tissue-Resident Memory B Cell]], [[Class Switch Recombination]]
 
 ## Sources
 
@@ -46,3 +50,4 @@ In the IgD-vs-CD27 gating quadrant, sM (IgD⁻CD27⁺, lower-right) sits directl
 - [[Wrammert2012 - Plasmablast Responses in Acute Dengue]]
 - [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]]
 - [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]
+- [[Glaros2025 - Multilayered Identity of B Cell Memory]]

@@ -2,8 +2,8 @@
 type: entity
 tags: [b-cell-subsets, plasmablast, antibody-secreting-cells, CD38, CD27, extrafollicular, SLE, rituximab]
 created: 2026-05-02
-updated: 2026-05-21
-sources: 17
+updated: 2026-08-16
+sources: 19
 ---
 
 # Plasmablast
@@ -62,6 +62,14 @@ Plasmablasts are short-lived, rapidly dividing antibody-secreting B cells that a
 - **Alternative lineage atBCs do NOT upregulate PC maintenance genes — challenges the pre-plasmablast model:** scRNA-seq of >12,000 B cells showed that no alternative lineage cluster (atBC1, atBC2, atBC3, MBC1) upregulated *XBP1*, *IRF4*, or *PRDM1* (BLIMP-1). PCs were detached from the pseudotime manifold with no intermediate population bridging atBCs to PCs. This argues against atBCs/DN2 cells being obligate pre-plasmablasts in healthy or infection contexts. However, Sutton's own Discussion notes that in SLE, chronic TLR7 stimulation can drive atBCs to PC fate — the pre-plasmablast identity is context-dependent, not a fixed property (see [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]], n=4, 10x Chromium + pseudotime).
 - **Dengue acute-phase plasmablasts carry paradoxically low SHM — lower in severe and secondary disease:** HTS of IgG VH cDNA (enriching for ASCs by RNA abundance) revealed that acute-phase IgG B cells have globally lower SHM than post-convalescent IgG B cells (p<0.001), with SHM further reduced in DWS+ vs. DWS− and in secondary vs. primary infections. Monte Carlo simulation confirmed the acute signal derives predominantly from plasmablasts (probability of sampling mB cell = 0.015). Convergent CDRH3 signatures shared across up to 52% of patients were found specifically among the most hypomutated clones. The low SHM in plasmablasts with class-switched (IgG) status indicates CSR without extensive SHM — consistent with GC-independent (extrafollicular) differentiation (see [[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]], n=19 acute dengue, 454 pyrosequencing, 385,206 lineages).
 
+- **★ Early plasma cells (ePCs) are one of three fates of a tripotent pre-GC precursor — and higher affinity favours them.** Activated precursors at the T–B border can become **early plasma cells, [[Early Memory B Cell|early memory B cells]], or GC B cells**; limiting-dilution transfer shows a single naive B cell can seed all three, with the split evident by day 4 post-immunization. **Higher-affinity BCRs and stronger T-derived signals favour ePC generation**, while lower-affinity antigen more often yields early MBCs; supplying additional antigen several days into the response pushes early activated B cells toward the ePC lineage (see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review, **no original data**, mouse). Note this is the *opposite* directionality from the SLE EF model, where DN2→PC proceeds on innate signals **without** BCR stimulation ([[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]) — see [[Extrafollicular Response]] Contradictions.
+- **Memory-derived PCs, not primary-infection long-lived PCs, carry cross-variant protection.** The review states that protective antibodies against **flavivirus and influenza variants** arise primarily from **rapid differentiation of memory B cells into PCs** rather than from long-lived plasma cells established during primary infection, and attributes this to the greater clonal diversity of the memory compartment (review). Directly relevant to dengue serotype cross-protection and to the wiki's plasmablast–neutralization disconnect.
+- **Cumulative stimulation epigenetically biases memory toward PC output.** Repeated antigenic stimulation progressively opens PC-associated loci including *Prdm1*, raising baseline [[BLIMP-1]] and biasing MBCs toward PC differentiation over GC reentry, via [[BACH2]]/BLIMP1 (review; untested). See [[Memory B Cell]]; for the wiki-generated dengue application see [[Original Antigenic Sin]].
+- **Tissue-resident memory can produce PCs on innate signals alone.** Some lung resident memory B cells recruited to an infection site — **including cells with no specificity for the invading pathogen** — differentiate into PCs in response to innate signals without cognate antigen, a speed-over-precision trade-off in vital tissue (review, mouse). See [[Tissue-Resident Memory B Cell]].
+- **★ T-bet represses [[BLIMP-1|Blimp-1]] — ABC→plasma cell differentiation likely requires losing T-bet, but the claim is unreferenced.** ABCs differentiate rapidly to antibody-secreting cells on TLR7/9 stimulation plus IL-21 (citing Wang et al. 2018 and this wiki's own [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]). Cancro adds: "few if any plasma cells express T-bet, and there is evidence that T-bet represses Blimp-1, suggesting that the formation of plasma cells from ABCs likely involves the loss of T-bet expression." ⚠ This sentence carries no numbered citation in the review — flag as an unreferenced assertion pending independent verification, not an established mechanism (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse and human, unreferenced assertion within the review).
+- **The ABC-as-plasma-cell-depot hypothesis.** The splenic ABC memory pool may be a continuously replenishing source of PC precursors, potentially explaining how the bone marrow niche sustains lifelong plasma cell production without continuous enlargement or loss of prior specificities — consistent with Allman-group data showing a significant fraction of bone marrow plasma cells turn over rapidly. Cancro flags this as explicitly requiring fate-mapping tools to test (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse).
+- **IgM⁺CD11c⁺ extrafollicular splenic plasmablasts drive CD4-T-independent antibody responses in murine *Ehrlichia* infection** (Racine et al. 2008, *J Immunol*), alongside protective, multipotential T-bet⁺ memory B cells generated in the same GC-absent response (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse).
+
 ## Contradictions & Debates
 
 - **SHM discrepancy in dengue plasmablasts: high (Priyamvada2016) vs. low (GodoyLozano2016).** Priyamvada2016 finds high SHM (mean 18.1 VH mutations ≈ ~6.5% nucleotide mutation) in sorted plasmablasts from secondary DHF, while GodoyLozano2016 finds globally low SHM in bulk IgG VH cDNA from a mix of primary and secondary infections. Likely reconciliation: Priyamvada2016 sorted plasmablasts specifically from secondary DHF (all memory-derived), while GodoyLozano2016 captured the full IgG⁺ B cell pool (including de novo EF-derived low-SHM PBs that dilute the average). Both studies may be correct — secondary infections contain a mixture of memory-derived high-SHM PBs and de novo low-SHM PBs, with the ratio depending on infection history and methodology.
@@ -70,7 +78,7 @@ Plasmablasts are short-lived, rapidly dividing antibody-secreting B cells that a
 
 ## Related Pages
 
-[[DN2 B Cell]], [[Double-Negative B Cell]], [[Activated Naive B Cell]], [[Memory B Cell]], [[CD38]], [[CD138]], [[CD20]], [[CD27]], [[CD19]], [[IRF4]], [[BLIMP-1]], [[TLR7]], [[Extrafollicular Response]], [[Bm Classification]], [[Germinal Center]], [[Original Antigenic Sin]], [[Antibody-Dependent Enhancement]]
+[[DN2 B Cell]], [[Double-Negative B Cell]], [[Activated Naive B Cell]], [[Memory B Cell]], [[CD38]], [[CD138]], [[CD20]], [[CD27]], [[CD19]], [[IRF4]], [[BLIMP-1]], [[TLR7]], [[Extrafollicular Response]], [[Bm Classification]], [[Germinal Center]], [[Original Antigenic Sin]], [[Antibody-Dependent Enhancement]], [[Early Memory B Cell]], [[Tissue-Resident Memory B Cell]], [[BACH2]]
 
 ## Sources
 
@@ -91,3 +99,5 @@ Plasmablasts are short-lived, rapidly dividing antibody-secreting B cells that a
 - [[Bhattacharya2016 - Memory B Cell Subset Selection in Secondary Dengue]]
 - [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]
 - [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]
+- [[Glaros2025 - Multilayered Identity of B Cell Memory]]
+- [[Cancro2020 - Age-Associated B Cells]]

@@ -2,8 +2,8 @@
 type: entity
 tags: [transcription-factor, germinal-center, T-follicular-helper, Bcl-6, B-cell-differentiation]
 created: 2026-05-22
-updated: 2026-05-22
-sources: 3
+updated: 2026-08-16
+sources: 4
 ---
 
 # Bcl-6
@@ -23,6 +23,10 @@ In the context of this wiki, Bcl-6 is the critical marker linking GC failure to 
 - **DN1 cells are Bcl-6-pathway associated:** DN1 cells (CXCR5⁺, CD21⁺) share a near-identical transcriptome with switched memory cells and express TCF7, CXCR5, and BACH2 — hallmarks of GC transit. They contrast with DN2 cells (CXCR5⁻, T-bet⁺), which belong to the EF pathway. CD40L stimulation does not inhibit DN1 generation, consistent with GC compatibility (see [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]], RNA-seq + in vitro differentiation).
 - **GC loss in COVID-19 also observed peripherally in Woodruff2020:** The peripheral blood EF dominance in critically ill COVID-19 patients — expanded DN2, aN, ASC populations with germline-dominant BCR repertoires — is the blood-level correlate of the tissue-level GC loss demonstrated by Kaneko2020 (see [[Woodruff2020 - EF B Cell Responses in COVID-19]], 24-marker spectral FCM, n=10 ICU).
 
+- **★ BCL6 is not required for memory B cell generation — only for the GC route to it.** Mice lacking BCL6 in the haematopoietic compartment, and **patients with CD40L deficiency**, are both unable to form functional germinal centers yet still generate detectable memory B cell populations (see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review, **no original data**). Early antigen-specific, largely unswitched cells with a memory phenotype appear **before the first GC B cells** form, and early memory B cell formation is **not affected by BCL6 deficiency**. See [[Early Memory B Cell]].
+- **Low or absent BCL6 defines the tripotent pre-GC precursor.** Activated precursors at the T–B border express **intermediate [[IRF4]]** and exhibit **absent or low BCL6**, distinguishing them from committed GC B cells; BCL6 is the key transcriptional regulator of GC B cell fate and its upregulation marks GC commitment (review).
+- **BCL6 sits at the centre of the GC-derived memory exit circuit.** BCL6 represses *Bcl2*, so escaping BCL6 repression is required for the pro-survival programme of GC-derived memory; **HHEX** was proposed to promote memory generation precisely by **downregulating BCL6 and thereby releasing BCL6-mediated repression of BCL2**. IL-4-mediated BCL6 downregulation may likewise facilitate GC exit. Transient removal of anti-CD40 antibody in vitro was sufficient to *induce* BCL6 upregulation, and reduced T-derived signals in vivo increased the propensity to generate GC B cells — suggesting **interruptions** in CD40–CD40L signalling, rather than signal strength per se, may bias toward the GC lineage (review, mouse).
+
 ## Contradictions & Debates
 
 - Whether Bcl-6⁺ TFH cells are generated in milder COVID-19 is unknown — the tissue study was limited to fatal cases. Milder disease may represent a continuum with some GC formation.
@@ -30,10 +34,11 @@ In the context of this wiki, Bcl-6 is the critical marker linking GC failure to 
 
 ## Related Pages
 
-[[Germinal Center]], [[Extrafollicular Response]], [[AID]], [[CXCR5]], [[ICOS]], [[T-bet]], [[TNF-alpha]], [[Double-Negative B Cell]], [[DN2 B Cell]]
+[[Germinal Center]], [[Extrafollicular Response]], [[AID]], [[CXCR5]], [[ICOS]], [[T-bet]], [[TNF-alpha]], [[Double-Negative B Cell]], [[DN2 B Cell]], [[Memory B Cell]], [[Early Memory B Cell]], [[BACH2]], [[Germinal Center]]
 
 ## Sources
 
 - [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]
 - [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]
 - [[Woodruff2020 - EF B Cell Responses in COVID-19]]
+- [[Glaros2025 - Multilayered Identity of B Cell Memory]]
