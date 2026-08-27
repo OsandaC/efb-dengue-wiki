@@ -2,12 +2,31 @@
 type: analysis
 tags: [meta, notable-findings]
 created: 2026-05-02
-updated: 2026-08-16
+updated: 2026-08-27
 ---
 
 # Notable Findings
 
 A running log of atomic observations from the literature that are striking, unexpected, or carry implications beyond the paper they came from. See CLAUDE.md → §Notable Findings for the entry bar and format.
+
+---
+
+## [2026-08-27] The subset the extrafollicular case is built on is the one that isn't in the tissue
+
+**Source:** [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]]
+
+**Finding:** In the two diseases where DN B cells were imaged directly in inflamed human tissue — IgG4-related disease salivary gland and severe COVID-19 lung and thoracic lymph node — **DN2 was nearly absent**: ~7 cells/mm² in COVID-19 lymph node against DN3's ~400, and ~3% of the IgG4-RD salivary-gland DN pool. DN1 and DN3 dominated. The authors state it plainly: DN2 cells "are not abundant in COVID-19 lymph nodes and are relatively sparse in both IgG4-RD and COVID-19 end organs." DN2 *was* significantly increased in the **blood** of both diseases.
+
+**Why notable:** This wiki's mechanistic case — [[Mechanistic Case for DN and DN2 Cells in Dengue]], the DN2:DN1 ratio as the centrepiece outcome of [[Thesis Objectives and Grant Pitch]], the whole [[Extrafollicular Response]] framing — rests on DN2 as the extrafollicular effector. The only direct human tissue evidence the wiki now holds says DN2 is a **blood** population, and that whatever accumulates where the inflammation actually is, is DN3. That does not invalidate a blood DN2 readout: DN2 could be a fast-transiting intermediate, could be retained in compartments not sampled here, or could simply lose CD11c detectability in FFPE — none of which the paper tests. But it reframes what a blood DN2 frequency *is*. Measuring DN2 in blood may be measuring the pathway's transit population rather than its effector pool, and a dengue study reporting a DN2 expansion would be reporting a circulating intermediate, not a tissue effector.
+
+It also compounds a second problem from the same paper: DN3's rise in tissue is in **absolute density**, not in **share of the DN pool** (~20% of the IgG4-RD salivary-gland DN pool vs ~32% in non-fibrotic inflammatory controls — overlapping distributions, no test reported, so read as *no enrichment* rather than a reversal; ~50% vs ~43% in COVID-19 vs inflamed control lung), and no subset-level tissue panel in the paper carries a significance marker. So the honest position is narrower than the title: total DN infiltration of diseased organs is real and significant; *which* DN subset drives it is not established, and the composition data do not single out DN3 either.
+
+**Follow-up questions:**
+- Is DN2's tissue scarcity biological, or an FFPE CD11c-detection artefact? A CD11c⁺ tissue positive control would settle it — the paper detected CD11c in tissue successfully, so the artefact explanation is weaker than it first looks.
+- If DN3 is the tissue-resident output of the pathway, should a dengue panel report DN3 alongside the DN2:DN1 ratio rather than treating it as a residue?
+- Does the DN2→DN3 ordering survive? DN3 outnumbers DN2 ~fifty-fold in lymph node, which is hard to reconcile with a linear precursor relationship.
+
+**Related pages:** [[DN2 B Cell]], [[DN3 B Cell]], [[Double-Negative B Cell]], [[Extrafollicular Response]], [[GC-Independent Response]], [[Mechanistic Case for DN and DN2 Cells in Dengue]], [[B Cell Panel Variant 1]]
 
 ---
 
@@ -457,5 +476,93 @@ Note the wiki was **already carrying half of this**, via [[Sanz2025 - Human Atyp
 - Does this compete with, or complement, the memory-recall account of OAS the wiki already holds ([[Memory B Cell]])? Cancro's version does not require the recalled cells to be conventional memory — which would fit [[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]]'s low-SHM finding better than a classical memory-recall model does.
 
 **Related pages:** [[Original Antigenic Sin]], [[Age-Associated B Cell]], [[Atypical B Cell]], [[DN2 B Cell]], [[Antibody-Dependent Enhancement]], [[Memory B Cell]], [[T-bet]], [[IgG]]
+
+---
+
+## [2026-08-23] The wiki's TLR7 evidence is weaker than it reads — in two independent ways
+
+**Source:** [[Posadas-Mondragon2020 - TLR Polymorphisms and Clinical Forms of Dengue]] (host-genetics case-control, n=254, no B cell data) — plus a **wiki-generated** reagent audit prompted by it, spanning [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]], [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]] and [[Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue]].
+
+**Finding:** Two things surfaced together. **(1)** The first ingested source to test *germline* [[TLR7]] variation against dengue outcome finds nothing — no genotype, allele or inheritance model separated DF, DHF or dengue-versus-control, on 165 patients. **(2)** Separately, an audit of what the wiki's TLR7 claims actually rest on shows that the dominant reagent throughout is **R848 (resiquimod), a dual TLR7/8 agonist**. Strictly, most “TLR7” bullets demonstrate *endosomal ssRNA-sensor* dependence, not TLR7 specificity. Only two ingested results isolate TLR7 — Jenks2018’s TLR7-specific inhibitor ODN 20959, and Sanz2025’s monogenic TLR7 gain-of-function SLE. **TLR8 is nowhere formally excluded, and has no wiki page.**
+
+**Why notable:** [[TLR7]] is one of three signals in the wiki’s canonical DN2-generating triad (TLR7 + IFN-γ + IL-21) and is the single most load-bearing reason to expect the DN2 programme to run in dengue at all — dengue is an ssRNA virus, so the ligand is present by construction. Both observations narrow what that argument is entitled to claim, and they do so from opposite directions. The genetic null does **not** refute the mechanism (an essential pathway is under purifying selection, so common functional variation in it is depleted — a null is the *expected* result), but it does mean the wiki now holds an explicit non-result on this axis and must not let a future session read it either way. The reagent audit is the sharper of the two: it is not a claim any source makes, it applies retroactively to bullets already written, and it changes what a future dengue experiment would need to do to be decisive.
+
+**The uncomfortable summary:** across 29 ingested sources, **no one has measured TLR7 responsiveness in human B cells during dengue.** The closest evidence is TLR7/8 signalling in *monocytes* (Kwissa2014). The dengue TLR7 story is currently a transfer argument from SLE in vitro work, resting partly on a dual-specificity agonist — untested in dengue in either direction.
+
+**Follow-up questions:**
+- What experiment would actually settle it? Phospho-flow (pERK/p-p38) on DN2-gated cells from acute dengue after R848, with a TLR7-selective inhibitor arm — the Jenks2018 design applied to dengue rather than SLE. Nothing in the wiki does this.
+- Does TLR8 contribute independently? Human TLR8 is functional in B cells in a way murine TLR8 is not; if the DN2 programme is partly TLR8-driven, murine ABC models would systematically understate it.
+- If germline TLR variation is uninformative, is *expression* informative? No ingested source measures TLR7 transcript or protein levels in dengue B cells — not even the genotyping paper, which measured neither.
+
+**Related pages:** [[TLR7]], [[Toll-like Receptor Signaling in B Cells]], [[TLR9]], [[DN2 B Cell]], [[SNP Genotyping]], [[Inflammatory Monocyte]], [[Extrafollicular Response]]
+
+---
+
+## [2026-08-23] Dengue engages TLR7 — and the ligand it brings is the potent class, not the SLE class
+
+**Source:** [[Wang2006 - Flavivirus Activation of pDCs and TLR7 Signaling]] (human pDCs + HEK/hTLR7 reporter, in vitro), read against [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]] and [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]].
+
+**Finding:** Two results, one week after the entry above. **(1)** Dengue virus itself engages human TLR7: DENV-driven IFN-α from primary human pDCs is significantly reduced by the TLR7 antagonist IRS 661 (p<0.02, n=4), with EM placing enveloped D2V particles in endocytic vacuoles within 5 minutes. **(2)** Genomic viral RNA is **50–1000× more potent at TLR7 than short synthetic ssRNAs**; ssRNA40 was inert across a 10⁵-fold concentration range; and potency is set by **higher-order RNA structure**, not length or 5′-phosphate — UV cross-linking cut dengue-2 vRNA signalling to 23% of untreated while leaving influenza vRNA at 92%.
+
+**Why notable:** The previous Notable Finding closed with *"across 29 ingested sources, no one has measured TLR7 responsiveness in human B cells during dengue"* and characterised the dengue TLR7 story as a transfer argument from SLE resting partly on a dual-specificity agonist. This source changes the **first half of that sentence and not the second.** [[TLR7]] had long carried the line that DENV is an ssRNA virus so "TLR7 ligands are physiologically abundant" — an inference from virology. It is now a measurement, in a primary human cell, with the virus blocked at the receptor rather than an agonist mimicking it (the Kwissa2014 design). **The cell is still not a B cell.** Two ingested sources now measure a non-B-cell response to dengue through the endosomal ssRNA sensor — monocytes and pDCs — and nobody has looked at the B cell. The gap is unchanged and arguably sharper: the ligand and the sensor are demonstrably meeting, in the right compartment, in two cell types adjacent to the one that matters.
+
+The second result is the one that could change a prior. The wiki's TLR7 mechanism is imported wholesale from SLE, and the tacit assumption in any such transfer is that the borrowed setting is the *stronger* stimulus and dengue the weaker approximation. The potency data invert that. SLE's endogenous TLR7 ligands are RNP-associated **small** RNAs — the class this paper places 50–1000× down, with short structural motifs producing nothing at all. Acute dengue supplies an intact, structured **11-kb genome** — the top class. If the DN2 programme is TLR7-signal-strength-dependent, and [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]]'s 100-fold R848 dose experiment says signal strength is exactly what sets the cytokine requirement, then dengue may deliver a *stronger* TLR7 signal to a B cell than chronic SLE does. That is a wiki-generated inference across two sources, not a claim either makes, and it is testable.
+
+**Held against it, unresolved:** per infectious unit dengue is the *weaker* pDC stimulus — ~50× the MOI of influenza for the same order of IFN-α — and UV inactivation collapses live-virus potency to 2.6% of control while purified dengue RNA remains top-class. The wiki's reading is that live-virus potency is gated by fusion/uncoating delivery, not intrinsic ligand quality. Which regime a B cell encountering immune-complexed DENV is in is unknown.
+
+**Follow-up questions:**
+- Only DENV-2 was tested. If tertiary structure sets potency, the four serotypes need not be equivalent TLR7 agonists — an entirely unexamined axis with obvious severity implications.
+- Is dengue genomic RNA delivered to *B cell* endosomes at all? B cells are not productively infected in most accounts; whether BCR- or FcγR-mediated virion uptake reaches the TLR7 compartment is untested and unaddressed anywhere in the wiki.
+- Where do B cells sit on the limiting-component axis this paper identifies (IRF-7 and the type I IFN arm)? Nothing measures B cell IRF7, so which TLR7 output branches a DN2 cell can even run is unknown.
+
+**Related pages:** [[TLR7]], [[Plasmacytoid Dendritic Cell]], [[Type I Interferon]], [[Toll-like Receptor Signaling in B Cells]], [[TLR Reporter Cell Assay]], [[DN2 B Cell]], [[Extrafollicular Response]]
+
+---
+
+## [2026-08-26] Dengue is absent from the field's landmark disease survey of DN B cells — the gap is now citable, not inferred
+
+**Source:** [[Beckers2023 - Origins and Functions of DN B Cells]] (*Immunology Letters* 2023, narrative review, 86 refs, 66/78 citations), read against the wiki's whole dengue corpus.
+
+**Finding:** A 2023 review that has become the standard reference for DN B cells in health and disease surveys the compartment across **~25 human conditions**. Its Table 1 has a dedicated **Infections** block — meningitis/encephalitis, acute sepsis, malaria, rotavirus, HIV, COVID-19 — plus a **Vaccination** block (influenza, tick-borne encephalitis virus), and an **Other conditions** block reaching as far as Alzheimer's disease, obesity, ALS and non-small-cell lung cancer. **Dengue appears nowhere: not in the table, not in the text, not in the 86-item reference list.**
+
+**Why notable:** The wiki has run for months on the working assumption that DN/EF B cells in dengue are unstudied. That assumption was an *inference* from the wiki's own corpus — the kind of claim that is uncomfortable to make in writing, because absence of evidence in one reading list is not evidence of absence in the field. This review converts it into a **positive, attributable observation about the state of the literature**: an independent European group, writing a comprehensive survey with no stake in dengue, catalogued DN B cells in a rotavirus cohort and in lung tumour tissue, and did not find a dengue study to cite. The gap can now be stated in a thesis introduction or grant background with a citation behind it rather than as an unsupported claim about what nobody has done.
+
+Two things sharpen it rather than soften it. First, the review is **not narrow on infection** — it reaches obesity and cancer, so dengue's absence is not a scope decision. Second, the conditions it *does* cover are mostly **chronic** (HIV, malaria, autoimmunity, aging), with COVID-19 as the one acute-infection exemplar. Dengue would occupy an under-populated cell of that grid: an **acute, self-limiting, serotype-structured** febrile illness with a well-characterised secondary-infection immunopathology. The absence is therefore not just a missing row but a missing *category*.
+
+**The counterweight, stated so it is not overlooked.** Two ingested dengue sources measure DN/atypical cells directly — [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]] (2025, n=170) and [[Singh2026 - DENV-Specific Memory B Cell Subsets]] (2026, preprint). Both **postdate** this review, so the field is no longer where Beckers found it, and the honest framing is "as of early 2023, dengue had not entered the DN disease survey," not "nobody has looked." The gap is real and is narrowing.
+
+**Follow-up questions:**
+- Do the post-2023 DN reviews (if any exist in this space) now include dengue? If a 2025–2026 review still omits it, the absence is a stronger claim than a single 2023 snapshot supports.
+- Beckers reports that the severe-COVID DN2/DN3 expansion is **transient**, normalising in recovered patients. If dengue's DN expansion decays on a comparable timescale, part of the reason dengue is absent from this literature may be **sampling window** — studies drawing blood at convalescence would see nothing. That is a testable explanation for an absence, and it directly constrains cohort design.
+- Beckers' exhaustion-vs-activation split runs by disease class (exhausted in chronic viral infection and aging, activated in autoimmunity). Acute dengue has no obvious home on that axis — which side does it fall on, and does [[Singh2026 - DENV-Specific Memory B Cell Subsets]]'s non-exhausted temporal-correlation result already answer it?
+
+**Related pages:** [[Double-Negative B Cell]], [[DN2 B Cell]], [[DN3 B Cell]], [[Extrafollicular Response]], [[Why DN B Cells Matter - Disease Relevance and Infectious Disease Case]], [[Conventional Flow Cytometry]]
+
+---
+
+## [2026-08-27] The DN2 framework's own authors withdraw the extrafollicular *location* claim — while leaving GC-independence standing
+
+**Source:** [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] (*Immunity* 58:2627–2645, Nov 2025; consensus Perspective, twelve authors), read against [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]], [[Sanz2019 - Consistent Classification of Human B Cell Populations]] and [[Sanz2025 - Human Atypical B Cells Overview]].
+
+**Finding:** A twelve-author consensus Perspective — including **Ignacio Sanz**, in whose laboratory the human DN1/DN2/aNAV framework was defined — states that GC-independent derivation of DN2 cells is only *suggested*, that *"direct visualization of EF foci with DN2 cells in the splenic bridging channel or LN medullary cords has not been done,"* and concludes verbatim that *"the EF designation of this human DN2 cell refers to its **presumed GC-independent origin rather than its location**."* It further holds that *"currently there are no flow cytometry-based means alone that can distinguish EF B cells nor their progeny from activated cells in earlier phases,"* and that CD21ˡᵒ, CXCR5⁻ and CD11c⁺ *"could indicate recent B cell activation rather than a permanent state."*
+
+**Why notable:** Three reasons, in ascending order of consequence for this wiki.
+
+First, **it is a self-limitation, not an outside critique.** The wiki has absorbed challenges to the DN2 model before — [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]] against the pre-plasmablast reading, [[Beckers2023 - Origins and Functions of DN B Cells]] against the DN1/DN2 dichotomy — but always from other groups. Here the framework's own principal architect co-signs the statement bounding its central inference. That is a different kind of evidence about how firmly the claim was ever held.
+
+Second, **it splits one claim the wiki has been treating as unitary into two, and licenses only one of them from blood.** *GC-independent* is an origin claim, inferable from mutational load, GC-ablation genetics, tissue architecture, and clonal connectivity. *Extrafollicular* is a location claim requiring tissue imaging. Every human study in this wiki, dengue included, sits in what the paper classifies as "situation 4" — phenotypically defined blood cells with no location data whatsoever. The wiki's mechanistic spine is entirely origin evidence and survives intact; what does not survive is the word.
+
+Third, and most concretely, **it lands on the curator's own instrument.** The DN2-phenotype gate is CD21⁻CD11c⁺ within IgD⁻CD27⁻ — precisely the markers the Perspective says may report recent activation rather than a stable state. A single acute-timepoint frequency in dengue therefore has three candidate readings, not two: compartment enrichment, tissue egress (already tracked via [[Cancro2020 - Age-Associated B Cells]]), or transient activation. The mitigation is available and, unusually, is a design advantage rather than a concession: **acute dengue permits serial sampling across fever days, which the SLE and vaccination cohorts that defined these gates never used.**
+
+**The guard on this finding, recorded so no later session inflates it.** The paper does **not** claim DN2 cells are GC-derived, and it does not retract the EF pathway. The supportable sentence is *"as of Nov 2025, a consensus panel holds that 'EF' should be reserved for responses whose location has been imaged, and that no flow panel alone establishes EF origin."* It is **not** *"DN2 cells are not extrafollicular"* — which reads better and is why it needs guarding against. See [[GC-Independent Response]] for the evidence-to-claim mapping the wiki now uses instead.
+
+**A footnote worth keeping.** The Perspective is dedicated to the memory of **Michael Cancro (1949–2025)** — author of [[Cancro2020 - Age-Associated B Cells]] — and recommends retiring "ABC," the term he championed, on the grounds that it has four incompatible expansions (age-associated / autoimmunity-associated / atypical / activated). Cancro's own scepticism about reading ABC origin off surrogate markers, already recorded on [[Age-Associated B Cell]], is closer to the Perspective's position than the usage his terminology enabled.
+
+**Follow-up questions:**
+- What is the strongest available surrogate for GC-independence in a cohort where lymphoid tissue is unobtainable — SHM load, isotype distribution, CXCR5/CD21 kinetics across serial timepoints, or paired absence of a GC readout?
+- Does the mutational-load-as-*probability* model (the paper's Figure 2) weaken the wiki's reading of [[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]]? Low load in a short acute response is exactly the case where insufficient elapsed time and a high-rate GC-independent process are indistinguishable.
+- Will the field adopt "non-GCB" terminology? A thesis submitted in 2027 will be read against whatever settles — the wiki holds the labels as an annotation layer for now.
+
+**Related pages:** [[GC-Independent Response]], [[Extrafollicular Response]], [[DN2 B Cell]], [[Atypical B Cell]], [[Age-Associated B Cell]], [[CD11c]], [[CD21]], [[CXCR5]], [[Conventional Flow Cytometry]], [[Immunohistochemistry]], [[Mechanistic Case for DN and DN2 Cells in Dengue]]
 
 ---

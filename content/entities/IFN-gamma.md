@@ -2,8 +2,8 @@
 type: entity
 tags: [cytokine, type-ii-interferon, t-bet, dn2, epigenetics, il-21r, receptor-mechanism]
 created: 2026-08-18
-updated: 2026-08-18
-sources: 8
+updated: 2026-08-23
+sources: 9
 ---
 
 # IFN-gamma
@@ -28,11 +28,11 @@ Interferon-gamma (IFN-γ, type II interferon) is one of the three canonical sign
 ### ★ Timing: IFN-γ acts in a discrete early priming window
 
 - IFN-γ is required during **days 0–3** ("priming"). Eliminating it from the first 3 days prevented pre-ASC formation and left ASCs essentially undetectable; supplying it *only* during priming matched continuous exposure (see [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]], human in vitro)
-- IFN-γ is **not itself a B cell mitogen** and is reported to induce apoptosis in human B cells — yet it synergises with TLR7/8 to permit multiple rounds of proliferation (see [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]])
+- IFN-γ is **not itself a B cell mitogen** and is reported to induce apoptosis in human B cells — yet it synergizes with TLR7/8 to permit multiple rounds of proliferation (see [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]])
 
-### ★ Mechanism: sensitisation via epigenetic remodelling and IL-21R upregulation
+### ★ Mechanism: sensitization via epigenetic remodeling and IL-21R upregulation
 
-- IFN-γ **sensitises B cells to subthreshold TLR7/8 signals**: at 0.1 µg/ml R848 (100-fold below the saturating dose) proliferation occurred **only** with IFN-γ, and ASC frequency was ~10-fold higher (see [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]])
+- IFN-γ **sensitizes B cells to subthreshold TLR7/8 signals**: at 0.1 µg/ml R848 (100-fold below the saturating dose) proliferation occurred **only** with IFN-γ, and ASC frequency was ~10-fold higher (see [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]])
 - ATAC-seq at day 3 identified **15,917 differentially accessible regions**. IFN-γ enriched accessibility around **T-bet** motifs; combined with IL-2 it produced the greatest enrichment around **T-bet, STAT5, NF-κB p65, REL, IRF4 and BLIMP1** motifs (see [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]], n=2–3/group)
 - IFN-γ remodels the ***PRDM1*** locus (4 differentially accessible regions, 3 of which are also present in SLE patient DN2 cells) and the ***IL21R*** locus (a region containing two putative T-bet motifs, seen only in IFN-γ-exposed cells and also present in SLE DN2 cells) (see [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]])
 - **IL-21R protein rose 5.5–6-fold by day 6** in B cells that saw IFN-γ during the first 3 days, and IL-21-induced **phospho-STAT3 was significantly increased** in those cells (see [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]]). See [[IL-21R]] and [[STAT3]].
@@ -66,3 +66,4 @@ Interferon-gamma (IFN-γ, type II interferon) is one of the three canonical sign
 - [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]]
 - [[Scharer2019 - Epigenetic Programming in SLE B Cells]]
 - [[Lamprinou2026 - ABCs and DN B Cells]]
+- [[Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue]]

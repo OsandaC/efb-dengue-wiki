@@ -1,0 +1,113 @@
+---
+type: source
+tags: [extrafollicular-response, nomenclature, GC-independent, atypical-B-cell, DN2, flow-cytometry, consensus-perspective, methodology]
+authors: [Eisenbarth SC, Batista F, Cyster J, Elsner R, Kelsoe G, Lund FE, Pillai S, Sanz I, Shlomchik M, Toellner KM, Vinuesa C, Baumgarth N]
+year: 2025
+journal: Immunity
+doi: 10.1016/j.immuni.2025.08.007
+citations_semantic_scholar: 26
+citations_crossref: 35
+citations_retrieved: 2026-08-27
+created: 2026-08-27
+updated: 2026-08-27
+---
+
+# Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses
+
+**Full citation:** Eisenbarth, S. C., Batista, F., Cyster, J., Elsner, R., Kelsoe, G., Lund, F. E., Pillai, S., Sanz, I., Shlomchik, M., Toellner, K.-M., Vinuesa, C., & Baumgarth, N. (2025). A roadmap for defining "extrafollicular" B cell responses. *Immunity, 58*(11), 2627–2645. https://doi.org/10.1016/j.immuni.2025.08.007
+
+**Raw file:** `[[raw/Eisenbarth2025.pdf]]`
+
+## Summary
+
+A twelve-author consensus Perspective arguing that the term "extrafollicular" (EF) has expanded far beyond its original anatomical meaning and now denotes at least **four mutually distinguishable situations**, with the consequence that a paper reporting an "EF response" no longer conveys a determinate biological claim. The authors trace the term to 1960s immunohistochemistry and to the hapten-immunisation mouse studies of the early 1990s, where EF meant one specific thing: proliferating antigen-specific B cell and plasmablast foci at the splenic bridging channels / red pulp and lymph node medullary cords, peaking days 4–6, distinct in location and kinetics from germinal centres. They then show that most current usages retain none of that anatomical content.
+
+The central corrective is a **split between two claims that the field routinely conflates**: that a response was *GC-independent* (an origin claim, potentially inferable from mutational load, GC-ablation genetics, or tissue architecture) and that a response was *extrafollicular* (a location claim, which the authors hold requires direct visualisation of antigen-specific B cell proliferation outside a follicle). Applied to the human DN2 cell, this yields the paper's most consequential sentence for this wiki: *"the EF designation of this human DN2 cell refers to its presumed GC-independent origin rather than its location."* GC-independence is left standing; the location inference is withdrawn as unlicensed. The authors state flatly that **no flow-cytometry marker set alone can identify an EF B cell or its progeny**, and that CD21^lo / CXCR5⁻ / CD11c⁺ may reflect *recent activation* rather than a stable lineage identity.
+
+In place of a unified definition — which the authors explicitly say they set out to write and concluded the field's knowledge cannot yet support — they propose a **framework**: a four-phase spatiotemporal model of B cell activation (phase 1 priming → phase 2 T-B border → phase 3 GC vs. GC-independent divergence → phase 4 differentiated output), a three-tier glossary sorting terms into well-accepted / requires-definition / avoid-or-define, and a set of **process-based replacement labels** ("primary non-GCB", "memory non-GCB", "secondary non-GCB") to be used when location is unknown. They recommend retiring "ABC" as an acronym on the grounds that it has four incompatible expansions, and note that mouse "DN" and human "DN" name different cells with different markers. The Perspective is dedicated to the memory of Michael Cancro (1949–2025).
+
+## Study Design
+
+- **Type:** Consensus Perspective / nomenclature framework proposal — not primary research. No new data. In-text citations run to ref 137.
+- **Sample size:** N/A. Evidence is drawn from the mouse and human literature, tabulated in Table 1 — **13 B cell states × 10 columns** (state, aliases in mice, aliases in humans, ASC status, isotypes, mutational load, transcription factors, markers in mice, markers in humans, disease situations), spanning pp. 2631–2632.
+- **Setting:** Authors span twelve institutions (Northwestern, Harvard, UCSF/HHMI, Pittsburgh, Duke, UAB, Ragon, Emory, Babraham, Crick, Johns Hopkins, MIT). The manuscript arose from organised multi-group discussions.
+- **Population:** N/A — the object of analysis is the literature's vocabulary, in both mouse and human B cell immunology.
+
+## Key Findings
+
+**The four situations now called "EF"** (the paper's own taxonomy of the ambiguity):
+
+| # | Situation | Content |
+|---|---|---|
+| 1 | Original description | Proliferating B cell / PB foci in splenic bridging channels + red pulp or LN medullary cords after immunisation. Location-defined. |
+| 2A | Infection **with** lymphoid architecture disruption | *Salmonella*, *Leishmania*, *Ehrlichia*, *Plasmodium*, LCMV, *Borrelia*. Robust PB dominance, but inflammation obscures follicle demarcation, so "outside the follicle" is partly an artefact of not being able to see the follicle. |
+| 2B | Infection **without** architecture disruption | Influenza, SARS-CoV-2 — T-dependent, GC-independent, high-avidity, long-lived responses in structurally intact LNs where the site of selection is simply unknown. |
+| 3 | Chronic T-dependent activation with low Ig mutation load | Autoimmunity, persistent infection, Peyer's patches, tonsil. |
+| 4 | **Phenotypically defined blood or non-lymphoid B cells** | Human autoimmunity, infection, allergy, vaccination — no location data at all. *This is the situation the present wiki's human evidence base occupies.* |
+
+- **★ The DN2 location claim is explicitly withdrawn, the origin claim is not.** GC-independent derivation of DN2 is described as *suggested* by severe-COVID tissue studies and lupus-nephritis kidney biopsies (single-cell analysis of kidney tissue "largely devoid of tertiary lymphoid structures" found activated B cells transcriptomically identical to blood DN2, incl. ZEB2, T-bet, CD11c). But: **"direct visualization of EF foci with DN2 cells in the splenic bridging channel or LN medullary cords has not been done,"** and such cells "may emanate from reactions in other non-classical EF sites (e.g., T-B border, etc.)." Verbatim conclusion: *"the EF designation of this human DN2 cell refers to its presumed GC-independent origin rather than its location."*
+- **★ No flow cytometry panel can establish an EF response.** *"Currently there are no flow cytometry-based means alone that can distinguish EF B cells nor their progeny from activated cells in earlier phases. Few if any markers exist that define EF B cells in the absence of tissue imaging of antigen-specific B cell proliferation outside of a follicle."* Absence of CXCR5, low SHM, low-affinity BCR, and IgM isotype are each individually non-definitive, "as they can be observed in B cells that have participated in a GC response."
+- **★ CD21^lo / CXCR5⁻ / CD11c⁺ may mark recent activation, not lineage.** *"Low expression of CD21 and CXCR5 and increased CD11c could indicate recent B cell activation rather than a permanent state of expression/lack of expression."* The same caution is extended to CD71.
+- **T-bet⁺CD11c⁺ does not imply EF origin — in either species.** In mice, ABC-phenotype cells arise in viral infections where they are GC-derived memory. In humans, post-influenza-vaccination CD11c⁺T-bet⁺FcRL5⁺ cells at ≤1 week are CD27⁺CD21^lo and bear hallmarks of prior GC selection and affinity maturation (high SHM) — i.e. **recent GC emigrants**, not EF products. Others are CD27⁺ reactivated memory. Conclusion: *"CD11c and T-BET expression or lack of CD27 are not exclusive markers of EF B cell responses."*
+- **T-bet is downstream of the cytokine environment, not of a pathway.** Type 1 cytokines (IFN-γ, IL-12) and particular TLR signals drive B cell T-bet, "reflecting the nature of the immune environment but not necessarily a singular type of response." T-bet is also expressed by GC B cells and GC-derived memory. The authors' analogy: one would not claim all T-bet⁺ T cell subsets (Tfh1, Th1, CD8) are the same population.
+- **"ABC" has four incompatible expansions and should be retired** (Box 1, "terms to avoid"): **A**ge-associated B cells (CD11c^hi, aged mice); **A**utoimmunity-associated B cells (CD11c^hi, mouse + human autoimmunity); **A**typical B cells (human blood, non-classical marker/transcriptional profile, CD27⁻IgD⁻CD11c^hi — with the note that *"atypical is subjective in regard to what B cells are expected to express"*); **A**ctivated B cells (human blood, CD71⁺, which may or may not be CD11c⁺T-bet⁺). Recommendation: define the cells in each instance and avoid the acronym. **"ABC should not be used to infer an EF origin."**
+- **Mouse "DN" ≠ human "DN".** In mice, DN memory = CD80⁻PDL2⁻ (or CD80⁻CD73⁻); in humans, DN = IgD⁻CD27⁻. Table 1 footnote: *"'DN' in mice and 'DN' in humans refers to different markers and different B cell subsets."* Mouse DN and DP memory are both long-lived and EF responses generate both; DP memory preferentially becomes ASC on recall, DN memory preferentially re-enters GCs. Alum-adjuvanted GC responses generate almost exclusively CD80⁺PDL2⁺ (DP).
+- **Mutational load gives a *probability* of GC participation, not a measure** (Figure 2). Mutational content = SHM **rate** × **time**; rate is rarely measured and only the product is assessed. One direct measurement in autoimmune mice found the EF SHM *rate* similar to GC-dependent responses after NP immunisation — the load differs mainly because GC responses last longer and repeatedly re-engage CD40–CD40L, sustaining AID. In prolonged EF responses (MRL/lpr, chronic *Salmonella*) mutational load approaches GC levels. AID expression is likewise non-diagnostic, since AID is also required for class switching, which typically precedes GC entry.
+- **The original EF description already included the features later assumed to be GC-exclusive.** The early hapten studies showed EF responses generating IgM *and* IgG, and contributing to long-lived PC and memory compartments. The later assumption that EF means "low-affinity, transient, short-lived IgM to T-independent antigens" is described as *"not consistent with the original descriptions."* High-affinity BCRs preferentially expand at EF sites via increased proliferation and reduced apoptosis after competing for early T help.
+- **Phase model (phases 1–4).** Phase 1: BCR engagement (signal 1) in the follicle; signal 2 from T cells, TLR ligands, or complement. Phase 2: T-dependent B cells relocate within ~6 h to the T-B border / IFZ / subcapsular sinus / inner MZ, driven by ↑EBI2, ↑CCR7, ↓CXCR5, ↓S1PR1; proliferation occurs here for a few days. **The authors did not reach consensus on whether phase 2 counts as "EF"** — they suggest "perifollicular", "interfollicular", "T-B border", or "T-dependent non-GC" instead. Phase 3: divergence into GC (↓EBI2, ↓CCR7, ↑S1PR2/P2RY8, CXCR5+CXCR4) vs. GC-independent blast/PB growth (↑CXCR4, no S1PR2, ↓↓CXCR5, EBI2-dependent migration to bridging channels/red pulp). Phase 4: output — both pathways generate PBs, memory, and short- and long-lived PCs, differing in kinetics and relative contribution.
+- **A trap in phase 4 that the wiki should hold onto:** the final maturation of **GC-derived** PCs happens *outside* the follicle — in splenic bridging channels/red pulp and LN medulla, and GC-derived PBs can still undergo T cell selection in the LN medulla after exiting. *"Although these areas overlap with EF locations, these ASCs are GC-derived and should not be confused with EF response-derived ASCs."* Finding an ASC at an EF site is therefore not evidence of an EF response.
+- **Box 2 — what tips phase 3 toward EF vs. GC:** strong signal 1 (extensive BCR crosslinking, e.g. capsular polysaccharide, viral capsid) drives classical EF via BTK without T help but rarely forms GCs; **IL-12 and IFN-γ favour EF**; **IL-4 suppresses TLR7's ability to drive EF** and IL-4/IL-13 support follicular entry; **Tfh-derived IL-2 promotes EF differentiation via mTOR → IRF4 → BLIMP-1**; antigens strongly crosslinking **TLR9 + BCR potently drive EF**, whereas **TLR7-ligand-bearing antigens induce robust GC *and* EF responses**; strong BCR and/or TLR signalling drives NF-κB c-Rel-mediated IRF4 induction (B cell-intrinsic MyD88 + TRIF enhanced EF PB development after influenza via c-Rel → IRF4). Once a T-dependent EF focus is established, ongoing T help is not required for PB proliferation (CD40L blockade after initiation does not stop it).
+- **Proposed process-based replacement labels** (to be used when location is unknown, with the criteria stated): AcN → **"primary non-GCB"**; DN1 → **"memory GCB"** or **"memory non-GCB"** depending on evidence; DN2 → **"primary switched non-GCB"** (or "primary switched GCB" if evidence warrants); effector/activated memory → **"secondary non-GCB"**; generic **"non-GCB"** where GC-independence is claimed but spatial data are absent. "EF B cells" is reserved for responses actually observed in the bridging channel, red pulp, or subcapsular sinus. Consensus *was* reached on one boundary: **EF responses do not include B cell responses at non-lymphoid sites.**
+- **The nature of T help outside the GC is unresolved.** T-dependent but Tfh-independent (therefore likely GC-independent) antibody responses exist; BCL6⁺ T cells interacting with activated B cells in early EF responses have been identified; the authors decline to subdivide further. Memory reactivation in LNs may occur at a **subcapsular proliferative focus (SPF)** where antigen and memory Tfh cells co-localise.
+- **Eight open questions are posed explicitly**, including: what should the field call responses at the follicular border that are T-guided and show SHM and selection? How are BCR mutation and selection accomplished outside the GC? **What secondary lymphoid organ environments produce the variety of human B cell populations found in the blood?** How do chronic vs. acute EF responses differ? How are the different subsets labelled ABCs related to each other?
+
+## Methods Used
+
+No experimental methods were performed. The Perspective's methodological argument bears on:
+[[Conventional Flow Cytometry]] · [[Immunohistochemistry]] · [[BCR Sequencing]] · [[Spectral Flow Cytometry]]
+
+All four were visited and updated.
+
+## Entities Mentioned
+
+[[DN2 B Cell]] · [[Double-Negative B Cell]] · [[Atypical B Cell]] · [[Age-Associated B Cell]] · [[Activated Naive B Cell]] · [[CD11c]] · [[T-bet]] · [[CXCR5]] · [[CD21]] · [[ZEB2]] · [[TLR7]] · [[Plasmablast]]
+
+*Also discussed but not separately updated in this ingest:* CD27, CD71, FCRL5, IRF4, BLIMP-1, AID, Bcl-6, CD23, CD24, CD38, CD138, CXCR3, IFN-γ, IL-21, TLR9, Switched Memory B Cell, Early Memory B Cell, DN3 B Cell, and the Table 1 trafficking receptors not held as wiki entities (EBI2/GPR183, S1PR1, S1PR2, P2RY8, CCR7, CXCR4, CCR9, CCR10).
+
+## Concepts Addressed
+
+[[GC-Independent Response]] · [[Extrafollicular Response]] · [[Germinal Center]] · [[Somatic Hypermutation]] · [[Extrafollicular T Cell Help]] · [[Toll-like Receptor Signaling in B Cells]]
+
+*Also discussed but not separately updated:* [[Class Switch Recombination]], [[Memory B Cell]], [[Follicular Exclusion]], [[B Cell Receptor Signaling]].
+
+## Relevance & Notes
+
+**This is the first ingested paper that qualifies the wiki's organising vocabulary rather than adding to its evidence base.** Its practical effect is to split one claim the wiki has been making into two, and to license only one of them from blood data:
+
+| Claim | Licensed from blood flow cytometry? |
+|---|---|
+| DN2/atypical cells are **GC-independent** in origin | Yes, by inference — from low SHM, GC-ablation genetics (TLR7 GoF), transcriptional identity with tissue B cells in GC-devoid biopsies, and clonal connectivity to aNAV. Eisenbarth describes this as "suggested," not proven. |
+| DN2/atypical cells are **extrafollicular** in location | **No.** Requires tissue imaging of antigen-specific proliferation outside a follicle, which "has not been done" for human DN2. |
+
+Nothing in the wiki's mechanistic spine falls. The TLR7 + IFN-γ + IL-21 differentiation pathway of [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]], the ZEB2/T-bet transcriptional programme, the CD40L antagonism, the epigenetic trajectory of [[Scharer2019 - Epigenetic Programming in SLE B Cells]], and the clonal connectivity of [[Tipton2015 - ASC Diversity and Origin in SLE]] are all origin/process evidence and are untouched. What changes is that **the word "extrafollicular" over-claims when the evidence is a blood panel**, and that several markers the wiki treats as pathway identifiers (CD11c, T-bet, CXCR5-negativity, CD21^lo) are re-cast as possible activation-state readouts.
+
+**Authorship gives this unusual weight.** [[Sanz2025 - Human Atypical B Cells Overview]] and [[Sanz2019 - Consistent Classification of Human B Cell Populations]] are ingested here, and [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]] is from Sanz's laboratory. Ignacio Sanz is a co-author of this Perspective. The DN1/DN2/aNAV framework's own principal architect is signing the statement that the EF designation of DN2 refers to presumed origin rather than location. This is not an outside critique of the framework — it is the framework's authors bounding their own claim.
+
+**Direct confirmations of existing wiki content.** The COVID-19 tissue evidence relayed here is [[Kaneko2020 - GC Loss and TFH Block in COVID-19]] and [[Woodruff2020 - EF B Cell Responses in COVID-19]], both ingested; the paper's use of them (GC-independent, class-switched responses conserved in mice and humans early in infection) matches the wiki's reading. Box 2's statement that IL-4/CD40L oppose the TLR7-driven pathway independently corroborates the CD40L-inhibition result of Jenks2018. The DN1-as-possible-GC-memory reading agrees with the "DN1 shares the SWM transcriptome" position already on [[Double-Negative B Cell]] and with the [[Beckers2023 - Origins and Functions of DN B Cells]] finding that the DN1-memory/DN2-effector split is a working model rather than a settled dichotomy.
+
+**Where it cuts against the wiki.** [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]] is corroborated and extended: the post-influenza-vaccination CD11c⁺T-bet⁺ cells described here as recent GC emigrants with high SHM are the same phenomenon Sutton read as an alternative *memory* lineage. Eisenbarth adds the mechanism-agnostic version — the phenotype is compatible with several origins, so origin cannot be read off it. Against [[Woodruff2020 - EF B Cell Responses in COVID-19]]: the "EF" in that paper's title is, on this framework, situation 4 (blood phenotype, no location data) and would be better stated as GC-independent — though Woodruff's companion tissue evidence via Kaneko2020 is exactly the kind of support the framework asks for.
+
+**Limitations, stated by the authors.** They set out to define "EF" and concluded they could not: *"we lack a sufficiently comprehensive understanding of B cell activation and reactivation pathways to develop a unifying definition."* Consensus among the twelve authors failed on at least two points they flag in the text — whether phase 2 (T-B border) should be called EF, and whether the T-B border belongs in the definition of an extrafollicular *location* at all. The proposed replacement labels are therefore a recommendation from a group that did not fully agree, not a ratified standard; no professional society has adopted them. The framework is also overwhelmingly mouse-derived ("these sequences of reactions have been primarily defined through studies in mice") while the terminological problem it addresses is most acute in human blood studies, where the corrective it prescribes — tissue imaging — is usually infeasible. It offers no alternative method for human work beyond stating criteria precisely.
+
+**Curator decision recorded at ingest (2026-08-27):** the process-based labels are held as an **annotation layer** — recorded on affected entity pages and on the source page, with DN1/DN2/aNAV retained as the wiki's working names for searchability against the existing literature. No page renames. See [[GC-Independent Response]] for the origin-vs-location distinction as a standing concept.
+
+**Dedication.** The Perspective is dedicated to Michael Cancro (1949–2025), author of [[Cancro2020 - Age-Associated B Cells]] — a paper built on the ABC framing that this Perspective recommends retiring. Both positions are held in the wiki; see Contradictions on [[Age-Associated B Cell]].
+
+## Questions Raised
+
+- **What would it take to license an EF-location claim in dengue?** The wiki's dengue evidence is entirely peripheral blood. Lymph node or splenic tissue from acute dengue is not obtainable in the curator's setting. Does that mean the dengue arm should claim GC-independence only — and if so, what is the strongest available surrogate (SHM load, CXCR5/CD21 kinetics across timepoints, GC-marker absence in a paired sample)?
+- **Can longitudinal sampling distinguish "recent activation" from "lineage" in a blood panel?** Eisenbarth's caution is that CD21^lo/CXCR5⁻/CD11c⁺ may be transient activation states. Repeated sampling across fever days — which acute dengue permits and SLE cross-sections do not — is a design the paper does not consider and which the wiki's dengue cohorts could actually run.
+- **Is the DN2 population in dengue a primary or a secondary response?** The paper makes this the first question to answer for any human subset, and secondary dengue is the wiki's central severity context. Distinguishing naive-derived from memory-reactivated CD11c⁺ cells requires SHM data, not phenotype alone — and this is exactly where primary vs. secondary dengue infection would differ.
+- **Does the mutational-load-as-probability model (Figure 2) change how the wiki reads dengue SHM findings?** [[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]] is currently read as EF-supportive. Under Figure 2, low load is evidence *against* GC participation only probabilistically, and the rate-vs-load distinction was never measured in that study.
+- **Should the wiki adopt "non-GCB" terminology in the thesis itself?** The annotation-layer decision defers this. A thesis written in 2026–27 will be read against a nomenclature the field may have moved on.
+- **What is the T cell in an extrafollicular dengue response?** The paper flags T-dependent-but-Tfh-independent responses as an unresolved category. [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]] reports peripheral helper T cells in dengue — a candidate answer the paper does not consider.

@@ -2,8 +2,8 @@
 type: method
 tags: [neutralization, PRNT, antibody-function, serotype, dengue-serology]
 created: 2026-05-08
-updated: 2026-05-08
-sources: 1
+updated: 2026-08-23
+sources: 2
 ---
 
 # PRNT
@@ -32,3 +32,4 @@ PRNT provides serotype-specific neutralization data that ELISA and other binding
 ## Sources
 
 - [[GarciaBates2013 - Plasmablast Response and Dengue Severity]]
+- [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]

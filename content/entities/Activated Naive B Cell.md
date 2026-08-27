@@ -2,8 +2,8 @@
 type: entity
 tags: [b-cell-subsets, activated-naive, extrafollicular, SLE, plasmablast-precursor, flow-cytometry]
 created: 2026-05-02
-updated: 2026-05-07
-sources: 6
+updated: 2026-08-27
+sources: 9
 ---
 
 # Activated Naive B Cell
@@ -27,6 +27,14 @@ acN cells represent an important extrafollicular precursor pool: a substantial f
 - **Temporal relationship with disease activity:** acN cell frequency (measured as CD23⁻ cells among IgD⁺CD27⁻ naive B cells) tracked with disease activity across longitudinal time points in three patients, including shifts between moderate and severe flares (see [[Tipton2015 - ASC Diversity and Origin in SLE]], 13 longitudinal experiments).
 - **CD23⁻ phenotype reflects sustained activation:** CD23 downregulation on acN cells is consistent with sustained BCR activation, TLR9 signalling, and IFN-α/γ exposure — all prominent pathways in SLE (see [[Tipton2015 - ASC Diversity and Origin in SLE]]).
 
+- **Review-level corroboration of the aNAV→DN2 axis, framed as the central evidence for a GC-independent DN origin.** A 2023 review of DN origins uses the aNAV/DN2 relationship as its primary argument for a GC-independent origin of DN2/DN3: in SLE and HD, DN2 cells are related to activated naive B cells phenotyped as **IgD⁺CD27⁻CD21⁻CD24⁻T-bet⁺**; the two share high CD19 and CD11c, lack CD21/CXCR5/CD24/CD38, share a transcriptome and expanded clones, both respond to TLR7 ligand + IFN-γ + IL-21, and a proportion of aNAV cells differentiate into DN2 in vitro under that stimulation. This restates [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]] rather than adding data, but it is the framing under which the field now reads the aNAV compartment (see [[Beckers2023 - Origins and Functions of DN B Cells]], review, citing Jenks 2018).
+- **The complementary migration argument:** DN2 cells lack **CXCR5 and CD62L**, both required for migration into lymphoid follicles — so the GC-independent origin is supported by an inability to reach the follicle, not only by transcriptional similarity to aNAV (see [[Beckers2023 - Origins and Functions of DN B Cells]], review; see [[Follicular Exclusion]]).
+
+- **The aNAV phenotype may partly report recent activation rather than a stable cell state — with a direct panel consequence.** The consensus Perspective cautions that *"low expression of CD21 and CXCR5 and increased CD11c could indicate recent B cell activation rather than a permanent state of expression/lack of expression,"* extending the same caution to CD71. Since aNAV is defined by exactly this combination (CD21^lo, CXCR5⁻, CD11c⁺⁺ within the IgD⁺CD27⁻ gate), a single cross-sectional blood draw cannot distinguish "activated naive cell committed to the DN2 trajectory" from "any naive B cell activated in the last few days." **Serial sampling is the discriminator the wiki's dengue cohorts can actually run** — acute dengue permits repeat draws across fever days, which SLE cross-sections do not (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data).
+- **Annotation layer — the proposed process-based label for this cell is "primary non-GCB"**, on the reasoning that the data indicate first activation of that population without GC participation. The wiki retains "activated naive / aNAV" as its working name; curator decision, 2026-08-27 (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]]).
+
+- **[2026-08-27] Activated naive B cells are expanded in IgG4-related disease blood** (p<0.01 as a percentage of naive B cells, n=38, 13-colour FCM), alongside expansions of DN, DN2, DN3, DN4 and plasmablasts and a fall in unswitched memory. The aNAV gate follows Kaminski/Sanz 2012. This extends the aNAV expansion — already established in SLE and COVID-19 — to a **third disease with a fibro-inflammatory rather than classically autoantibody-driven mechanism**, consistent with aNAV being a general marker of GC-independent B cell activation rather than an SLE-specific finding. No aNAV→DN2 developmental evidence is presented in this paper (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=38).
+
 ## Contradictions & Debates
 
 - Whether acN cells differentiate into ASCs via extrafollicular pathways, germinal centre pathways, or both is not resolved by this study. The phylogenetic clone trees observed are consistent with a model of asymmetric differentiation through both EF and GC reactions simultaneously. The presence of low-SHM (~0%) acN precursors co-existing with high-SHM (~21%) ASC progeny most parsimoniously fits an EF model with prolonged AID-driven diversification occurring outside canonical GC structures.
@@ -47,9 +55,9 @@ acN cells represent an important extrafollicular precursor pool: a substantial f
 
 ## Related Pages
 
-[[DN2 B Cell]], [[Plasmablast]], [[Extrafollicular Response]], [[Double-Negative B Cell]], [[CD19]], [[CD21]], [[CD23]], [[CD24]], [[CD38]], [[CD11c]], [[T-bet]], [[CXCR5]], [[IgD]], [[Somatic Hypermutation]], [[BCR Sequencing]], [[TLR7]], [[CD10]]
-
+[[DN2 B Cell]], [[Plasmablast]], [[Extrafollicular Response]], [[Double-Negative B Cell]], [[CD19]], [[CD21]], [[CD23]], [[CD24]], [[CD38]], [[CD11c]], [[T-bet]], [[CXCR5]], [[IgD]], [[Somatic Hypermutation]], [[BCR Sequencing]], [[TLR7]], [[CD10]], [[GC-Independent Response]], [[DN3 B Cell]]
 ## Sources
+- [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]]
 
 - [[Tipton2015 - ASC Diversity and Origin in SLE]]
 - [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]
@@ -57,3 +65,5 @@ acN cells represent an important extrafollicular precursor pool: a substantial f
 - [[Woodruff2020 - EF B Cell Responses in COVID-19]]
 - [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]
 - [[Scharer2019 - Epigenetic Programming in SLE B Cells]]
+- [[Beckers2023 - Origins and Functions of DN B Cells]]
+- [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective; CD21ˡᵒ/CXCR5⁻/CD11c⁺ may report recent activation

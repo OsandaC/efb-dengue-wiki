@@ -2,8 +2,8 @@
 type: method
 tags: [flow-cytometry, spectral, high-dimensional, Cytek-Aurora, UMAP, B-cell-phenotyping]
 created: 2026-05-04
-updated: 2026-05-04
-sources: 1
+updated: 2026-08-27
+sources: 2
 ---
 
 # Spectral Flow Cytometry
@@ -22,14 +22,19 @@ The primary platform in the wiki's literature is the **Cytek Aurora**, a benchto
 - **Intracellular staining for T-bet:** Combined with surface spectral panel using True-Nuclear Transcription Factor Buffer Set (BioLegend). T-bet expression was highest in aN and DN2 populations — confirming that spectral panels can integrate intracellular transcription factor staining with high-parameter surface phenotyping (see [[Woodruff2020 - EF B Cell Responses in COVID-19]], n=4 ICU-C patients).
 - **Standardised B cell definitions (Table 1):** The paper provides a complete lookup table of primary and secondary B cell populations with precise marker definitions suitable for reproducing the gating strategy in any spectral or high-parameter conventional panel. This is the most complete published reference for EF pathway population identification by flow cytometry (see [[Woodruff2020 - EF B Cell Responses in COVID-19]], Table 1).
 
+- **★ More colours do not buy an extrafollicular call — the limit is categorical, not one of panel resolution.** A twelve-author consensus Perspective holds that *"currently there are no flow cytometry-based means alone that can distinguish EF B cells nor their progeny from activated cells in earlier phases,"* because "extrafollicular" names a **location and a process**, not a precursor: *"EF refers only to the nature and site of the response, not the precursor B cell that initiated it,"* and EF responses can be seeded by naive follicular, marginal zone, B-1, or memory B cells, each entering with a different phenotype. A 30-colour spectral panel is subject to exactly the same limit as an 8-colour conventional one (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data). This matters specifically for spectral work because high parameter count is often taken as sufficient for confident subset assignment — it resolves *populations* better, not *origins*.
+- **What high-dimensional panels do add against this constraint.** The Perspective's own recommendation is that combinations of markers, transcription factors, proliferation status (Ki67), ASC potential, and mutational load together *"help define stages and pathways of B cell activation."* Spectral panels are well suited to exactly that combination — the licensed output is a well-characterised **B cell state** and, with converging evidence, a claim of **GC-independence**; not a claim of anatomical location. See [[GC-Independent Response]] and [[Conventional Flow Cytometry]], which carries the full statement of the limit (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data).
+- **A caution that lands harder on high-dimensional panels than on small ones:** *"low expression of CD21 and CXCR5 and increased CD11c could indicate recent B cell activation rather than a permanent state of expression/lack of expression."* Panels resolving many activation-sensitive markers at one acute timepoint can produce finely separated clusters that are activation-state gradients rather than distinct populations (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data).
+
 ## Contradictions & Debates
 
 - Spectral unmixing introduces computational complexity not present in conventional cytometry. Autofluorescence handling, reference control requirements, and unmixing artefacts can differ between platforms (Cytek Aurora vs. Sony SP6800 vs. Thermo Fisher Bigfoot). Results are validated by the concordance with the SLE reference data obtained by conventional cytometry in the same lab.
 
 ## Related Pages
 
-[[Conventional Flow Cytometry]], [[FACS Sorting]], [[DN2 B Cell]], [[Activated Naive B Cell]], [[Double-Negative B Cell]]
+[[Conventional Flow Cytometry]], [[FACS Sorting]], [[DN2 B Cell]], [[Activated Naive B Cell]], [[Double-Negative B Cell]], [[GC-Independent Response]]
 
 ## Sources
 
 - [[Woodruff2020 - EF B Cell Responses in COVID-19]]
+- [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective; parameter count does not overcome the EF-identification limit

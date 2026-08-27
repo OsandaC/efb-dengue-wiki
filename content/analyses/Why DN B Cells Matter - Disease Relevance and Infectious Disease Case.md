@@ -2,8 +2,8 @@
 type: analysis
 tags: [double-negative-b-cell, atypical-b-cell, DN2, infectious-disease, evidence-weighting, justification, biomarker, gap-analysis]
 created: 2026-08-18
-updated: 2026-08-18
-sources: 21
+updated: 2026-08-26
+sources: 22
 ---
 
 # Why DN B Cells Matter — Disease Relevance and the Infectious Disease Case
@@ -23,13 +23,13 @@ What does the wiki's ingested literature actually establish about why DN (IgD⁻
 
 **Tier B — zero-original-data reviews/opinion; the wiki holds these claims only through the review's characterization of papers it has never read**
 
-- [[Sanz2025 - Human Atypical B Cells Overview]] · [[Cancro2020 - Age-Associated B Cells]] (predominantly murine) · [[Glaros2025 - Multilayered Identity of B Cell Memory]] · [[Lamprinou2026 - ABCs and DN B Cells]] (opinion, self-cited framework)
+- [[Sanz2025 - Human Atypical B Cells Overview]] · [[Cancro2020 - Age-Associated B Cells]] (predominantly murine) · [[Glaros2025 - Multilayered Identity of B Cell Memory]] · [[Lamprinou2026 - ABCs and DN B Cells]] (opinion, self-cited framework) · [[Beckers2023 - Origins and Functions of DN B Cells]] (**the field's landmark DN disease survey — and the source of §6's documented dengue absence**; part own data, so partially Tier A for the Fraussen/Somers group's own MS and healthy-donor results)
 
 **Supporting — antibody-output and clinical-classification layer (not DN-phenotype papers)**
 
 - [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]] · [[Appanna2016 - Plasmablasts as Subset of Memory B Cell Pool]] · [[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]] · [[GarciaBates2013 - Plasmablast Response and Dengue Severity]] · [[Narvaez2011 - Evaluating WHO Dengue Severity Classifications]] · [[Morra2018 - Defining Warning Signs and Severe Dengue]]
 
-> **Coverage note.** All **24** wiki sources were assessed; **21** are cited above. The three assessed-and-not-cited are [[Wrammert2012 - Plasmablast Responses in Acute Dengue]], [[Parameswaran2013 - Convergent Antibody Signatures in Dengue]] and [[Bhattacharya2016 - Memory B Cell Subset Selection in Secondary Dengue]] — all plasmablast/BCR-repertoire work with no DN-compartment measurement and no bearing on this question. The `sources: 21` frontmatter counts cited sources, not corpus coverage.
+> **Coverage note — partially stale; read the dates.** [[Beckers2023 - Origins and Functions of DN B Cells]] was added **2026-08-26** and is cited, bringing cited sources to **22**. **Two sources ingested since the original sweep have NOT been re-assessed against this question** — [[Posadas-Mondragon2020 - TLR Polymorphisms and Clinical Forms of Dengue]] and [[Wang2006 - Flavivirus Activation of pDCs and TLR7 Signaling]] — both TLR papers with no DN-compartment measurement, so they are unlikely to change the argument, but neither has been checked. The corpus now stands at **31** sources. **Original note (2026-08-18) follows:** All **24** wiki sources were assessed; **21** are cited above. The three assessed-and-not-cited are [[Wrammert2012 - Plasmablast Responses in Acute Dengue]], [[Parameswaran2013 - Convergent Antibody Signatures in Dengue]] and [[Bhattacharya2016 - Memory B Cell Subset Selection in Secondary Dengue]] — all plasmablast/BCR-repertoire work with no DN-compartment measurement and no bearing on this question. The `sources:` frontmatter counts cited sources, not corpus coverage.
 
 ---
 
@@ -178,7 +178,41 @@ Each item below changes what a blood DN number can be claimed to mean.
 
 Anyone arguing "DN cells matter in infectious disease" from this wiki is, to a substantial degree, **arguing by transfer from autoimmunity**. The transfer is licensed by the conserved cross-disease transcriptional programme — ABCs from malaria, HIV and autoimmune disease share transcriptional profiles ([[Glaros2025 - Multilayered Identity of B Cell Memory]], review, citing Holla 2021) — but that licence is **Tier B, transcriptomic, drawn from chronic settings, and dengue-untested**. It is also internally contested: even within the shared T-bet⁺CD11c⁺ phenotype, ABCs are transcriptomically distinct from DN2 ([[Lamprinou2026 - ABCs and DN B Cells]], citing Maul 2021), and functionally SLE DN2 (BCR-competent, FCRL4⁻) separate from HIV/malaria atypical memory (hyporesponsive, FCRL4⁺).
 
-### 6. What this licenses saying about dengue
+### 6. ★ The gap is documented, not merely inferred — dengue is absent from the field's landmark disease survey
+
+Everything in §5 is an argument about **evidence the wiki holds**. This section is about **evidence the field does not hold**, which is a different and unusually citable kind of claim.
+
+[[Beckers2023 - Origins and Functions of DN B Cells]] (*Immunology Letters* 2023; 86 refs) is the standard comprehensive reference for DN B cells in health and disease. Its Table 1 surveys human peripheral blood DN B cells across **~25 conditions**:
+
+| Block | Conditions covered |
+|---|---|
+| Health / aging | healthy donors (young <60, aged >60) |
+| Autoimmune (13) | SLE, pSS, SSc, RA, JIA, axSpA, MS, NMOSD, myasthenia gravis, Guillain–Barré, Hashimoto's, Graves', IBD |
+| **Infections (6)** | **meningitis/encephalitis, acute sepsis, malaria, rotavirus, HIV, COVID-19** |
+| Vaccination | influenza, tick-borne encephalitis virus |
+| Other (5) | Alzheimer's, CVID, ALS, obesity, NSCLC |
+
+**Dengue appears nowhere — not in the table, not in the text, not in the reference list.**
+
+**Why this is worth a section rather than a footnote.** The wiki's premise that DN/EF B cells in dengue are understudied has until now been an inference from its own reading list, which is the weakest form of a negative claim. Beckers converts it into an observation about the field, made by an independent group with no dengue interest, in a review broad enough to include **rotavirus** and **lung tumour tissue**. Dengue's absence is therefore not a scope decision.
+
+**And it is a missing *category*, not just a missing row.** The conditions Beckers covers are predominantly **chronic** — HIV, malaria, autoimmunity, normal aging — with COVID-19 as the single acute-infection exemplar. Dengue would occupy an under-populated cell: an **acute, self-limiting, serotype-structured** febrile illness with a well-defined secondary-infection immunopathology. This is the same asymmetry §5 names from the other direction: the transfer argument runs from chronic and autoimmune settings, and dengue is neither.
+
+**⚠ Three limits on how hard this can be pushed.**
+
+1. **It is a 2023 snapshot.** Both dengue DN measurements in this wiki — [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]] (n=170) and [[Singh2026 - DENV-Specific Memory B Cell Subsets]] (preprint) — **postdate** the review. The defensible claim is *"as of early 2023, dengue had not entered the DN disease literature,"* **not** *"nobody has studied DN cells in dengue."* Writing the second where the first is true would be a real overreach — and it is the version that reads better, so it needs guarding against.
+2. **It is a narrative review with no stated search strategy.** An omission from a non-systematic review is weaker evidence of a field-level gap than an omission from a systematic one. It remains the best available evidence, and it is the reference the field actually uses.
+3. **The absence may be partly methodological rather than purely a gap in attention.** Beckers reports that the severe-COVID DN2/DN3 expansion is **transient**, with frequencies in recovered patients matching those who were never severe. If dengue's DN response decays comparably, cohorts sampled at convalescence would record nothing — so some fraction of "nobody has found it" may be "nobody has sampled early enough." That is a **constraint on cohort design**, and it is actionable rather than merely cautionary.
+
+**What Beckers additionally hands this analysis, beyond the absence.** Three points that bear on §§1–5:
+
+- **The exhausted-vs-activated split now has a phenotypic axis, and it splits by disease class.** DN cells carry **multiple inhibitory receptors (FcRH3-5, CD22, CD85j)** in HIV, malaria, vaccinees and healthy donors, but **lack** them in SLE and Hashimoto's thyroiditis. Beckers' reading: exhaustion in chronic infection and aging, activation in autoimmunity. This is the axis §5 was reaching for when it separated "SLE DN2 (BCR-competent, FCRL4⁻)" from "HIV/malaria atypical memory (hyporesponsive, FCRL4⁺)." **Dengue's placement is undetermined** — it is acute like COVID-19 (activated side) but infectious like HIV/malaria (exhausted side), and [[Singh2026 - DENV-Specific Memory B Cell Subsets]]'s temporal-correlation result arguing against exhaustion is currently the only dengue-specific evidence either way. ⚠ Note the internal inconsistency flagged on [[FcRH4]]: the same review elsewhere states that circulating DN cells are FcRH4⁻ in HD and SLE, which cannot be squared with "FcRH3-5 in healthy donors" as written.
+- **An expanded DN compartment does not imply an expanded DN2 compartment.** In **MS**, only a *minority* of DN cells could be retraced to CD21⁻CD11c⁺ (DN2-like) cells, and Beckers concludes the role of DN cells in MS "could differ from that in SLE." Since §7 already flags that no dengue study has resolved DN1/DN2/DN3, MS is a worked example of the failure mode: total-DN and DN2 can move independently, and the SLE model does not transfer automatically.
+- **The DN1-memory / DN2-effector dichotomy is softer than §§2–3 assume.** **DN1 cells also differentiate into ASCs in vitro** under the same TLR7 + BCR + IFN-γ + IL-21 cocktail used for DN2, and scRNA velocity has been reported flowing **both** DN1→SM and SM→DN1. The dichotomy stays as the best organising frame — DN2 alone carries the ASC transcriptional programme (IRF4⁺, Ets-1⁻, BACH2⁻) and shares clones with plasma cells — but it should be stated as a difference in **propensity**, not in **capability**.
+
+---
+
+### 7. What this licenses saying about dengue
 
 **Supportable now.** DN2-phenotype cells are expanded in acute dengue ([[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]], n=170). DENV-specific atypical MBCs are higher in secondary than primary infection at early convalescence (p<0.01) and remain higher at 18 months (p<0.05) while resting MBCs do not differ — they **accumulate with repeat exposure** and behave as a *bona fide* memory compartment ([[Singh2026 - DENV-Specific Memory B Cell Subsets]], preprint). Dengue's antibody output carries the low-fidelity signature the compartment predicts ([[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]], [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]]).
 
@@ -208,4 +242,4 @@ Anyone arguing "DN cells matter in infectious disease" from this wiki is, to a s
 
 **Methods:** [[Conventional Flow Cytometry]], [[Spectral Flow Cytometry]], [[CITE-seq]], [[BCR Sequencing]]
 
-**Analyses:** [[Thesis Objectives and Grant Pitch]], [[Research Plan - DN B Cell Expansion in Dengue]], [[DN2 Gating Strategy]], [[B Cell Panel Variant 1]], [[External Citation Audit]], [[Notable Findings]]
+**Analyses:** [[Mechanistic Case for DN and DN2 Cells in Dengue]], [[Thesis Objectives and Grant Pitch]], [[Research Plan - DN B Cell Expansion in Dengue]], [[DN2 Gating Strategy]], [[B Cell Panel Variant 1]], [[External Citation Audit]], [[Notable Findings]]

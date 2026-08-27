@@ -1,9 +1,9 @@
 ---
 type: concept
-tags: [tlr7, tlr9, signalling, traf5, myd88, nf-kb, receptor-mechanism]
+tags: [tlr7, tlr9, signalling, traf5, myd88, nf-kb, receptor-mechanism, innate-sensing]
 created: 2026-08-18
-updated: 2026-08-18
-sources: 8
+updated: 2026-08-27
+sources: 11
 ---
 
 # Toll-like Receptor Signaling in B Cells
@@ -35,7 +35,7 @@ Marker-level detail lives on [[TLR7]] and [[TLR9]]; this page routes rather than
 
 - In the reconstructed human differentiation system, **R848 is important throughout**, but with two distinct jobs: **early TLR7/8 supports B cell survival; late TLR7/8 drives proliferation** (see [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]], human in vitro, ≥3 experiments)
 - R848 given only during days 0–3 produced **no ASCs** (proliferation severely stunted); R848 given only during days 3–6 left pre-ASC formation and ASC frequency intact but reduced total cell recovery (see [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]])
-- Omitting R848 from the full cocktail dropped T-bet⁺IRF4⁺ induction from ~8% to ~13% of the all-signal condition and left ASC recovery at background (see [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]])
+- **⚠ Corrected 2026-08-23.** Omitting R848 from the day-3 cocktail did **not** impair T-bet⁺IRF4⁺ induction — the paper reports results "similar" to the all-signal condition when R848 (or anti-Ig, IL-21, BAFF or IL-2) was left out; **only IFN-γ omission broke pre-ASC induction**. What R848 omission *does* cost is the endpoint: **ASC recovery across the full 6 days falls to background** without it. This bullet previously read "dropped T-bet⁺IRF4⁺ induction from ~8% to ~13% of the all-signal condition"; neither number appears in the paper's text and the direction was wrong (see [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]], Figure 4f–l, re-verified against the PDF)
 
 ### TLR7 does not act alone — the IFN-γ synergy is the key interaction
 
@@ -54,6 +54,18 @@ Marker-level detail lives on [[TLR7]] and [[TLR9]]; this page routes rather than
 - The TLR7/8 ligand **R-848 reproduced DENV's conversion of monocytes to the plasmablast-driving CD14⁺CD16⁺ phenotype, whereas the TLR4 ligand LPS did not** (see [[Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue]], human in vitro, 4 donors) — implicating endosomal ssRNA sensing rather than surface TLR signalling in the dengue innate response
 - **Toll-like receptor signalling** was among the top pathways associated with high viral load in acute dengue whole blood (see [[Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue]], n=28 acute)
 - Note this is TLR signalling in **monocytes**, not B cells. No ingested source has measured B cell TLR responsiveness in dengue.
+- **★ Dengue virus itself engages human TLR7 — first primary demonstration in the wiki.** IFN-α induced from human [[Plasmacytoid Dendritic Cell]]s by live dengue-2 virus was significantly reduced by the TLR7 antagonist **IRS 661** (p < 0.02), and transmission EM placed enveloped D2V particles inside endocytic vacuoles within 5 min of warming to 37 °C (see [[Wang2006 - Flavivirus Activation of pDCs and TLR7 Signaling]], in vitro, n=4 independent experiments, pDCs >85% pure). This is a step beyond the Kwissa2014 result above: there an agonist *mimicked* DENV's effect; here the virus is blocked at the receptor.
+- **⚠ Restating the gap precisely.** The line above remains true as written — **no ingested source has measured B cell TLR responsiveness in dengue.** What has changed is that **two** ingested sources now measure a non-B-cell response to dengue through the endosomal ssRNA sensor: monocytes ([[Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue]]) and pDCs ([[Wang2006 - Flavivirus Activation of pDCs and TLR7 Signaling]]). The sensing machinery is demonstrably engaged in dengue, in the right compartment, by the right ligand — in two myeloid/dendritic cell types, and nobody has looked at the B cell.
+- **TLR7 has two output arms with different activation thresholds, and which one a cell can run is a property of the cell.** In a [[TLR Reporter Cell Assay]], ligands formed a stepwise series: short synthetic RNAs (nothing) → R-848 and poly(U) (**NF-κB/IL-8 only**) → genomic viral RNAs (**both arms**). But primary pDCs made 13,694–18,381 pg/ml IFN-α to the same R-848 that gave none in the reporter line, which the authors attribute to pDCs' higher levels of limiting downstream components (IRF-7 named) (see [[Wang2006 - Flavivirus Activation of pDCs and TLR7 Signaling]], in vitro). **Consequence for this wiki: a negative in a reporter line is not a negative for the ligand, and B cells' position on this axis is unmeasured.** See [[TLR7]] Contradictions & Debates.
+- **Ligand potency at TLR7 is set by higher-order RNA structure — genomic viral RNA is 50–1000× more potent than the short synthetic ssRNAs used as standard reagents.** Potency was not strictly length-dependent, UV cross-linking (which alters tertiary structure) cut dengue-2 vRNA signalling to 23–40% while barely touching influenza vRNA, and removing 5′-phosphates had no effect at all (see [[Wang2006 - Flavivirus Activation of pDCs and TLR7 Signaling]], in vitro). This matters for transferring the SLE-derived model into dengue — see the potency-class argument under [[TLR7]] Contradictions & Debates.
+- **★ Germline variation in the TLR genes does not stratify dengue clinical form — except at *TLR4*, and not by severity.** Genotyping 13 SNPs across *TLR3*, *TLR4*, *TLR7* and *TLR8* in 165 adult dengue patients and 89 controls, the crude analysis was **null for *TLR3*, *TLR7* and *TLR8***. Two *TLR4* promoter variants were associated with protection from dengue relative to controls (rs2737190-G/G, OR 0.34, 95% CI 0.14–0.8, p=0.038; rs11536865-G/C, OR 0.19, 95% CI 0.05–0.73, p=0.0092), as was a TGCG haplotype (OR 0.55, 95% CI 0.35–0.86, p=0.0084) — but **no haplotype or genotype separated DF from DHF** (see [[Posadas-Mondragon2020 - TLR Polymorphisms and Clinical Forms of Dengue]], n=254 case-control, WHO 1997, DENV-2-dominant). The *TLR4* signal is also the **extracellular, NS1-facing** arm of TLR biology (dengue NS1 hexamer activates macrophages and PBMCs via TLR4, per Modhiran 2015 cited therein), not the endosomal ssRNA arm this page is about.
+- **A null association study does not test whether the pathway is used.** Germline genotyping asks whether *inherited variation* stratifies outcome; every other bullet on this page concerns whether *signalling occurs*. An essential pathway is expected to lack common functional variation. The reasoning is set out in full under Contradictions & Debates on [[TLR7]]; it is recorded here so the dengue section is not read as evidence against the endosomal-TLR mechanism.
+- **The one thing that study adds methodologically:** *TLR7* and *TLR8* are X-linked, so it analysed them separately by sex — the first infection cohort in this wiki forced to do so. Its DHF-women stratum was n=28, which is why nothing interpretable came out (see [[SNP Genotyping]]).
+
+- **★ TLR9 and TLR7 bias the response differently — the consensus synthesis (Box 2) separates them.** Antigens that strongly crosslink **TLR9 together with the BCR potently drive EF responses**; particulate foreign antigens conjugated to CpG predominantly elicit EF responses. By contrast, **antigens containing TLR7 ligands induce both robust GC and EF antibody responses**. The wiki's working model has treated endosomal ssRNA sensing as the EF-biasing input; on this reading TLR7 amplifies both arms in a type-1 direction rather than switching between them (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data).
+- **A TLR route to ASC commitment that bypasses the IL-21/STAT3 axis.** Strong BCR and/or TLR signalling drives NF-κB **c-Rel**-mediated induction of **IRF4**, the master regulator of ASC development. B cell-intrinsic **MyD88 and TRIF** were both required for strong extrafollicular plasmablast development after influenza A infection, acting through enhanced c-Rel nuclear translocation. The authors note this may link EF plasmablast responses to high-affinity antigens and TLR engagement jointly (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data).
+- **Cytokines gate what TLR signalling can do.** **IL-4 suppresses the ability of TLR7 to drive EF responses**, and IL-4/IL-13 support migration into the follicle to form GCs; **IL-12 and IFN-γ favour EF responses**. TLR7 in combination with IFN-γ acts cell-autonomously in mouse B cells to raise T-bet, which facilitates IgG2a/IgG2c class switching (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data).
+- **TLR7/9 are required for GC-independent autoantibody production.** Anti-nuclear antibodies still require TLR7 and/or TLR9 in mice that lack GCs — evidence that the EF arm alone is sufficient for pathogenic autoantibody output. The authors add a framing the wiki should carry into the dengue context: the relevant TLR7 ligands may be self nucleic acids *or* foreign ssRNA from viruses such as SARS-CoV-2, so **the co-presence and concentration of TLR ligands with antigen determines this response type, "rather than whether the target antigen is of self or foreign origin"** (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data). See [[GC-Independent Response]] and [[TLR7]].
 
 ## Contradictions & Debates
 
@@ -63,7 +75,7 @@ Marker-level detail lives on [[TLR7]] and [[TLR9]]; this page routes rather than
 
 ## Related Pages
 
-[[TLR7]], [[TLR9]], [[TRAF5]], [[IFN-gamma]], [[IL-21]], [[B Cell Receptor Signaling]], [[DN2 B Cell]], [[Extrafollicular Response]], [[Atypical B Cell Effector Output]], [[In Vitro B Cell Stimulation]], [[Phospho-Flow Cytometry]]
+[[TLR7]], [[TLR9]], [[TRAF5]], [[IFN-gamma]], [[IL-21]], [[B Cell Receptor Signaling]], [[DN2 B Cell]], [[Extrafollicular Response]], [[Atypical B Cell Effector Output]], [[In Vitro B Cell Stimulation]], [[Phospho-Flow Cytometry]], [[SNP Genotyping]], [[Dengue Severity Classification]], [[Plasmacytoid Dendritic Cell]], [[Type I Interferon]], [[TLR Reporter Cell Assay]], [[GC-Independent Response]]
 
 ## Sources
 
@@ -75,3 +87,6 @@ Marker-level detail lives on [[TLR7]] and [[TLR9]]; this page routes rather than
 - [[Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue]]
 - [[Sanz2019 - Consistent Classification of Human B Cell Populations]]
 - [[Lamprinou2026 - ABCs and DN B Cells]]
+- [[Posadas-Mondragon2020 - TLR Polymorphisms and Clinical Forms of Dengue]]
+- [[Wang2006 - Flavivirus Activation of pDCs and TLR7 Signaling]]
+- [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective; Box 2 GC-vs-EF commitment cues

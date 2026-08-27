@@ -2,8 +2,8 @@
 type: entity
 tags: [cytokine, tnf-family, taci, bcma, dengue, class-switch]
 created: 2026-08-18
-updated: 2026-08-18
-sources: 4
+updated: 2026-08-23
+sources: 5
 ---
 
 # APRIL
@@ -36,3 +36,4 @@ The APRIL evidence is subsumed in the three-way BAFF/APRIL tension documented on
 - [[Wei2007 - DN Memory B Cells in SLE]]
 - [[GarciaBates2013 - Plasmablast Response and Dengue Severity]]
 - [[Cancro2020 - Age-Associated B Cells]]
+- [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]

@@ -2,7 +2,7 @@
 type: analysis
 tags: [audit, external-citations, lint, quality-control]
 created: 2026-05-08
-updated: 2026-08-16
+updated: 2026-08-27
 ---
 
 # External Citation Audit
@@ -475,12 +475,17 @@ Each entry lists: citation as it appears, DOI (where found), the ingested source
 
 ---
 
-### 49. Allard-Chamard et al. 2023, *Cell Rep*
+### 49. Allard-Chamard et al. 2023, *Cell Rep* — ✅ **INGESTED 2026-08-27**
 **Topic:** DN3 tissue infiltration in fibrosis and COVID-19
 **DOI:** `10.1016/j.celrep.2023.112630`
-**Cited via:** [[Sanz2025 - Human Atypical B Cells Overview]]
-**Wiki locations:**
-- [[DN3 B Cell]] — line 22
+**Now a source page:** [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]] — no longer an external citation.
+**Was cited via:** [[Sanz2025 - Human Atypical B Cells Overview]], [[Lamprinou2026 - ABCs and DN B Cells]], [[Beckers2023 - Origins and Functions of DN B Cells]]
+**⚠ Two relay errors found on reading the primary:**
+1. **DN4 phenotype.** [[Lamprinou2026 - ABCs and DN B Cells]] records DN4 as CXCR5⁺CD11c⁻ citing this paper among others; the primary gates **DN4 = CXCR5⁺CD11c⁺** (Fig. 1B/1C quadrants, confirmed Fig. 6C). Flagged, not resolved — see [[Double-Negative B Cell]] Overview.
+2. **"DN3 is CD19-low."** [[Sanz2025 - Human Atypical B Cells Overview]] attributes this to Woodruff 2020 + Allard-Chamard 2023 + Perugino/Pillai jointly. **The Allard-Chamard primary never describes DN3 as CD19-low** — CD19 appears only as a lineage gate. The claim must rest on the other citations.
+**Also flattened by all three relays:** the composition-vs-density distinction — DN3 rises in absolute tissue density but *not* as a share of the tissue DN pool. See the source page.
+**Wiki locations (now first-party):**
+- [[DN3 B Cell]] — Overview, Key Points, Contradictions
 
 ---
 

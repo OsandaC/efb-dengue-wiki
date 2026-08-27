@@ -2,8 +2,8 @@
 type: concept
 tags: [chemokine-receptors, cxcr5, cxcr3, marginal-zone, integrins, s1pr3, positioning, anatomy]
 created: 2026-08-18
-updated: 2026-08-18
-sources: 8
+updated: 2026-08-27
+sources: 10
 ---
 
 # Follicular Exclusion
@@ -44,6 +44,9 @@ All findings in this section are **murine**, from acute LCMV and influenza infec
 - The authors propose the marginal-zone position is functional: it places an antigen-experienced population where blood-borne antigen arrives, enabling rapid response to systemic reinfection (see [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]]). See [[Atypical B Cell Effector Output]].
 - The same relocation was observed in an *Ehrlichia muris* model and after influenza infection, per the source's discussion — so it may be a general property of the T-bet⁺CD11c⁺ compartment rather than an LCMV artefact.
 
+- **[2026-08-27] CXCR5 alone carries the follicular-competence axis in the DN1–DN4 quadrant scheme.** With no CD21 and no T-bet in the panel, IgD⁻CD27⁻ cells are partitioned by CXCR5 × CD11c into DN1 (CXCR5⁺CD11c⁻), DN2 (CXCR5⁻CD11c⁺), DN3 (CXCR5⁻CD11c⁻) and DN4 (CXCR5⁺CD11c⁺). **DN1 and DN4 are follicle-competent; DN2 and DN3 are not** (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=38, 13-colour FCM).
+- **★ [2026-08-27] CXCR5-negativity does not predict where the cells are actually found.** In severe COVID-19 lung, the two **CXCR5⁺** subsets accounted for a substantial share of the tissue DN pool (DN1 ~20%, DN4 ~26%), and in IgG4-RD salivary gland the CXCR5⁺ **DN1 dominated at ~70%** of tissue DN cells. Conversely the CXCR5⁻ DN2 was nearly absent from both tissues. **Follicular exclusion by phenotype is not the same as tissue localisation** — a CXCR5⁻ cell is excluded from following the CXCL13 gradient into a follicle, which says nothing about whether it enters an inflamed end organ. Any inference from a blood CXCR5⁻ frequency to a tissue-homing claim needs this caveat (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=6–10 per tissue arm; no significance markers on the subset-level panels).
+
 ## Contradictions & Debates
 
 **In vitro necessity versus in vivo redundancy for S1PR3.** TY52156 completely abolished S1P-directed migration in transwell, yet *S1pr3*⁻/⁻ cells populated the marginal zone as well as wild-type in competitive chimeras. The authors name this as a limitation and propose CNR2/CXCR3 compensation, which they did not test. The wiki should not present S1PR3 as *the* marginal-zone homing receptor.
@@ -51,10 +54,9 @@ All findings in this section are **murine**, from acute LCMV and influenza infec
 **Does any of this transfer to humans?** All positional data are murine and splenic. Human work in this wiki is almost entirely peripheral blood; [[Kaneko2020 - GC Loss and TFH Block in COVID-19]] provides human tissue but examines GC loss, not marginal-zone retention. Whether human DN2 cells are retained at a marginal-zone equivalent is untested.
 
 ## Related Pages
-
-[[CXCR5]], [[CXCR3]], [[CD21]], [[ZEB2]], [[LFA-1]], [[VLA-4]], [[S1PR3]], [[DN2 B Cell]], [[Atypical B Cell]], [[Extrafollicular Response]], [[Germinal Center]], [[Atypical B Cell Effector Output]], [[Extrafollicular T Cell Help]]
-
+[[CXCR5]], [[CXCR3]], [[CD21]], [[ZEB2]], [[LFA-1]], [[VLA-4]], [[S1PR3]], [[DN2 B Cell]], [[Atypical B Cell]], [[Extrafollicular Response]], [[Germinal Center]], [[Atypical B Cell Effector Output]], [[Extrafollicular T Cell Help]], [[DN3 B Cell]]
 ## Sources
+- [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]]
 
 - [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]]
 - [[Woodruff2020 - EF B Cell Responses in COVID-19]]
@@ -64,3 +66,4 @@ All findings in this section are **murine**, from acute LCMV and influenza infec
 - [[Tipton2015 - ASC Diversity and Origin in SLE]]
 - [[Scharer2019 - Epigenetic Programming in SLE B Cells]]
 - [[Cancro2020 - Age-Associated B Cells]]
+- [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]

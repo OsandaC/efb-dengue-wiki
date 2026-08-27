@@ -2,8 +2,8 @@
 type: concept
 tags: [effector-function, cytokines, antigen-presentation, asc, autoantibody, evidence-gap]
 created: 2026-08-18
-updated: 2026-08-18
-sources: 9
+updated: 2026-08-27
+sources: 14
 ---
 
 # Atypical B Cell Effector Output
@@ -55,6 +55,19 @@ Four candidate effector routes appear in the literature: **antibody-secreting-ce
 - In dengue, **IL-21R blockade removed ~60% of plasmablast output** and anti-IL-10 ~25%, while anti-IL-4 had no effect (see [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]], human, n=170 acute — the only receptor-blockade experiment in a dengue B cell response besides [[Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue]])
 - In dengue, **DENV-infected CD14⁺CD16⁺ monocytes** drive plasmablast differentiation via **BAFF/APRIL and IL-10**; blocking IL-6 or IP-10 did not reproduce the effect (see [[Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue]], human in vitro, 4 donors)
 
+### Human primary data on the non-ASC outputs (partially closing this page's largest gap)
+
+- **★ Granzyme B — a cytotoxic output measured in human DN B cells.** DN B cells of young and elderly healthy donors **and of MS patients** produced granzyme B after in vitro stimulation with **IL-21 + anti-BCR**. This is human, not murine, and is the wiki's first direct measurement of a cytotoxic effector molecule from this compartment (see [[Beckers2023 - Origins and Functions of DN B Cells]], review, own data — Claes 2016 — + citing Bulati 2014; see [[IL-21]], [[In Vitro B Cell Stimulation]]).
+- **★ Lymphotoxin-α and TNF-α — human, and DN cells out-produce switched memory on TNF-α.** CD40L stimulation of total B cells from HD and MS patients produced **LTα and TNF-α** from DN cells, with LTα⁺ frequencies *similar to* and TNF-α⁺ frequencies *higher than* the SM compartment (see [[Beckers2023 - Origins and Functions of DN B Cells]], review, own data; see [[TNF-alpha]]).
+- **⚠ But an earlier study found no cytokine output at all from the same compartment.** DN B cells could **not** be induced to express IL-10 or TNF-α after total B cell stimulation with anti-CD40 + IL-4, or with CpG/PMA/ionomycin. The two results differ in stimulation, not in cell type — which means **cytokine output from DN cells is stimulation-conditional and no single negative result closes the question** (see [[Beckers2023 - Origins and Functions of DN B Cells]], review, citing Bulati 2011; see [[In Vitro B Cell Stimulation]]).
+- **Senescence-associated secretory output in healthy donors.** Circulating DN cells of young and aged HD express the SASP markers **TNF-α, IL-6 and IL-8** together with **p16^INK4** and the inflammatory microRNAs **miR-155, miR-16, miR-96**, alongside low anti-apoptotic Bcl2. This is a *constitutive* pro-inflammatory output attributed to senescence rather than an induced effector response — a distinct category from the stimulation-driven outputs above (see [[Beckers2023 - Origins and Functions of DN B Cells]], review, citing Frasca 2017).
+- **Antigen presentation — the phenotypic case, stated at its strongest and its weakest.** In HD and MS, DN expression of HLA-DR, CD80 and CD86 sits **intermediate between naive and SM cells**; in SLE, DN2 cells express **higher HLA-DR, CD69 and CD86 than SM cells**. The review states plainly that **"no direct evidence is available for the induction of T cell responses by DN B cells"** — the APC route remains an inference from surface phenotype (see [[Beckers2023 - Origins and Functions of DN B Cells]], review, own data + citing Jenks 2018).
+- **Migration as an effector-enabling property.** DN cells express **CXCR3** (young HD) and **CCR6** (elderly HD), with both in HIV infection; CXCR3⁺ DN frequencies are increased in SLE and axSpA; and DN cells have been recovered from **inflamed RA synovial tissue** and **MS cerebrospinal fluid**. Whatever these cells secrete, they can deliver it at the inflamed site rather than only into blood (see [[Beckers2023 - Origins and Functions of DN B Cells]], review, own MS/CSF data + citing Bulati 2014 / Moir 2008; see [[CXCR3]]).
+
+- **★ [2026-08-27] The DN3 transcriptome is the wiki's clearest evidence that an atypical DN subset carries an antibody-secretion programme.** Sorted DN1–DN4 from IgG4-related disease blood (n=4, SMART-Seq2): **DN3 alone** showed strong **proliferation** and **unfolded-protein-response** enrichment together with plasmablast/antibody-producing-cell features and **high IGHG4 message** — "the only B cells transcriptomically enriched for IgG4." ASC-associated genes MZB1, TNFRSF17 (BCMA) and TXNDC5 appear in the same block. ⚠ **n=4, bulk, and transcriptomic resemblance is not differentiation** — no ASC assay, pseudotime, or clonal-connectivity evidence is presented (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=4 bulk RNA-seq).
+- **[2026-08-27] A non-antibody effector arm is proposed and left untested: antigen presentation to CD4⁺ T cells in tissue.** The paper's central proposal is that tissue-infiltrating DN cells drive inflammation and fibrosis by **re-activating CD4⁺ T cells in situ via antigen presentation**, upstream of macrophage and myofibroblast activation — a mechanism in which the effector output is T cell help received-and-returned rather than antibody. Support is the conjugate data plus CD86 and HLA class II staining. ⚠ **The HLA class II result is internally contradictory in that paper** (Results say DN3 ≈ switched memory and higher than plasmablasts; Fig. S3 legend says DN3 downregulates HLA class II), and it is the measurement the mechanism depends on. **Quarantined to the source page under the [2026-08-23] inconsistent-reporting rule** — recorded here as a proposed mechanism, not as a supported claim (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=13).
+- **[2026-08-27] DN2 and DN3 share a cytotoxic gene module whose function is untested.** Both express GZMA, GZMH, GZMB, GNLY, NKG7, KLRB1, KLRD1, KLRF1 and FCGR3A — genes characteristic of cytotoxic T and NK cells — with **perforin generally low in DN3**. No cytotoxicity assay was performed. If real at the protein level this would be a third effector arm for the atypical compartment, but on present evidence it is a transcriptional signature only (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=4).
+
 ## Contradictions & Debates
 
 **Is the effector route plasma cell or antigen presentation?** [[Glaros2025 - Multilayered Identity of B Cell Memory]] names this as unresolved. The wiki's evidence is lopsided: the ASC route has human primary data from two independent groups; the APC route has three review assertions and one surface-marker measurement. This is an evidence asymmetry, not a resolved question — do not write as though the ASC route is established *to the exclusion of* the APC route.
@@ -65,9 +78,9 @@ Four candidate effector routes appear in the literature: **antibody-secreting-ce
 
 ## Related Pages
 
-[[Atypical B Cell]], [[Double-Negative B Cell]], [[DN2 B Cell]], [[Plasmablast]], [[Extrafollicular Response]], [[Follicular Exclusion]], [[Extrafollicular T Cell Help]], [[Toll-like Receptor Signaling in B Cells]], [[B Cell Receptor Signaling]], [[IFN-gamma]], [[IL-21]], [[IL-21R]], [[BAFF]], [[TNF-alpha]], [[Why DN B Cells Matter - Disease Relevance and Infectious Disease Case]]
-
+[[Atypical B Cell]], [[Double-Negative B Cell]], [[DN2 B Cell]], [[Plasmablast]], [[Extrafollicular Response]], [[Follicular Exclusion]], [[Extrafollicular T Cell Help]], [[Toll-like Receptor Signaling in B Cells]], [[B Cell Receptor Signaling]], [[IFN-gamma]], [[IL-21]], [[IL-21R]], [[BAFF]], [[TNF-alpha]], [[Why DN B Cells Matter - Disease Relevance and Infectious Disease Case]], [[DN3 B Cell]]
 ## Sources
+- [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]]
 
 - [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]]
 - [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]]
@@ -78,3 +91,7 @@ Four candidate effector routes appear in the literature: **antibody-secreting-ce
 - [[Lamprinou2026 - ABCs and DN B Cells]]
 - [[Glaros2025 - Multilayered Identity of B Cell Memory]]
 - [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]
+- [[Tipton2015 - ASC Diversity and Origin in SLE]]
+- [[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]]
+- [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]
+- [[Beckers2023 - Origins and Functions of DN B Cells]]

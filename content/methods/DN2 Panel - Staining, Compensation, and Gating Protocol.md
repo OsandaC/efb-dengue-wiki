@@ -2,7 +2,7 @@
 type: method
 tags: [flow-cytometry, protocol, SOP, compensation, FMO, DN2, whole-blood, panel-design]
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-08-27
 sources: 2
 ---
 
@@ -30,7 +30,7 @@ The panel is run on **fresh whole blood with red-cell lysis**, not Ficoll-isolat
 - Blood is drawn, an RBC lysis buffer is applied, and the sample is washed to leave a leukocyte suspension.
 - Because lysis (not density-gradient separation) is used, **granulocytes are retained** in the sample. This is a deliberate trade-off of whole-blood prep vs. PBMC prep — it preserves the natural leukocyte composition but means the panel must actively exclude granulocytes downstream.
 
-**⚠ Contradiction with [[DN2 Gating Strategy]]:** that page's Research Question and Council discussion describe the input as "dengue patient PBMCs." This page — backed by memory `flow-lab-setup-dn2-panel` — documents the actual current input as whole-blood RBC-lysate, not Ficoll-isolated PBMCs. The distinction is not cosmetic: it is *why* the CD66b dump channel is load-bearing (Ficoll prep would have removed most granulocytes before staining). This page's description should be treated as authoritative for the current protocol; `DN2 Gating Strategy.md`'s "PBMCs" wording needs reconciling (tracked as a watch item, alongside the existing fluorochrome-naming-drift item for that same page).
+**✓ Reconciled with [[DN2 Gating Strategy]] [2026-08-27 lint]:** this page previously flagged a contradiction because that page's Research Question described the input as "dengue patient PBMCs." It now reads "whole-blood leukocytes (RBC-lysed whole blood, not Ficoll-separated PBMCs)," matching this protocol; the flag is cleared. The distinction is not cosmetic — it is *why* the CD66b dump channel is load-bearing (Ficoll prep would have removed most granulocytes before staining).
 
 **Possible issue — granulocyte carryover.** Granulocytes are CD66b⁺ and would otherwise contaminate the B-cell gate region on scatter. **How the protocol addresses it:** CD66b-PE-Cy7 is built into the panel as a dedicated dump channel ([[DN2 Gating Strategy]] Step 2b), and CD66b signal is expected to be present and sample-variable — this is treated as a known, gated-out feature of the prep, not a contamination event to troubleshoot.
 

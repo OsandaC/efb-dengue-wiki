@@ -2,8 +2,8 @@
 type: entity
 tags: [monocyte, cd14, cd16, dengue, innate, apc, baff, il-10]
 created: 2026-08-18
-updated: 2026-08-18
-sources: 2
+updated: 2026-08-23
+sources: 5
 ---
 
 # Inflammatory Monocyte
@@ -38,6 +38,11 @@ It also sits at the junction with [[Antibody-Dependent Enhancement]]: monocytes 
 - Sensing is attributed to **RIG-I and MDA-5**, with TLR7/TLR8 as possible ssRNA sensors; monocytes weakly express TLR3 and do not respond to TLR3 agonists (see [[Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue]], discussion). See [[Type I Interferon]].
 - Monocytes are "broadly decorated with Fc-γ receptors," the recognised substrate for [[Antibody-Dependent Enhancement]], and both CD14⁺ and CD14^dim^CD16⁺⁺ subsets are susceptible to DENV with comparable efficiency (see [[Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue]], discussion — not tested in that paper)
 
+### Independent replication of the severity association, in a second cohort
+
+- **★ Monocyte percentage is significantly higher in DHF than DF, and higher in both than in healthy controls.** In an adult Mexican acute-phase cohort, monocytes were **14.44 ± 7.11% in DHF versus 10.33 ± 4.705% in DF** (OR 2.095, 95% CI 1.075–4.083, **p=0.0001**), with the general population at 7.517 ± 2.646% (see [[Posadas-Mondragon2020 - TLR Polymorphisms and Clinical Forms of Dengue]], n=254 case-control, DF n=100 / DHF n=65 / GP n=89, WHO 1997, DENV-2-dominant, days 1–8 post-onset). Lymphocyte percentage moved the same way (35.23 ± 14.88% vs 24.77 ± 14.38%, OR 3.467, p<0.0001) against a background of leukopenia and neutropenia. This is an **independent geographic and demographic replication** — adults in Veracruz, Mexico — of the monocyte expansion [[Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue]] reported in a Thai cohort and then tied causally to plasmablast differentiation.
+- **⚠ But it is a haematology-analyser measurement, not a subset measurement.** The counts above come from a COULTER LH 500 and report **total monocyte percentage only**. Nothing in that study resolves CD14/CD16 subsets, so it cannot confirm that the expanded compartment is the CD14⁺CD16⁺ inflammatory subset that Kwissa2014 identified as the plasmablast-driving one — only that the parent population enlarges with severity (see [[Posadas-Mondragon2020 - TLR Polymorphisms and Clinical Forms of Dengue]]). Distinguishing the two is a cheap addition to any cohort already running a B cell panel.
+
 ## Contradictions & Debates
 
 **A disagreement the source itself reports.** Xu et al. 2012 (not ingested) found that CD163⁺ human macrophages stimulate CD138⁺⁺CD38⁺⁺ plasma cells through an **IP-10- and IL-6-dependent** mechanism. [[Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue]] explicitly did **not** observe IL-6- or IP-10-dependent plasmablast stimulation, attributing the effect instead to BAFF/APRIL and IL-10. Recorded as the ingested source's own reported disagreement; the wiki cannot adjudicate without Xu 2012.
@@ -46,9 +51,12 @@ It also sits at the junction with [[Antibody-Dependent Enhancement]]: monocytes 
 
 ## Related Pages
 
-[[Plasmablast]], [[BAFF]], [[APRIL]], [[TACI]], [[Type I Interferon]], [[TLR7]], [[CXCR3]], [[Antibody-Dependent Enhancement]], [[Extrafollicular Response]], [[Atypical B Cell Effector Output]], [[T-B Coculture Assay]]
+[[Plasmablast]], [[BAFF]], [[APRIL]], [[TACI]], [[Type I Interferon]], [[TLR7]], [[CXCR3]], [[Antibody-Dependent Enhancement]], [[Extrafollicular Response]], [[Atypical B Cell Effector Output]], [[T-B Coculture Assay]], [[Plasmacytoid Dendritic Cell]]
 
 ## Sources
 
 - [[Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue]]
 - [[GarciaBates2013 - Plasmablast Response and Dengue Severity]]
+- [[Posadas-Mondragon2020 - TLR Polymorphisms and Clinical Forms of Dengue]]
+- [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]
+- [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]]

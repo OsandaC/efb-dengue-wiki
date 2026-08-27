@@ -2,8 +2,8 @@
 type: analysis
 tags: [dengue, dn2, mechanism, manuscript, discussion, severity, compositional, asc]
 created: 2026-08-18
-updated: 2026-08-18
-sources: 18
+updated: 2026-08-27
+sources: 19
 ---
 
 # Mechanistic Case for DN and DN2 Cells in Dengue
@@ -119,6 +119,15 @@ A blood frequency can therefore rise because cells left a tissue. This is a furt
 
 **(f) The effector-function literature is weaker than it reads.** All claims that atypical B cells secrete inflammatory cytokines trace to a single murine review, and the antigen-presentation claim is asserted by three reviews and mechanised by none. No human primary anywhere in this wiki measures cytokine secretion by sorted DN2 cells. See [[Atypical B Cell Effector Output]]. Avoid "DN2 cells drive inflammation through cytokine production" — it is not supportable from primary human data.
 
+**(g) ★ "Extrafollicular" is a location claim this study cannot make — and a consensus panel has now said so in print.** [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] (*Immunity*, Nov 2025; twelve authors, **Ignacio Sanz among them**) concludes that *"currently there are no flow cytometry-based means alone that can distinguish EF B cells nor their progeny from activated cells in earlier phases,"* and that the term EF *"should be avoided unless proliferation of antigen-specific B cells outside of a follicle is observed."* Applied by name to the cell this analysis is about: *"the EF designation of this human DN2 cell refers to its **presumed GC-independent origin rather than its location**."*
+
+This is narrower than it first reads, and the distinction is the whole point:
+
+- **What survives untouched.** Every mechanistic claim in §2 is an *origin/process* claim — IFN-γ/TLR7/IL-21 specification, the aNAV→DN2→ASC ordering, clonal connectivity, the epigenetic trajectory, CD40L antagonism. None of these assert a location. The low-SHM argument in §4 is likewise an origin argument. **The mechanistic case does not weaken.**
+- **What must change is the wording.** Claims of the form "dengue drives an extrafollicular response" are not licensed by a blood panel. The licensed form is **"GC-independent"**, stated with the criteria used. See [[GC-Independent Response]] for the evidence-to-claim mapping.
+- **A second-order hit that compounds hazard (c).** The same paper cautions that *"low expression of CD21 and CXCR5 and increased CD11c could indicate recent B cell activation rather than a permanent state."* The DN2 gate is built from exactly these markers. So a single acute-timepoint frequency has now **three** candidate readings, not two: compartment enrichment, tissue egress (hazard c), or transient activation state. Serial sampling across fever days — which acute dengue uniquely permits — is the only design in reach that separates the third from the first.
+- **One thing the wiki should not over-correct into.** The paper does **not** claim DN2 cells are GC-derived. It withdraws a location inference, not the GC-independence inference. The supportable sentence is *"as of Nov 2025, a consensus panel holds that EF should be reserved for imaged responses and that no flow panel alone establishes EF origin"* — not *"DN2 cells are not extrafollicular."*
+
 ---
 
 ## 6. What can be claimed, and what cannot
@@ -138,6 +147,7 @@ A blood frequency can therefore rise because cells left a tissue. This is a furt
 - That DN2 frequency is a validated biomarker in any infection (no ingested source tests it prospectively)
 - That the dengue IFN environment primes the DN2 pathway (type I, not IFN-γ; substitution untested)
 - That these cells produce the autoantibodies or the ADE-competent antibodies in dengue — **no functional antibody output has ever been measured from sorted DN cells in any infection**, which [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]] states as its own limitation
+- That the response measured is **extrafollicular**. A blood panel cannot establish location; the licensed claim is **GC-independent**, and even that is an inference from converging evidence rather than a determination (see hazard (g), [[GC-Independent Response]], [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]])
 
 ---
 
@@ -150,12 +160,14 @@ A blood frequency can therefore rise because cells left a tissue. This is a furt
 - Does either dengue blockade system — Tph/IL-21R or monocyte/BAFF — actually generate DN2 cells, or only plasmablasts?
 - What is DNQ4 under a Sanz2019 framework, and does it correspond to the FcRL4⁺ DN row?
 - Do human DN2 cells undergo marginal-zone-type retention, and could blood frequency be tracking egress?
+- Can serial sampling across fever days separate a durable DN2 compartment from a transient CD21ˡᵒCD11c⁺ activation state? This is the one discriminator acute dengue affords that the SLE and vaccination cohorts defining these gates never used.
+- If "extrafollicular" is not claimable from blood, what is the strongest *available* surrogate for GC-independence in a dengue cohort — SHM load, isotype distribution, CXCR5/CD21 kinetics across timepoints, or paired GC-marker absence?
 
 ---
 
 ## Related Pages
 
-[[Why DN B Cells Matter - Disease Relevance and Infectious Disease Case]], [[DN2 B Cell]], [[Double-Negative B Cell]], [[DN3 B Cell]], [[Atypical B Cell]], [[Plasmablast]], [[Extrafollicular Response]], [[Atypical B Cell Effector Output]], [[Toll-like Receptor Signaling in B Cells]], [[B Cell Receptor Signaling]], [[Follicular Exclusion]], [[Extrafollicular T Cell Help]], [[IFN-gamma]], [[Type I Interferon]], [[IL-21R]], [[BAFF]], [[Inflammatory Monocyte]], [[DN2 Gating Strategy]], [[Dengue Severity Classification]], [[Research Plan - DN B Cell Expansion in Dengue]], [[Thesis Objectives and Grant Pitch]]
+[[Why DN B Cells Matter - Disease Relevance and Infectious Disease Case]], [[DN2 B Cell]], [[Double-Negative B Cell]], [[DN3 B Cell]], [[Atypical B Cell]], [[Plasmablast]], [[Extrafollicular Response]], [[Atypical B Cell Effector Output]], [[Toll-like Receptor Signaling in B Cells]], [[B Cell Receptor Signaling]], [[Follicular Exclusion]], [[Extrafollicular T Cell Help]], [[IFN-gamma]], [[Type I Interferon]], [[IL-21R]], [[BAFF]], [[Inflammatory Monocyte]], [[DN2 Gating Strategy]], [[Dengue Severity Classification]], [[Research Plan - DN B Cell Expansion in Dengue]], [[Thesis Objectives and Grant Pitch]], [[GC-Independent Response]], [[Conventional Flow Cytometry]]
 
 ## Sources Used
 
@@ -163,4 +175,4 @@ A blood frequency can therefore rise because cells left a tissue. This is a furt
 
 **Mechanism primaries:** [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]], [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]], [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], [[Scharer2019 - Epigenetic Programming in SLE B Cells]], [[Wei2007 - DN Memory B Cells in SLE]], [[Tipton2015 - ASC Diversity and Origin in SLE]], [[Woodruff2020 - EF B Cell Responses in COVID-19]], [[Kaneko2020 - GC Loss and TFH Block in COVID-19]], [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]
 
-**Reviews (Tier B — nomenclature and framing only):** [[Sanz2019 - Consistent Classification of Human B Cell Populations]], [[Sanz2025 - Human Atypical B Cells Overview]], [[Cancro2020 - Age-Associated B Cells]], [[Lamprinou2026 - ABCs and DN B Cells]], [[Glaros2025 - Multilayered Identity of B Cell Memory]]
+**Reviews (Tier B — nomenclature and framing only):** [[Sanz2019 - Consistent Classification of Human B Cell Populations]], [[Sanz2025 - Human Atypical B Cells Overview]], [[Cancro2020 - Age-Associated B Cells]], [[Lamprinou2026 - ABCs and DN B Cells]], [[Glaros2025 - Multilayered Identity of B Cell Memory]], [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] *(consensus Perspective — bounds the EF claim to origin, not location; drives hazard (g))*

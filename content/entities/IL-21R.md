@@ -2,8 +2,8 @@
 type: entity
 tags: [cytokine-receptor, il-21, stat3, asc-differentiation, blockade, epigenetics]
 created: 2026-08-18
-updated: 2026-08-18
-sources: 4
+updated: 2026-08-23
+sources: 5
 ---
 
 # IL-21R
@@ -49,3 +49,4 @@ The most economical reading is that IL-21 is **delivered by cell contact at shor
 - [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]
 - [[Cancro2020 - Age-Associated B Cells]]
 - [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]
+- [[GarciaBates2013 - Plasmablast Response and Dengue Severity]]

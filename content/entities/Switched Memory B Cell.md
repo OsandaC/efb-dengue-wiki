@@ -2,8 +2,8 @@
 type: entity
 tags: [switched-memory, B-cell-subsets, CD27, IgD, class-switch, germinal-center, memory-b-cells]
 created: 2026-06-27
-updated: 2026-08-16
-sources: 12
+updated: 2026-08-27
+sources: 14
 ---
 
 # Switched Memory B Cell
@@ -28,6 +28,15 @@ In the IgD-vs-CD27 gating quadrant, sM (IgD⁻CD27⁺, lower-right) sits directl
 - **Long-lived switched memory can be marginal-zone-phenotype.** Long-lived anti-smallpox memory B cells with a **marginal-zone phenotype and transcriptional signature dominated the switched memory compartment** in the spleens of individuals immunized decades earlier — though whether this reflects preferential generation by that vaccine or preferential long-term survival is unclear (review, human). See [[Tissue-Resident Memory B Cell]].
 - **Where a booster is given can change what switched memory does.** Memory B cells in **draining** lymph nodes reenter secondary GCs more efficiently than those in non-draining nodes, with transcriptional differences underpinning distinct intranodal localization — implying that administering a booster in the same versus the opposite arm can influence the quality of the resulting response (review, mouse).
 
+- **★ The sM↔DN arrow runs in both directions — RNA velocity does not settle precedence.** Single-cell RNA velocity analyses have been reported showing a high flow from **DN1 → sM** (DN1 as sM precursor) *and* a high flow from **sM → DN1** (DN1 as sM progeny), plus a flow from unswitched memory → DN2/DN3. A 2023 review that surveys both concludes the question is open: "Some DN1 cells could be precursors of SM B cells, while others could be progeny of SM B cells" (see [[Beckers2023 - Origins and Functions of DN B Cells]], review, citing Stewart 2021 for both velocity analyses; see [[Single-Cell RNA Sequencing]]).
+- **The clonal relationship between sM and DN is real but small: 0.2–2.2% overlap.** AIRR sequencing of paired sM and DN compartments found only a **0.2–2.2%** clonal overlap, with a similar mutation load in the clonally related cells — so a shared-origin route exists but accounts for a minority of either compartment. The **majority** of DN and sM cells are clonally distinct, with different IgV(D)J family and gene usage (see [[Beckers2023 - Origins and Functions of DN B Cells]], review, own AIRR data; see [[BCR Sequencing]]).
+- **A repertoire study reading the arrow the other way.** One AIRR analysis found genealogical trees pointing to **DN cells as the progenitor of sM cells**, with no significant differences in VH gene family usage or in the types and locations of Ig mutations between class-switched DN and sM cells; those authors concluded most class-switched DN cells are memory cells that acquired their mutations by the *same* GC-derived mechanism as sM cells (see [[Beckers2023 - Origins and Functions of DN B Cells]], review, citing Wu 2011).
+- **The proposed mechanism for sM → DN conversion is immunosenescence.** CD27 downregulation under chronic antigen stimulation — during normal aging, chronic viral infection, and some autoimmune diseases — is the route by which sM cells would become DN, previously described as "exhausted memory B cells." The review offers no transcriptional or epigenetic mechanism for the downregulation itself (see [[Beckers2023 - Origins and Functions of DN B Cells]], review; see [[CD27]]).
+- **Corroboration of the 22-DEG figure from an independent review.** The near-identity of DN1 and sM transcriptomes (22 differentially expressed genes) is restated as one of the two strongest arguments that DN1 and sM are developmentally adjacent (see [[Beckers2023 - Origins and Functions of DN B Cells]], review, citing Jenks 2018).
+
+- **[2026-08-27] Classic switched memory falls in IgG4-related disease while a CXCR5⁻ fraction of the same compartment expands.** Splitting IgD⁻CD27⁺ cells by CXCR5 (n=38, 13-colour FCM): **CXCR5⁺ classic/resting switched memory decreased** and the **CXCR5⁻ "ABC-like" fraction expanded**, both p<0.01, while *total* switched memory was unchanged — the shift is internal to the compartment and would be invisible to a panel without CXCR5. Unswitched memory / marginal-zone cells fell as a share of total B cells (p<0.01) (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=38).
+- **[2026-08-27] Switched memory B cells are largely absent from tissue T-B conjugates.** In IgG4-RD salivary gland (n=4), cell-cell contacts with T cells occurred primarily between DN B cells and T cells and between plasmablasts and T cells, and **rarely between switched CD27⁺CD20⁺ memory B cells and T cells** — despite switched memory being present in the tissue. In blood, switched memory did not discriminate IgG4-RD from health (logistic regression OR 1.001, p = 0.9824) (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=4 tissue IF + n=38 blood).
+
 ## Contradictions & Debates
 
 - **sM-vs-DN ontology — lineage or artefact?** Two readings of the side-by-side IgD⁻CD27⁺ / IgD⁻CD27⁻ quadrants coexist. (a) Some DN cells are switched memory that have *shed* CD27 — making the boundary partly a labelling artefact of CD27 instability (see [[Sanz2025 - Human Atypical B Cells Overview]]). (b) sM and DN2 are *genuinely distinct endpoints* on epigenetic grounds (different TF programmes; see [[Scharer2019 - Epigenetic Programming in SLE B Cells]]). The DN1/DN2 subdivision partly reconciles these: DN1 ≈ sM-like (memory), DN2 ≈ EF effector (see [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]). In acute dengue's high-TNF environment, CD27 shedding could specifically inflate the DN gate at sM's expense — a measurement caveat carried in [[DN2 Gating Strategy]].
@@ -35,9 +44,9 @@ In the IgD-vs-CD27 gating quadrant, sM (IgD⁻CD27⁺, lower-right) sits directl
 
 ## Related Pages
 
-[[Memory B Cell]], [[Double-Negative B Cell]], [[DN2 B Cell]], [[Activated Naive B Cell]], [[CD27]], [[IgD]], [[CD21]], [[Class Switch Recombination]], [[Somatic Hypermutation]], [[Germinal Center]], [[Plasmablast]], [[Extrafollicular Response]], [[Original Antigenic Sin]], [[DN2 Gating Strategy]], [[Early Memory B Cell]], [[Tissue-Resident Memory B Cell]], [[Class Switch Recombination]]
-
+[[Memory B Cell]], [[Double-Negative B Cell]], [[DN2 B Cell]], [[Activated Naive B Cell]], [[CD27]], [[IgD]], [[CD21]], [[Class Switch Recombination]], [[Somatic Hypermutation]], [[Germinal Center]], [[Plasmablast]], [[Extrafollicular Response]], [[Original Antigenic Sin]], [[DN2 Gating Strategy]], [[Early Memory B Cell]], [[Tissue-Resident Memory B Cell]], [[Class Switch Recombination]], [[DN3 B Cell]]
 ## Sources
+- [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]]
 
 - [[Wei2007 - DN Memory B Cells in SLE]]
 - [[Anolik2004 - Rituximab and B Cell Abnormalities in SLE]]
@@ -51,3 +60,4 @@ In the IgD-vs-CD27 gating quadrant, sM (IgD⁻CD27⁺, lower-right) sits directl
 - [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]]
 - [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]
 - [[Glaros2025 - Multilayered Identity of B Cell Memory]]
+- [[Beckers2023 - Origins and Functions of DN B Cells]]

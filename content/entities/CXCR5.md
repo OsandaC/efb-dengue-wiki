@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, chemokine-receptors, CXCR5, follicle-homing, DN1-DN2-distinction]
 created: 2026-05-02
-updated: 2026-06-14
-sources: 7
+updated: 2026-08-27
+sources: 9
 ---
 
 # CXCR5
@@ -29,14 +29,20 @@ CXCR5 is a chemokine receptor for CXCL13, the follicle-associated chemokine. CXC
 - **Concurrent CXCL13 elevation despite Tph dominance:** Despite the overwhelming dominance of CXCR5⁻ Tph cells, plasma CXCL13 (the CXCR5 ligand and GC biomarker) is elevated in acute dengue. This suggests concurrent GC activity alongside the dominant EF response — EF and GC may not be mutually exclusive in dengue (see [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]).
 - **CXCR5 is the top axis of the four-subset DN classification.** In the DN1–DN4 scheme, CXCR5 splits the compartment into follicle-competent (CXCR5⁺: DN1, DN4) and extrafollicular (CXCR5⁻: DN2, DN3) halves. Only the CXCR5⁻ subsets (DN2, DN3) are tied to EF responses and autoimmunity — so CXCR5⁻-focused gating that targets EF cells will systematically exclude DN1 and DN4 (see [[Lamprinou2026 - ABCs and DN B Cells]], opinion, citing Sachinidis & Garyfallos 2021 / Somers 2022 / Castleman 2022; [[Double-Negative B Cell]]).
 
+- **CXCR5 dynamics across the phases of a response (mouse-derived framework).** Naive follicular B cells are CXCR5^hi and require it to home to CXCL13 in the follicle. Within ~6 h of cognate antigen engagement, activated B cells **decrease CXCR5** while increasing EBI2 and CCR7, moving to the T-B border. Cells committing to a GC fate then **re-establish CXCR5-dominant** positioning (with CXCR4) to move to the follicle centre, adding S1PR2 and P2RY8 for confinement. Cells following a GC-independent path instead **further decrease CXCR5** and elevate CXCR4 without S1PR2 as they differentiate into plasmablasts. CXCR5 is therefore low at two quite different moments — early activation and plasmablast differentiation — and high in between for GC cells (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data).
+
+- **★ [2026-08-27] CXCR5 is one of only two axes that define the DN1–DN4 quadrant scheme.** In the Pillai/Ragon classification, IgD⁻CD27⁻ cells are split by **CXCR5 × CD11c** alone: DN1 = CXCR5⁺CD11c⁻, DN2 = CXCR5⁻CD11c⁺, DN3 = CXCR5⁻CD11c⁻, **DN4 = CXCR5⁺CD11c⁺** (Fig. 1B/1C quadrants; confirmed by the tissue marker-validation panel Fig. 6C). **No CD21 and no T-bet are in that panel** — so in this lineage of the literature, CXCR5 carries the entire follicular-competence axis by itself. This differs from the Emory/Sanz DN3 gate (CD11c⁻**CD21**⁻), and the two axes have never been run on the same sample (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=38, 13-colour FCM). See [[DN3 B Cell]] Contradictions.
+- **★ [2026-08-27] STAINING PEARL — CXCR5 clone J252D4 is 3D-conformation-dependent and must be stained at 37 °C.** The protocol stained CXCR5 **first, at 37 °C**, "as the clone J252D4 highly depends on its target protein's 3D conformation," with the remainder of the panel stained separately at 4 °C. Brilliant Stain Buffer was included to suppress polymer-dye interaction. This independently corroborates the 37 °C pre-fix instruction already specified for CXCR5 in [[B Cell Panel Variant 1]], and supplies a mechanistic reason for it — conformational epitope loss, not merely receptor internalisation (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], methods).
+- **[2026-08-27] CXCR5 also partitions the switched-memory compartment, and that partition moves with disease.** Splitting IgD⁻CD27⁺ cells into CXCR5⁺ (classic/resting switched memory) and CXCR5⁻ ("ABC-like"), IgG4-RD blood showed **classic SWM decreased and the CXCR5⁻ fraction expanded** (both p<0.01, n=38). ⚠ That CXCR5⁻ "ABC-like" gate is **CD27-positive** and includes both CD11c⁺ and CD11c⁻ cells, so it is not a DN population (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=38).
+
 ## Contradictions & Debates
 
-None documented in current wiki sources.
+- **★ CXCR5-negativity is not a marker of an extrafollicular response.** The wiki has repeatedly used loss of CXCR5 (follicular homing) as the phenotypic signature of extrafollicular commitment — including in the Woodruff2020 CXCR5→CXCR3 chemokine-receptor-shift finding. The consensus Perspective states that absence of CXCR5, together with low SHM, low BCR affinity, and IgM isotype, are each individually non-definitive *"as they can be observed in B cells that have participated in a GC response"* — and that GC B cells themselves depend on CXCR5 for positioning within the GC, so CXCR5 is not simply a follicular-versus-extrafollicular switch. Compounding this, **low CXCR5 may reflect recent activation rather than a permanent state** (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data). The chemokine-receptor shift remains a real and reproducible observation; what it cannot do alone is locate the response. See [[GC-Independent Response]].
 
 ## Related Pages
-[[DN2 B Cell]], [[DN3 B Cell]], [[Double-Negative B Cell]], [[Age-Associated B Cell]], [[Activated Naive B Cell]], [[CD11c]], [[CD21]], [[CXCR3]], [[Extrafollicular Response]], [[Germinal Center]], [[Peripheral Helper T Cell]], [[PD-1]]
-
+[[DN2 B Cell]], [[DN3 B Cell]], [[Double-Negative B Cell]], [[Age-Associated B Cell]], [[Activated Naive B Cell]], [[CD11c]], [[CD21]], [[CXCR3]], [[Extrafollicular Response]], [[Germinal Center]], [[Peripheral Helper T Cell]], [[PD-1]], [[GC-Independent Response]], [[Follicular Exclusion]]
 ## Sources
+- [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]]
 - [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]
 - [[Sanz2025 - Human Atypical B Cells Overview]]
 - [[Woodruff2020 - EF B Cell Responses in COVID-19]]
@@ -44,3 +50,4 @@ None documented in current wiki sources.
 - [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]
 - [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]
 - [[Lamprinou2026 - ABCs and DN B Cells]]
+- [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective; CXCR5⁻ is not an EF marker

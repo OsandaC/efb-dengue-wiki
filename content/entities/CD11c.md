@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, CD11c, ITGAX, integrin, DN2, age-associated-b-cells, extrafollicular]
 created: 2026-05-02
-updated: 2026-08-16
-sources: 11
+updated: 2026-08-27
+sources: 13
 ---
 
 # CD11c
@@ -42,14 +42,18 @@ CD11c (encoded by *ITGAX*) is an alpha integrin primarily expressed on dendritic
 - **IgM⁺CD11c⁺ extrafollicular plasmablasts drive CD4-T-independent antibody responses in murine *Ehrlichia* infection.** The Winslow group (Racine et al. 2008, *J Immunol*) described IgM⁺CD11c⁺ extrafollicular splenic plasmablasts responsible for this response, alongside protective, multipotential T-bet⁺ memory B cells (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse).
 - **CD11c⁺T-bet⁺ ABCs are required for anti-chromatin antibodies in the bm12 chronic-GVH SLE model** — direct functional evidence that the CD11c⁺T-bet⁺ compartment contributes causally to autoantibody production in murine lupus, not merely correlates with it (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse).
 
+- **★ [2026-08-27] CD11c is the second of the two axes defining the DN1–DN4 quadrant scheme, and it is what makes DN2 a *blood* finding.** Within IgD⁻CD27⁻ cells, CD11c⁺ defines DN2 (CXCR5⁻) and DN4 (CXCR5⁺); CD11c⁻ defines DN1 (CXCR5⁺) and DN3 (CXCR5⁻). In inflamed tissue the **CD11c⁺ subsets are the scarce ones** — DN2 ~7 cells/mm² in COVID-19 lymph node against DN3's ~400, and ~3% of the IgG4-RD salivary-gland DN pool. Whether that reflects genuine biology or **loss of CD11c detectability in FFPE tissue** is not addressed by the paper, and matters for interpreting any tissue CD11c stain (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=38 blood + n=6–10 tissue).
+- **[2026-08-27] CD11c was successfully detected in FFPE tissue by multiplex immunofluorescence** (clone ab52632, Opal multiplex, TissueFAXS/TissueQuest with cut-offs set against positive controls), and was used to assign DN1–DN4 identity cell-by-cell *in situ* (Fig. 6C, S1B). This is a workable precedent for CD11c⁺ B cell detection in archival tissue — a route the wiki previously had no source for (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], multi-colour IF). See [[Multi-color Immunofluorescence]].
+
 ## Contradictions & Debates
 
-None documented in current wiki sources.
+- **★ CD11c positivity does not indicate a GC-independent origin — in either species.** The wiki uses CD11c as the primary axis of the atypical/ABC cluster and, implicitly, as a marker of the extrafollicular pathway. A twelve-author consensus Perspective severs the second inference while leaving the first intact. In mice, CD11c⁺T-bet⁺ cells arise after viral infections as **memory B cells derived from a primary GC reaction**. In humans, CD11c⁺T-bet⁺FcRL5⁺ cells appearing within one week of influenza vaccination are **CD27⁺CD21^lo with high SHM and hallmarks of prior GC selection and affinity maturation** — recent GC emigrants, not EF products. Others are CD27⁺ reactivated memory. The verbatim conclusion: *"CD11c and T-BET expression or lack of CD27 are not exclusive markers of EF B cell responses"* (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data). See [[GC-Independent Response]].
+- **CD11c^hi may be an activation state rather than a lineage identity.** *"Low expression of CD21 and CXCR5 and increased CD11c could indicate recent B cell activation rather than a permanent state of expression/lack of expression"* (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data). This does not undercut CD11c as the best single surface marker of the cluster (per CITE-seq in [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]) — it undercuts reading a differentiation *history* off it. Practical consequence for the wiki's dengue work: a CD11c⁺ expansion in acute dengue blood is real and countable, but calling it EF-derived requires evidence the panel cannot supply.
 
 ## Related Pages
-[[DN2 B Cell]], [[Age-Associated B Cell]], [[Atypical B Cell]], [[Activated Naive B Cell]], [[T-bet]], [[IL-21]], [[CXCR5]], [[Double-Negative B Cell]], [[Extrafollicular Response]], [[FCRL5]], [[CXCR3]], [[CD21]], [[Peripheral Helper T Cell]], [[ZEB2]], [[Tissue-Resident Memory B Cell]]
-
+[[DN2 B Cell]], [[Age-Associated B Cell]], [[Atypical B Cell]], [[Activated Naive B Cell]], [[T-bet]], [[IL-21]], [[CXCR5]], [[Double-Negative B Cell]], [[Extrafollicular Response]], [[FCRL5]], [[CXCR3]], [[CD21]], [[Peripheral Helper T Cell]], [[ZEB2]], [[Tissue-Resident Memory B Cell]], [[GC-Independent Response]], [[DN3 B Cell]]
 ## Sources
+- [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]]
 - [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]
 - [[Sanz2025 - Human Atypical B Cells Overview]]
 - [[Woodruff2020 - EF B Cell Responses in COVID-19]]
@@ -61,3 +65,4 @@ None documented in current wiki sources.
 - [[Lamprinou2026 - ABCs and DN B Cells]]
 - [[Glaros2025 - Multilayered Identity of B Cell Memory]]
 - [[Cancro2020 - Age-Associated B Cells]]
+- [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective; CD11c⁺T-bet⁺ cells can be GC-derived

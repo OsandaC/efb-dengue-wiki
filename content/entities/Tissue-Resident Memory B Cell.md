@@ -2,8 +2,8 @@
 type: entity
 tags: [b-cell-subsets, memory-b-cell, tissue-resident, BRM, liver, lung, marginal-zone, gc-independent, T-bet]
 created: 2026-08-16
-updated: 2026-08-16
-sources: 1
+updated: 2026-08-23
+sources: 4
 ---
 
 # Tissue-Resident Memory B Cell
@@ -44,3 +44,6 @@ Residency is inferred from the same criteria used for T cells: resistance to int
 
 ## Sources
 - [[Glaros2025 - Multilayered Identity of B Cell Memory]]
+- [[Morra2018 - Defining Warning Signs and Severe Dengue]]
+- [[William2002 - Extrafollicular Somatic Hypermutation in Autoimmune Mice]]
+- [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]

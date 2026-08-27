@@ -2,8 +2,8 @@
 type: entity
 tags: [transcription-factors, T-bet, TBX21, atypical-b-cells, DN2, age-associated-b-cells, extrafollicular]
 created: 2026-05-02
-updated: 2026-08-16
-sources: 10
+updated: 2026-08-27
+sources: 11
 ---
 
 # T-bet
@@ -57,8 +57,10 @@ T-bet (encoded by *TBX21*) is a T-box transcription factor originally identified
   - **Reconciliation:** the evidence for "definitional" is **descriptive** (T-bet marks the cluster in human cross-sectional cohorts and transcriptomics), while the evidence for "dispensable" is **genetic** (the cluster still forms when T-bet is deleted). Both can hold: T-bet is a reliable *marker* of the dominant ABC state without being *required* to build one. The wiki should therefore treat T-bet as **confirmatory, not defining**, and keep [[CD11c]] as the primary axis — consistent with CITE-seq finding CD11c the best single surface marker ([[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]).
   - **★ Panel consequence (actionable).** [[B Cell Panel Variant 1]] Panel 4 adds **intracellular T-bet** specifically to confirm DN2/ABC identity in dengue — the wiki's single most-wanted phenotypic validation (see the Ansari2025 bullet above). If a T-bet-independent CD11c⁺ fraction exists in human acute infection, a T-bet-gated definition **undercounts it by an unknown margin**. Recommended reporting: gate on CD11c/CD21 as primary and report T-bet⁺ as a *fraction of* the CD11c⁺ DN gate, rather than requiring T-bet positivity for the DN2 call. Tracked as a Watch Item.
 
+- **★ A third position that reframes the debate above: T-bet may report the cytokine environment rather than any pathway.** The "definitional vs. dispensable" dispute recorded above treats T-bet as a property of the *cell*. The consensus Perspective argues it is substantially a property of the *milieu*: type 1 cytokines (IFN-γ, IL-12) and particular TLR signals drive B cell T-bet, *"reflecting the nature of the immune environment but not necessarily a singular type of response."* Consistent with this, **T-bet is expressed by GC B cells and by GC-derived memory B cells**, not only by GC-independent effectors. The authors' analogy is pointed: one would not conclude that all T-bet⁺ type 1 T cell subsets — Tfh1, Th1, CD8 — are the same population (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data). This strengthens the wiki's existing "confirmatory, not defining" reconciliation and adds a further restriction: **T-bet positivity is not evidence of GC-independence.** For a dengue cohort, in which acute infection produces a strongly type-1-skewed cytokine environment, T-bet⁺ B cells should be expected on environmental grounds alone, and their presence is not by itself a pathway readout. See [[GC-Independent Response]].
+
 ## Related Pages
-[[DN2 B Cell]], [[Age-Associated B Cell]], [[Atypical B Cell]], [[Activated Naive B Cell]], [[ZEB2]], [[Double-Negative B Cell]], [[CD11c]], [[TLR7]], [[IL-21]], [[Extrafollicular Response]], [[FCRL5]], [[CXCR3]], [[ATF3]], [[EGR]], [[Peripheral Helper T Cell]]
+[[DN2 B Cell]], [[Age-Associated B Cell]], [[Atypical B Cell]], [[Activated Naive B Cell]], [[ZEB2]], [[Double-Negative B Cell]], [[CD11c]], [[TLR7]], [[IL-21]], [[Extrafollicular Response]], [[FCRL5]], [[CXCR3]], [[ATF3]], [[EGR]], [[Peripheral Helper T Cell]], [[GC-Independent Response]]
 
 ## Sources
 - [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]
@@ -71,3 +73,4 @@ T-bet (encoded by *TBX21*) is a T-box transcription factor originally identified
 - [[Lamprinou2026 - ABCs and DN B Cells]]
 - [[Glaros2025 - Multilayered Identity of B Cell Memory]]
 - [[Cancro2020 - Age-Associated B Cells]]
+- [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective; T-bet reports the type-1 cytokine milieu

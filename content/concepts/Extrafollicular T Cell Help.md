@@ -2,8 +2,8 @@
 type: concept
 tags: [tfh, tph, il-21, cd40l, icos, t-b-interaction, extrafollicular]
 created: 2026-08-18
-updated: 2026-08-18
-sources: 6
+updated: 2026-08-27
+sources: 8
 ---
 
 # Extrafollicular T Cell Help
@@ -47,6 +47,16 @@ These reach a similar outcome by different routes. The wiki treats them as relat
 - In severe COVID-19, germinal centres are lost and TFH differentiation is blocked, with excess TNF-α proposed as the mechanism — an EF response arising because the GC route is unavailable (see [[Kaneko2020 - GC Loss and TFH Block in COVID-19]], human tissue n=11, blood n=68)
 - Song2022's finding is a different and more surprising claim: Tfh cells are **present and required**, GCs form normally, and the T-bet⁺CD11c⁺ cells still develop outside them. **EF commitment here is not a consequence of GC failure.**
 
+- **The identity of the T cell supporting GC-independent responses is formally unresolved, and named as such by consensus.** *"The nature of the T cells that help EF and other GC-independent responses is less clear"* than for GC responses, where Tfh cells are established. **T cells expressing BCL6 that interact with activated B cells in the early EF response have been identified**, and antibody responses exist that are T cell-dependent but **Tfh-independent** — and therefore likely GC-independent. The authors decline to subdivide these further, describing them as *"not resolved adequately"* (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data). This is one of the eight open questions the Perspective poses explicitly.
+- **Tfh-derived IL-2 promotes GC-independent differentiation via mTOR → IRF4 → BLIMP-1** — a route by which a *follicular* helper T cell drives a non-GC B cell fate, which complicates the assumption that Tfh involvement implies a GC outcome (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data).
+- **Once a T-dependent EF focus is established, ongoing T help is not required for plasmablast proliferation** — shown by blocking CD40L *after* the response was initiated in the original mouse studies. T help is therefore an initiating rather than a sustaining requirement for this arm (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data).
+- **Memory reactivation in lymph nodes may occur at a subcapsular proliferative focus (SPF)**, where antigen and memory Tfh cells co-localise — a site distinct from both the GC and the classical EF locations (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data).
+- **Relevance to the dengue arm:** [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]] reports a peripheral helper T cell (Tph) population supporting the B cell response in dengue. Tph cells are CXCR5⁻ and are a leading candidate for exactly the "T-dependent but Tfh-independent" category the Perspective flags as unresolved — a connection the Perspective itself does not make.
+
+- **★ [2026-08-27] Direct tissue-level evidence that DN B cells are the population engaging CD4⁺ T cell help *in situ*.** Using computational detection of cytoplasmic overlap (StrataQuest: DAPI nuclear mask, 3-pixel outward ring, any pixel intersection = contact) in IgG4-related disease salivary gland and severe COVID-19 lung and lymph node, true T-B conjugates formed **primarily between DN B cells and T cells, and between plasmablasts and T cells**, and only rarely with switched CD27⁺CD20⁺ memory B cells (n=4). **Almost all B–T interactions involved CD4⁺, not CD8⁺, T cells**; the handful of DN–CD8⁺ conjugates came from a single patient with unusually high cell counts. This is the wiki's first *in situ* conjugate data for the DN compartment — previous support was blood phenotype and in vitro coculture (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=4 tissue immunofluorescence).
+- **⚠ [2026-08-27] Which DN subset is doing the conjugating is inferred, not measured.** Tissues were stained CD19/IgD/CD27/**SLAMF7** to show "activated DN2/3" cells contacting CD4⁺ T cells — but **SLAMF7 does not separate DN2 from DN3** (MFI 2123 vs 1536). The DN3 attribution rests on an elimination argument: *"As DN2 B cells are relatively infrequent in tissues, most of these T-B interactions are likely with DN3 B cells."* The same figure shows conjugates involving **both SLAMF7⁺ and SLAMF7⁻** DN cells. The conjugates are real; the subset assignment is a hypothesis (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=4).
+- **[2026-08-27] The T cell partner was not characterised.** No Tfh/Tph markers (PD-1, CXCR5, ICOS, IL-21) were stained on the conjugating CD4⁺ T cells, and the authors list this among their limitations. So the data establish **DN–CD4⁺ contact in tissue**, not that the help is of the [[Peripheral Helper T Cell|Tph]] type the wiki's dengue model invokes (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], author-stated limitation).
+
 ## Contradictions & Debates
 
 **★ Is EF commitment a fallback or a parallel programme?** [[Kaneko2020 - GC Loss and TFH Block in COVID-19]] presents the EF response as what happens when GCs collapse. [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]] shows a GC-independent pathway operating **alongside intact GCs**, drawing on the same Tfh cells, with <10% clonal overlap between the two outputs. Both can be true — GC failure may amplify a pathway that also runs constitutively — but the wiki should not describe DN2 generation as *caused by* GC failure without qualification.
@@ -57,9 +67,9 @@ These reach a similar outcome by different routes. The wiki treats them as relat
 
 ## Related Pages
 
-[[Peripheral Helper T Cell]], [[IL-21]], [[IL-21R]], [[CD40L]], [[ICOS]], [[IFN-gamma]], [[STAT3]], [[Extrafollicular Response]], [[Germinal Center]], [[Follicular Exclusion]], [[Atypical B Cell Effector Output]], [[DN2 B Cell]], [[T-B Coculture Assay]]
-
+[[Peripheral Helper T Cell]], [[IL-21]], [[IL-21R]], [[CD40L]], [[ICOS]], [[IFN-gamma]], [[STAT3]], [[Extrafollicular Response]], [[Germinal Center]], [[Follicular Exclusion]], [[Atypical B Cell Effector Output]], [[DN2 B Cell]], [[T-B Coculture Assay]], [[GC-Independent Response]], [[DN3 B Cell]]
 ## Sources
+- [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]]
 
 - [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]]
 - [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]
@@ -67,3 +77,4 @@ These reach a similar outcome by different routes. The wiki treats them as relat
 - [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]
 - [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]
 - [[Sanz2025 - Human Atypical B Cells Overview]]
+- [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective; non-GC T help formally unresolved

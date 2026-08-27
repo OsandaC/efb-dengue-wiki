@@ -2,6 +2,28 @@
 
 ---
 
+## [2026-08-27] ingest | Allard-Chamard et al. 2023 - DN3 B Cells Infiltrate Inflamed Tissues
+
+**Source:** `raw/Allard-Chamard2023.pdf` — Allard-Chamard H, Kaneko N, ... Padera RF, Pillai S. *Cell Reports* 2023;42(6):112630. DOI 10.1016/j.celrep.2023.112630. Citations: Semantic Scholar 39, CrossRef 49 (retrieved 2026-08-27).
+
+**Mode:** Standard (pre-ingest discussion held). Curator direction: *"keep DN4 as a section on Double-Negative B Cell.md, and more focus on DN3."*
+
+**Created (1):** `sources/Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues.md`
+
+**Updated (30 wiki pages + index/log/state):** `entities/` DN3 B Cell (major rewrite — Overview, 8 new Key Points, 4 new Contradictions), Double-Negative B Cell (new **DN4 section** per curator direction + 6 Key Points + 2 Contradictions), DN2 B Cell, SLAMF7, CXCR5, CD11c, FcRH4, Plasmablast, IgG, Activated Naive B Cell, Age-Associated B Cell, Switched Memory B Cell, Atypical B Cell, CD27, IgD · `concepts/` Extrafollicular Response, GC-Independent Response, Extrafollicular T Cell Help, Follicular Exclusion, Atypical B Cell Effector Output, Class Switch Recombination, Germinal Center · `methods/` Multi-color Immunofluorescence, Conventional Flow Cytometry, FACS Sorting, RNA Sequencing, Immunohistochemistry, Compensation and FMO Controls · `analyses/` External Citation Audit (#49 marked ingested, two relay errors recorded), Notable Findings (1 entry) · index, log, state.
+
+**What reading the primary changed:**
+1. **DN4 = CXCR5⁺CD11c⁺**, not CXCR5⁺CD11c⁻ as relayed via Lamprinou2026 — the relayed definition is DN1's phenotype. Flagged as a contradiction, not overwritten (PDF-only rule blocks fetching Szelinski/Sachinidis to break the tie).
+2. **Composition vs. density.** DN3 rises in absolute tissue density but **not** as a share of the tissue DN pool — IgG4-RD SMG ~20% vs ~32% (sialadenitis) with overlapping distributions and no test reported, COVID lung ~50% vs ~43%. The means run against the title claim, but only the *absence of enrichment* is defensible, not a reversal. All three relaying reviews carry the title claim without this. No significance markers on any subset-level tissue panel.
+3. **The title's "extrafollicular" is a presumed origin.** No follicular-vs-EF quantification; anti-Bcl6 in the antibody list with no Bcl6 result reported. Lexical fix applied to `DN3 B Cell` line 22 under the [2026-08-27] GC-independence decision.
+4. **"DN3 is CD19-low" is not attributable to this paper** — the primary never says it.
+5. **HLA class II contradicts itself** between Results and the Fig. S3 legend. Quarantined to the source page under the [2026-08-23] inconsistent-reporting rule.
+6. **FcRL4⁺ blood DN cells in HIV (~15–18%)** qualify Wei2007's "absent from all peripheral blood B cell subsets" — reconciled as disease-context-specific, both n=5.
+
+**Not propagated (panel constituents with no attached finding):** CD3, CD19, CD20, CD38, IgM, IgA. Noted as such on the source page.
+
+---
+
 ## [2026-06-30] mapping + relocate | Dengue Severity Binarization Spec — Input (2) column-map DONE, Input (3) moved OFF-SITE
 
 **Step 0 column mapping (Input 2):** mapped all 28 severity-spec atoms to the curator's raw clinical DB `raw/A2D 2026.xlsx` (sheet `Heshan FlowT (Day 6 & above)`; 3-row header section→sign/lab→serial day-cols `On Ad./D1–D9/D10`; **n≈53 filled rows**). Header-only extraction (no patient data read). Concrete Excel range bindings recorded (Platelets IV:JE, PCV/HCT IK:IU w/ baseline IK, ALT KJ:KS, AST KT:LC, Pulse Pressure EY:FH, Blood Pressure EO:EX, RR FS:GB, Creatinine LD:LM, transfusions OO).
@@ -1480,3 +1502,449 @@ TRAF5, BACH2, ZEB2, PD-1, SLAMF7, BLIMP-1, IRF4, CXCR5, CXCR3, CD21, Peripheral 
 DN2 B Cell, Double-Negative B Cell, Atypical B Cell, Plasmablast, Extrafollicular Response,
 Germinal Center); External Citation Audit DOI fix; Notable Findings entries; external Sanz-lab
 search (curator approved, shopping-list only).
+
+## [2026-08-23] ingest | Posadas-Mondragon et al. 2020 - TLR Polymorphisms and Clinical Forms of Dengue
+
+**Mode:** standard (pre-ingest discussion held). **Curator brief:** focus on TLR7 — the ssRNA/dengue
+link, and the TLR7 → DN/atypical-ABC connection. Pre-ingest snapshot commit `73fbe17`.
+
+**What the paper is:** candidate-gene association study, *Viruses* 2020;12(11):1230,
+DOI 10.3390/v12111230. 13 SNPs across *TLR3/4/7/8* by TaqMan real-time PCR. Veracruz, Mexico;
+DF n=100 / DHF n=65 / GP n=89 (total 254); WHO 1997 criteria; acute phase 1–8 d; DENV-2-dominant
+(91.3% of typed DF, 100% of typed DHF). Citations: Semantic Scholar 12, CrossRef 13 (2026-08-23).
+**No B cell phenotyping, no flow cytometry, no DN/DN2/plasmablast measurement anywhere in it.**
+
+**Headline result relative to the curator brief — the *TLR7* analysis is NULL.** §3.4 (covering
+*TLR3*, *TLR7* and *TLR8* together) states there was "no statistical association in the crude
+analysis with clinical forms of the dengue disease." The study's only positive genetic signal is
+*TLR4* (rs2737190-G/G OR 0.34, 95% CI 0.14–0.8, p=0.038; rs11536865-G/C OR 0.19, 0.05–0.73,
+p=0.0092; TGCG haplotype OR 0.55, 0.35–0.86, p=0.0084) — and it separates dengue from controls,
+**not DF from DHF** (DF vs DHF haplotype global p=0.98).
+
+**Created — 1 source page, sources 28 → 29:**
+Posadas-Mondragon2020 - TLR Polymorphisms and Clinical Forms of Dengue
+
+**Created — 1 method page, methods 22 → 23:**
+SNP Genotyping — TaqMan allelic discrimination; five inheritance models by AIC; per-group HWE;
+EM haplotypes + linkage disequilibrium; the X-linked sex-split power cost; germline variation as a
+weak proxy for pathway use.
+
+**Updated — 7 pages:**
+- **TLR7** (sources 7 → 9) — Posadas null + X-linkage design cost + quarantine pointer, **plus the
+  owed Zumaquero2019 propagation slice** (R848 early-survival / late-proliferation split; the
+  "all minus one" omission data; IFN-γ synergy at 100×-subthreshold R848; IPA-predicted TLR7/TLR9
+  from endogenous ligands). "Contradictions & Debates: None documented" **replaced** — see below.
+- **Inflammatory Monocyte** (2 → 3) — DHF 14.44 ± 7.11% vs DF 10.33 ± 4.705%, OR 2.095, p=0.0001;
+  flagged as haematology-analyser total monocytes, NOT CD14/CD16 subsets.
+- **Toll-like Receptor Signaling in B Cells** (8 → 9) — dengue section; null-genetics reasoning.
+- **IgG** (18 → 19) — DHF-high IgG/IgG1/IgG4 with the **IgG3 inversion** (DF 38.5% vs DHF 25.4%).
+- **IgM** (10 → 11) — DHF-high acute IgM; flagged that primary/secondary assignment derives from the
+  same IgM/IgG ratio, so the two are not independent.
+- **Dengue Severity Classification** (2 → 3) — WHO-1997 operationalised as platelets + any bleeding,
+  **with no plasma-leakage measurement reported**; the WHO-1997-side counterpart of Morra2018's
+  within-scheme heterogeneity finding.
+- **Antibody-Dependent Enhancement** (5 → 6) — secondary infection NOT enriched in the severe arm
+  (73% DF vs 70.8% DHF); recorded as an observation, not a refutation.
+
+**Contradictions opened (Rule 4):**
+- **[[TLR7]] — obligate in vitro versus null in vivo.** Reconciled explicitly rather than left bare:
+  an essential pathway is under purifying selection, so common functional variation in it is
+  depleted; a null association is the *expected* result, not a refutation. Both symmetric
+  misreadings written down (null-as-refutation; interaction-soup-as-support).
+- **[[TLR7]] — WIKI-GENERATED: "TLR7" frequently means "TLR7/8".** R848 (resiquimod) is a dual
+  TLR7/8 agonist and is the dominant reagent across Jenks2018, Zumaquero2019 and Kwissa2014. Only
+  ODN 20959 (Jenks2018) and monogenic TLR7 gain-of-function (Sanz2025) isolate TLR7. TLR8 is not
+  formally excluded anywhere in the wiki and has no page. Not a claim made by any source.
+
+**Notable Findings:** 1 entry appended — "The wiki's TLR7 evidence is weaker than it reads — in two
+independent ways" (the genetic null plus the R848 reagent audit; summary point being that across
+29 ingested sources **nobody has measured TLR7 responsiveness in human B cells during dengue**).
+
+**Entity pages deliberately NOT created** (evidence gate, [2026-08-16] / [2026-08-18]): TLR3, TLR4,
+TLR8, IgG1–IgG4. TLR4 carries the paper's only positive result but is the extracellular NS1-facing
+receptor with no B cell application in any ingested source — covered in prose on the source page and
+raised as a Watch Item. Serology method pages not created (canonical to the sibling dengue wiki).
+
+**Index:** added the source row, SNP Genotyping, Toll-like Receptor Signaling in B Cells, and a new
+**### Other Cell Types** subsection to house Inflammatory Monocyte; refreshed 5 existing rows.
+**NOTE:** index.md is still missing **16 pages from the 2026-08-18 mechanism batch** (11 entities,
+4 concepts, 1 analysis) plus 4 source rows (Song2022, Kwissa2014, Sanz2019, Zumaquero2019) —
+pre-existing debt, not created by this ingest. Watch Item raised.
+
+**Statistical caveats recorded on the source page and deliberately NOT propagated into the
+synthesised layer:** uncontrolled multiplicity (13 SNPs × 5 models × 4 comparisons × ~10 covariate
+strata); §3.8 interaction results reported as forest plots only, with no readable ORs or CIs;
+DHF-women stratum n=28 before any covariate split; rs3853839 deviates from HWE in the case group;
+controls older (49.5 vs 37.9 y) and sex-skewed the opposite way (GP 59 F / 30 M vs dengue 77 F /
+88 M) with no adjustment reported; controls not screened for prior dengue exposure. Per curator
+decision [2026-08-23], the exploratory TLR7 × IgG/IgG1/monocyte interactions live on the source page
+only, with a single pointer bullet on [[TLR7]].
+
+## [2026-08-23] correction | Zumaquero2019 — R848 omission result was recorded backwards
+
+**Found during:** post-ingest review of the Posadas-Mondragon2020 session, while checking the
+Zumaquero2019 propagation slice just added to [[TLR7]]. Two wiki pages disagreed with each other on
+the same number, which prompted a re-check against the PDF.
+
+**What was wrong.** Three pages stated that omitting R848 from the Zumaquero2019 day-3 "all minus
+one" cocktail *reduced* T-bet⁺IRF4⁺ induction, quoted variously as "~13%" and as "from ~8% to ~13%
+of the all-signal condition."
+
+**What the paper actually says** (`raw/Zumaquero2019.pdf` p. 7, Figure 4f–g — inside the pp. 1–19
+range that was read during the partial ingest, so this was a **misreading, not a coverage gap**):
+
+> "when HD B_N_ cells were activated for 3 days in the presence of anti-Ig and all cytokines + R848
+> (ALL condition), essentially all of the cells upregulated T-bet and IRF4. **Similar results were
+> observed when the B_N_ cells were activated for 3 days without anti-Ig or without R848, IL-21,
+> BAFF or IL-2.** By contrast, when the cells were activated without IFNγ, more than 80% of the
+> cells were T-bet^neg/lo^ … the cells also failed to upregulate IRF4."
+
+So R848 is **dispensable for pre-ASC induction** and only IFN-γ is obligate at that step. R848 *is*
+required for the ASC endpoint — ASC recovery over the full 6 days falls to background without it
+(Figure 4l). **Neither the ~8% nor the ~13% figure appears in the paper's text at all.**
+
+A second, subtler error was introduced in the same session and corrected before commit: pairing the
+day-3 induction percentage against the ">95% of naive B cells resembled SLE DN2 cells" figure. That
+95% is a **day-6 phenotype-conversion readout** (Figure 4c–d), a different measurement — juxtaposing
+them fabricated a contrast that the paper does not make.
+
+**Pages corrected (each carries a dated inline correction note):**
+- `wiki/sources/Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation.md` — the
+  origin of the error; bullet rewritten with the quoted text.
+- `wiki/entities/TLR7.md` — bullet rewritten as a stage-specific requirement (IFN-γ builds the
+  pre-ASC; TLR7/8 and IL-21 convert it to an ASC), with an explicit warning not to pair the two
+  readouts.
+- `wiki/concepts/Toll-like Receptor Signaling in B Cells.md` — line corrected, prior wording quoted.
+
+**No retraction.** The paper is sound; the wiki's transcription of it was not. Nothing else on the
+Zumaquero source page was changed.
+
+**Watch Item raised:** the Zumaquero2019 ingest is still marked PARTIAL, and this error shows it may
+carry other figure-derived numbers with no textual basis. Every numeric claim on that source page
+should be re-checked against the PDF before being propagated further.
+
+## [2026-08-23] ingest | Wang JP 2006 - Flavivirus Activation of pDCs and TLR7 Signaling
+
+**Paper:** Wang JP, Liu P, Latz E, Golenbock DT, Finberg RW, Libraty DH. *J Immunol* 2006;177(10):7114–21.
+DOI 10.4049/jimmunol.177.10.7114. Citations: Semantic Scholar 210 (influential 10), CrossRef 162,
+retrieved 2026-08-23.
+
+**Curator brief:** "ingest raw/wang2006.pdf is also regarding TLR7 Signaling in flaviviruses."
+Standard mode. Full 9 pages read via `pdftotext -layout`.
+
+**Headline:** the wiki's **first primary evidence that dengue virus itself engages human TLR7** —
+DENV-driven pDC IFN-α is significantly reduced by the TLR7 antagonist IRS 661 (p<0.02, n=4), with EM
+placing enveloped D2V in endocytic vacuoles at 5 min. Prior best was [[Kwissa2014 - Monocytes Drive
+Plasmablast Differentiation in Dengue]], where an agonist *mimicked* DENV's effect. **Still not a B
+cell** — two ingested sources now measure a non-B-cell dengue response through the endosomal ssRNA
+sensor, and none has looked at the B cell.
+
+**Second load-bearing result:** genomic viral RNA is **50–1000× more potent at TLR7 than short
+synthetic ssRNA** (ssRNA40 inert across 0.02–2000 nM), with potency set by **higher-order shape** —
+not length, not 5′-phosphate. Feeds a new [[TLR7]] Contradictions entry arguing that SLE's endogenous
+RNP-associated small RNAs and dengue's structured 11-kb genome are **different potency classes**, and
+that the SLE→dengue transfer may run toward a *stronger* stimulus rather than a weaker one.
+
+**Created (5):**
+- `wiki/sources/Wang2006 - Flavivirus Activation of pDCs and TLR7 Signaling.md`
+- `wiki/entities/Plasmacytoid Dendritic Cell.md` (curator decision — filed under index "Other Cell Types")
+- `wiki/methods/TLR Reporter Cell Assay.md`
+- `wiki/methods/ELISA.md`
+- `wiki/methods/Transmission Electron Microscopy.md`
+
+**Updated (6):** [[TLR7]] (6 new bullets + 2 new Contradictions entries + ssRNA40 reinforcement of the
+existing TLR7/8 caveat; sources 9→10), [[Type I Interferon]] (new upstream-half subsection, existing
+"untested substitution question" preserved intact; 6→7), [[Toll-like Receptor Signaling in B Cells]]
+(4 bullets in the dengue section, "no B cell data" line preserved and restated precisely; 9→10),
+[[TLR9]] (CpG comparator, TLR9⁻/⁻ as inhibitor control, multimerization precedent; 5→6),
+[[Conventional Flow Cytometry]] (17→18), [[FACS Sorting]] (12→13).
+
+**Index:** Sources 29→30, Entities 63→64, Methods 23→26. Six rows refreshed.
+**⚠ Two of the 20 known-missing index rows incidentally closed** — [[TLR9]] and [[Type I Interferon]]
+both had rows missing from the 2026-08-18 debt and were substantively updated this ingest, so their
+rows were written rather than left invisible. **18 rows of that debt remain**; not otherwise touched.
+
+**Notable Findings:** one entry appended — "Dengue engages TLR7 — and the ligand it brings is the
+potent class, not the SLE class." Directly updates the 2026-08-23 Posadas entry's closing line.
+
+**Explicitly held, not created:** `TLR8`, `MyD88`, `NF-kB`, `IL-8` — all appear only as
+intro/discussion citations or reporter readouts; none clears the evidence gate.
+
+**★ Error avoided, recorded so it is not re-derived.** A draft reading of this paper concluded "R-848
+does not engage the type I IFN branch of TLR7," from the HEK/hTLR7 reporter result. **That is false.**
+R-848 gave 13,694–18,381 pg/ml IFN-α in primary pDCs, and the paper says so explicitly; the reporter
+negative reflects that line's low IRF-7. Nothing on [[TLR7]] is qualified by it — the wiki's DN2
+evidence reads proliferation/T-bet/IRF4/ASC out of R-848 on **B cells** and never claims a B-cell type
+I IFN output. The correct and narrower lesson — *a reporter line reports only the branches it is
+equipped to run* — is now written on [[TLR Reporter Cell Assay]] and [[TLR7]]. Coming one session
+after a genuine R848 correction, the pull toward finding a second one was momentum, not evidence.
+
+**Other traps recorded on-page:** MOI confound between Figs 2 and 3 (D2V at 2.5 vs 10 — the apparent
+30-fold IFN-α gap is dose); UV cross-linking results are n=2 and directional; Fig 5 is one
+representative of four; TLR7 attribution rests on an inhibitory ODN with mouse-KO validation, not a
+human knockout; CpG 2336's response to IRS 661 is not stated, so no TLR9 negative may be inferred.
+
+**Queue additions (not ingested, PDF-only rule applies):** Pichyangkul 2003 *J Immunol* 171:5571
+(blunted pDC response ↔ dengue severity — the only pDC↔outcome link, currently second-hand);
+Bekeredjian-Ding 2005 *J Immunol* 174:4043 (pDCs set naive B cell TLR7 sensitivity via type I IFN —
+the missing middle link, and the reason the chain dengue vRNA → pDC → IFN-α → B cell TLR7 → DN2 must
+**not** be built from this source).
+
+**Handover file `HANDOVER-wang2006.md` deleted** — ingest complete, no longer needed.
+
+---
+
+## [2026-08-23] deep lint | Structural health check (145 pages, scripted; no sub-agents)
+
+**Protocol:** Mechanical checks run as scripts over all 145 `.md` files (link resolution, orphan
+detection, frontmatter/Sources reconciliation, section-order, index coverage, thin-page census,
+marker-mention gap scan, highlight scan), followed by a **scoped semantic read** of the pages
+carrying the most 2026-08-18 mechanism content. Curator chose *report + cheap fixes* with the
+propagation debt deferred, and the non-agent path for the semantic pass. First lint since
+[2026-06-14].
+
+**Structural verdict: strong.** Zero insertion-order or section-order violations across all 103
+entity/concept/method pages — the 2026-05-08 content-displacement defect has not recurred. Zero
+frontmatter `sources:` vs `## Sources` bullet mismatches on those pages. `Curator Highlights`
+verified accurate against a fresh `==`/`%%` grep (2 highlights, both live) — no regeneration needed.
+
+### Findings and fixes applied
+
+| # | Finding | Count | Action |
+|---|---|---|---|
+| 1 | **Inverse propagation** — source cited inline in Key Points/Contradictions but absent from the page's `## Sources` list. A defect class no prior lint could see: the declared count matched a list that was itself short | 18 pages, 25 citations | **FIXED** — bullets added, `sources:` recomputed, `updated:` stamped |
+| 2 | **Index drift** — pages absent from `index.md` | 19 (4 sources, 10 entities, 4 concepts, 1 analysis) | **FIXED** — all 19 added with full annotations in house style |
+| 3 | **Stale `(sources: N)` annotations in index** | 12 | **FIXED** — synced to actual frontmatter |
+| 4 | **Orphan** — `Mechanistic Case for DN and DN2 Cells in Dengue`, zero inbound links from any page including index | 1 | **FIXED** — inbound links added from [[DN2 B Cell]] and [[Why DN B Cells Matter - Disease Relevance and Infectious Disease Case]], plus the index entry |
+| 5 | **Broken wikilink on a live page** — `flow-lab-setup-dn2-panel` in [[Compensation and FMO Controls]] pointed at a curator memory slug, not a wiki page | 1 | **FIXED** — converted to plain text, redirected to [[DN2 Panel - Staining, Compensation, and Gating Protocol]] |
+| 6 | **Propagation debt from the 2026-08-18 mechanism batch**, now quantified | **127 links** | **DEFERRED** — Watch Item; this is finishing an ingest, not linting |
+| 7 | Thin pages (`sources: 1`) | 25 → **22** after fix #1 | Reported; most are deliberate under the evidence-gate decisions |
+| 8 | Marker/alias gaps | 3 | Reported — see below |
+
+**Fix #1, by page:** APRIL 4→5, Age-Associated B Cell 5→6, Atypical B Cell Effector Output 9→12,
+BAFF 7→8, Class Switch Recombination 18→20, Compensation and FMO Controls 2→3, DN3 B Cell 4→5,
+Double-Negative B Cell 15→16, Follicular Exclusion 8→9, IFN-gamma 8→9, IL-21 5→6, IL-21R 4→5,
+Inflammatory Monocyte 3→5, PRNT 1→2, Peripheral Helper T Cell 1→2, Single-Cell RNA Sequencing 3→5,
+**TLR7 10→11** (was missing Kwissa2014 — notable given this week's TLR7 thread),
+Tissue-Resident Memory B Cell 1→4. Every flagged citation was inspected in context first; all 25
+were genuine attributed claims, none were navigational links.
+
+**Finding #6 by source** (pages linked from the source page that do not cite it back): Sanz2019
+40/42, Song2022 36/44, Zumaquero2019 31/41, Kwissa2014 20/29. Legacy stragglers: Anolik2004 3/15
+(CD27, IgD, IgG), Wrammert2012 1/15 (Germinal Center).
+
+**Finding #8:** `FCRL4` appears on 13 pages while the entity page is named `FcRH4` — same molecule,
+alias undocumented on the page. `Ki-67` appears on 19 pages under two spellings (Ki-67 / Ki67) with
+no page — a gap tracked since [2026-06-14]. `CD95` appears on 18 pages with no page. The other
+high-mention no-page markers (CD80, PD-L2, TLR3/4/8, IL-9, CD40, IL-6) are covered by the standing
+[2026-08-16]/[2026-08-18] evidence-gate decisions.
+
+### Semantic pass — scoped read of the mechanism-layer pages
+
+Read the Contradictions sections of T-bet, BLIMP-1, Atypical B Cell, DN2 B Cell, Extrafollicular
+Response, BAFF, IL-21, Type I Interferon, B Cell Receptor Signaling and Extrafollicular T Cell Help.
+
+**No flat contradictions found** — no two pages assert incompatible facts. The corpus is unusually
+disciplined about holding conflicts open (the BAFF three-way table and the T-bet
+definitional-vs-correlate reconciliation are model entries). The defect is **uneven vintage**: the
+2026-08-18 pages integrate the older corpus well, and the older pages do not know the new sources
+exist. Four specific instances:
+
+1. **★ [[IL-21]] Contradictions reads "None documented in current wiki sources" — but the
+   contradiction exists and is documented on two other pages.** [[BAFF]] and [[IL-21R]] both record
+   that plasma IL-21 does not correlate with DN2 frequency (r=0.087, Zumaquero2019) while IL-21R
+   blockade removes ~60% of the dengue plasmablast response (Ansari2025) — the serum-versus-local-
+   delivery problem. The IL-21 page is the natural home for it and declares itself clean. **The
+   single clearest semantic defect found.**
+2. **[[T-bet]] Contradictions omits Zumaquero2019**, whose IFN-γ-opens-chromatin-at-T-bet-motifs
+   result bears directly on the definitional-vs-correlate debate the section adjudicates. Already
+   priority #1 on the state.md propagation list.
+3. **[[BLIMP-1]] holds the T-bet→BLIMP-1 contradiction open**, correctly rejecting Cancro2020's
+   unreferenced assertion as insufficient — while Zumaquero2019's *PRDM1* remodelling and BLIMP1
+   motif opening, the adjacent evidence, is uncited there.
+4. **[[Extrafollicular Response]] Contradictions** carries the physiological-vs-pathological entry
+   routes debate (Glaros2025 vs Jenks2018) without Song2022, which is directly on point. The newer
+   [[Extrafollicular T Cell Help]] page holds a better-resolved version of the same argument. Two
+   pages, one debate, different vintages.
+
+### Not fixed, reported only
+
+- `log.md` ordering: the May–June block runs newest-first from the top; the August entries are
+  appended at the bottom. Cosmetic. **Deliberately not reordered** — this is an append-only record.
+- Three dangling links inside `state.md` prose (`[[Dengue Severity Binarization Spec]]`,
+  `[[severity-spec-a2d-db-mapping]]`, `[[three-wiki-architecture]]`) — residue of the 2026-06-30
+  off-site move and of memory-file references. Historical narrative; left intact.
+- Six of nine analyses pages carry no `sources:` frontmatter key. The analyses template uses
+  `## Sources Used` rather than `## Sources`, so this is a schema-versus-practice discrepancy, not a
+  page defect. Resolving it means editing CLAUDE.md and belongs to governance, not lint.
+
+**Files changed:** 23 — 18 Sources-list repairs, `index.md`, two de-orphaning edits ([[DN2 B Cell]], [[Why DN B Cells Matter - Disease Relevance and Infectious Disease Case]]), plus `log.md` and `state.md`. The broken-link fix landed on [[Compensation and FMO Controls]], already counted among the 18.
+
+## [2026-08-26] ingest | Beckers L, Somers V, Fraussen J 2023 - IgD⁻CD27⁻ Double Negative (DN) B Cells: Origins and Functions in Health and Disease
+
+*Immunology Letters* 255:67–76. DOI 10.1016/j.imlet.2023.03.003. Narrative review, 86 refs. Citations: Semantic Scholar 66, CrossRef 78 (retrieved 2026-08-26). Standard mode — pre-ingest discussion held; curator selected **responsiveness/exhaustion** and **origins/developmental pathways** as emphasis axes, and directed the dengue-absence finding into both Notable Findings and the disease-relevance analysis.
+
+**Created (1):** `sources/Beckers2023 - Origins and Functions of DN B Cells.md`
+
+**Updated (18 propagation-triad pages):**
+- *Entities (10):* [[Double-Negative B Cell]] (ABCB1⁻ / telomere / morphology; SASP + inhibitory-receptor split; age-correlation present in aging and axSpA but absent in SLE/pSS/MS; DN^low; three-hypothesis origin block; four contradictions incl. the CpG debate, the MS-is-not-DN2 caution, and DN1's ASC capacity) · [[DN2 B Cell]] · [[DN3 B Cell]] (autoantibody + inflammatory-marker correlation; **transience**) · [[Atypical B Cell]] · [[Switched Memory B Cell]] · [[Activated Naive B Cell]] · [[CD27]] · [[TLR7]] · [[TLR9]] · [[FcRH4]]
+- *Concepts (3):* [[Extrafollicular Response]] · [[Germinal Center]] · [[Atypical B Cell Effector Output]]
+- *Methods (5):* [[Conventional Flow Cytometry]] · [[In Vitro B Cell Stimulation]] · [[BCR Sequencing]] · [[Single-Cell RNA Sequencing]] · [[Phospho-Flow Cytometry]]
+
+**Also updated:** `index.md`, `analyses/Notable Findings.md` (1 entry — the dengue absence), `analyses/Why DN B Cells Matter - Disease Relevance and Infectious Disease Case.md` (new §6, prior §6 renumbered to §7), `state.md`.
+
+**Attribution discipline applied.** Beckers' refs [32] and [34] are [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]] and [[Woodruff2020 - EF B Cell Responses in COVID-19]], both already ingested as primaries. Where the review relays them, pages cite the primary and Beckers is used only for corroboration or framing. New content is limited to (a) Szelinski 2022's DN^low/int/hi scheme, (b) Stewart 2021 / Ruschil 2020 velocity and repertoire results, and (c) the Fraussen/Somers group's own data — refs [18] Fraussen 2019 and [43] Claes 2016: the 0.2–2.2% DN–SM clonal overlap and AIRR phenotype work, the MS blood/CSF findings, the CD86 activation deficit, LTα/TNF-α and granzyme B — cited as `review, own data`. **ABCB1, telomere length and morphology are NOT own data** (Colonna-Romano 2009 / Wei 2007 / Wirths 2005 / Wu 2011); an early draft said otherwise and was corrected in the same session.
+
+**Post-ingest attribution audit.** Every `citing <Author> <Year>` parenthetical added by this ingest was re-checked against the review's printed reference list (pp. 75–76) and ~12 were wrong on the first pass. Corrections: transience of the COVID DN2/DN3 shift is **Reyes 2021** [35], not Stewart 2021 [30] (Stewart is the scRNA-velocity paper, and covers all three velocity claims); the bidirectional DN↔SM genealogical-tree result is **Wu 2011** [21], not Ruschil 2020 [22]; the second CpG proliferation study is **Martorana 2014** [28], not Bulati 2011; the IL-10/TNF-α negative is **Bulati 2011** [17], not Frasca 2017 [23]; granzyme B and CXCR3/CCR6 trafficking are **Bulati 2014** [51], not Bulati 2011; the MS intrathecal-repertoire clonality is **Palanichamy 2014** [70] (a "Cortese 2022" attribution was invented and removed); FcRH4 is **Ehrhardt 2003** [44], not the 2005 *J Exp Med* paper; morphology is **Wu 2011** [21], not Wirths 2005; the inhibitory-receptor set is [24–28] (Moir 2008 / Weiss 2009 / Portugal 2015 / Castleman 2022 / Martorana 2014) — invented "Kuroski 2016 / Yin 2017" removed. **A verified bracket→reference map is now recorded on the source page under `## Reference Map` so this is not re-derived.**
+
+**Two content corrections made in the same pass.** (1) **DN^low is CXCR5⁻, not CXCR5⁺** — the review's §3 body text and its own Table 1 disagree, and Szelinski's title ("antigen-experienced CXCR5⁻CD19low B cells") settles it. On the corrected reading DN^low sits in DN3 territory rather than being an unreconciled fourth population, which is what [[Sanz2025 - Human Atypical B Cells Overview]] already said. Pages affected: [[DN3 B Cell]], [[Atypical B Cell]], [[Double-Negative B Cell]], [[Conventional Flow Cytometry]]. (2) A [[CD27]] bullet stated that **CD27** is downregulated as a consequence of isotype switching; it is **IgD**. Rewritten.
+
+**Link-list trimming.** The source page's Entities/Concepts sections were cut from 28+9 links to 10+3 after the first draft; the remaining ~24 topics are listed in italics under each section as "discussed but not separately updated," so the propagation triad matches what was actually visited.
+
+**Structural defect noted, NOT fixed:** [[Activated Naive B Cell]] carries ~9 Key-Points-style bullets sitting *inside* `## Contradictions & Debates` (lines ~31–47) — pre-existing misfiling of the kind the insertion-order guard exists to prevent. New content was inserted correctly at the end of Key Points; the pre-existing bullets were left in place. Raised as a Watch Item rather than restructured mid-ingest (CLAUDE.md rule 5).
+
+---
+
+## [2026-08-27] ingest | Eisenbarth SC et al. 2025 - A Roadmap for Defining Extrafollicular B Cell Responses
+
+*Immunity* 58(11):2627–2645. DOI 10.1016/j.immuni.2025.08.007. Consensus Perspective, 12 authors (Eisenbarth, Batista, Cyster, Elsner, Kelsoe, Lund, Pillai, **Sanz**, Shlomchik, Toellner, Vinuesa, Baumgarth); no primary data; in-text refs to 137. Citations: Semantic Scholar 26, CrossRef 35 (retrieved 2026-08-27). Standard mode — pre-ingest discussion held; three curator decisions taken (below). Table 1 was recounted directly against pp. 2631–2632 (**13 states × 10 columns**) after the two-column text extraction proved unreliable; an initial "16 states" figure was not supportable and was corrected.
+
+**Curator decisions at ingest.** (1) The paper's process-based replacement labels are held as an **annotation layer** — recorded on affected entity pages, with DN1/DN2/aNAV retained as the wiki's working names for searchability. **No page renames**; adopting the vocabulary outright would be Rule 5 restructuring and was not done. (2) The "no flow panel establishes EF" constraint was **written into all three of the curator's own analyses pages**, not held on the concept page alone. (3) A new concept page was created for the origin-vs-location distinction.
+
+**Created (2):** `sources/Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses.md` · `concepts/GC-Independent Response.md`
+
+**Updated (24 pages):**
+- *Entities (12):* [[DN2 B Cell]] · [[Double-Negative B Cell]] (mouse DN ≠ human DN; mouse DN/DP memory recall fates) · [[Atypical B Cell]] · [[Age-Associated B Cell]] (four incompatible ABC expansions; Cancro dedication) · [[Activated Naive B Cell]] · [[CD11c]] (first Contradictions entry — was "None documented") · [[T-bet]] · [[CXCR5]] (first Contradictions entry) · [[CD21]] (first Contradictions entry) · [[ZEB2]] · [[TLR7]] (TLR7 drives GC *and* EF; TLR9+BCR drives EF selectively) · [[Plasmablast]] (ASC at an EF site ≠ EF origin)
+- *Concepts (5):* [[Extrafollicular Response]] (the four situations; the origin/location split; two non-consensus points) · [[Germinal Center]] · [[Somatic Hypermutation]] (load = rate × time; probability not measure) · [[Extrafollicular T Cell Help]] · [[Toll-like Receptor Signaling in B Cells]] (Box 2 commitment cues)
+- *Methods (4):* [[Conventional Flow Cytometry]] · [[Immunohistochemistry]] (promoted from 1 to 2 sources; tissue imaging is now the only EF-licensing evidence) · [[BCR Sequencing]] (mutational load = rate × time; isotype conditions the inference; AID is not a GC readout) · [[Spectral Flow Cytometry]] (promoted from 1 to 2 sources; parameter count does not overcome the EF-identification limit)
+- *Analyses (3):* [[Mechanistic Case for DN and DN2 Cells in Dengue]] (new hazard **(g)**; new "not supportable" bullet; 2 new open questions) · [[Research Plan - DN B Cell Expansion in Dengue]] (new Background subsection *Nomenclature and inference caveat*; new **Limitation 13**) · [[Thesis Objectives and Grant Pitch]] (★ derived-metrics bullet; 2 new confounder-table rows; new open question)
+
+**Also updated:** `index.md` (new source row; new concept row; **all 19 touched-page source counts synced against frontmatter — no missing rows among them**; header 31→32 sources, 143→145 pages, Concepts 13→14), `analyses/Notable Findings.md` (1 entry), `state.md`.
+
+**The distinction this ingest turns on, recorded so it is not flattened.** The paper does **not** say DN2 cells are GC-derived. It separates two claims the field conflates: *GC-independent* (an **origin** claim, inferable from mutational load, GC-ablation genetics, tissue architecture and clonal connectivity) and *extrafollicular* (a **location** claim requiring imaged proliferation outside a follicle). Verbatim: *"the EF designation of this human DN2 cell refers to its presumed GC-independent origin rather than its location."* The wiki's mechanistic spine — Jenks2018's TLR7/IFN-γ/IL-21 pathway, the ZEB2/T-bet programme, Scharer2019's epigenetic trajectory, Tipton2015's clonal connectivity — is entirely origin evidence and is **untouched**. The supportable sentence is *"as of Nov 2025, a consensus panel holds that EF should be reserved for imaged responses and that no flow panel alone establishes EF origin"* — **not** *"DN2 cells are not extrafollicular."* The second version reads better, which is why it is guarded against here.
+
+**Attribution discipline (Beckers2023 precedent).** The Perspective relays [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]], [[Woodruff2020 - EF B Cell Responses in COVID-19]], [[Kaneko2020 - GC Loss and TFH Block in COVID-19]], [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]] and [[Cancro2020 - Age-Associated B Cells]], all already ingested; where it relays them, pages cite the primary. Content cited **to Eisenbarth** is limited to what is genuinely theirs: the four "situations" taxonomy, the phase 1–4 model, Box 1's three-tier glossary, Box 2's commitment cues, Figure 2's mutational-load-as-probability model, the nomenclature proposals, and the two recorded failures of internal consensus.
+
+**Standing PDF-only sourcing decision honoured.** Nothing outside `raw/Eisenbarth2025.pdf` and already-ingested pages was consulted, other than the two citation-count APIs. Szelinski, Stewart, MacLennan, Laidlaw, Di Niro and the direct-mutation-rate reference (ref 135) were **not** looked up; where the wiki needs them they are queue candidates for the curator to add.
+
+**Link-list discipline.** The source page nominally touches ~40 wiki topics. Entities were cut to 12 links and Concepts to 6, with the remainder listed in italics under each section as "discussed but not separately updated." **Propagation triad verified: Entities 12/12, Concepts 6/6, Methods 4/4 — every linked page visited and updated.** (First pass updated only 2 of the 4 linked methods; [[BCR Sequencing]] and [[Spectral Flow Cytometry]] were added on review, and the Figure 2 rate-vs-load caution now sits on the method that produces the number as well as on [[Somatic Hypermutation]].) 24 updates is above the 5–15 guidance; this is a framework paper that qualifies vocabulary used across the wiki, and each of the 22 carries a specific claim rather than a citation bump.
+
+**Pre-ingest snapshot note:** commit `b967f3c` swept the previously untracked `raw/reyes2023.pdf` into the tree along with the Eisenbarth snapshot — correct per the workflow's `git add -A`, recorded here so a later session does not wonder why reyes2023 is tracked without a snapshot of its own.
+
+**Pre-existing structural defect, still NOT fixed:** [[Activated Naive B Cell]] retains ~9 Key-Points-style bullets misfiled inside `## Contradictions & Debates` (flagged at the 2026-08-26 Beckers ingest). This ingest again inserted correctly at the end of Key Points and left the pre-existing bullets alone. Watch Item stands.
+
+---
+
+## [2026-08-27] deep lint | full wiki (149 pages), two-worker parallel
+
+**Method.** Mechanical layer scripted by the orchestrator (link graph, propagation, frontmatter, section structure); semantic layer split two ways — one sub-agent read all 90 pages of `entities/` + `methods/` in full, the orchestrator took `sources/` + `concepts/` + `analyses/` plus consolidation. Four scripted checks were rewritten mid-lint after they proved unsound: the orphan check counted `index.md` as an inbound link (making the result vacuous by construction), the propagation check ran only forward, and the escape-hatch regex missed two of the three italic wordings in use (`also touched, no new content` and the Concepts-section variant). Reported numbers are post-correction.
+
+### Verified clean (no action)
+
+Link graph — 0 stale wikilinks in content pages, 0 broken `raw/*.pdf` links, 0 duplicate basenames. True orphans 0 (re-run excluding index/log/state as inbound). `index.md` complete both directions, header counts correct (33 sources / 146 + 3 meta). Section ordering clean. **Zero instances of the 2026-05-08 insertion-order defect class.** Frontmatter complete except the known `analyses/` `sources:` schema gap (governance, not lint). Curator Highlights accurate at 2 live highlights — not regenerated. Eisenbarth2025's origin-vs-location caveat confirmed present in all three curator analyses pages.
+
+### ★ Headline: the recent ingests are clean; the debt is historical
+
+**Allard-Chamard2023, Eisenbarth2025 and Beckers2023 each show 0 propagation failures.** The propagation check and insertion-order guard added to CLAUDE.md are working as intended. Every defect below sits in pre-guard ingests.
+
+### FINDING 1 (SEVERE, deferred) — 130 reverse-propagation failures across 6 pre-guard papers
+
+A source page lists a page in its Entities/Concepts/Methods triad, but that page cites the source nowhere — not in body, not in its Sources list. Confirmed by bare-author-name grep (10 spot-checks), escape-hatch lines excluded.
+
+| Source | Failures |
+|---|---|
+| Sanz2019 | 40 |
+| Song2022 | 35 |
+| Zumaquero2019 | 31 |
+| Kwissa2014 | 20 |
+| Anolik2004 | 3 |
+| Wrammert2012 | 1 |
+
+Substantive, not bookkeeping: [[T-bet]] cites 11 sources and includes neither Zumaquero2019 (IFN-γ programs T-bet^hi B cells) nor Song2022 (the T-bet⁺CD11c⁺ fate-mapping primary); [[Germinal Center]] omits Wrammert2012; [[Plasmablast]] omits Kwissa2014; [[CD21]] / [[CXCR5]] / [[FCRL5]] / [[SLAMF7]] all omit Sanz2019, the source of the wiki's canonical DN1/DN2 marker definitions. Root cause: the 2026-05-08 lint repaired only the forward direction (a page's Sources list vs its own body links). **Deferred — 130 instances each needing a propagate-vs-trim judgment is a multi-session project, not a lint fix.** Watch Item opened.
+
+### FINDING 2 (HIGH, deferred) — `raw/Jenks2021.pdf` untracked everywhere
+
+Zero mentions in `state.md` or `log.md`. The 2026-08-27 `raw/` audit says "five PDFs remain un-ingested" but enumerates four; Jenks2021 is the dropped fifth. Identity: Jenks SA, Wei C, Bugrovsky R, … Sanz I, *"B cell subset composition segments clinically and serologically distinct groups in chronic cutaneous lupus erythematosus"* (Emory/Sanz lab, 23 pp). Sanz-lab primary with DN/DN2 subset composition stratified by clinical group. state.md enumeration corrected this pass.
+
+### FINDING 3 (HIGH, deferred) — a Notable Finding names two analyses pages it reframes; neither was updated
+
+The Allard-Chamard2023 entry *"The subset the extrafollicular case is built on is the one that isn't in the tissue"* states in its own **Why notable** paragraph that it reframes [[Mechanistic Case for DN and DN2 Cells in Dengue]] and the DN2:DN1 centrepiece of [[Thesis Objectives and Grant Pitch]]. Allard-Chamard2023 is cited in neither (0 hits across all four thesis-bearing analyses pages); the ingest touched only Notable Findings and External Citation Audit. The omitted content is the sharpest qualification of the wiki's own thesis — DN2 at ~7 cells/mm² in COVID-19 lymph node against DN3's ~400. Deferred as Rule 5 (curator-authored analysis pages).
+
+### FINDING 4 (HIGH, deferred) — [[DN2 Gating Strategy]] stale against both new primaries
+
+Last updated 2026-06-27. (a) Its title and Research Question frame the panel as *EF B Cell Identification*, yet it carries no trace of Eisenbarth2025's "no flow panel alone establishes EF" — the page where that constraint bites hardest, and not among the three the curator's ingest decision covered. (b) Its "DN1 vs DN3 distinction | CXCR5" row is wrong in shape: Allard-Chamard2023 gates DN on **CXCR5 × CD11c with no CD21**, so the page's CD21 × CD11c 2×2 does not map onto DN1–DN4 at all. (c) Cut values on the page (CD27 <1.76, CD21 <0.69, CD11c >0.72) diverge from the FlowCyto pipeline's locked cuts (3.2 / 0.33 / 0.28) on three of four axes — cross-project, curator's call which is authoritative. [[B Cell Panel Variant 1]] has the same gap in milder form.
+
+### FINDING 5 (MEDIUM, deferred) — [[Activated Naive B Cell]] misfiling, third flag
+
+~9 Key-Points bullets (Jenks2018/Sanz2025/Woodruff2020/Scharer2019/Kaneko2020 primary data) sit inside `## Contradictions & Debates`, from **"Shared identity with DN2 cells:"** through **"Independent cohort confirmation…"**. The first two bullets of that section are genuine contradictions and should stay. Flagged at the Beckers2023 and Eisenbarth2025 ingests and again here; still Rule 5.
+
+**Adjudicated and cleared:** the other five pages the bolded-bullet heuristic flagged ([[Age-Associated B Cell]], [[Atypical B Cell]], [[Double-Negative B Cell]], [[T-bet]], [[Extrafollicular Response]]) carry **genuine** two-sided contradictions and are correctly filed. Activated Naive B Cell is the only offender.
+
+### FINDING 6 (MEDIUM, deferred) — the bare-`(review)` citation pattern from the Glaros2025 ingest
+
+Key-Points bullets carrying a study-type parenthetical — `(review)`, `(review, mouse)` — with **no source wikilink at all**, violating Rule 3. Worst: [[Tissue-Resident Memory B Cell]] 9/11 bullets, [[Early Memory B Cell]] 7/10, [[Atypical B Cell]] 7/22, [[IgM]] 4/14. Mechanical to repair (insert `(see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review, …)`), but ~50 edits. The same ingest produced two verbatim duplications: [[IgA]] and [[IgG]] each state the ABC-isotype finding twice, once cited to Lamprinou2026 and once unlinked.
+
+### FINDING 7 (MEDIUM, deferred) — Eisenbarth2025's activation-vs-lineage caveat landed unevenly
+
+Recorded on [[CD11c]], [[CD21]], [[CXCR5]], [[Activated Naive B Cell]] and [[Conventional Flow Cytometry]]; absent from [[CD71]] (0 hits) and [[CD27]] (0 hits) — despite the Perspective naming both verbatim ("activated B cells (CD71⁺)" as one of the four incompatible ABC expansions; *"CD11c and T-BET expression **or lack of CD27** are not exclusive markers of EF B cell responses"*). [[CD27]] still asserts unqualified that *"its absence in DN B cells is used as evidence for their GC-independent (extrafollicular) origin"* — the exact inference the consensus severed. A reader navigating by marker gets an inconsistent picture of how firm the phenotype is. Same cohort: [[PD-1]], [[TRAF5]], [[CD24]], [[CD38]], [[CD10]].
+
+### FINDING 8 (MEDIUM, deferred) — [[XBP1]] missed the Allard-Chamard2023 propagation
+
+XBP1's Contradictions table poses *"Is XBP1 up or down in atypical B cells?"* with candidate reconciliation #2: *"If UPR marks DN3 rather than DN2 (Lamprinou2026), then a bulk murine T-bet⁺CD11c⁺ gate would show Xbp1 high while a purified human DN2 gate showed it low."* Allard-Chamard2023 supplies exactly that as primary data (sorted DN3 uniquely carries proliferation + UPR, n=4) and was propagated to [[DN3 B Cell]], [[RNA Sequencing]], [[IgG]] and [[SLAMF7]] — but **not** to XBP1, the one page it resolves. Merge candidate noted: [[LFA-1]] + [[VLA-4]] are two thin pages carrying one indivisible dual-blockade result from Song2022.
+
+### Fixed this pass (8 files)
+
+1. [[GC-Independent Response]] — Cancro2020 + William2002 cited in body, absent from Sources. Added; `sources:` 9→11.
+2. [[DN3 B Cell]] — Scharer2019 cited in body, absent from Sources. Added; `sources:` 7→8.
+3. [[Plasmablast]] and [[GC-Independent Response]] (already counted at 1) — stray blank lines inside Sources lists removed.
+4. [[Compensation and FMO Controls]] — Sutton2021 miscited as "CITE-seq, n=18 donors"; the CITE-seq arm is n=4 and n=18 is the separate flow-validation cohort (consistent with [[CITE-seq]], [[CD21]], [[DN2 B Cell]]). Corrected.
+5. [[SLAMF7]] — Contradictions read "None documented" while the page carried a live two-source conflict: Jenks2018 reports SLAMF7 absent from DN1, Allard-Chamard2023 measures all four DN subsets positive (DN2 2123 > DN3 1536 > DN4 956 > DN1 895, n=4). Contradictions entry opened, with the panel-sensitivity reconciliation and the standing consequence (SLAMF7 cannot separate DN2 from DN3).
+6. [[Atypical B Cell]] — restated the superseded DN4 = CXCR5⁺CD11c⁻T-bet⁻ phenotype with no pointer to the correction. Inline ⚠ qualifier added, matching the pattern already on [[Double-Negative B Cell]].
+7. [[DN2 Panel - Staining, Compensation, and Gating Protocol]] — carried a ⚠ contradiction claiming [[DN2 Gating Strategy]] describes the input as "dengue patient PBMCs." That page now reads "whole-blood leukocytes (RBC-lysed whole blood, not Ficoll-separated PBMCs)" — the contradiction was resolved and the flag was stale. Cleared and recorded as reconciled.
+8. `wiki/state.md` — the `raw/` audit's "five PDFs" enumeration corrected to include Jenks2021.
+
+### Detector persisted
+
+The reverse-triad check is saved as `tools/lint_propagation.py` (run from the repo root; exit 1 on
+failures). It carries the corrected escape-hatch pattern and a header comment recording why the
+forward-only check missed this class for three months, and warning that the exclusion is
+wording-sensitive — a new italic phrasing must be added to `ESCAPE_HATCH` or the script reports false
+positives. Run it after every ingest.
+
+### Not fixed, by design
+
+Findings 1–8 above are reported, not applied: each is either a multi-session repair (1, 6), an ingest decision (2), or Rule 5 restructuring of curator-authored pages (3, 4, 5, 7, 8). 18 thin pages (1 source) are recorded but are mostly single-paper technical entities, not defects — Finding 1's repair would thicken several for free ([[ICOS]] gains Song2022; [[CD71]] gains Sanz2019).
+
+---
+
+# ★★★ NEXT SESSION — START HERE ★★★
+
+*Written at the 2026-08-27 deep lint (entry below). Everything here needs the curator, either as a decision or as an approval. Nothing in this block was actioned; the lint deliberately stopped short of all of it.*
+
+## A. Decisions only the curator can make — these block work
+
+**A1. Which cut values are authoritative — the wiki page or the FlowCyto pipeline?**
+[[DN2 Gating Strategy]] prints `IgD <1.98 · CD27 <1.76 · CD21 <0.69 · CD11c >0.72` (arcsinh/500, FMO-anchored from HT82). The `FlowCyto Analysis 1/` pipeline's locked cuts are `IgD 1.98 · CD27 3.2 · CD21 0.33 · CD11c 0.28`. **Three of four axes disagree**, and IgD is the only match. This cannot be resolved from inside this repo — the wiki page was last updated 2026-06-27, *after* the 2026-06-21 cut-placement pass, so it is not simply stale. Until this is settled, any figure quoted from that page may not match the analysis that produced the data.
+
+**A2. Ingest `raw/Jenks2021.pdf`?**
+It was untracked in state.md and log.md until this lint. **Jenks SA, Wei C, Bugrovsky R, … Sanz I — "B cell subset composition segments clinically and serologically distinct groups in chronic cutaneous lupus erythematosus"** (Emory/Sanz lab, 23 pp). A Sanz-lab **primary** with DN/DN2 subset composition stratified by clinical group. Already in `raw/`, so the standing PDF-only sourcing decision is no obstacle. This is the strongest on-spine candidate currently sitting un-ingested — stronger, for the DN spine, than the three dengue cohort papers ahead of it in the queue, which are plasmablast/serology papers.
+
+## B. Rule 5 approvals — one word each, then Claude executes
+
+**B1. Move the misfiled bullets on [[Activated Naive B Cell]].** ~9 Key-Points bullets of Jenks2018/Sanz2025/Woodruff2020/Scharer2019/Kaneko2020 primary data sit inside `## Contradictions & Debates`, running from **"Shared identity with DN2 cells:"** through **"Independent cohort confirmation…"**. The **first two** bullets of that section are genuine contradictions and stay. Flagged at the Beckers2023 ingest, again at Eisenbarth2025, and again here — **third flag**. One move, ~5 minutes. *(Adjudicated this lint: the five other pages a bolded-bullet heuristic flags — [[Age-Associated B Cell]], [[Atypical B Cell]], [[Double-Negative B Cell]], [[T-bet]], [[Extrafollicular Response]] — carry genuine two-sided contradictions and are correctly filed. Do not "fix" those.)*
+
+**B2. Write the Allard-Chamard tissue finding into the two thesis analyses pages.** Its own Notable Findings entry names [[Mechanistic Case for DN and DN2 Cells in Dengue]] and the DN2:DN1 centrepiece of [[Thesis Objectives and Grant Pitch]] in the **Why notable** paragraph — and the paper is cited in neither. Proposed: a new hazard bullet on Mechanistic Case alongside the existing (a)–(g), and a confounder-table row on Thesis Objectives. **The content is the sharpest available qualification of the wiki's own thesis** — DN2 at ~7 cells/mm² in COVID-19 lymph node against DN3's ~400, i.e. the only direct human tissue evidence the wiki holds says DN2 is a blood population.
+
+**B3. Update [[DN2 Gating Strategy]] for both new primaries** (independent of A1). Two edits: **(a)** add Eisenbarth2025's "no flow panel alone establishes EF" — the page's title and Research Question both frame it as *EF B Cell Identification*, and it is the page in the wiki where that constraint bites hardest; it was not among the three the Eisenbarth ingest decision covered. **(b)** correct the "DN1 vs DN3 distinction | CXCR5" row, which is wrong *in shape*: Allard-Chamard2023 gates DN on **CXCR5 × CD11c with no CD21**, so the page's CD21 × CD11c 2×2 does not map onto DN1–DN4 at all and DN4 has no cell in the current tree. [[B Cell Panel Variant 1]] needs the same, milder.
+
+## C. Queued repair work — approve and Claude proceeds unattended
+
+**C1. The 130-instance reverse-propagation debt.** Detector is saved at `tools/lint_propagation.py` (run from repo root). **Suggested order: Sanz2019 first** (40 targets — the nomenclature backbone, and its targets are the most-read marker pages), then Song2022 (35), Zumaquero2019 (31), Kwissa2014 (20), Anolik2004 (3), Wrammert2012 (1). Budget roughly one session per paper. Each instance takes one of two fixes — *propagate* the claim, or *trim* the link to the source page's italic escape-hatch line — and the choice is per-instance, so this cannot be batched blindly.
+
+**C2. The ~50 bare-`(review)` citations from the Glaros2025 ingest** (Rule 3 violation — a study-type parenthetical with no source wikilink). Worst: [[Tissue-Resident Memory B Cell]] 9/11 · [[Early Memory B Cell]] 7/10 · [[Atypical B Cell]] 7/22 · [[IgM]] 4/14. Mechanical. Also merge the two verbatim duplications the same ingest produced on [[IgA]] and [[IgG]].
+
+**C3. Small, self-contained, no decision needed:** add Eisenbarth2025's activation-vs-lineage caveat to [[CD27]] and [[CD71]] (both 0 hits, both named verbatim in the Perspective — [[CD27]] still asserts unqualified that its absence "is used as evidence for their GC-independent (extrafollicular) origin", the exact inference the consensus severed) · propagate Allard-Chamard2023 to [[XBP1]], the one page its DN3/UPR primary data resolves · decide whether [[LFA-1]] and [[VLA-4]] merge (two thin pages carrying one indivisible dual-blockade result).
+
+## What does NOT need attention
+
+Verified clean this lint, so do not re-audit: link graph (0 stale wikilinks in content pages) · 0 true orphans · 0 broken `raw/*.pdf` links · index complete both directions with correct counts · **0 instances of the 2026-05-08 insertion-order defect class** · Curator Highlights accurate at 2 live highlights · Eisenbarth2025's origin-vs-location caveat present in all three curator analyses pages · **Allard-Chamard2023, Eisenbarth2025 and Beckers2023 all show 0 propagation failures — the CLAUDE.md guards are working.**

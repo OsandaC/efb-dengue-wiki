@@ -2,8 +2,8 @@
 type: concept
 tags: [antibody-dependent-enhancement, ADE, Fc-receptor, cross-reactivity, dengue-severity, secondary-dengue]
 created: 2026-05-10
-updated: 2026-05-23
-sources: 5
+updated: 2026-08-23
+sources: 6
 ---
 
 # Antibody-Dependent Enhancement
@@ -22,6 +22,9 @@ Antibody-dependent enhancement (ADE) is a mechanism by which pre-existing cross-
 - **Cross-disease neutralising antibody paradox in COVID-19:** In critically ill COVID-19 patients with EF B cell activation, anti-RBD antibodies (IgM, IgG, IgA) and confirmed neutralising activity were highest in the worst-outcome patients (ICU, death) — the same patients with the most SLE-like EF activation profile. This paradox — functional neutralising antibodies produced via an EF pathway yet correlating with poor prognosis — establishes a cross-disease pattern relevant to ADE interpretation: high total antibody output from the EF pathway may include a non-neutralising fraction that enhances rather than protects, even when the same individual also produces neutralising antibodies (see [[Woodruff2020 - EF B Cell Responses in COVID-19]], n=17 COVID-19, 24-marker spectral FCM + scVDJ — n=1 for repertoire claims).
 - **PB-derived mAbs are an incomplete window into ADE risk:** Plasmablast-derived antibodies are predominantly E-specific and more potently neutralising than memory B cell-derived antibodies, yet the PB repertoire does not represent the full memory B cell pool. Bone marrow-resident long-lived plasma cells — an unmeasured compartment — may also contribute ADE-competent antibodies. Measuring plasmablast ADE activity alone may underestimate or mischaracterise the in vivo ADE risk (see [[Bhattacharya2016 - Memory B Cell Subset Selection in Secondary Dengue]], commentary — no original data, cites Appanna2016 and Seifert2015).
 
+- **⚠ Secondary infection was *not* enriched in the severe arm of one adult cohort.** Classifying by IgM/IgG OD ratio, **73% of DF and 70.8% of DHF** patients had secondary infection — essentially identical proportions (see [[Posadas-Mondragon2020 - TLR Polymorphisms and Clinical Forms of Dengue]], n=165 adult patients, WHO 1997, DENV-2-dominant, days 1–8 post-onset). Since ADE predicts severity should concentrate among secondary infections, this is a negative observation for the simplest form of the model in this cohort. Three heavy caveats: the study was not designed to test ADE and does not discuss it; serological primary/secondary assignment on acute sera is imprecise; and the "DHF" definition here is thin (platelets plus any bleeding — see [[Dengue Severity Classification]]). Recorded as an observation, not a refutation.
+- The authors state the standard ADE premise as background — pre-existing heterotypic antibodies form virus–antibody complexes that bind Fc receptors and facilitate infection of target cells, raising viraemia and cytokine levels — but perform no neutralisation, avidity or Fc-receptor experiment (see [[Posadas-Mondragon2020 - TLR Polymorphisms and Clinical Forms of Dengue]], background statement only).
+
 ## Contradictions & Debates
 
 - The in vitro ADE assay (U937 cells, single mAb concentration) does not capture the concentration-dependent balance between neutralisation and enhancement that exists in vivo. At sufficiently high concentrations, most antibodies neutralise; at sub-neutralising dilutions, they enhance. Whether the plasmablast-derived antibody concentrations achieved in patient serum fall within the enhancing or neutralising range is unknown.
@@ -36,3 +39,4 @@ Antibody-dependent enhancement (ADE) is a mechanism by which pre-existing cross-
 - [[GarciaBates2013 - Plasmablast Response and Dengue Severity]]
 - [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]
 - [[Woodruff2020 - EF B Cell Responses in COVID-19]]
+- [[Posadas-Mondragon2020 - TLR Polymorphisms and Clinical Forms of Dengue]]

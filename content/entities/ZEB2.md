@@ -2,8 +2,8 @@
 type: entity
 tags: [transcription-factors, ZEB2, T-bet, effector-differentiation, DN2]
 created: 2026-05-02
-updated: 2026-08-16
-sources: 3
+updated: 2026-08-27
+sources: 4
 ---
 
 # ZEB2
@@ -25,6 +25,8 @@ ZEB2 (Zinc finger E-box-binding homeobox 2) is a transcriptional regulator induc
 - **★ ZEB2 is proposed as the factor imposing a *shared* ABC programme across immune contexts.** Independently of the Sanz2025/Dai2024 line above, a second review lineage identifies ZEB2 as "a key transcription factor involved in ABC development both in mice and humans," explicitly linking it to the observation that ABCs from malaria, HIV, and autoimmune disease share transcriptional profiles (see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review, citing Dai 2024 *Science* + **Gao 2024 *Sci Immunol***). This elevates ZEB2 from an SLE/TLR7-context driver to the leading candidate for a cross-disease ABC identity factor — and makes it the most interesting unstained TF for dengue (no dengue study has measured it; it is intranuclear, so it fits intracellular-capable panels).
 - **★ ZEB2/ABC function is dual-edged — pathogenic in autoimmunity, protective in persistent infection.** B-cell-specific *Zeb2* deletion **improved disease outcomes in a lupus mouse model**, consistent with the therapeutic framing above. But in **persistent *Plasmodium* infection**, B-cell-specific *Zeb2* deletion **decreased germinal-center B cell numbers**, indicating that ZEB2-driven ABCs help *sustain* germinal centers and humoral responses in chronic infection (see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review, citing Gao 2024 *Sci Immunol*, mouse conditional-KO). See Contradictions below.
 
+- **ZEB2 named as a transcriptional regulator of GC-independent responses in both mice and humans — with an explicit caveat against over-reading it.** The consensus Perspective identifies ZEB2 (with T-bet) as part of a *"remarkably conserved molecular and phenotypic profile"* of B cells presumed to derive from GC-independent responses, alongside CD19^hi, CD20^hi, CD21^lo, CD23^lo, CXCR5^lo, FcRL5, PD-1, and CD11c. ZEB2⁺ cells appear to have undergone IFN-γ-dependent transcriptional programming, including CXCR3 induction. But the authors add: *"Expression of ZEB2 and TLR7 may help define a unique B cell activation pathway, but limited data currently exist to determine whether this B cell fate and a classic EF response are always related"* — i.e. ZEB2 marks a programme, and whether that programme is the extrafollicular pathway is an open question, not an established mapping (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data).
+
 ## Contradictions & Debates
 
 - **★ ZEB2 blocks GC entry, yet ZEB2-driven ABCs sustain GCs — which is it?** The wiki holds two results that pull in opposite directions:
@@ -34,9 +36,10 @@ ZEB2 (Zinc finger E-box-binding homeobox 2) is a transcriptional regulator induc
   - **Therapeutic consequence:** ZEB2/ABC depletion is not unidirectionally beneficial. In an infection setting it may cost humoral immunity — directly relevant if the atypical compartment is ever proposed as a dengue intervention target.
 
 ## Related Pages
-[[T-bet]], [[DN2 B Cell]], [[Activated Naive B Cell]], [[Atypical B Cell]], [[Age-Associated B Cell]], [[Extrafollicular Response]], [[Germinal Center]]
+[[T-bet]], [[DN2 B Cell]], [[Activated Naive B Cell]], [[Atypical B Cell]], [[Age-Associated B Cell]], [[Extrafollicular Response]], [[Germinal Center]], [[GC-Independent Response]]
 
 ## Sources
 - [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]
 - [[Sanz2025 - Human Atypical B Cells Overview]]
 - [[Glaros2025 - Multilayered Identity of B Cell Memory]]
+- [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective; ZEB2↔EF mapping is unestablished

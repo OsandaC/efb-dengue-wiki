@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, Fc-receptor-homologs, inhibitory-receptor, memory-b-cells, tissue-resident-b-cells]
 created: 2026-05-02
-updated: 2026-08-16
-sources: 4
+updated: 2026-08-27
+sources: 6
 ---
 
 # FcRH4
@@ -28,15 +28,22 @@ FcRH4 is closely related to FcRH5 (FCRL5), which has emerged in more recent lite
 - **FCRL4 appears in the review-level marker set for human atypical B cells.** Human ABCs are described as typically lacking [[CD27]] and [[CD21]] while often expressing [[T-bet]] with [[CD11c]], [[CXCR3]], **FCRL4**, and [[FCRL5]] (see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review, **no original data**). ⚠ **This sits in tension with the wiki's DN2 definition**, which is explicitly **FCRL4⁻** — the absence of FCRL4 is what distinguishes SLE DN2 cells from HIV exhausted memory and from tissue-based FCRL4⁺ memory ([[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]; see [[DN2 B Cell]]). The most likely reading is that the review's marker list is a **union across the heterogeneous "ABC" umbrella** — which includes tissue-associated FCRL4⁺ populations — rather than a conjunctive definition of any one cell. Treat FCRL4 as an umbrella-level marker, not a DN2 marker.
 - **FCRL4 originally defined a tissue-based memory population.** The review cites the founding description of FcRH4/FCRL4 as "an immunoregulatory molecule" defining a **distinctive tissue-based population of memory B cells** (citing Ehrhardt 2005 *J Exp Med*), which is consistent with its appearance in the atypical marker set via tissue-resident rather than circulating cells. See [[Tissue-Resident Memory B Cell]].
 
+- **Corroboration of the tonsil⁺/blood⁻ split, with a functional inference attached.** A 2023 review restates that FcRH4⁺ DN cells predominate in **tonsil** while peripheral blood DN cells are **FcRH4⁻** in both HD and SLE, and adds the authors' speculation that this is *why* circulating DN cells are more responsive to activation and expansion than their tissue-resident counterparts — i.e. FcRH4 is offered as the brake that the blood population lacks (see [[Beckers2023 - Origins and Functions of DN B Cells]], review, citing Wei 2007 / Ehrhardt 2003 — note this is the 2003 *PNAS* paper, not the 2005 *J Exp Med* paper cited elsewhere on this page).
+
+- **★ [2026-08-27] FcRL4⁺ cells are ~15–18% of blood DN B cells in HIV — but ~1% in healthy controls and in IgG4-related disease (n=5 per group, p<0.0001).** FcRL4 was included in a 13-colour B cell panel specifically to distinguish the IgG4-RD DN compartment from the HIV DN compartment, and it did so cleanly (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=5 per group).
+- **⚠ [2026-08-27] This qualifies, and partly conflicts with, the standing wiki claim that FcRH4 is absent from all peripheral blood B cell subsets.** [[Wei2007 - DN Memory B Cells in SLE]] reported FcRH4 absent from every blood subset in healthy donors (n=29) and SLE (n=36). Allard-Chamard's healthy and IgG4-RD values (~1%) are **consistent with Wei**; the discrepancy is confined to **HIV**, which Wei did not study. The reconciliation is therefore most likely **disease context rather than measurement error** — chronic viraemic HIV appears to be the setting in which blood DN cells acquire FcRL4. **Practical consequence: FcRH4-negativity cannot be assumed for blood DN cells in a chronic viral infection**, and FcRH4 is therefore a less clean tissue-residency discriminator than the wiki has treated it. Both n's are small (n=5 per group here) (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]]).
+
 ## Contradictions & Debates
 
-None documented in current wiki sources.
+- **⚠ Internal tension within the same review: are blood DN cells FcRH-negative or FcRH-positive?** [[Beckers2023 - Origins and Functions of DN B Cells]] states in §2 that DN and CD20^hi CD27⁻CD21^lo B cells express **multiple inhibitory receptors including FcRH3-5** in HIV-infected, malaria-infected, anti-SARS-CoV-2-immunised, and young and aged healthy donors — while §5 of the same review restates that **peripheral blood DN cells are FcRH4⁻** in HD and SLE. FcRH4 falls inside the FcRH3-5 range, so the two statements cannot both hold for healthy-donor blood as written. The most likely reconciliation is that "FcRH3-5" in §2 is carried over from source studies reporting FcRH3 and/or FcRH5 without FcRH4, or applies to the CD20^hi CD21^lo HIV tissue-like memory population rather than to DN cells. **Until the primaries are traced, the wiki keeps the Wei2007 primary result — circulating DN cells are FcRH4⁻ — as the operative claim**, and treats the inhibitory-receptor finding as applying to FcRH3/FcRH5 and to the exhausted CD21^lo compartment.
 
 ## Related Pages
 [[Double-Negative B Cell]], [[DN2 B Cell]], [[FCRL5]], [[CD27]], [[Memory B Cell]], [[Extrafollicular Response]], [[Atypical B Cell]], [[Age-Associated B Cell]], [[Tissue-Resident Memory B Cell]]
 
 ## Sources
+- [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]]
 - [[Wei2007 - DN Memory B Cells in SLE]]
 - [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]
 - [[Sanz2025 - Human Atypical B Cells Overview]]
 - [[Glaros2025 - Multilayered Identity of B Cell Memory]]
+- [[Beckers2023 - Origins and Functions of DN B Cells]]

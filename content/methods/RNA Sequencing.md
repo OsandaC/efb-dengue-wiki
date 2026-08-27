@@ -2,8 +2,8 @@
 type: method
 tags: [RNA-seq, transcriptomics, gene-expression, B-cell-subsets, GSEA]
 created: 2026-05-02
-updated: 2026-08-16
-sources: 3
+updated: 2026-08-27
+sources: 4
 ---
 
 # RNA Sequencing
@@ -23,14 +23,17 @@ RNA sequencing (RNA-seq) is a high-throughput method for profiling gene expressi
 - **PageRank transcription factor network analysis:** PageRank algorithm applied to a TF regulatory network (TF binding sites from ATAC-seq DARs × DEG expression) identified 31 TFs enriched in ≥3 SLE B cell subsets. EGR4 was the highest-scoring factor; EGR target genes were enriched in 19/22 (86%) upregulated SLE gene sets. ATF3 was identified as a key DN2-specific regulator with 98 target genes (87% upregulated in SLE). This network analysis approach — integrating ATAC-seq motif data with RNA-seq expression — represents a methodological advance over simple DEG lists for identifying regulatory hierarchies (see [[Scharer2019 - Epigenetic Programming in SLE B Cells]]).
 - **Transcriptional array design separating T-bet-dependent from cytokine-direct ABC features.** To determine which ABC phenotypic features require T-bet versus which are direct cytokine effects, transcriptional arrays compared IFN-γ- or IL-21-treated **wild-type versus T-bet-deficient** murine B cells. This design showed that while some ABC features depend strongly on T-bet, others — notably CD11c expression — were largely direct effects of each cytokine rather than downstream T-bet targets (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse, transcriptional array). A methodological approach the wiki has not previously logged: comparing genetic-KO transcriptomes under matched cytokine stimulation to separate a transcription factor's direct targets from cytokine-driven, TF-independent gene induction — distinct from the DEG/GSEA approach used in [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]] and [[Scharer2019 - Epigenetic Programming in SLE B Cells]] above.
 
+- **[2026-08-27] SMART-Seq2 on FACS-sorted DN subsets — the pipeline behind the DN3 transcriptomic signature.** Total RNA from cells sorted into RLT Plus/β-mercaptoethanol was isolated with the RNeasy Plus Micro kit; libraries prepared by **SMART-Seq2** (Picelli 2013); sequenced on an **Illumina NextSeq 500, 35-bp paired-end, ~10 million reads per sample**. Alignment to the UCSC hg38 reference transcriptome, quantification and normalisation by **RSEM v1.25.0**, RefSeq annotation, differential expression by **empirical Bayes hierarchical modelling (EBSeq)**, functional enrichment by **Homer `findGO.pl`**. Data deposited at **GEO: GSE220582** (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=4).
+- **⚠ [2026-08-27] n=4 is the entire basis for the DN1–DN4 transcriptomic distinction.** Every claim the wiki now carries about DN3's proliferation/UPR signature, its IGHG4 enrichment, the DN2/DN3 cytotoxic module, and DN4's Notch/ubiquitination separation rests on **four donors, bulk (not single-cell), one disease**. The DN1 and DN2 profiles do independently reproduce their SLE counterparts from [[Scharer2019 - Epigenetic Programming in SLE B Cells]], which is meaningful cross-disease validation for those two subsets — **DN3 and DN4 have no such external check** (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=4 bulk RNA-seq).
+
 ## Contradictions & Debates
 
 None documented in current wiki sources.
 
 ## Related Pages
-[[ATAC-seq]], [[RRBS]], [[FACS Sorting]], [[DN2 B Cell]], [[Activated Naive B Cell]], [[Conventional Flow Cytometry]], [[ATF3]], [[EGR]], [[T-bet]], [[Age-Associated B Cell]]
-
+[[ATAC-seq]], [[RRBS]], [[FACS Sorting]], [[DN2 B Cell]], [[Activated Naive B Cell]], [[Conventional Flow Cytometry]], [[ATF3]], [[EGR]], [[T-bet]], [[Age-Associated B Cell]], [[DN3 B Cell]], [[Single-Cell RNA Sequencing]]
 ## Sources
+- [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]]
 - [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]
 - [[Scharer2019 - Epigenetic Programming in SLE B Cells]]
 - [[Cancro2020 - Age-Associated B Cells]]

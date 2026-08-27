@@ -2,7 +2,7 @@
 type: analysis
 tags: [research-plan, double-negative, dengue, flow-cytometry, CD27-negative, DN2, protocol, wet-lab]
 created: 2026-05-06
-updated: 2026-05-24
+updated: 2026-08-27
 ---
 
 > **Revision 1 [2026-05-06]:** Panel redesigned to 12-marker/11-channel configuration (no IgG/IgM antibodies available); H4 (isotype distribution) moved to Follow-Up Studies. Sampling window updated to days 5–9 post-fever-onset. Healthy controls revised to seropositive (dengue-naïve impractical in endemic Sri Lanka). PBMC isolation changed from Ficoll to BD FACS Lysing red cell lysis. Panel 2 (intracellular T-bet) removed from scope. CD24 and CD45 added; CD66b added as granulocyte dump. Detailed compensation, FMO, and QC protocol added.
@@ -71,6 +71,23 @@ Sutton et al. (2021) used CITE-seq to define an "alternative lineage" of B cells
 Equally consequential: no atBC cluster in Sutton2021 upregulates plasma cell maintenance genes (*XBP1*, *IRF4*, *PRDM1*), and plasma cells are detached from the pseudotime trajectory. This argues against the model that atypical B cells are obligate EF pre-plasmablasts — at least in healthy and infection (non-autoimmune) contexts. Sutton's own Discussion reconciles this as context-dependent: in SLE, chronic TLR7 stimulation may drive atBCs toward PC fate, while in acute infection they remain within the alternative memory lineage. Whether acute dengue — with its intense TLR7 signalling via viraemia — resembles the SLE context (PC-permissive) or the vaccination context (memory-retaining) is unknown (see [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]], CITE-seq n=4, flow cytometry n=18).
 
 **Implication for this study:** The DN frequency and DN2-phenotype frequency reported by this study measure the canonical surface-phenotype population, not the full transcriptomic alternative lineage. Results are directly comparable to Ansari2025 (which uses the same surface markers) but will systematically underestimate the true alternative-lineage B cell burden. This is a shared limitation with all conventional flow cytometry studies of DN/atypical B cells.
+
+### Nomenclature and inference caveat (Eisenbarth2025)
+
+[[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] (*Immunity*, Nov 2025) is a twelve-author consensus Perspective — Ignacio Sanz among them — holding that the term "extrafollicular" has expanded into four distinguishable situations and should be reserved for responses whose extrafollicular **location** has been directly imaged. Two of its statements bear directly on this protocol:
+
+1. *"Currently there are no flow cytometry-based means alone that can distinguish EF B cells nor their progeny from activated cells in earlier phases."* Absence of CXCR5, low SHM, low BCR affinity and IgM isotype are each individually non-definitive, because each occurs on cells that did participate in a GC.
+2. *"Low expression of CD21 and CXCR5 and increased CD11c could indicate recent B cell activation rather than a permanent state of expression/lack of expression."* The DN2-phenotype gate (CD21⁻CD11c⁺) is built from exactly these markers.
+
+Applied to the cell this study measures: *"the EF designation of this human DN2 cell refers to its presumed **GC-independent origin** rather than its location."*
+
+**Implication for this study — lexical, not structural.** No hypothesis, outcome measure, or panel decision changes. The mechanistic rationale in the sections above is origin/process reasoning and is untouched. What changes is what the results may be *called*:
+
+- **Claim:** a **GC-independent (non-GC)** B cell response, stating the criteria used (DN2-phenotype frequency, DN2:DN1 ratio, low-SHM IgG signature from the literature, absence of a GC-marker readout).
+- **Do not claim:** an **extrafollicular** response. That requires tissue imaging of antigen-specific B cell proliferation outside a follicle, which is not obtainable in this setting and has never been done for human DN2 cells in any disease.
+- Where the protocol cites others' work that *does* carry tissue evidence — [[Kaneko2020 - GC Loss and TFH Block in COVID-19]] establishes GC *failure* in COVID-19 lymphoid tissue — the citation is to GC-independence, which is exactly what that evidence supports.
+
+See [[GC-Independent Response]] for the full evidence-to-claim mapping, and Limitation 13.
 
 ### The remaining gap
 
@@ -550,6 +567,8 @@ R (v4.x) with packages: `stats`, `ggplot2`, `emmeans`, `car`, `pROC`, `ggpubr`.
 
 12. **Circulating PB analysis may undercount tissue-retained subsets:** Bhattacharya & Wong (2016) note that additional plasmablast subsets may form but be retained in secondary lymphoid organs rather than entering circulation. The plasmablast frequency measured in peripheral blood (H4 correlation) captures only the circulating fraction; tissue-resident PBs with potentially different antigen specificities are unmeasured (see [[Bhattacharya2016 - Memory B Cell Subset Selection in Secondary Dengue]], commentary).
 
+13. **No flow cytometry panel can establish an extrafollicular response — the claim must be GC-independence:** A twelve-author consensus Perspective holds that *"there are no flow cytometry-based means alone that can distinguish EF B cells nor their progeny from activated cells in earlier phases"* and that EF should be reserved for responses whose location has been imaged. Since lymphoid tissue is not obtainable in an acute febrile cohort, this study cannot make a location claim, and its results should be reported as evidence of a **GC-independent** response with the criteria stated. A related caution compounds Limitations 1 and 6: CD21ˡᵒ and CD11c⁺ *"could indicate recent B cell activation rather than a permanent state,"* so at a single acute timepoint a differentiation state and an activation state are not separable — the DN2:DN1 ratio is preferred over raw frequencies for this reason, and serial sampling is the definitive fix (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective; [[GC-Independent Response]]).
+
 ---
 
 ## Follow-Up Studies (if primary hypotheses confirmed)
@@ -579,7 +598,7 @@ R (v4.x) with packages: `stats`, `ggplot2`, `emmeans`, `car`, `pROC`, `ggpubr`.
 
 ## Related Pages
 
-[[Double-Negative B Cell]], [[DN2 B Cell]], [[DN3 B Cell]], [[CD27]], [[CD21]], [[CD11c]], [[CD19]], [[CD24]], [[CD38]], [[IgD]], [[IgG]], [[IgM]], [[T-bet]], [[TLR7]], [[PD-1]], [[CXCR5]], [[IL-21]], [[TNF-alpha]], [[Bcl-6]], [[AID]], [[FCRL5]], [[Peripheral Helper T Cell]], [[Extrafollicular Response]], [[Germinal Center]], [[Memory B Cell]], [[Plasmablast]], [[Activated Naive B Cell]], [[Somatic Hypermutation]], [[Class Switch Recombination]], [[BCR Sequencing]], [[Conventional Flow Cytometry]], [[Spectral Flow Cytometry]], [[FACS Sorting]], [[Single-Cell RNA Sequencing]], [[CITE-seq]], [[DN2 Gating Strategy]], [[Thesis Objectives and Grant Pitch]], [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]], [[Wei2007 - DN Memory B Cells in SLE]], [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]], [[Woodruff2020 - EF B Cell Responses in COVID-19]], [[Kaneko2020 - GC Loss and TFH Block in COVID-19]], [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]], [[William2002 - Extrafollicular Somatic Hypermutation in Autoimmune Mice]], [[Sanz2025 - Human Atypical B Cells Overview]], [[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]], [[Appanna2016 - Plasmablasts as Subset of Memory B Cell Pool]], [[Bhattacharya2016 - Memory B Cell Subset Selection in Secondary Dengue]], [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]], [[Singh2026 - DENV-Specific Memory B Cell Subsets]], [[GarciaBates2013 - Plasmablast Response and Dengue Severity]], [[Parameswaran2013 - Convergent Antibody Signatures in Dengue]]
+[[Double-Negative B Cell]], [[DN2 B Cell]], [[DN3 B Cell]], [[CD27]], [[CD21]], [[CD11c]], [[CD19]], [[CD24]], [[CD38]], [[IgD]], [[IgG]], [[IgM]], [[T-bet]], [[TLR7]], [[PD-1]], [[CXCR5]], [[IL-21]], [[TNF-alpha]], [[Bcl-6]], [[AID]], [[FCRL5]], [[Peripheral Helper T Cell]], [[Extrafollicular Response]], [[Germinal Center]], [[Memory B Cell]], [[Plasmablast]], [[Activated Naive B Cell]], [[Somatic Hypermutation]], [[Class Switch Recombination]], [[BCR Sequencing]], [[Conventional Flow Cytometry]], [[Spectral Flow Cytometry]], [[FACS Sorting]], [[Single-Cell RNA Sequencing]], [[CITE-seq]], [[DN2 Gating Strategy]], [[Thesis Objectives and Grant Pitch]], [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]], [[Wei2007 - DN Memory B Cells in SLE]], [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]], [[Woodruff2020 - EF B Cell Responses in COVID-19]], [[Kaneko2020 - GC Loss and TFH Block in COVID-19]], [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]], [[William2002 - Extrafollicular Somatic Hypermutation in Autoimmune Mice]], [[Sanz2025 - Human Atypical B Cells Overview]], [[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]], [[Appanna2016 - Plasmablasts as Subset of Memory B Cell Pool]], [[Bhattacharya2016 - Memory B Cell Subset Selection in Secondary Dengue]], [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]], [[Singh2026 - DENV-Specific Memory B Cell Subsets]], [[GarciaBates2013 - Plasmablast Response and Dengue Severity]], [[Parameswaran2013 - Convergent Antibody Signatures in Dengue]], [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], [[GC-Independent Response]], [[Immunohistochemistry]]
 
 ## Sources Used
 
@@ -599,3 +618,4 @@ R (v4.x) with packages: `stats`, `ggplot2`, `emmeans`, `car`, `pROC`, `ggpubr`.
 - [[GarciaBates2013 - Plasmablast Response and Dengue Severity]] — PB kinetics and severity correlation in dengue; comparator for H4 PB frequency benchmarks. *Added Rev 4.*
 - [[Sanz2025 - Human Atypical B Cells Overview]] — IgD requirement for valid DN classification, DN2-phenotype terminology guidance, DN2 memory persistence, cross-disease context
 - [[Tipton2015 - ASC Diversity and Origin in SLE]] — EF SHM benchmark for follow-up BCR sequencing studies
+- [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective (12 authors incl. Sanz): no flow panel alone identifies an EF response; EF is a location claim requiring tissue imaging; CD21ˡᵒ/CXCR5⁻/CD11c⁺ may report recent activation. Drives the nomenclature caveat in Background and Limitation 13. *Added 2026-08-27.*

@@ -2,8 +2,8 @@
 type: method
 tags: [in-vitro-stimulation, B-cell-function, CpG, TLR9, proliferation-assay, CFSE]
 created: 2026-05-02
-updated: 2026-08-16
-sources: 6
+updated: 2026-08-26
+sources: 7
 ---
 
 # In Vitro B Cell Stimulation
@@ -29,9 +29,15 @@ In vitro B cell stimulation assays expose isolated B cell subsets to defined sti
 - **The Naradikian two-signal in vitro system: TLR poising → IFN-γ/IL-21, T-bet readout from 12 h, before first division.** The murine minimal in vitro system for ABC generation: TLR7 or TLR9 ligand poises naive B cells for ABC fate, and this poising must be followed by IFN-γ or IL-21 to complete differentiation; neither BCR ligation alone nor with CD40 costimulation substitutes. Coculture experiments established that **both the TLR-poising requisite and the cytokine requisite are cell-intrinsic**. T-bet expression is detectable within **12 hours** — before the first cell division — arguing against a purely epigenetic mechanism (see [[Cancro2020 - Age-Associated B Cells]], review — no original data, citing Naradikian et al. 2016; mouse, in vitro). This is the murine methodological precedent for the human TLR7+IFN-γ+IL-21 differentiation protocol already on this page from [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]].
 - **The BCR-refractory-but-viable signature is a distinguishing functional assay readout for ABCs.** ABCs do not divide in response to BCR cross-linking (unlike FO B cells) but remain viable under those conditions (unlike MZ and transitional B cells, which die rapidly) — BCR cross-linking synergises with, but cannot substitute for, TLR7/9 stimulation. This proliferation/viability signature is a functional assay readout that distinguishes ABCs from FO, MZ, and transitional B cell subsets in stimulation experiments (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse).
 
+- **Cytokine output depends entirely on the stimulation used — two studies, opposite answers.** DN B cells could **not** be induced to express IL-10 or TNF-α after total B cell stimulation with anti-CD40 + IL-4, or CpG/PMA/ionomycin (citing Bulati 2011). Under **CD40L** stimulation of total B cells from HD and MS patients, the review's own authors found DN cells producing **lymphotoxin-α and TNF-α**, with LTα⁺ frequencies similar to — and TNF-α⁺ frequencies *higher* than — SM cells (see [[Beckers2023 - Origins and Functions of DN B Cells]], review, own data). A negative cytokine result from one stimulation condition is therefore uninformative about the population's capacity.
+- **Granzyme B requires IL-21 + anti-BCR.** DN B cells of young and elderly HD and of MS patients produced granzyme B after in vitro **IL-21 + anti-BCR** stimulation — a cytotoxic output not captured by any of the proliferation or ASC-differentiation protocols already on this page (see [[Beckers2023 - Origins and Functions of DN B Cells]], review, own data; see [[Atypical B Cell Effector Output]]).
+- **Triple stimulation is the condition that works across donor ages.** Where CpG alone or anti-BCR+anti-CD40 alone gave age-dependent or irreproducible proliferation, **CpG + anti-BCR + anti-CD40** strongly activated DN B cells of both young and elderly HD. If the experimental question is "can these cells respond at all," triple stimulation is the appropriate positive control (see [[Beckers2023 - Origins and Functions of DN B Cells]], review, citing Martorana 2014).
+- **DN1 responds to the DN2 differentiation cocktail.** GC-dependent DN1 cells differentiate into ASCs in vitro under the same **TLR7 + BCR ligation + IFN-γ + IL-21** protocol described above for DN2. Whether DN1's ASC differentiation is TLR7- or BCR-dependent is unresolved — the protocol as written cannot separate them (see [[Beckers2023 - Origins and Functions of DN B Cells]], review, citing Jenks 2018).
+
 ## Contradictions & Debates
 
-None documented in current wiki sources.
+- **⚠ The CpG/TLR9 proliferation assay does not reproduce across laboratories.** Four studies of DN B cell proliferation to CpG return four different answers (no response; response in young but not elderly; response at switched-memory levels; no response with anti-BCR+CpG+IL-4). [[Beckers2023 - Origins and Functions of DN B Cells]] attributes the spread to **differing proliferation markers, stimulation conditions, and healthy-donor cohorts**, and treats DN responsiveness as an open question rather than a settled property. **Methodological consequence:** proliferation readouts for this compartment are not comparable across papers unless marker, cocktail, and donor age distribution are matched. See [[TLR9]] and [[Double-Negative B Cell]] Contradictions.
+- **Activation-marker readouts and signalling readouts disagree on the same cells.** DN cells show a *decreased* percentage of CD86⁺ activated cells after triple or CD40L stimulation relative to total B cells (HD and MS) — yet DN1-3 cells from HD, COVID-19 patients and vaccinees all **maintain BCR signalling** by phospho-flow after IgG stimulation, with DN2 showing the largest signalling capacity. Whether DN cells are "hyporesponsive" is a function of which assay is run (see [[Beckers2023 - Origins and Functions of DN B Cells]], review, own data + citing Castleman 2022; [[Phospho-Flow Cytometry]]).
 
 ## Related Pages
 [[Double-Negative B Cell]], [[DN2 B Cell]], [[Activated Naive B Cell]], [[Plasmablast]], [[Memory B Cell]], [[CD27]], [[TLR7]], [[Extrafollicular Response]], [[FCRL5]], [[Atypical B Cell]], [[Age-Associated B Cell]], [[DN2 B Cell]]
@@ -43,3 +49,4 @@ None documented in current wiki sources.
 - [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]
 - [[Glaros2025 - Multilayered Identity of B Cell Memory]]
 - [[Cancro2020 - Age-Associated B Cells]]
+- [[Beckers2023 - Origins and Functions of DN B Cells]]

@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, immunoglobulin, isotype, class-switch-recombination, memory-b-cells]
 created: 2026-05-02
-updated: 2026-08-16
-sources: 18
+updated: 2026-08-27
+sources: 20
 ---
 
 # IgG
@@ -43,14 +43,23 @@ IgG is the predominant antibody isotype in human serum and the primary product o
 - **Most ABCs are class-switched, predominantly to IgG or [[IgA]]** — consistent with their antigen-experienced status, and with some carrying somatically hypermutated BCRs (review). See [[Age-Associated B Cell]].
 - **ABC/atypical isotype skewing toward IgG2a/c (mouse) and IgG1 (human), favouring ADCC as the preferred effector mechanism.** Adoptive transfer of virus-specific IgG2a only partially restored viral control in a chronic-infection model, indicating additional functional distinctions exist beyond isotype alone (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse and human).
 
+- **Anti-dengue IgG and IgG1 are skewed high in DHF — but IgG3 runs the opposite way.** In an adult Mexican acute-phase cohort, anti-DENV IgG was detectable in 93% of DF and 96.9% of DHF sera. On tertile-split indices, high total IgG was present in **55.4% of DHF versus 16% of DF**, and high IgG1 in **39.0% versus 28.2%**; high IgG4 was likewise commoner in DHF (35.6% vs 30.8%). **High IgG3, however, was commoner in DF (38.5%) than DHF (25.4%)**, and IgG2 was negative in the great majority of both groups (see [[Posadas-Mondragon2020 - TLR Polymorphisms and Clinical Forms of Dengue]], n=254 case-control, DF n=100 / DHF n=65, WHO 1997, capture ELISA plus in-house subclass EIA — **no B cell data of any kind**). A severity-linked rise in IgG *quantity* is consistent with the wiki's claim that the EF/atypical route yields abundant low-fidelity antibody ([[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]]) but does not test it: nothing there measures affinity, mutation load, neutralisation or cell of origin. The IgG3 inversion is unexplained by the authors. *Subclass serology is canonical to `dengue-wiki/`; recorded here only for the severity contrast.*
+
+- **★ [2026-08-27] DN3 B cells are the only B cell subset transcriptomically enriched for IgG4.** Bulk RNA-seq of sorted DN1–DN4 from IgG4-related disease blood (n=4) found **high IGHG4 message specifically in DN3**, alongside proliferation and unfolded-protein-response signatures and other antibody-secreting-cell genes (MZB1, TNFRSF17/BCMA, TXNDC5). In a disease defined by an IgG4 isotype skew, the DN subset carrying that message is the one with the pre-plasmablast programme — an isotype-to-subset link the wiki holds for no other isotype (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=4 bulk RNA-seq).
+- **[2026-08-27] The IgG4 class switch in this disease is attributed to pre-GC Tfh help outside germinal centres.** The paper's framing (citing the same group's earlier work) is that IgG4 switching in IgG4-RD is driven by **IL-4- and IL-10-expressing pre-GC T follicular helper cells acting outside germinal centres** — a GC-independent route to a specific isotype. This is background in that paper rather than data reported in it (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], introduction; no primary data on switching). See [[Class Switch Recombination]], [[Extrafollicular T Cell Help]].
+
 ## Contradictions & Debates
+
+- **★ A directional prediction that does not hold: DN2 cells are IgG3-enriched, but severe dengue is IgG3-*depleted*.** [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]] reports a higher frequency of IgG3⁺ cells among DN2 than among switched memory or DN1, in both healthy donors and SLE patients, and attributes it to IFN-γ-driven switching in the TLR7-driven EF programme. The wiki's spine claim is that this EF/DN2 route drives the antibody surge in severe dengue. If both held straightforwardly, serum IgG3 should be *higher* in DHF. It is not: high IgG3 was commoner in **DF (38.5%) than DHF (25.4%)**, moving opposite to IgG, IgG1 and IgG4, which are all skewed high in DHF (see [[Posadas-Mondragon2020 - TLR Polymorphisms and Clinical Forms of Dengue]], n=165 patients, tertile-split indices, acute phase 1–8 d, WHO 1997). The authors do not discuss it.
+
+  **Held open, not resolved, and deliberately not treated as a refutation.** Four reasons the inference does not close: (i) these are **different cohorts and different measurements** — Jenks2018 counts surface-IgG3⁺ *cells* by flow in SLE, Posadas measures *serum* anti-DENV IgG3 by EIA in dengue; (ii) **serum isotype does not report cell of origin** — total serum IgG3 integrates output from long-lived plasma cells, GC-derived plasmablasts and any EF contribution, and no ingested source has sorted DN cells and measured their antibody output in any infection; (iii) the indices are **tertile splits of OD ratios, not concentrations**, so "high IgG3" is a within-cohort rank; (iv) IgG3 has the shortest serum half-life of the IgG subclasses, so the acute-phase window may not be where an EF-derived IgG3 signal would appear. Recorded because it is the first ingested observation that runs *against* the direction the spine claim predicts, and it should not be quietly dropped. See also the Cancro/Sutton2021 isotype tension immediately below — the wiki now holds **three** partly incompatible statements about which IgG subclass the atypical lineage favours.
 
 - **★ Apparent isotype tension: Cancro's human ABC IgG1 skew vs. Sutton2021's IgG3 enrichment.** Cancro states human ABC/atypical isotype skewing favours **IgG1** (paralleling murine IgG2a/c), from a general effector-function argument about the dominant anti-hemagglutinin isotypes in original-antigenic-sin contexts. [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]] instead reports **IgG3** enrichment in the alternative lineage relative to classical lineage cells in malaria-exposed donors, at the level of cluster-specific transcriptomic enrichment. The two claims likely rest on different measurement bases — a general isotype-skew argument versus a cluster-level transcriptomic enrichment — and are not reconciled in either source; both positions are recorded here rather than smoothed into consensus (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; human; and [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]], n=4, 10x Chromium scRNA-seq).
 
 ## Related Pages
-[[Double-Negative B Cell]], [[DN2 B Cell]], [[Age-Associated B Cell]], [[Plasmablast]], [[Memory B Cell]], [[Class Switch Recombination]], [[IgM]], [[IgA]], [[Somatic Hypermutation]], [[Original Antigenic Sin]], [[Antibody-Dependent Enhancement]], [[Early Memory B Cell]], [[Tissue-Resident Memory B Cell]]
-
+[[Double-Negative B Cell]], [[DN2 B Cell]], [[Age-Associated B Cell]], [[Plasmablast]], [[Memory B Cell]], [[Class Switch Recombination]], [[IgM]], [[IgA]], [[Somatic Hypermutation]], [[Original Antigenic Sin]], [[Antibody-Dependent Enhancement]], [[Early Memory B Cell]], [[Tissue-Resident Memory B Cell]], [[DN3 B Cell]]
 ## Sources
+- [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]]
 - [[Wei2007 - DN Memory B Cells in SLE]]
 - [[Tipton2015 - ASC Diversity and Origin in SLE]]
 - [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]
@@ -69,3 +78,4 @@ IgG is the predominant antibody isotype in human serum and the primary product o
 - [[Lamprinou2026 - ABCs and DN B Cells]]
 - [[Glaros2025 - Multilayered Identity of B Cell Memory]]
 - [[Cancro2020 - Age-Associated B Cells]]
+- [[Posadas-Mondragon2020 - TLR Polymorphisms and Clinical Forms of Dengue]]

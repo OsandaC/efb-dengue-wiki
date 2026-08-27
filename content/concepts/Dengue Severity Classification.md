@@ -2,8 +2,8 @@
 type: concept
 tags: [dengue, severity, clinical-classification, who-classification]
 created: 2026-06-29
-updated: 2026-06-29
-sources: 2
+updated: 2026-08-23
+sources: 3
 ---
 
 # Dengue Severity Classification
@@ -39,6 +39,9 @@ The structural pivot is that 2009 flags severity on **any single criterion** rat
 - **Within-scheme definitional heterogeneity — "WHO-2009" is not one operational definition.** A PRISMA systematic review of how warning-sign and severe-dengue signs are *operationally defined* across the WHO-2009 literature found that, of 16 signs, only **2 had a consensus definition** across studies: "liver enlargement" (warning sign) and "liver involvement" (severe, = AST/ALT >1000 IU/L in 94.7% of studies) — and **both are the signs WHO-2009 already pre-defines.** The other 14 vary widely: "shock" alone was defined via **23 distinct parameter-combinations** across studies; hematocrit-rise cutoffs ranged >20% vs >15% vs gender-adjusted; platelet thresholds spanned <20k / <50k / <100k / <150k; respiratory-rate cutoffs ran 24 / 30 / 40 / 60 breaths/min (see [[Morra2018 - Defining Warning Signs and Severe Dengue]], systematic review of 44 studies). This **compounds** the between-scheme caveat above: two papers can both report "WHO-2009 severe dengue" yet have applied materially different operational definitions, so a shared scheme label does not guarantee a shared case definition.
 - **Specificity trade-off, independently echoed (attributed).** A pediatric cohort comparing the two schemes reported specificity 73.0% for WHO-2009 vs 93.4% for WHO-1997 (Macedo et al, cited in [[Morra2018 - Defining Warning Signs and Severe Dengue]]) — consistent with the broader point that the revised scheme trades specificity for sensitivity. Note this is a **different cohort and a different gold standard** than Narvaez's intervention-anchored 78.5% specificity (Cat III clinical-intervention level) above; the two numbers are not comparable and the juxtaposition is *not* a contradiction. Morra performs no diagnostic-accuracy meta-analysis of its own — its contribution is documenting definitional practice, not accuracy statistics.
 
+- **WHO 1997 is still in active use in the recent literature, and its DF/DHF split can be operationalised very thinly.** A 2020 adult Mexican cohort assigned severity as **DF = platelet count >100 × 10⁹/L** and **DHF = platelet count <100 × 10⁹/L plus any haemorrhagic manifestation** — a two-variable rule, with no plasma-leakage measurement (haematocrit rise, effusion, hypoalbuminaemia) reported at all, even though **plasma leakage is the defining pathophysiological criterion of DHF** under WHO 1997 (see [[Posadas-Mondragon2020 - TLR Polymorphisms and Clinical Forms of Dengue]], n=165 patients, DF n=100 / DHF n=65). The resulting "DHF" group is therefore closer to *thrombocytopenia with bleeding* than to the leakage syndrome the category names. This is the WHO-1997-side counterpart of the **within-scheme definitional heterogeneity** that [[Morra2018 - Defining Warning Signs and Severe Dengue]] documented for WHO-2009: the scheme label alone does not tell a reader what was actually measured.
+- **Practical consequence for cross-study comparison.** Severity strata should be compared across dengue papers only after checking the *operational* definition, not the scheme name. In the cohort above, the platelet difference between arms (54.03 ± 30.48 vs 191.1 ± 65.07 × 10⁹/L) is definitional rather than a finding, whereas the accompanying monocyte and lymphocyte differences are not (see [[Posadas-Mondragon2020 - TLR Polymorphisms and Clinical Forms of Dengue]]; [[Inflammatory Monocyte]]).
+
 ## Contradictions & Debates
 
 The central tension is purpose-dependent and should not be collapsed into a verdict that one scheme is simply "better."
@@ -57,3 +60,4 @@ The central tension is purpose-dependent and should not be collapsed into a verd
 ## Sources
 - [[Narvaez2011 - Evaluating WHO Dengue Severity Classifications]]
 - [[Morra2018 - Defining Warning Signs and Severe Dengue]]
+- [[Posadas-Mondragon2020 - TLR Polymorphisms and Clinical Forms of Dengue]]

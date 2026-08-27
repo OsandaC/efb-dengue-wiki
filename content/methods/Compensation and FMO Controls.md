@@ -2,8 +2,8 @@
 type: method
 tags: [flow-cytometry, compensation, FMO, panel-design, DN2, gating-validation]
 created: 2026-06-14
-updated: 2026-06-14
-sources: 2
+updated: 2026-08-27
+sources: 4
 ---
 
 # Compensation and FMO Controls
@@ -22,9 +22,11 @@ sources: 2
 - FMO controls are an established part of B cell subset panel design: fluorescence-minus-one controls are used to define positive/negative boundaries, alongside Simply Cellular compensation beads for matrix derivation (see [[Wei2007 - DN Memory B Cells in SLE]]).
 - Singh2026's 12-color dengue MBC panel runs dedicated FMOs for **CD21 and CD27** specifically to set the boundaries for its atypical-MBC (CD20⁺IgD⁻CD27⁻CD21⁻) gate, alongside a no-antigen control for the DENV-specificity threshold (see [[Singh2026 - DENV-Specific Memory B Cell Subsets]], n=dengue cohort, 12-color BD LSRFortessa).
 
+- **[2026-08-27] Published practice for a 13-colour B cell panel — bead-based compensation plus a cross-batch tracking control.** Compensation on **VersaComp antibody-capture beads** (Beckman Coulter); **Rainbow 8-peak calibration beads** run "to ensure consistent signals between flow cytometry batches"; **Brilliant Stain Buffer** included in the stain to suppress polymer-dye interaction "and improve discrete fluorochrome readout." Notably, **no FMO controls are described** in the methods of a paper whose central claim rests on a four-quadrant CXCR5 × CD11c gate — the boundary placement is not documented. This is worth contrasting with the curator's own four-FMO practice recorded below: on the wiki's evidence, the published DN1–DN4 quadrant boundaries are less well controlled than the curator's DN/DN2 boundaries (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], methods; n=38). See [[Conventional Flow Cytometry]].
+
 ## Curator's Pilot: 11-Color DN2 Panel Worked Example (Empirical, Unpublished — 2026-06)
 
-This section documents the curator's own compensation-matrix and FMO validation of the [[DN2 Gating Strategy]] 11-color panel (operational setup: [[flow-lab-setup-dn2-panel]]), carried out on one real whole-blood sample plus four FMOs. **This is pilot/operational data, not a literature finding** — it is the "worked example" referenced in the panel's CD11c-PE FMO mandate and the wiki's prior watch item.
+This section documents the curator's own compensation-matrix and FMO validation of the [[DN2 Gating Strategy]] 11-color panel (operational setup recorded in curator session memory, not a wiki page; the in-wiki SOP is [[DN2 Panel - Staining, Compensation, and Gating Protocol]]), carried out on one real whole-blood sample plus four FMOs. **This is pilot/operational data, not a literature finding** — it is the "worked example" referenced in the panel's CD11c-PE FMO mandate and the wiki's prior watch item.
 
 ### Compensation matrix
 
@@ -69,12 +71,14 @@ These figures supersede the provisional pre-FMO estimates (DN ≈ 1.99% of B cel
 
 ## Contradictions & Debates
 
-- [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]] (CITE-seq, n=18 donors) found that CD21⁻CD27⁻-style gating captures only ~45% of transcriptomically-defined atypical B cells, arguing CD11c is the better single marker. The FMO-based boundary refinement above addresses *where* the IgD/CD27 cutoffs sit within this pilot's panel, but does not address Sutton2021's separate concern that the IgD/CD27→CD21/CD11c hierarchy may structurally undercount the alternative lineage regardless of cutoff placement.
+- [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]] (n=4 CITE-seq; flow validation n=18 donors) found that CD21⁻CD27⁻-style gating captures only ~45% of transcriptomically-defined atypical B cells, arguing CD11c is the better single marker. The FMO-based boundary refinement above addresses *where* the IgD/CD27 cutoffs sit within this pilot's panel, but does not address Sutton2021's separate concern that the IgD/CD27→CD21/CD11c hierarchy may structurally undercount the alternative lineage regardless of cutoff placement.
 - The DN gate roughly quadrupled (1.99%→8.90% of B cells) once FMO-anchored. Whether the newly-included "IgD-dim/CD27-intermediate" shoulder corresponds to a population characterised elsewhere in the literature, or is an artifact specific to this panel's BV786/APC spillover spread, is untested — flag for comparison if a paper specifically characterising IgD-dim B cell populations is ingested.
 
 ## Related Pages
 [[DN2 Panel - Staining, Compensation, and Gating Protocol]], [[DN2 Gating Strategy]], [[Conventional Flow Cytometry]], [[FACS Sorting]], [[CD21]], [[CD11c]], [[CD27]], [[IgD]], [[Double-Negative B Cell]], [[DN2 B Cell]]
 
 ## Sources
+- [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]]
 - [[Wei2007 - DN Memory B Cells in SLE]]
 - [[Singh2026 - DENV-Specific Memory B Cell Subsets]]
+- [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]

@@ -2,8 +2,8 @@
 type: method
 tags: [BCR-sequencing, VH-genes, somatic-hypermutation, immunoglobulin-repertoire, Sanger-sequencing, NGS, clonality]
 created: 2026-05-02
-updated: 2026-08-16
-sources: 12
+updated: 2026-08-27
+sources: 14
 ---
 
 # BCR Sequencing
@@ -45,12 +45,23 @@ BCR (B cell receptor) sequencing refers to the sequencing of rearranged immunogl
 - **Russell Knode et al. 2017: ABC repertoire rules out clonal expansion but does not settle origin.** Sequencing of sorted murine ABC heavy and light chains found a diverse array of germline V_H and V_κ genes, largely congruent with the follicular pool — ruling out age-associated clonal expansion of the kind seen in T cells — with many ABC V regions somatically mutated. **Cancro's own caveat: mutation load alone does not establish germinal-centre origin**, since SHM can occur independent of GC formation (citing Di Niro et al. 2015, extrafollicular affinity maturation in murine *Salmonella* infection) (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse).
 - **Malaria "atypical memory" B cells show diverse V_H gene usage** (Weiss et al. 2009), consistent with the broad, non-clonal repertoire pattern also seen in murine ABCs (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; human, observational).
 
+- **★ AIRR sequencing is the primary evidence base for all three competing DN origin hypotheses — and it supports all three.** A 2023 review of DN origins draws on repertoire sequencing for: (i) a **0.2–2.2% clonal overlap** between DN and switched-memory compartments with matched mutation load in the shared clones (supporting a minority sM→DN route); (ii) genealogical trees pointing to **DN cells as the progenitor of SM cells** (the opposite arrow), with no significant differences in VH gene family usage or mutation type/location between class-switched DN and SM cells; and (iii) the **majority** of DN and SM cells being clonally **distinct**, with different IgV(D)J family and gene usage (supporting a separate, GC-independent origin for most DN cells). **The method is not the limiting factor — the same data support incompatible readings depending on which subset and which comparison is emphasised** (see [[Beckers2023 - Origins and Functions of DN B Cells]], review, own AIRR data — Fraussen 2019 — + citing Wu 2011).
+- **Mutation-load ordering across compartments, as a repertoire-level ruler.** Class-switched (IgA⁺/IgG⁺) CD27⁻ DN cells carry significantly **more** VH mutation than naive and unswitched memory cells but **less** than switched memory cells; the number of cell divisions and mutations in IgG⁺CD27⁻ DN cells resembles GC B cells. This intermediate position is the repertoire argument for premature GC exit (see [[Beckers2023 - Origins and Functions of DN B Cells]], review, citing Wu 2011 for the isotype-specific mutation levels and Berkowska 2011 for the division/mutation comparison with GC B cells).
+- **CDR3 physicochemical properties differ between compartments — an under-used AIRR readout.** DN CDR3 regions are smaller, more hydrophilic and more basic than naive; larger, more hydrophobic and more acidic than unswitched and switched memory. Most repertoire analyses in this wiki report only length and mutation frequency; charge and hydrophobicity are additional discriminators available from the same data (see [[Beckers2023 - Origins and Functions of DN B Cells]], review, citing Wu 2011).
+- **AIRR sequencing links circulating DN cells to compartmentalised tissue responses.** Clonal relationships were described between Ig class-switched **DN cells and intrathecal Ig repertoires** in multiple sclerosis, and CSF aquaporin-4-specific B cells in NMOSD were closely related to circulating DN cells — both used as evidence for periphery↔tissue migration of the DN compartment (see [[Beckers2023 - Origins and Functions of DN B Cells]], review, own MS data + citing Palanichamy 2014 for the MS intrathecal repertoires and Kowarik 2017 for NMOSD).
+- **DN2–plasma cell clonal sharing is the repertoire evidence for the ASC-precursor claim.** BCR sequencing showed shared clones between DN2 cells and plasma cells, alongside the DN2 transcriptomic profile (IRF4⁺, Ets-1⁻, BACH2⁻) — the two together are what justify calling DN2 a pre-plasmablast rather than merely a correlate of ASC expansion (see [[Beckers2023 - Origins and Functions of DN B Cells]], review, citing Jenks 2018).
+
+- **★ A mutational load produced by BCR sequencing is the product of SHM *rate* × *time*, and the rate is almost never measured.** This is the direct interpretation limit on the wiki's most-used inference from this method — that low mutational load indicates a GC-independent (extrafollicular) origin. A consensus Perspective formalises it: *"Mutational content is the product of SHM rate (mutations per cell and per division) and time. Mutational rate is rarely measured, and only the product of SHM load is typically assessed."* One direct measurement of mutation *rate* in autoimmune mice found it **comparable to a GC-dependent response** after NP immunisation; load nonetheless differs because GC responses last longer and repeatedly re-engage CD40–CD40L, sustaining AID over more divisions. In prolonged GC-independent responses (MRL/lpr, chronic *Salmonella*) the load approaches GC levels (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data).
+- **The reportable conclusion is a probability, not a determination.** *"A high mutational load of memory B cells or ASCs provides a probability rather than a direct measure of GC participation."* The practical reading rule: low load in a **short acute** response is the weakest case, because insufficient elapsed time and a high-rate GC-independent process produce the same number. Bears directly on how [[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]] should be cited (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data).
+- **Isotype conditions the inference.** In mice, certain isotypes (IgG1, IgE) are largely lost when GCs are ablated, while others (IgM, IgG2, IgA) arise both GC-dependently and GC-independently. A given mutational load therefore argues more or less strongly for GC transit depending on which isotype carries it — so repertoire analyses should stratify by isotype before reading origin off load (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data).
+- **AID expression is not a GC readout either.** AID is essential for SHM but also for class switch recombination, which typically precedes GC entry — so detecting AID transcripts in a repertoire or transcriptomic dataset does not place the cell in a germinal centre (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data).
+
 ## Contradictions & Debates
 
 None documented in current wiki sources.
 
 ## Related Pages
-[[FACS Sorting]], [[Somatic Hypermutation]], [[Double-Negative B Cell]], [[DN2 B Cell]], [[Activated Naive B Cell]], [[Memory B Cell]], [[Plasmablast]], [[Immunohistochemistry]], [[Extrafollicular Response]], [[Early Memory B Cell]], [[Tissue-Resident Memory B Cell]]
+[[FACS Sorting]], [[Somatic Hypermutation]], [[Double-Negative B Cell]], [[DN2 B Cell]], [[Activated Naive B Cell]], [[Memory B Cell]], [[Plasmablast]], [[Immunohistochemistry]], [[Extrafollicular Response]], [[Early Memory B Cell]], [[Tissue-Resident Memory B Cell]], [[GC-Independent Response]]
 
 ## Sources
 - [[Wei2007 - DN Memory B Cells in SLE]]
@@ -65,3 +76,5 @@ None documented in current wiki sources.
 - [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]
 - [[Glaros2025 - Multilayered Identity of B Cell Memory]]
 - [[Cancro2020 - Age-Associated B Cells]]
+- [[Beckers2023 - Origins and Functions of DN B Cells]]
+- [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective; mutational load = rate × time, a probability of GC transit rather than a measure

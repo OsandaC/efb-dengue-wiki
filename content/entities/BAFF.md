@@ -2,8 +2,8 @@
 type: entity
 tags: [cytokine, tnf-family, baff-r, taci, bcma, survival, dengue, blockade, contradiction]
 created: 2026-08-18
-updated: 2026-08-18
-sources: 7
+updated: 2026-08-23
+sources: 8
 ---
 
 # BAFF
@@ -68,3 +68,4 @@ Note that GarciaBates measured **serum protein against in vivo plasmablast frequ
 - [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]]
 - [[Lamprinou2026 - ABCs and DN B Cells]]
 - [[Wei2007 - DN Memory B Cells in SLE]]
+- [[Glaros2025 - Multilayered Identity of B Cell Memory]]

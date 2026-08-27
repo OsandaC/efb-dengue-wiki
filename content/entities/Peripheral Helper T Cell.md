@@ -2,8 +2,8 @@
 type: entity
 tags: [T-cells, Tph, peripheral-helper, CXCR5-negative, PD-1, IL-21, extrafollicular, dengue, B-cell-help]
 created: 2026-05-08
-updated: 2026-05-08
-sources: 1
+updated: 2026-08-23
+sources: 2
 ---
 
 # Peripheral Helper T Cell
@@ -35,3 +35,4 @@ Ansari et al. (2025) demonstrate that Tph cells are the **dominant activated CD4
 
 ## Sources
 - [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]
+- [[Tipton2015 - ASC Diversity and Origin in SLE]]

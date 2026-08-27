@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, immunoglobulin, isotype, memory-b-cells, marginal-zone]
 created: 2026-05-02
-updated: 2026-08-16
-sources: 10
+updated: 2026-08-23
+sources: 11
 ---
 
 # IgM
@@ -31,6 +31,8 @@ IgM is the first immunoglobulin isotype produced by B cells and the default surf
 - **Both IgM⁻ and IgM⁺ ABCs exist, with a range of surface IgD within the IgM⁺ fraction.** Cancro's speculative mapping: switched (IgM⁻IgD⁻) and unswitched (IgM⁺IgD⁻) memory arising from antigen-driven responses, versus homeostatically-expanded primary cells (IgM⁺IgD⁺) arising from a proposed non-antigen-driven route — consistent with ABCs including both somatically mutated and germline-configuration Ig genes (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse).
 - **IgM⁺CD11c⁺ extrafollicular splenic plasmablasts drive CD4-T-independent antibody responses in murine *Ehrlichia* infection** (Racine et al. 2008, *J Immunol*), alongside protective T-bet⁺ memory B cells (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse).
 
+- **Acute-phase anti-dengue IgM is markedly higher in DHF than DF.** Anti-DENV IgM was detectable in **63% of DHF versus 37% of DF** sera; on tertile-split indices, high IgM was present in **58.5% of DHF versus 14% of DF**, while **74% of DF sera were IgM-negative** (see [[Posadas-Mondragon2020 - TLR Polymorphisms and Clinical Forms of Dengue]], n=254 case-control, adult, WHO 1997, sampled days 1–8 post-onset). Two cautions attach. First, the **1–8 day window sits early relative to peak IgM**, so an IgM-negative DF patient may simply have been sampled sooner. Second, the study assigns primary versus secondary infection from the **IgM/IgG OD ratio** on the same sera (>1.2 primary, <1.2 secondary), so the primary/secondary split is **not independent** of the IgM result — the two cannot be used to explain each other. Both groups came out ~70–73% secondary. *Serology detail canonical to `dengue-wiki/`.*
+
 ## Contradictions & Debates
 
 None documented in current wiki sources.
@@ -49,3 +51,4 @@ None documented in current wiki sources.
 - [[Bhattacharya2016 - Memory B Cell Subset Selection in Secondary Dengue]]
 - [[Glaros2025 - Multilayered Identity of B Cell Memory]]
 - [[Cancro2020 - Age-Associated B Cells]]
+- [[Posadas-Mondragon2020 - TLR Polymorphisms and Clinical Forms of Dengue]]

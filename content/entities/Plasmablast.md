@@ -2,8 +2,8 @@
 type: entity
 tags: [b-cell-subsets, plasmablast, antibody-secreting-cells, CD38, CD27, extrafollicular, SLE, rituximab]
 created: 2026-05-02
-updated: 2026-08-16
-sources: 19
+updated: 2026-08-27
+sources: 21
 ---
 
 # Plasmablast
@@ -70,6 +70,15 @@ Plasmablasts are short-lived, rapidly dividing antibody-secreting B cells that a
 - **The ABC-as-plasma-cell-depot hypothesis.** The splenic ABC memory pool may be a continuously replenishing source of PC precursors, potentially explaining how the bone marrow niche sustains lifelong plasma cell production without continuous enlargement or loss of prior specificities — consistent with Allman-group data showing a significant fraction of bone marrow plasma cells turn over rapidly. Cancro flags this as explicitly requiring fate-mapping tools to test (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse).
 - **IgM⁺CD11c⁺ extrafollicular splenic plasmablasts drive CD4-T-independent antibody responses in murine *Ehrlichia* infection** (Racine et al. 2008, *J Immunol*), alongside protective, multipotential T-bet⁺ memory B cells generated in the same GC-absent response (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse).
 
+- **⚠ Finding an ASC at an extrafollicular site is not evidence of an extrafollicular response.** The consensus Perspective flags this as a specific trap: the **final maturation of GC-derived plasma cells happens outside the follicle** — precursors move to the splenic bridging channels and red pulp, or to the LN medulla — and GC-derived plasmablasts can still undergo T cell-based selection in the LN medulla *after* exiting the GC. Verbatim: *"Although these areas overlap with EF locations, these ASCs are GC-derived and should not be confused with EF response-derived ASCs."* The corollary for blood-based work is stronger still: a circulating plasmablast carries no location information at all (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data).
+- **Plasmablast vs. plasma cell, as the consensus glossary defines them.** PBs are **proliferating** ASCs found in secondary lymphoid tissues, able to migrate to tissues but thought to be transient (Ki67⁺, CD19⁺CD20^lo CD27⁺CD38⁺CD138^+/− HLA-DR⁺CXCR5⁻ in humans). PCs are **terminally differentiated and non-proliferating**, short- or long-lived, residing in bone marrow, spleen, thymus and mucosal sites (Ki67⁻, CD19^lo CD20⁻ CD27⁺CD38⁺CD138⁺CXCR5⁻). **Cell-cycle status, not surface phenotype alone, is the dividing line** — which makes Ki67 the discriminating marker rather than a supplementary one (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data).
+- **Both pathways generate plasmablasts; they differ in kinetics and relative contribution, not in cell type produced.** GC-independent responses rapidly generate short-lived PBs — some in LN medullary cords — giving the first wave of antigen-induced antibody, and also generate long-lived PCs and early memory B cells. GC responses produce short- and long-lived PCs and memory later. The relative contribution of each to the bone marrow, splenic, and mucosal PC pools *"is still being defined"* (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data).
+
+- **★ [2026-08-27] Plasmablast frequency correlates with DN3 frequency more strongly than with any other DN subset.** In IgG4-related disease blood (n=38, Spearman): **DN3 r = 0.6566, p < 0.0001**; DN2 r = 0.4496, p = 0.0067; DN4 r = 0.4037 (ns); DN1 r = −0.1420 (ns). Sorted DN3 also carried a transcriptome with **proliferation, unfolded-protein-response and antibody-secreting-cell features plus high IGHG4 message** (n=4). Together these are the wiki's principal quantitative support for a DN3→plasmablast relationship — but both are **associative**: no pseudotime, clonal-connectivity or transfer evidence is presented (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=38 + n=4).
+- **[2026-08-27] Plasmablasts discriminate IgG4-RD from health, but so do the DN subsets.** Logistic regression: plasmablasts **OR 2.839 (95% CI 1.214–6.643), p = 0.0161**; DN total OR 1.591 (1.14–2.219); DN2 OR 5.381 (1.58–18.32); DN3 OR 113.5 (4.509–2857.1); DN4 OR 18.7 (1.745–200.97). ⚠ The paper reads the DN ORs as "higher than plasmablasts," but odds ratios scale with predictor units and these subsets span very different frequency ranges, so cross-predictor magnitude comparison is not valid without standardisation; the DN3 interval spans a 634-fold range (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=38).
+- **[2026-08-27] In inflamed tissue, plasmablasts form T-B conjugates with CD4⁺ T cells — but are outnumbered by DN cells.** In IgG4-RD salivary gland (n=4), CD19⁺IgD⁻CD27⁺CD20⁻ plasmablasts were **less abundant than DN B cells**, and conjugates with T cells occurred primarily between DN cells and T cells and between plasmablasts and T cells, rarely with switched memory cells. Plasmablasts expressed the **highest CD86** of any B cell subset examined (n=13) (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=4 tissue IF). See [[Extrafollicular T Cell Help]].
+- **⚠ [2026-08-27] Do plasmablasts express more or less HLA class II than DN3? The primary contradicts itself — quarantined.** The Results text says plasmablasts expressed *lower* HLA class II than DN3; the Fig. S3 legend says DN3 *downregulates* HLA class II. The direction cannot be resolved from the published article and **no synthesised HLA-II claim is carried here** (per the [2026-08-23] inconsistent-reporting rule; full record on the source page) (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=13).
+
 ## Contradictions & Debates
 
 - **SHM discrepancy in dengue plasmablasts: high (Priyamvada2016) vs. low (GodoyLozano2016).** Priyamvada2016 finds high SHM (mean 18.1 VH mutations ≈ ~6.5% nucleotide mutation) in sorted plasmablasts from secondary DHF, while GodoyLozano2016 finds globally low SHM in bulk IgG VH cDNA from a mix of primary and secondary infections. Likely reconciliation: Priyamvada2016 sorted plasmablasts specifically from secondary DHF (all memory-derived), while GodoyLozano2016 captured the full IgG⁺ B cell pool (including de novo EF-derived low-SHM PBs that dilute the average). Both studies may be correct — secondary infections contain a mixture of memory-derived high-SHM PBs and de novo low-SHM PBs, with the ratio depending on infection history and methodology.
@@ -78,10 +87,9 @@ Plasmablasts are short-lived, rapidly dividing antibody-secreting B cells that a
 
 ## Related Pages
 
-[[DN2 B Cell]], [[Double-Negative B Cell]], [[Activated Naive B Cell]], [[Memory B Cell]], [[CD38]], [[CD138]], [[CD20]], [[CD27]], [[CD19]], [[IRF4]], [[BLIMP-1]], [[TLR7]], [[Extrafollicular Response]], [[Bm Classification]], [[Germinal Center]], [[Original Antigenic Sin]], [[Antibody-Dependent Enhancement]], [[Early Memory B Cell]], [[Tissue-Resident Memory B Cell]], [[BACH2]]
-
+[[DN2 B Cell]], [[Double-Negative B Cell]], [[Activated Naive B Cell]], [[Memory B Cell]], [[CD38]], [[CD138]], [[CD20]], [[CD27]], [[CD19]], [[IRF4]], [[BLIMP-1]], [[TLR7]], [[Extrafollicular Response]], [[Bm Classification]], [[Germinal Center]], [[Original Antigenic Sin]], [[Antibody-Dependent Enhancement]], [[Early Memory B Cell]], [[Tissue-Resident Memory B Cell]], [[BACH2]], [[GC-Independent Response]], [[DN3 B Cell]]
 ## Sources
-
+- [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]]
 - [[Wei2007 - DN Memory B Cells in SLE]]
 - [[Anolik2004 - Rituximab and B Cell Abnormalities in SLE]]
 - [[Tipton2015 - ASC Diversity and Origin in SLE]]
@@ -101,3 +109,4 @@ Plasmablasts are short-lived, rapidly dividing antibody-secreting B cells that a
 - [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]
 - [[Glaros2025 - Multilayered Identity of B Cell Memory]]
 - [[Cancro2020 - Age-Associated B Cells]]
+- [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective; ASCs at EF sites may be GC-derived

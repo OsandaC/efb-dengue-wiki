@@ -2,8 +2,8 @@
 type: concept
 tags: [somatic-hypermutation, BCR-sequencing, memory-b-cells, germinal-center, extrafollicular-response, affinity-maturation]
 created: 2026-05-02
-updated: 2026-08-16
-sources: 21
+updated: 2026-08-27
+sources: 22
 ---
 
 # Somatic Hypermutation
@@ -51,6 +51,11 @@ Somatic hypermutation (SHM) is the process by which activation-induced cytidine 
 - **Atypical B cells carry SHM — they are antigen-experienced, not naive-derived bystanders.** Some ABCs carry somatically hypermutated BCRs, express classical memory markers, and respond to antigen restimulation; ABC frequencies fall in patients with CD40/CD40L mutations and ABCs fail to develop in mice with fixed BCR specificity (review). See [[Age-Associated B Cell]].
 - **ABCs include both somatically mutated and germline-configuration Ig genes — and an explicit caveat that SHM does not establish GC origin.** Sorted murine ABC V regions include a **diverse array of germline V_H and V_κ genes largely congruent with the FO pool** (ruling out age-associated clonal expansion), with **many ABC V regions somatically mutated** — but mutation load alone cannot resolve origin: **SHM can occur independent of GC formation** (citing Di Niro et al. 2015, *Immunity* — *Salmonella*-driven extrafollicular affinity maturation; plain text, no wiki page). The stated reading of the ABC repertoire data is that mutation implies GC origin **by inference only** (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse). This reinforces the wiki's existing position — most explicitly stated via [[Glaros2025 - Multilayered Identity of B Cell Memory]] fate-mapping — that mutation load is *consistent with* but not *diagnostic of* GC-independent origin, and adds a second independent primary (Di Niro 2015) to the wiki's EF-SHM evidence base alongside [[William2002 - Extrafollicular Somatic Hypermutation in Autoimmune Mice]].
 
+- **★ Mutational load is the product of SHM rate × time — and the rate is almost never measured.** The consensus Perspective makes this the basis of a formal caution (its Figure 2): what studies report is *load*, from which they infer GC participation, but load conflates how fast a cell mutates with how long it was mutating. **One direct measurement of mutation rate in autoimmune mice found the GC-independent rate comparable to a GC-dependent response after NP immunisation.** The load nonetheless differs because GC responses last longer and repeatedly re-engage CD40–CD40L, sustaining AID expression over more divisions. In prolonged GC-independent responses — MRL/lpr mice, chronic *Salmonella* infection — mutational load approaches GC levels (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data).
+- **The consequence is a probability model, not a threshold.** *"A high mutational load of memory B cells or ASCs provides a probability rather than a direct measure of GC participation."* Certain mouse isotypes (IgG1, IgE) are largely lost when GCs are ablated, while others (IgM, IgG2, IgA) can be GC-dependent or GC-independent — so the isotype context changes how strongly a given load argues for GC transit (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data).
+- **AID expression is not diagnostic of GC participation**, because AID is also required for class switch recombination, which typically precedes GC entry (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data). See [[Class Switch Recombination]].
+- **Bearing on the wiki's dengue reading:** [[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]] is used here as evidence for a GC-independent (EF) response in acute dengue. Under this model the inference survives but weakens from a determination to a probabilistic one — and specifically, low load in a *short, acute* response is weak evidence for GC-independence, since insufficient elapsed time produces the same reading as a high-rate GC-independent process. Distinguishing them requires a mutation *rate*, which that study did not measure. See [[GC-Independent Response]].
+
 ## Contradictions & Debates
 
 - The lower SHM in DN cells is consistent with EF origin but not conclusive — it could also reflect GC selection against autoreactive high-SHM clones, releasing cells with fewer mutations into the periphery. The Jenks2018 DN1/DN2 resolution helps: DN2 cells specifically (not DN1) show the low-SHM pattern, and their TLR7-dependent generation is independently confirmed by in vitro differentiation, making the EF origin model substantially more parsimonious for DN2 cells.
@@ -58,7 +63,7 @@ Somatic hypermutation (SHM) is the process by which activation-induced cytidine 
 - **Previously framed as two-way:** GodoyLozano2016 reports globally lower SHM during acute dengue vs. post-convalescence (p<0.001) from unsorted IgG cDNA. Appanna2016 reports comparable VH mutation frequencies between FACS-sorted plasmablasts and DENV-specific memory B cells (no significant difference by ANOVA). These findings are in apparent tension. Likely reconciliation: GodoyLozano2016 captures the full IgG⁺ B cell pool (dominated by plasmablasts in acute phase, pulling the average down), while Appanna2016 compares two sorted populations that may represent similarly matured cells selected for DENV binding. The Appanna2016 result does not contradict low global SHM — it shows that the subset of PBs that are DENV-specific have comparable mutation to DENV-specific MBCs, consistent with both being memory-derived. The GodoyLozano2016 result captures additional non-DENV-specific, germline-coded PBs that dilute the global average.
 
 ## Related Pages
-[[Double-Negative B Cell]], [[DN2 B Cell]], [[Age-Associated B Cell]], [[Activated Naive B Cell]], [[Memory B Cell]], [[Germinal Center]], [[Extrafollicular Response]], [[BCR Sequencing]], [[Class Switch Recombination]], [[Immunohistochemistry]], [[Early Memory B Cell]], [[Tissue-Resident Memory B Cell]]
+[[Double-Negative B Cell]], [[DN2 B Cell]], [[Age-Associated B Cell]], [[Activated Naive B Cell]], [[Memory B Cell]], [[Germinal Center]], [[Extrafollicular Response]], [[BCR Sequencing]], [[Class Switch Recombination]], [[Immunohistochemistry]], [[Early Memory B Cell]], [[Tissue-Resident Memory B Cell]], [[GC-Independent Response]]
 
 ## Sources
 - [[Wei2007 - DN Memory B Cells in SLE]]
@@ -82,3 +87,4 @@ Somatic hypermutation (SHM) is the process by which activation-induced cytidine 
 - [[Lamprinou2026 - ABCs and DN B Cells]]
 - [[Glaros2025 - Multilayered Identity of B Cell Memory]]
 - [[Cancro2020 - Age-Associated B Cells]]
+- [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective; mutational load as probability, not measure
