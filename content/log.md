@@ -1911,40 +1911,14 @@ forward-only check missed this class for three months, and warning that the excl
 wording-sensitive — a new italic phrasing must be added to `ESCAPE_HATCH` or the script reports false
 positives. Run it after every ingest.
 
+### Action items
+
+**All items needing the curator live in `state.md` → Queue → `★ NEXT SESSION FIRST STEP`**, not here:
+2 decisions that block work (which cut values are authoritative — the wiki page or the FlowCyto
+pipeline; whether to ingest `raw/Jenks2021.pdf`), 3 Rule 5 approvals, 3 queued repair tracks, and a
+list of what was verified clean so it is not re-audited. This log entry is the record of what was
+*found*; state.md carries what to *do*.
+
 ### Not fixed, by design
 
 Findings 1–8 above are reported, not applied: each is either a multi-session repair (1, 6), an ingest decision (2), or Rule 5 restructuring of curator-authored pages (3, 4, 5, 7, 8). 18 thin pages (1 source) are recorded but are mostly single-paper technical entities, not defects — Finding 1's repair would thicken several for free ([[ICOS]] gains Song2022; [[CD71]] gains Sanz2019).
-
----
-
-# ★★★ NEXT SESSION — START HERE ★★★
-
-*Written at the 2026-08-27 deep lint (entry below). Everything here needs the curator, either as a decision or as an approval. Nothing in this block was actioned; the lint deliberately stopped short of all of it.*
-
-## A. Decisions only the curator can make — these block work
-
-**A1. Which cut values are authoritative — the wiki page or the FlowCyto pipeline?**
-[[DN2 Gating Strategy]] prints `IgD <1.98 · CD27 <1.76 · CD21 <0.69 · CD11c >0.72` (arcsinh/500, FMO-anchored from HT82). The `FlowCyto Analysis 1/` pipeline's locked cuts are `IgD 1.98 · CD27 3.2 · CD21 0.33 · CD11c 0.28`. **Three of four axes disagree**, and IgD is the only match. This cannot be resolved from inside this repo — the wiki page was last updated 2026-06-27, *after* the 2026-06-21 cut-placement pass, so it is not simply stale. Until this is settled, any figure quoted from that page may not match the analysis that produced the data.
-
-**A2. Ingest `raw/Jenks2021.pdf`?**
-It was untracked in state.md and log.md until this lint. **Jenks SA, Wei C, Bugrovsky R, … Sanz I — "B cell subset composition segments clinically and serologically distinct groups in chronic cutaneous lupus erythematosus"** (Emory/Sanz lab, 23 pp). A Sanz-lab **primary** with DN/DN2 subset composition stratified by clinical group. Already in `raw/`, so the standing PDF-only sourcing decision is no obstacle. This is the strongest on-spine candidate currently sitting un-ingested — stronger, for the DN spine, than the three dengue cohort papers ahead of it in the queue, which are plasmablast/serology papers.
-
-## B. Rule 5 approvals — one word each, then Claude executes
-
-**B1. Move the misfiled bullets on [[Activated Naive B Cell]].** ~9 Key-Points bullets of Jenks2018/Sanz2025/Woodruff2020/Scharer2019/Kaneko2020 primary data sit inside `## Contradictions & Debates`, running from **"Shared identity with DN2 cells:"** through **"Independent cohort confirmation…"**. The **first two** bullets of that section are genuine contradictions and stay. Flagged at the Beckers2023 ingest, again at Eisenbarth2025, and again here — **third flag**. One move, ~5 minutes. *(Adjudicated this lint: the five other pages a bolded-bullet heuristic flags — [[Age-Associated B Cell]], [[Atypical B Cell]], [[Double-Negative B Cell]], [[T-bet]], [[Extrafollicular Response]] — carry genuine two-sided contradictions and are correctly filed. Do not "fix" those.)*
-
-**B2. Write the Allard-Chamard tissue finding into the two thesis analyses pages.** Its own Notable Findings entry names [[Mechanistic Case for DN and DN2 Cells in Dengue]] and the DN2:DN1 centrepiece of [[Thesis Objectives and Grant Pitch]] in the **Why notable** paragraph — and the paper is cited in neither. Proposed: a new hazard bullet on Mechanistic Case alongside the existing (a)–(g), and a confounder-table row on Thesis Objectives. **The content is the sharpest available qualification of the wiki's own thesis** — DN2 at ~7 cells/mm² in COVID-19 lymph node against DN3's ~400, i.e. the only direct human tissue evidence the wiki holds says DN2 is a blood population.
-
-**B3. Update [[DN2 Gating Strategy]] for both new primaries** (independent of A1). Two edits: **(a)** add Eisenbarth2025's "no flow panel alone establishes EF" — the page's title and Research Question both frame it as *EF B Cell Identification*, and it is the page in the wiki where that constraint bites hardest; it was not among the three the Eisenbarth ingest decision covered. **(b)** correct the "DN1 vs DN3 distinction | CXCR5" row, which is wrong *in shape*: Allard-Chamard2023 gates DN on **CXCR5 × CD11c with no CD21**, so the page's CD21 × CD11c 2×2 does not map onto DN1–DN4 at all and DN4 has no cell in the current tree. [[B Cell Panel Variant 1]] needs the same, milder.
-
-## C. Queued repair work — approve and Claude proceeds unattended
-
-**C1. The 130-instance reverse-propagation debt.** Detector is saved at `tools/lint_propagation.py` (run from repo root). **Suggested order: Sanz2019 first** (40 targets — the nomenclature backbone, and its targets are the most-read marker pages), then Song2022 (35), Zumaquero2019 (31), Kwissa2014 (20), Anolik2004 (3), Wrammert2012 (1). Budget roughly one session per paper. Each instance takes one of two fixes — *propagate* the claim, or *trim* the link to the source page's italic escape-hatch line — and the choice is per-instance, so this cannot be batched blindly.
-
-**C2. The ~50 bare-`(review)` citations from the Glaros2025 ingest** (Rule 3 violation — a study-type parenthetical with no source wikilink). Worst: [[Tissue-Resident Memory B Cell]] 9/11 · [[Early Memory B Cell]] 7/10 · [[Atypical B Cell]] 7/22 · [[IgM]] 4/14. Mechanical. Also merge the two verbatim duplications the same ingest produced on [[IgA]] and [[IgG]].
-
-**C3. Small, self-contained, no decision needed:** add Eisenbarth2025's activation-vs-lineage caveat to [[CD27]] and [[CD71]] (both 0 hits, both named verbatim in the Perspective — [[CD27]] still asserts unqualified that its absence "is used as evidence for their GC-independent (extrafollicular) origin", the exact inference the consensus severed) · propagate Allard-Chamard2023 to [[XBP1]], the one page its DN3/UPR primary data resolves · decide whether [[LFA-1]] and [[VLA-4]] merge (two thin pages carrying one indivisible dual-blockade result).
-
-## What does NOT need attention
-
-Verified clean this lint, so do not re-audit: link graph (0 stale wikilinks in content pages) · 0 true orphans · 0 broken `raw/*.pdf` links · index complete both directions with correct counts · **0 instances of the 2026-05-08 insertion-order defect class** · Curator Highlights accurate at 2 live highlights · Eisenbarth2025's origin-vs-location caveat present in all three curator analyses pages · **Allard-Chamard2023, Eisenbarth2025 and Beckers2023 all show 0 propagation failures — the CLAUDE.md guards are working.**
