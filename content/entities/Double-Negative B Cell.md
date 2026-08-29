@@ -2,8 +2,8 @@
 type: entity
 tags: [b-cell-subsets, memory-b-cells, IgD-negative, CD27-negative, atypical-b-cells, extrafollicular, SLE, comparative-immunology]
 created: 2026-05-02
-updated: 2026-08-27
-sources: 19
+updated: 2026-08-29
+sources: 21
 ---
 
 # Double-Negative B Cell
@@ -104,6 +104,9 @@ Kept as a section here rather than a standalone page (curator decision, 2026-08-
 - **[2026-08-27] PRIMARY DATA — FcRL4 separates HIV DN cells from other disease DN cells in blood.** FcRL4⁺ cells were **~15–18% of DN B cells in HIV (n=5) versus ~1% in healthy controls and in IgG4-RD (n=5 each), p<0.0001**. The IgG4-RD DN distribution was also distinguishable from the lupus DN distribution, in which DN3 and DN4 are generally rare. ⚠ **This contradicts a standing wiki claim** — see Contradictions & Debates (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=5 per group). See [[FcRH4]].
 - **[2026-08-27] PRIMARY DATA — whole-compartment shifts in IgG4-RD blood (n=38).** As % of total B cells: DN **increased** (p<0.01), plasmablasts **increased** (p<0.05), unswitched memory / marginal zone **decreased** (p<0.01); total switched memory and naive unchanged. Within switched memory, classic CXCR5⁺ SWM **fell** and CXCR5⁻ "ABC-like" cells **rose** (both p<0.01); activated naive B cells **rose** (p<0.01). ⚠ The paper's "ABC-like" gate is **IgD⁻CD27⁺CXCR5⁻ and deliberately includes both CD11c⁺ and CD11c⁻ cells** — it is CD27-**positive** and therefore does not overlap the DN compartment at all (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=38). See [[Age-Associated B Cell]], [[Activated Naive B Cell]].
 
+- **★ [2026-08-29] DN expansion tracks organ involvement, not disease label.** Across the lupus spectrum — primary chronic cutaneous lupus (CCLE+/SLE−), SLE with cutaneous disease (SLE+/CCLE+) and SLE without it (SLE+/CCLE−) — DN cells were expanded in **all three** groups, but **highest in SLE without skin disease**, and within SLE the presence of CCLE correlated with DN expansion of *lower* magnitude. The authors connect this to the DN2–lupus-nephritis association from [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]] and to the reduced incidence of nephritis in SLE patients with discoid lesions. In every group the expansion was accounted for by **DN2 and DN3 with reversal of the normal DN1 predominance** — the same pattern as in SLE and severe COVID-19 (see [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]], n=207 patients + 46 healthy controls, cross-sectional, conventional flow). ⚠ Cross-sectional association within one cohort; not tested mechanistically.
+- **[2026-08-29] Primary CCLE is bimodal for the DN phenotype, and that is a design warning.** Unsupervised clustering on subset frequencies placed **42% of primary CCLE patients in the healthy-donor clusters** (the Discussion says 48% — see the source page's quarantined inconsistency) and the rest with SLE. The DN/effector phenotype was therefore a **property of a patient stratum, not of the diagnosis**. Any study comparing group means of DN frequency across clinical categories will dilute this kind of signal (see [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]], n=69 primary CCLE).
+
 ## Proposed Origin and Relationship to Extrafollicular Response
 
 Wei et al. propose that DN cells represent B cells that failed to complete a productive germinal centre reaction and instead differentiated via extrafollicular pathways. The reasoning is:
@@ -125,6 +128,8 @@ This EF origin model directly links DN B cells to the concept of [[Extrafollicul
 3. **GC-independent (extrafollicular) origin (proposed for DN2/DN3).** The *majority* of DN and SM cells are clonally distinct, with different IgV(D)J family and gene usage; DN2 lacks CXCR5 and CD62L; DN2 shares transcriptome and expanded clones with activated naive B cells, and aNAV cells differentiate into DN2 in vitro under TLR7 + IFN-γ + IL-21.
 
 **Single-cell RNA velocity has been reported flowing in *both* directions** — DN1 → SM (DN1 as precursor) *and* SM → DN1 (DN1 as progeny) — plus USM → DN2/DN3. Beckers' own conclusion is that "conclusive evidence is still lacking… Some DN1 cells could be precursors of SM B cells, while others could be progeny of SM B cells." One AIRR study went further, reading genealogical trees as pointing to **DN cells as the progenitor of SM cells**, and finding no difference in VH family usage or mutation type/location between class-switched DN and SM cells (see [[Beckers2023 - Origins and Functions of DN B Cells]], review, own AIRR data — Fraussen 2019 — + citing Wu 2011 for the repertoire trees and Stewart 2021 for the velocity analyses). See [[Switched Memory B Cell]] and [[Single-Cell RNA Sequencing]].
+
+- **★ The DN compartment is heterogeneous by direct phenotype, and the review says so in as many words.** Comparing DN cells across RA, SLE, scleroderma and acute and chronic HIV, [[FcRH4|FcRL4]] and [[FCRL5]] are **reciprocally expressed** — FcRL4 high in HIV (~21.1%) and near-absent in SLE (~0.74%), FcRL5 the reverse. The stated conclusion: "This heterogeneity in expression patterns is **indicative of multiple DN B cell populations, and can only be resolved by further marker subgating on DN B cells**." Table 1 accordingly gives **three** DN rows — DN1 (memory precursors), DN2 (extrafollicular ASC precursors) and an FcRL4⁺ atypical/tissue-based memory row — not two (see [[Sanz2019 - Consistent Classification of Human B Cell Populations]], review — **no original data**), figure adapted from [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]).
 
 ## Contradictions & Debates
 
@@ -175,3 +180,5 @@ This EF origin model directly links DN B cells to the concept of [[Extrafollicul
 - [[William2002 - Extrafollicular Somatic Hypermutation in Autoimmune Mice]]
 - [[Beckers2023 - Origins and Functions of DN B Cells]]
 - [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective; mouse vs. human DN are different cells
+- [[Sanz2019 - Consistent Classification of Human B Cell Populations]]
+- [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]]

@@ -2,8 +2,8 @@
 type: method
 tags: [immunoassay, cytokine-quantification, serology, in-vitro]
 created: 2026-08-23
-updated: 2026-08-23
-sources: 1
+updated: 2026-08-29
+sources: 2
 ---
 
 # ELISA
@@ -24,6 +24,8 @@ This page currently documents ELISA as used for **cytokine quantification in cul
 - **The dynamic range is wide and matters for interpretation.** Reported IFN-α values in one experiment spanned **948 pg/ml (D2V, MOI 2.5) to 64,407 pg/ml (56 °C-inactivated influenza)** — nearly two orders of magnitude, across which no saturation is apparent, which is part of why the source could rank agonist potency at all (see [[Wang2006 - Flavivirus Activation of pDCs and TLR7 Signaling]]).
 - **⚠ Units differ between analytes and are not interchangeable.** In the same figure, IFN-α is reported in **pg/ml** and IFN-β in **IU/ml** (see [[Wang2006 - Flavivirus Activation of pDCs and TLR7 Signaling]], Fig 5) — mass units versus bioactivity units, with no fixed conversion between them.
 
+- **[2026-08-29] Serum autoantibody quantification alongside a cohort-scale B cell panel.** 9G4⁺ (VH4.34-idiotype) IgG, IgM and IgA by in-house ELISA; anti-dsDNA and anti-chromatin IgG by commercial kit (QUANTA Lite, INOVA Diagnostics); anti-RNA IgG by ELISA — run on the same subjects as an 8-marker B cell panel, which is what allowed composition and serology to be associated patient-by-patient (see [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]], n=207 patients + 39 additional SLE + 69 healthy controls, cross-sectional). ⚠ The autoantibody *findings* are out of scope for this wiki under the standing [2026-05-02] 9G4 decision and are recorded on the source page as background only; the method is noted here because the paired design — serology and immunophenotype on one blood draw — is the template the dengue study would need to link cells to antibody output.
+
 ## Contradictions & Debates
 
 **Percentage-of-control reporting hides absolute magnitude.** Inhibitor experiments are commonly plotted as "% of stimulus alone," which is the right normalisation for a blocking effect but discards the information that the stimuli differ 30-fold in absolute output. [[Wang2006 - Flavivirus Activation of pDCs and TLR7 Signaling]] handles this well by stating the absolute mean pg/ml for every stimulus in the figure legend; where a source does not, the wiki should not infer relative potency from percentage plots.
@@ -37,3 +39,4 @@ This page currently documents ELISA as used for **cytokine quantification in cul
 ## Sources
 
 - [[Wang2006 - Flavivirus Activation of pDCs and TLR7 Signaling]]
+- [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]]

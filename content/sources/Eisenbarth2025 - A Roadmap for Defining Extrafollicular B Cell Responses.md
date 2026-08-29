@@ -70,9 +70,9 @@ All four were visited and updated.
 
 ## Entities Mentioned
 
-[[DN2 B Cell]] · [[Double-Negative B Cell]] · [[Atypical B Cell]] · [[Age-Associated B Cell]] · [[Activated Naive B Cell]] · [[CD11c]] · [[T-bet]] · [[CXCR5]] · [[CD21]] · [[ZEB2]] · [[TLR7]] · [[Plasmablast]]
+[[DN2 B Cell]] · [[Double-Negative B Cell]] · [[Atypical B Cell]] · [[Age-Associated B Cell]] · [[Activated Naive B Cell]] · [[CD11c]] · [[T-bet]] · [[CXCR5]] · [[CD21]] · [[ZEB2]] · [[TLR7]] · [[Plasmablast]] · [[CD27]] · [[CD71]]
 
-*Also discussed but not separately updated in this ingest:* CD27, CD71, FCRL5, IRF4, BLIMP-1, AID, Bcl-6, CD23, CD24, CD38, CD138, CXCR3, IFN-γ, IL-21, TLR9, Switched Memory B Cell, Early Memory B Cell, DN3 B Cell, and the Table 1 trafficking receptors not held as wiki entities (EBI2/GPR183, S1PR1, S1PR2, P2RY8, CCR7, CXCR4, CCR9, CCR10).
+*Also discussed but not separately updated in this ingest:* FCRL5, IRF4, BLIMP-1, AID, Bcl-6, CD23, CD24, CD38, CD138, CXCR3, IFN-γ, IL-21, TLR9, Switched Memory B Cell, Early Memory B Cell, DN3 B Cell, and the Table 1 trafficking receptors not held as wiki entities (EBI2/GPR183, S1PR1, S1PR2, P2RY8, CCR7, CXCR4, CCR9, CCR10).
 
 ## Concepts Addressed
 

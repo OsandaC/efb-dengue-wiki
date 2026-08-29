@@ -2,8 +2,8 @@
 type: method
 tags: [flow-cytometry, immunophenotyping, B-cell-subsets, PBMC, panel-design]
 created: 2026-05-02
-updated: 2026-08-27
-sources: 21
+updated: 2026-08-29
+sources: 23
 ---
 
 # Conventional Flow Cytometry
@@ -63,6 +63,11 @@ In dengue and related infection studies, conventional flow cytometry has been us
 - **[2026-08-27] The panel that produced the DN1–DN4 scheme, in full:** CD3, CD19, CD27, IgD, CD38, CD20, IgG, IgM, IgA, FcRL4, SLAMF7, CD11c, CXCR5. **No CD21, no T-bet, no CD24, no CD71.** The four-way DN split therefore rests on CXCR5 × CD11c alone — worth knowing when comparing to CD21-based gating (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=38). See [[DN3 B Cell]] Contradictions.
 - **[2026-08-27] High-dimensional reduction before simplification.** Twenty-five distinct B cell subpopulations were resolved in IgG4-RD blood by **tSNE + PhenoGraph** (Levine 2015) before the authors deliberately collapsed to the four-marker DN classification "to simplify further analyses and to be consistent with" the Sanz scheme. A useful precedent for the workflow of unsupervised discovery followed by supervised, comparable gating (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=38).
 
+- **★ The seven-marker core panel — the field's most-cited minimum recommendation for human B cell phenotyping.** Sanz2019 holds that proper analysis of the major canonical human B cell subsets "requires the analysis of 7-markers combined with proper exclusion of dead cells and cellular doublets": **(1) a non-B dump (CD3, CD14); (2) [[CD19]]; (3) [[IgD]]; (4) [[CD27]]; (5) [[CD38]]; (6) [[CD24]]; (7) [[CD21]]**. This combination supports both widely used schemes at once — IgD vs CD27 and IgD vs CD38 (Bm1–Bm5) — and CD21 is argued in specifically because it flags activated cells inside every parental population. **⚠ The paper is inconsistent about its own core:** the Table 1 footnote reads "Core Markers: CD19, **IgM**, IgD, CD27, CD38, CD24, CD21", substituting IgM for the dump and listing IgM among the additional markers as well (see [[Sanz2019 - Consistent Classification of Human B Cell Populations]], review — **no original data**). See [[Bm Classification]], [[DN2 Gating Strategy]].
+
+- **[2026-08-29] A 207-patient clinical stratification obtained from an 8-marker conventional panel — and a caution about what was published with it.** Cryopreserved PBMC (BD Vacutainer CPT, banked in liquid nitrogen), stained 30 min at 4 °C in PBS + 2% FBS, viability by Fixable Viability Dye eFluor506, fixed in **0.5% formaldehyde**, acquired on a **BD LSRII**, analysed in FlowJo. Markers recoverable from the text and figures are **CD19, CD3, IgD, CD27, CD38, CD24, CD21, CD11c** — the full conjugate list sits in an online supplemental table that is **not part of the deposited manuscript**, so the panel cannot be reproduced from the paper alone (see [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]], n=207 + 46 healthy controls, cross-sectional).
+- **⚠ [2026-08-29] Two comparability caveats when quoting frequencies from this study.** (i) **Cryopreserved/thawed PBMC**, not fresh or fixed whole blood — CD21 and CD11c are the two markers doing all the subsetting work here, and both are the kind of surface marker whose recovery is sensitive to freeze-thaw. (ii) **Significance is reported as colour-coded bands** (p<0.05 green, p<0.01 blue, p<0.001 red, p<0.0001 dark purple) rather than numeric p-values, so exact p-values for subset comparisons are not extractable from the published text (see [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]]).
+
 ## Contradictions & Debates
 
 - Conventional panels with limited colour capacity may undercount DN B cells or conflate them with transitional B cells if CD10 or CD24 are not included. The Wei2007 data (Fig. 2B) show that DN cells are CD10⁻, which resolves this ambiguity — but earlier studies using 4- or 5-color panels may have misclassified these cells.
@@ -93,3 +98,5 @@ In dengue and related infection studies, conventional flow cytometry has been us
 - [[Wang2006 - Flavivirus Activation of pDCs and TLR7 Signaling]]
 - [[Beckers2023 - Origins and Functions of DN B Cells]]
 - [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective; no panel alone can identify an EF response
+- [[Sanz2019 - Consistent Classification of Human B Cell Populations]]
+- [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]]

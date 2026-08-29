@@ -2,8 +2,8 @@
 type: entity
 tags: [b-cell-subsets, DN3, pre-plasmablast, extrafollicular, GC-independent, COVID-19, SLE, IgG4-RD, tissue-infiltration]
 created: 2026-05-03
-updated: 2026-08-27
-sources: 8
+updated: 2026-08-29
+sources: 10
 ---
 
 # DN3 B Cell
@@ -51,6 +51,11 @@ DN3 cells should **not** be classified as atypical B cells or age-associated B c
 - **⚠ The "DN3 expresses low CD19" claim is not verifiable in the primary.** [[Sanz2025 - Human Atypical B Cells Overview]] attributes CD19^low to Woodruff 2020, Allard-Chamard 2023 and Perugino/Pillai jointly (this page's Phenotype bullet). The Allard-Chamard primary **never describes DN3 as CD19-low** — CD19 is used only as a lineage gate. The claim may rest entirely on the other two citations; it is retained above but should not be attributed to Allard-Chamard 2023.
 - **⚠ SLAMF7 is expressed by DN3 but does not distinguish it from DN2.** Protein-level MFI (n=4): DN2 2123 > **DN3 1536** > DN4 956 > DN1 895. DN3 also shares a cytotoxic-gene module with DN2 (GZMA, GZMH, GZMB, GNLY, NKG7, KLRB1, KLRD1, KLRF1, FCGR3A), though **perforin was generally low in DN3**. Practical consequence: SLAMF7 cannot be used as a DN3-specific tissue marker (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=4). See [[SLAMF7]].
 
+- **⚠ Sanz2019 lists a third DN population that may or may not be this one — and the marker that would settle it has never been measured here.** Table 1 carries an IgD⁻CD27⁻CD38⁻CD24⁻CD21⁻**FcRL4⁺** row annotated **"atypical/tissue-based memory"**, listed separately from DN2 and identical to it on every core marker. It is CD21⁻, as this page's DN3 is. But the DN3 literature ([[Lamprinou2026 - ABCs and DN B Cells]], [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]]) has **never measured [[FcRH4|FcRL4]]**, and Allard-Chamard's DN3 is defined CXCR5⁻CD11c⁻ with no CD21 in the panel. Whether Sanz2019's FcRL4⁺ row, Emory's CD21⁻CD11c⁻ DN3 and Pillai's CXCR5⁻CD11c⁻ DN3 are one cell, two or three is open (see [[Sanz2019 - Consistent Classification of Human B Cell Populations]], review — **no original data**).
+
+- **★ [2026-08-29] The Emory DN3 gate is now held first-party, not relayed.** A Sanz-lab primary states it in a figure legend: within IgD⁻CD27⁻ cells, **DN1 = CD21⁺CD11c⁻, DN2 = CD21⁻CD11c⁺, DN3 = CD21⁻CD11c⁻**. Until now the wiki carried the Emory definition through [[Sanz2025 - Human Atypical B Cells Overview]] and [[Woodruff2020 - EF B Cell Responses in COVID-19]]. DN3 rose together with DN2 to account for DN expansion in all three lupus groups (see [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]], n=207 + 46 HCD, cross-sectional, 8-marker conventional flow). ⚠ **This does not reconcile the two DN3 axes.** CXCR5 appears **nowhere** in this paper's own data, so the supportable claim is *as of 2021 a Sanz-lab primary gates DN3 on CD21 × CD11c with no CXCR5* — not that the Emory axis is confirmed correct. The reconciliation still requires both axes in one tube ([[B Cell Panel Variant 1]]).
+- **[2026-08-29] The CD21⁺CD11c⁺ quadrant is left unnamed — which is not the same as DN4 being absent.** This paper defines three DN subsets and does not label the fourth quadrant of its own 2×2. It therefore does **not** arbitrate the DN4 marker conflict between [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]] (DN4 = CXCR5⁺CD11c⁺) and [[Lamprinou2026 - ABCs and DN B Cells]] (CXCR5⁺CD11c⁻), which remains blocked (see [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]]).
+
 ## Contradictions & Debates
 
 - The relationship between DN3 cells and the plasmablast maturation continuum (CD138⁻ → CD138⁺ ASC) described in [[Tipton2015 - ASC Diversity and Origin in SLE]] is not fully resolved. DN3 cells may represent the earliest circulating pre-plasmablast stage — before CD27 and CD38 upregulation — but this requires direct comparison with sorted populations.
@@ -71,3 +76,5 @@ DN3 cells should **not** be classified as atypical B cells or age-associated B c
 - [[Beckers2023 - Origins and Functions of DN B Cells]]
 - [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]]
 - [[Scharer2019 - Epigenetic Programming in SLE B Cells]] — the SLE DN1/DN2 transcriptomes that Allard-Chamard2023's sorted DN subsets were benchmarked against
+- [[Sanz2019 - Consistent Classification of Human B Cell Populations]]
+- [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]]

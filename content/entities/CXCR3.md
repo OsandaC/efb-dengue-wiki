@@ -2,7 +2,7 @@
 type: entity
 tags: [surface-markers, chemokine-receptor, homing, IFN-gamma, extrafollicular, tissue-inflammation]
 created: 2026-05-04
-updated: 2026-08-16
+updated: 2026-08-28
 sources: 4
 ---
 
@@ -23,7 +23,7 @@ The CXCR5⁻/CXCR3⁺ chemokine receptor switch on extrafollicular B cell popula
 - **CXCR3 measured by CITE-seq on alternative lineage B cells:** CITE-seq surface protein measurement confirmed CXCR3 expression on alternative lineage (atBC) populations in both malaria-exposed and non-exposed donors, consistent with the CXCR5⁻/CXCR3⁺ homing switch seen on EF pathway cells in COVID-19 and dengue (see [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]], n=4, CITE-seq).
 
 - **CXCR3 is listed among the defining surface markers of human atypical B cells.** Human ABCs "often express the transcription factor [[T-bet]] along with distinct surface markers, including [[CD11c]], CXCR3, [[FcRH4|FCRL4]], and [[FCRL5]]" (see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review, **no original data**). This places CXCR3 in the review-level ABC marker set alongside the markers this wiki already tracks — relevant because CXCR3 is already documented on dengue plasmablasts.
-- **CXCR3 mediates recruitment of resident memory B cells to infected tissue — including antigen-irrelevant ones.** In the lung, B resident memory cells of **diverse specificities, including those unrelated to the invading pathogen**, are rapidly recruited to the infection site via an alveolar-macrophage-initiated cascade: IFN-γ from NK cells → **CXCL9/CXCL10** → recruitment of **CXCR3-expressing** memory B cells. Some of these differentiate into plasma cells on innate signals alone, without specificity for the current threat (review, mouse). See [[Tissue-Resident Memory B Cell]]. Lung BRMs also express CCR6 alongside CXCR3.
+- **CXCR3 mediates recruitment of resident memory B cells to infected tissue — including antigen-irrelevant ones.** In the lung, B resident memory cells of **diverse specificities, including those unrelated to the invading pathogen**, are rapidly recruited to the infection site via an alveolar-macrophage-initiated cascade: IFN-γ from NK cells → **CXCL9/CXCL10** → recruitment of **CXCR3-expressing** memory B cells. Some of these differentiate into plasma cells on innate signals alone, without specificity for the current threat (see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review, mouse). See [[Tissue-Resident Memory B Cell]]. Lung BRMs also express CCR6 alongside CXCR3.
 
 ## Contradictions & Debates
 

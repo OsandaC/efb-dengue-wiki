@@ -2,7 +2,7 @@
 type: entity
 tags: [integrin, adhesion, retention, marginal-zone, vcam-1, murine]
 created: 2026-08-18
-updated: 2026-08-18
+updated: 2026-08-28
 sources: 2
 ---
 
@@ -10,7 +10,7 @@ sources: 2
 
 ## Overview
 
-VLA-4 (α4β1, CD49d/CD29, encoded by *Itga4* and *Itgb1*) is a β1 integrin whose ligand is VCAM-1. With [[LFA-1]] it retains T-bet⁺CD11c⁺ B cells at the splenic marginal zone. The two are blocked together in the only experiment that demonstrates the mechanism, so their individual contributions are not separated.
+VLA-4 (α4β1, CD49d/CD29, encoded by *Itga4* and *Itgb1*) is a β1 integrin whose ligand is VCAM-1. With [[LFA-1]] it retains T-bet⁺CD11c⁺ B cells at the splenic marginal zone. The two are blocked together in the only experiment that demonstrates the mechanism, so their individual contributions are not separated — which is a reason to hold the two pages apart, not to merge them *(merge considered and declined 2026-08-28 — see `state.md` Decisions)*.
 
 ## Key Points from Literature
 

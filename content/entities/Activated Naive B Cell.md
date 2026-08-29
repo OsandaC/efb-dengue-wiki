@@ -2,8 +2,8 @@
 type: entity
 tags: [b-cell-subsets, activated-naive, extrafollicular, SLE, plasmablast-precursor, flow-cytometry]
 created: 2026-05-02
-updated: 2026-08-27
-sources: 9
+updated: 2026-08-29
+sources: 11
 ---
 
 # Activated Naive B Cell
@@ -35,11 +35,6 @@ acN cells represent an important extrafollicular precursor pool: a substantial f
 
 - **[2026-08-27] Activated naive B cells are expanded in IgG4-related disease blood** (p<0.01 as a percentage of naive B cells, n=38, 13-colour FCM), alongside expansions of DN, DN2, DN3, DN4 and plasmablasts and a fall in unswitched memory. The aNAV gate follows Kaminski/Sanz 2012. This extends the aNAV expansion — already established in SLE and COVID-19 — to a **third disease with a fibro-inflammatory rather than classically autoantibody-driven mechanism**, consistent with aNAV being a general marker of GC-independent B cell activation rather than an SLE-specific finding. No aNAV→DN2 developmental evidence is presented in this paper (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=38).
 
-## Contradictions & Debates
-
-- Whether acN cells differentiate into ASCs via extrafollicular pathways, germinal centre pathways, or both is not resolved by this study. The phylogenetic clone trees observed are consistent with a model of asymmetric differentiation through both EF and GC reactions simultaneously. The presence of low-SHM (~0%) acN precursors co-existing with high-SHM (~21%) ASC progeny most parsimoniously fits an EF model with prolonged AID-driven diversification occurring outside canonical GC structures.
-- The use of MitoTracker Green (MTG) to identify activated B cells is sensitive but non-standard. MTG is retained by cells with high mitochondrial membrane potential, a property shared by transitional and activated B cells but not resting naive cells. Its use is validated indirectly by the phenotypic concordance of MTG⁺CD24⁻ cells with activated B cell markers (CD19^hi, CD21⁻, CD23⁻) and their disease-activity correlation. Whether this approach translates directly to dengue cohort studies (where transitional B cells may also expand) requires careful attention to the CD24 discriminator.
-
 - **Shared identity with DN2 cells:** aNAV cells are the only B cell population sharing multiple DN2 markers: CXCR5⁻, CD24⁻, CD38⁻, CD11c⁺, MTG⁺, and CD19^hi. RNA-seq of aNAV and DN2 cells from additional SLE patients confirmed highly similar transcriptomes. Both populations express high T-bet and ZEB2, lack BACH2 and FOXO1, and have elevated BLIMP-1 and IRF4. aNAV cells represent the only non-DN2 B cell population with TLR7 hyper-responsiveness (see [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]], RNA-seq + flow cytometry).
 - **Developmental link to DN2 cells:** In vitro, rNAV cells stimulated with TLR7 + IFN-γ + IL-21 generate aNAV cells by day 3 and DN2 cells by day 3–5. aNAV cells directly differentiate into DN2 cells in 3-day cultures, with aNAV generating significantly more DN2 cells than rNAV. Day 5 cultures started with aNAV contain significantly more PC than rNAV cultures. BCR sequencing demonstrates clonal sharing between aNAV, DN2, and PC populations in vivo (see [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]).
 - **CD40L and IL-4 inhibit aNAV generation:** CD40L stimulation inhibits differentiation of rNAV into aNAV and DN2 but does not affect DN1 generation. Substitution of IFN-γ by IL-4 also inhibits aNAV/DN2/PC generation (see [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]).
@@ -52,6 +47,16 @@ acN cells represent an important extrafollicular precursor pool: a substantial f
 - **T3 cells as an early activation state of naive B cells:** DNA methylation, chromatin accessibility, and transcriptomic data all placed T3 cells between resting naive and activated naive. In active SLE, T3 cells represent an early phase of naive B cell activation rather than true transitional cells (see [[Scharer2019 - Epigenetic Programming in SLE B Cells]]).
 
 - **Independent cohort confirmation: activated naive expansion in severe COVID-19 blood:** In a separate COVID-19 cohort (n=68), activated naive B cells (IgD⁺CD27⁻CD21ˡᵒCD11cʰⁱ) were expanded in severe CRP-high patients. The expanded activated naive cells were confirmed SARS-CoV-2 RBD-specific by dual-fluorophore probe staining, establishing that the aN expansion is antigen-driven. This independently replicates the aN expansion reported in ICU patients by [[Woodruff2020 - EF B Cell Responses in COVID-19]] (see [[Kaneko2020 - GC Loss and TFH Block in COVID-19]], n=68 blood cohort, 13-color FCM + RBD probes).
+
+- **Table 1's activated-naive row, and the gating warning that follows from it.** Sanz2019 gives activated naive as **IgD⁺CD27⁻CD38⁻CD24⁻CD21⁻, CD95⁺CD23⁻CD11c⁺T-bet⁺FcRL5⁺SLAMF7⁺CXCR5⁻**, with function **"precursor of short-lived PB and GC reactions"** — note that the assigned function spans *both* pathways, not the extrafollicular one alone. Because that signature is identical to DN2's apart from IgD, the review "advise[s] against classifying these populations on the basis of a CD27⁻CD21⁻ phenotype in the absence of IgD staining" (see [[Sanz2019 - Consistent Classification of Human B Cell Populations]], review — **no original data**).
+
+- **[2026-08-29] aNAV is gated on the same two markers as DN2, one gate up, and is again called the DN2 progenitor.** Within the IgD⁺CD27⁻ naive+transitional gate, activated naive cells were defined **CD21⁻CD11c⁺** — identical marker logic to the DN2 gate applied inside the IgD⁺ compartment. They were expanded in **both SLE groups relative to primary cutaneous lupus** (as a proportion of both CD19⁺ and of total naive), and the paper describes them plainly as *representing DN2 progenitors* (see [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]], n=207 + 46 HCD, cross-sectional). ⚠ The progenitor relationship is asserted on prior work, not tested here — no fate-mapping, sorting or trajectory analysis was performed.
+- **[2026-08-29] aNAV clusters with DN2, DN3 and plasmablasts as one effector family.** In unsupervised hierarchical clustering of 253 subjects on subset frequency, the subsets separated into three families — early (resting naive, early transitional), memory (unswitched memory, switched memory, DN1) and **effector (aNAV, DN2, DN3, PB)** — and the effector family moved together across all five patient clusters (see [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]]).
+
+## Contradictions & Debates
+
+- Whether acN cells differentiate into ASCs via extrafollicular pathways, germinal centre pathways, or both is not resolved by this study. The phylogenetic clone trees observed are consistent with a model of asymmetric differentiation through both EF and GC reactions simultaneously. The presence of low-SHM (~0%) acN precursors co-existing with high-SHM (~21%) ASC progeny most parsimoniously fits an EF model with prolonged AID-driven diversification occurring outside canonical GC structures.
+- The use of MitoTracker Green (MTG) to identify activated B cells is sensitive but non-standard. MTG is retained by cells with high mitochondrial membrane potential, a property shared by transitional and activated B cells but not resting naive cells. Its use is validated indirectly by the phenotypic concordance of MTG⁺CD24⁻ cells with activated B cell markers (CD19^hi, CD21⁻, CD23⁻) and their disease-activity correlation. Whether this approach translates directly to dengue cohort studies (where transitional B cells may also expand) requires careful attention to the CD24 discriminator.
 
 ## Related Pages
 
@@ -67,3 +72,5 @@ acN cells represent an important extrafollicular precursor pool: a substantial f
 - [[Scharer2019 - Epigenetic Programming in SLE B Cells]]
 - [[Beckers2023 - Origins and Functions of DN B Cells]]
 - [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective; CD21ˡᵒ/CXCR5⁻/CD11c⁺ may report recent activation
+- [[Sanz2019 - Consistent Classification of Human B Cell Populations]]
+- [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]]

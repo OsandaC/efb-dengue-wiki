@@ -2,8 +2,8 @@
 type: entity
 tags: [transcription-factors, BLIMP-1, PRDM1, plasma-cell-differentiation, DN2]
 created: 2026-05-02
-updated: 2026-08-16
-sources: 7
+updated: 2026-08-28
+sources: 8
 ---
 
 # BLIMP-1
@@ -25,9 +25,11 @@ BLIMP-1 (B Lymphocyte-Induced Maturation Protein 1; encoded by *PRDM1*) is an IR
 - **PRDM1 (BLIMP-1) NOT upregulated in alternative lineage atBC clusters:** scRNA-seq showed that *PRDM1* was not upregulated in any atBC cluster or MBC1, with PCs detached from the alternative lineage pseudotime manifold. Combined with absent *XBP1* and *IRF4*, this argues that the BLIMP-1-driven PC programme is not activated in atBCs outside of pathological contexts (SLE). The contrast with elevated BLIMP-1 protein in SLE DN2 cells (Jenks2018) suggests that BLIMP-1 upregulation in DN2 is disease-specific rather than intrinsic to the alternative lineage (see [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]], n=4, 10x Chromium).
 
 - **★ *Prdm1* chromatin accessibility increases with cumulative antigenic stimulation — the proposed epigenetic basis of memory fate.** Repeated or prolonged stimulation progressively opens PC-associated gene loci including ***Prdm1***, thereby **increasing baseline BLIMP1 expression** and biasing memory B cells toward **plasma-cell differentiation over germinal-center reentry**. The model proposes that MBC fate on reactivation is programmed not by a binary GC vs non-GC origin but by the **cumulative history of stimulation recorded epigenetically**, acting in part through [[BACH2]] and BLIMP1 (see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review, **no original data**; the authors flag it as untested). This adds a mechanism to the wiki's existing observation that the *PRDM1* locus is already **open by ATAC-seq in DN2 cells** ([[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]) — on this model, open *PRDM1* is a record of accumulated stimulation, not merely a lineage marker.
-- **In the germinal center, *Prdm1* is actively repressed by BACH2 under weak T cell help**, which is how low-affinity GC B cells are diverted into the quiescent memory fate rather than the plasma-cell fate (review, mouse). See [[BACH2]], [[Germinal Center]].
+- **In the germinal center, *Prdm1* is actively repressed by BACH2 under weak T cell help**, which is how low-affinity GC B cells are diverted into the quiescent memory fate rather than the plasma-cell fate (see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review, mouse). See [[BACH2]], [[Germinal Center]].
 - **Atypical B cells express PC-associated genes** — one of the lines the review cites for ABCs being transcriptionally primed for PC differentiation (citing Song 2022, mouse). ⚠ Note this stands in unresolved tension with [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]], which found **no** upregulation of *PRDM1*, *XBP1*, or *IRF4* in human atBC clusters at steady state — see [[DN2 B Cell]] Contradictions for the reconciliation attempt.
 - **⚠ Cancro: "few if any plasma cells express T-bet, and there is evidence that T-bet represses Blimp-1" — asserted without a supporting reference in the review.** ABCs are described as differentiating rapidly to ASC/plasmablasts on TLR7/9 + IL-21 stimulation (citing Wang 2018 and [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]), and Cancro states there is evidence that T-bet represses Blimp-1, implying that plasma cell formation from ABCs likely involves loss of T-bet expression (see [[Cancro2020 - Age-Associated B Cells]], review — no original data). Cancro attaches **no numbered reference** to this sentence — unusual for an Annual Reviews article. Treat as the author's synthesis, not a sourced finding, and verify against the primary literature before relying on it.
+
+- **BLIMP-1 with retained Pax5 is the review's definition of the pre-plasmablast.** Core markers resolve "an additional population of proliferative IgD⁻CD38⁺/⁺⁺CD24⁻ cells expressing **low** levels of CD27": these upregulate BLIMP-1 **while maintaining Pax5**, and are therefore read as PB precursors. The review also notes that although IgD⁺ ASC have been described, **only a small fraction express BLIMP-1** and they are rarely found in the periphery (see [[Sanz2019 - Consistent Classification of Human B Cell Populations]], review — **no original data**). See [[Plasmablast]], [[XBP1]].
 
 ## Contradictions & Debates
 
@@ -44,3 +46,4 @@ BLIMP-1 (B Lymphocyte-Induced Maturation Protein 1; encoded by *PRDM1*) is an IR
 - [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]
 - [[Glaros2025 - Multilayered Identity of B Cell Memory]]
 - [[Cancro2020 - Age-Associated B Cells]]
+- [[Sanz2019 - Consistent Classification of Human B Cell Populations]]

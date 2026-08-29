@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, immunoglobulin, isotype, B-cell-subsets, naive-b-cells]
 created: 2026-05-02
-updated: 2026-08-27
-sources: 14
+updated: 2026-08-29
+sources: 16
 ---
 
 # IgD
@@ -28,6 +28,10 @@ IgD (Immunoglobulin D) is a surface immunoglobulin isotype co-expressed with IgM
 
 - **[2026-08-27] IgD as a tissue stain, and the IgD/CD27 co-channel.** Multiplex immunofluorescence (Opal, clone AA093/DAKO) detected IgD in archival FFPE tissue; in the DN-subset panels IgD and CD27 were deliberately **combined into a single fluorescence channel**, since DN identity requires only that both be negative. This freed channels for CXCR5 and CD11c and allowed all four DN subsets to be assigned cell-by-cell in situ (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], multi-colour IF). See [[Multi-color Immunofluorescence]].
 
+- **★ The review's sharpest panel-design instruction is about IgD: never gate this compartment on CD27⁻CD21⁻ without it.** Verbatim: "we advise against classifying these populations on the basis of a CD27⁻CD21⁻ phenotype in the absence of IgD staining as such cells would also include **IgD⁺ activated naive cells**." This is the operational consequence of Table 1, where [[Activated Naive B Cell|activated naive]] and [[DN2 B Cell|DN2]] share essentially the entire activation signature (CD38⁻CD24⁻CD21⁻CD11c⁺T-bet⁺FcRL5⁺SLAMF7⁺CXCR5⁻) and **differ by IgD alone**. IgD is core marker (3) of the recommended seven (see [[Sanz2019 - Consistent Classification of Human B Cell Populations]], review — **no original data**). See [[DN2 Gating Strategy]].
+
+- **[2026-08-29] IgD anchors the top-level split in a 207-patient lupus cohort.** IgD together with CD27 divides CD19⁺CD3⁻ B cells into naive+transitional (IgD⁺CD27⁻), unswitched memory (IgD⁺CD27⁺), switched memory + plasmablasts (IgD⁻CD27⁺) and double-negative (IgD⁻CD27⁻). **Loss of the IgD⁺CD27⁺ unswitched-memory compartment was shared by all three lupus groups**, including skin-limited disease, and was the single feature most reduced in the cluster with expanded transitional cells (see [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]], n=207 + 46 HCD, cross-sectional).
+
 ## Contradictions & Debates
 
 None documented in current wiki sources.
@@ -50,3 +54,5 @@ None documented in current wiki sources.
 - [[Lamprinou2026 - ABCs and DN B Cells]]
 - [[Glaros2025 - Multilayered Identity of B Cell Memory]]
 - [[Cancro2020 - Age-Associated B Cells]]
+- [[Sanz2019 - Consistent Classification of Human B Cell Populations]]
+- [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]]

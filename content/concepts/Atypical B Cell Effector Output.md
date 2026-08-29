@@ -2,8 +2,8 @@
 type: concept
 tags: [effector-function, cytokines, antigen-presentation, asc, autoantibody, evidence-gap]
 created: 2026-08-18
-updated: 2026-08-27
-sources: 14
+updated: 2026-08-29
+sources: 15
 ---
 
 # Atypical B Cell Effector Output
@@ -68,6 +68,9 @@ Four candidate effector routes appear in the literature: **antibody-secreting-ce
 - **[2026-08-27] A non-antibody effector arm is proposed and left untested: antigen presentation to CD4⁺ T cells in tissue.** The paper's central proposal is that tissue-infiltrating DN cells drive inflammation and fibrosis by **re-activating CD4⁺ T cells in situ via antigen presentation**, upstream of macrophage and myofibroblast activation — a mechanism in which the effector output is T cell help received-and-returned rather than antibody. Support is the conjugate data plus CD86 and HLA class II staining. ⚠ **The HLA class II result is internally contradictory in that paper** (Results say DN3 ≈ switched memory and higher than plasmablasts; Fig. S3 legend says DN3 downregulates HLA class II), and it is the measurement the mechanism depends on. **Quarantined to the source page under the [2026-08-23] inconsistent-reporting rule** — recorded here as a proposed mechanism, not as a supported claim (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=13).
 - **[2026-08-27] DN2 and DN3 share a cytotoxic gene module whose function is untested.** Both express GZMA, GZMH, GZMB, GNLY, NKG7, KLRB1, KLRD1, KLRF1 and FCGR3A — genes characteristic of cytotoxic T and NK cells — with **perforin generally low in DN3**. No cytotoxicity assay was performed. If real at the protein level this would be a third effector arm for the atypical compartment, but on present evidence it is a transcriptional signature only (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=4).
 
+- **[2026-08-29] The effector subsets move as one coordinated family, and that coordination is what stratifies patients.** Unsupervised hierarchical clustering of 253 subjects on B cell subset frequency alone resolved five patient groups, built from three co-varying families — early, memory, and **effector (activated naive, DN2, DN3, plasmablasts)**. Healthy donors fell **exclusively** into the two memory/early-dominant clusters; SLE patients concentrated in the effector-dominant clusters, with only 15–16% appearing healthy-like. The effector programme is therefore legible at the level of *composition*, without any functional or secretory assay (see [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]], n=207 patients + 46 healthy controls, cross-sectional, 8-marker conventional flow).
+- **[2026-08-29] Effector-subset magnitude tracked more autoantibody, but the paper does not connect a subset to a specificity.** Cutaneous-lupus patients with the effector-high profile carried more historical ANA, anti-dsDNA, anti-Ro and anti-La, more contemporaneous anti-dsDNA and anti-chromatin, and higher anti-RNP and anti-Ro52 titres than those with healthy-like profiles. **No cell-level link was tested** — this is a between-patient association between composition and serum, with no sorting, no BCR sequencing and no ASC assay (see [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]], n=69 primary CCLE). Relevant as a design template for the `bridge-wiki/` cells→autoantibody thesis, and as a warning about what this design cannot establish.
+
 ## Contradictions & Debates
 
 **Is the effector route plasma cell or antigen presentation?** [[Glaros2025 - Multilayered Identity of B Cell Memory]] names this as unresolved. The wiki's evidence is lopsided: the ASC route has human primary data from two independent groups; the APC route has three review assertions and one surface-marker measurement. This is an evidence asymmetry, not a resolved question — do not write as though the ASC route is established *to the exclusion of* the APC route.
@@ -95,3 +98,4 @@ Four candidate effector routes appear in the literature: **antibody-secreting-ce
 - [[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]]
 - [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]
 - [[Beckers2023 - Origins and Functions of DN B Cells]]
+- [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]]

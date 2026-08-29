@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, SLAMF7, CD319, DN2, plasma-cell, therapeutic-target]
 created: 2026-05-03
-updated: 2026-08-27
-sources: 3
+updated: 2026-08-28
+sources: 4
 ---
 
 # SLAMF7
@@ -22,6 +22,8 @@ SLAMF7 (Signaling Lymphocytic Activation Molecule Family member 7; also CD319, C
 - **★ [2026-08-27] SLAMF7 is expressed by both DN2 and DN3, at RNA and protein level — and therefore cannot separate them.** Flow-cytometric MFI in IgG4-related disease (n=4): **DN2 2123 > DN3 1536 > DN4 956 > DN1 895**. SLAMF7 sits inside a broader **cytotoxic gene module** shared by DN2 and DN3 (GZMA, GZMH, GZMB, GNLY, NKG7, KLRB1, KLRD1, KLRF1, FCGR3A) (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=4 bulk RNA-seq + flow validation).
 - **[2026-08-27] SLAMF7 was used as a tissue stain for "activated DN2/3" cells, and this is a real limitation of that paper's tissue argument.** Multi-colour immunofluorescence of IgG4-RD salivary gland stained CD19/IgD/CD27/SLAMF7 to show activated DN B cells contacting CD4⁺ T cells. Because both DN2 and DN3 are SLAMF7⁺, the stain establishes "activated DN" but **not which subset**; the paper's DN3 attribution is made by elimination (DN2 being rare in tissue), not by measurement. The same figure shows conjugates involving **both SLAMF7⁺ and SLAMF7⁻** DN cells (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=4 tissue IF).
 
+- **SLAMF7 appears in Table 1 as part of the shared DN2 / activated-naive activation signature, never alone.** Both **DN2** and **activated naive** are given as T-bet⁺CD11c⁺FcRL5⁺**SLAMF7⁺**CXCR5⁻; DN1 carries none of these. The review groups SLAMF7 with CD11c and FcRL5 as "activation markers" rather than lineage markers, which places it under the same activation-not-identity caution the review applies to CD21, CD11c and T-bet (see [[Sanz2019 - Consistent Classification of Human B Cell Populations]], review — **no original data**).
+
 ## Contradictions & Debates
 
 - **Is SLAMF7 restricted to DN2 and aNAV, or expressed across the DN compartment?** [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]] reports SLAMF7 on DN2 and aNAV but **not** on resting naive, switched memory or DN1. [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]] measured protein MFI across sorted subsets (n=4) and found **all four DN subsets positive** — DN2 2123 > DN3 1536 > DN4 956 > DN1 895. The readings are reconcilable if Jenks' "not expressed" means *not resolvable above background on that panel* rather than absent: Allard-Chamard's DN1 value is the lowest of the four and the comparison is relative MFI, not a positivity call. ⚠ The practical consequence stands either way — **SLAMF7 cannot be used to separate DN2 from DN3**.
@@ -32,3 +34,4 @@ SLAMF7 (Signaling Lymphocytic Activation Molecule Family member 7; also CD319, C
 - [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]]
 - [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]
 - [[Sanz2025 - Human Atypical B Cells Overview]]
+- [[Sanz2019 - Consistent Classification of Human B Cell Populations]]

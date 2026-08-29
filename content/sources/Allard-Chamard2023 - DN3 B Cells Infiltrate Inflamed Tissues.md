@@ -111,7 +111,7 @@ The tissue arm is the paper's substantive contribution. Multi-colour immunofluor
 
 ## Entities Mentioned
 
-[[DN3 B Cell]], [[DN2 B Cell]], [[Double-Negative B Cell]], [[Plasmablast]], [[Switched Memory B Cell]], [[Activated Naive B Cell]], [[Age-Associated B Cell]], [[Atypical B Cell]], [[CXCR5]], [[CD11c]], [[CD27]], [[IgD]], [[IgG]], [[SLAMF7]], [[FcRH4|FcRL4]]
+[[DN3 B Cell]], [[DN2 B Cell]], [[Double-Negative B Cell]], [[Plasmablast]], [[Switched Memory B Cell]], [[Activated Naive B Cell]], [[Age-Associated B Cell]], [[Atypical B Cell]], [[CXCR5]], [[CD11c]], [[CD27]], [[IgD]], [[IgG]], [[SLAMF7]], [[FcRH4|FcRL4]], [[XBP1]]
 
 *Panel constituents only, with no finding attached and therefore not propagated: CD3, CD19, CD20, CD38, IgM, IgA.*
 

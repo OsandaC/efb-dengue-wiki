@@ -2,7 +2,7 @@
 type: analysis
 tags: [research-strategy, grant, pilot, DN2, dengue, autoantibody, ANA, neutralization, severity, flow-cytometry]
 created: 2026-06-14
-updated: 2026-08-27
+updated: 2026-08-28
 ---
 
 # Thesis Objectives and Grant Pitch
@@ -24,6 +24,7 @@ Can a **budget-frozen, surface-only 11-color flow panel** generate enough signal
 - [[Lamprinou2026 - ABCs and DN B Cells]] — ABC age/sex biology (X-linked TLR7, female bias); ABC ⊋ DN2
 - [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]] — surface gating undercounts (CD11c best single marker); "phenotype" caveat
 - [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective (12 authors incl. Sanz): no flow panel alone establishes an EF response; claim GC-independence, not extrafollicular location; CD21ˡᵒ/CXCR5⁻/CD11c⁺ may report recent activation
+- [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]] — human tissue immunofluorescence (COVID-19 lymph node/lung, IgG4-RD gland); CD11c⁺ DN cells are scarce in tissue while CD11c⁻ DN dominate; gates DN on CXCR5 × CD11c, **not** CD21
 - [[Cancro2020 - Age-Associated B Cells]] — blood/tissue ABC pool disequilibrium; HIV/ART blood ABC frequency fall; canonical citation for continuous age-accumulation of ABCs
 
 ## Synthesis
@@ -99,6 +100,7 @@ Cross-sectional; **day 5–8 post-fever-onset**; fresh blood (flow) + serum (sin
 | **Blood ≠ tissue ABC pool** | Murine blood and splenic ABC pools are **not in equilibrium** (Cancro2020); human blood ABC frequency **falls** in HIV patients on antiretroviral therapy. A peripheral blood DN frequency is **not a validated proxy for total ABC burden** — report as "circulating DN frequency," never "DN expansion" (see Derived metrics above). |
 | **"Extrafollicular" is not claimable from blood** | Consensus position (Nov 2025): no flow panel alone identifies an EF response; EF is a *location* claim requiring tissue imaging, which this design cannot supply. **Mitigation is entirely lexical** — claim **GC-independence** with stated criteria, cite others' tissue work for the location. No objective changes (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], [[GC-Independent Response]]). |
 | **CD21ˡᵒ/CD11c⁺ may be an activation state** | Same source: these markers *"could indicate recent B cell activation rather than a permanent state."* At a single acute timepoint, an activation state and a differentiation state are indistinguishable. Partly mitigated by the narrow d5–8 window and by leading with the **DN2:DN1 ratio**; fully resolved only by serial sampling (a grant aim, and one acute dengue uniquely permits). |
+| **★ Blood CD11c⁺ DN cells may be largely a blood population** | The only human tissue counts in the wiki find CD11c⁺ DN cells are a **small minority of tissue DN** — ~4% in COVID-19 thoracic lymph node (~24 vs ~630 cells/mm²) and ~10% in IgG4-RD gland — while CD11c⁻ DN subsets dominate (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=6 and n=10 tissue IF). Stated on the CD11c axis because that paper gates DN on **CXCR5 × CD11c with no CD21**, so its per-subset numbers are not directly comparable to this pilot's CD21 × CD11c gate. **Mitigation is lexical and design-side, not fatal:** this is a further reason to report a *circulating* frequency and to lead with the internally-normalised **DN2:DN1 ratio**; O1–O5 are unaffected, since all rest on blood-measurable correlations, not on tissue burden. **Do not over-weight it either** — CD11c may be lost in FFPE (the paper's own open question), the COVID cohort is late-phase (15–36 d) with nothing in the acute window, the subset panels carry no significance markers, and neither disease is an acute arboviral infection. **Whether the DN2-centred framing should change is a live curator decision, not settled by this row.** |
 
 ### Severity scheme decision (flagged — curator's call)
 

@@ -2,9 +2,13 @@
 type: method
 tags: [flow-cytometry, protocol, SOP, compensation, FMO, DN2, whole-blood, panel-design]
 created: 2026-06-14
-updated: 2026-08-27
+updated: 2026-08-29
 sources: 2
 ---
+
+> **⚠ NOT LITERATURE — BENCH RECORD.** This page is the curator's own standard operating procedure for the 11-colour whole-blood DN2 panel, including the Stage 6 worked example on sample **HT82**. It is not a synthesis of published work. Under the standing scope boundary (**[2026-08-29]**, `state.md` Decisions) this wiki holds published literature and synthesis of it; operational values — gate cutoffs, per-sample event counts, compensation matrices, bench steps — are owned by the **`FlowCyto Analysis 1/`** project, which is **authoritative**. Do not cite anything below as a published finding, and check that project before quoting any number. Retained in place by curator decision 2026-08-29.
+>
+> The companion bench handout **`EFB 3-Color DN Gating Protocol.pdf`** (in `wiki/analyses/`) carries the same status — bench record, not literature, and not cited by any wiki page.
 
 # DN2 Panel - Staining, Compensation, and Gating Protocol
 

@@ -2,8 +2,8 @@
 type: method
 tags: [flow-cytometry, B-cell-subsets, immunophenotyping, panel-design, gating-strategy]
 created: 2026-05-02
-updated: 2026-05-02
-sources: 2
+updated: 2026-08-28
+sources: 3
 ---
 
 # Bm Classification
@@ -32,6 +32,8 @@ The Bm framework became widely used in B cell immunology — particularly in SLE
 - DN B cells (IgD⁻CD27⁻) fall within the Bm5 gate on an IgD/CD38 plot: they are IgD⁻ and CD38^low/⁻, indistinguishable from CD27⁺ Bm5 memory cells without adding CD27 to the panel.
 - The Bm framework was originally described for tonsil tissue; peripheral blood Bm subsets differ in frequency distribution and include far fewer Bm3/4 GC cells under steady-state conditions.
 
+- **★ The most complete critique of Bm1–Bm5 in the wiki, from the lab proposing the alternative.** Sanz2019 judges the scheme "less categorical than the IgD/CD27 approach" when applied to peripheral blood, and lists four specific failures: it **fails to separate transitional (IgD⁺CD38ʰⁱ) from pre-GC (Bm2′) cells**; it **coalesces different types of memory B cells**; it **does not separate resting naive (Bm1) from IgD⁺ unswitched memory**; and it **does not distinguish conventional CD27⁺ memory from IgD⁻CD27⁻ DN cells** — which themselves contain a heterogeneous mix of atypical/tissue-based/exhausted memory and activated extrafollicular PB precursors. The review also notes the scheme was designed for **tonsil**, with the help of CD10, CD44, CD77 and CD23, not for blood (see [[Sanz2019 - Consistent Classification of Human B Cell Populations]], review — **no original data**). For this wiki the last failure is decisive: the Bm scheme cannot see the DN compartment at all.
+
 ## Contradictions & Debates
 
 - The Bm1/Bm2 boundary is instrument- and threshold-dependent; different groups set CD38 positivity at different points, leading to inconsistent reporting of the "activated naive" fraction.
@@ -46,3 +48,4 @@ The Bm framework became widely used in B cell immunology — particularly in SLE
 
 - [[Wei2007 - DN Memory B Cells in SLE]]
 - [[Anolik2004 - Rituximab and B Cell Abnormalities in SLE]]
+- [[Sanz2019 - Consistent Classification of Human B Cell Populations]]

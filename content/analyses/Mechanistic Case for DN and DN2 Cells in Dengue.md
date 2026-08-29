@@ -2,8 +2,8 @@
 type: analysis
 tags: [dengue, dn2, mechanism, manuscript, discussion, severity, compositional, asc]
 created: 2026-08-18
-updated: 2026-08-27
-sources: 19
+updated: 2026-08-28
+sources: 20
 ---
 
 # Mechanistic Case for DN and DN2 Cells in Dengue
@@ -128,6 +128,14 @@ This is narrower than it first reads, and the distinction is the whole point:
 - **A second-order hit that compounds hazard (c).** The same paper cautions that *"low expression of CD21 and CXCR5 and increased CD11c could indicate recent B cell activation rather than a permanent state."* The DN2 gate is built from exactly these markers. So a single acute-timepoint frequency has now **three** candidate readings, not two: compartment enrichment, tissue egress (hazard c), or transient activation state. Serial sampling across fever days — which acute dengue uniquely permits — is the only design in reach that separates the third from the first.
 - **One thing the wiki should not over-correct into.** The paper does **not** claim DN2 cells are GC-derived. It withdraws a location inference, not the GC-independence inference. The supportable sentence is *"as of Nov 2025, a consensus panel holds that EF should be reserved for imaged responses and that no flow panel alone establishes EF origin"* — not *"DN2 cells are not extrafollicular."*
 
+**(h) ★ The only direct human tissue data in this wiki say the CD11c⁺ DN compartment is scarce in tissue — and that is a hazard for a blood-only pilot built on it.** [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]] quantified DN subsets by immunofluorescence in COVID-19 thoracic lymph node (n=6) and IgG4-RD submandibular gland (n=10 vs n=7 sialadenitis controls). Stated on the axis this analysis can actually use — **CD11c⁺ vs CD11c⁻ within the tissue DN pool**, which is gate-independent — CD11c⁺ DN cells are **~4% of tissue DN in COVID-19 lymph node (~24 vs ~630 cells/mm²)** and **~10% in IgG4-RD gland (~25 vs ~218 cells/mm²)**. The CD11c⁻ subsets dominate both tissues. The result is robust to the unresolved DN4 dispute — the primary gates DN4 as CXCR5⁺CD11c⁺ while [[Lamprinou2026 - ABCs and DN B Cells]] relays it as CXCR5⁺CD11c⁻ (recorded on [[Double-Negative B Cell]]) — because on the second reading the CD11c⁺ share falls *further*, to ~1% and ~2.5%.
+
+Why this is stated as a pooled CD11c contrast rather than as "DN2 is 7 cells/mm²": that paper gates DN on **CXCR5 × CD11c with no CD21 in the panel**, so its DN2 (CXCR5⁻CD11c⁺) is *not* this cohort's DN2-phenotype (CD21⁻CD11c⁺). Quoting its per-subset numbers against a CD21-based gate would be a cross-gate comparison presented as like-for-like — the exact error this wiki has flagged elsewhere (see [[DN3 B Cell]] Contradictions; [[DN2 Gating Strategy]]). Pooling on CD11c is the one comparison both panels support.
+
+**What it does and does not do to the case in §2.** It does **not** touch any mechanism claim — those are origin/process arguments about blood cells, and the paper measures tissue. What it does is remove an unstated assumption: that a rising blood DN2-phenotype frequency is a proxy for DN2 cells accumulating somewhere that matters. In the only human tissue anyone has counted, the CD11c⁺ DN population is a small minority while CD11c⁻ DN cells are abundant. **This compounds hazards (c) and (g) into a single problem** — a blood frequency at one timepoint may reflect a compartment, an egress event, a transient activation state, or a population that is largely confined to blood. Four readings, one number.
+
+**Four reasons not to over-read it, all from the source.** (i) The whole comparison rests on **CD11c detection in FFPE tissue**, and the paper's own open questions ask whether CD11c is simply lost on fixation — if it is, the tissue CD11c⁺ deficit is partly artefactual. (ii) The COVID-19 autopsy cohort is **late-phase only (15–36 days)**, so it says nothing about the acute d5–8 window this pilot samples. (iii) **No significance markers are printed on the subset-level panels** (Fig. 5C, 6D); n=6–10 per arm, uncorrected, and Fig. 5C has no control lymph nodes at all. (iv) Two diseases, neither of them an acute arboviral infection. **The honest form is a hazard, not a refutation:** the tissue behaviour of the CD11c⁺ DN compartment in acute dengue is unmeasured, and the assumption that blood frequency indexes tissue presence is now known to fail in two chronic inflammatory diseases.
+
 ---
 
 ## 6. What can be claimed, and what cannot
@@ -147,6 +155,7 @@ This is narrower than it first reads, and the distinction is the whole point:
 - That DN2 frequency is a validated biomarker in any infection (no ingested source tests it prospectively)
 - That the dengue IFN environment primes the DN2 pathway (type I, not IFN-γ; substitution untested)
 - That these cells produce the autoantibodies or the ADE-competent antibodies in dengue — **no functional antibody output has ever been measured from sorted DN cells in any infection**, which [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]] states as its own limitation
+- That a rising blood DN2-phenotype frequency indexes DN2 cells accumulating in tissue. The only human tissue counts available show the CD11c⁺ DN compartment is a small minority of tissue DN cells in two chronic inflammatory diseases (see hazard (h), [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]]) — measured on a CD11c axis, late-phase, and with CD11c-in-FFPE unresolved, so it is a reason for caution in wording rather than a finding to assert about dengue
 - That the response measured is **extrafollicular**. A blood panel cannot establish location; the licensed claim is **GC-independent**, and even that is an inference from converging evidence rather than a determination (see hazard (g), [[GC-Independent Response]], [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]])
 
 ---
@@ -160,6 +169,7 @@ This is narrower than it first reads, and the distinction is the whole point:
 - Does either dengue blockade system — Tph/IL-21R or monocyte/BAFF — actually generate DN2 cells, or only plasmablasts?
 - What is DNQ4 under a Sanz2019 framework, and does it correspond to the FcRL4⁺ DN row?
 - Do human DN2 cells undergo marginal-zone-type retention, and could blood frequency be tracking egress?
+- Is the CD11c⁺ DN compartment scarce in inflamed tissue in **acute** infection as it is in late-phase COVID-19 and IgG4-RD — or is that a chronic-disease and late-timepoint phenomenon? And is the scarcity real or a CD11c-epitope-in-FFPE artefact? Nothing in this wiki answers either, and both bear directly on what a blood DN2-phenotype frequency is a measure of.
 - Can serial sampling across fever days separate a durable DN2 compartment from a transient CD21ˡᵒCD11c⁺ activation state? This is the one discriminator acute dengue affords that the SLE and vaccination cohorts defining these gates never used.
 - If "extrafollicular" is not claimable from blood, what is the strongest *available* surrogate for GC-independence in a dengue cohort — SHM load, isotype distribution, CXCR5/CD21 kinetics across timepoints, or paired GC-marker absence?
 
@@ -173,6 +183,6 @@ This is narrower than it first reads, and the distinction is the whole point:
 
 **Dengue primaries:** [[Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue]], [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]], [[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]], [[GarciaBates2013 - Plasmablast Response and Dengue Severity]], [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]], [[Appanna2016 - Plasmablasts as Subset of Memory B Cell Pool]], [[Singh2026 - DENV-Specific Memory B Cell Subsets]], [[Narvaez2011 - Evaluating WHO Dengue Severity Classifications]], [[Morra2018 - Defining Warning Signs and Severe Dengue]]
 
-**Mechanism primaries:** [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]], [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]], [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], [[Scharer2019 - Epigenetic Programming in SLE B Cells]], [[Wei2007 - DN Memory B Cells in SLE]], [[Tipton2015 - ASC Diversity and Origin in SLE]], [[Woodruff2020 - EF B Cell Responses in COVID-19]], [[Kaneko2020 - GC Loss and TFH Block in COVID-19]], [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]
+**Mechanism primaries:** [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]], [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]], [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], [[Scharer2019 - Epigenetic Programming in SLE B Cells]], [[Wei2007 - DN Memory B Cells in SLE]], [[Tipton2015 - ASC Diversity and Origin in SLE]], [[Woodruff2020 - EF B Cell Responses in COVID-19]], [[Kaneko2020 - GC Loss and TFH Block in COVID-19]], [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]], [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]] *(human tissue immunofluorescence; the CD11c⁺-DN-scarcity hazard (h) — note its DN gate is CXCR5 × CD11c, not CD21 × CD11c)*
 
 **Reviews (Tier B — nomenclature and framing only):** [[Sanz2019 - Consistent Classification of Human B Cell Populations]], [[Sanz2025 - Human Atypical B Cells Overview]], [[Cancro2020 - Age-Associated B Cells]], [[Lamprinou2026 - ABCs and DN B Cells]], [[Glaros2025 - Multilayered Identity of B Cell Memory]], [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] *(consensus Perspective — bounds the EF claim to origin, not location; drives hazard (g))*

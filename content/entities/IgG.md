@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, immunoglobulin, isotype, class-switch-recombination, memory-b-cells]
 created: 2026-05-02
-updated: 2026-08-27
-sources: 20
+updated: 2026-08-28
+sources: 21
 ---
 
 # IgG
@@ -36,17 +36,18 @@ IgG is the predominant antibody isotype in human serum and the primary product o
 
 - **IgG3 overrepresented in alternative lineage B cells in malaria:** In malaria-exposed donors, alternative lineage B cells (transcriptomically defined by scRNA-seq) were enriched for IgG3 isotype compared to classical lineage cells, consistent with the IgG3 enrichment on DN2 cells reported in SLE by Jenks2018. IgG3 is the dominant IFN-γ-driven subclass and the default product of T-bet-dependent class switching (see [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]], n=4, 10x Chromium scRNA-seq).
 - **IgG⁺ memory B cells are predisposed to plasmablast fate:** The isotype-fate segregation model (Seifert et al. 2015, cited in [[Bhattacharya2016 - Memory B Cell Subset Selection in Secondary Dengue]], commentary) proposes that IgG⁺ memory B cells preferentially differentiate into plasmablasts and plasma cells upon recall, while IgM⁺ memory B cells re-initiate germinal centers. This explains the overwhelming IgG dominance of the dengue PB wave (Wrammert2012: ≥70% DENV-specific IgG; IgM near-absent in secondary infection) and the E-specific IgG⁺ bias of PB-derived mAbs vs. the prM/complex epitope specificity of MBC-derived mAbs (Appanna2016) — the IgG⁺ E-specific memory subset is selectively recruited to PB fate.
-- **IgG is the predominant isotype of the ABC/atypical population.** The majority of [[Age-Associated B Cell|ABCs]] are class-switched, predominantly expressing IgG (or [[IgA]]), although scRNA-seq shows the population also retains an unswitched IgD⁺ fraction. This is consistent with the switched-isotype dominance of the EF/atypical compartment across SLE (DN2: IgG/IgG3), COVID-19 (IgG1), and malaria (IgG3) (see [[Lamprinou2026 - ABCs and DN B Cells]], opinion, citing Ambegaonkar 2022 / Tangye 2023).
+- **IgG is the predominant isotype of the ABC/atypical population.** The majority of [[Age-Associated B Cell|ABCs]] are class-switched, predominantly expressing IgG (or [[IgA]]), although scRNA-seq shows the population also retains an unswitched IgD⁺ fraction. This is consistent with the switched-isotype dominance of the EF/atypical compartment across SLE (DN2: IgG/IgG3), COVID-19 (IgG1), and malaria (IgG3) (see [[Lamprinou2026 - ABCs and DN B Cells]], opinion, citing Ambegaonkar 2022 / Tangye 2023). The same claim is made independently in [[Glaros2025 - Multilayered Identity of B Cell Memory]] (review), which adds that **some ABCs carry somatically hypermutated BCRs** — so switched isotype here is not by itself evidence of a GC-independent route (see [[Class Switch Recombination]]).
 
 - **IgG1⁺ memory is biased toward plasma-cell differentiation on recall — and is enriched for GC origin.** IgG1⁺ MBCs (enriched for GC-derived cells) are biased toward PC differentiation, whereas IgM⁺ MBCs (enriched for GC-independent cells) more readily reenter secondary GCs (see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review, **no original data**). This independently supports the isotype-fate segregation model the wiki carries from [[Bhattacharya2016 - Memory B Cell Subset Selection in Secondary Dengue]] — though the review stresses isotype cannot be used to *infer origin* (see [[Class Switch Recombination]]).
-- **IgG is a minority isotype among lung resident memory but drives the faster local recall.** After respiratory infection the lung memory pool is predominantly [[IgA]]⁺ with a smaller IgG⁺ fraction; IgG⁺ memory is distributed across both lung and mediastinal lymph nodes. Circulating IgG⁺ memory showed **delayed** differentiation into PCs and was less able to generate PCs near infected alveoli than lung-resident IgG⁺ counterparts, which mounted a rapid local response (review, mouse). See [[Tissue-Resident Memory B Cell]].
-- **Most ABCs are class-switched, predominantly to IgG or [[IgA]]** — consistent with their antigen-experienced status, and with some carrying somatically hypermutated BCRs (review). See [[Age-Associated B Cell]].
+- **IgG is a minority isotype among lung resident memory but drives the faster local recall.** After respiratory infection the lung memory pool is predominantly [[IgA]]⁺ with a smaller IgG⁺ fraction; IgG⁺ memory is distributed across both lung and mediastinal lymph nodes. Circulating IgG⁺ memory showed **delayed** differentiation into PCs and was less able to generate PCs near infected alveoli than lung-resident IgG⁺ counterparts, which mounted a rapid local response (see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review, mouse). See [[Tissue-Resident Memory B Cell]].
 - **ABC/atypical isotype skewing toward IgG2a/c (mouse) and IgG1 (human), favouring ADCC as the preferred effector mechanism.** Adoptive transfer of virus-specific IgG2a only partially restored viral control in a chronic-infection model, indicating additional functional distinctions exist beyond isotype alone (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse and human).
 
 - **Anti-dengue IgG and IgG1 are skewed high in DHF — but IgG3 runs the opposite way.** In an adult Mexican acute-phase cohort, anti-DENV IgG was detectable in 93% of DF and 96.9% of DHF sera. On tertile-split indices, high total IgG was present in **55.4% of DHF versus 16% of DF**, and high IgG1 in **39.0% versus 28.2%**; high IgG4 was likewise commoner in DHF (35.6% vs 30.8%). **High IgG3, however, was commoner in DF (38.5%) than DHF (25.4%)**, and IgG2 was negative in the great majority of both groups (see [[Posadas-Mondragon2020 - TLR Polymorphisms and Clinical Forms of Dengue]], n=254 case-control, DF n=100 / DHF n=65, WHO 1997, capture ELISA plus in-house subclass EIA — **no B cell data of any kind**). A severity-linked rise in IgG *quantity* is consistent with the wiki's claim that the EF/atypical route yields abundant low-fidelity antibody ([[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]]) but does not test it: nothing there measures affinity, mutation load, neutralisation or cell of origin. The IgG3 inversion is unexplained by the authors. *Subclass serology is canonical to `dengue-wiki/`; recorded here only for the severity contrast.*
 
 - **★ [2026-08-27] DN3 B cells are the only B cell subset transcriptomically enriched for IgG4.** Bulk RNA-seq of sorted DN1–DN4 from IgG4-related disease blood (n=4) found **high IGHG4 message specifically in DN3**, alongside proliferation and unfolded-protein-response signatures and other antibody-secreting-cell genes (MZB1, TNFRSF17/BCMA, TXNDC5). In a disease defined by an IgG4 isotype skew, the DN subset carrying that message is the one with the pre-plasmablast programme — an isotype-to-subset link the wiki holds for no other isotype (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=4 bulk RNA-seq).
 - **[2026-08-27] The IgG4 class switch in this disease is attributed to pre-GC Tfh help outside germinal centres.** The paper's framing (citing the same group's earlier work) is that IgG4 switching in IgG4-RD is driven by **IL-4- and IL-10-expressing pre-GC T follicular helper cells acting outside germinal centres** — a GC-independent route to a specific isotype. This is background in that paper rather than data reported in it (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], introduction; no primary data on switching). See [[Class Switch Recombination]], [[Extrafollicular T Cell Help]].
+
+- **Table 1 assigns IgG to both of the DN rows that carry an isotype annotation at all — so isotype is not what separates the DN subsets.** DN1 and DN2 are both given as IgM/IgG/IgA⁺ (the third, FcRL4⁺ DN row carries **no** isotype annotation); what distinguishes them is CD38/CD24/CD21 plus [[CXCR5]], [[CD11c]], [[FCRL5]] and [[FcRH4|FcRL4]]. IgG and IgA are listed among the additional rather than core markers (see [[Sanz2019 - Consistent Classification of Human B Cell Populations]], review — **no original data**). See [[Double-Negative B Cell]].
 
 ## Contradictions & Debates
 
@@ -58,6 +59,7 @@ IgG is the predominant antibody isotype in human serum and the primary product o
 
 ## Related Pages
 [[Double-Negative B Cell]], [[DN2 B Cell]], [[Age-Associated B Cell]], [[Plasmablast]], [[Memory B Cell]], [[Class Switch Recombination]], [[IgM]], [[IgA]], [[Somatic Hypermutation]], [[Original Antigenic Sin]], [[Antibody-Dependent Enhancement]], [[Early Memory B Cell]], [[Tissue-Resident Memory B Cell]], [[DN3 B Cell]]
+
 ## Sources
 - [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]]
 - [[Wei2007 - DN Memory B Cells in SLE]]
@@ -79,3 +81,4 @@ IgG is the predominant antibody isotype in human serum and the primary product o
 - [[Glaros2025 - Multilayered Identity of B Cell Memory]]
 - [[Cancro2020 - Age-Associated B Cells]]
 - [[Posadas-Mondragon2020 - TLR Polymorphisms and Clinical Forms of Dengue]]
+- [[Sanz2019 - Consistent Classification of Human B Cell Populations]]

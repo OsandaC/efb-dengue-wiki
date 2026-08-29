@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, Fc-receptor-homologs, FCRL5, DN2, atypical-b-cells, BCR-signalling]
 created: 2026-05-02
-updated: 2026-08-16
-sources: 4
+updated: 2026-08-28
+sources: 5
 ---
 
 # FCRL5
@@ -28,6 +28,8 @@ FCRL5 (Fc Receptor-Like 5; also FcRH5) is a member of the Fc receptor-like famil
 - **⚠ Assay-design consequence for dengue work.** If FCRL5⁺/FcγRIIB^hi atypical cells cannot respond to soluble antigen, in vitro restimulation assays using **soluble DENV E or NS1** would systematically under-report the functional capacity of precisely the population this wiki tracks. Membrane-associated or immune-complexed antigen presentation would be the informative comparator. See [[DN2 B Cell]] and [[In Vitro B Cell Stimulation]].
 - **A constraint on the cells→autoantibody bridge.** The same verified abstract notes these cells are "unable to respond to fully soluble antigens, **such as self-antigens**." A DN2/ABC cell bearing an autoreactive BCR would therefore be poorly activated by soluble self-antigen, implying that any atypical-cell route to autoantibody must run through **membrane-associated or immune-complexed** self-antigen. Relevant to the `bridge-wiki/` thesis; see [[Atypical B Cell]].
 
+- **★ FcRL5 is the SLE pole of the reciprocal FcRL4/FcRL5 split — the review's central evidence that "atypical B cell" names more than one cell.** Across DN B cells from RA, SLE, scleroderma and acute and chronic HIV, **FcRL5 is high in SLE but not in HIV**, exactly mirroring [[FcRH4|FcRL4]], which is high in HIV (~21.1% of DN2-gated cells) and near-absent in SLE (~0.74%). Table 1 gives DN2 as FcRL5⁺ and DN1 as FcRL5⁻, and FcRL5⁺ is part of the phenotype induced in vitro by TLR7 + IFN + IL-21 (see [[Sanz2019 - Consistent Classification of Human B Cell Populations]], review — **no original data**, figure adapted from [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]). See [[Atypical B Cell]], [[Double-Negative B Cell]].
+
 ## Contradictions & Debates
 
 None documented in current wiki sources.
@@ -40,3 +42,4 @@ None documented in current wiki sources.
 - [[Sanz2025 - Human Atypical B Cells Overview]]
 - [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]
 - [[Glaros2025 - Multilayered Identity of B Cell Memory]]
+- [[Sanz2019 - Consistent Classification of Human B Cell Populations]]

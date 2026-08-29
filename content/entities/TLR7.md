@@ -2,8 +2,8 @@
 type: entity
 tags: [innate-immunity, toll-like-receptors, TLR7, ssRNA-sensor, DN2, extrafollicular, SLE, dengue, host-genetics, x-linked, flavivirus, innate-sensing]
 created: 2026-05-02
-updated: 2026-08-27
-sources: 13
+updated: 2026-08-28
+sources: 14
 ---
 
 # TLR7
@@ -60,6 +60,8 @@ TLR7 (Toll-like Receptor 7) is an endosomal pattern recognition receptor that se
 - **★ TLR7 ligands drive GC *and* GC-independent responses — TLR9 is the one that drives the GC-independent arm selectively.** This distinction matters because the wiki has treated endosomal ssRNA sensing as the EF-biasing signal. The consensus Perspective's synthesis (Box 2) separates them: antigens that **strongly crosslink TLR9 and the BCR potently drive EF responses**, whereas **antigens containing TLR7 ligands induce both robust GC and EF antibody responses** — a pattern described as commonly observed in lupus-prone mice, and consistent with monogenic TLR7 gain-of-function driving GC, plasma cell, *and* autoantibody production. TLR7 signalling is therefore better described as **amplifying B cell responses in a type-1 direction** than as switching the pathway. For dengue, whose genomic ssRNA is the potent TLR7 ligand class (see [[Wang2006 - Flavivirus Activation of pDCs and TLR7 Signaling]]), this predicts a *concurrent* GC and GC-independent response rather than GC displacement (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data).
 - **IL-4 suppresses TLR7's ability to drive the GC-independent pathway**, while IL-4 and IL-13 support B cell migration into the follicle to form GCs; IL-12 and IFN-γ favour the GC-independent arm. B cell-intrinsic **MyD88 and TRIF** were both required for strong plasmablast accumulation in lymph nodes after influenza A infection, acting via enhanced NF-κB **c-Rel** nuclear translocation, which induces **IRF4** — a route linking TLR engagement to ASC commitment that is independent of the IL-21/STAT3 axis the wiki has emphasised (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data).
 
+- **★ The review's framing is that the TLR7 programme is a *state accessible to many populations*, not a lineage.** Its unifying statement: "ABC-like cells represent activated effector B cells **induced by TLR7 and driven by IL-21 and IFN produced by TFH cells** in Th1-type responses **within multiple and possibly, all B cell populations**." The supporting observation is that in vitro stimulation of **naive, DN *and* memory** starting populations under mouse-ABC-inducing conditions (TLR7, IFN, IL-21) all converge on CD19++CD21ˡᵒCD11c++T-bet++FcRL5⁺ — which is why the same review then argues that CD21, T-bet or CD11c cannot identify a distinct population (see [[Sanz2019 - Consistent Classification of Human B Cell Populations]], review — **no original data**). See [[Atypical B Cell]], [[CD11c]].
+
 ## Contradictions & Debates
 
 **★ The SLE and dengue TLR7 ligands are different potency classes — and this cuts in dengue's favour.** [[Wang2006 - Flavivirus Activation of pDCs and TLR7 Signaling]] places short synthetic ssRNAs 50–1000× below genomic viral RNA, shows conserved-end and panhandle motifs do nothing at all, and identifies higher-order *shape* as the determinant. The endogenous TLR7 ligands invoked throughout the SLE literature on this page — RNP-associated **small** RNAs from immune complexes — sit in the weak class. Acute dengue supplies an intact, structured **11-kb genome** — the potent class. If the DN2 programme is TLR7-signal-strength-dependent (and [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]]'s 100-fold R-848 dose experiment says signal strength is exactly what sets the cytokine requirement), then transferring the SLE-derived model to dengue is not obviously a stretch toward a weaker stimulus. It may be a stretch toward a **stronger** one. This is a wiki-generated inference across two sources, flagged as such, and it is testable.
@@ -93,3 +95,4 @@ TLR7 (Toll-like Receptor 7) is an endosomal pattern recognition receptor that se
 - [[Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue]]
 - [[Beckers2023 - Origins and Functions of DN B Cells]]
 - [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective; TLR7 drives GC and EF, TLR9 drives EF selectively
+- [[Sanz2019 - Consistent Classification of Human B Cell Populations]]

@@ -2,8 +2,8 @@
 type: entity
 tags: [transcription-factors, T-bet, TBX21, atypical-b-cells, DN2, age-associated-b-cells, extrafollicular]
 created: 2026-05-02
-updated: 2026-08-27
-sources: 11
+updated: 2026-08-28
+sources: 12
 ---
 
 # T-bet
@@ -49,6 +49,8 @@ T-bet (encoded by *TBX21*) is a T-box transcription factor originally identified
 - **T-bet⁺ ABC / T-bet⁺ T cell tissue-residency parallel.** Growing evidence indicates T-bet⁺ ABCs differ from T-bet⁻ B cells in recirculation and tissue-residency properties — "an intriguing parallel with T-bet-expressing T cells," suggesting the T-bet programme may be partly generic to effector memory cells with restricted tissue residency rather than B-cell-specific (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse).
 - **Open question: interchange between T-bet⁺ ABC and T-bet⁻ Bmem pools.** Explicitly listed as unresolved: whether there is appreciable interchange between the T-bet⁺ ABC pool and T-bet⁻ conventional memory B cell pools, alongside two other open progenitor–successor questions (whether unswitched/unmutated IgM⁺ ABCs are progenitors of switched/mutated ABCs, and whether CD11c⁺ ABCs are a differentiation state derived from CD11c⁻ ABCs) (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse).
 
+- **★ A quantitative caution for T-bet gating, and a warning against T-bet as an identity marker.** The review's adapted flow data show that **CXCR5⁻ switched memory and CD27⁺⁺CD38⁺⁺ plasma cells do express some T-bet — their MFI is merely "significantly lower" than DN2 and activated naive**. T-bet positivity is therefore a continuum in blood, not a clean on/off gate, and a T-bet⁺ gate drawn low will pull in SWM and PC. The review's conclusion is stronger still: "the limited use of either CD21, **T-bet** or CD11c expression is inadequate to identify ABC or other distinct human B cell populations". In vitro, T-bet++ is induced together with CD11c++ and CD21ˡᵒ by TLR7 + IFN + IL-21 in naive, DN and memory starting populations alike (see [[Sanz2019 - Consistent Classification of Human B Cell Populations]], review — **no original data**).
+
 ## Contradictions & Debates
 
 - **★ Is T-bet *definitional* for the ABC/atypical cluster, or its dominant correlate?** The wiki carries both positions and they cannot both be right as stated:
@@ -74,3 +76,4 @@ T-bet (encoded by *TBX21*) is a T-box transcription factor originally identified
 - [[Glaros2025 - Multilayered Identity of B Cell Memory]]
 - [[Cancro2020 - Age-Associated B Cells]]
 - [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective; T-bet reports the type-1 cytokine milieu
+- [[Sanz2019 - Consistent Classification of Human B Cell Populations]]

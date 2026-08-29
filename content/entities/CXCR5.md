@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, chemokine-receptors, CXCR5, follicle-homing, DN1-DN2-distinction]
 created: 2026-05-02
-updated: 2026-08-27
-sources: 9
+updated: 2026-08-28
+sources: 10
 ---
 
 # CXCR5
@@ -35,6 +35,8 @@ CXCR5 is a chemokine receptor for CXCL13, the follicle-associated chemokine. CXC
 - **★ [2026-08-27] STAINING PEARL — CXCR5 clone J252D4 is 3D-conformation-dependent and must be stained at 37 °C.** The protocol stained CXCR5 **first, at 37 °C**, "as the clone J252D4 highly depends on its target protein's 3D conformation," with the remainder of the panel stained separately at 4 °C. Brilliant Stain Buffer was included to suppress polymer-dye interaction. This independently corroborates the 37 °C pre-fix instruction already specified for CXCR5 in [[B Cell Panel Variant 1]], and supplies a mechanistic reason for it — conformational epitope loss, not merely receptor internalisation (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], methods).
 - **[2026-08-27] CXCR5 also partitions the switched-memory compartment, and that partition moves with disease.** Splitting IgD⁻CD27⁺ cells into CXCR5⁺ (classic/resting switched memory) and CXCR5⁻ ("ABC-like"), IgG4-RD blood showed **classic SWM decreased and the CXCR5⁻ fraction expanded** (both p<0.01, n=38). ⚠ That CXCR5⁻ "ABC-like" gate is **CD27-positive** and includes both CD11c⁺ and CD11c⁻ cells, so it is not a DN population (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=38).
 
+- **This is the wiki's earliest source for subgating the DN compartment on CXCR5 — the axis the DN1–DN4 scheme was later built on.** Figure 2D states plainly that "the DN population can be further defined by markers such as **CXCR5**", and Table 1 gives **DN1 as CXCR5⁺** and **DN2 as CXCR5⁻** (with activated naive also CXCR5⁻). Note what is *not* claimed: Sanz2019 uses CXCR5 alongside CD38/CD24/CD21, whereas [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]] later partitions DN on CXCR5 × CD11c with no CD21 at all — the two schemes share this marker but not the partition (see [[Sanz2019 - Consistent Classification of Human B Cell Populations]], review — **no original data**). See [[DN2 Gating Strategy]].
+
 ## Contradictions & Debates
 
 - **★ CXCR5-negativity is not a marker of an extrafollicular response.** The wiki has repeatedly used loss of CXCR5 (follicular homing) as the phenotypic signature of extrafollicular commitment — including in the Woodruff2020 CXCR5→CXCR3 chemokine-receptor-shift finding. The consensus Perspective states that absence of CXCR5, together with low SHM, low BCR affinity, and IgM isotype, are each individually non-definitive *"as they can be observed in B cells that have participated in a GC response"* — and that GC B cells themselves depend on CXCR5 for positioning within the GC, so CXCR5 is not simply a follicular-versus-extrafollicular switch. Compounding this, **low CXCR5 may reflect recent activation rather than a permanent state** (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data). The chemokine-receptor shift remains a real and reproducible observation; what it cannot do alone is locate the response. See [[GC-Independent Response]].
@@ -51,3 +53,4 @@ CXCR5 is a chemokine receptor for CXCL13, the follicle-associated chemokine. CXC
 - [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]
 - [[Lamprinou2026 - ABCs and DN B Cells]]
 - [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective; CXCR5⁻ is not an EF marker
+- [[Sanz2019 - Consistent Classification of Human B Cell Populations]]

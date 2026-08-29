@@ -2,7 +2,7 @@
 type: method
 tags: [flow-cytometry, compensation, FMO, panel-design, DN2, gating-validation]
 created: 2026-06-14
-updated: 2026-08-27
+updated: 2026-08-29
 sources: 4
 ---
 
@@ -25,6 +25,8 @@ sources: 4
 - **[2026-08-27] Published practice for a 13-colour B cell panel — bead-based compensation plus a cross-batch tracking control.** Compensation on **VersaComp antibody-capture beads** (Beckman Coulter); **Rainbow 8-peak calibration beads** run "to ensure consistent signals between flow cytometry batches"; **Brilliant Stain Buffer** included in the stain to suppress polymer-dye interaction "and improve discrete fluorochrome readout." Notably, **no FMO controls are described** in the methods of a paper whose central claim rests on a four-quadrant CXCR5 × CD11c gate — the boundary placement is not documented. This is worth contrasting with the curator's own four-FMO practice recorded below: on the wiki's evidence, the published DN1–DN4 quadrant boundaries are less well controlled than the curator's DN/DN2 boundaries (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], methods; n=38). See [[Conventional Flow Cytometry]].
 
 ## Curator's Pilot: 11-Color DN2 Panel Worked Example (Empirical, Unpublished — 2026-06)
+
+> **⚠ NOT LITERATURE — BENCH RECORD. This section only.** Everything above (§Overview, §Key Points from Literature) is published-source synthesis and stands normally; everything from here to §Contradictions & Debates is the curator's own pilot on one whole-blood sample (**HT82**) plus four FMOs. Under the standing scope boundary (**[2026-08-29]**, `state.md` Decisions) this wiki holds published literature and synthesis of it; operational values — gate cutoffs, per-sample event counts, compensation matrices, bench steps — are owned by the **`FlowCyto Analysis 1/`** project, which is **authoritative**. Do not cite anything below as a published finding, and check that project before quoting any number. Retained in place by curator decision 2026-08-29. In particular, the boundary values recorded below are a **2026-06 snapshot** and have since been superseded in that project — [[DN2 Gating Strategy]] no longer prints them.
 
 This section documents the curator's own compensation-matrix and FMO validation of the [[DN2 Gating Strategy]] 11-color panel (operational setup recorded in curator session memory, not a wiki page; the in-wiki SOP is [[DN2 Panel - Staining, Compensation, and Gating Protocol]]), carried out on one real whole-blood sample plus four FMOs. **This is pilot/operational data, not a literature finding** — it is the "worked example" referenced in the panel's CD11c-PE FMO mandate and the wiki's prior watch item.
 

@@ -2,7 +2,7 @@
 type: analysis
 tags: [meta, notable-findings]
 created: 2026-05-02
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # Notable Findings
@@ -11,11 +11,30 @@ A running log of atomic observations from the literature that are striking, unex
 
 ---
 
+## [2026-08-29] Same disease, different organ, different DN2 — the expansion tracks what is inflamed, not what it is called
+
+**Source:** [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]]
+
+**Finding:** Across 207 lupus patients spanning three clinical categories, DN cells were expanded in all of them — but **highest in SLE *without* cutaneous involvement**, and within SLE, the presence of discoid skin disease correlated with DN expansion of **lower** magnitude. The authors tie this to two facts they had already established separately: DN2 frequency associates with **lupus nephritis** ([[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]), and SLE patients with discoid lesions have a **reduced** incidence of nephritis. Alongside this, primary cutaneous lupus turned out to be immunologically **bimodal**: 42% of those patients had entirely healthy-like B cell profiles (48% by the Discussion's own count), versus 15–16% of SLE patients.
+
+**Why notable:** The wiki has been treating DN2 expansion as a property of a *disease* — SLE has it, severe COVID-19 has it, does dengue have it. This is the first ingested evidence that it is better read as a property of a **patient stratum defined by which organs are involved**. Same diagnosis, same cohort, same panel, same laboratory — and the DN signal moves with the organ pattern rather than the label. Two consequences bear directly on the curator's design. **(i) It strengthens the severity-stratified rationale** in [[Thesis Objectives and Grant Pitch]] and [[Mechanistic Case for DN and DN2 Cells in Dengue]]: if DN2 tracks end-organ involvement, then plasma leakage and the DHF/DSS categories are exactly the right axis to stratify on, and "does dengue expand DN2" is the wrong question — "which dengue patients expand DN2" is the right one. **(ii) It is a direct warning against a group-mean-first analysis.** If roughly half of an affected group carries a normal B cell profile, comparing mean DN2 frequency between severity categories dilutes the real signal toward null; patient-level clustering on subset composition, which is what recovered the structure here, should come first. Note the constraint: this is a cross-sectional association inside one cohort, not a mechanistic result, and the paper does not test the organ hypothesis directly.
+
+**Follow-up questions:**
+- Does the bimodality replicate in acute infection, where the stimulus is time-limited and synchronised rather than chronic? Serial fever-day sampling in dengue could distinguish a genuinely bimodal population from patients sampled at different points on one trajectory — which the cross-sectional lupus design cannot.
+- Is the organ association about the *amount* of inflamed tissue, its *identity* (kidney vs skin), or the differentiation programme running in it? The authors raise the third possibility — that cutaneous-lupus B cells run different programmes producing a less pathogenic output — and supply no data.
+- If DN2 tracks end-organ involvement, does the wiki's DN2:DN1 centrepiece need a matching clinical anchor in the dengue design (leakage, platelet nadir, ward vs ICU) rather than the WHO category alone?
+
+**Related pages:** [[DN2 B Cell]], [[Double-Negative B Cell]], [[Extrafollicular Response]], [[Atypical B Cell Effector Output]], [[Thesis Objectives and Grant Pitch]], [[Mechanistic Case for DN and DN2 Cells in Dengue]], [[Dengue Severity Classification]]
+
+---
+
 ## [2026-08-27] The subset the extrafollicular case is built on is the one that isn't in the tissue
 
 **Source:** [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]]
 
 **Finding:** In the two diseases where DN B cells were imaged directly in inflamed human tissue — IgG4-related disease salivary gland and severe COVID-19 lung and thoracic lymph node — **DN2 was nearly absent**: ~7 cells/mm² in COVID-19 lymph node against DN3's ~400, and ~3% of the IgG4-RD salivary-gland DN pool. DN1 and DN3 dominated. The authors state it plainly: DN2 cells "are not abundant in COVID-19 lymph nodes and are relatively sparse in both IgG4-RD and COVID-19 end organs." DN2 *was* significantly increased in the **blood** of both diseases.
+
+> **⚠ [2026-08-28] Which axis these numbers are on — read before quoting them.** The per-subset figures above are stated in **Allard-Chamard's own gating**, which partitions DN on **CXCR5 × CD11c with no CD21** — so its "DN2" is CXCR5⁻CD11c⁺, **not** the wiki's CD21⁻CD11c⁺ DN2-phenotype. Quoting "DN2 ≈ 7 cells/mm²" against a CD21-based gate is a cross-gate comparison presented as like-for-like. **The gate-independent form of the same finding, pooled on the CD11c axis both schemes share:** CD11c⁺ cells are **~4% of tissue DN in COVID-19 lymph node (~24 vs ~630 cells/mm²)** and **~10% in IgG4-RD gland (~25 vs ~218)** — and the conclusion survives the unresolved DN4 dispute, since on the CD11c⁻ reading of DN4 the share falls further (~1% / ~2.5%). Use the pooled form whenever this finding crosses into a page about the curator's panel. See hazard (h) on [[Mechanistic Case for DN and DN2 Cells in Dengue]] and the axis subsection on [[DN2 Gating Strategy]].
 
 **Why notable:** This wiki's mechanistic case — [[Mechanistic Case for DN and DN2 Cells in Dengue]], the DN2:DN1 ratio as the centrepiece outcome of [[Thesis Objectives and Grant Pitch]], the whole [[Extrafollicular Response]] framing — rests on DN2 as the extrafollicular effector. The only direct human tissue evidence the wiki now holds says DN2 is a **blood** population, and that whatever accumulates where the inflammation actually is, is DN3. That does not invalidate a blood DN2 readout: DN2 could be a fast-transiting intermediate, could be retained in compartments not sampled here, or could simply lose CD11c detectability in FFPE — none of which the paper tests. But it reframes what a blood DN2 frequency *is*. Measuring DN2 in blood may be measuring the pathway's transit population rather than its effector pool, and a dengue study reporting a DN2 expansion would be reporting a circulating intermediate, not a tissue effector.
 
@@ -564,5 +583,24 @@ Third, and most concretely, **it lands on the curator's own instrument.** The DN
 - Will the field adopt "non-GCB" terminology? A thesis submitted in 2027 will be read against whatever settles — the wiki holds the labels as an annotation layer for now.
 
 **Related pages:** [[GC-Independent Response]], [[Extrafollicular Response]], [[DN2 B Cell]], [[Atypical B Cell]], [[Age-Associated B Cell]], [[CD11c]], [[CD21]], [[CXCR5]], [[Conventional Flow Cytometry]], [[Immunohistochemistry]], [[Mechanistic Case for DN and DN2 Cells in Dengue]]
+
+---
+
+## [2026-08-28] The 2025 consensus constraint was already published by the Sanz lab in 2019 — the wiki had it filed as a nomenclature paper
+
+**Source:** [[Sanz2019 - Consistent Classification of Human B Cell Populations]] (surfaced while repairing its reverse-propagation debt), against [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]]
+
+**Finding:** Sanz2019 states, in its own words: *"we postulate that the limited use of either CD21, T-bet or CD11c expression is **inadequate** to identify ABC or other distinct human B cell populations and that the present ABC assignment **non-specifically integrates multiple B cell populations**."* Its supporting observation is that stimulating **naive, DN *and* memory** starting populations under mouse-ABC-inducing conditions (TLR7 + IFN + IL-21) all converge on the same CD19⁺⁺CD21ˡᵒCD11c⁺⁺T-bet⁺⁺FcRL5⁺ phenotype — so the phenotype is reachable from several parents. It also gives the field's first phenotypic demonstration that the atypical label spans two opposite cells: **FcRL4 is high in HIV DN cells (~21.1%) and near-absent in SLE (~0.74%), with FcRL5 exactly reciprocal.**
+
+**Why notable:** The wiki has been treating the activation-vs-lineage constraint as a **2025** development — the twelve-author consensus Perspective, ingested 2026-08-27, whose caveat was then pushed out across the marker pages by explicit curator decision. It is not new. The same laboratory that named DN2 and supplied the wiki's canonical DN1/DN2 marker definitions published the constraint **six years earlier**, in the very paper the definitions come from, and the wiki has held that paper since 2026-08-18 filed as a panel-design reference. This changes how strong the constraint is, not just how old: it is not a 2025 revisionist reading imposed on the DN2 literature from outside, it is a caveat the DN2 literature's own authors attached to their definitions at the moment of stating them — and then the field, including this wiki, quoted Table 1 and dropped the sentence beneath it.
+
+The mechanism of the loss is worth noting because it is structural, not careless. Sanz2019 entered the wiki as a *nomenclature* source; what got extracted was the part that answers "what markers define DN2?" The self-limiting sentence answers a question nobody was asking at ingest. The reverse-propagation debt is what forced a re-read of the PDF, and the re-read is what found it — which is an argument for treating that debt as a substantive backlog rather than bookkeeping.
+
+**Follow-up questions:**
+- Does anything in the wiki's spine rest on a **CD21/CD11c/T-bet-only** identification that Sanz2019 explicitly calls inadequate? [[DN2 Gating Strategy]] gates CD21 × CD11c with no CXCR5 and no CD24 — Sanz2019's own core includes CD24 and it separates DN1 from DN2.
+- The convergence result (naive, DN and memory all reaching the same phenotype in vitro) is a **precursor-ambiguity** claim, not just a marker claim. Does it bear on the unresolved naive-vs-memory origin tension the wiki carries from [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]] and [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]?
+- How many other pre-guard sources carry a self-limiting statement that ingest skipped? Five papers of C1 debt remain un-re-read.
+
+**Related pages:** [[CD11c]], [[CD21]], [[T-bet]], [[CD24]], [[Atypical B Cell]], [[DN2 B Cell]], [[FCRL5]], [[FcRH4]], [[Conventional Flow Cytometry]], [[Bm Classification]], [[DN2 Gating Strategy]]
 
 ---

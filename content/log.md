@@ -107,56 +107,11 @@ Ran `sync-and-build.ps1` from `efbwebshare/` after the Morra2018 ingest commit (
 
 ---
 
-## [2026-06-26] prep | Pre-meeting reframe — prelim meeting is wiki-first, not pitch-first
+## [2026-06-25 – 2026-06-26] ops | Personal meeting prep — record moved off the published wiki
 
-**Context:** Morning-of, in-lab session immediately before the meeting with Prof. Rukie. Curator clarified the framing: this is the **preliminary** meeting, so Prof. Rukie is most likely interested in **the wiki as a tool/method** rather than the PhD pitch, and it is the **first time the wiki + Claude are being introduced to her**. Reoriented the last-minute prep accordingly.
+**Three entries removed from this log on 2026-08-29 at the curator's instruction** — preparation, fact-checking and framing for a personal academic meeting, naming third parties. They are held verbatim, locally, at **`_private/Personal Meeting Record.md`** — gitignored, and outside the folder `sync-and-build.ps1` publishes.
 
-**Reframe delivered (no plan file edits — verbal prep only):**
-- **One-breath intro:** living literature-review knowledge base — 20 papers, 100+ interlinked pages — that Claude maintains (summarize → cross-link cells/markers/methods/concepts → flag contradictions).
-- **Three rigor talking points** (lead with these if skeptical): (1) evidence weighting — study type + n inline on every claim; (2) it flags contradictions and *downgrades* claims (Ansari severity downgrade; Tph-identity doubt) rather than smoothing them; (3) the Council adversarial-review layer (Ansari2025 report on standby).
-- **Demo order by impact:** Obsidian graph → one source page (Ansari2025 structure) → live site `efb-dengue-wiki.pages.dev`.
-- **Introducing Claude:** "Claude summarizes/cross-references/maintains; I curate and direct." Honesty stance is the selling point — if asked "does it hallucinate," answer plainly: everything traces to a source page, fact-checked pre-meeting (caught the GodoyLozano n=175→19 error yesterday).
-
-**No wiki pages modified** — prep/consult only. Next sign-in will be live, in front of Prof. Rukie.
-
----
-
-## [2026-06-25] prep | PhD meeting fact-check pass + corrections + cold rehearsal
-
-**Context:** Final prep for tomorrow's (2026-06-26) PhD-upgrade meeting. Fact-checked every spoken number in the meeting plan (`~/.claude/plans/pure-zooming-adleman.md`) against the wiki sources + the Ansari2025 council report — the tool-pitch rests on "every number traces to a paper," so a wrong figure in front of these PIs is the highest-cost failure.
-
-**Defects found & fixed in the meeting plan:**
-- **GodoyLozano2016 cited as n=175 in TWO places** (Act 1 narration + the SHM-contradiction Q&A answer) → corrected to **n=19 acute patients** ("385,206" is the *lineage* count, not patients). Highest-value catch — a wrong cohort size in front of immunologists who know the paper would undercut the whole traceability pitch.
-- **"99 interconnected pages"** → **"over 100 … built from 20 papers"** (actual: 103 content pages / 106 with infra; live site 118). Robust to whatever's on screen tomorrow.
-
-**Additions to the meeting plan:**
-- O1-is-novel one-liner in Act 1 + mirrored on the Act 4 primary-objective bullet (Ansari correlated Tph with the DN2-phenotype cells; nobody has correlated those cells with antibody quality/ANA — that correlation is O1).
-- 7th expert-question row targeting O1 directly ("your primary endpoint is a ratio of populations you can't definitively identify") with a concede-then-redirect answer.
-- Sharpened the 4 explicit asks into direct spoken questions (+ delivery note: ask as questions, pause on each).
-
-**Verified accurate (no change needed):** Ansari2025 n=170 (council-confirmed); pilot n=19 (DF=8/DHF=11); Sutton ~45% undercount (44.7% of atBC1, CD11c best single marker); Tph = Th1-signature concern + IL-21 coculture STRONG; severity downgraded for day-of-sampling (8±4 vs 5±2 d). Council report present and on-message.
-
-**Cold rehearsal:** ran all 7 hard Q&A as spoken answers with second-order follow-ups; flagged Q1 (Tph identity) + Q2 (SHM paradox) as the two that can spiral, with the same safety-pivot for both — don't defend the weak link, redirect to what the pilot actually measures (cells→ANA).
-
-**No wiki pages modified** — prep/consult only.
-
----
-
-## [2026-06-25] ops | PhD upgrade pitch prep — meeting with Prof. Rukie and Prof. Neelika
-
-**Context:** Osanda is presenting his MSc→PhD upgrade case tomorrow to co-PIs Prof. Rukie and Prof. Neelika. The meeting has two goals: (1) validate the EF/atypical-B-cell direction as scientifically novel and fundable; (2) secure upgrade endorsement pending pilot results.
-
-**Plan created:** `~/.claude/plans/pure-zooming-adleman.md` — full meeting structure including narrative arc, expert Q&A bank, demo moments, and explicit asks.
-
-**Key structure:**
-- Act 1 (Osanda): the gap — GodoyLozano2016 low SHM + Ansari2025 cellular phenotype + the unbuilt cells→ANA bridge
-- Act 2 (Osanda + demo): Obsidian graph + source/entity page walkthrough — every claim is traceable
-- Act 3 (PIs → Claude cold): expert Q&A; PIs are deep B-cell immunologists; six hard questions pre-prepared (GC/EF balance, CXCR5/T-bet absence, Sutton44.7% undercount, GodoyLozano/Priyamvada SHM contradiction, Tph identity, age confounding)
-- Act 4 (Osanda): pilot design → PhD trajectory → explicit upgrade ask
-
-**Pre-meeting checklist:** fresh Claude session pre-loaded with project context; Obsidian graph open; `Claude-council/council final report-Ansari2025.md` on standby as proof of adversarial review.
-
-**Explicit ask to PIs:** (1) O1 is a scientifically novel primary objective; (2) d5–8 n≈20 design is appropriate for a pilot; (3) positive pilot justifies a funded mechanism study; (4) support upgrade application.
+**No wiki content was lost.** All three were prep/consult sessions that modified no wiki pages. Two source-accuracy corrections made during that prep are recorded where they belong: the GodoyLozano2016 **n=175 → n=19** fix and the page-count claim, both on their own pages.
 
 ---
 
@@ -1922,3 +1877,217 @@ list of what was verified clean so it is not re-audited. This log entry is the r
 ### Not fixed, by design
 
 Findings 1–8 above are reported, not applied: each is either a multi-session repair (1, 6), an ingest decision (2), or Rule 5 restructuring of curator-authored pages (3, 4, 5, 7, 8). 18 thin pages (1 source) are recorded but are mostly single-paper technical entities, not defects — Finding 1's repair would thicken several for free ([[ICOS]] gains Song2022; [[CD71]] gains Sanz2019).
+
+---
+
+## [2026-08-28] lint repair | deep-lint action items B1, B2, B3 (curator-approved)
+
+**Scope.** The three Rule 5 items from the 2026-08-27 deep lint, approved by the curator this session. Items **A1** (cut-value authority) and **C1–C3** (propagation debt, bare-`(review)` citations, small repairs) were **not** touched and remain open. 5 pages edited, 0 created.
+
+### B1 — [[Activated Naive B Cell]] misfiling repaired (third flag, now closed)
+
+Eleven Key-Points bullets of Jenks2018 / Sanz2025 / Woodruff2020 / Scharer2019 / Kaneko2020 primary data, running from **"Shared identity with DN2 cells:"** through **"Independent cohort confirmation…"**, were moved out of `## Contradictions & Debates` and appended to the end of `## Key Points from Literature` (per the CLAUDE.md insertion-order guard). The **two genuine contradictions** — the EF-vs-GC differentiation-route ambiguity and the MitoTracker Green non-standard-method caveat — remain in place, and the section is no longer misleading. Block moved contiguously with internal order preserved; no wording changed; `sources: 9` unchanged. The five other pages a bolded-bullet heuristic flags were adjudicated at the lint as correctly filed and were **not** touched.
+
+### B2 — the Allard-Chamard2023 tissue finding written into the two thesis analyses pages
+
+Its own Notable Findings entry named both pages; the paper was cited in neither. Recorded as an **annotation, not a revision** — the framing decision is the curator's and stays open.
+
+- **[[Mechanistic Case for DN and DN2 Cells in Dengue]]** — new **hazard (h)** in §5 alongside (a)–(g); one new "not supportable" bullet in §6; one new Open Question; source added under *Mechanism primaries*; `sources: 19 → 20`.
+- **[[Thesis Objectives and Grant Pitch]]** — new confounder-table row *"★ Blood CD11c⁺ DN cells may be largely a blood population"*; source added to Sources Used. Central thesis, the one-paragraph pitch, and the DN2:DN1 centrepiece **deliberately left unedited**.
+
+**★ The finding is stated on a pooled CD11c axis, not per-subset.** Allard-Chamard gates DN on **CXCR5 × CD11c with no CD21**, so its DN2 (CXCR5⁻CD11c⁺) is not the wiki's DN2-phenotype (CD21⁻CD11c⁺); quoting "DN2 ≈ 7 cells/mm²" against a CD21-based gate would have been a cross-gate comparison presented as like-for-like. Pooled on CD11c — the one axis both panels share — **CD11c⁺ cells are ~4% of tissue DN in COVID-19 thoracic lymph node (~24 vs ~630 cells/mm²) and ~10% in IgG4-RD gland (~25 vs ~218)**. The conclusion is robust to the DN4 dispute: if DN4 is CD11c⁻ after all, the CD11c⁺ share falls to ~1% and ~2.5%. Four source-stated caveats carried with it: CD11c may be lost in FFPE (the paper's own open question), the COVID cohort is late-phase only (15–36 d), no significance markers on the subset panels (n=6–10, Fig. 5C has no control nodes), and neither disease is an acute arboviral infection.
+
+### B3 — [[DN2 Gating Strategy]] brought current against both new primaries
+
+- **(a)** New boxed note under the Research Question carrying Eisenbarth2025's *"no flow cytometry-based means alone can distinguish EF B cells"* — the page whose title and Research Question both frame it as *EF B Cell Identification*, and the one the curator's earlier three-page decision did not cover. Gating unchanged; what changes is what the output may be called.
+- **(b)** The `DN1 vs DN3 distinction | CXCR5` row in *What This Panel Cannot Resolve* was **wrong in shape** and is replaced. It implied CXCR5 could be slotted into the existing CD21 × CD11c 2×2 to recover DN1–DN4; the two schemes are **orthogonal partitions of the same DN pool**. New subsection *"The published DN1–DN4 scheme is on a different axis from this panel's 2×2"* states the three consequences: **DN4 has no cell in this panel's tree** and may sit inside the DN2-phenotype gate (its CD21 status has never been published, so the contamination is unbounded); **Emory DN3 (CD11c⁻CD21⁻) ≠ Pillai DN3 (CXCR5⁻CD11c⁻)**, matched by construction only; and **DN4's own phenotype is contested** (CXCR5⁺CD11c⁺ per the primary vs CXCR5⁺CD11c⁻ per Lamprinou2026, which would equal DN1). Two Open Questions added. Both new sources added to Sources Used.
+- **[[B Cell Panel Variant 1]]** — same, milder: the existing half-flag at the Panel 3 CXCR5⁺-DN note sharpened with the contested DN4 assignment; both sources added; new starred Open Question naming the payoff — **Panel 4 carries CXCR5, CD21, CD11c and T-bet together and would produce the first direct reconciliation of the two DN3 gating axes**, which no published study has done.
+
+### Not fixed, by design
+
+**A1 remains open** — the [[DN2 Gating Strategy]] page's printed cut values still diverge from the `FlowCyto Analysis 1/` pipeline's locked cuts on three of four axes (CD27, CD21, CD11c). B3 closes gaps (a) and (b) of that watch item; **(c) is A1 and is a curator decision**, so the watch item is split rather than ticked. Likewise the standing item *"Does the DN2-centred thesis framing survive the tissue data?"* is **downgraded, not resolved** — the finding is now recorded on both pages, but whether the framing changes is still the curator's call.
+
+**Follow-on consistency fix (not in B1–B3, done to avoid stating one finding two ways).** [[Notable Findings]]'s 2026-08-27 entry states this result per-subset ("DN2 at ~7 cells/mm² … against DN3's ~400") — correct in Allard-Chamard's own gating, but the form that misleads once it crosses onto a CD21-gated page. A boxed clause now gives the gate-independent pooled-CD11c form alongside it and points to hazard (h). The **source page was deliberately not touched** — in that paper's gating, "DN2" does mean CXCR5⁻CD11c⁺.
+
+**Verification.** All 9 wikilinks added resolve to existing pages. Curator Highlights unaffected — both live highlights intact, including `==Whether this concordance holds in dengue is unknown.==` on [[DN2 Gating Strategy]], which was written around rather than edited. No new pages, no count changes, so `index.md` needs no update.
+
+## [2026-08-28] lint repair | deep-lint action block C — C3, C2, and C1/Sanz2019 (curator-approved)
+
+**Scope.** Section C of the 2026-08-27 deep lint, approved by the curator ("now the section c"). Executed in the order C3 → C2 → C1, smallest-risk first. **C3 and C2 are complete.** C1 is a six-paper backlog and **only its first paper, Sanz2019, was done this session** — deliberately, as a calibration sample of the propagate-vs-trim judgement before committing the remaining 90 instances. **74 pages edited, 0 created.** `raw/` untouched.
+
+### C3 — small self-contained repairs (complete)
+
+- **[[CD27]]** — the lint's complaint was one unqualified sentence, not a missing bullet: the Wei2007 bullet asserting that CD27 absence "is used as evidence for their GC-independent (extrafollicular) origin". That inference now carries an inline **⚠ not licensed as exclusive** marker pointing to a new end-of-section bullet, which states the consensus position — *"CD11c and T-BET expression or lack of CD27 are not exclusive markers of EF B cell responses"* — with the paper's own human counter-example (post-influenza-vaccination CD11c⁺T-bet⁺FcRL5⁺ cells at ≤1 week are CD27⁺CD21ˡᵒ high-SHM **recent GC emigrants**). Written as a *consolidation* of the three bullets already on the page (Sanz2025, Sutton2021, Glaros2025) rather than a fourth restatement of them. **Note the direction of the constraint:** what is withdrawn is the location claim and the marker's exclusivity, not GC-independence.
+- **[[CD71]]** — the same activation-vs-lineage caution, which the Perspective extends to CD71 by name, plus *"Activated B cells (CD71⁺)"* as one of the four incompatible expansions of "ABC". Framed honestly as **confirmatory for this wiki's use**: CD71 here reads proliferation on an already-gated plasmablast, which is exactly what the marker reports. The caution binds on anyone reading CD71⁺ as an identity call. `sources: 1 → 2` — this page had been single-source since 2026-05-08.
+- **[[XBP1]]** ← [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]]. The wiki held "UPR = DN3" on a review's authority alone ([[Lamprinou2026 - ABCs and DN B Cells]]); the primary measurement is now on the page — sorted DN1–DN4, bulk transcriptomics, n=4, **DN3 alone enriched for UPR + proliferation + IGHG4**. Two limits recorded with it: **XBP1 itself is never named** (the evidence is pathway-level gene-set enrichment), and it is transcriptomic, not lineage-tracing.
+  - **★ This was the B2 trap a second time, and it was avoided the same way.** Dropping an Allard-Chamard row beside the existing `Lamprinou2026 | Review | UPR is a DN3 signature` row would assert a like-for-like comparison across the CXCR5×CD11c vs CD21×CD11c gate mismatch. Stated instead on the shared axis: **read on CD11c, three of the four rows agree** — the UPR/ASC signature sits with the **CD11c⁻** DN cells (Allard-Chamard's DN3) and is absent from the **CD11c⁺** ones (Scharer's DN2, where the UPR set is negatively enriched). Song2022's *Xbp1*-high cells are murine CD11c⁺, the apparent exception. A ⚠ clause immediately below says what the shared axis does **not** buy: Allard-Chamard's DN3 is CXCR5⁻CD11c⁻ with no CD21 in the panel, so *which* CD11c⁻ DN cells carry the signature stays axis-dependent and untested. Candidate reconciliation 2 ("gate breadth") is accordingly **downgraded from the strongest to the weakest** of the three — a CD11c⁺ murine gate should exclude UPR-high cells, not dilute them in.
+- **[[LFA-1]] + [[VLA-4]] — merge considered and DECLINED.** Different ligands (ICAM-1 vs VCAM-1), different genes, and VLA-4 carries a bone-marrow residency finding from [[Glaros2025 - Multilayered Identity of B Cell Memory]] that LFA-1 does not; the "indivisible dual-blockade result" is one bullet of four or five on each page, and a merge would break 13 inbound wikilink instances across 5 other pages. What the lint actually identified is an **attribution** problem, not a duplication one, and that is now stated on both pages: the two integrins were blocked *together*, so the experiment cannot apportion the effect between them. Recorded in state.md Decisions.
+- Source-page bookkeeping: [[CD27]] and [[CD71]] promoted from Eisenbarth2025's escape-hatch line into its Entities Mentioned; [[XBP1]] added to Allard-Chamard2023's.
+
+### C2 — the bare-`(review)` citations (complete)
+
+**60 Rule 3 violations fixed across 27 pages, plus 2 duplication merges.** The lint's estimate was ~50; the true figure is 60.
+
+**Attribution was established before any edit, not assumed.** A first regex (`\(review[,;)]`) returned 82 candidates — not a fix list. Two filters cut it to the real set: (i) a line already carrying a **source-page** wikilink is cited, whatever the parenthetical says (this removed 6 legitimate `[[Cancro2020…]] (review, zero original data)` constructions and 1 English verb — *"review these gates"* in [[DN2 Panel - Staining, Compensation, and Gating Protocol]], left alone); (ii) `git blame --line-porcelain` on every surviving line, which attributed **60/61 to a single commit — the Glaros2025 ingest** — and the last to a flow-protocol commit. Intersecting each page's `## Sources` with the review-type sources would have left most pages ambiguous (CD27 lists five reviews); blame resolved every one. No `sources:` count moved, since the source was already listed on each page.
+
+- **Merges:** the Glaros2025 ingest restated a claim the Lamprinou2026 ingest had already made, on two pages. On [[IgA]] the second bullet added nothing and was folded into the first as a corroborating citation. On [[IgG]] it added one thing — that **some ABCs carry somatically hypermutated BCRs** — which is now carried in the merged bullet, with the consequence made explicit: switched isotype in this compartment is not by itself evidence of a GC-independent route. Also closed a missing blank line between `## Related Pages` and `## Sources` on [[IgG]].
+
+### C1 — reverse-propagation debt: Sanz2019 only (1 of 6 papers)
+
+**130 → 90 failures.** 40 targets: **37 propagated, 3 trimmed.**
+
+The ratio is not generalisable to the other five papers and should not be assumed for them. Sanz2019 is a nomenclature paper whose **Table 1 is a marker-by-marker canonical phenotype table** — it genuinely holds content for nearly every entity in its triad, which is exactly the shape that makes propagation honest. A mechanism paper's triad will not behave this way.
+
+**The three trims** are the test that the propagations mean something. [[Spectral Flow Cytometry]], [[FACS Sorting]] and [[Compensation and FMO Controls]] were moved to an escape-hatch line on the source page after a targeted read of `raw/Sanz2019.pdf`: the PDF contains **zero** occurrences of spectral cytometry, compensation or FMO, and its single "flow sorted" mention sits in a figure legend adapted from [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]. The review reports no methods of its own. Escape-hatch wording matches the existing `*Also discussed but not separately updated: …*` form the detector already recognises — no fourth phrasing introduced.
+
+**Three findings surfaced by the PDF read that the source page did not hold:**
+- **★ The paper contradicts itself about its own core panel.** The body recommends seven markers as CD3/CD14 dump + CD19 + IgD + CD27 + CD38 + CD24 + CD21. The Table 1 footnote instead reads *"Core Markers: CD19, **IgM**, IgD, CD27, CD38, CD24, CD21"* — substituting IgM for the dump, while also listing IgM among the additional markers. Recorded on [[IgM]] and [[Conventional Flow Cytometry]]; anyone quoting "the Sanz seven-marker core" should say which seven.
+- **★ [[CD71]] is positioned by Sanz2019 as a marker of "new germinal center products"** — *"upregulation of CD71 appears to be a helpful marker of early activation in proliferative antigen-specific memory cells and new germinal center products that differentiate into antibody-secreting PB"*. The review's own worked example of a CD71⁺ cell is a **GC emigrant**, which is the same counter-example Eisenbarth2025 later generalises. The two C3 and C1 additions to that page converge from opposite directions.
+- **★ Sanz2019 already stated the Eisenbarth conclusion in 2019.** *"We postulate that the limited use of either CD21, T-bet or CD11c expression is inadequate to identify ABC or other distinct human B cell populations and that the present ABC assignment non-specifically integrates multiple B cell populations."* Recorded on [[CD11c]], [[CD21]], [[T-bet]] and [[Atypical B Cell]]. The wiki now holds the constraint from a Sanz-lab paper six years before the twelve-author consensus, which strengthens it considerably — it is not a 2025 revisionist reading. **Recorded as a Notable Finding** — it clears the bar on all three counts (surprising given existing wiki content, crosses multiple papers, sharply qualifies a claim the wiki had dated to 2025).
+
+Other substantive propagations: the **IgD gating instruction** (*"we advise against classifying these populations on the basis of a CD27⁻CD21⁻ phenotype in the absence of IgD staining"*) → [[IgD]]; the **reciprocal FcRL4/FcRL5 split between HIV and SLE DN cells** (~21.1% vs ~0.74%) → [[FCRL5]], [[FcRH4]], [[Double-Negative B Cell]], [[Atypical B Cell]]; the **third FcRL4⁺ DN row** and its unresolved relationship to [[DN3 B Cell]]; the **T-bet MFI continuum** (CXCR5⁻ SWM and CD27⁺⁺CD38⁺⁺ PC express T-bet, merely lower) → [[T-bet]], [[Switched Memory B Cell]]; the full **Bm1–Bm5 critique** → [[Bm Classification]], [[Memory B Cell]]; the **CD24 panel gap** — CD24 is in Sanz's core and separates DN1 from DN2, and the curator's 11-colour panel does not carry it → [[CD24]], [[DN2 Gating Strategy]] cross-reference.
+
+### Also found and fixed — a lint miss
+
+**`index.md` source counts were not correct**, contrary to the 2026-08-27 lint's "index complete both directions with correct counts". Reconciling every `(sources: N)` annotation against page frontmatter found **52 mismatches, of which 14 pre-date this session** — [[Age-Associated B Cell]], [[TLR9]], [[GC-Independent Response]] (off by 3), [[Atypical B Cell Effector Output]] (off by 2), [[Extrafollicular T Cell Help]], [[Follicular Exclusion]], [[Multi-color Immunofluorescence]], [[FACS Sorting]], [[RNA Sequencing]], [[In Vitro B Cell Stimulation]], [[Phospho-Flow Cytometry]], [[Single-Cell RNA Sequencing]], [[Immunohistochemistry]], [[Compensation and FMO Controls]]. All 52 corrected; index.md now reports **104 rows in sync**. The reconciliation is scripted and cheap to re-run — it should become a standing lint step rather than an eyeball check.
+
+### Verification
+
+Every wikilink added in this session resolves to an existing page — a full-wiki sweep finds **0 broken links in content pages** (the only unresolved `[[…]]` are pre-existing line-wrapped links and placeholders inside `log.md` and `state.md` themselves). **`## Sources` is the last heading on every content page** — 0 instances of the 2026-05-08 insertion-order defect class, including all 37 pages edited by the scripted C1 sweep, where every new Key Points bullet was inserted immediately before `## Contradictions & Debates`. Detector re-run confirms **130 → 90**. Curator Highlights unaffected.
+
+### Post-hoc audit of the C1 sweep — 4 corrections applied
+
+The propagation detector matches on the loose AuthorYear key, so 130→90 proves 40 pages now *mention* Sanz2019 and says nothing about whether the bullets are accurate. The at-risk subset is the bullets derived from the source page's rendering of **Table 1** rather than from prose quoted verbatim out of the PDF; those ten pages were re-checked against the PDF table block. Four corrections:
+
+- **★ A fabricated specific, caught and removed.** [[Early Memory B Cell]] and [[IgG]] had DN1's Table 1 function as *"memory precursors — more specifically **IgG memory precursor**"*. The second phrase is a **column-collapse artefact** of the PDF text extraction: it sits against an `IgD⁻CD27⁺` phenotype, i.e. a row from the switched-memory block above, while the clean DN1 row (`IgD⁻CD27⁻CD38⁺CD24⁺CD21⁺ / FcRL4⁻FcRL5⁻CXCR5⁺`) reads simply **"Memory precursors"** — which is what the source page says. Clause dropped from both pages. The lesson generalises: the misaligned region of a table extraction is unusable even when a phrase in it looks like it answers your question.
+- **The third DN row carries no isotype annotation.** [[IgG]], [[IgA]] and [[Class Switch Recombination]] each claimed all *three* Table 1 DN rows are annotated IgM/IgG/IgA⁺. Only DN1 and DN2 are; the FcRL4⁺ row has an isotype-free additional-marker cell. Corrected on all three — the point they make (isotype does not separate the DN subsets) survives and is now stated accurately.
+- **Phenotype transcription error.** [[Tissue-Resident Memory B Cell]] gave the CD27⁺ atypical tissue-based row as CD38⁺/ˡᵒCD24⁺; Table 1 and the source page both give **CD38ˡᵒCD24ˡᵒ**.
+- **Attribution consistency.** The ~21.1% / ~0.74% FcRL4 figures are **Jenks2018 data republished in Sanz2019 Fig. 2E** ("Derived from Jenks et al. (41), Immunity"), and Sanz2019 is a Tier B source whose banner says not to let it carry a claim alone. The clause *"figure adapted from [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]"* was on [[FCRL5]] but missing from [[FcRH4]], [[Double-Negative B Cell]] and [[Atypical B Cell]] — added to all three. Checked for the IgA/IgG-style duplication this could have created: [[FcRH4]] already carried the *qualitative* Jenks2018 version (DN2 is FcRL4⁻, HIV exhausted memory FcRL4⁺) but not the percentages, so the new bullet quantifies rather than repeats.
+
+Also corrected an unverified number this session had written into `log.md` and `state.md`: the LFA-1/VLA-4 merge rationale said "~8 inbound wikilinks", asserted rather than counted. The true figure is **13 link instances across 5 other pages**. The decision does not depend on it.
+
+### Still open
+
+**C1 for five papers — 90 instances:** Song2022 (35), Zumaquero2019 (31), Kwissa2014 (20), Anolik2004 (3), Wrammert2012 (1). **A1** (cut-value authority) and **A2** (ingest Jenks2021) remain curator decisions. The DN2-centred thesis framing decision from B2 is still open.
+
+---
+
+## [2026-08-29] ingest | Jenks SA et al. 2021 - B Cell Subset Composition in Cutaneous Lupus
+
+**Resolves deep-lint action item A2** (curator decision, open since 2026-08-27): *ingest `raw/Jenks2021.pdf`?* — answered "go for full ingest". Standard mode; pre-ingest discussion held and three scope calls put to the curator before any page was written.
+
+**Paper.** Jenks SA, Wei C, Bugrovsky R, Hill A, Wang X, Rossi FM, Cashman K, Woodruff MC, Aspey LD, Lim SS, Bao G, Drenkard C, Sanz I. *B cell subset composition segments clinically and serologically distinct groups in chronic cutaneous lupus erythematosus.* **Ann Rheum Dis 2021;80(9):1190–1200**, DOI `10.1136/annrheumdis-2021-220349`. Emory/Sanz + GOAL population-based cohort. Cross-sectional; n=207 patients (primary CCLE 69 / SLE+CCLE 53 / SLE-only 85) + 46 healthy controls for flow, 69 HCD + 39 extra SLE for serology. Citations: Semantic Scholar 40, CrossRef 45 (retrieved 2026-08-29).
+
+**1 page created, 20 updated** — 13 entities, 3 concepts, 2 methods, 2 analyses (Notable Findings, External Citation Audit) — plus `index.md`, `log.md`, `state.md`. 1 Notable Finding.
+
+### What the ingest bought
+
+- **★ The Emory DN3 gate is now first-party.** Figure 1B states it directly: DN1 CD21⁺CD11c⁻, DN2 CD21⁻CD11c⁺, DN3 CD21⁻CD11c⁻, with aNAV = CD21⁻CD11c⁺ inside the naive gate. Until now the wiki held the Emory definition only through [[Sanz2025 - Human Atypical B Cells Overview]] and [[Woodruff2020 - EF B Cell Responses in COVID-19]]. **⚠ Guarded as written:** CXCR5 appears **zero times** in the paper's own data (verified by grep of the extracted text — T-bet, IL-21 and FCRL5 occur only inside cited reference titles), so the recorded claim is *"as of 2021 a Sanz-lab primary gates DN3 on CD21 × CD11c with no CXCR5"*, **not** *"the Emory axis is confirmed correct."* The axis reconciliation still requires both markers in one tube ([[B Cell Panel Variant 1]]). Same guarding pattern as the Beckers dengue-absence and Eisenbarth EF-location claims.
+- **★ The DN2:DN1 log2 ratio is used again as a reported outcome (Fig 1E)** — used again as a reported outcome by the Sanz lab — the third setting in which they report it, after SLE ([[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]) and acute COVID-19 ([[Woodruff2020 - EF B Cell Responses in COVID-19]]). Precedent for the centrepiece metric of [[Thesis Objectives and Grant Pitch]].
+- **★ The Notable Finding: DN expansion tracks organ involvement, not disease label.** Within SLE, presence of discoid skin disease correlated with *lower* DN expansion — aligned with the DN2–nephritis association from [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]] and the reduced nephritis rate in SLE+DLE. Plus: primary CCLE is bimodal, 42% of patients carrying entirely healthy-like B cell profiles. Both bear on the dengue design — stratify on organ involvement, and cluster patients before comparing group means.
+- **The CD21⁺CD11c⁺ quadrant is left unnamed.** Recorded explicitly as *not* the same as DN4 being absent; it does **not** arbitrate the Allard-Chamard (CXCR5⁺CD11c⁺) vs Lamprinou (CXCR5⁺CD11c⁻) DN4 conflict, which stays blocked pending Szelinski2022.
+
+### Scope call — serology recorded, not propagated
+
+Figures 3–5 (9G4/VH4.34 idiotype, anti-dsDNA, anti-chromatin, anti-RNA, anti-Sm/RNP/Ro52/Ro60 by LIPS) are roughly **60% of the paper** and were put to the curator before writing. Applied the standing **[2026-05-02] 9G4 decision**, whose own "How to apply" line says reconsider only *in a dengue context* — which this is not: **no serology *finding* was propagated anywhere — all of it is background on the source page.** ([[ELISA]] records the *method* and the paired serology→immunophenotype design, and states explicitly that the findings are out of scope.) No 9G4/VH4.34 page created; no LIPS or apoptotic-cell-binding method page created (both named in the source page's italic escape-hatch line). The specificity-level synthesis stays canonical to `dengue-wiki/` and `bridge-wiki/`.
+
+### Honesty items recorded rather than smoothed over
+
+- **⚠ The antibody panel is not in the deposited PDF.** The conjugate list lives in *online supplemental table 1*, absent from the manuscript. Only 8 markers are recoverable from body text and figure legends (CD19, CD3, IgD, CD27, CD38, CD24, CD21, CD11c + eFluor506 viability). Given that the wiki already documents Sanz2019 contradicting itself about "the Sanz seven-marker core", the source page and [[Conventional Flow Cytometry]] both state the panel was unavailable rather than presenting an inferred list as the panel.
+- **⚠ Two internal inconsistencies quarantined to the source page** under the [2026-08-23] rule, propagated nowhere. **(a)** The **Figure 6 legend inverts its own cluster assignments** — it says clusters III/IV resemble SLE and I/II resemble HCD, while the Results text and the Fig 2 legend both say HCD clustered *only* in III/IV and I/II were SLE-enriched. Load-bearing, because Fig 6 carries the entire clinical-association result; the direction is recoverable from the Results prose, so the legend is the error. **(b)** Results say **42%** of primary CCLE are healthy-like, Discussion says **48%**. (The Discussion's separate 38% figure *is* consistent — 58% × 64% in clusters I/II ≈ 37% — so 38% means clusters I/II specifically.)
+- **Significance is published as colour bands, not numeric p-values**, so exact p-values for the subset comparisons are not extractable. Recorded on [[Conventional Flow Cytometry]] and the source page.
+- **⚠ Two Jenks 2021 papers now exist in the wiki's citation space.** [[External Citation Audit]] **#36** is a *different* paper (JCI, SLE endotypes, DOI `10.1172/JCI150888` *unverified*), cited via Sanz2025 and relied on at [[Extrafollicular Response]] and [[Why DN B Cells Matter - Disease Relevance and Infectious Disease Case]]. **This ingest does not resolve #36.** A disambiguation box was added to the audit entry, and the same warning is on the source page.
+
+### Attribution discipline
+
+Refs 16/19/31/33/34/35 are [[Wei2007 - DN Memory B Cells in SLE]], [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]], [[Sanz2019 - Consistent Classification of Human B Cell Populations]], [[Tipton2015 - ASC Diversity and Origin in SLE]], [[Scharer2019 - Epigenetic Programming in SLE B Cells]] and [[Woodruff2020 - EF B Cell Responses in COVID-19]] — **all already ingested**; pages cite the primary where Jenks2021 relays. Content attributed to Jenks2021 is limited to the GOAL cohort data, the Fig 1B gate, the five-cluster fingerprint, the within-SLE inverse CCLE↔DN association, the CCLE bimodality with its clinical/serological correlates, and the 9G4↔anti-nucleic-acid uncoupling. The cross-disease USM-loss comparisons (Sjögren's, RA, vasculitis, IBD) are relayed from other groups and are marked as such on [[Memory B Cell]].
+
+### Verification
+
+- **`tools/lint_propagation.py`: 0 propagation failures for Jenks2021.** Total stands unchanged at **90**, entirely the known C1 debt (Song2022 35, Zumaquero2019 31, Kwissa2014 20, Anolik2004 3, Wrammert2012 1). Fourth consecutive ingest to score zero.
+- **Insertion-order guard enforced mechanically, not by eye.** All 18 Key-Points insertions were made by a script that locates `## Key Points from Literature` and inserts immediately before the *next* `## ` header — which is what makes [[Double-Negative B Cell]] correct, since its next header is `## Proposed Origin and Relationship to Extrafollicular Response`, not `## Contradictions & Debates`.
+- **Index/frontmatter reconciliation run to completion: 0 mismatches** across every annotated row, per the [2026-08-28] standing scripted check. All 18 `(sources: N)` annotations bumped alongside their page frontmatter.
+- **⚠ One gotcha for whoever hardens that check into a permanent script:** `index.md` carries **two** `[[Memory B Cell]]` lines — a pointer stub under Entities (`— *see Concepts*`, no count) and the real annotated row under Concepts. A first-match-wins scan silently skips the real one and reports a false mismatch. Match on the presence of `(sources: N)`, not on the page name alone.
+
+## [2026-08-29] scope | Literature-review boundary set — deep-lint A1 closed as out of scope
+
+**Not an ingest, not a lint.** A curator scope ruling and the three edits that follow from it.
+
+**The ruling.** Deep-lint item **A1** ("which cut values are authoritative — [[DN2 Gating Strategy]] or the `FlowCyto Analysis 1/` pipeline?", open since 2026-08-27) was **dissolved rather than answered**: *"this is not needed. i think it is about gating of my panel right? i have migrated that to a different folder. so we need to keep this clean as lit review only."* The wiki was never the right owner of those numbers, so the divergence on three of four axes is not a defect to reconcile.
+
+**Changes applied.**
+- [[DN2 Gating Strategy]] — the `**Cuts:**` line, which printed `IgD<1.98, CD27<1.76, CD21<0.69, CD11c>0.72 (arcsinh/500)` FMO-anchored from sample HT82, replaced with a pointer to `FlowCyto Analysis 1/`. The page keeps its gating *structure*, its comparison to published strategies and its DN1–DN4-axis section — those are literature synthesis. Nothing was deleted; the page has 21 inbound links and remains the wiki's most-linked analysis.
+- `state.md` — new standing **Decision [2026-08-29] ★ SCOPE BOUNDARY** defining what the wiki does and does not hold; Queue item A1 marked closed with original text kept for provenance; the [[DN2 Gating Strategy]] Watch Item ticked whole (gap (c) was A1); new Current Focus entry.
+
+**Standing effect on lint.** A numeric divergence between this wiki and `FlowCyto Analysis 1/` is **not a finding** and must not be re-raised. The inverse is now a finding: a new operational value (gate cutoff, event count, compensation matrix, bench step) appearing anywhere in `wiki/` is out of scope by construction.
+
+**Deliberately NOT actioned (Rule 5 — curator decision put, not taken).** Three artefacts predate the boundary and are bench record rather than literature: [[DN2 Panel - Staining, Compensation, and Gating Protocol]] (Stage 1 whole-blood prep through the Stage 6 HT82 worked example), the HT82 pilot block at [[Compensation and FMO Controls]] (§boundary table, §re-gated DN/DN2, the 2026-06-14 shoulder-population decision), and the binary `wiki/analyses/EFB 3-Color DN Gating Protocol.pdf`. All three publish to the web; `FlowCyto Analysis 1/` and `Flowdata/` do not, since `sync-and-build.ps1` copies only `wiki/` and `Claude-council/`.
+
+**Unrelated finding, same session.** `raw/Malavige2024.pdf` — Malavige GN & Ogg GS, *Immune responses and severe dengue: what have we learned?*, *Curr Opin Infect Dis* 2024;37, DOI `10.1097/QCO.0000000000001040` — is un-ingested and appeared **zero times** in `state.md`, `log.md` or `index.md`. It entered the repo in commit `7956de3` (last session's pre-ingest snapshot). The 2026-08-29 `raw/` audit enumerated four remaining PDFs; this is a fifth. Same failure mode as Jenks2021 one session earlier, which suggests the `raw/` audit should be scripted as a diff of `raw/*.pdf` against `wiki/sources/` rather than done by eye. Added to Queue.
+
+## [2026-08-29] scope | Bench-record banners applied — the boundary's one open item, closed
+
+Follow-on to the scope entry above. Curator adjudicated the three pre-boundary artefacts: **banner, do not move.**
+
+- [[DN2 Panel - Staining, Compensation, and Gating Protocol]] — whole-page `⚠ NOT LITERATURE — BENCH RECORD` banner after the frontmatter, naming `FlowCyto Analysis 1/` as authoritative.
+- [[Compensation and FMO Controls]] — banner scoped to **§Curator's Pilot only**. The page's §Overview and §Key Points from Literature are published-source synthesis across 4 sources and were deliberately not banner-ed; banner-ing the whole page would have mislabelled genuine literature. It also records that the boundary values in that section are a 2026-06 snapshot since superseded.
+- `wiki/analyses/EFB 3-Color DN Gating Protocol.pdf` — a binary cannot carry a banner, so it is **named** inside the SOP page's banner. ⚠ **Correction to the first draft of this entry, which claimed this gave the file its first inbound link: it does not.** The filename is written as a code span, and code spans suppress wikilink parsing in both Obsidian and Quartz. The binary has **zero** inbound links, is still an orphan, and sits in a markdown folder where no content lint covers it. Recorded as a Watch Item instead of asserted as fixed.
+
+**Accepted cost, recorded rather than smoothed over.** The HT82 per-sample event counts, the 2026-06 FMO boundary snapshot and the full bench SOP continue to publish to `efb-dengue-wiki.pages.dev` as unpublished pilot data. That is the deliberate trade for zero link breakage — the alternative moved 2 pages and cut ~45 lines, breaking 5 inbound links. Nothing here is PHI: sample IDs are internal codes and `.fcs` / `.xlsx` are gitignored.
+
+**Boundary now fully applied.** No open items remain from the [2026-08-29] scope decision.
+
+**Standing check added.** The `raw/` enumeration has now silently dropped a PDF twice in two sessions (Jenks2021, then Malavige2024) because it is maintained by eye. Raised as a Watch Item: script it as a diff of `raw/*.pdf` against `wiki/sources/` in `tools/`, beside `lint_propagation.py` and the index←frontmatter reconciliation it parallels.
+
+---
+
+## [2026-08-29] state split | `state.md` 264 KB → 115 KB; `state-archive.md` created
+
+**Curator ask:** *"we need to address the state.md issue. can we archive old states and add links to the relevant sections as a summary in new file?"* Approach proposed and approved before execution (Rule 5).
+
+**Measurement first.** `state.md` was 264 KB, read in full at every session start. Weight: **Watch Items 131 KB (50%)**, Current Focus 70 KB (26%), Decisions 36 KB (14%), Queue 24 KB (9%). Two blocks were half the file between them — the `RESUME HERE [2026-08-18]` entry (38 KB) and an **84 KB un-headed watch list** running to EOF.
+
+**Step 1 — structural bug, committed alone (`4ac0709`).** The legacy list had no header, so it rendered as part of `### Raised or resolved 2026-08-23 (Posadas-Mondragon2020 ingest)`. That inflated the block to 94 KB and mis-attributed **170 items dated 2026-05 onward, 58 of them undated**, to a single August ingest. `### Legacy watch list, pre-2026-08-23` inserted before anything moved, so the split ran on correct boundaries. 4 insertions, no item touched.
+
+**Step 2 — mechanical, lossless move.** Three blocks cut verbatim into **`wiki/state-archive.md`** (`type: meta`, matching `state.md`'s own frontmatter — no new type invented; not added to `index.md`, which lists neither `state.md` nor `log.md`):
+
+| Block | Archived | Destination |
+|---|---|---|
+| Current Focus — 8 entries, 2026-08-18 → 2026-08-28 | 65,314 B | `#Archived Current Focus` |
+| Queue — 2026-08-27 deep-lint action block A/B/C | 8,281 B | `#Archived Queue` |
+| Watch Items — legacy list, 170 items | 85,280 B | `#Archived Watch Items` |
+
+**Verification.** String containment, both directions: each block is present verbatim in `state-archive.md` and absent from `state.md`. Nothing summarised, reworded, condensed or deleted. **`state.md` 270,175 → 113,745 B (58% smaller)** before the new session entry and watch items; 117,952 B after. Archive 161,588 B. Archive headings are short ASCII so Quartz slugs stay stable.
+
+**One item rescued from the move.** The archived deep-lint block was closed *except* **C1** (90 reverse-propagation instances across five papers). C1 was restated in full in the live Queue rather than left in cold storage.
+
+**`## Decisions` left whole — deliberately.** Splitting standing rules (scope boundary, PDF-only sourcing, insertion-order guard) from one-off history (Wiki initialised, Web deployment live, Poppler fallback) is the correct axis, and it is what was applied to Current Focus. Measured against Decisions specifically it yields only **~6 KB of 36 KB**, so the judgement risk was not worth it. Recorded because the reasoning is the reusable part, not the outcome.
+
+**⚠ Archived is not resolved.** **129 of the 170** archived watch items are **open**. Pass 1 judged nothing; that was the design, and it is what makes the change reversible. **Pass 2 (triage) is where the remaining reduction lives** and is now a Watch Item, along with three findings raised by the split:
+
+- ~59 of the 170 archived items are **study operations**, not literature — the class the [2026-08-29] scope boundary sends to `FlowCyto Analysis 1/`. Reassignment **not** made; it moves live obligations out of the repo and is a curator call.
+- Without a **retention rule** in CLAUDE.md's Session End workflow, `state.md` returns to ~260 KB within months — the generator is unchanged. That edit needs the `CLAUDE_GOVERNANCE.md` pre-change checklist, **not run**.
+- **The public-web exposure moved, it did not go away.** `sync-and-build.ps1` copies all of `wiki/`, so `public/state.html` was serving a personal-meeting item naming third parties. The split relocated it into `state-archive.md`, which publishes too. **Resolved later the same session** — the material was moved off-site to `_private/` on curator instruction; see the 2026-08-29 privacy entry below. `wiki/private/` is in Quartz's `ignorePatterns` so it would not be emitted, but robocopy still copies it into `content/`, which is pushed to GitHub — that only helps if the repo is private, which is **unverified**. Nothing relocated; curator's call.
+
+---
+
+## [2026-08-29] privacy | Personal academic material moved off the published wiki
+
+**Curator instruction:** personal academic material must be private and local only, then publish.
+
+**Why it mattered.** `sync-and-build.ps1` copies the whole of `wiki/` into Quartz, so `state.md`, `state-archive.md` and `log.md` publish alongside the literature pages. A personal-meeting record naming two third parties had been sitting in `log.md` since 2026-06-25 and was live at `efb-dengue-wiki.pages.dev/state`. The 2026-08-29 state split relocated it into `state-archive.md`, which publishes too — **the move did not reduce the exposure**, and that was flagged rather than left implicit.
+
+**Moved verbatim to `_private/Personal Meeting Record.md`** — gitignored **and** outside `wiki/`, so it is neither published nor version-controlled here. Same off-site route used for the Dengue Severity Binarization Spec on 2026-06-30.
+
+| Source | Removed |
+|---|---|
+| `wiki/log.md` — three entries (prep, fact-check + rehearsal, morning-of reframe) | 5,333 B |
+| `wiki/state-archive.md` — one watch item + two sub-entries | 2,365 B |
+
+**Also neutralised, same pass:** the next-phase watch item in `state-archive.md` (kept as a work item, meeting framing removed); the state-split log entry above, which had itself reproduced both names; and the private file's own name, since published stubs point at it. Stubs left in both files so the record shows something was moved and where.
+
+**Verification:** a case-insensitive scan of `wiki/` and `Claude-council/` for both names, the plan filename, and the meeting vocabulary returns **zero hits**. `git check-ignore` confirms the destination is ignored.
+
+**⚠ What this does NOT fix — the published git history.** `efbwebshare/content/state.md` and `content/log.md` were committed with the names and pushed to `github.com/OsandaC/efb-dengue-wiki` over several months. Rebuilding removes the material from the served site; it does **not** remove it from that repo's history. This wiki repo has no remote, so its own history is not exposed. Raised as an open Watch Item with three options (leave if the repo is private — unverified; make it private; rewrite history), **none taken** — it is a curator decision and history rewriting breaks existing clones.
+
+**Standing-rule candidate raised:** personal, meeting or third-party content goes to `_private/` at the moment it is written, never into `wiki/`. Not yet in CLAUDE.md — that needs the `CLAUDE_GOVERNANCE.md` checklist.

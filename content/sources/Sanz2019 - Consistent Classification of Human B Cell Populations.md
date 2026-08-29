@@ -9,7 +9,7 @@ citations_semantic_scholar: 480
 citations_crossref: 539
 citations_retrieved: 2026-08-18
 created: 2026-08-18
-updated: 2026-08-18
+updated: 2026-08-28
 ---
 
 # Sanz2019 - Consistent Classification of Human B Cell Populations
@@ -76,7 +76,9 @@ It proposes a **7-marker core panel** and a canonical phenotype table covering e
 
 ## Methods Used
 
-[[Conventional Flow Cytometry]], [[Spectral Flow Cytometry]], [[Bm Classification]], [[FACS Sorting]], [[Compensation and FMO Controls]]
+[[Conventional Flow Cytometry]], [[Bm Classification]]
+
+*Also discussed but not separately updated: [[Spectral Flow Cytometry]], [[FACS Sorting]], [[Compensation and FMO Controls]] — trimmed 2026-08-28. The review reports no methods of its own (every figure is adapted from prior work) and the PDF contains no mention of spectral cytometry, compensation or FMO controls at all; the single "flow sorted" reference sits in a figure legend adapted from [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]. The panel-design content it does carry is propagated to [[Conventional Flow Cytometry]].*
 
 ## Entities Mentioned
 

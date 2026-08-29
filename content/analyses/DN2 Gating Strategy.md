@@ -2,7 +2,7 @@
 type: analysis
 tags: [flow-cytometry, DN2, gating-strategy, panel-design, extrafollicular, dengue]
 created: 2026-05-20
-updated: 2026-06-27
+updated: 2026-08-29
 ---
 
 # DN2 Gating Strategy for Dengue EF B Cell Identification
@@ -10,6 +10,8 @@ updated: 2026-06-27
 ## Research Question
 
 What is the optimal gating strategy to isolate DN (IgD⁻CD27⁻) B cells and DN2-phenotype (CD21⁻CD11c⁺) B cells from dengue patient whole-blood leukocytes (RBC-lysed whole blood, not Ficoll-separated PBMCs) using the curator's fixed 11-color panel?
+
+> **★ [2026-08-28] What this panel can be said to identify — a constraint on the page title itself.** The heading calls this "EF B Cell Identification." A twelve-author consensus Perspective (Ignacio Sanz among them) now holds that *"currently there are no flow cytometry-based means alone that can distinguish EF B cells nor their progeny from activated cells in earlier phases,"* and that "extrafollicular" *"should be avoided unless proliferation of antigen-specific B cells outside of a follicle is observed"* — applying it by name to this cell: *"the EF designation of this human DN2 cell refers to its **presumed GC-independent origin rather than its location**"* (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, no primary data). **Nothing in the gating below changes.** What changes is what the output may be called: this panel identifies a **DN2-phenotype population whose origin is inferred to be GC-independent**, not an extrafollicular response. The same source adds a second caution that bites directly on this gate — CD21ˡᵒ/CXCR5⁻/CD11c⁺ *"could indicate recent B cell activation rather than a permanent state"* — so a single acute-timepoint frequency cannot separate a differentiation state from an activation state; serial sampling across fever days is the discriminator, and acute dengue is one of the few settings that permits it. See [[GC-Independent Response]].
 
 ## Sources Used
 
@@ -19,6 +21,8 @@ What is the optimal gating strategy to isolate DN (IgD⁻CD27⁻) B cells and DN
 - [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]] — formal DN2 definition (CXCR5⁻CD21⁻CD11c⁺CD19ʰⁱ)
 - [[Sanz2025 - Human Atypical B Cells Overview]] — IgD audit criterion and DN nomenclature recommendations
 - [[Singh2026 - DENV-Specific Memory B Cell Subsets]] — dengue panel lacking CD11c/CXCR5 (negative example of incomplete DN resolution)
+- [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective: no flow panel alone establishes an EF response; claim GC-independence, not location; CD21ˡᵒ/CD11c⁺ may report recent activation
+- [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]] — gates DN on **CXCR5 × CD11c with no CD21**; the orthogonal-axis problem for DN1–DN4 mapping, and the source of the DN4 = CXCR5⁺CD11c⁺ assignment
 
 ## Panel
 
@@ -65,7 +69,7 @@ The CD21 **resting (CD21⁺) / activated (CD21⁻)** split applies across the wh
 
 **Terminal populations isolated (9):** Plasmablasts · Naïve · Unswitched memory · Resting sM · Activated sM · DN1-like · transitional-DN (CD21⁺CD11c⁺) · DN2-phenotype/ABC · DN3-like.
 
-**Cuts:** IgD/CD27/CD21/CD11c boundaries are FMO-anchored from the HT82 worked example — IgD<1.98, CD27<1.76, CD21<0.69, CD11c>0.72 (arcsinh/500), see [[Compensation and FMO Controls]]. The four definitional overlaps to avoid double-counting are resolved in [§ Reconciling the Expanded Gating Tree](#reconciling-the-expanded-gating-tree-4-overlaps).
+**Cuts:** ⚠ **Numeric cut values are not maintained in this wiki.** Boundary placement for the curator's own panel is owned by the `FlowCyto Analysis 1/` project, which holds the current locked values and their provenance. This page defines the *structure* of the gating tree — which markers split which populations, and in what order — not the numbers, and no figure should be quoted from here as an operational threshold. The FMO-anchoring principle itself is at [[Compensation and FMO Controls]]. *(Scope boundary set 2026-08-29 — see Decisions in `state.md`.)* The four definitional overlaps to avoid double-counting are resolved in [§ Reconciling the Expanded Gating Tree](#reconciling-the-expanded-gating-tree-4-overlaps).
 
 ### Gating Hierarchy
 
@@ -204,6 +208,23 @@ This is the same limitation Ansari et al. 2025 had. In SLE, Jenks2018 showed >90
 
 All reporting should use "DN2-phenotype" throughout, following Ansari2025 precedent.
 
+### ★ [2026-08-28] The published DN1–DN4 scheme is on a different axis from this panel's 2×2
+
+This is not a "missing marker" problem, and the entry it replaces in *What This Panel Cannot Resolve* stated it wrongly in shape. [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]] — the primary behind the DN1–DN4 nomenclature — gates the DN pool on **CXCR5 × CD11c, with no CD21 in the panel at all**:
+
+| | CD11c⁻ | CD11c⁺ |
+|---|---|---|
+| **CXCR5⁺** | DN1 | DN4 ⚠ |
+| **CXCR5⁻** | DN3 | DN2 |
+
+This panel's Step 6 gates **CD21 × CD11c**. The two schemes partition the same IgD⁻CD27⁻ pool along different axes, so **adding CXCR5 to a CD21-based 2×2 would not recover DN1–DN4** — it would produce a third partition. Three consequences that matter for reporting:
+
+- **DN4 has no cell anywhere in this panel's tree.** Its CD21 status is unmeasured in the source, so a CXCR5⁺CD11c⁺ cell lands in either the **DN2-phenotype** gate or the **transitional-DN** gate depending on a value nobody has published. **The pilot's DN2-phenotype gate may therefore contain DN4 cells**, and there is currently no way to bound that fraction.
+- **"DN3-like" here matches the Emory DN3, by construction only.** Sanz/Emory define DN3 as CD11c⁻**CD21**⁻ (see [[Woodruff2020 - EF B Cell Responses in COVID-19]]); Pillai/Ragon define it as **CXCR5**⁻CD11c⁻. Neither panel contains the other's discriminating marker, and **no published study has run both axes on the same sample** — so whether CXCR5⁻ and CD21⁻ select the same cells within the CD11c⁻ DN pool is an untested assumption underlying every cross-study DN3 comparison in this wiki. Recorded on [[DN3 B Cell]] Contradictions.
+- **⚠ DN4's phenotype is itself contested.** The quadrant above is this paper's own gating (Fig. 1B/1C, confirmed by the tissue marker-validation panel Fig. 6C). [[Lamprinou2026 - ABCs and DN B Cells]] relays DN4 as CXCR5⁺**CD11c⁻** — which would make it indistinguishable from DN1. Recorded as an open contradiction on [[Double-Negative B Cell]]; not resolvable without ingesting Szelinski 2022 or Sachinidis.
+
+**The reconciliation is within reach on the curator's own bench:** [[B Cell Panel Variant 1]] Panel 4 carries **CXCR5, CD21, CD11c and T-bet together**, and would produce the first direct measurement of how the two axes correspond.
+
 ### Council-Identified Risks and Mitigations
 
 #### MAJOR: PE-Cy7 → PE Spectral Spread (Methodology Critic)
@@ -246,7 +267,7 @@ Tight lymphocyte morphological gates exclude activated B cell blasts (larger, mo
 | Gap | Missing marker | Impact |
 |---|---|---|
 | Formal DN2 confirmation | CXCR5, T-bet, FCRL5 | Must use "DN2-phenotype" terminology |
-| DN1 vs DN3 distinction | CXCR5 | Both are CD21⁺ or CD21⁻ but CXCR5⁺ vs CXCR5⁻ |
+| DN1–DN4 subset assignment | CXCR5 | **Not a missing-marker gap but an orthogonal-axis gap — see the note below.** The published DN1–DN4 scheme partitions DN on CXCR5 × CD11c; this panel partitions it on CD21 × CD11c. Adding CXCR5 to this 2×2 does not recover DN1–DN4; the two schemes cut the same DN pool differently |
 | Isotype within DN2 | IgM, IgG, IgA | Cannot determine class-switch status |
 | Proliferative status | Ki-67 | Cannot assess active cycling |
 | CD27 shedding vs true DN | sCD27 or secondary marker | Cannot distinguish loss from absence |
@@ -266,6 +287,8 @@ Tight lymphocyte morphological gates exclude activated B cell blasts (larger, mo
 - Does the CD21⁻/CXCR5⁻ concordance established in SLE (Jenks2018, <5–10% discordance) hold in acute dengue? This determines whether "DN2-phenotype" approximates true DN2.
 - How much CD27 shedding occurs in acute dengue? Elevated sCD27 would inflate apparent DN frequencies. No dengue study in the wiki quantifies this.
 - Can a second-tube validation panel (adding CXCR5, T-bet intracellular, IgM, IgG) be run on a subset of samples to calibrate the primary panel's DN2 purity?
+- **★ Do CXCR5⁻ and CD21⁻ select the same cells within the CD11c⁻ DN pool?** No published study has run both axes on one sample, yet every cross-study DN3 comparison in this wiki assumes they do. [[B Cell Panel Variant 1]] Panel 4 could answer it directly — the highest-value reconciliation currently in reach.
+- What fraction of this panel's DN2-phenotype gate is DN4 (CXCR5⁺CD11c⁺)? Unbounded at present, because DN4's CD21 status has never been published.
 - Is the DN2-phenotype:DN1-like ratio informative of disease severity in dengue, as it is in SLE (Jenks2018) and COVID-19 (Woodruff2020)?
 - Does the DN2-phenotype expansion track with days post-fever-onset, paralleling or preceding the plasmablast wave?
 

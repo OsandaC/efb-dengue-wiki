@@ -2,7 +2,7 @@
 type: analysis
 tags: [audit, external-citations, lint, quality-control]
 created: 2026-05-08
-updated: 2026-08-27
+updated: 2026-08-29
 ---
 
 # External Citation Audit
@@ -358,6 +358,9 @@ Each entry lists: citation as it appears, DOI (where found), the ingested source
 **Cited via:** [[Sanz2025 - Human Atypical B Cells Overview]]
 **Wiki locations:**
 - [[Extrafollicular Response]] — line 37
+- [[Why DN B Cells Matter - Disease Relevance and Infectious Disease Case]] — § endotype prognostic content (as "Jenks 2021 / Faliti 2024")
+
+> **⚠ [2026-08-29] NOT the ingested Jenks2021.** This entry is the *JCI* paper on B cell endotypes in SLE. [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]] (*Ann Rheum Dis* 2021;80:1190–1200, DOI `10.1136/annrheumdis-2021-220349`) is a **different** Sanz-lab 2021 paper, on cutaneous lupus, and is now ingested. The titles are similar and both are Sanz-lab 2021 — **the ingest does not resolve this audit entry, and the DOI above still needs verification.**
 
 ---
 
