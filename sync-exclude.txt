@@ -1,2 +1,5 @@
 .obsidian\
 .DS_Store
+state.md
+state-archive.md
+log.md
