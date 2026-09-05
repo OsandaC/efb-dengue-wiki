@@ -4,6 +4,14 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    # Majors are taken by hand, never auto-proposed. On 2026-09-05 a grouped
+    # major (js-yaml 4 -> 5) broke the Cloudflare build: js-yaml 5 has no
+    # default export and Quartz v4.5.2 imports it as one. Scoped to
+    # semver-major, so patch/minor updates (incl. security patches within the
+    # current major) still flow automatically.
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
     groups:
       production-dependencies:
         applies-to: "version-updates"
