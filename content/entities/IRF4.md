@@ -2,8 +2,8 @@
 type: entity
 tags: [transcription-factors, IRF4, plasma-cell-differentiation, DN2, extrafollicular]
 created: 2026-05-02
-updated: 2026-08-16
-sources: 6
+updated: 2026-09-04
+sources: 8
 ---
 
 # IRF4
@@ -25,6 +25,10 @@ IRF4 (Interferon Regulatory Factor 4) is a transcription factor essential for pl
 - **Intermediate IRF4 marks the tripotent activated precursor — the pre-GC branch point.** Activated B cells at the follicular perimeter acquire a surface phenotype coexpressing naive/memory markers (CD38, CCR6) and activated/GC markers (CD95, GL7), express **intermediate levels of IRF4**, and exhibit absent or low [[Bcl-6|BCL6]]. IRF4 "is required for both PC and GC B cell differentiation," so its intermediate level is characteristic of the uncommitted precursor rather than of either destination (see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review, **no original data**, mouse). This precursor is tripotent — a single naive B cell can give rise to early plasma cells, [[Early Memory B Cell|early memory B cells]], and GC B cells.
 - **⚠ Note the unresolved tension the wiki already tracks.** [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]] found IRF4 (with *PRDM1* and *XBP1*) **not** upregulated in human atBC clusters, whereas [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]] reports a high IRF4/low IRF8 ratio in DN2. Glaros2025 cites primaries reporting PC-associated gene expression in ABCs, and attributes the contrary functional literature partly to soluble-antigen stimulation artefact — see [[DN2 B Cell]] Contradictions.
 
+- **IRF4 induction is IFN-γR-dependent but T-bet-independent.** In mouse Be1 cultures, deleting *Tbx21* did **not** alter early expression or activity of any canonical ASC transcription factor including *Irf4*; deleting *Ifngr1* kept *Irf4* low through day 4 alongside *Prdm1*, *Pou2af1* and *Xbp1*, with no ASC formation (see [[Stone2019 - T-bet Promotes ASC Differentiation by Limiting IFN-gamma Inflammation]], mouse, qPCR + RNA-seq + ATAC-seq). Stone's framing places IRF4 with Blimp-1 as a genuine master regulator of ASC development, in explicit contrast to T-bet, which "is not." Relevant to the *PRDM1*/*XBP1*/*IRF4* trio that [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]] found un-upregulated in resting human atBCs — see [[BLIMP-1]] Contradictions.
+
+- **★ IRF4 tracks the pre-ASC → ASC transition reciprocally with T-bet, and its motifs open before IL-21 arrives.** The IFN-γ-induced pre-ASC is **T-bet^hi^IRF4^int^**, and the ASC it becomes is **T-bet^lo^IRF4^hi^** — so IRF4 rises as T-bet falls across the final differentiation step. IRF4 upregulation was **blocked by omitting IFN-γ** along with T-bet. Critically, ATAC-seq at day 3 showed chromatin around **IRF4 and BLIMP1 binding motifs already highly enriched** in the IFN-γ+IL-2 condition — the ASC-commitment factors were remodelling the genome **before IL-21 was ever added**; IRF4 motifs were among those marking the 4 DARs at the *PRDM1* locus (see [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]], human, n=20 HD + n=40 SLE + in vitro reconstruction, ATAC-seq n=2/group).
+
 ## Contradictions & Debates
 
 None documented in current wiki sources.
@@ -39,3 +43,5 @@ None documented in current wiki sources.
 - [[Scharer2019 - Epigenetic Programming in SLE B Cells]]
 - [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]
 - [[Glaros2025 - Multilayered Identity of B Cell Memory]]
+- [[Stone2019 - T-bet Promotes ASC Differentiation by Limiting IFN-gamma Inflammation]] — IRF4 induction is IFN-γR-dependent, T-bet-independent (mouse)
+- [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]] — T-bet^hi^IRF4^int^ pre-ASC → T-bet^lo^IRF4^hi^ ASC; IRF4 motifs open pre-IL-21

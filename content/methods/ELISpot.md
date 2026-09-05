@@ -2,8 +2,8 @@
 type: method
 tags: [ELISpot, antibody-secreting-cells, ASC-quantification, antigen-specific, functional-assay]
 created: 2026-05-02
-updated: 2026-08-16
-sources: 8
+updated: 2026-09-05
+sources: 11
 ---
 
 # ELISpot
@@ -28,6 +28,12 @@ ELISpot provides functional single-cell resolution that flow cytometry cannot �
 - **DENV-specific plasmablast quantification by ELISpot in acute dengue:** UV-inactivated DENV-1 (Hawaii), DENV-2 (16681), and DENV-3 (H87) whole virus particles were used as capture antigens. PBMC plated without prior stimulation (spontaneous secretion). Secondary DFC patients (n=9) had ~40,000 DENV-3-reactive IgG spots per 10⁶ PBMC (72% of all IgG spots); healthy naive had zero DENV-reactive spots. Cross-serotype testing (n=14) showed plasmablasts reacted with all three serotypes but with 3-fold preference for the infecting serotype (DENV-3, p<0.01). Minor influenza virus reactivity (520 spots/10⁶ PBMC, 0.7% of IgG ASCs) was also detected. Cryopreserved PBMC validated for this assay (see [[GarciaBates2013 - Plasmablast Response and Dengue Severity]], adapted from Crotty et al. 2003).
 - **ELISpot used to establish murine ABC cytokine output ex vivo.** On TLR7/9 activation, ABCs produce higher IFN-γ and exceptionally high IL-10 than follicular B cells, confirmed by transcriptional array plus ELISpot (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse).
 
+- **ELISPOT used as an orthogonal check on flow-defined ASC frequencies.** Stone enumerated antibody-secreting cells by **both** CD138⁺CD93⁺ flow cytometry and ELISPOT on sort-purified subsets, plus a bulk antibody secretory rate (ng/hour/10⁶ cells) from re-cultured cells — three readouts agreeing that the CD138⁺CD93⁺ double-positive fraction contains the secreting cells (see [[Stone2019 - T-bet Promotes ASC Differentiation by Limiting IFN-gamma Inflammation]], mouse, in vitro, 7 independent experimental samples/group). *Ex vivo* ELISPOT on bone marrow and lymph node quantified antigen-specific IgG, IgG1, IgG2b and IgG2c ASCs after influenza, resolving an **isotype-selective** defect (IgG2c lost, IgG2b intact) that a total-IgG readout would have missed. Worth noting for panel design: a subclass-resolved ELISPOT detected a phenotype invisible to bulk titre.
+
+- **A deliberately short 6-hour IgG ELISPOT, used to count only actively secreting cells.** Serially diluted B cells were transferred **directly** onto anti-human-IgG-coated plates for **6 hr** (not overnight), detected with alkaline-phosphatase-conjugated anti-human IgG and BCIP/NBT substrate, read on a **CTL ELISPOT reader** with correction for non-specific background (see [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]], human, n=20 HD + n=40 SLE + in vitro reconstruction). The short incubation matters for interpretation: it enumerates cells already secreting at the moment of transfer rather than cells that differentiate during the assay, which is what makes the 2.5-day DN2-versus-naive comparison a measure of **pre-existing** secretory capacity.
+
+- **★ A paired media-only vs R848 design that separates constitutive from TLR-inducible antibody secretion.** Plates were coated with **sonicated cell lysate from LCMV-infected BHK-21 cells** rather than a purified antigen; sorted B cell subsets were plated **in media alone overnight, or with R848 (10 ng/mL) for 72 hours**, then developed with alkaline-phosphatase-conjugated anti-mouse IgG and Vector Blue and read on an ImmunoSpot analyser **or counted blinded** (see [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], mouse, LCMV-Armstrong). The two arms are what allowed the authors to place T-bet⁺CD11c⁺ cells **between** memory B cells (TLR-dependent) and plasma cells (TLR-independent) — a distinction a single-condition ELISpot would have missed entirely. The same paired layout was used for anti-dsDNA and anti-chromatin autoreactivity.
+
 ## Contradictions & Debates
 
 None documented in current wiki sources.
@@ -46,3 +52,6 @@ None documented in current wiki sources.
 - [[GarciaBates2013 - Plasmablast Response and Dengue Severity]]
 - [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]]
 - [[Cancro2020 - Age-Associated B Cells]]
+- [[Stone2019 - T-bet Promotes ASC Differentiation by Limiting IFN-gamma Inflammation]] — ELISPOT as orthogonal ASC check; subclass-resolved ex vivo ELISPOT
+- [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]] — 6-hour direct-transfer IgG ELISPOT — counts pre-existing secretors
+- [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]] — paired media-only vs R848 arms separate constitutive from TLR-inducible secretion; viral-lysate capture

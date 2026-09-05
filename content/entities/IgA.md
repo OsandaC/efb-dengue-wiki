@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, immunoglobulin, isotype, mucosal-immunity, class-switch-recombination]
 created: 2026-05-02
-updated: 2026-08-28
-sources: 10
+updated: 2026-09-04
+sources: 11
 ---
 
 # IgA
@@ -27,6 +27,8 @@ IgA is the predominant immunoglobulin isotype at mucosal surfaces. In peripheral
 
 - **IgA appears in Table 1 only as part of the undifferentiated "IgM/IgG/IgA⁺" annotation on the DN1 and DN2 rows** — the third, FcRL4⁺ DN row carries no isotype annotation at all — and IgA is classed as an additional rather than a core marker. The review offers no IgA-specific claim about the DN or atypical compartment — recorded here so the absence is on the record rather than inferred (see [[Sanz2019 - Consistent Classification of Human B Cell Populations]], review — **no original data**).
 
+- **A measured negative: monocyte-driven differentiation raises IgG and IgM but not IgA.** DENV-infected monocytes stimulated "secretion of IgG and IgM (**but not IgA**) to a level significantly higher than that of MDDCs or controls" in a 6-day coculture with resting allogeneic CD19⁺ B cells; IgA titres were assayed on day 6 in the same wells, so this is a measured negative rather than an unreported isotype (see [[Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue]], in vitro, 4 independent experiments with 4 healthy blood donors). Consistent in direction with IgA being a quantitatively minor output of the acute dengue plasmablast wave in vivo (~100-fold below IgG, [[Wrammert2012 - Plasmablast Responses in Acute Dengue]]). **Scope limit:** the only added signals were IL-2, CpG and the infected monocyte — the study tested no IgA-inducing condition, so this is a negative for that condition and not a statement about IgA switching capacity.
+
 ## Contradictions & Debates
 
 None documented in current wiki sources.
@@ -45,3 +47,4 @@ None documented in current wiki sources.
 - [[Lamprinou2026 - ABCs and DN B Cells]]
 - [[Glaros2025 - Multilayered Identity of B Cell Memory]]
 - [[Sanz2019 - Consistent Classification of Human B Cell Populations]]
+- [[Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue]] — IgG and IgM but not IgA from monocyte-driven B cell differentiation (measured negative)

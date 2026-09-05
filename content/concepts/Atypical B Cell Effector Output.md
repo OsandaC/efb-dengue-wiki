@@ -2,8 +2,8 @@
 type: concept
 tags: [effector-function, cytokines, antigen-presentation, asc, autoantibody, evidence-gap]
 created: 2026-08-18
-updated: 2026-08-29
-sources: 15
+updated: 2026-09-04
+sources: 16
 ---
 
 # Atypical B Cell Effector Output
@@ -71,6 +71,9 @@ Four candidate effector routes appear in the literature: **antibody-secreting-ce
 - **[2026-08-29] The effector subsets move as one coordinated family, and that coordination is what stratifies patients.** Unsupervised hierarchical clustering of 253 subjects on B cell subset frequency alone resolved five patient groups, built from three co-varying families — early, memory, and **effector (activated naive, DN2, DN3, plasmablasts)**. Healthy donors fell **exclusively** into the two memory/early-dominant clusters; SLE patients concentrated in the effector-dominant clusters, with only 15–16% appearing healthy-like. The effector programme is therefore legible at the level of *composition*, without any functional or secretory assay (see [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]], n=207 patients + 46 healthy controls, cross-sectional, 8-marker conventional flow).
 - **[2026-08-29] Effector-subset magnitude tracked more autoantibody, but the paper does not connect a subset to a specificity.** Cutaneous-lupus patients with the effector-high profile carried more historical ANA, anti-dsDNA, anti-Ro and anti-La, more contemporaneous anti-dsDNA and anti-chromatin, and higher anti-RNP and anti-Ro52 titres than those with healthy-like profiles. **No cell-level link was tested** — this is a between-patient association between composition and serum, with no sorting, no BCR sequencing and no ASC assay (see [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]], n=69 primary CCLE). Relevant as a design template for the `bridge-wiki/` cells→autoantibody thesis, and as a warning about what this design cannot establish.
 
+- **★ The brake-release model of effector output.** The question this page tracks — whether atypical B cells can produce antibody-secreting output, and under what conditions — gains a candidate mechanism. In mouse Be1 cultures, terminal differentiation is gated not by whether the PC transcription-factor programme can be induced (IFN-γR signalling does that, T-bet-independently) but by whether the **IFN-γ-induced inflammatory programme is switched off in time**. T-bet's function is to switch it off; sustained NF-κB or TLR7/9 signalling in wild-type cells is **sufficient** to block ASC formation (see [[Stone2019 - T-bet Promotes ASC Differentiation by Limiting IFN-gamma Inflammation]], mouse, in vitro + ATAC-seq/RNA-seq). Effector output on this model is a **timing and restraint** problem, not a capacity problem — which is consistent with the wiki's "conditional capacity" position and specifies a different condition than antigen-presentation form.
+- **Output requirements and persistence requirements dissociate.** Inducible deletion of T-bet from established memory B cells left the memory pool numerically intact over 10 days but cut antigen-specific ASC recall **~10-fold** after heterologous challenge (see [[Stone2019 - T-bet Promotes ASC Differentiation by Limiting IFN-gamma Inflammation]], mouse). Whether the atypical/DN2 pool shows the same dissociation — persisting on one transcriptional programme and secreting on another — is untested and is a live question for interpreting dengue convalescent timepoints.
+
 ## Contradictions & Debates
 
 **Is the effector route plasma cell or antigen presentation?** [[Glaros2025 - Multilayered Identity of B Cell Memory]] names this as unresolved. The wiki's evidence is lopsided: the ASC route has human primary data from two independent groups; the APC route has three review assertions and one surface-marker measurement. This is an evidence asymmetry, not a resolved question — do not write as though the ASC route is established *to the exclusion of* the APC route.
@@ -99,3 +102,4 @@ Four candidate effector routes appear in the literature: **antibody-secreting-ce
 - [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]
 - [[Beckers2023 - Origins and Functions of DN B Cells]]
 - [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]]
+- [[Stone2019 - T-bet Promotes ASC Differentiation by Limiting IFN-gamma Inflammation]] — brake-release model of ASC output; output vs persistence dissociation

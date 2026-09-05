@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, Fc-receptor-homologs, FCRL5, DN2, atypical-b-cells, BCR-signalling]
 created: 2026-05-02
-updated: 2026-08-28
-sources: 5
+updated: 2026-09-05
+sources: 7
 ---
 
 # FCRL5
@@ -30,6 +30,10 @@ FCRL5 (Fc Receptor-Like 5; also FcRH5) is a member of the Fc receptor-like famil
 
 - **★ FcRL5 is the SLE pole of the reciprocal FcRL4/FcRL5 split — the review's central evidence that "atypical B cell" names more than one cell.** Across DN B cells from RA, SLE, scleroderma and acute and chronic HIV, **FcRL5 is high in SLE but not in HIV**, exactly mirroring [[FcRH4|FcRL4]], which is high in HIV (~21.1% of DN2-gated cells) and near-absent in SLE (~0.74%). Table 1 gives DN2 as FcRL5⁺ and DN1 as FcRL5⁻, and FcRL5⁺ is part of the phenotype induced in vitro by TLR7 + IFN + IL-21 (see [[Sanz2019 - Consistent Classification of Human B Cell Populations]], review — **no original data**, figure adapted from [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]). See [[Atypical B Cell]], [[Double-Negative B Cell]].
 
+- **FcRL5 is co-induced with CD11c and T-bet by the DN2-generating cocktail.** SLE patient naive B cells stimulated with the full cocktail were **85% FcRL5⁺** at day 6 alongside 95% CD11c⁺; in patient blood, DN2 cells uniformly expressed **high FcRL5 and high CD19** while DN1 cells did not (see [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]], human, n=20 HD + n=40 SLE + in vitro reconstruction). FcRL5 therefore behaves as part of an inducible IFN-γ-driven module rather than an independent lineage marker — relevant to the [[Sanz2019 - Consistent Classification of Human B Cell Populations]] observation that FcRL5 and FcRL4 are reciprocally expressed between SLE and HIV DN cells.
+
+- ***Fcrl5* belongs to the three-gene signature separating T-bet⁺CD11c⁺ B cells from GC B cells in mouse.** Sorted-population RNA-seq at day 12 found ***Itgax*, *Tbx21* and *Fcrl5* lower in GC B cells**, the reciprocal of the GC genes *Bcl6*, *S1pr2* and *Aicda* being downregulated in the T-bet⁺ population (see [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], mouse, LCMV-Armstrong, sorted RNA-seq, 3 sorts pooling 4–6 spleens). FCRL5 therefore tracks the GC-independent fate in an **acute resolving viral infection**, not only in the chronic-infection and autoimmune settings this page's other sources cover.
+
 ## Contradictions & Debates
 
 None documented in current wiki sources.
@@ -43,3 +47,5 @@ None documented in current wiki sources.
 - [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]
 - [[Glaros2025 - Multilayered Identity of B Cell Memory]]
 - [[Sanz2019 - Consistent Classification of Human B Cell Populations]]
+- [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]] — FcRL5 co-induced with CD11c/T-bet (85% FcRL5⁺ in vitro)
+- [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]] — *Fcrl5* separates GC-independent T-bet⁺CD11c⁺ cells from GC B cells in acute viral infection

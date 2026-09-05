@@ -2,8 +2,8 @@
 type: method
 tags: [FACS-sorting, cell-sorting, flow-cytometry, BCR-sequencing, B-cell-subsets]
 created: 2026-05-02
-updated: 2026-08-28
-sources: 14
+updated: 2026-09-05
+sources: 16
 ---
 
 # FACS Sorting
@@ -34,6 +34,10 @@ Fluorescence-activated cell sorting (FACS sorting) uses the same principles as a
 - **[2026-08-27] Sorting four DN subsets for bulk RNA-seq — a practical input-scale reference.** **30 million fresh PBMCs**, stained within 2 h of isolation, Fc-blocked (human TruStain FcX, 10 min RT), two-step surface stain (CXCR5 at 37 °C first, remaining markers at 4 °C, 30 min each), SYTOX AADvanced added immediately before sorting for dead-cell exclusion. Sorted on a **BD Aria II SORP** into **RLT Plus buffer with β-mercaptoethanol** to preserve RNA, stored at −80 °C. Four populations (DN1–DN4) were recovered per donor from this input, sufficient for SMART-Seq2 libraries at ~10 M reads each (n=4 donors) (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], methods). See [[RNA Sequencing]].
 - **[2026-08-27] Compensation and tracking controls for a sort of this size:** VersaComp antibody-capture beads for compensation, Rainbow 8-peak calibration beads to hold signal consistent across sorting batches (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]]).
 
+- **Sorting is what makes the in vitro system interpretable — three distinct sorts in one study.** (1) Day-6 **IgD^neg^CD27^neg^ B_DN_** cells sort-purified out of Th1 and Th2 co-cultures for RNA-seq; (2) **10,000 cells per condition** sorted as ATAC-seq input; (3) SLE patient subsets sorted into **T-bet^hi^ DN2, T-bet^lo^ B_N_, DN1 memory and conventional switched memory** for the head-to-head differentiation assay. Sorted on a **FACSAria** (see [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]], human, n=20 HD + n=40 SLE + in vitro reconstruction). The third sort is what licenses the paper's strongest claim — that DN2 cells give ≥50-fold more ASCs than naive cells — because bulk culture could not have separated those starting populations.
+
+- **Sort buffer chosen by downstream assay, and magnetic pre-enrichment before the sorter.** In Song2022 CD4 T cells were first enriched by **magnetic negative selection** (EasyStep) before surface staining and sorting on a FACSAria; cells for **adoptive transfer** were sorted into complete RPMI and washed into sterile PBS, while cells for **RNA and Ig sequencing were sorted directly into RNAprotect Cell Reagent**. For RNA-seq, **three separate sorts were performed on different days, each pooling the spleens of four to six mice** per timepoint — the replicate structure behind every transcriptomic claim in the paper (see [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], mouse, LCMV-Armstrong + influenza PR8).
+
 ## Contradictions & Debates
 
 None documented in current wiki sources.
@@ -55,3 +59,5 @@ None documented in current wiki sources.
 - [[Glaros2025 - Multilayered Identity of B Cell Memory]]
 - [[Cancro2020 - Age-Associated B Cells]]
 - [[Wang2006 - Flavivirus Activation of pDCs and TLR7 Signaling]]
+- [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]] — three-way sorting design (RNA-seq input, 10k-cell ATAC-seq input, SLE subset comparison)
+- [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]] — negative pre-enrichment before sorting; sort buffer matched to downstream assay; 3 sorts pooling 4–6 spleens

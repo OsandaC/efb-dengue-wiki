@@ -14,7 +14,9 @@ updated: 2026-08-18
 
 # Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation
 
-> **⚠ PARTIAL INGEST [2026-08-18]:** Curator directed a rough sweep ("sweep it roughly for now"). Pages 1–19 of 36 were read in full — abstract, all Results (Figures 1–8), and the first part of the Discussion. The remainder of the Discussion, the Materials and Methods, and the reference list were **not read**. Claims below trace to the figures and text actually read. Complete the ingest before treating the Methods detail as covered.
+> **✅ INGEST COMPLETED [2026-09-04].** The partial-ingest banner is lifted. Pages 1–19 were read 2026-08-18 (abstract, all Results, first part of Discussion); **pp. 19–36 were read 2026-09-04** — the remainder of the Discussion and the full Materials and Methods — during the C1 propagation repair, which needed the Methods to adjudicate the method-page targets honestly. Methods detail is now propagated to [[Conventional Flow Cytometry]], [[FACS Sorting]], [[RNA Sequencing]], [[ATAC-seq]], [[ELISpot]], [[In Vitro B Cell Stimulation]], [[T-B Coculture Assay]] and [[Phospho-Flow Cytometry]].
+>
+> **⚠ One unresolved oddity.** Materials and Methods describes a **mouse arm** — Yaa.*Fcgr2b*^−/−^ lupus-prone mice ± B-cell-restricted T-bet deficiency, µMT bone-marrow chimeras, HEp-2 ANA immunofluorescence, and urinary albumin:creatinine for nephritis — but **Figures 1–8 are entirely human and no main-text mouse figure exists**. The Discussion's "our data show that deletion of… T-bet in B lineage cells prevents autoAb responses in a mouse model" most likely refers to the group's prior work or to data not shown. **No mouse claim from this paper has been propagated**, and none should be without locating the figure.
 
 **Full citation:** Zumaquero, E., Stone, S. L., Scharer, C. D., Jenks, S. A., Nellore, A., Mousseau, B., Rosal-Vela, A., Botta, D., Bradley, J. E., Wojciechowski, W., Ptacek, T., Danila, M. I., Edberg, J. C., Bridges, S. L., Jr., Kimberly, R. P., Chatham, W. W., Schoeb, T. R., Rosenberg, A. F., Boss, J. M., Sanz, I., & Lund, F. E. (2019). IFNγ induces epigenetic programming of human T-bet^hi^ B cells and promotes TLR7/8 and IL-21 induced differentiation. *eLife, 8*, e41641. https://doi.org/10.7554/eLife.41641
 
@@ -92,16 +94,19 @@ The central mechanistic result is that **IFN-γ acts as a licensing signal durin
 
 ## Methods Used
 
-[[Conventional Flow Cytometry]], [[FACS Sorting]], [[RNA Sequencing]], [[ATAC-seq]], [[ELISpot]], [[In Vitro B Cell Stimulation]], [[T-B Coculture Assay]], [[Phospho-Flow Cytometry]], [[Serum Proteomics]]
+[[Conventional Flow Cytometry]], [[FACS Sorting]], [[RNA Sequencing]], [[ATAC-seq]], [[ELISpot]], [[In Vitro B Cell Stimulation]], [[T-B Coculture Assay]], [[Phospho-Flow Cytometry]]
 
+*Also discussed but not separately updated — trimmed 2026-09-04:* [[Serum Proteomics]] — **mis-filed at ingest.** The plasma cytokine work used a **Milliplex MAG multiplex bead immunoassay**, not the LC-MS/MS antibody-sequencing method that [[Serum Proteomics]] describes. The cytokine findings are propagated to [[TNF-alpha]] instead.
 ## Entities Mentioned
 
-[[IFN-gamma]], [[Type I Interferon]], [[TLR7]], [[TLR9]], [[IL-21]], [[IL-21R]], [[T-bet]], [[IRF4]], [[BLIMP-1]], [[CD11c]], [[FCRL5]], [[CXCR5]], [[CXCR3]], [[CD21]], [[CD19]], [[CD27]], [[CD38]], [[IgD]], [[BAFF]], [[STAT3]], [[TNF-alpha]], [[DN2 B Cell]], [[Double-Negative B Cell]], [[Activated Naive B Cell]], [[Plasmablast]], [[Atypical B Cell]], [[Switched Memory B Cell]]
+[[IFN-gamma]], [[Type I Interferon]], [[TLR7]], [[TLR9]], [[IL-21]], [[IL-21R]], [[T-bet]], [[IRF4]], [[BLIMP-1]], [[CD11c]], [[FCRL5]], [[CXCR5]], [[CD21]], [[CD19]], [[CD27]], [[CD38]], [[IgD]], [[BAFF]], [[STAT3]], [[TNF-alpha]], [[DN2 B Cell]], [[Double-Negative B Cell]], [[Plasmablast]], [[Atypical B Cell]], [[Switched Memory B Cell]]
 
+*Also discussed but not separately updated — trimmed 2026-09-04:* [[CXCR3]], [[Activated Naive B Cell]] — CXCR3 antibodies appear in the flow panel but the paper reports no CXCR3 result for any subset — the CXCR3-relevant finding here is the plasma **CXCL10** correlation, which is recorded on [[TNF-alpha]] with the other cytokine correlates. Activated naive B cells are never gated or named: the study takes bulk naive B cells to an IgD⁻CD27⁻ product without characterising an IgD⁺ activated intermediate, so nothing here bears on the MTG⁺CD24⁻ aNAV subset definition.
 ## Concepts Addressed
 
-[[Extrafollicular Response]], [[Toll-like Receptor Signaling in B Cells]], [[B Cell Receptor Signaling]], [[Atypical B Cell Effector Output]], [[Germinal Center]]
+[[Extrafollicular Response]], [[Toll-like Receptor Signaling in B Cells]], [[B Cell Receptor Signaling]], [[Atypical B Cell Effector Output]]
 
+*Also discussed but not separately updated — trimmed 2026-09-04:* [[Germinal Center]] — the paper's GC content is entirely citation of others (Jackson 2016 on Bcl6, Lau 2017 on CD21^lo^ GC graduates); it reports no GC measurement of its own, and its own population is defined by CXCR5 loss — an EF claim, carried on [[Extrafollicular Response]].
 ## Relevance & Notes
 
 **Why this is load-bearing.** Before this ingest the wiki had **no IFN-γ entity page at all**, despite IFN-γ being one of the three canonical DN2-driving signals in [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]'s own model. Zumaquero2019 supplies not just the page but the mechanism: the temporal ordering of the signals, the epigenetic route, and the reason IFN-γ matters (IL-21R upregulation), all in **human** cells.

@@ -2,8 +2,8 @@
 type: entity
 tags: [T-cells, Tph, peripheral-helper, CXCR5-negative, PD-1, IL-21, extrafollicular, dengue, B-cell-help]
 created: 2026-05-08
-updated: 2026-08-23
-sources: 2
+updated: 2026-09-05
+sources: 3
 ---
 
 # Peripheral Helper T Cell
@@ -24,6 +24,8 @@ Ansari et al. (2025) demonstrate that Tph cells are the **dominant activated CD4
 - **IL-21 is the dominant Tph effector cytokine for B cell help:** Anti-IL-21 blocking antibody in T-B coculture reduces plasmablast output by ~60%, confirming IL-21 as the primary (but not exclusive) driver (see [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]).
 - **Tph present in reactive lymph node tissue:** CXCR5⁻PD-1⁺ T cells identified in lymph node samples (n=10), confirming tissue residency beyond peripheral blood (see [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]).
 
+- **⚠ Contrast, not support: the extra-GC helper in Song2022 is a canonical Tfh, not a Tph.** Sorted **PSGL-1^lo^Ly6c^lo^PD-1^hi^CXCR5⁺** Tfh transferred into infection-matched *Tcrb*⁻/⁻ mice induced T-bet⁺CD11c⁺ B cells, while sorted **PSGL-1^hi^Ly6c^hi^** Th1 cells did not; *Icos*⁻/⁻, *Sh2d1a*⁻/⁻ and CD4^Cre^*Bcl6*^fl/fl^ models each reduced generation (see [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], mouse, LCMV-Armstrong + influenza PR8, n=3–5 mice/group). Since **Tph are CXCR5⁻ by definition**, this is a different helper population reaching a similar outcome to the one [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]] reports in dengue. Both show help delivered outside a germinal centre; the wiki should not merge the two cell types on that basis. ⚠ Murine.
+
 ## Contradictions & Debates
 
 - Whether Tph cells are a distinct lineage or a transient activation state of Tfh or effector T cells remains debated. The largely non-overlapping TCR clonotypes between helper and cytotoxic Tph in dengue argue against simple state plasticity, but the low number of shared clonotypes (13) could reflect limited sampling.
@@ -36,3 +38,4 @@ Ansari et al. (2025) demonstrate that Tph cells are the **dominant activated CD4
 ## Sources
 - [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]
 - [[Tipton2015 - ASC Diversity and Origin in SLE]]
+- [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]] — extra-GC help delivered by CXCR5⁺ Tfh, not Tph — a contrast case, not supporting evidence

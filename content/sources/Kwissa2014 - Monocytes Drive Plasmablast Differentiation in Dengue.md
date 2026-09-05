@@ -9,7 +9,7 @@ citations_semantic_scholar: 228
 citations_crossref: 225
 citations_retrieved: 2026-08-18
 created: 2026-08-18
-updated: 2026-08-18
+updated: 2026-09-04
 ---
 
 # Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue
@@ -75,11 +75,15 @@ A second finding matters for the wiki's severity axis: the acute dengue whole-bl
 
 ## Methods Used
 
-[[Conventional Flow Cytometry]], [[RNA Sequencing]], [[Serum Proteomics]], [[ELISpot]], [[In Vitro B Cell Stimulation]], [[T-B Coculture Assay]], [[FACS Sorting]]
+[[Conventional Flow Cytometry]], [[In Vitro B Cell Stimulation]]
+
+*Also discussed but not separately updated:* [[RNA Sequencing]] (the whole-blood transcriptome was **Affymetrix Human U133 Plus 2.0 microarray** — no sequencing was performed anywhere in the paper; the GSEA/IPA deconvolution of whole blood using monocyte-subset-specific gene sets has no method page yet), [[Serum Proteomics]] (plasma proteins were measured by Bio-Plex Pro 27-plex bead assay and by BAFF/APRIL/NS-1 ELISA — not the LC-MS/MS antibody-sequence identification that page describes), [[ELISpot]] (named once, in a list of confirmatory diagnostics, with the protocol referenced to [[Wrammert2012 - Plasmablast Responses in Acute Dengue]]; **no ELISpot result is reported** — the page could carry nothing from it), [[T-B Coculture Assay]] (the coculture is monocyte–B cell; no T cells are present in any culture in this study), [[FACS Sorting]] (**no cells were sorted** — monocytes and B cells were isolated by Miltenyi CD14/CD19 magnetic positive selection to ≥95% purity, and the FACSAria was used only as an analyser).
 
 ## Entities Mentioned
 
-[[Plasmablast]], [[CD27]], [[CD38]], [[CD19]], [[CD20]], [[BAFF]], [[APRIL]], [[TACI]], [[Type I Interferon]], [[TLR7]], [[Inflammatory Monocyte]], [[CXCR3]], [[IgG]], [[IgM]], [[IgA]], [[XBP1]], [[TNF-alpha]]
+[[Plasmablast]], [[CD27]], [[CD38]], [[CD19]], [[CD20]], [[BAFF]], [[APRIL]], [[TACI]], [[Type I Interferon]], [[TLR7]], [[Inflammatory Monocyte]], [[IgG]], [[IgM]], [[IgA]], [[XBP1]]
+
+*Discussed but not separately updated:* [[CXCR3]] (the receptor is **never named** in the paper — only its ligand CXCL10/IP-10 is measured and blocked; no chemokine receptor was stained on B cells), [[TNF-alpha]] (two mentions, both in the Introduction as background citing Cros 2010 / Wong 2011 on monocyte-subset cytokine output; **no TNF-α result of the authors' own is reported**, and it is not among the analytes reported as elevated in the 27-plex plasma panel).
 
 ## Concepts Addressed
 

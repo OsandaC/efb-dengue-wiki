@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, immunoglobulin, isotype, memory-b-cells, marginal-zone]
 created: 2026-05-02
-updated: 2026-08-28
-sources: 12
+updated: 2026-09-05
+sources: 14
 ---
 
 # IgM
@@ -35,6 +35,10 @@ IgM is the first immunoglobulin isotype produced by B cells and the default surf
 
 - **IgM's status in the recommended core is internally inconsistent in this paper — worth knowing before quoting "the seven-marker core".** The body text lists the seven as (1) a CD3/CD14 dump, (2) CD19, (3) IgD, (4) CD27, (5) CD38, (6) CD24, (7) CD21 — **no IgM**. The footnote to Table 1 instead reads "Core Markers: CD19, **IgM**, IgD, CD27, CD38, CD24, CD21", dropping the dump and adding IgM, while also listing IgM again among the additional markers. The review also cautions on anergy: IgD⁺IgMˡᵒ˾⁻ "BND" naive cells are **<2% of blood B cells**, and because IgM downregulation is also caused by BCR activation, **IgM level alone should not be used to call anergy** (see [[Sanz2019 - Consistent Classification of Human B Cell Populations]], review — **no original data**).
 
+- **IgM is the isotype the dengue-monocyte blockade experiments actually moved.** DENV-infected monocytes drove IgG and IgM (but not IgA) secretion from resting allogeneic B cells above MDDC and B-cell-only controls, and both **TACI-Fc** (the BAFF/APRIL decoy) and **anti-IL-10** significantly reduced IgM, whereas anti-IL-6 and anti-IP-10 did not, and no significant IgG reduction is reported for any arm (see [[Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue]], in vitro, 4 independent experiments with 4 healthy blood donors). Separately, all five DENV-2-infected rhesus macaques developed DENV-2-specific plasma IgM (same source, NHP model, n=5), and dengue-specific IgM ELISA was one of the confirmatory diagnostics in the human cohort. ⚠ Do not read the in vitro IgM prominence against the *in vivo* secondary-dengue picture above ([[Wrammert2012 - Plasmablast Responses in Acute Dengue]], IgM near-absent): this culture starts from resting bulk B cells including naive cells and is polyclonal and non-antigen-specific, so IgM output here is a property of the assay rather than a claim about secondary dengue.
+
+- **The T-bet⁺CD11c⁺ recall response is IgG-dominated, and the IgM comparison is what demonstrates it.** In sorted-transfer recall experiments into MD4 recipients, **naive and memory B cell recipients produced more IgM** than recipients of T-bet⁺CD11c⁺ cells, which instead gave a rapid anti-LCMV IgG response at days 5 and 10 (see [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], mouse, LCMV-Armstrong, n=3–5 mice/group). This is consistent with the repertoire data showing the population is already class-switched — predominantly IgG2b/IgG2c, with isotype usage indistinguishable from GC B cells — so it enters a recall response with little unswitched reserve.
+
 ## Contradictions & Debates
 
 None documented in current wiki sources.
@@ -55,3 +59,5 @@ None documented in current wiki sources.
 - [[Cancro2020 - Age-Associated B Cells]]
 - [[Posadas-Mondragon2020 - TLR Polymorphisms and Clinical Forms of Dengue]]
 - [[Sanz2019 - Consistent Classification of Human B Cell Populations]]
+- [[Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue]] — TACI-Fc and anti-IL-10 both significantly reduce IgM in monocyte–B coculture
+- [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]] — naive and memory transfers gave more IgM than T-bet⁺CD11c⁺ cells on recall

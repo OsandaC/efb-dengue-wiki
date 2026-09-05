@@ -2,8 +2,8 @@
 type: entity
 tags: [b-cell-subsets, memory-b-cells, IgD-negative, CD27-negative, atypical-b-cells, extrafollicular, SLE, comparative-immunology]
 created: 2026-05-02
-updated: 2026-08-29
-sources: 21
+updated: 2026-09-04
+sources: 22
 ---
 
 # Double-Negative B Cell
@@ -131,6 +131,8 @@ This EF origin model directly links DN B cells to the concept of [[Extrafollicul
 
 - **★ The DN compartment is heterogeneous by direct phenotype, and the review says so in as many words.** Comparing DN cells across RA, SLE, scleroderma and acute and chronic HIV, [[FcRH4|FcRL4]] and [[FCRL5]] are **reciprocally expressed** — FcRL4 high in HIV (~21.1%) and near-absent in SLE (~0.74%), FcRL5 the reverse. The stated conclusion: "This heterogeneity in expression patterns is **indicative of multiple DN B cell populations, and can only be resolved by further marker subgating on DN B cells**." Table 1 accordingly gives **three** DN rows — DN1 (memory precursors), DN2 (extrafollicular ASC precursors) and an FcRL4⁺ atypical/tissue-based memory row — not two (see [[Sanz2019 - Consistent Classification of Human B Cell Populations]], review — **no original data**), figure adapted from [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]).
 
+- **Quantitative composition of the DN gate in expanded SLE patients.** Within the IgD⁻CD27⁻ B_DN_ compartment of SLE patients with DN expansion, **DN2 (T-bet^hi^CXCR5^neg^CD11c^hi^) accounted for 79% and DN1 (CXCR5⁺CD11c^lo^, T-bet^neg^) for 17%** (see [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]], n=16–18 SLE for phenotyping). DN2 but not DN1 uniformly expressed high T-bet, CD19 and FcRL5. ⚠ This is the **CXCR5 × CD11c** axis, not the CD21 × CD11c axis — note when comparing with sources that gate DN differently, and see this page's DN3/DN4 sections where the axis choice changes which cells fall in which quadrant.
+
 ## Contradictions & Debates
 
 - **★ Do DN B cells proliferate to TLR9/CpG? Four studies, four answers — the review calls it unresolved.** The wiki has been carrying Wei2007's positive CpG result as settled. [[Beckers2023 - Origins and Functions of DN B Cells]] tabulates the conflict: CpG alone gave **no** proliferation in young and elderly HD (Colonna-Romano 2009); the *same group* later found **significant** proliferation to CpG or anti-BCR+anti-CD40 in **young but not elderly** HD (Martorana 2014); a third study found CpG-driven proliferation **at SM-cell levels** (Wei 2007); and a fourth found **no** proliferation to anti-BCR+CpG+IL-4 in young or aged HD (Frasca 2019). Only triple stimulation (CpG+anti-BCR+anti-CD40) activated DN cells of both young and elderly HD. Beckers attributes the spread to differing proliferation markers, stimulation conditions and HD cohorts, and concludes that "the activation potential and responsiveness of DN B cells towards BCR and TLR signaling are still a topic of debate." **Age of the donor cohort is a candidate hidden variable in every one of these comparisons.** (see [[TLR9]], [[In Vitro B Cell Stimulation]]).
@@ -182,3 +184,4 @@ This EF origin model directly links DN B cells to the concept of [[Extrafollicul
 - [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective; mouse vs. human DN are different cells
 - [[Sanz2019 - Consistent Classification of Human B Cell Populations]]
 - [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]]
+- [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]] — DN2 79% / DN1 17% of the expanded SLE DN gate (CXCR5 × CD11c axis)

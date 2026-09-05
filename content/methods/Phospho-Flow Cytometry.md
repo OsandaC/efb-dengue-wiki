@@ -2,8 +2,8 @@
 type: method
 tags: [phospho-flow, signalling, TLR7, pERK, pMAPKp38, B-cell-activation]
 created: 2026-05-02
-updated: 2026-08-26
-sources: 2
+updated: 2026-09-04
+sources: 3
 ---
 
 # Phospho-Flow Cytometry
@@ -20,6 +20,8 @@ Phospho-flow cytometry (phospho-flow) detects intracellular phosphorylation of s
 - **★ BCR signalling is intact across all three DN subsets — in health, in acute COVID-19, and after vaccination.** DN1, DN2 and DN3 cells from healthy donors, mild and severe SARS-CoV-2 patients, and post-SARS-CoV-2-immunised individuals all **maintained BCR signalling** after IgG stimulation. **DN2 showed the highest activation-marker expression (CD69, CD86) and the largest BCR signalling capacity** of the three. This is the single strongest argument against reading DN cells as globally exhausted (see [[Beckers2023 - Origins and Functions of DN B Cells]], review, citing Castleman 2022).
 - **⚠ Signalling readouts and activation-marker readouts disagree on the same cells.** The same review reports a *decreased* percentage of CD86⁺ activated cells within DN B cells after CD40L or triple (CpG+anti-BCR+CD40L) stimulation relative to total B cells, in HD and MS patients — i.e. surface-activation assays call DN cells hyporesponsive while phospho-flow calls them signalling-competent. **Methodological consequence: which assay is run determines the answer, so any claim about DN "responsiveness" must name its readout** (see [[Beckers2023 - Origins and Functions of DN B Cells]], review, own data; see [[In Vitro B Cell Stimulation]], [[Double-Negative B Cell]]).
 
+- **★ Used to show that a cytokine changes a cell's *responsiveness* rather than its resting signalling state — a design worth copying.** Naive B cells were primed for 3 days under four conditions (anti-Ig + R848 alone, or plus IFN-γ, IL-2, or both), then **washed and restimulated with IL-21 (10 ng/ml) for 20 min at 37°C**, fixed/permeabilised with the BD Transcription Factor Phospho Buffer Set and stained for **phospho-STAT3** (clone 13A3-1) (see [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]], human, n=20 HD + n=40 SLE + in vitro reconstruction). The result depends entirely on the restimulation step: **basal phospho-STAT3 at day 3 was similar and low across all four priming conditions**, but after 20 min of IL-21 it was **significantly higher in cells that had seen IFN-γ during priming**. A resting-state phospho-flow readout would have found nothing. Pair with [[IL-21R]] — IL-21R protein was also 5.5–6-fold higher by day 6 in IFN-γ-primed cells.
+
 ## Contradictions & Debates
 
 - **Is the phospho-flow answer or the activation-marker answer the right one?** Unresolved. Phospho-flow measures proximal signalling within minutes; CD86 upregulation measures a downstream transcriptional outcome hours later. A cell can signal normally and still fail to complete an activation programme, so the two are not strictly contradictory — but they cannot both be used to characterise DN cells in one sentence. See [[Beckers2023 - Origins and Functions of DN B Cells]] and [[Double-Negative B Cell]] Contradictions.
@@ -30,3 +32,4 @@ Phospho-flow cytometry (phospho-flow) detects intracellular phosphorylation of s
 ## Sources
 - [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]
 - [[Beckers2023 - Origins and Functions of DN B Cells]]
+- [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]] — restimulation-based pSTAT3 design — measures responsiveness, not resting state

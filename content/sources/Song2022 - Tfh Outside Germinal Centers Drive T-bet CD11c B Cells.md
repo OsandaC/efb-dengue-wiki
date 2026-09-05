@@ -9,7 +9,7 @@ citations_semantic_scholar: 117
 citations_crossref: 142
 citations_retrieved: 2026-08-18
 created: 2026-08-18
-updated: 2026-08-18
+updated: 2026-09-05
 ---
 
 # Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells
@@ -90,7 +90,9 @@ The paper is the wiki's first source to supply a **positional** mechanism for wh
 
 ## Methods Used
 
-[[Conventional Flow Cytometry]], [[FACS Sorting]], [[RNA Sequencing]], [[BCR Sequencing]], [[ELISpot]], [[Multi-color Immunofluorescence]], [[Immunohistochemistry]], [[In Vitro B Cell Stimulation]]
+[[Conventional Flow Cytometry]], [[FACS Sorting]], [[RNA Sequencing]], [[BCR Sequencing]], [[ELISpot]], [[Multi-color Immunofluorescence]], [[In Vitro B Cell Stimulation]]
+
+*Also used but not separately updated:* [[Immunohistochemistry]] — **trimmed 2026-09-05 during the C1 repair pass: no immunohistochemistry was performed.** The words "immunohistochemistry", "paraffin", "HRP" and "DAB" appear nowhere in the paper. All imaging is multi-colour immunofluorescence on PLP-fixed frozen sections stained with directly conjugated antibodies and read by confocal microscopy and histocytometry; that content was propagated to [[Multi-color Immunofluorescence]] instead. Also used and not listed in this triad: an anti-LCMV IgG [[ELISA]] on mouse sera, and a 95-autoantigen microarray (UTSW core facility) for which the wiki holds no method page.
 
 ## Entities Mentioned
 

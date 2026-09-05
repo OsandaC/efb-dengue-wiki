@@ -2,8 +2,8 @@
 type: entity
 tags: [transcription-factor, germinal-center, T-follicular-helper, Bcl-6, B-cell-differentiation]
 created: 2026-05-22
-updated: 2026-08-28
-sources: 4
+updated: 2026-09-05
+sources: 5
 ---
 
 # Bcl-6
@@ -27,6 +27,8 @@ In the context of this wiki, Bcl-6 is the critical marker linking GC failure to 
 - **Low or absent BCL6 defines the tripotent pre-GC precursor.** Activated precursors at the T–B border express **intermediate [[IRF4]]** and exhibit **absent or low BCL6**, distinguishing them from committed GC B cells; BCL6 is the key transcriptional regulator of GC B cell fate and its upregulation marks GC commitment (see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review).
 - **BCL6 sits at the centre of the GC-derived memory exit circuit.** BCL6 represses *Bcl2*, so escaping BCL6 repression is required for the pro-survival programme of GC-derived memory; **HHEX** was proposed to promote memory generation precisely by **downregulating BCL6 and thereby releasing BCL6-mediated repression of BCL2**. IL-4-mediated BCL6 downregulation may likewise facilitate GC exit. Transient removal of anti-CD40 antibody in vitro was sufficient to *induce* BCL6 upregulation, and reduced T-derived signals in vivo increased the propensity to generate GC B cells — suggesting **interruptions** in CD40–CD40L signalling, rather than signal strength per se, may bias toward the GC lineage (see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review, mouse).
 
+- **★ Bcl-6 is required in the T cell but dispensable in the B cell for the T-bet⁺CD11c⁺ response — the clearest statement of that division in the wiki.** CD4^Cre^*Bcl6*^fl/fl^ mice (Tfh-deficient) showed decreased percentages and numbers of T-bet⁺CD11c⁺ B cells with little reduction in Th1 cells. Conversely, a **mixed bone marrow chimera (50% CD19^Cre^*Bcl6*^fl/fl^ : 50% CD19^Cre^*Bcl6*^+/+^)** left germinal centres dominated by Bcl6-sufficient cells (~5:1) while the T-bet⁺CD11c⁺ compartment was populated **~1:1** by Bcl6-deficient cells — B-cell-intrinsic Bcl6 is not needed. *Bcl6* was also among the GC signature genes downregulated in sorted T-bet⁺CD11c⁺ cells, and the result held in influenza PR8 as well as LCMV (see [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], mouse, n=3–5 mice/group).
+
 ## Contradictions & Debates
 
 - Whether Bcl-6⁺ TFH cells are generated in milder COVID-19 is unknown — the tissue study was limited to fatal cases. Milder disease may represent a continuum with some GC formation.
@@ -42,3 +44,4 @@ In the context of this wiki, Bcl-6 is the critical marker linking GC failure to 
 - [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]
 - [[Woodruff2020 - EF B Cell Responses in COVID-19]]
 - [[Glaros2025 - Multilayered Identity of B Cell Memory]]
+- [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]] — B-cell-intrinsic Bcl6 dispensable (mixed BM chimera ~1:1) while T-cell Bcl6 is required

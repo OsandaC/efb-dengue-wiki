@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, chemokine-receptor, homing, IFN-gamma, extrafollicular, tissue-inflammation]
 created: 2026-05-04
-updated: 2026-08-28
-sources: 4
+updated: 2026-09-05
+sources: 6
 ---
 
 # CXCR3
@@ -25,6 +25,10 @@ The CXCR5⁻/CXCR3⁺ chemokine receptor switch on extrafollicular B cell popula
 - **CXCR3 is listed among the defining surface markers of human atypical B cells.** Human ABCs "often express the transcription factor [[T-bet]] along with distinct surface markers, including [[CD11c]], CXCR3, [[FcRH4|FCRL4]], and [[FCRL5]]" (see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review, **no original data**). This places CXCR3 in the review-level ABC marker set alongside the markers this wiki already tracks — relevant because CXCR3 is already documented on dengue plasmablasts.
 - **CXCR3 mediates recruitment of resident memory B cells to infected tissue — including antigen-irrelevant ones.** In the lung, B resident memory cells of **diverse specificities, including those unrelated to the invading pathogen**, are rapidly recruited to the infection site via an alveolar-macrophage-initiated cascade: IFN-γ from NK cells → **CXCL9/CXCL10** → recruitment of **CXCR3-expressing** memory B cells. Some of these differentiate into plasma cells on innate signals alone, without specificity for the current threat (see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review, mouse). See [[Tissue-Resident Memory B Cell]]. Lung BRMs also express CCR6 alongside CXCR3.
 
+- **★ CXCR3 is a functional T-bet target *in B cells*, confirmed by inducible deletion.** Tamoxifen-induced deletion of *Tbx21* from established day-90 influenza memory B cells (*Tbx21*^fl/fl^*hCD20*-TAM-cre) significantly reduced CXCR3 expression on total B cells and on NP⁺ memory B cells, while **CXCR3 on T cells was unaffected** — an internal specificity control for the B-cell-restricted deletion (see [[Stone2019 - T-bet Promotes ASC Differentiation by Limiting IFN-gamma Inflammation]], mouse, n=3–6/group). This is direct genetic evidence for the T-bet → CXCR3 link that the wiki previously held on correlative grounds. Note the same experiment cut NP⁺ ASC recall ~10-fold without changing memory B cell numbers, so **loss of CXCR3 tracks with loss of differentiation capacity, not loss of the memory pool** — see [[Memory B Cell]], [[T-bet]].
+
+- **CXCR3 is highly expressed on murine T-bet⁺CD11c⁺ B cells, and is one of the authors' candidate explanations for a knockout that failed in vivo.** CXCR3 transcript was higher on T-bet⁺CD11c⁺ cells than on naive follicular or GC B cells as the population relocated to the marginal zone. When *S1pr3*⁻/⁻ cells showed **no competitive disadvantage at day 15** in mixed bone marrow chimeras — despite S1PR3 being required for S1P chemotaxis in vitro, where TY52156 abolished migration — the authors proposed compensation by *Cnr2* and CXCR3, and stated explicitly that **"this was not further investigated"** (see [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], mouse, LCMV-Armstrong, n=3–5 mice/group). Treat the CXCR3 retention role as a hypothesis, not a result.
+
 ## Contradictions & Debates
 
 - Whether CXCR3 expression on EF B cells reflects functional tissue homing or is simply a marker of IFN-γ exposure without homing consequence has not been directly tested in humans. The murine literature supports functional CXCR3-mediated B cell homing to inflamed tissues, but human in vivo trafficking data are lacking.
@@ -39,3 +43,5 @@ The CXCR5⁻/CXCR3⁺ chemokine receptor switch on extrafollicular B cell popula
 - [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]
 - [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]
 - [[Glaros2025 - Multilayered Identity of B Cell Memory]]
+- [[Stone2019 - T-bet Promotes ASC Differentiation by Limiting IFN-gamma Inflammation]] — genetic confirmation that CXCR3 is a T-bet target in B cells (inducible KO, mouse)
+- [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]] — CXCR3 high on murine T-bet⁺CD11c⁺ cells; proposed but untested S1PR3 compensation

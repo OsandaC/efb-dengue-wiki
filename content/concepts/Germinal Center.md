@@ -2,8 +2,8 @@
 type: concept
 tags: [germinal-center, B-cell-activation, somatic-hypermutation, affinity-maturation, class-switch-recombination, memory-formation]
 created: 2026-05-02
-updated: 2026-08-28
-sources: 25
+updated: 2026-09-05
+sources: 27
 ---
 
 # Germinal Center
@@ -73,6 +73,10 @@ In the context of this wiki, the germinal centre response is the primary counter
 
 - **GC cells are the one human B cell population the review says blood cannot show you.** "With the possible exception of GC cells, all human B cell populations found in lymphoid tissues can also be demonstrated in the peripheral blood lymphocytes" — a structural reason why blood panels cannot adjudicate GC-versus-EF questions directly. Two related points: the Bm1–Bm5 scheme fails to separate transitional (IgD⁺CD38ʰⁱ) from **pre-GC (Bm2′)** cells in blood; and Table 1 assigns activated naive cells the function "precursor of short-lived PB **and GC reactions**", i.e. the same phenotype feeds both pathways (see [[Sanz2019 - Consistent Classification of Human B Cell Populations]], review — **no original data**).
 
+- **T-bet⁺ B cells are not GC-excluded — mouse primary data.** A *Tbx21*-ZsGreen reporter after influenza infection was expressed by **NP-specific germinal centre B cells** as well as ASCs and memory B cells (see [[Stone2019 - T-bet Promotes ASC Differentiation by Limiting IFN-gamma Inflammation]], mouse, reporter flow cytometry, n=3–6/group). This supplies primary-data support for the point [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] makes on consensus grounds: **T-bet positivity is not evidence of a GC-independent origin.** Any inference from B cell T-bet expression to extrafollicular derivation is therefore unsafe on its own — see [[GC-Independent Response]], [[T-bet]].
+
+- **★ Four orthogonal demonstrations that a T-bet⁺CD11c⁺ B cell response develops without transiting a germinal centre.** (i) Minimal coexpression of the GC markers GL-7 and EphrinB1 at days 6, 10 and 15; (ii) sorted-population RNA-seq separating the cells from GC B cells by PCA, with ***Bcl6*, *S1pr2* and *Aicda* downregulated**; (iii) histocytometry placing **~75% in the follicular mantle and ~0% inside GCs** at day 12; (iv) ***S1pr2*-CreERT2 fate mapping with tamoxifen from day 4 — >80% unlabelled** (17.5% TdTomato⁺) against 70.0% of GL-7⁺ early GC B cells. A mixed bone marrow chimera added that B-cell-intrinsic Bcl6 is dispensable (~1:1 vs ~5:1 in GCs), and Ig repertoires overlapped by **<10%** of sequences with early lineage-tree bifurcation. Replicated in influenza PR8, which preserves splenic architecture (see [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], mouse, n=3–5 mice/group; Ig-seq n=3).
+
 ## Contradictions & Debates
 
 - The DN1/DN2 subdivision resolves much of the original debate: DN2 cells are EF-derived (TLR7-dependent, CD40L-inhibited), while DN1 cells are GC-associated (SWM-like transcriptome, CD40L-tolerant). The remaining question is whether DN1 cells complete full GC reactions or represent early GC emigrants.
@@ -108,3 +112,5 @@ In the context of this wiki, the germinal centre response is the primary counter
 - [[Beckers2023 - Origins and Functions of DN B Cells]]
 - [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective; follicle ≠ GC; GC-derived PCs mature outside it
 - [[Sanz2019 - Consistent Classification of Human B Cell Populations]]
+- [[Stone2019 - T-bet Promotes ASC Differentiation by Limiting IFN-gamma Inflammation]] — T-bet reporter⁺ GC B cells — T-bet positivity is not evidence of GC-independence
+- [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]] — four orthogonal lines for GC-independent development, incl. *S1pr2* fate mapping (>80% unlabelled)

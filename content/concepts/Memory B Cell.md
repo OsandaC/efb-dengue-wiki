@@ -2,8 +2,8 @@
 type: concept
 tags: [memory-b-cells, B-cell-subsets, CD27, somatic-hypermutation, immunological-memory]
 created: 2026-05-02
-updated: 2026-08-29
-sources: 21
+updated: 2026-09-05
+sources: 23
 ---
 
 # Memory B Cell
@@ -76,6 +76,10 @@ Human memory B cells are heterogeneous. Classical subsets include isotype-switch
 - **[2026-08-29] Unswitched-memory contraction is a cross-disease autoimmune signature, not an SLE marker.** All three lupus groups — including skin-limited disease — showed loss of IgD⁺CD27⁺ unswitched memory, and the authors note the same contraction in **Sjögren's syndrome, rheumatoid arthritis, vasculitis and inflammatory bowel disease**, where it can be restored by TNF inhibition. In Sjögren's it is an *early* feature that correlates with serological autoimmunity and disease progression. Candidate explanation offered without direct evidence: loss of a marginal-zone-equivalent population with apoptotic-clearance, IL-10-mediated regulatory and autoreactivity-diluting functions (see [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]], n=207 + 46 HCD, cross-sectional; cross-disease comparisons are relayed from other groups' work, not measured here).
 - **[2026-08-29] The memory family clusters as a unit — and DN1 belongs to it.** Hierarchical clustering resolved three subset families: early (resting naive, early transitional), **memory (unswitched memory, switched memory and DN1)** and effector (activated naive, DN2, DN3, plasmablasts). DN1 grouping with the memory family is consistent with its description as transcriptionally linked to resting switched memory (see [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]]).
 
+- **★ Memory *maintenance* and memory *differentiation* have separable transcriptional requirements.** Tamoxifen-induced deletion of *Tbx21* from established day-90 influenza memory B cells did **not** change memory B cell numbers, frequencies or isotype distribution over a 10-day period — but after heterologous X31 challenge, NP⁺ ASC numbers fell **~10-fold** versus challenged controls, and CXCR3 expression was lost from NP⁺ memory B cells (see [[Stone2019 - T-bet Promotes ASC Differentiation by Limiting IFN-gamma Inflammation]], mouse, inducible *Tbx21*^fl/fl^*hCD20*-TAM-cre, n=3–6/group). A memory B cell can therefore persist normally while having lost the capacity to execute a recall response. **Enumerating a memory population says nothing about its recall competence**, which is a direct caution for cross-sectional cohort designs that measure subset frequencies at a single timepoint. See [[T-bet]], [[CXCR3]].
+
+- **A memory population that fails the memory signature test — and can still re-enter a germinal centre.** Despite a memory-like surface phenotype (CD38⁺CD138⁻IgD^lo^GL-7⁻, maintained to at least day 35), gene-set enrichment at day 12 **did not match conventional memory B cell signatures** in existing molecular databases, which the authors attribute to the subset's low frequency in the memory pool (~5% of BrdU⁺ memory at day 30). On sorted transfer and re-challenge, **all transferred subsets — naive, memory and T-bet⁺CD11c⁺ — gave rise to GC B cells at day 10** (see [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], mouse, LCMV-Armstrong, n=3–5 mice/group). A GC-independent origin therefore does not fix the cell outside the GC on re-exposure, which bears on whether the EF/GC distinction is a property of the response or a fixed lineage boundary.
+
 ## Contradictions & Debates
 
 - CD27-based memory B cell identification misses the DN subset, which can represent the majority of the memory compartment in SLE and may be relevant in acute infections. Studies that rely solely on CD27 to enumerate memory B cells will undercount this population.
@@ -109,3 +113,5 @@ Human memory B cells are heterogeneous. Classical subsets include isotype-switch
 - [[Cancro2020 - Age-Associated B Cells]]
 - [[Sanz2019 - Consistent Classification of Human B Cell Populations]]
 - [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]]
+- [[Stone2019 - T-bet Promotes ASC Differentiation by Limiting IFN-gamma Inflammation]] — memory maintenance vs recall differentiation dissociate (inducible KO, mouse)
+- [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]] — memory-like phenotype without a memory transcriptional signature; can enter GCs on re-challenge

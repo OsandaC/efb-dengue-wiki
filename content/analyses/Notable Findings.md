@@ -2,7 +2,7 @@
 type: analysis
 tags: [meta, notable-findings]
 created: 2026-05-02
-updated: 2026-08-29
+updated: 2026-09-04
 ---
 
 # Notable Findings
@@ -602,5 +602,30 @@ The mechanism of the loss is worth noting because it is structural, not careless
 - How many other pre-guard sources carry a self-limiting statement that ingest skipped? Five papers of C1 debt remain un-re-read.
 
 **Related pages:** [[CD11c]], [[CD21]], [[T-bet]], [[CD24]], [[Atypical B Cell]], [[DN2 B Cell]], [[FCRL5]], [[FcRH4]], [[Conventional Flow Cytometry]], [[Bm Classification]], [[DN2 Gating Strategy]]
+
+---
+
+## [2026-09-04] The wiki's flagged "T-bet represses Blimp-1" was a T cell finding imported into a B cell review — and the truth is the inverse
+
+**Source:** [[Stone2019 - T-bet Promotes ASC Differentiation by Limiting IFN-gamma Inflammation]], against [[Cancro2020 - Age-Associated B Cells]]
+
+**Finding:** Cancro2020 asserted, with **no numbered reference** in an Annual Reviews article, that "there is evidence that T-bet represses Blimp-1." Stone tested exactly that relationship in mouse B cells and found **no repression at all**: deleting *Tbx21* left day-2 *Prdm1* mRNA equivalent and Blimp-1-motif chromatin accessibility **unchanged** (ns, n=871 motif-containing DARs) — in the same ATAC-seq panel where Th1 priming opens that identical motif set at **p=3.8 × 10⁻⁹⁰** and T-bet's own motifs (n=963) move strongly. By day 4 *Prdm1* is *lower* without T-bet, i.e. T-bet indirectly **supports** Blimp-1. Stone's own sentence names the provenance: Blimp-1 "can be modulated in a T-bet-dependent fashion **in T cells** (Oestreich et al., 2012; Xin et al., 2016)."
+
+**Why notable:** Three things at once, and they are one observation seen from three sides.
+
+First, **the provenance**. The claim is almost certainly a real T cell mechanism carried across a lineage boundary without its citation. That is a specific, nameable failure mode for a wiki built substantially on reviews — not "a review was vague," but "a mechanism was correct in the cell type it was established in and silently generalised." The wiki caught it only because the sentence carried no reference, which is a weak detector: a *referenced* cross-lineage import would have passed.
+
+Second, **the inversion**. The wiki was holding this as unverified-but-plausible, and the direction of the correction matters. If T-bet repressed Blimp-1, ABC → plasma cell transit would require losing T-bet. It does not. T-bet is **permissive, not instructive** — it induces no canonical ASC transcription factor and represses neither *Pax5* nor *Bcl6*; what it does is **repress the IFN-γ-induced inflammatory programme** (NF-κB/TLR/STAT-IRF) that otherwise locks an activated B cell out of terminal differentiation. The causal arm is an add-back rather than a knockout: NF-κB activator or TLR7/9 ligands given to **wild-type** Be1 cells reproduce the *Tbx21*-deficient ASC defect, proliferation unaffected.
+
+Third, **what it unlocks**. This is the first mechanism the wiki holds that makes [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]] and [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]] compatible rather than opposed — no PC-programme genes in *resting* atypical cells (because T-bet does not induce them) alongside efficient plasmablast output *on stimulation* (because the brake lifts). ⚠ It remains a **mechanism proposed, not a contradiction closed**: Stone is mouse Be1/Be2 culture plus influenza and never touches human atypical B cells, while both Sutton and Jenks are human.
+
+There is also a quieter correction. Cancro's *other* clause — "few if any plasma cells express T-bet" — turns out to be roughly right, but for the wrong compartment and the wrong reason. *Tbx21*-ZsGreen reporter mice show **splenic ASCs at 32.5 ± 19.4%** reporter-positive against **bone-marrow long-lived ASCs at 0.87 ± 0.8%**. It is an anatomical gradient, not a property of being a plasma cell — and it is a live caution for a blood-only cohort.
+
+**Follow-up questions:**
+- How many other unreferenced review sentences in the wiki are cross-lineage imports? The detector that caught this one (missing citation) would not catch a referenced import. Is a targeted re-read of the review corpus's mechanism claims worth a session?
+- Acute dengue is simultaneously **high IFN-γ** and **high TLR7 ligand**. Stone's model has these pulling in opposite directions on ASC output — licensing versus braking. Does the documented massive dengue plasmablast expansion ([[Wrammert2012 - Plasmablast Responses in Acute Dengue]]) mean the brake is overcome, bypassed, or simply absent in human acute infection?
+- If TLR7 drives DN2 *generation* but sustained TLR7 ligation blocks ASC *output*, TLR7 signalling has to be timed. No wiki source resolves the timing — see [[DN2 B Cell]].
+
+**Related pages:** [[T-bet]], [[BLIMP-1]], [[IFN-gamma]], [[IRF4]], [[Atypical B Cell]], [[DN2 B Cell]], [[TLR7]], [[Atypical B Cell Effector Output]], [[Toll-like Receptor Signaling in B Cells]], [[Plasmablast]], [[ATAC-seq]]
 
 ---

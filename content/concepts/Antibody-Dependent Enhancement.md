@@ -2,8 +2,8 @@
 type: concept
 tags: [antibody-dependent-enhancement, ADE, Fc-receptor, cross-reactivity, dengue-severity, secondary-dengue]
 created: 2026-05-10
-updated: 2026-08-23
-sources: 6
+updated: 2026-09-04
+sources: 7
 ---
 
 # Antibody-Dependent Enhancement
@@ -25,6 +25,8 @@ Antibody-dependent enhancement (ADE) is a mechanism by which pre-existing cross-
 - **⚠ Secondary infection was *not* enriched in the severe arm of one adult cohort.** Classifying by IgM/IgG OD ratio, **73% of DF and 70.8% of DHF** patients had secondary infection — essentially identical proportions (see [[Posadas-Mondragon2020 - TLR Polymorphisms and Clinical Forms of Dengue]], n=165 adult patients, WHO 1997, DENV-2-dominant, days 1–8 post-onset). Since ADE predicts severity should concentrate among secondary infections, this is a negative observation for the simplest form of the model in this cohort. Three heavy caveats: the study was not designed to test ADE and does not discuss it; serological primary/secondary assignment on acute sera is imprecise; and the "DHF" definition here is thin (platelets plus any bleeding — see [[Dengue Severity Classification]]). Recorded as an observation, not a refutation.
 - The authors state the standard ADE premise as background — pre-existing heterotypic antibodies form virus–antibody complexes that bind Fc receptors and facilitate infection of target cells, raising viraemia and cytokine levels — but perform no neutralisation, avidity or Fc-receptor experiment (see [[Posadas-Mondragon2020 - TLR Polymorphisms and Clinical Forms of Dengue]], background statement only).
 
+- **The cellular substrate ADE acts through expands during acute secondary dengue — a substrate-side observation only, with no ADE experiment.** Kwissa2014 states the standard premise as background — monocytes are "broadly decorated with Fc-γ receptors", the recognised feature contributing to ADE in secondary dengue, and both CD14⁺ and non-classical CD14^dim^CD16⁺ subsets are "equally susceptible for infection in vitro" (citing Halstead 2010, Nimmerjahn 2008, Wong 2011/2012) — and then supplies the cellular datum every existing bullet on this page lacks. In an **all-secondary** cohort the intermediate CD14⁺CD16⁺ monocyte is enriched by GSEA (NES=1.60, FDR q=0.001, against NES=−1.79 depletion of the classical CD14⁺CD16⁻ set) and expanded by flow cytometry (see [[Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue]], n=28 acute secondary dengue, DF 18 / DHF 10, no DSS); in the macaque model it rises **13-fold in absolute number in axillary lymph node** by day 3 (same source, NHP model, n=5 rhesus macaques). **The paper performs no neutralisation, avidity or FcγR experiment and does not test ADE.** Every other bullet on this page is antibody-side; this one is substrate-side and adds nothing about antibody quality.
+
 ## Contradictions & Debates
 
 - The in vitro ADE assay (U937 cells, single mAb concentration) does not capture the concentration-dependent balance between neutralisation and enhancement that exists in vivo. At sufficiently high concentrations, most antibodies neutralise; at sub-neutralising dilutions, they enhance. Whether the plasmablast-derived antibody concentrations achieved in patient serum fall within the enhancing or neutralising range is unknown.
@@ -40,3 +42,4 @@ Antibody-dependent enhancement (ADE) is a mechanism by which pre-existing cross-
 - [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]
 - [[Woodruff2020 - EF B Cell Responses in COVID-19]]
 - [[Posadas-Mondragon2020 - TLR Polymorphisms and Clinical Forms of Dengue]]
+- [[Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue]] — expansion of the FcγR-bearing CD14⁺CD16⁺ monocyte in all-secondary dengue (background ADE statement only)

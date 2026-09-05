@@ -2,8 +2,8 @@
 type: entity
 tags: [switched-memory, B-cell-subsets, CD27, IgD, class-switch, germinal-center, memory-b-cells]
 created: 2026-06-27
-updated: 2026-08-29
-sources: 16
+updated: 2026-09-05
+sources: 18
 ---
 
 # Switched Memory B Cell
@@ -42,6 +42,10 @@ In the IgD-vs-CD27 gating quadrant, sM (IgD⁻CD27⁺, lower-right) sits directl
 - **[2026-08-29] On the Emory lupus panel, switched memory is a derived quantity, not a directly gated one.** Switched memory frequency was obtained by **subtracting plasmablasts (IgD⁻CD27⁺⁺CD38⁺⁺) from the IgD⁻CD27⁺ compartment** rather than by positive gating — so PB gate placement propagates directly into the SM number (see [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]], n=207 + 46 HCD, cross-sectional). Practical consequence for panel design: SM and PB are not independent measurements on this scheme.
 - **[2026-08-29] Switched memory is the subset where lupus patients are most heterogeneous.** Rather than shifting as a group, **17% of SLE+/CCLE−, 19% of SLE+/CCLE+ and 16% of primary CCLE patients** had switched-memory frequencies more than **2 SD above the healthy-donor mean** — a minority-stratum pattern rather than a group difference. DN1, by contrast, was described as transcriptionally linked to *resting* switched memory (see [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]]).
 
+- **Switched memory is the benchmark DN2 is measured against — and DN2 comes close.** In the 2.5-day sorted-subset assay, conventional switched memory (IgD^neg^CD27⁺) and DN1 memory formed IgG ASCs efficiently while naive B cells failed entirely; **T-bet^hi^ DN2 cells produced only 2–3-fold fewer ASCs than switched memory** (and ≥50-fold more than naive) (see [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]], 3 independent experiments, 3 SLE donors). Separately, RNA-seq of Be1-derived B_DN_ cells was enriched for ASC-associated genes relative to switched memory (p<0.001) as well as to naive and mature B cells (see [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]], RNA-seq n=3/subset). Switched memory therefore remains the most differentiation-competent conventional subset, but the CD27⁻ DN2 population is functionally within reach of it.
+
+- **A numerically small but functionally competitive slice of the switched memory pool, held in a different place.** BrdU given from day 4 for 10 days and read at day 30 put T-bet⁺CD11c⁺ cells at **~5% of BrdU⁺ IgD^lo^CD38⁺GL-7⁻ memory B cells**. On sorted transfer into MD4 recipients they nonetheless produced a recall anti-LCMV IgG response **comparable to memory B cells lacking the phenotype** and higher than naive. i.v. anti-CD45 labelled the **majority** of T-bet⁺CD11c⁺ memory cells against only ~30% of total memory B cells, i.e. the subset keeps its marginal-zone position into memory while the bulk memory pool does not (see [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], mouse, LCMV-Armstrong, n=3–5 mice/group).
+
 ## Contradictions & Debates
 
 - **sM-vs-DN ontology — lineage or artefact?** Two readings of the side-by-side IgD⁻CD27⁺ / IgD⁻CD27⁻ quadrants coexist. (a) Some DN cells are switched memory that have *shed* CD27 — making the boundary partly a labelling artefact of CD27 instability (see [[Sanz2025 - Human Atypical B Cells Overview]]). (b) sM and DN2 are *genuinely distinct endpoints* on epigenetic grounds (different TF programmes; see [[Scharer2019 - Epigenetic Programming in SLE B Cells]]). The DN1/DN2 subdivision partly reconciles these: DN1 ≈ sM-like (memory), DN2 ≈ EF effector (see [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]). In acute dengue's high-TNF environment, CD27 shedding could specifically inflate the DN gate at sM's expense — a measurement caveat carried in [[DN2 Gating Strategy]].
@@ -52,7 +56,6 @@ In the IgD-vs-CD27 gating quadrant, sM (IgD⁻CD27⁺, lower-right) sits directl
 [[Memory B Cell]], [[Double-Negative B Cell]], [[DN2 B Cell]], [[Activated Naive B Cell]], [[CD27]], [[IgD]], [[CD21]], [[Class Switch Recombination]], [[Somatic Hypermutation]], [[Germinal Center]], [[Plasmablast]], [[Extrafollicular Response]], [[Original Antigenic Sin]], [[DN2 Gating Strategy]], [[Early Memory B Cell]], [[Tissue-Resident Memory B Cell]], [[Class Switch Recombination]], [[DN3 B Cell]]
 ## Sources
 - [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]]
-
 - [[Wei2007 - DN Memory B Cells in SLE]]
 - [[Anolik2004 - Rituximab and B Cell Abnormalities in SLE]]
 - [[Tipton2015 - ASC Diversity and Origin in SLE]]
@@ -68,3 +71,5 @@ In the IgD-vs-CD27 gating quadrant, sM (IgD⁻CD27⁺, lower-right) sits directl
 - [[Beckers2023 - Origins and Functions of DN B Cells]]
 - [[Sanz2019 - Consistent Classification of Human B Cell Populations]]
 - [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]]
+- [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]] — DN2 within 2–3-fold of switched memory ASC output; GSEA comparison
+- [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]] — ~5% of BrdU⁺ switched memory but recall-competent; distinct MZ localisation into memory

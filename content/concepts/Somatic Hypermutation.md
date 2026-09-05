@@ -2,8 +2,8 @@
 type: concept
 tags: [somatic-hypermutation, BCR-sequencing, memory-b-cells, germinal-center, extrafollicular-response, affinity-maturation]
 created: 2026-05-02
-updated: 2026-08-28
-sources: 22
+updated: 2026-09-05
+sources: 23
 ---
 
 # Somatic Hypermutation
@@ -56,6 +56,8 @@ Somatic hypermutation (SHM) is the process by which activation-induced cytidine 
 - **AID expression is not diagnostic of GC participation**, because AID is also required for class switch recombination, which typically precedes GC entry (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data). See [[Class Switch Recombination]].
 - **Bearing on the wiki's dengue reading:** [[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]] is used here as evidence for a GC-independent (EF) response in acute dengue. Under this model the inference survives but weakens from a determination to a probabilistic one — and specifically, low load in a *short, acute* response is weak evidence for GC-independence, since insufficient elapsed time produces the same reading as a high-rate GC-independent process. Distinguishing them requires a mutation *rate*, which that study did not measure. See [[GC-Independent Response]].
 
+- **Reduced but not absent mutation in a fate-mapped GC-independent population — with the replacement/silent split reported.** **41.6% of full-length Ig sequences** from murine T-bet⁺CD11c⁺ B cells carried mutations against **61.5% of GC** sequences; total mutation load **0.64% vs 0.99%**; CDR **replacement** mutations **0.66% vs 1.21%** at similar silent frequencies — i.e. reduced *selection*, not only reduced mutation (see [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], mouse, LCMV-Armstrong, Ig-seq n=3 mice, pRESTO/IgBLAST/Immcantation). This parallels the acute-dengue IgG finding in [[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]] and the <3% EF benchmark in [[Tipton2015 - ASC Diversity and Origin in SLE]]. ⚠ As with those, mutational **load** is rate × time and no mutation *rate* was measured here either — the comparison is between contemporaneous populations in the same animals, which is the strongest available control for elapsed time.
+
 ## Contradictions & Debates
 
 - The lower SHM in DN cells is consistent with EF origin but not conclusive — it could also reflect GC selection against autoreactive high-SHM clones, releasing cells with fewer mutations into the periphery. The Jenks2018 DN1/DN2 resolution helps: DN2 cells specifically (not DN1) show the low-SHM pattern, and their TLR7-dependent generation is independently confirmed by in vitro differentiation, making the EF origin model substantially more parsimonious for DN2 cells.
@@ -88,3 +90,4 @@ Somatic hypermutation (SHM) is the process by which activation-induced cytidine 
 - [[Glaros2025 - Multilayered Identity of B Cell Memory]]
 - [[Cancro2020 - Age-Associated B Cells]]
 - [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective; mutational load as probability, not measure
+- [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]] — 41.6% vs 61.5% mutated; load 0.64% vs 0.99%; replacement 0.66% vs 1.21% — reduced selection

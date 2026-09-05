@@ -2,8 +2,8 @@
 type: concept
 tags: [tlr7, tlr9, signalling, traf5, myd88, nf-kb, receptor-mechanism, innate-sensing]
 created: 2026-08-18
-updated: 2026-08-27
-sources: 11
+updated: 2026-09-04
+sources: 12
 ---
 
 # Toll-like Receptor Signaling in B Cells
@@ -67,6 +67,8 @@ Marker-level detail lives on [[TLR7]] and [[TLR9]]; this page routes rather than
 - **Cytokines gate what TLR signalling can do.** **IL-4 suppresses the ability of TLR7 to drive EF responses**, and IL-4/IL-13 support migration into the follicle to form GCs; **IL-12 and IFN-γ favour EF responses**. TLR7 in combination with IFN-γ acts cell-autonomously in mouse B cells to raise T-bet, which facilitates IgG2a/IgG2c class switching (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data).
 - **TLR7/9 are required for GC-independent autoantibody production.** Anti-nuclear antibodies still require TLR7 and/or TLR9 in mice that lack GCs — evidence that the EF arm alone is sufficient for pathogenic autoantibody output. The authors add a framing the wiki should carry into the dengue context: the relevant TLR7 ligands may be self nucleic acids *or* foreign ssRNA from viruses such as SARS-CoV-2, so **the co-presence and concentration of TLR ligands with antigen determines this response type, "rather than whether the target antigen is of self or foreign origin"** (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data). See [[GC-Independent Response]] and [[TLR7]].
 
+- **★ Sustained TLR signalling is *sufficient* to block terminal differentiation — a causal, not correlative, result.** Adding TLR7 (R848) or TLR9 (CpG) ligands to **wild-type** mouse Be1 cultures from day 2 significantly reduced CD138⁺CD93⁺ ASC and IgG-secreting cell numbers, phenocopying T-bet deletion; an NF-κB activator (betulinic acid) did the same. Proliferation was unaffected, excluding a growth artefact (see [[Stone2019 - T-bet Promotes ASC Differentiation by Limiting IFN-gamma Inflammation]], mouse, in vitro). *Tbx21*^−/−^ Be1 cells correspondingly **maintained** high expression of NF-κB family members and increased TLR and TNFR family receptors and ligands that wild-type cells extinguish by day 4. The implication for this page is that TLR signalling in B cells has **opposite effects at different stages** — activating and differentiating early, differentiation-blocking when sustained — and that a B cell unable to downmodulate its TLR/NF-κB network is impaired at becoming an ASC.
+
 ## Contradictions & Debates
 
 **★ The inhibitory-receptor paradox.** DN2 cells are reported as **CD32b^hi^ and CD22^hi^** in their steady-state phenotype (see [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]) — high for two ITIM-bearing inhibitory receptors — yet are simultaneously **hyper-responsive to TLR7**. Part of the resolution may be that TLR7 stimulation itself *downregulates* CD72 and CD32b, so the inhibitory phenotype is the pre-stimulation state and is dismantled on activation. The wiki has no data on ITIM phosphorylation or phosphatase recruitment in these cells and cannot resolve this. Recorded as open.
@@ -90,3 +92,4 @@ Marker-level detail lives on [[TLR7]] and [[TLR9]]; this page routes rather than
 - [[Posadas-Mondragon2020 - TLR Polymorphisms and Clinical Forms of Dengue]]
 - [[Wang2006 - Flavivirus Activation of pDCs and TLR7 Signaling]]
 - [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective; Box 2 GC-vs-EF commitment cues
+- [[Stone2019 - T-bet Promotes ASC Differentiation by Limiting IFN-gamma Inflammation]] — sustained TLR/NF-κB signalling is sufficient to block ASC differentiation (mouse, causal)

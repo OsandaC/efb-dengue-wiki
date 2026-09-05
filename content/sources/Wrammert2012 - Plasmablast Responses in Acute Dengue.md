@@ -64,7 +64,7 @@ The cohort was almost exclusively secondary infections (42/46 by serology), and 
 
 ## Concepts Addressed
 - [[Extrafollicular Response]] (implied — IgG-dominant memory recall, massive short-lived PB wave, rapid contraction)
-- [[Germinal Center]] (implied — memory recall from prior GC-matured cells; GC-independent pathway not assessed)
+*Also discussed but not separately updated — trimmed 2026-09-04:* [[Germinal Center]] — the link was recorded at ingest as **"(implied — memory recall from prior GC-matured cells; GC-independent pathway not assessed)"**, i.e. flagged by the ingest itself as an inference rather than a finding. The paper reports no GC measurement: it characterises a blood plasmablast wave and its repertoire, and explicitly does not assess the GC-independent pathway. Trimming rather than propagating keeps the wiki from carrying an inferred GC claim under a primary dengue citation.
 - [[Memory B Cell]] (implied — anamnestic response in secondary infection)
 - [[Somatic Hypermutation]] (implied — cross-serotype reactivity suggests affinity-matured repertoire; SHM not directly measured)
 - [[Class Switch Recombination]] (implied — IgG dominance over IgM)

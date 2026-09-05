@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, CD40L, CD154, T-B-interaction, costimulation, extrafollicular, germinal-center]
 created: 2026-05-08
-updated: 2026-08-16
-sources: 3
+updated: 2026-09-05
+sources: 4
 ---
 
 # CD40L
@@ -21,6 +21,8 @@ In the extrafollicular pathway, CD40L signalling is paradoxically **inhibitory**
 - **Tph cells express CD40L:** In acute dengue, CXCR5⁻PD-1⁺ Tph cells express CD40L, enabling cognate T-B interaction. Despite CD40L expression, Tph cells drive memory B cell→plasmablast differentiation via IL-21 as the dominant effector cytokine. The role of CD40L in this context may be permissive rather than instructive — providing survival/activation signals without promoting GC entry (see [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]).
 - **CD40/CD154 required for natural ABC accumulation, yet the ABC phenotype is inducible without CD40 ligation — held as compatible, not contradictory.** Neither MHC-II-deficient nor CD40-deficient follicular B cells yield ABCs, and **CD154 (CD40L)-deficient mice fail to develop natural ABCs with age** — the standard evidence for a T-cell-help requirement. Yet the ABC phenotype itself can be achieved **without CD40 ligation** if bystander IFN-γ is present in sufficient quantity, and CD40 costimulation (alongside survival cytokines) **rescues B cells from TLR9-dependent programmed cell death**, with those rescued cells assuming the ABC phenotype in the presence of IFN-γ or IL-21 (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse). This tension is not resolved explicitly; it maps onto a requisite-for-natural-accumulation vs. sufficient-for-phenotype-induction distinction (see [[Germinal Center]]).
 
+- **⚠ Song2022 infers CD40L involvement; it does not measure it.** Having imaged Tfh delivering help at the follicular edge, the authors propose that this "could include cytokines such as IL-21 and IFN-γ and the contact-dependent help CD40L", and later attribute AID induction and class switching to "CD40L-dependent Tfh cell help" — but they state as their **first limitation that Tfh effector molecules were not assessed** (see [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], mouse, LCMV-Armstrong; inference from cell position, not measurement). Recorded so that this paper is not later cited as evidence that CD40L drives T-bet⁺CD11c⁺/ABC generation. The direct blockade experiment has not been done.
+
 ## Contradictions & Debates
 
 - CD40L inhibits EF differentiation from naive cells (Jenks2018) yet Tph cells express CD40L and drive B cell differentiation in dengue (Ansari2025). This apparent contradiction may be resolved by the target cell: Tph preferentially drive memory B cells (not naive), and memory B cells may respond differently to combined CD40L + IL-21 signalling than naive cells. Alternatively, CD40L may be dispensable and IL-21 dominant in the Tph-B cell interaction.
@@ -33,3 +35,4 @@ In the extrafollicular pathway, CD40L signalling is paradoxically **inhibitory**
 - [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]
 - [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]
 - [[Cancro2020 - Age-Associated B Cells]]
+- [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]] — CD40L help inferred from Tfh proximity — explicitly not assessed (author limitation)

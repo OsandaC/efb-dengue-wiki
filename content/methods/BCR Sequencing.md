@@ -2,8 +2,8 @@
 type: method
 tags: [BCR-sequencing, VH-genes, somatic-hypermutation, immunoglobulin-repertoire, Sanger-sequencing, NGS, clonality]
 created: 2026-05-02
-updated: 2026-08-28
-sources: 14
+updated: 2026-09-05
+sources: 15
 ---
 
 # BCR Sequencing
@@ -56,6 +56,8 @@ BCR (B cell receptor) sequencing refers to the sequencing of rearranged immunogl
 - **Isotype conditions the inference.** In mice, certain isotypes (IgG1, IgE) are largely lost when GCs are ablated, while others (IgM, IgG2, IgA) arise both GC-dependently and GC-independently. A given mutational load therefore argues more or less strongly for GC transit depending on which isotype carries it — so repertoire analyses should stratify by isotype before reading origin off load (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data).
 - **AID expression is not a GC readout either.** AID is essential for SHM but also for class switch recombination, which typically precedes GC entry — so detecting AID transcripts in a repertoire or transcriptomic dataset does not place the cell in a germinal centre (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data).
 
+- **Full-length mouse IgH sequencing run end to end on published open tooling — the wiki's fullest reproducible example.** RNA from sorted populations (RNeasy Plus Micro, TapeStation QC), libraries by **NEBNext Immune-seq for mouse IG**, sequenced on a MiSeq with a 600-cycle v3 dual-index kit. Reads were quality-controlled, assembled and filtered in **pRESTO**, germline genes assigned by **IgBLAST**, then clonal clustering, full-length clonal-consensus germline reconstruction, mutation and selection analysis (**SHazaM**) and lineage-tree reconstruction after collapsing duplicates within each clone (**Alakazam**) in the **Immcantation** framework; ~248,116 high-quality assembled reads per sample, n=3 mice (see [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], mouse, LCMV-Armstrong). The clonal-overlap and lineage-bifurcation results rest on this pipeline.
+
 ## Contradictions & Debates
 
 None documented in current wiki sources.
@@ -78,3 +80,4 @@ None documented in current wiki sources.
 - [[Cancro2020 - Age-Associated B Cells]]
 - [[Beckers2023 - Origins and Functions of DN B Cells]]
 - [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective; mutational load = rate × time, a probability of GC transit rather than a measure
+- [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]] — NEBNext Immune-seq → pRESTO → IgBLAST → Immcantation (SHazaM, Alakazam); ~248k reads/sample

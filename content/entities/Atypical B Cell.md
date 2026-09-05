@@ -2,8 +2,8 @@
 type: entity
 tags: [b-cell-subsets, atypical-b-cells, age-associated-b-cells, ABC, T-bet, CD11c, DN2, umbrella, extrafollicular]
 created: 2026-06-13
-updated: 2026-08-28
-sources: 13
+updated: 2026-09-05
+sources: 16
 ---
 
 # Atypical B Cell
@@ -64,6 +64,13 @@ sources: 13
 
 - **★ The umbrella spans at least two phenotypically opposite cells — stated here in 2019, six years before the consensus said the same.** The reciprocal [[FcRH4|FcRL4]]/[[FCRL5]] pattern between HIV and SLE DN cells is direct phenotypic evidence for an **anergic FcRL4⁺ HIV/mucosal type** and an **activated FcRL5⁺CD11c⁺ SLE effector type** under one label; the review contrasts them explicitly, calling the SLE cells activated effectors and noting the HIV cells "are thought to be anergic". Its conclusion is that "the present ABC assignment **non-specifically integrates multiple B cell populations**" (see [[Sanz2019 - Consistent Classification of Human B Cell Populations]], review — **no original data**), figure adapted from [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]). This matters for scope: the wiki's infectious-disease case is partly built by transfer from autoimmunity, and this review says the transfer is not phenotypically free. Compare [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], which reaches the same conclusion by a different route and recommends retiring the acronym.
 
+- **★ A mechanism for conditional PC capacity: T-bet is permissive, not instructive.** The wiki's defensible middle position on atypical B cell PC output is **conditional capacity** (see Contradictions). Stone supplies a candidate mechanism for the condition. T-bet does not induce the PC programme at all — it **represses the IFN-γ-driven inflammatory brake** (NF-κB, TLR, STAT/IRF) that otherwise holds an activated B cell in an effector state. Adding an NF-κB activator or TLR7/9 ligands to *wild-type* Be1 cultures reproduced the *Tbx21*^−/−^ ASC defect without affecting proliferation (see [[Stone2019 - T-bet Promotes ASC Differentiation by Limiting IFN-gamma Inflammation]], mouse, in vitro, ≥2–4 independent experiments). ⚠ **Mouse Be1/Be2 co-culture, not human atypical B cells** — the model is proposed for, not demonstrated in, the population this page describes.
+- **Necessity for *formation* and necessity for *output* are separate questions.** Stone's data indicate T-bet is required for ASC differentiation in a type-1 cytokine environment but dispensable in an IL-4-dominated one, and required for memory B cell differentiation but not memory maintenance (see [[Stone2019 - T-bet Promotes ASC Differentiation by Limiting IFN-gamma Inflammation]], mouse). Set against the evidence that CD11c⁺ ABCs still **form** without T-bet (Du 2019 / Levack 2020 via [[Glaros2025 - Multilayered Identity of B Cell Memory]]), this means the wiki should not use evidence about ABC formation to settle questions about ABC output, or vice versa. See [[T-bet]] Contradictions.
+
+- **The in vitro-generated human T-bet^hi^ population is explicitly equated with the mouse ABC cluster by its authors.** The IFN-γ-driven CD11c^hi^CXCR5^neg^ B_DN_ product is described as similar both to the DN2 cells of SLE patients and to "the CD11c^hi^ Age-Associated B cells (ABCs) that accumulate in aged and autoimmune mice and humans" (see [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]], human, n=20 HD + n=40 SLE + in vitro reconstruction). This matters for the synonymy map on this page: it is a **constructive** identification — the same phenotype was built from ordinary naive B cells with a defined cytokine set — rather than an inference from marker overlap between two observed populations. It supports the wiki's position that the atypical/ABC/DN2 labels describe a reachable **state**, and see [[Sanz2019 - Consistent Classification of Human B Cell Populations]] for the corollary that several different starting populations converge on it.
+
+- **Class switching without affinity maturation is a repertoire signature of the atypical compartment, shown here in fate-mapped cells rather than inferred.** Full-length Ig sequencing of murine T-bet⁺CD11c⁺ B cells found **41.6% of sequences mutated vs 61.5% in GC**, total mutation load **0.64% vs 0.99%**, CDR replacement mutations **0.66% vs 1.21%** at similar silent frequencies, and **<10% clonal overlap** with GC B cells with early bifurcation in lineage trees — while isotype usage was **indistinguishable from GC** (see [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], mouse, LCMV-Armstrong, Ig-seq n=3 mice). ⚠ Murine and acute; the human atypical populations this page otherwise describes come from chronic infection and autoimmunity.
+
 ## Contradictions & Debates
 
 - **Is "atypical B cell" a useful category at all?** Sanz2025 argues no — the precise DN / alternative-lineage nomenclature should replace it. This page keeps "atypical" only as a field-recognisable umbrella; the sub-pages remain the actual units of evidence.
@@ -94,3 +101,6 @@ sources: 13
 - [[Beckers2023 - Origins and Functions of DN B Cells]]
 - [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective; recommends retiring the ABC acronym
 - [[Sanz2019 - Consistent Classification of Human B Cell Populations]]
+- [[Stone2019 - T-bet Promotes ASC Differentiation by Limiting IFN-gamma Inflammation]] — mouse mechanism for conditional PC capacity; formation vs output distinction
+- [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]] — constructive identification of the in vitro T-bet^hi^ product with the ABC cluster
+- [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]] — murine repertoire evidence for CSR without affinity maturation; <10% GC clonal overlap

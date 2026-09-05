@@ -2,8 +2,8 @@
 type: concept
 tags: [dengue, severity, clinical-classification, who-classification]
 created: 2026-06-29
-updated: 2026-08-23
-sources: 3
+updated: 2026-09-04
+sources: 4
 ---
 
 # Dengue Severity Classification
@@ -42,6 +42,9 @@ The structural pivot is that 2009 flags severity on **any single criterion** rat
 - **WHO 1997 is still in active use in the recent literature, and its DF/DHF split can be operationalised very thinly.** A 2020 adult Mexican cohort assigned severity as **DF = platelet count >100 × 10⁹/L** and **DHF = platelet count <100 × 10⁹/L plus any haemorrhagic manifestation** — a two-variable rule, with no plasma-leakage measurement (haematocrit rise, effusion, hypoalbuminaemia) reported at all, even though **plasma leakage is the defining pathophysiological criterion of DHF** under WHO 1997 (see [[Posadas-Mondragon2020 - TLR Polymorphisms and Clinical Forms of Dengue]], n=165 patients, DF n=100 / DHF n=65). The resulting "DHF" group is therefore closer to *thrombocytopenia with bleeding* than to the leakage syndrome the category names. This is the WHO-1997-side counterpart of the **within-scheme definitional heterogeneity** that [[Morra2018 - Defining Warning Signs and Severe Dengue]] documented for WHO-2009: the scheme label alone does not tell a reader what was actually measured.
 - **Practical consequence for cross-study comparison.** Severity strata should be compared across dengue papers only after checking the *operational* definition, not the scheme name. In the cohort above, the platelet difference between arms (54.03 ± 30.48 vs 191.1 ± 65.07 × 10⁹/L) is definitional rather than a finding, whereas the accompanying monocyte and lymphocyte differences are not (see [[Posadas-Mondragon2020 - TLR Polymorphisms and Clinical Forms of Dengue]]; [[Inflammatory Monocyte]]).
 
+- **A whole-blood transcriptome that separates high- from low-viraemia patients but yields no DF/DHF signal at all — scheme held fixed, biology fails to separate.** In 28 hospitalised **secondary** dengue patients (DF n=18, DHF n=10, **no DSS cases**), each sampled once between days 2 and 9 of symptoms, neither hierarchical clustering on the 7,528 highest-variance genes nor PCA detected "any defined clusters between acute DF and DHF". Patients instead split on viral load (>10⁷ vs <10⁵ copies/ml), and both VL and plasma NS-1 antigen correlated **inversely with duration of illness** (VL p=0.0002, r²=0.4272; NS-1 p=0.0021, r²=0.3109) (see [[Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue]], n=28 acute secondary dengue, whole-blood microarray + flow cytometry). The authors attribute the null partly to the **absence of DSS** — the grade carrying the most transcriptional variability in prior work — and state that their cohort comprised uncomplicated DF and DHF only. The paper uses the WHO-1997 tier names but never states which operational criteria were applied, so the [[Morra2018 - Defining Warning Signs and Severe Dengue]] within-scheme caveat applies to it as much as to any WHO-2009 study.
+- **Why this is a third, independent reason to distrust severity as an outcome variable.** The two caveats above concern the *measurement* of severity — schemes disagree with each other (Narvaez) and with themselves (Morra). This one is different in kind: the classification is held constant and **day of illness and viraemia dominate the signal instead**, leaving the DF/DHF contrast invisible underneath. For any severity-stratified immunological result, day post-fever-onset and viral load are candidate confounders on the same footing as the scheme used (see [[Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue]], n=28, a single acute timepoint spread across days 2–9).
+
 ## Contradictions & Debates
 
 The central tension is purpose-dependent and should not be collapsed into a verdict that one scheme is simply "better."
@@ -61,3 +64,4 @@ The central tension is purpose-dependent and should not be collapsed into a verd
 - [[Narvaez2011 - Evaluating WHO Dengue Severity Classifications]]
 - [[Morra2018 - Defining Warning Signs and Severe Dengue]]
 - [[Posadas-Mondragon2020 - TLR Polymorphisms and Clinical Forms of Dengue]]
+- [[Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue]] — no DF/DHF transcriptomic separation; day-of-illness and viraemia dominate

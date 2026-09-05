@@ -2,8 +2,8 @@
 type: entity
 tags: [cytokine, TNF-alpha, germinal-center-disruption, cytokine-storm, T-follicular-helper]
 created: 2026-05-22
-updated: 2026-08-16
-sources: 2
+updated: 2026-09-04
+sources: 3
 ---
 
 # TNF-alpha
@@ -21,6 +21,8 @@ In this wiki, TNF-α is significant as the proposed mediator of GC disruption in
 - **Proposed mechanism:** The differentiation of CD4⁺Bcl-6⁻CXCR5⁺ pre-GC TFH cells into CD4⁺Bcl-6⁺CXCR5⁺ GC-TFH cells occurs extra-follicularly at the T-B interface. High local TNF-α concentrations (possibly induced downstream of TH1 activation) at this site may block Bcl-6 expression transcriptionally or post-transcriptionally, preventing the final TFH maturation step and thus abrogating GC formation. The dual role of TNF-α — required for follicular development at low levels, destructive to GCs at high levels — is dose-dependent (see [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]).
 - **★ ABC-derived TNF-α suppresses B lymphopoiesis — a distinct mechanism/axis from the GC-TFH block above.** The Riley laboratory showed ABCs impede early B cell developmental steps through TNF-α production, acting both **directly** — inducing apoptosis in pre-B cells — and **indirectly** — via systemic inflammatory effects on the bone marrow microenvironment (see [[Cancro2020 - Age-Associated B Cells]], review — no original data; mouse, in vitro + adoptive transfer). **This is a different TNF-α mechanism from the Kaneko2020 finding above and must not be conflated with it:** here, the ABC/atypical B cell is the **source** of TNF-α, which suppresses upstream B lymphopoiesis in the bone marrow; in [[Kaneko2020 - GC Loss and TFH Block in COVID-19]], aberrant TNF-α accumulation (source not B-cell-specific) blocks Bcl-6⁺ GC-TFH differentiation at the T-B interface. Same cytokine, different axis, different anatomical compartment (bone marrow pre-B development vs. lymph node/spleen GC-TFH differentiation) — both are TNF-α-mediated suppression of B cell responses, but not the same mechanism.
 
+- **Plasma TNF-α is among the strongest cytokine correlates of T-bet^hi^ DN2 frequency in SLE.** Spearman correlation of plasma TNFα with T-bet^hi^ DN2 frequency was **r=0.773 (p<0.001)**, alongside CXCL10 (r=0.798), IL-6 (r=0.797), IL-12p70 (r=0.530), IL-8 (r=0.508), IFN-γ (r=0.495) and IFNα (r=0.493); TNFα was significantly elevated in SLE versus healthy donors (see [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]], n=26 SLE + 3–5 HD for plasma cytokines, multiplex bead immunoassay). ⚠ These are **correlations with a circulating cytokine**, not evidence that TNF-α drives DN2 formation — the functional requirement demonstrated in the same paper is for **IFN-γ**, whose plasma correlation (r=0.495) is *weaker* than TNFα's. Circulating concentration and functional requirement come apart here, and the same disconnect is starker for [[IL-21]] (required in vitro, r=0.087 ns in plasma).
+
 ## Contradictions & Debates
 
 - The contribution of TNF-α to GC loss is inferred from spatial co-localisation and murine precedent, not directly demonstrated in the COVID-19 human tissue. Other cytokines elevated in COVID-19 (IL-6, IFN-γ) could also contribute.
@@ -34,3 +36,4 @@ In this wiki, TNF-α is significant as the proposed mediator of GC disruption in
 
 - [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]
 - [[Cancro2020 - Age-Associated B Cells]]
+- [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]] — plasma TNFα r=0.773 with DN2 frequency — but correlation ≠ requirement

@@ -2,8 +2,8 @@
 type: entity
 tags: [b-cell-subsets, age-associated-b-cells, ABC, atypical-b-cells, T-bet, CD11c, aging, autoimmunity, comparative-immunology]
 created: 2026-06-13
-updated: 2026-08-27
-sources: 8
+updated: 2026-09-05
+sources: 9
 ---
 
 # Age-Associated B Cell
@@ -55,6 +55,8 @@ Age-associated B cells (ABCs; also "T-bet⁺ B cells," "age/autoimmunity-associa
 
 - **⚠ [2026-08-27] A cautionary example of "ABC-like" being used for a CD27-POSITIVE population.** In IgG4-related disease, the authors split IgD⁻CD27⁺ switched memory into CXCR5⁺ ("classic/resting switched memory") and **CXCR5⁻ ("ABC-like")**, reporting the classic fraction decreased and the ABC-like fraction expanded (both p<0.01, n=38). They state explicitly that, "given the many definitions of ABC cells," their ABC-like gate **includes both CD11c⁺ and CD11c⁻ cells**, though CD11c⁺ predominated. **This population is CD27⁺ and therefore has no overlap with the DN compartment at all**, and it is not gated on T-bet. It is a distinct entity from every other ABC definition in this wiki and must not be pooled with them — a concrete instance of the definitional heterogeneity that [[Sanz2025 - Human Atypical B Cells Overview]] and [[Lamprinou2026 - ABCs and DN B Cells]] both warn about (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=38).
 
+- **★ The fate-mapping primary for murine ABC origin: most arise without a germinal centre, but they still require Tfh help.** Four orthogonal lines — absent GL-7/EphrinB1, a distinct sorted transcriptome, ***S1pr2*-CreERT2 fate mapping showing >80% never passed through a GC** (17.5% labelled vs 70.0% of GL-7⁺ early GC B cells), and a mixed bone marrow chimera showing B-cell-intrinsic Bcl6 is dispensable — with the result replicated in influenza PR8. The helper is a **canonical CXCR5⁺PD-1^hi^ Tfh acting outside the GC**, not Th1. As infection resolves the cells relocate to the splenic **marginal zone**, retained by LFA-1 and VLA-4 (see [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], mouse, LCMV-Armstrong + influenza PR8, n=3–5 mice/group). ⚠ **Species and setting boundary:** entirely murine, in two *acute resolving* viral infections; the human ABC literature on this page is largely chronic infection and autoimmunity, and no human equivalent of the *S1pr2* fate map exists — the >80% figure is not a human number.
+
 ## Contradictions & Debates
 
 - **ABC ≈ DN2 phenotypically, but ≠ DN2 transcriptomically.** Even where ABCs and DN2 share the T-bet⁺CD11c⁺ phenotype, comparative transcriptomics show ABCs are distinct from other CD11c⁺ subsets including DN2, with elevated cytokine/chemokine expression not seen in the others (see [[Lamprinou2026 - ABCs and DN B Cells]], opinion, citing Maul 2021). The wiki's working "ABC ≈ DN2" equivalence is therefore a **phenotypic approximation limited to the IgD⁻CD27⁻ ABC subset**, not a transcriptomic identity.
@@ -77,3 +79,4 @@ Age-associated B cells (ABCs; also "T-bet⁺ B cells," "age/autoimmunity-associa
 - [[Cancro2020 - Age-Associated B Cells]]
 - [[Anolik2004 - Rituximab and B Cell Abnormalities in SLE]]
 - [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective; four incompatible ABC expansions
+- [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]] — murine ABC fate-mapping primary — GC-independent but Tfh-dependent; MZ relocation

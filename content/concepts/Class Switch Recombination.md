@@ -2,8 +2,8 @@
 type: concept
 tags: [class-switch-recombination, isotype-switching, IgG, IgA, AID, germinal-center, extrafollicular-response]
 created: 2026-05-02
-updated: 2026-08-28
-sources: 22
+updated: 2026-09-05
+sources: 24
 ---
 
 # Class Switch Recombination
@@ -43,6 +43,10 @@ Class switch recombination (CSR) is a DNA recombination event in which the const
 
 - **In Sanz2019's canonical table, switching does not separate the DN subsets — activation state does.** DN1 and DN2 are both annotated IgM/IgG/IgA⁺ (the FcRL4⁺ atypical/tissue-based DN row carries no isotype annotation); what distinguishes them is CD38/CD24/CD21 plus [[CXCR5]], [[CD11c]], [[FCRL5]] and [[FcRH4|FcRL4]]. Isotype is listed among the additional rather than core markers. The practical consequence for this wiki: a switched isotype within the DN gate is not by itself evidence about which DN subset, or which pathway, produced the cell (see [[Sanz2019 - Consistent Classification of Human B Cell Populations]], review — **no original data**).
 
+- **T-bet directs IgG2c switching but IgG2b escapes the requirement — an isotype-selective dependency.** In μMT bone-marrow chimeras, B-cell-intrinsic T-bet deletion abolished NP-specific **IgG2c** antibody and IgG2c⁺ memory B cells after influenza, while **NP-specific IgG2b antibody and IgG2b⁺ memory B cells were intact**; IgG1 and *Hp*-specific responses were also unaffected (see [[Stone2019 - T-bet Promotes ASC Differentiation by Limiting IFN-gamma Inflammation]], mouse, n=5–8/group). The authors attribute the IgG2b escape to **TGF-β**, which drives IgG2b switching and potently suppresses IFN-γ signalling — so IgG2b⁺ cells may be unable to respond to IFN-γ and switch/differentiate T-bet-independently. CSR requirements are therefore **cytokine-pathway-specific rather than uniform across the IgG subclasses**, which is worth holding when reading subclass distributions as a pathway readout.
+
+- **★ CSR proceeds to the same extent outside the germinal centre as inside it — measured in fate-mapped cells.** Full-length Ig sequencing with UMIs (~248,116 high-quality assembled reads per sample, n=3 mice) found **isotype usage of GC-independent T-bet⁺CD11c⁺ B cells not different from GC B cells** — ~80% of GC sequences IgG, with the T-bet⁺CD11c⁺ population predominantly IgG2b/IgG2c. Affinity maturation in the same cells was clearly reduced (mutation load 0.64% vs 0.99%; CDR replacement 0.66% vs 1.21%), so the study **dissociates switching from maturation**: the germinal centre is needed for one and not the other. The authors attribute switching to transient, CD40L-dependent Tfh induction of AID followed by rapid *Aicda* downregulation (see [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], mouse, LCMV-Armstrong).
+
 ## Contradictions & Debates
 
 - **TLR7-mediated vs. Tph-mediated CSR in dengue:** GodoyLozano2016 proposes T-independent CSR via TLR7-mediated endosomal DENV recognition, while Ansari2025 demonstrates Tph-dependent B cell help via IL-21. Whether CSR in acute dengue is driven by TLR7-autonomous B cell activation, T cell help (Tph→IL-21), or both concurrently is unresolved.
@@ -73,3 +77,5 @@ Class switch recombination (CSR) is a DNA recombination event in which the const
 - [[Bhattacharya2016 - Memory B Cell Subset Selection in Secondary Dengue]]
 - [[William2002 - Extrafollicular Somatic Hypermutation in Autoimmune Mice]]
 - [[Sanz2019 - Consistent Classification of Human B Cell Populations]]
+- [[Stone2019 - T-bet Promotes ASC Differentiation by Limiting IFN-gamma Inflammation]] — T-bet directs IgG2c but not IgG2b switching (mouse); TGF-β escape route
+- [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]] — isotype usage indistinguishable from GC — CSR occurs outside the germinal centre

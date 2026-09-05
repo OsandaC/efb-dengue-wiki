@@ -2,8 +2,8 @@
 type: entity
 tags: [transcription-factors, ZEB2, T-bet, effector-differentiation, DN2]
 created: 2026-05-02
-updated: 2026-08-27
-sources: 4
+updated: 2026-09-05
+sources: 5
 ---
 
 # ZEB2
@@ -27,6 +27,8 @@ ZEB2 (Zinc finger E-box-binding homeobox 2) is a transcriptional regulator induc
 
 - **ZEB2 named as a transcriptional regulator of GC-independent responses in both mice and humans — with an explicit caveat against over-reading it.** The consensus Perspective identifies ZEB2 (with T-bet) as part of a *"remarkably conserved molecular and phenotypic profile"* of B cells presumed to derive from GC-independent responses, alongside CD19^hi, CD20^hi, CD21^lo, CD23^lo, CXCR5^lo, FcRL5, PD-1, and CD11c. ZEB2⁺ cells appear to have undergone IFN-γ-dependent transcriptional programming, including CXCR3 induction. But the authors add: *"Expression of ZEB2 and TLR7 may help define a unique B cell activation pathway, but limited data currently exist to determine whether this B cell fate and a classic EF response are always related"* — i.e. ZEB2 marks a programme, and whether that programme is the extrafollicular pathway is an open question, not an established mapping (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data).
 
+- **Song2022 reads *Zeb2* as a memory-associated gene, not only as a follicular-exclusion factor.** In sorted day-12 murine T-bet⁺CD11c⁺ B cells *Zeb2* was highly expressed and was grouped by the authors with ***Mndal* and *Tle3* as genes associated with memory B cells** (citing Bhattacharya 2007 and Laidlaw 2020), listed separately from the secretory-capability genes *Prdm1*, *Xbp1* and *Sdc1* in the same panel (see [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], mouse, LCMV-Armstrong, sorted RNA-seq). This sits beside rather than against the CXCR5-repression reading held elsewhere on this page: the same factor is being credited with a memory-identity role in a population shown to develop without a germinal centre.
+
 ## Contradictions & Debates
 
 - **★ ZEB2 blocks GC entry, yet ZEB2-driven ABCs sustain GCs — which is it?** The wiki holds two results that pull in opposite directions:
@@ -43,3 +45,4 @@ ZEB2 (Zinc finger E-box-binding homeobox 2) is a transcriptional regulator induc
 - [[Sanz2025 - Human Atypical B Cells Overview]]
 - [[Glaros2025 - Multilayered Identity of B Cell Memory]]
 - [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective; ZEB2↔EF mapping is unestablished
+- [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]] — *Zeb2* grouped with memory-associated genes in GC-independent murine T-bet⁺CD11c⁺ cells

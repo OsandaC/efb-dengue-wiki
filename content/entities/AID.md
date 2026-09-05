@@ -2,8 +2,8 @@
 type: entity
 tags: [enzyme, somatic-hypermutation, class-switch-recombination, activation-induced-cytidine-deaminase, extrafollicular]
 created: 2026-05-22
-updated: 2026-08-28
-sources: 3
+updated: 2026-09-05
+sources: 4
 ---
 
 # AID
@@ -22,6 +22,8 @@ In this wiki, AID is significant as the marker whose preservation — despite Bc
 - **★ *Aicda*-based fate mapping cannot establish germinal-center origin — a caveat that invalidates a common inference across a whole literature.** Many studies of tissue-resident memory B cells identified and visualized those cells using **fate-mapping systems driven by the *Aicda* gene**, taking AID expression as a proxy for GC transit. The review states plainly that **because both AID expression and [[Class Switch Recombination|CSR]] can occur outside the GC reaction, these approaches do not definitively distinguish the developmental origin of resident memory B cells**, leaving the precise composition of that population unresolved (see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review, **no original data**). This independently restates — and extends to a new literature — the principle the wiki already holds from [[William2002 - Extrafollicular Somatic Hypermutation in Autoimmune Mice]] (EF SHM at GC-comparable rates) and [[Kaneko2020 - GC Loss and TFH Block in COVID-19]] (AID⁺ B cells preserved despite GC loss). See [[Tissue-Resident Memory B Cell]].
 - **A worked instance: AID-dependent diversification in a GC-absent infection.** In murine *Ehrlichia muris* infection, where splenic GCs are absent, **somatically hypermutated IgM⁺[[T-bet]]⁺** memory-like cells are generated GC-independently and take up residence in liver and spleen (see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review, mouse) — AID activity without a germinal center, in a non-autoimmune infectious setting.
 
+- **Class switching without sustained *Aicda*: the T-bet⁺CD11c⁺ repertoire is switched yet the enzyme is rapidly turned off.** *Aicda* was downregulated relative to GC B cells in sorted day-12 RNA-seq, while Ig repertoire sequencing found **isotype usage indistinguishable from GC** (~80% IgG). The authors reconcile this by proposing that **CD40L-dependent Tfh help transiently induces AID**, after which the cells "rapidly downregulated *Aicda* expression, suggesting that they do not engage in serial interactions with Tfh cells, in contrast to GC B cells" (see [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], mouse, LCMV-Armstrong + influenza PR8, Ig-seq n=3 mice). That is a mechanistic account of switching without affinity maturation — mutation load 0.64% vs 0.99% in GC.
+
 ## Contradictions & Debates
 
 - The preservation of AID⁺ B cells in COVID-19 demonstrates that T cell-mediated B cell activation continues extrafollicularly. However, AID expression alone does not reveal whether SHM is occurring at high rates — the Kaneko2020 study did not measure SHM directly in the tissue. The low SHM observed in COVID-19 convalescent antibodies (cited in the paper) is consistent with AID acting in an EF context with limited rounds of mutation.
@@ -35,3 +37,4 @@ In this wiki, AID is significant as the marker whose preservation — despite Bc
 - [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]
 - [[William2002 - Extrafollicular Somatic Hypermutation in Autoimmune Mice]]
 - [[Glaros2025 - Multilayered Identity of B Cell Memory]]
+- [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]] — *Aicda* downregulated yet CSR complete — transient AID induction without serial Tfh interaction

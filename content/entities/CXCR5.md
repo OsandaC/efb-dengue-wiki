@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, chemokine-receptors, CXCR5, follicle-homing, DN1-DN2-distinction]
 created: 2026-05-02
-updated: 2026-08-28
-sources: 10
+updated: 2026-09-04
+sources: 11
 ---
 
 # CXCR5
@@ -37,6 +37,8 @@ CXCR5 is a chemokine receptor for CXCL13, the follicle-associated chemokine. CXC
 
 - **This is the wiki's earliest source for subgating the DN compartment on CXCR5 — the axis the DN1–DN4 scheme was later built on.** Figure 2D states plainly that "the DN population can be further defined by markers such as **CXCR5**", and Table 1 gives **DN1 as CXCR5⁺** and **DN2 as CXCR5⁻** (with activated naive also CXCR5⁻). Note what is *not* claimed: Sanz2019 uses CXCR5 alongside CD38/CD24/CD21, whereas [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]] later partitions DN on CXCR5 × CD11c with no CD21 at all — the two schemes share this marker but not the partition (see [[Sanz2019 - Consistent Classification of Human B Cell Populations]], review — **no original data**). See [[DN2 Gating Strategy]].
 
+- **CXCR5 is *lost* during the IFN-γ-driven conversion — follicular exclusion is an induced state here, not a starting property.** Naive B cells entering the cocktail are CXCR5⁺; by day 6 the T-bet^hi^ product is **CXCR5^neg^**, and the paper uses CXCR5 with CD11c as the axis separating patient **DN2 (CD11c^hi^CXCR5^neg^)** from **DN1 (CD11c^lo^CXCR5⁺)** (see [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]], human, n=20 HD + n=40 SLE + in vitro reconstruction). Because the starting population is uniform naive B cells, this is direct evidence that CXCR5 downregulation is **driven by the cytokine environment** rather than marking a pre-existing lineage — which bears on the wiki's CXCR5-vs-CD21 gating-axis conflict.
+
 ## Contradictions & Debates
 
 - **★ CXCR5-negativity is not a marker of an extrafollicular response.** The wiki has repeatedly used loss of CXCR5 (follicular homing) as the phenotypic signature of extrafollicular commitment — including in the Woodruff2020 CXCR5→CXCR3 chemokine-receptor-shift finding. The consensus Perspective states that absence of CXCR5, together with low SHM, low BCR affinity, and IgM isotype, are each individually non-definitive *"as they can be observed in B cells that have participated in a GC response"* — and that GC B cells themselves depend on CXCR5 for positioning within the GC, so CXCR5 is not simply a follicular-versus-extrafollicular switch. Compounding this, **low CXCR5 may reflect recent activation rather than a permanent state** (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data). The chemokine-receptor shift remains a real and reproducible observation; what it cannot do alone is locate the response. See [[GC-Independent Response]].
@@ -54,3 +56,4 @@ CXCR5 is a chemokine receptor for CXCL13, the follicle-associated chemokine. CXC
 - [[Lamprinou2026 - ABCs and DN B Cells]]
 - [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective; CXCR5⁻ is not an EF marker
 - [[Sanz2019 - Consistent Classification of Human B Cell Populations]]
+- [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]] — CXCR5 downregulation is cytokine-induced from a uniform naive start

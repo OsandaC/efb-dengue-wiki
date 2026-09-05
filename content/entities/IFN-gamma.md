@@ -2,8 +2,8 @@
 type: entity
 tags: [cytokine, type-ii-interferon, t-bet, dn2, epigenetics, il-21r, receptor-mechanism]
 created: 2026-08-18
-updated: 2026-08-23
-sources: 9
+updated: 2026-09-04
+sources: 10
 ---
 
 # IFN-gamma
@@ -44,6 +44,10 @@ Interferon-gamma (IFN-γ, type II interferon) is one of the three canonical sign
 - IFN-γ is named as one of the cytokines Tfh cells are inferred to deliver in proximity to developing T-bet⁺CD11c⁺ B cells, though the effector molecules were **not directly tested** (see [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], murine)
 - ABCs are reported to produce IFN-γ themselves, at levels higher than follicular B cells (see [[Cancro2020 - Age-Associated B Cells]], review, murine — sole source; see [[Atypical B Cell Effector Output]])
 
+- **★ IFN-γR signalling — not T-bet — is the route to the plasma-cell programme.** *Ifngr1*^−/−^ Be1 cells show significantly reduced *Prdm1* at day 2, keep *Prdm1*/*Irf4*/*Pou2af1*/*Xbp1* low through day 4, form almost no CD138⁺CD93⁺ ASC (15.3% → 0.6%) and secrete no antibody. Deleting *Tbx21* in the same system leaves day-2 *Prdm1* and Blimp-1-motif chromatin accessibility **unchanged**. Knocking out the receptor kills the PC programme; knocking out the transcription factor does not (see [[Stone2019 - T-bet Promotes ASC Differentiation by Limiting IFN-gamma Inflammation]], mouse, Be1/Be2 co-culture + ATAC-seq + qPCR). See [[BLIMP-1]].
+- **IFN-γ is simultaneously the ASC-licensing signal and the source of the brake that must be released.** The IFN-γ-induced gene programme in B cells is bifunctional: it initiates *Prdm1* upregulation but also initiates an inflammatory programme (NF-κB, TLR, STAT/IRF) that, if not restrained, prevents ASC formation. T-bet's role is to restrain the second arm (see [[Stone2019 - T-bet Promotes ASC Differentiation by Limiting IFN-gamma Inflammation]], mouse). This is a sharper reading of IFN-γ's role than "amplifier" alone and complements the human licensing mechanism in [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]] (same lab).
+- **T-bet represses *Ifng* and *Ifngr2*, breaking an autocrine inflammatory loop.** Both loci carry T-bet-motif-containing differentially accessible regions; *Tbx21*^−/−^ Be1 cells produced more IFN-γ and IL-6 after TLR7/9 + anti-CD40/anti-Ig stimulation (see [[Stone2019 - T-bet Promotes ASC Differentiation by Limiting IFN-gamma Inflammation]], mouse, ATAC-seq + cytokine ELISA). B-cell-derived IFN-γ is therefore a feedforward risk that the T-bet programme actively contains.
+
 ## Contradictions & Debates
 
 **★ Obligate for DN2, but not for human antibody responses generally.** [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]] is explicit that IFN-γ is **not required** for human ASC formation as such — human B cells differentiate without it, and STAT1-deficient patients mount vaccine responses. Its own data show IFN-γ is worth a 5–10-fold amplification where TLR ligands are present. Wiki text should say "obligate for the T-bet^hi^ pre-ASC in this system," not "required for antibody production."
@@ -67,3 +71,4 @@ Interferon-gamma (IFN-γ, type II interferon) is one of the three canonical sign
 - [[Scharer2019 - Epigenetic Programming in SLE B Cells]]
 - [[Lamprinou2026 - ABCs and DN B Cells]]
 - [[Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue]]
+- [[Stone2019 - T-bet Promotes ASC Differentiation by Limiting IFN-gamma Inflammation]] — mouse mechanism; IFN-γR required for the PC programme, T-bet-independently

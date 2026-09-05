@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, immunoglobulin, isotype, class-switch-recombination, memory-b-cells]
 created: 2026-05-02
-updated: 2026-08-28
-sources: 21
+updated: 2026-09-05
+sources: 24
 ---
 
 # IgG
@@ -49,6 +49,12 @@ IgG is the predominant antibody isotype in human serum and the primary product o
 
 - **Table 1 assigns IgG to both of the DN rows that carry an isotype annotation at all — so isotype is not what separates the DN subsets.** DN1 and DN2 are both given as IgM/IgG/IgA⁺ (the third, FcRL4⁺ DN row carries **no** isotype annotation); what distinguishes them is CD38/CD24/CD21 plus [[CXCR5]], [[CD11c]], [[FCRL5]] and [[FcRH4|FcRL4]]. IgG and IgA are listed among the additional rather than core markers (see [[Sanz2019 - Consistent Classification of Human B Cell Populations]], review — **no original data**). See [[Double-Negative B Cell]].
 
+- **Monocyte-driven IgG secretion in vitro — with an isotype asymmetry in which blockade arms reached significance.** DENV-infected monocytes cocultured 6 days with resting allogeneic CD19⁺ B cells stimulated **IgG and IgM (but not IgA) secretion to levels significantly higher than monocyte-derived DCs or B-cell-only controls**. In the blocking experiments, however, every arm that reached significance named IgM — TACI-Fc "significantly reduced production of IgM", and anti-IL-10 "significantly blocked plasmablast differentiation and IgM secretion" — while **no significant reduction in IgG is reported for any blocking condition** (see [[Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue]], in vitro, 4 independent experiments with 4 healthy blood donors). Whether the BAFF/APRIL and IL-10 requirement is genuinely isotype-selective, or the IgG arm was simply underpowered at n=4, is not addressed; the underlying data are in supplementary Figure S5, which is not in the wiki's PDF.
+
+- **★ Autoreactive and protective IgG dissociate after B cell depletion — the memory compartments are not equivalent.** Autoreactive **VH4.34 IgG** memory B cells (detected by the 9G4 anti-idiotype) were expanded in SLE at **16.2 ± 11.9%** versus **1.3 ± 0.3%** in healthy controls (P=0.03) and returned to near-normal (**1.92 ± 0.7%**) after effective rituximab depletion. In the same patients, **anti-tetanus and anti-pneumococcal IgG levels were maintained** at 6 months, and serum anti-dsDNA (IgG and IgM) frequently did **not** normalise — only 4 of 8 evaluable patients improved by 1 year, some requiring 24–36 months (see [[Anolik2004 - Rituximab and B Cell Abnormalities in SLE]], n=15-17 SLE + 7 healthy controls, phase I/II open-label trial, 4-colour flow). Two readings the authors draw: protective IgG memory is sustained by a compartment that CD20-targeted depletion spares, and persistent autoantibody despite normalised autoreactive **memory** implicates **long-lived plasma cells** as a separate source. ⚠ VH4.34/9G4 serology is background here under the wiki's standing scope note; the propagated claim is the **cellular** one about IgG memory compartments.
+
+- **Class switching to IgG proceeds normally outside the germinal centre, and the switched output is already functional before any TLR stimulus.** Ig repertoire sequencing found isotype usage of fate-mapped GC-independent T-bet⁺CD11c⁺ B cells **not different from GC B cells** (~80% of GC sequences IgG; the T-bet⁺CD11c⁺ population predominantly **IgG2b/IgG2c**). By ELISpot the population **already contained anti-LCMV IgG-secreting cells before R848 stimulation**, rising after — unlike memory B cells, which were reliant on the TLR ligand. On sorted transfer into MD4 recipients it generated a rapid, robust anti-LCMV IgG recall response at days 5 and 10, higher than naive and comparable to phenotype-negative memory (see [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], mouse, LCMV-Armstrong, Ig-seq n=3 mice).
+
 ## Contradictions & Debates
 
 - **★ A directional prediction that does not hold: DN2 cells are IgG3-enriched, but severe dengue is IgG3-*depleted*.** [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]] reports a higher frequency of IgG3⁺ cells among DN2 than among switched memory or DN1, in both healthy donors and SLE patients, and attributes it to IFN-γ-driven switching in the TLR7-driven EF programme. The wiki's spine claim is that this EF/DN2 route drives the antibody surge in severe dengue. If both held straightforwardly, serum IgG3 should be *higher* in DHF. It is not: high IgG3 was commoner in **DF (38.5%) than DHF (25.4%)**, moving opposite to IgG, IgG1 and IgG4, which are all skewed high in DHF (see [[Posadas-Mondragon2020 - TLR Polymorphisms and Clinical Forms of Dengue]], n=165 patients, tertile-split indices, acute phase 1–8 d, WHO 1997). The authors do not discuss it.
@@ -82,3 +88,6 @@ IgG is the predominant antibody isotype in human serum and the primary product o
 - [[Cancro2020 - Age-Associated B Cells]]
 - [[Posadas-Mondragon2020 - TLR Polymorphisms and Clinical Forms of Dengue]]
 - [[Sanz2019 - Consistent Classification of Human B Cell Populations]]
+- [[Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue]] — monocyte-driven IgG secretion in vitro; blockade significance falls on IgM, not IgG
+- [[Anolik2004 - Rituximab and B Cell Abnormalities in SLE]] — autoreactive VH4.34 IgG memory normalises while protective IgG is maintained
+- [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]] — GC-equivalent IgG isotype usage outside the GC; IgG2b/IgG2c; ASC active before R848

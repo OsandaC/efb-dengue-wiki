@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, CD11c, ITGAX, integrin, DN2, age-associated-b-cells, extrafollicular]
 created: 2026-05-02
-updated: 2026-08-29
-sources: 15
+updated: 2026-09-05
+sources: 17
 ---
 
 # CD11c
@@ -49,6 +49,10 @@ CD11c (encoded by *ITGAX*) is an alpha integrin primarily expressed on dendritic
 
 - **[2026-08-29] CD11c is one of only two markers doing the subsetting work on the Emory lupus panel.** Paired with CD21 it resolves **DN1 (CD21⁺CD11c⁻), DN2 (CD21⁻CD11c⁺) and DN3 (CD21⁻CD11c⁻)** within IgD⁻CD27⁻ cells, and the same CD21⁻CD11c⁺ combination defines activated naive cells inside the IgD⁺CD27⁻ gate. **No T-bet, no CXCR5 and no FCRL5 appear anywhere in the paper's own data** — CD11c alone carries the activation axis in a 207-patient cohort (see [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]], n=207 + 46 HCD, cross-sectional, 8-marker conventional flow). This is the minimal-panel end of the range this wiki covers, and it is worth noting that a large clinically stratified result was obtained with it.
 
+- **CD11c is induced as part of the IFN-γ-driven DN2 conversion, reaching near-saturation in vitro.** The full cocktail drove **>95%** of naive B cells to an IgD⁻CD27⁻T-bet^hi^ phenotype that was **CD11c⁺**, and in SLE patient naive cultures **95% were CD11c⁺** at day 6. In patient blood, DN2 was defined as **CD11c^hi^CXCR5^neg^** (79% of the B_DN_ gate) against DN1 **CD11c^lo^CXCR5⁺** (17%) (see [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]], human, n=20 HD + n=40 SLE + in vitro reconstruction). Supports CD11c as the primary DN2 axis while showing it is inducible by a defined cytokine set rather than lineage-fixed.
+
+- **★ A depletion caveat that invalidates the obvious experiment: CD11c-DTR cannot be used to delete CD11c⁺ B cells after viral challenge.** The authors document that **activated B cells increase DTR transgene expression independently of *Itgax*** in vitro, and CD11c protein in vivo, so diphtheria toxin produced **global ablation of proliferating B cells** rather than selective loss of the CD11c⁺ subset; they restrict the system to memory-phase depletion (days 28/30) instead. In the same study *Itgax* is one of three genes — with *Tbx21* and *Fcrl5* — that are **lower in GC B cells**, i.e. CD11c tracks the GC-independent fate rather than the GC one (see [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], mouse, LCMV-Armstrong, n=3–5 mice/group).
+
 ## Contradictions & Debates
 
 - **★ CD11c positivity does not indicate a GC-independent origin — in either species.** The wiki uses CD11c as the primary axis of the atypical/ABC cluster and, implicitly, as a marker of the extrafollicular pathway. A twelve-author consensus Perspective severs the second inference while leaving the first intact. In mice, CD11c⁺T-bet⁺ cells arise after viral infections as **memory B cells derived from a primary GC reaction**. In humans, CD11c⁺T-bet⁺FcRL5⁺ cells appearing within one week of influenza vaccination are **CD27⁺CD21^lo with high SHM and hallmarks of prior GC selection and affinity maturation** — recent GC emigrants, not EF products. Others are CD27⁺ reactivated memory. The verbatim conclusion: *"CD11c and T-BET expression or lack of CD27 are not exclusive markers of EF B cell responses"* (see [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]], consensus Perspective, 12 authors, no primary data). See [[GC-Independent Response]].
@@ -72,3 +76,5 @@ CD11c (encoded by *ITGAX*) is an alpha integrin primarily expressed on dendritic
 - [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective; CD11c⁺T-bet⁺ cells can be GC-derived
 - [[Sanz2019 - Consistent Classification of Human B Cell Populations]]
 - [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]]
+- [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]] — CD11c induced to >95% by the defined DN2-generating cocktail
+- [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]] — *Itgax* marks the GC-independent fate; CD11c-DTR unusable for early B cell depletion

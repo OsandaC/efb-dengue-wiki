@@ -2,8 +2,8 @@
 type: entity
 tags: [innate-immunity, toll-like-receptors, TLR7, ssRNA-sensor, DN2, extrafollicular, SLE, dengue, host-genetics, x-linked, flavivirus, innate-sensing]
 created: 2026-05-02
-updated: 2026-08-28
-sources: 14
+updated: 2026-09-04
+sources: 15
 ---
 
 # TLR7
@@ -62,6 +62,8 @@ TLR7 (Toll-like Receptor 7) is an endosomal pattern recognition receptor that se
 
 - **★ The review's framing is that the TLR7 programme is a *state accessible to many populations*, not a lineage.** Its unifying statement: "ABC-like cells represent activated effector B cells **induced by TLR7 and driven by IL-21 and IFN produced by TFH cells** in Th1-type responses **within multiple and possibly, all B cell populations**." The supporting observation is that in vitro stimulation of **naive, DN *and* memory** starting populations under mouse-ABC-inducing conditions (TLR7, IFN, IL-21) all converge on CD19++CD21ˡᵒCD11c++T-bet++FcRL5⁺ — which is why the same review then argues that CD21, T-bet or CD11c cannot identify a distinct population (see [[Sanz2019 - Consistent Classification of Human B Cell Populations]], review — **no original data**). See [[Atypical B Cell]], [[CD11c]].
 
+- **★ Sustained TLR7 ligation *suppresses* antibody-secreting cell formation — a direction opposite to TLR7's DN2-generating role.** Adding TLR7 (R848) or TLR9 (CpG ODN1826) ligands to **wild-type** mouse Be1 cultures from day 2 significantly reduced CD138⁺CD93⁺ ASC and IgG-secreting cell numbers, reproducing the defect seen when T-bet is deleted. This was **not** a proliferation artefact — cells expanded equally well in TLR7 and TLR9 ligand conditions (see [[Stone2019 - T-bet Promotes ASC Differentiation by Limiting IFN-gamma Inflammation]], mouse, in vitro, ≥2 independent experiments). The mechanistic reading is that TLR-driven NF-κB activity sustains an inflammatory effector state incompatible with terminal differentiation, and that one of T-bet's jobs is to downmodulate it. **This sits in unresolved tension with the TLR7-driven DN2 generation model** the wiki carries from SLE — see [[DN2 B Cell]] Key Points for the timing problem it creates.
+
 ## Contradictions & Debates
 
 **★ The SLE and dengue TLR7 ligands are different potency classes — and this cuts in dengue's favour.** [[Wang2006 - Flavivirus Activation of pDCs and TLR7 Signaling]] places short synthetic ssRNAs 50–1000× below genomic viral RNA, shows conserved-end and panhandle motifs do nothing at all, and identifies higher-order *shape* as the determinant. The endogenous TLR7 ligands invoked throughout the SLE literature on this page — RNP-associated **small** RNAs from immune complexes — sit in the weak class. Acute dengue supplies an intact, structured **11-kb genome** — the potent class. If the DN2 programme is TLR7-signal-strength-dependent (and [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]]'s 100-fold R-848 dose experiment says signal strength is exactly what sets the cytokine requirement), then transferring the SLE-derived model to dengue is not obviously a stretch toward a weaker stimulus. It may be a stretch toward a **stronger** one. This is a wiki-generated inference across two sources, flagged as such, and it is testable.
@@ -96,3 +98,4 @@ TLR7 (Toll-like Receptor 7) is an endosomal pattern recognition receptor that se
 - [[Beckers2023 - Origins and Functions of DN B Cells]]
 - [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective; TLR7 drives GC and EF, TLR9 drives EF selectively
 - [[Sanz2019 - Consistent Classification of Human B Cell Populations]]
+- [[Stone2019 - T-bet Promotes ASC Differentiation by Limiting IFN-gamma Inflammation]] — TLR7 ligation suppresses ASC formation in mouse Be1 cultures — tension with DN2 generation model

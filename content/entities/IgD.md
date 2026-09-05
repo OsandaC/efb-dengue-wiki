@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, immunoglobulin, isotype, B-cell-subsets, naive-b-cells]
 created: 2026-05-02
-updated: 2026-08-29
-sources: 16
+updated: 2026-09-05
+sources: 19
 ---
 
 # IgD
@@ -32,6 +32,12 @@ IgD (Immunoglobulin D) is a surface immunoglobulin isotype co-expressed with IgM
 
 - **[2026-08-29] IgD anchors the top-level split in a 207-patient lupus cohort.** IgD together with CD27 divides CD19⁺CD3⁻ B cells into naive+transitional (IgD⁺CD27⁻), unswitched memory (IgD⁺CD27⁺), switched memory + plasmablasts (IgD⁻CD27⁺) and double-negative (IgD⁻CD27⁻). **Loss of the IgD⁺CD27⁺ unswitched-memory compartment was shared by all three lupus groups**, including skin-limited disease, and was the single feature most reduced in the cluster with expanded transitional cells (see [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]], n=207 + 46 HCD, cross-sectional).
 
+- **Used both as the defining negative marker and, unusually, as a positive-selection reagent.** B_DN_ cells are defined **IgD⁻CD27⁻**, and IgD is lost as naive cells convert to the T-bet^hi^ pre-ASC state under the cocktail. Methodologically, naive B cells were **positively selected with anti-IgD microbeads** after CD19 enrichment (see [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]], human, n=20 HD + n=40 SLE + in vitro reconstruction) — worth noting because positive selection on IgD ligates the BCR, which matters in a study whose central finding is that **BCR signals must be transient**; the authors nonetheless control BCR input explicitly with timed anti-Ig.
+
+- **IgD anchors both classification systems this paper uses, and they are not equivalent.** B cells were classified two ways in parallel: the **CD27 × IgD** quadrants (naive IgD⁺CD27⁻, memory IgD⁻CD27⁺, **DN IgD⁻CD27⁻**, preswitch IgD⁺CD27⁺), and the **CD38 × IgD Bm1–Bm5** scheme adapted from tonsillar B cells, in which IgD tracks the naive→memory developmental axis and the pre-GC (Bm2′) population is CD38^high^CD19⁺CD20⁺IgD⁺. Plasmablasts were gated as CD38^high^IgD⁻CD20⁻ (see [[Anolik2004 - Rituximab and B Cell Abnormalities in SLE]], n=15-17 SLE + 7 healthy controls, phase I/II open-label trial, 4-colour flow). Naive IgD⁺CD27⁻ cells fell to **35 ± 17%** in SLE versus **68 ± 6%** in controls (P=0.0008). Useful as the origin point for the wiki's [[Bm Classification]] entries and as an early illustration that the two axes answer different questions.
+
+- **IgD is used two ways in this study — as the phenotype boundary and as the tissue landmark.** In flow, naive follicular B cells were gated IgD^hi^CD23⁺ while both GC (IgD^lo^CD95⁺GL-7⁺) and T-bet⁺CD11c⁺ populations were IgD^lo^, and the memory readout was **IgD^lo^CD38⁺GL-7⁻**, maintained to at least day 35. In confocal histocytometry, **anti-IgD staining outlines the splenic white pulp and follicle**, which is how the day-12 localisation was quantified — ~75% of T-bet⁺CD11c⁺ cells in the follicular mantle and ~0% inside germinal centres (see [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], mouse, LCMV-Armstrong + influenza PR8, n=3–5 mice/group).
+
 ## Contradictions & Debates
 
 None documented in current wiki sources.
@@ -56,3 +62,6 @@ None documented in current wiki sources.
 - [[Cancro2020 - Age-Associated B Cells]]
 - [[Sanz2019 - Consistent Classification of Human B Cell Populations]]
 - [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]]
+- [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]] — IgD⁻ definition plus anti-IgD positive selection of naive cells
+- [[Anolik2004 - Rituximab and B Cell Abnormalities in SLE]] — IgD in both the CD27 × IgD and CD38 × IgD (Bm1-Bm5) schemes
+- [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]] — IgD^lo^ as phenotype boundary and anti-IgD as the in-situ follicle landmark
