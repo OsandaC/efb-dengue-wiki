@@ -63,7 +63,6 @@ acN cells represent an important extrafollicular precursor pool: a substantial f
 [[DN2 B Cell]], [[Plasmablast]], [[Extrafollicular Response]], [[Double-Negative B Cell]], [[CD19]], [[CD21]], [[CD23]], [[CD24]], [[CD38]], [[CD11c]], [[T-bet]], [[CXCR5]], [[IgD]], [[Somatic Hypermutation]], [[BCR Sequencing]], [[TLR7]], [[CD10]], [[GC-Independent Response]], [[DN3 B Cell]]
 ## Sources
 - [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]]
-
 - [[Tipton2015 - ASC Diversity and Origin in SLE]]
 - [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]
 - [[Sanz2025 - Human Atypical B Cells Overview]]

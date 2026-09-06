@@ -2,7 +2,7 @@
 type: method
 tags: [flow-cytometry, immunophenotyping, B-cell-subsets, PBMC, panel-design]
 created: 2026-05-02
-updated: 2026-09-05
+updated: 2026-09-06
 sources: 26
 ---
 
@@ -74,6 +74,8 @@ In dengue and related infection studies, conventional flow cytometry has been us
 - **Two design points worth carrying from it.** (i) The study reports **proportion and absolute number separately for every innate subset, and the two dissociate** — monocyte *frequency* rose in high-VL patients while absolute monocyte number did not, whereas BDCA-1⁺ mDC-1 fell on both measures. A frequency-only readout would have reported a monocyte expansion the absolute count does not support. (ii) In tissue, the activation readout is **CD163 and CD169 mean fluorescence intensity** rather than a positivity gate, because all resident lymph-node monocytes were already CD163⁺ at baseline (see [[Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue]], NHP model, n=5). ⚠ The gating tree is supplementary Figure S3A and the antibody list sits in the Supplemental Information — neither is in the wiki's PDF, so no panel composition is recorded here.
 
 - **★ The i.v. anti-CD45 labelling trick — a flow readout for anatomical position.** Song2022 injected **6 µg of PE-conjugated anti-CD45 retro-orbitally 5 minutes before euthanasia**, labelling only cells in compartments open to the circulation (including the marginal zone) and thereby converting a location question into a flow parameter: T-bet⁺CD11c⁺ cells were **40.3% labelled at day 12 and 60.5% at day 15**, against naive follicular 16.8%/23.3% and GC 2.24%/3.47%. The rest of the panel is conventional: LSRII or Fortessa X-20; surface staining 35 minutes at room temperature; intracellular T-bet and Ki67 via the Foxp3/Transcription Factor kit; antigen-specific cells detected with **recombinant HA on streptavidin-APC and streptavidin-PE used together**, because single-probe frequencies were too low to be reliable (see [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], mouse, LCMV-Armstrong + influenza PR8).
+
+- **Dual-fluorophore antigen probes make antigen specificity a flow readout without any sorting step.** Recombinant SARS-CoV-2 RBD was labelled separately with **APC** and with **PE**, and only cells staining with *both* were counted as authentic RBD-specific B cells — the double-label requirement is what suppresses the single-probe background, and the same logic appears independently in Song2022's paired streptavidin-APC/streptavidin-PE HA probes above. The B cell panel itself is 13-colour (CD3, CD56, CD19, CD27, IgD, CD38, CD10, CD45RB, CD21, CD73, CD138, CD11c, CXCR5) on a BD Symphony (see [[Kaneko2020 - GC Loss and TFH Block in COVID-19]], n=10 convalescent + n=4 severe for the RBD panel — blood arm of a post-mortem tissue study). ⚠ **No cell sorting anywhere in this paper** — the RBD populations were identified, never isolated; this page holds the content that the source page previously mis-filed under [[FACS Sorting]].
 
 ## Contradictions & Debates
 

@@ -32,6 +32,5 @@ None documented in current wiki sources.
 [[Extrafollicular Response]], [[Germinal Center]], [[CD11c]], [[BCR Sequencing]], [[FACS Sorting]], [[GC-Independent Response]], [[Multi-color Immunofluorescence]]
 ## Sources
 - [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]]
-
 - [[William2002 - Extrafollicular Somatic Hypermutation in Autoimmune Mice]]
 - [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective; tissue imaging is the only licensing evidence for an EF claim

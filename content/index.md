@@ -67,7 +67,6 @@
 
 ### Other Cell Types
 - [[Inflammatory Monocyte]] — CD14⁺→CD14⁺CD16⁺ conversion by DENV; drives plasmablast differentiation via BAFF/APRIL and IL-10; R-848 (TLR7/8) reproduces the conversion, LPS does not; **monocyte % rises with dengue severity in two independent cohorts** (Kwissa2014 Thai; Posadas-Mondragon2020 Mexican adult, 14.44% DHF vs 10.33% DF, p=0.0001) (sources: 5)
-
 - [[Plasmacytoid Dendritic Cell]] — highest-TLR7 human cell and the type I IFN factory; **the cell in which dengue was shown to engage human TLR7** (IRS 661 blockade); EM-confirmed D2V in endocytic vacuoles; runs the TLR7→type I IFN arm that reporter lines cannot (IRF-7); dengue needs ~50× influenza's MOI, and UV inactivation collapses it to 2.6% of live. Not a B cell — filing under Other Cell Types is easily overruled (sources: 1)
 
 ### Surface Markers & Receptors
@@ -94,7 +93,6 @@
 - [[IgM]] — unswitched isotype; balanced with IgG1/IgA1 in COVID-19 ASC; ongoing CSR to switched isotypes; IgM-dominant in DENV-binding MBCs; IgM⁺ MBCs predisposed to GC re-initiation; acute anti-DENV IgM higher in DHF than DF, but the primary/secondary split is derived from the same IgM/IgG ratio (Posadas-Mondragon2020) (sources: 14)
 - [[IgA]] — mucosal isotype; IgA1 in COVID-19 ASC repertoire; anti-RBD IgA elevated in severe COVID; one of two dominant ABC switched isotypes (sources: 11)
 - [[B220]] — CD45R isoform; heterogeneous in memory B cells (sources: 3)
-
 - [[IL-21R]] — the node where [[IFN-gamma]] priming is cashed out as responsiveness to T cell help: surface protein up 5.5–6× after IFN-γ, *IL21R* locus remodelled; the only receptor in this wiki that has been **blocked in a human dengue B cell response** (sources: 5)
 - [[TACI]] — TNFRSF13B; binds both [[BAFF]] and [[APRIL]]; appears in two roles — blocking reagent (TACI-Fc) and surface receptor on atypical B cells, which sits oddly against those cells' reported BAFF-independence (sources: 3)
 - [[LFA-1]] — αLβ2 (CD11a/CD18), ligand ICAM-1; with [[VLA-4]] the wiki's **only adhesion mechanism** — physically retains T-bet⁺CD11c⁺ B cells at the splenic marginal zone, reversibly within hours ⇒ ★ circulating frequency may partly read *retention failure* rather than pool size. ⚠ CD11a ≠ CD11c (sources: 2)
@@ -116,7 +114,6 @@
 - [[TLR9]] — CpG/DNA sensor; sufficient mitogen for DN B cell proliferation without BCR crosslinking and upregulates CD27 (Wei2007); ★ **tolerance checkpoint acting OPPOSITE to TLR7** — TLR9 knockouts *exacerbate* autoimmunity (Cancro2020); TLR9⁻/⁻ pDCs used as the off-target control validating a TLR7 inhibitor, and TLR9 multimerization is the cited precedent for the TLR7 multimerization model (Wang2006) (sources: 7)
 - [[HOPX]] — marks cytotoxic GZMB⁺ Tph subcluster in dengue scRNA-seq (sources: 1)
 - [[TOX2]] — marks IL-21⁺ helper Tph subcluster; Tfh-associated TF on CXCR5⁻ cells (sources: 1)
-
 - [[STAT3]] — downstream of [[IL-21R]] and the wiki's only measured JAK-STAT readout; phospho-STAT3 is the assay that turns "IFN-γ reprograms the cell" from a chromatin inference into a measured signalling difference. ⚠ stub, single source; no STAT1/STAT5/JAK content in the corpus (sources: 1)
 - [[XBP1]] — UPR transcription factor required for the plasma-cell secretory apparatus; earns a page because the sources **disagree informatively** — high in murine T-bet⁺CD11c⁺ B cells, a negative result in human atypical B cells, DN3-associated — making it a proxy for how far along the PC differentiation path these cells actually are (sources: 6)
 
@@ -164,9 +161,9 @@
 - [[Multi-color Immunofluorescence]] — tissue-based imaging; TissueFAXS/TissueQuest/StrataQuest; 5–7-color multispectral; cell-to-cell contact quantification; FFPE tissue analysis (sources: 3)
 - [[Conventional Flow Cytometry]] — multi-color panels; Wrammert2012 (5-color) + GarciaBates2013 + Appanna2016 + Ansari2025 + Priyamvada2016 + Kaneko2020 (13-color) panels; CITE-seq gating validation; non-B-cell purity checks (pDC lineage⁻CD123⁺HLA-DR⁺, >85%) (sources: 26)
 - [[Bm Classification]] — IgD/CD38 Bm1–Bm5 developmental staging framework (sources: 3)
-- [[FACS Sorting]] — multi-population sort for multi-omic profiling; antigen-specific live virus sorting; RBD dual-fluorophore probes (Kaneko2020); activated CD4⁺ T cell sorting for scRNA-seq; tetramer-based sorting for Smart-seq2; >98% purity standard where sorted cells are the genetic control (Wang2006 TLR7⁻/⁻/TLR9⁻/⁻ pDCs) (sources: 16)
+- [[FACS Sorting]] — multi-population sort for multi-omic profiling; antigen-specific live virus sorting; RBD dual-fluorophore probes (Kaneko2020); activated CD4⁺ T cell sorting for scRNA-seq; tetramer-based sorting for Smart-seq2; >98% purity standard where sorted cells are the genetic control (Wang2006 TLR7⁻/⁻/TLR9⁻/⁻ pDCs) (sources: 15)
 - [[BCR Sequencing]] — Sanger, NGS, 10x Chromium scV(D)J, 454 pyrosequencing, microdissection+Vκ PCR, Smart-seq2 full-length BCR; germline-dominant repertoire in COVID-19 EF ASCs; first dengue BCR data (Parameswaran2013); PB/MBC clonal overlap analysis; ImmunediveRsity pipeline + Monte Carlo deconvolution; EF genealogical trees (William2002) (sources: 15)
-- [[RNA Sequencing]] — 5,090 DEGs; PageRank TF network; EGR4 apex; ATF3 DN2-specific (sources: 7)
+- [[RNA Sequencing]] — 5,090 DEGs; PageRank TF network; EGR4 apex; ATF3 DN2-specific (sources: 8)
 - [[ATAC-seq]] — comprehensive multi-subset comparison; T-BET/AP-1/EGR motifs in DN2 (sources: 5)
 - [[RRBS]] — reduced-representation bisulfite sequencing; progressive hypomethylation hierarchy (sources: 1)
 - [[ELISpot]] — antigen-specific ASC quantification; DENV-specific IgG quantification; FluoroSpot for IL-21/IFN-γ in dengue (sources: 11)

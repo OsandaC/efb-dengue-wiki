@@ -87,7 +87,6 @@ Four candidate effector routes appear in the literature: **antibody-secreting-ce
 [[Atypical B Cell]], [[Double-Negative B Cell]], [[DN2 B Cell]], [[Plasmablast]], [[Extrafollicular Response]], [[Follicular Exclusion]], [[Extrafollicular T Cell Help]], [[Toll-like Receptor Signaling in B Cells]], [[B Cell Receptor Signaling]], [[IFN-gamma]], [[IL-21]], [[IL-21R]], [[BAFF]], [[TNF-alpha]], [[Why DN B Cells Matter - Disease Relevance and Infectious Disease Case]], [[DN3 B Cell]]
 ## Sources
 - [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]]
-
 - [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]]
 - [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]]
 - [[Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue]]

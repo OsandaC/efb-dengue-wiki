@@ -9,7 +9,7 @@ citations_semantic_scholar: 649
 citations_crossref: 662
 citations_retrieved: 2026-05-22
 created: 2026-05-22
-updated: 2026-05-22
+updated: 2026-09-06
 ---
 
 # Kaneko2020 - GC Loss and TFH Block in COVID-19
@@ -47,8 +47,9 @@ Parallel peripheral blood studies in a separate cohort revealed loss of transiti
 ## Methods Used
 
 - [[Multi-color Immunofluorescence]] (tissue: CD3, CD19, Bcl-6, AID, CD4, ICOS, T-bet, GATA-3, RORγt, FOXP3, CXCR5, IgD, CD27, IgG, TNF-α, CD35, CD8; up to 7-color multispectral)
-- [[Conventional Flow Cytometry]] (blood: 13-color B cell panel — CD3, CD56, CD19, CD27, IgD, CD38, CD10, CD45RB, CD21, CD73, CD138, CD11c, CXCR5; BD Symphony)
-- [[FACS Sorting]] (RBD-specific B cell identification with dual-fluorophore probes)
+- [[Conventional Flow Cytometry]] (blood: 13-color B cell panel — CD3, CD56, CD19, CD27, IgD, CD38, CD10, CD45RB, CD21, CD73, CD138, CD11c, CXCR5; BD Symphony. Also the RBD-specific readout: recombinant SARS-CoV-2 RBD labelled separately with APC and PE, cells staining with **both** probes counted as authentic RBD-specific B cells)
+
+*Also used but not separately updated:* [[FACS Sorting]] — **trimmed 2026-09-06 by the source→method filing audit: no cell sorting was performed.** "Sorted", "sorting", "FACSAria" and "cell sorter" appear nowhere in the paper — the only matches for the string "sort" are "Consortium". The dual-fluorophore RBD work is flow-cytometric *identification*, not isolation ("cells that stained with both labeled probes were considered authentic RBD-specific B cells"), and that content moved to [[Conventional Flow Cytometry]] above.
 
 ## Entities Mentioned
 

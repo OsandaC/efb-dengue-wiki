@@ -2,8 +2,8 @@
 type: method
 tags: [FACS-sorting, cell-sorting, flow-cytometry, BCR-sequencing, B-cell-subsets]
 created: 2026-05-02
-updated: 2026-09-05
-sources: 16
+updated: 2026-09-06
+sources: 15
 ---
 
 # FACS Sorting
@@ -54,7 +54,6 @@ None documented in current wiki sources.
 - [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]
 - [[Appanna2016 - Plasmablasts as Subset of Memory B Cell Pool]]
 - [[Priyamvada2016 - Cross-Reactive Memory Plasmablasts in Secondary Dengue]]
-- [[Kaneko2020 - GC Loss and TFH Block in COVID-19]]
 - [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]]
 - [[Glaros2025 - Multilayered Identity of B Cell Memory]]
 - [[Cancro2020 - Age-Associated B Cells]]

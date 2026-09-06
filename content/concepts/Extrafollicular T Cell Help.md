@@ -70,7 +70,6 @@ These reach a similar outcome by different routes. The wiki treats them as relat
 [[Peripheral Helper T Cell]], [[IL-21]], [[IL-21R]], [[CD40L]], [[ICOS]], [[IFN-gamma]], [[STAT3]], [[Extrafollicular Response]], [[Germinal Center]], [[Follicular Exclusion]], [[Atypical B Cell Effector Output]], [[DN2 B Cell]], [[T-B Coculture Assay]], [[GC-Independent Response]], [[DN3 B Cell]]
 ## Sources
 - [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]]
-
 - [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]]
 - [[Ansari2025 - Peripheral T Helper Subset Drives B Cell Response in Dengue]]
 - [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]]

@@ -57,7 +57,6 @@ All findings in this section are **murine**, from acute LCMV and influenza infec
 [[CXCR5]], [[CXCR3]], [[CD21]], [[ZEB2]], [[LFA-1]], [[VLA-4]], [[S1PR3]], [[DN2 B Cell]], [[Atypical B Cell]], [[Extrafollicular Response]], [[Germinal Center]], [[Atypical B Cell Effector Output]], [[Extrafollicular T Cell Help]], [[DN3 B Cell]]
 ## Sources
 - [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]]
-
 - [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]]
 - [[Woodruff2020 - EF B Cell Responses in COVID-19]]
 - [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]

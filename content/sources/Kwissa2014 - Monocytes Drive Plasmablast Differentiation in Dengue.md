@@ -9,7 +9,7 @@ citations_semantic_scholar: 228
 citations_crossref: 225
 citations_retrieved: 2026-08-18
 created: 2026-08-18
-updated: 2026-09-04
+updated: 2026-09-06
 ---
 
 # Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue
@@ -75,9 +75,11 @@ A second finding matters for the wiki's severity axis: the acute dengue whole-bl
 
 ## Methods Used
 
-[[Conventional Flow Cytometry]], [[In Vitro B Cell Stimulation]]
+[[Conventional Flow Cytometry]], [[In Vitro B Cell Stimulation]], [[RNA Sequencing]] (whole-blood transcriptome on an **Affymetrix Human U133 Plus 2.0 microarray** — **no sequencing was performed anywhere in the paper** — read by GSEA/IPA cell-type deconvolution against monocyte-subset-specific gene sets)
 
-*Also discussed but not separately updated:* [[RNA Sequencing]] (the whole-blood transcriptome was **Affymetrix Human U133 Plus 2.0 microarray** — no sequencing was performed anywhere in the paper; the GSEA/IPA deconvolution of whole blood using monocyte-subset-specific gene sets has no method page yet), [[Serum Proteomics]] (plasma proteins were measured by Bio-Plex Pro 27-plex bead assay and by BAFF/APRIL/NS-1 ELISA — not the LC-MS/MS antibody-sequence identification that page describes), [[ELISpot]] (named once, in a list of confirmatory diagnostics, with the protocol referenced to [[Wrammert2012 - Plasmablast Responses in Acute Dengue]]; **no ELISpot result is reported** — the page could carry nothing from it), [[T-B Coculture Assay]] (the coculture is monocyte–B cell; no T cells are present in any culture in this study), [[FACS Sorting]] (**no cells were sorted** — monocytes and B cells were isolated by Miltenyi CD14/CD19 magnetic positive selection to ≥95% purity, and the FACSAria was used only as an analyser).
+> **Re-propagated 2026-09-06.** [[RNA Sequencing]] was *trimmed* from this triad on 2026-09-04 because the paper is a microarray study and that page was framed as sequencing-only — which left real content homeless while the same page was quietly carrying microarray-derived entries from Stone2019 and Cancro2020. The page has now been rescoped to **bulk transcriptome profiling** and names each study's platform, so this content has a home and the link is restored.
+
+*Also discussed but not separately updated:* [[Serum Proteomics]] (plasma proteins were measured by Bio-Plex Pro 27-plex bead assay and by BAFF/APRIL/NS-1 ELISA — not the LC-MS/MS antibody-sequence identification that page describes), [[ELISpot]] (named once, in a list of confirmatory diagnostics, with the protocol referenced to [[Wrammert2012 - Plasmablast Responses in Acute Dengue]]; **no ELISpot result is reported** — the page could carry nothing from it), [[T-B Coculture Assay]] (the coculture is monocyte–B cell; no T cells are present in any culture in this study), [[FACS Sorting]] (**no cells were sorted** — monocytes and B cells were isolated by Miltenyi CD14/CD19 magnetic positive selection to ≥95% purity, and the FACSAria was used only as an analyser).
 
 ## Entities Mentioned
 
