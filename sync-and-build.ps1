@@ -38,6 +38,29 @@ if (Test-Path $councilDir) {
 }
 Write-Host "Sync complete." -ForegroundColor Green
 
+# Local Node is whatever happens to be on PATH; Cloudflare reads .node-version.
+# There is no nvm/asdf shim on this machine, so the two drift silently -- on
+# 2026-09-05 the local build ran Node 24 against a production pin of 22. This is
+# a WARNING, not a Fail: a major mismatch does not stop the build, it just means
+# a green build here is weaker evidence than it looks.
+$nodeVersionFile = Join-Path $scriptDir ".node-version"
+if (Test-Path $nodeVersionFile) {
+    $pinned = (Get-Content $nodeVersionFile -TotalCount 1).Trim()
+    $localNode = node -v
+    if ($LASTEXITCODE -ne 0) { Fail "node -v returned $LASTEXITCODE -- is Node on PATH?" }
+    $pinnedMajor = (($pinned -replace '^v', '') -split '\.')[0]
+    $localMajor  = (($localNode -replace '^v', '') -split '\.')[0]
+    if ($pinnedMajor -ne $localMajor) {
+        Write-Host ""
+        Write-Host "WARNING: Node major mismatch -- local $localNode, .node-version pins $pinned." -ForegroundColor Yellow
+        Write-Host "         Cloudflare builds on the pinned major. A green build here is NOT" -ForegroundColor Yellow
+        Write-Host "         evidence the deploy will succeed -- verify the live URL after pushing." -ForegroundColor Yellow
+        Write-Host ""
+    } else {
+        Write-Host "Node $localNode matches the .node-version major ($pinned)." -ForegroundColor Green
+    }
+}
+
 Write-Host "Installing dependencies (clean-install -- same as Cloudflare)..." -ForegroundColor Cyan
 Set-Location $scriptDir
 # `npm install` honours a stale node_modules and reports "up to date"; Cloudflare
