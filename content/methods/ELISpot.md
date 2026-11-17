@@ -2,8 +2,8 @@
 type: method
 tags: [ELISpot, antibody-secreting-cells, ASC-quantification, antigen-specific, functional-assay]
 created: 2026-05-02
-updated: 2026-09-05
-sources: 11
+updated: 2026-09-14
+sources: 13
 ---
 
 # ELISpot
@@ -33,6 +33,10 @@ ELISpot provides functional single-cell resolution that flow cytometry cannot �
 - **A deliberately short 6-hour IgG ELISPOT, used to count only actively secreting cells.** Serially diluted B cells were transferred **directly** onto anti-human-IgG-coated plates for **6 hr** (not overnight), detected with alkaline-phosphatase-conjugated anti-human IgG and BCIP/NBT substrate, read on a **CTL ELISPOT reader** with correction for non-specific background (see [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]], human, n=20 HD + n=40 SLE + in vitro reconstruction). The short incubation matters for interpretation: it enumerates cells already secreting at the moment of transfer rather than cells that differentiate during the assay, which is what makes the 2.5-day DN2-versus-naive comparison a measure of **pre-existing** secretory capacity.
 
 - **★ A paired media-only vs R848 design that separates constitutive from TLR-inducible antibody secretion.** Plates were coated with **sonicated cell lysate from LCMV-infected BHK-21 cells** rather than a purified antigen; sorted B cell subsets were plated **in media alone overnight, or with R848 (10 ng/mL) for 72 hours**, then developed with alkaline-phosphatase-conjugated anti-mouse IgG and Vector Blue and read on an ImmunoSpot analyser **or counted blinded** (see [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], mouse, LCMV-Armstrong). The two arms are what allowed the authors to place T-bet⁺CD11c⁺ cells **between** memory B cells (TLR-dependent) and plasma cells (TLR-independent) — a distinction a single-condition ELISpot would have missed entirely. The same paired layout was used for anti-dsDNA and anti-chromatin autoreactivity.
+- **★★ ELISpot used to establish a negative, with the controls that make a negative interpretable.** IgM/IgA/IgG ELISpot on magnetically sorted naive, classical and atypical MBC found **no antibody secretion from atypical MBC** at rest (48 h unstimulated, n=14), **none during acute febrile malaria in children** (n=10), and **no ASC differentiation** after 6 days of CpG + IL-10 + SAC + PWM (n=9) — while classical MBC differentiated readily in the same cultures and total PBMC gave the expected low ASC frequency (see [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]], chronic malaria cohort).
+- **★ The paired-cocktail depletion control is the design worth reusing.** To exclude the possibility that sorting itself suppressed secretion, two negative-selection cocktails were run on the same samples differing **only** by anti-CD43 and anti-CD66b (plasmablast/plasma-cell markers). The PB/PC-retaining fraction gave ASC spots; the PB/PC-depleted fraction gave none. This shows the assay detects ASCs when they are present and that the signal tracks PB/PC rather than atypical MBC — converting "we saw nothing" into "there is nothing to see" (see [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]], n=6; see [[Magnetic Bead Sorting]], [[Plasmablast]]).
+- **Assay detail:** Millipore MSIP plates coated with 10 µg/ml goat anti-human IgG, blocked with 1% BSA/RPMI; serial dilutions from 2×10⁴ down to 156 cells; 6 h at 37 °C; alkaline-phosphatase-conjugated goat anti-human IgG Fc or anti-IgG/IgM/IgA (H+L) at 1:1000 or 1:5000; BCIP/NBT development 5–15 min; CTL plate reader with Cellspot (see [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]]).
+- **⚠ The ELISpot that seeded the "exhausted B cell" framing in malaria is n=1 and n=2.** Plates coated with goat anti-human IgG-specific antibody; bead-fractionated subsets cultured 5 days with polyclonal activators before transfer. **CpG + SAC (n=1):** classical MBC 34,900 ASC/10⁶, **atypical MBC 0/10⁶**, naive 1,300/10⁶. **Pokeweed mitogen + SAC + CpG + IL-10 (n=2, cited to unpublished data):** classical 102,800/10⁶, **atypical 2,600/10⁶**, naive 8,250/10⁶ (see [[Weiss2009 - Atypical Memory B Cells Expanded in Malaria-Endemic Area]], n=1 and n=2 — the authors' own word is "preliminary studies"; not generalizable). The quoted SDs are replicate wells within a donor, not variation between donors, and **IgG plates only** were run — so "failed to produce any ASCs" is a statement about IgG. The same conclusion at interpretable n, with the paired-cocktail depletion control described above, is [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]] (n=9–14): **the 2009 result is the hypothesis, the 2015 result is the evidence.**
 
 ## Contradictions & Debates
 
@@ -55,3 +59,5 @@ None documented in current wiki sources.
 - [[Stone2019 - T-bet Promotes ASC Differentiation by Limiting IFN-gamma Inflammation]] — ELISPOT as orthogonal ASC check; subclass-resolved ex vivo ELISPOT
 - [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]] — 6-hour direct-transfer IgG ELISPOT — counts pre-existing secretors
 - [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]] — paired media-only vs R848 arms separate constitutive from TLR-inducible secretion; viral-lysate capture
+- [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]]
+- [[Weiss2009 - Atypical Memory B Cells Expanded in Malaria-Endemic Area]]

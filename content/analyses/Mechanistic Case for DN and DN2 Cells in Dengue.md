@@ -2,8 +2,8 @@
 type: analysis
 tags: [dengue, dn2, mechanism, manuscript, discussion, severity, compositional, asc]
 created: 2026-08-18
-updated: 2026-08-28
-sources: 20
+updated: 2026-09-14
+sources: 25
 ---
 
 # Mechanistic Case for DN and DN2 Cells in Dengue

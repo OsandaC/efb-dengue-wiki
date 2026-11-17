@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, immunoglobulin, isotype, memory-b-cells, marginal-zone]
 created: 2026-05-02
-updated: 2026-09-05
-sources: 14
+updated: 2026-09-14
+sources: 15
 ---
 
 # IgM
@@ -38,6 +38,8 @@ IgM is the first immunoglobulin isotype produced by B cells and the default surf
 - **IgM is the isotype the dengue-monocyte blockade experiments actually moved.** DENV-infected monocytes drove IgG and IgM (but not IgA) secretion from resting allogeneic B cells above MDDC and B-cell-only controls, and both **TACI-Fc** (the BAFF/APRIL decoy) and **anti-IL-10** significantly reduced IgM, whereas anti-IL-6 and anti-IP-10 did not, and no significant IgG reduction is reported for any arm (see [[Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue]], in vitro, 4 independent experiments with 4 healthy blood donors). Separately, all five DENV-2-infected rhesus macaques developed DENV-2-specific plasma IgM (same source, NHP model, n=5), and dengue-specific IgM ELISA was one of the confirmatory diagnostics in the human cohort. ⚠ Do not read the in vitro IgM prominence against the *in vivo* secondary-dengue picture above ([[Wrammert2012 - Plasmablast Responses in Acute Dengue]], IgM near-absent): this culture starts from resting bulk B cells including naive cells and is polyclonal and non-antigen-specific, so IgM output here is a property of the assay rather than a claim about secondary dengue.
 
 - **The T-bet⁺CD11c⁺ recall response is IgG-dominated, and the IgM comparison is what demonstrates it.** In sorted-transfer recall experiments into MD4 recipients, **naive and memory B cell recipients produced more IgM** than recipients of T-bet⁺CD11c⁺ cells, which instead gave a rapid anti-LCMV IgG response at days 5 and 10 (see [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], mouse, LCMV-Armstrong, n=3–5 mice/group). This is consistent with the repertoire data showing the population is already class-switched — predominantly IgG2b/IgG2c, with isotype usage indistinguishable from GC B cells — so it enters a recall response with little unswitched reserve.
+- **Naive B cells largely IgM⁺ while both classical and atypical memory are predominantly IgG⁺**, in lifelong *P. falciparum* exposure — the isotype distribution is one of three lines supporting a common origin for atypical and classical MBC (see [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]], n=7, flow cytometry).
+- **IgM secretion was assayed and absent.** The ELISpot used a combined IgM/IgA/IgG detection, so the negative antibody-output result for atypical MBC covers IgM as well as switched isotypes — this is not an IgG-only finding (see [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]], n=9–14).
 
 ## Contradictions & Debates
 
@@ -61,3 +63,4 @@ None documented in current wiki sources.
 - [[Sanz2019 - Consistent Classification of Human B Cell Populations]]
 - [[Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue]] — TACI-Fc and anti-IL-10 both significantly reduce IgM in monocyte–B coculture
 - [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]] — naive and memory transfers gave more IgM than T-bet⁺CD11c⁺ cells on recall
+- [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]]

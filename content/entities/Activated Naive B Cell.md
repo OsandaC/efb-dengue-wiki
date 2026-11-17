@@ -2,8 +2,8 @@
 type: entity
 tags: [b-cell-subsets, activated-naive, extrafollicular, SLE, plasmablast-precursor, flow-cytometry]
 created: 2026-05-02
-updated: 2026-08-29
-sources: 11
+updated: 2026-09-14
+sources: 12
 ---
 
 # Activated Naive B Cell
@@ -52,6 +52,7 @@ acN cells represent an important extrafollicular precursor pool: a substantial f
 
 - **[2026-08-29] aNAV is gated on the same two markers as DN2, one gate up, and is again called the DN2 progenitor.** Within the IgD⁺CD27⁻ naive+transitional gate, activated naive cells were defined **CD21⁻CD11c⁺** — identical marker logic to the DN2 gate applied inside the IgD⁺ compartment. They were expanded in **both SLE groups relative to primary cutaneous lupus** (as a proportion of both CD19⁺ and of total naive), and the paper describes them plainly as *representing DN2 progenitors* (see [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]], n=207 + 46 HCD, cross-sectional). ⚠ The progenitor relationship is asserted on prior work, not tested here — no fate-mapping, sorting or trajectory analysis was performed.
 - **[2026-08-29] aNAV clusters with DN2, DN3 and plasmablasts as one effector family.** In unsupervised hierarchical clustering of 253 subjects on subset frequency, the subsets separated into three families — early (resting naive, early transitional), memory (unswitched memory, switched memory, DN1) and **effector (aNAV, DN2, DN3, PB)** — and the effector family moved together across all five patient clusters (see [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]]).
+- **★ The un-excludable contaminant in the entire infection "atypical memory" literature.** aNAV are IgD⁺CD27⁻CD21⁻ — they share **CD27⁻ and CD21⁻** with the atypical/DN compartment and are separated from it **only by IgD**. The founding malaria papers gate on CD19/CD20/CD21/CD27/CD10 with **no IgD channel at all** (see [[Weiss2009 - Atypical Memory B Cells Expanded in Malaria-Endemic Area]], n=75 Malian + n=10 US, four-colour; same marker set in [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]]). Their CD27⁻CD21⁻CD20⁺CD10⁻ "atypical MBC" gate therefore **contains aNAV by construction**, in unknown proportion. This is not a hypothetical concern: aNAV is the wiki's proposed EF precursor and expands under exactly the inflammatory conditions these studies sample. Any transfer of a malaria or HIV "atypical MBC" result onto DN2 or aNAV specifically must carry this caveat.
 
 ## Contradictions & Debates
 
@@ -73,3 +74,4 @@ acN cells represent an important extrafollicular precursor pool: a substantial f
 - [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective; CD21ˡᵒ/CXCR5⁻/CD11c⁺ may report recent activation
 - [[Sanz2019 - Consistent Classification of Human B Cell Populations]]
 - [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]]
+- [[Weiss2009 - Atypical Memory B Cells Expanded in Malaria-Endemic Area]]

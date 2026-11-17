@@ -2,8 +2,8 @@
 type: concept
 tags: [GC-independent, extrafollicular-response, nomenclature, methodology, inference-limits, origin-vs-location]
 created: 2026-08-27
-updated: 2026-08-27
-sources: 11
+updated: 2026-09-14
+sources: 12
 ---
 
 # GC-Independent Response
@@ -48,6 +48,9 @@ Note the asymmetry: an EF response is necessarily GC-independent, but a GC-indep
 
   The lesson generalises: a paper can carry "extrafollicular" in its title, be widely relayed as tissue-level EF evidence, and still rest entirely on a presumed origin (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]], n=38 blood + n=6–10 tissue).
 - **[2026-08-27] Tissue evidence can strengthen a GC-independence claim without ever imaging a focus — if a companion study has ruled out germinal centres in the same specimens.** The COVID-19 autopsy lymph nodes here are the same rapid-autopsy series in which [[Kaneko2020 - GC Loss and TFH Block in COVID-19]] documented loss of germinal centres and Bcl-6⁺ Tfh cells. B cells accumulating in a lymph node with no germinal centres cannot readily be GC-derived. **This is the strongest form of GC-independence argument realistically obtainable from human tissue** — and it requires the companion study, which most tissue papers lack (see [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]] with [[Kaneko2020 - GC Loss and TFH Block in COVID-19]], n=6 autopsy).
+- **⚠ A well-powered repertoire study reads the same kind of data the opposite way — toward a GC history — and the wiki records it rather than smoothing it.** In chronic malaria, atypical and classical MBC had indistinguishable VH usage and **~3% SHM** in switched clones, ~10% shared clones, and similar [[KREC Assay|KREC]] division counts. The authors conclude both populations have had "similar antigen-driven **germinal center** experiences," with the mutations "predicted to occur in germinal center reactions" (see [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]], n=4–6, cross-sectional cohort).
+- **Why this does not settle anything against GC-independence, stated explicitly.** The inference runs **mutational load → germinal centre**, and that step is exactly what [[William2002 - Extrafollicular Somatic Hypermutation in Autoimmune Mice]] and [[Tipton2015 - ASC Diversity and Origin in SLE]] undercut: SHM occurs extrafollicularly, so a given load does not identify the reaction that produced it. All of this paper's material is **peripheral blood** — no lymphoid tissue was sampled — so per Decisions [2026-08-27] it can support a claim about mutational history but not about anatomical location (see [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]]).
+- **The useful residue for this wiki.** The finding that atypical and classical MBC are **clonally connected and equally mutated** is robust regardless of which reaction produced the mutations, and constrains any model in which atypical cells are a naive-derived population that bypassed mutation altogether — in *chronic* infection at least (see [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]], n=4).
 
 ## Contradictions & Debates
 
@@ -77,3 +80,4 @@ Note the asymmetry: an EF response is necessarily GC-independent, but a GC-indep
 - [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]] — mouse fate-mapping of GC-independent T-bet⁺CD11c⁺ generation
 - [[Cancro2020 - Age-Associated B Cells]] — review; GC entry for ABCs never demonstrated, SHM occurs GC-independently
 - [[William2002 - Extrafollicular Somatic Hypermutation in Autoimmune Mice]] — the original demonstration that SHM occurs outside GCs
+- [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]]

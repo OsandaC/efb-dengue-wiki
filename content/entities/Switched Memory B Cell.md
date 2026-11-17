@@ -2,8 +2,8 @@
 type: entity
 tags: [switched-memory, B-cell-subsets, CD27, IgD, class-switch, germinal-center, memory-b-cells]
 created: 2026-06-27
-updated: 2026-09-05
-sources: 18
+updated: 2026-09-14
+sources: 20
 ---
 
 # Switched Memory B Cell
@@ -45,6 +45,10 @@ In the IgD-vs-CD27 gating quadrant, sM (IgD⁻CD27⁺, lower-right) sits directl
 - **Switched memory is the benchmark DN2 is measured against — and DN2 comes close.** In the 2.5-day sorted-subset assay, conventional switched memory (IgD^neg^CD27⁺) and DN1 memory formed IgG ASCs efficiently while naive B cells failed entirely; **T-bet^hi^ DN2 cells produced only 2–3-fold fewer ASCs than switched memory** (and ≥50-fold more than naive) (see [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]], 3 independent experiments, 3 SLE donors). Separately, RNA-seq of Be1-derived B_DN_ cells was enriched for ASC-associated genes relative to switched memory (p<0.001) as well as to naive and mature B cells (see [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]], RNA-seq n=3/subset). Switched memory therefore remains the most differentiation-competent conventional subset, but the CD27⁻ DN2 population is functionally within reach of it.
 
 - **A numerically small but functionally competitive slice of the switched memory pool, held in a different place.** BrdU given from day 4 for 10 days and read at day 30 put T-bet⁺CD11c⁺ cells at **~5% of BrdU⁺ IgD^lo^CD38⁺GL-7⁻ memory B cells**. On sorted transfer into MD4 recipients they nonetheless produced a recall anti-LCMV IgG response **comparable to memory B cells lacking the phenotype** and higher than naive. i.v. anti-CD45 labelled the **majority** of T-bet⁺CD11c⁺ memory cells against only ~30% of total memory B cells, i.e. the subset keeps its marginal-zone position into memory while the bulk memory pool does not (see [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], mouse, LCMV-Armstrong, n=3–5 mice/group).
+- **Classical (switched) memory B cells differentiate readily into ASCs where atypical MBC do not — in the same cultures, from the same donors.** After 6 days with CpG + IL-10 + SAC + PWM, classical MBC "readily differentiate into ASCs" by IgM/IgA/IgG ELISpot while atypical MBC produced none (see [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]], n=9, chronic malaria cohort). The classical MBC arm is the internal positive control that makes the atypical negative interpretable.
+- **Classical memory sits transcriptionally close to naive and far from atypical.** Only **161** genes were differentially expressed between classical MBC and naive B cells, against **1115** between classical and atypical MBC — i.e. the atypical state is the large transcriptional departure, not the naive→memory transition (see [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]], n=20 microarray).
+- **The classical CD27⁺CD21⁺ compartment is not depleted by chronic infection — it is joined by a second one.** In lifelong *Plasmodium*-exposed Malian adults, classical MBC frequency was **similar to US adults**, even as the atypical CD27⁻CD21⁻ compartment reached 15.5% of B cells; the lower classical fraction in the 2–7 y and 8–10 y groups (p = 0.023, p = 0.008 vs adults) is read by the authors as **age-related and unrelated to malaria** (see [[Weiss2009 - Atypical Memory B Cells Expanded in Malaria-Endemic Area]], n=75 Malian + n=10 US, four-colour flow). Total CD19⁺ B cells were unchanged across the transmission season (12.16% vs 11.71%, p = 0.451). **The atypical expansion is compositional, and it does not come out of the classical memory pool** — which is an argument against the simplest reading of the "defective pathway" model, where atypical cells are classical memory gone wrong.
+- **Classical MBC as the positive control that makes the atypical negative interpretable.** In the same cultures where atypical cells produced 0 and 2,600 IgG ASC/10⁶, bead-sorted classical MBC produced **34,900/10⁶ (CpG + SAC)** and **102,800/10⁶ (PWM + SAC + CpG + IL-10)**, with naive cells weak in both as expected (see [[Weiss2009 - Atypical Memory B Cells Expanded in Malaria-Endemic Area]], n=1 and n=2 — preliminary, not generalizable). Switched memory's high and reliable ASC output under polyclonal stimulation is what licenses reading a zero from another subset as a property of that subset rather than of the assay.
 
 ## Contradictions & Debates
 
@@ -73,3 +77,5 @@ In the IgD-vs-CD27 gating quadrant, sM (IgD⁻CD27⁺, lower-right) sits directl
 - [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]]
 - [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]] — DN2 within 2–3-fold of switched memory ASC output; GSEA comparison
 - [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]] — ~5% of BrdU⁺ switched memory but recall-competent; distinct MZ localisation into memory
+- [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]]
+- [[Weiss2009 - Atypical Memory B Cells Expanded in Malaria-Endemic Area]]

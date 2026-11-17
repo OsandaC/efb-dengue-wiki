@@ -2,8 +2,8 @@
 type: entity
 tags: [tlr, innate-receptor, cpg, tolerance, dn-proliferation, innate-sensing]
 created: 2026-08-18
-updated: 2026-08-26
-sources: 7
+updated: 2026-09-14
+sources: 8
 ---
 
 # TLR9
@@ -27,6 +27,7 @@ Until 2026-08-18 TLR9 was mentioned on ~21 wiki pages without a page of its own;
 
 - **★ The CpG-proliferation result is not reproducible across studies — four papers, four answers.** A 2023 review of the whole DN literature tabulates the conflict and declines to resolve it: CpG alone gave **no** proliferation in young and elderly HD (citing Colonna-Romano 2009); the *same group* later found **significant** proliferation to CpG or anti-BCR+anti-CD40 in **young but not elderly** HD (citing Martorana 2014); a third found CpG-driven DN proliferation **at switched-memory levels** (citing Wei 2007 — the wiki's foundational result at the head of this page); and a fourth found **no** proliferation to anti-BCR+CpG+IL-4 in young or aged HD (citing Frasca 2019). Only **triple stimulation (CpG + anti-BCR + anti-CD40)** activated DN cells of both young and elderly donors. The review attributes the spread to differing proliferation markers, stimulation conditions and HD cohorts, and concludes that "the activation potential and responsiveness of DN B cells towards BCR and TLR signaling are still a topic of debate" (see [[Beckers2023 - Origins and Functions of DN B Cells]], review).
 - **Donor age is a candidate hidden variable in every one of those comparisons.** The one study that stratified by age found the CpG response present in young and absent in elderly donors — so cohort age composition alone could generate the apparent contradiction. No ingested source reports the age distribution of its healthy-donor group for this assay (see [[Beckers2023 - Origins and Functions of DN B Cells]], review, citing Martorana 2014).
+- **⚠ CpG failed to drive antibody output from malaria atypical B cells — at n=1, and against a contrary HIV claim.** Bead-fractionated atypical MBC produced **0 IgG ASC/10⁶ with CpG ODN-2006 (2.5 µg/ml) + SAC (n=1)** and **2,600/10⁶ with CpG + SAC + pokeweed mitogen + IL-10 (n=2)**, against classical MBC at 34,900 and 102,800/10⁶ in the same cultures (see [[Weiss2009 - Atypical Memory B Cells Expanded in Malaria-Endemic Area]], n=1 and n=2 — the authors' own "preliminary studies"; not generalizable). ★ **This sits awkwardly against the HIV comparison the same literature rests on:** the HIV "tissue-like memory" cells, despite BCR hyporesponsiveness, are reported to **proliferate robustly to TLR9 stimulation, like murine ABCs** (see [[Cancro2020 - Age-Associated B Cells]], review — no original data). The readouts differ — proliferation versus terminal differentiation — so this is not a strict contradiction, but it is a reason not to treat TLR9-responsiveness as a settled property of "atypical" cells across infections. Later first-party work found the malaria cells poorly responsive to TLR9 **and** TLR4 ligands (see [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]]).
 
 ## Contradictions & Debates
 
@@ -49,3 +50,4 @@ Until 2026-08-18 TLR9 was mentioned on ~21 wiki pages without a page of its own;
 - [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]
 - [[Wang2006 - Flavivirus Activation of pDCs and TLR7 Signaling]]
 - [[Beckers2023 - Origins and Functions of DN B Cells]]
+- [[Weiss2009 - Atypical Memory B Cells Expanded in Malaria-Endemic Area]]

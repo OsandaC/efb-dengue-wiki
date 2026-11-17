@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, chemokine-receptors, CXCR5, follicle-homing, DN1-DN2-distinction]
 created: 2026-05-02
-updated: 2026-09-04
-sources: 11
+updated: 2026-09-14
+sources: 12
 ---
 
 # CXCR5
@@ -38,6 +38,7 @@ CXCR5 is a chemokine receptor for CXCL13, the follicle-associated chemokine. CXC
 - **This is the wiki's earliest source for subgating the DN compartment on CXCR5 — the axis the DN1–DN4 scheme was later built on.** Figure 2D states plainly that "the DN population can be further defined by markers such as **CXCR5**", and Table 1 gives **DN1 as CXCR5⁺** and **DN2 as CXCR5⁻** (with activated naive also CXCR5⁻). Note what is *not* claimed: Sanz2019 uses CXCR5 alongside CD38/CD24/CD21, whereas [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]] later partitions DN on CXCR5 × CD11c with no CD21 at all — the two schemes share this marker but not the partition (see [[Sanz2019 - Consistent Classification of Human B Cell Populations]], review — **no original data**). See [[DN2 Gating Strategy]].
 
 - **CXCR5 is *lost* during the IFN-γ-driven conversion — follicular exclusion is an induced state here, not a starting property.** Naive B cells entering the cocktail are CXCR5⁺; by day 6 the T-bet^hi^ product is **CXCR5^neg^**, and the paper uses CXCR5 with CD11c as the axis separating patient **DN2 (CD11c^hi^CXCR5^neg^)** from **DN1 (CD11c^lo^CXCR5⁺)** (see [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]], human, n=20 HD + n=40 SLE + in vitro reconstruction). Because the starting population is uniform naive B cells, this is direct evidence that CXCR5 downregulation is **driven by the cytokine environment** rather than marking a pre-existing lineage — which bears on the wiki's CXCR5-vs-CD21 gating-axis conflict.
+- **★ Coordinated loss of the whole lymph-node-homing module, not CXCR5 alone.** On paired comparisons within *Plasmodium*-exposed Malian donors, atypical MBC showed reduced **CXCR5 (p < 0.001 vs both classical MBC and naive)** together with **CCR7 (p < 0.001, p = 0.002)**, **CD62L (p < 0.001, p < 0.001)** and **CXCR4 (p = 0.016, p = 0.001)**, while the tissue-homing markers CD11c and CXCR3 rose (see [[Weiss2009 - Atypical Memory B Cells Expanded in Malaria-Endemic Area]], n=12, Wilcoxon matched-pairs, MFI). CXCR5 loss is often cited alone as the follicular-exclusion marker; here it is one of **four** LN-homing receptors lost together, which is a stronger statement about repositioning than any single receptor supports — and an argument that [[Follicular Exclusion]] in chronic infection is a coordinated programme rather than a single-receptor defect. ⚠ The authors do not read it that way: they frame the module as part of an exhaustion signature copied from chronic viral infection.
 
 ## Contradictions & Debates
 
@@ -57,3 +58,4 @@ CXCR5 is a chemokine receptor for CXCL13, the follicle-associated chemokine. CXC
 - [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective; CXCR5⁻ is not an EF marker
 - [[Sanz2019 - Consistent Classification of Human B Cell Populations]]
 - [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]] — CXCR5 downregulation is cytokine-induced from a uniform naive start
+- [[Weiss2009 - Atypical Memory B Cells Expanded in Malaria-Endemic Area]]

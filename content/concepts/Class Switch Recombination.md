@@ -2,8 +2,8 @@
 type: concept
 tags: [class-switch-recombination, isotype-switching, IgG, IgA, AID, germinal-center, extrafollicular-response]
 created: 2026-05-02
-updated: 2026-09-05
-sources: 24
+updated: 2026-09-14
+sources: 26
 ---
 
 # Class Switch Recombination
@@ -46,6 +46,9 @@ Class switch recombination (CSR) is a DNA recombination event in which the const
 - **T-bet directs IgG2c switching but IgG2b escapes the requirement — an isotype-selective dependency.** In μMT bone-marrow chimeras, B-cell-intrinsic T-bet deletion abolished NP-specific **IgG2c** antibody and IgG2c⁺ memory B cells after influenza, while **NP-specific IgG2b antibody and IgG2b⁺ memory B cells were intact**; IgG1 and *Hp*-specific responses were also unaffected (see [[Stone2019 - T-bet Promotes ASC Differentiation by Limiting IFN-gamma Inflammation]], mouse, n=5–8/group). The authors attribute the IgG2b escape to **TGF-β**, which drives IgG2b switching and potently suppresses IFN-γ signalling — so IgG2b⁺ cells may be unable to respond to IFN-γ and switch/differentiate T-bet-independently. CSR requirements are therefore **cytokine-pathway-specific rather than uniform across the IgG subclasses**, which is worth holding when reading subclass distributions as a pathway readout.
 
 - **★ CSR proceeds to the same extent outside the germinal centre as inside it — measured in fate-mapped cells.** Full-length Ig sequencing with UMIs (~248,116 high-quality assembled reads per sample, n=3 mice) found **isotype usage of GC-independent T-bet⁺CD11c⁺ B cells not different from GC B cells** — ~80% of GC sequences IgG, with the T-bet⁺CD11c⁺ population predominantly IgG2b/IgG2c. Affinity maturation in the same cells was clearly reduced (mutation load 0.64% vs 0.99%; CDR replacement 0.66% vs 1.21%), so the study **dissociates switching from maturation**: the germinal centre is needed for one and not the other. The authors attribute switching to transient, CD40L-dependent Tfh induction of AID followed by rapid *Aicda* downregulation (see [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], mouse, LCMV-Armstrong).
+- **Atypical and classical memory B cells in chronic malaria are both predominantly IgG⁺**, against largely IgM⁺ naive B cells — i.e. class switching does not distinguish the atypical state, consistent with the wiki's position (from Sanz2019) that activation state rather than switching separates DN subsets. Sequencing covered Cμ, Cγ and Cα constant regions, and SHM was reported separately for switched and unswitched clones (see [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]], n=7 flow / n=4 BCR sequencing).
+- **⚠ Switched phenotype does not imply switched-antibody output here.** The IgG⁺-dominant atypical MBC secreted no IgG, IgM or IgA by ELISpot under any condition tested (see [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]], n=9–14; see [[Atypical B Cell Effector Output]]).
+- **Switched-isotype frequency rises with cumulative exposure in both classical and atypical memory, and is not lower in the atypical compartment.** Surface IgG on paired classical and atypical MBC from *Plasmodium*-exposed Malians rose across age bands in both subsets, and was consistently **higher** in atypical cells: approximately **46% vs 31%** (children 2–7 y), **64% vs 44%** (8–10 y) and **67% vs 45%** (adults) (see [[Weiss2009 - Atypical Memory B Cells Expanded in Malaria-Endemic Area]], n=75, four-colour flow, surface IgG only). The authors read this as an isotype-switching history "similar in the different MBC subpopulations." ⚠ Two limits on the reading: **surface IgG is a single-parameter proxy** — IgA and IgE were not stained, so IgG⁻ is not the same as unswitched — and the comparison is cross-sectional across age groups rather than longitudinal within donors.
 
 ## Contradictions & Debates
 
@@ -79,3 +82,5 @@ Class switch recombination (CSR) is a DNA recombination event in which the const
 - [[Sanz2019 - Consistent Classification of Human B Cell Populations]]
 - [[Stone2019 - T-bet Promotes ASC Differentiation by Limiting IFN-gamma Inflammation]] — T-bet directs IgG2c but not IgG2b switching (mouse); TGF-β escape route
 - [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]] — isotype usage indistinguishable from GC — CSR occurs outside the germinal centre
+- [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]]
+- [[Weiss2009 - Atypical Memory B Cells Expanded in Malaria-Endemic Area]]

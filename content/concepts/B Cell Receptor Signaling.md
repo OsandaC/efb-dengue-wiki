@@ -2,8 +2,8 @@
 type: concept
 tags: [bcr, btk, blnk, nf-kb, inhibitory-receptors, anergy, receptor-mechanism, evidence-gap]
 created: 2026-08-18
-updated: 2026-08-18
-sources: 6
+updated: 2026-09-14
+sources: 7
 ---
 
 # B Cell Receptor Signaling
@@ -42,6 +42,10 @@ The current best reading from the ingested sources is that **the BCR signal must
 - **TLR7 stimulation downregulates the inhibitory receptors CD72 and CD32b** while upregulating HLA-DR and CD86 (see [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]], human phospho-flow n=5–10)
 - DN3 cells are reported as having the **lowest CD22, CD72, CD69 and BAFF-R** of the DN subsets (see [[Lamprinou2026 - ABCs and DN B Cells]], review). See [[DN3 B Cell]].
 - Inhibitory receptors — **FcγRIIB**, and per the review [[FCRL5]] — must be **physically excluded from the B cell immune synapse** for BCR signalling and plasma cell differentiation to proceed, which only membrane-associated antigen achieves (see [[Glaros2025 - Multilayered Identity of B Cell Memory]], review, citing Ambegaonkar 2020; the wiki notes the primary abstract names only FcγRIIB, so the FCRL5 attribution is the review's)
+- **★ The block in malaria atypical MBC is proximal — at Syk — and is measured, not inferred.** Five minutes of BCR crosslinking with soluble F(ab')₂ anti-IgM + anti-IgG gave reduced phosphorylation of **Syk, BLNK, PI3K and PLCγ2** in atypical MBC relative to both naive and classical MBC, with markedly reduced Ca²⁺ mobilisation confirmed by fluorescence microscopy and flow cytometry. Because Syk sits immediately downstream of ITAM phosphorylation, the block is at the earliest measured step rather than a downstream integration failure (see [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]], n=8, chronic malaria cohort; see [[Phospho-Flow Cytometry]]).
+- **The transcriptome predicted the signalling defect before it was measured.** Ingenuity Pathway Analysis of atypical vs classical MBC returned **PI3K signalling in B lymphocytes (p = 1.11e-5)**, phospholipase C signalling (1.08e-4), **BCR signalling (4.98e-4)** and ICOS–ICOSL signalling (1.41e-3) as the top canonical pathways. The Figure 3D DEG heatmap splits into three functional blocks — BCR signalling (AID, CCR7, CD27, CD44, IP3R, MYC, NFKBIA, PIK3CG, PIM1, SELL, SLAMF7, SYK), co-stimulatory molecules (CD66a, CD40, CD86, CD35, CD21, ICAM2, ICOSLG, IL13RA, IL4R, IL6) and inhibitory receptors (CD200R1, CD72, FCGR2B, FCRL3, FCRL5, LILRB1, LILRB2, SIGLEC6) (see [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]], n=20 Affymetrix microarray).
+- **★ Inhibitory-receptor load attenuates signalling in a graded, not binary, fashion.** FcRL5⁺ atypical MBC show lower pPLCγ2 and pSyk than FcRL5⁻ atypical MBC — but FcRL5⁻ atypical MBC are themselves below classical MBC, all of which are FcRL5⁻. The authors read this as stepwise accumulation of inhibitory receptors producing progressively worse signalling, and analogise it explicitly to **T cell exhaustion** in persistent viral infection. FcRL5⁺ cells additionally co-express more FcγRIIb (see [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]], n=7–10; see [[FCRL5]]).
+- **⚠ Contrast with SLE DN2, where proximal signalling is intact.** [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]] reports BLNK phosphorylation after anti-IgG stimulation in SLE DN2 cells, used as evidence that DN2 are active pre-plasmablasts rather than anergic. Malaria atypical MBC show the opposite at the same node. See Contradictions below — the wiki does not treat these as describing one cell.
 
 ## Contradictions & Debates
 
@@ -50,9 +54,10 @@ The current best reading from the ingested sources is that **the BCR signal must
 - The **HIV/malaria atypical memory** literature describes BCR hyporesponsiveness and originally framed these cells as exhausted or anergic. [[Sanz2019 - Consistent Classification of Human B Cell Populations]] supports the distinction phenotypically: HIV DN cells are **FcRL4⁺FcRL5⁻** whereas SLE DN2 cells are **FcRL5⁺FcRL4⁻**, and CD11c is high in SLE and not in HIV.
 - The **SLE DN2** literature reports intact proximal signalling and an activated effector phenotype.
 - **Reading:** these may simply be *different cells*, as Sanz2019 argues, in which case there is no contradiction to resolve — only a naming collision. The wiki's exhaustion-was-wrong arc applies to DN2; it may not apply to the HIV FcRL4⁺ cell.
-- A second, compatible contributor is the **soluble-versus-membrane antigen assay artefact** already tracked in this wiki: studies reporting poor differentiation used soluble anti-Ig, which cannot exclude inhibitory receptors from the synapse. Zumaquero2019's finding that *continuous soluble* anti-Ig suppresses ASC output ~17-fold is consistent with that artefact being real.
+- A second, compatible contributor is the **soluble-versus-membrane antigen assay artefact** already tracked in this wiki: where poor differentiation was reported after **soluble** anti-Ig stimulation, the assay cannot exclude inhibitory receptors from the synapse. ⚠ **[2026-09-14] This does not cover Portugal 2015**, whose ASC assays used no anti-Ig — unstimulated ELISpot and a CpG/IL-10/SAC/PWM cocktail (see [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]], n=9–14). The artefact argument qualifies that paper's *signalling* results, which are the ones cited on this page, and not its *output* results. Zumaquero2019's finding that *continuous soluble* anti-Ig suppresses ASC output ~17-fold is consistent with that artefact being real.
 
 **The CD32b^hi^CD22^hi^ paradox.** DN2 cells are high for two ITIM-bearing inhibitory receptors yet hyper-responsive to TLR7 and highly primed for ASC differentiation. Partially explained by TLR7-driven downregulation of CD72/CD32b, but the wiki has **no ITIM phosphorylation or phosphatase data** and cannot resolve it. See [[Toll-like Receptor Signaling in B Cells]].
+**★ [2026-09-14] Is proximal BCR signalling intact in atypical B cells? Primary-vs-primary disagreement at the same node.** [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]] reports **BLNK phosphorylation after anti-IgG** in SLE DN2 cells, used as evidence they are active pre-plasmablasts rather than anergic. Malaria atypical MBC show **reduced pBLNK** — along with reduced pSyk, pPI3K and pPLCγ2, and blunted Ca²⁺ flux — after the same kind of soluble F(ab')₂ anti-Ig crosslink (see [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]], n=8). Both are human, both phospho-flow, both on CD27⁻ atypical populations. **The CD32b^hi^CD22^hi^ paradox recorded above is the SLE half of this same puzzle**; malaria supplies the case where a comparable inhibitory-receptor load *does* translate into a signalling deficit. Whether the difference is the cell, the disease, or the inhibitory-receptor composition (FcRL4/FCRL5/FCRL3 differ between the two settings) is untested.
 
 ## Related Pages
 
@@ -66,3 +71,4 @@ The current best reading from the ingested sources is that **the BCR signal must
 - [[Glaros2025 - Multilayered Identity of B Cell Memory]]
 - [[Sanz2019 - Consistent Classification of Human B Cell Populations]]
 - [[Lamprinou2026 - ABCs and DN B Cells]]
+- [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]]

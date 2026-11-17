@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, immunoglobulin, isotype, class-switch-recombination, memory-b-cells]
 created: 2026-05-02
-updated: 2026-09-05
-sources: 24
+updated: 2026-09-14
+sources: 26
 ---
 
 # IgG
@@ -54,6 +54,9 @@ IgG is the predominant antibody isotype in human serum and the primary product o
 - **★ Autoreactive and protective IgG dissociate after B cell depletion — the memory compartments are not equivalent.** Autoreactive **VH4.34 IgG** memory B cells (detected by the 9G4 anti-idiotype) were expanded in SLE at **16.2 ± 11.9%** versus **1.3 ± 0.3%** in healthy controls (P=0.03) and returned to near-normal (**1.92 ± 0.7%**) after effective rituximab depletion. In the same patients, **anti-tetanus and anti-pneumococcal IgG levels were maintained** at 6 months, and serum anti-dsDNA (IgG and IgM) frequently did **not** normalise — only 4 of 8 evaluable patients improved by 1 year, some requiring 24–36 months (see [[Anolik2004 - Rituximab and B Cell Abnormalities in SLE]], n=15-17 SLE + 7 healthy controls, phase I/II open-label trial, 4-colour flow). Two readings the authors draw: protective IgG memory is sustained by a compartment that CD20-targeted depletion spares, and persistent autoantibody despite normalised autoreactive **memory** implicates **long-lived plasma cells** as a separate source. ⚠ VH4.34/9G4 serology is background here under the wiki's standing scope note; the propagated claim is the **cellular** one about IgG memory compartments.
 
 - **Class switching to IgG proceeds normally outside the germinal centre, and the switched output is already functional before any TLR stimulus.** Ig repertoire sequencing found isotype usage of fate-mapped GC-independent T-bet⁺CD11c⁺ B cells **not different from GC B cells** (~80% of GC sequences IgG; the T-bet⁺CD11c⁺ population predominantly **IgG2b/IgG2c**). By ELISpot the population **already contained anti-LCMV IgG-secreting cells before R848 stimulation**, rising after — unlike memory B cells, which were reliant on the TLR ligand. On sorted transfer into MD4 recipients it generated a rapid, robust anti-LCMV IgG recall response at days 5 and 10, higher than naive and comparable to phenotype-negative memory (see [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], mouse, LCMV-Armstrong, Ig-seq n=3 mice).
+- **Malaria atypical and classical memory B cells share a predominantly IgG⁺ isotype profile**, while naive B cells are largely IgM⁺ — one of three lines of evidence offered for a common developmental origin (see [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]], n=7, flow cytometry).
+- **★ But an IgG⁺ phenotype does not imply IgG output.** The same IgG⁺-dominant atypical MBC secreted **no** IgG, IgM or IgA by ELISpot at rest (n=14) or during acute malaria (n=10), and did not differentiate into ASCs under polyclonal stimulation (n=9) (see [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]]). Isotype phenotype and secretory capacity dissociate in this population — relevant wherever surface isotype is used to infer effector potential.
+- **Surface IgG is carried by *more* atypical than classical memory cells, and the fraction rises with cumulative exposure.** In paired subsets from *Plasmodium*-exposed Malians, IgG⁺ made up roughly **46% of atypical vs 31% of classical MBC** in children 2–7 y, **64% vs 44%** at 8–10 y and **67% vs 45%** in adults (see [[Weiss2009 - Atypical Memory B Cells Expanded in Malaria-Endemic Area]], n=75, four-colour flow, surface IgG). The authors conclude the isotype-switching history is similar across memory subsets and use the high IgG⁺ fraction to infer somatic hypermutation — ⚠ **an inference, not a measurement**; no sequencing was performed (see [[Somatic Hypermutation]]). Note also that only IgG was stained, so IgG⁻ here means "not IgG", not "unswitched". The functional readout in the same paper was likewise **IgG ELISpot only**, so its "no antibody-secreting cells" result is an IgG statement.
 
 ## Contradictions & Debates
 
@@ -91,3 +94,5 @@ IgG is the predominant antibody isotype in human serum and the primary product o
 - [[Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue]] — monocyte-driven IgG secretion in vitro; blockade significance falls on IgM, not IgG
 - [[Anolik2004 - Rituximab and B Cell Abnormalities in SLE]] — autoreactive VH4.34 IgG memory normalises while protective IgG is maintained
 - [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]] — GC-equivalent IgG isotype usage outside the GC; IgG2b/IgG2c; ASC active before R848
+- [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]]
+- [[Weiss2009 - Atypical Memory B Cells Expanded in Malaria-Endemic Area]]

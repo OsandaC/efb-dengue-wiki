@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, chemokine-receptor, homing, IFN-gamma, extrafollicular, tissue-inflammation]
 created: 2026-05-04
-updated: 2026-09-05
-sources: 6
+updated: 2026-09-14
+sources: 7
 ---
 
 # CXCR3
@@ -28,6 +28,7 @@ The CXCR5⁻/CXCR3⁺ chemokine receptor switch on extrafollicular B cell popula
 - **★ CXCR3 is a functional T-bet target *in B cells*, confirmed by inducible deletion.** Tamoxifen-induced deletion of *Tbx21* from established day-90 influenza memory B cells (*Tbx21*^fl/fl^*hCD20*-TAM-cre) significantly reduced CXCR3 expression on total B cells and on NP⁺ memory B cells, while **CXCR3 on T cells was unaffected** — an internal specificity control for the B-cell-restricted deletion (see [[Stone2019 - T-bet Promotes ASC Differentiation by Limiting IFN-gamma Inflammation]], mouse, n=3–6/group). This is direct genetic evidence for the T-bet → CXCR3 link that the wiki previously held on correlative grounds. Note the same experiment cut NP⁺ ASC recall ~10-fold without changing memory B cell numbers, so **loss of CXCR3 tracks with loss of differentiation capacity, not loss of the memory pool** — see [[Memory B Cell]], [[T-bet]].
 
 - **CXCR3 is highly expressed on murine T-bet⁺CD11c⁺ B cells, and is one of the authors' candidate explanations for a knockout that failed in vivo.** CXCR3 transcript was higher on T-bet⁺CD11c⁺ cells than on naive follicular or GC B cells as the population relocated to the marginal zone. When *S1pr3*⁻/⁻ cells showed **no competitive disadvantage at day 15** in mixed bone marrow chimeras — despite S1PR3 being required for S1P chemotaxis in vitro, where TY52156 abolished migration — the authors proposed compensation by *Cnr2* and CXCR3, and stated explicitly that **"this was not further investigated"** (see [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], mouse, LCMV-Armstrong, n=3–5 mice/group). Treat the CXCR3 retention role as a hypothesis, not a result.
+- **CXCR3 elevated on malaria atypical MBC in 2009, classified as tissue-homing rather than as a Th1/ABC signature.** CXCR3 MFI was higher on atypical MBC than on classical MBC (**p = 0.034**) or naive B cells (**p = 0.005**) in paired within-donor comparisons (see [[Weiss2009 - Atypical Memory B Cells Expanded in Malaria-Endemic Area]], n=12 Malian donors, Wilcoxon matched-pairs, MFI). It appears there in the same tissue-homing block as CD11c and opposite a coordinated loss of the lymph-node-homing set (CXCR5, CCR7, CD62L, CXCR4) — **the CXCR3⁺CXCR5⁻ pattern the wiki associates with extrafollicular positioning, recorded six years before the SLE DN2 papers named it.** ⚠ Measured on already-gated populations, not used for gating.
 
 ## Contradictions & Debates
 
@@ -45,3 +46,4 @@ The CXCR5⁻/CXCR3⁺ chemokine receptor switch on extrafollicular B cell popula
 - [[Glaros2025 - Multilayered Identity of B Cell Memory]]
 - [[Stone2019 - T-bet Promotes ASC Differentiation by Limiting IFN-gamma Inflammation]] — genetic confirmation that CXCR3 is a T-bet target in B cells (inducible KO, mouse)
 - [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]] — CXCR3 high on murine T-bet⁺CD11c⁺ cells; proposed but untested S1PR3 compensation
+- [[Weiss2009 - Atypical Memory B Cells Expanded in Malaria-Endemic Area]]

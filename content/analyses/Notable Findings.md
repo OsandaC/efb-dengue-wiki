@@ -2,7 +2,7 @@
 type: analysis
 tags: [meta, notable-findings]
 created: 2026-05-02
-updated: 2026-09-04
+updated: 2026-09-14
 ---
 
 # Notable Findings
@@ -413,7 +413,7 @@ The same review simultaneously **loosens a criterion the wiki treats as definiti
 
 **Source:** [[Glaros2025 - Multilayered Identity of B Cell Memory]] (review; citing Ambegaonkar et al. 2020 *Sci Adv* — **primary abstract independently verified during ingest**)
 
-**Finding:** The foundational reports that atypical / age-associated B cells have **limited plasma-cell differentiation capacity** (Portugal 2015 *eLife*; Sullivan 2015 *PLoS Pathog*, both malaria-associated human atypical MBCs) stimulated the cells with **soluble** anti-Ig. Atypical B cells carry a high load of inhibitory receptors — **FcγRIIB**, and per the review also [[FCRL5]] — which suppress BCR signalling unless they are **physically excluded from the immune synapse**. Only **membrane-associated** antigen achieves that exclusion. With membrane-bound anti-Ig, BCR signalling proceeds and these cells **do** differentiate into plasma cells. The verified primary abstract states it directly: atypical MBCs "are unable to respond to soluble antigens" but "robustly respond to antigens that associate with cell surfaces, such as antigens in immune complexes."
+**Finding:** The foundational reports that atypical / age-associated B cells have **limited plasma-cell differentiation capacity** (Portugal 2015 *eLife*; Sullivan 2015 *PLoS Pathog*, both malaria-associated human atypical MBCs) were read as having used **soluble** anti-Ig. ⚠ **[2026-09-14] Corrected against the Portugal primary on ingest — the "soluble anti-Ig" attribution is false for Portugal 2015.** Its antibody-output experiments used **no anti-Ig at all**: the spontaneous-secretion ELISpots were unstimulated (48 h) and the differentiation assay used CpG + IL-10 + SAC + PWM (6 d). Soluble F(ab')₂ anti-Ig appears only in that paper's signalling, proliferation and cytokine assays. **The attribution was never Glaros2025's** — Glaros cites Portugal/Sullivan for the *result* and Ambegaonkar 2020 for the *stimulation-mode explanation*, hedged as "may have been influenced by"; the compression was this wiki's. The Ambegaonkar argument stands on its own terms (see [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]]). Atypical B cells carry a high load of inhibitory receptors — **FcγRIIB**, and per the review also [[FCRL5]] — which suppress BCR signalling unless they are **physically excluded from the immune synapse**. Only **membrane-associated** antigen achieves that exclusion. With membrane-bound anti-Ig, BCR signalling proceeds and these cells **do** differentiate into plasma cells. The verified primary abstract states it directly: atypical MBCs "are unable to respond to soluble antigens" but "robustly respond to antigens that associate with cell surfaces, such as antigens in immune complexes."
 
 **Why notable:** The wiki tracks a genuine contradiction — [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]] finds DN2 cells poised for plasmablast differentiation, while [[Sutton2021 - Alternative Lineage B Cells in Vaccination and Infection]] finds no PC-programme genes in atBC clusters and argues for an alternative memory lineage. This does **not** resolve that contradiction and should not be recorded as if it does: Sutton's observation is *transcriptomic and at steady state*, this one is *functional and stimulated*, and a cell can lack PC-programme transcripts at rest while retaining the capacity. What it does is undercut the **surrounding prior** — the field's confidence that these cells are functionally impaired came substantially from an assay format that systematically disadvantaged them. The defensible position becomes **conditional capacity**: capable, often primed (PC-associated gene expression; increased PC propensity in T-cell coculture), but not committed — the same review cites adoptive-transfer work showing they can also become GC B cells and self-renew.
 
@@ -627,5 +627,71 @@ There is also a quieter correction. Cancro's *other* clause — "few if any plas
 - If TLR7 drives DN2 *generation* but sustained TLR7 ligation blocks ASC *output*, TLR7 signalling has to be timed. No wiki source resolves the timing — see [[DN2 B Cell]].
 
 **Related pages:** [[T-bet]], [[BLIMP-1]], [[IFN-gamma]], [[IRF4]], [[Atypical B Cell]], [[DN2 B Cell]], [[TLR7]], [[Atypical B Cell Effector Output]], [[Toll-like Receptor Signaling in B Cells]], [[Plasmablast]], [[ATAC-seq]]
+
+---
+
+
+## [2026-09-14] The wiki mis-stated a primary for a month, and no lint could have caught it
+
+**Source:** [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]] (and the re-read of [[Glaros2025 - Multilayered Identity of B Cell Memory]] it prompted)
+
+**Finding:** Ten wiki pages stated that the foundational "atypical B cells differentiate poorly into plasma cells" result — Portugal 2015 among them — **"used soluble anti-Ig"**, and was therefore a stimulation-mode artefact. Reading the primary shows the attribution is false: Portugal's antibody-output experiments used **no anti-Ig at all** (unstimulated 48 h ELISpot; a 6-day CpG + IL-10 + SAC + PWM cocktail). Soluble anti-Ig appears only in its signalling, proliferation and cytokine assays. **Glaros2025 never made the claim** — it cites Portugal/Sullivan for the *result* and Ambegaonkar 2020 for the *stimulation-mode explanation*, with the explicit hedge *"may have been influenced by."* The wiki compressed two sentences with two citations into one attribution and dropped the hedge.
+
+**Why notable:** The error was not a misread of a source — it was a **faithful relay that tightened by one increment at a time** across four months and ten pages, each step defensible in isolation. Nothing in the wiki's machinery could detect it: `lint_propagation.py` checks that a triad page *lists* its source, `reconcile_index_counts.py` aligns counts to frontmatter, and both would have passed this corpus every day it was wrong. The only detector that worked was **reading the PDF**, which is exactly what the standing [2026-08-16] PDF-only decision exists to force. It also bears on how the wiki reads reviews generally: the hedge is where the information is, and hedges are the first thing lost in summarisation. ⚠ **The correction is bounded**: the Ambegaonkar mechanism stands on its own evidence and still applies to Portugal's *signalling* results, and SAC is particulate rather than soluble, so Figure 6F is not strictly BCR-free.
+
+**Follow-up questions:**
+- How many other review-relayed claims in the wiki have lost a hedge on the way in? The [[Cancro2020 - Age-Associated B Cells]] cross-lineage import was caught because it carried *no* citation; this one carried the *right* citations and was still wrong.
+- Is a "quote the hedge verbatim" convention worth adding for review-carried mechanism claims?
+
+**Related pages:** [[Atypical B Cell Effector Output]], [[In Vitro B Cell Stimulation]], [[FCRL5]], [[DN2 B Cell]], [[Atypical B Cell]], [[B Cell Receptor Signaling]], [[External Citation Audit]]
+
+---
+
+## [2026-09-14] A founding marker for "atypical" B cells was an antibody cross-reacting with its own family
+
+**Source:** [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]]
+
+**Finding:** Malaria-associated atypical memory B cells do **not** express FcRL4 — absent at both mRNA (qPCR, n=4) and protein (flow, n=10) against a RAMOS-FcRL4⁺ positive control. The same group had previously reported FcRL4 on these cells ([[Weiss2009 - Atypical Memory B Cells Expanded in Malaria-Endemic Area|Weiss 2009]] — ✅ ingested 2026-09-14), and now attributes that result to **cross-reactivity of the FcRL4-specific mAb with FcRL5 or FcRL3**. HIV tissue-like and mucosal tissue-based memory genuinely are FcRL4⁺; malaria atypical cells are not.
+
+**Why notable:** Three things at once. **(1)** It converts a malaria↔HIV *similarity* the wiki records into a *distinction* — the two canonical "atypical memory" populations differ on the marker that originally linked them, which weakens the transfer argument running through this wiki's comparative spine. **(2)** It removes FcRL4 as the clean discriminator between autoimmune and chronic-infection atypical cells: the FCRL4⁻/FCRL5⁺ pattern the wiki treats as SLE-DN2-defining ([[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]) turns out to be **shared with malaria atypical MBC**, which are functionally opposite. Whatever separates them, it is not this. **(3)** The methodological lesson generalises past the marker: a subset definition survived years on single-clone surface staining within a **homologous receptor family**, and only an orthogonal transcript measurement overturned it. The wiki's own panels read FCRL5 and CD11c on cells where family members are co-expressed.
+
+**Follow-up questions:**
+- Does [[Sanz2019 - Consistent Classification of Human B Cell Populations]]'s third DN row — IgD⁻CD27⁻CD38⁻CD24⁻CD21⁻**FcRL4⁺**, "atypical/tissue-based memory" — rest on staining subject to the same cross-reactivity?
+- [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]] reports FcRL4⁺ at ~15–21% of blood DN cells in HIV and ~1% in healthy donors and IgG4-RD. Does that panel's clone have the same liability, and would a transcript check reproduce it?
+
+**Related pages:** [[FcRH4]], [[FCRL5]], [[Atypical B Cell]], [[Double-Negative B Cell]], [[Conventional Flow Cytometry]], [[Sanz2019 - Consistent Classification of Human B Cell Populations]], [[Allard-Chamard2023 - DN3 B Cells Infiltrate Inflamed Tissues]]
+
+---
+
+## [2026-09-14] The wiki credited a paper with two experiments it never performed — and the primary refutes the attribution
+
+**Source:** [[Weiss2009 - Atypical Memory B Cells Expanded in Malaria-Endemic Area]] (read against [[Cancro2020 - Age-Associated B Cells]])
+
+**Finding:** Three wiki locations stated that malaria atypical memory B cells are **IFN-γ-driven** and display **diverse V_H gene usage**, citing Weiss et al. 2009. Weiss 2009 contains **no cytokine measurement and no repertoire sequencing of any kind** — the entire paper is four-colour flow cytometry, magnetic bead fractionation and IgG ELISpot. Read against `raw/cancro2020.pdf`, the review attributes those two findings to *"further findings from this group"* with their own reference numbers: IFN-γ to **Obeng-Adjei 2017** (ref 25) and diverse V_H usage to **Zinocker 2015** (ref 96). The wiki compressed three citations into one.
+
+**Why notable:** This is the **second instance in one week** of a review-relayed claim degrading on the way into the wiki, and it is a strictly harder case than the first. The [2026-09-14] Glaros/Portugal instance dropped a *hedge* from a claim that was otherwise real and correctly attributed. Here the wiki asserted **experiments that do not exist in the cited paper** — and, crucially, **the primary refutes the attribution directly** rather than merely failing to support it. That makes the failure mode verifiable rather than a matter of judgement, and it gives the standing "audit the other review-relayed claims" Watch Item a **mechanical test**: for every review-carried claim, does the *named primary* contain the *named experiment*? A wiki sentence more specific than its source about *which experiment produced a result* is the tell, and it is checkable without adjudicating anyone's interpretation. Neither `lint_propagation.py` nor `reconcile_index_counts.py` can see this class — both passed this corpus every day it was wrong.
+
+**Follow-up questions:**
+- The same Cancro sentence pattern — a founding paper named, then *"further findings from this group"* with separate refs — appears elsewhere in the review. How many other wiki bullets inherited the compression?
+- Should un-ingested claims carried through a review name **both** the review and the primary the review actually cites, rather than the primary alone? That convention would have made this self-diagnosing.
+- Obeng-Adjei 2017 (IFN-γ-driven expansion) is now the load-bearing un-ingested paper for the wiki's IFN-γ→atypical-cell limb in infection. Worth queuing?
+
+**Related pages:** [[Atypical B Cell]], [[BCR Sequencing]], [[Cancro2020 - Age-Associated B Cells]], [[External Citation Audit]], [[IFN-gamma]], [[Somatic Hypermutation]]
+
+---
+
+## [2026-09-14] The "exhausted B cell" framing that shaped a field for a decade rests on n=1 and n=2
+
+**Source:** [[Weiss2009 - Atypical Memory B Cells Expanded in Malaria-Endemic Area]]
+
+**Finding:** The claim that malaria atypical memory B cells are functionally hyporesponsive — the basis for calling them *exhausted*, and the frame the whole infection atypical-B-cell literature inherited — rests in its founding paper on a single preliminary IgG ELISpot. **CpG + SAC: n=1** (classical MBC 34,900 ASC/10⁶, atypical **0/10⁶**, naive 1,300/10⁶). **PWM + SAC + CpG + IL-10: n=2**, cited in-text as *"(G. E. Weiss, unpublished data)"* (classical 102,800/10⁶, atypical 2,600/10⁶, naive 8,250/10⁶). The paper calls these *"preliminary studies"* in its own words. The cultured fractions were also bead-sorted on a **coarser gate** (CD27⁻CD21^low^ after CD10 depletion) than the CD27⁻CD21⁻CD20⁺CD10⁻ gate used for all the phenotyping, with no purity reported.
+
+**Why notable:** The conclusion drawn from those three donors — that these cells "both phenotypically and functionally resemble exhausted MBCs" — propagated into HIV, TB, HCV and eventually SLE discussions, and is the framing that [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]], [[Sanz2025 - Human Atypical B Cells Overview]] and [[Cancro2020 - Age-Associated B Cells]] spend paragraphs reversing. It was six years before [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]] tested it properly (n=9–14, with a paired-cocktail depletion control and an acute-infection arm) — and reached the same answer, which is why the framing survived. **The lesson is not that the claim was wrong; it is that a correct conclusion and an adequately powered one are independent properties, and the field could not tell them apart for six years.** Directly relevant to this wiki's own practice: the evidence-weighting convention exists for exactly this, and it only works if the n travels with every propagated citation.
+
+**Follow-up questions:**
+- How much of the *rest* of the "exhaustion" signature — the inhibitory-receptor panel, the homing-receptor loss — is similarly n-limited in its founding sources? Weiss's receptor panel is n=12 paired, which is a different situation entirely; the two halves of the paper are not equally strong and are usually cited together.
+- Moir 2008 (HIV, still un-ingested) is the paper Weiss models itself on. What n carries its functional claim?
+
+**Related pages:** [[Atypical B Cell Effector Output]], [[Atypical B Cell]], [[ELISpot]], [[In Vitro B Cell Stimulation]], [[Magnetic Bead Sorting]], [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]]
 
 ---

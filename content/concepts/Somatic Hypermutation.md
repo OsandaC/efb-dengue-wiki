@@ -2,8 +2,8 @@
 type: concept
 tags: [somatic-hypermutation, BCR-sequencing, memory-b-cells, germinal-center, extrafollicular-response, affinity-maturation]
 created: 2026-05-02
-updated: 2026-09-05
-sources: 23
+updated: 2026-09-14
+sources: 25
 ---
 
 # Somatic Hypermutation
@@ -57,6 +57,9 @@ Somatic hypermutation (SHM) is the process by which activation-induced cytidine 
 - **Bearing on the wiki's dengue reading:** [[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]] is used here as evidence for a GC-independent (EF) response in acute dengue. Under this model the inference survives but weakens from a determination to a probabilistic one — and specifically, low load in a *short, acute* response is weak evidence for GC-independence, since insufficient elapsed time produces the same reading as a high-rate GC-independent process. Distinguishing them requires a mutation *rate*, which that study did not measure. See [[GC-Independent Response]].
 
 - **Reduced but not absent mutation in a fate-mapped GC-independent population — with the replacement/silent split reported.** **41.6% of full-length Ig sequences** from murine T-bet⁺CD11c⁺ B cells carried mutations against **61.5% of GC** sequences; total mutation load **0.64% vs 0.99%**; CDR **replacement** mutations **0.66% vs 1.21%** at similar silent frequencies — i.e. reduced *selection*, not only reduced mutation (see [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], mouse, LCMV-Armstrong, Ig-seq n=3 mice, pRESTO/IgBLAST/Immcantation). This parallels the acute-dengue IgG finding in [[GodoyLozano2016 - Lower IgG SHM Rates in Acute Dengue]] and the <3% EF benchmark in [[Tipton2015 - ASC Diversity and Origin in SLE]]. ⚠ As with those, mutational **load** is rate × time and no mutation *rate* was measured here either — the comparison is between contemporaneous populations in the same animals, which is the strongest available control for elapsed time.
+- **SHM rates are indistinguishable between atypical and classical memory B cells in chronic malaria — approximately 3% for isotype-switched clones**, with naive B cells low as expected. Measured by Illumina MiSeq 300bp×2 sequencing of VH1–VH7 FR1 amplicons, analysed through IMGT/HighV-QUEST with clones called on identical V/J rearrangement, identical HCDR3 length and 85% HCDR3 similarity (see [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]], n=4 Malian adults; see [[BCR Sequencing]]).
+- **★ The authors read this SHM load as evidence of a germinal-centre history — recorded here as their interpretation, not as a wiki position.** They describe the mutations as "predicted to occur in germinal center reactions" and conclude both populations have had "similar antigen-driven germinal center experiences." Per Decisions [2026-08-27], the wiki claims GC-independence rather than anatomical location wherever the evidence is blood: this is an inference from mutational load in **peripheral blood**, with no lymphoid-tissue sampling (see [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]]; see [[GC-Independent Response]]).
+- **⚠ An SHM claim inferred from isotype alone, and the wiki should not carry it as a measurement.** The foundational malaria atypical-MBC paper concludes that "the high proportion of IgG⁺ atypical MBCs indicates that it is likely these cells have undergone somatic hypermutation" — but performed **no BCR sequencing, no V-gene analysis and no mutation counting** of any kind (see [[Weiss2009 - Atypical Memory B Cells Expanded in Malaria-Endemic Area]], four-colour flow only). The inference is reasonable on prior grounds and is still an inference. The mutational load in this population was measured directly six years later at **~3% for isotype-switched clones, statistically indistinguishable from classical MBC** (see [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]], n=4 IgH NGS), which is the citation the wiki uses. Recorded here because surface-isotype-to-SHM is a common shortcut in the older flow literature and reads as data unless the methods are checked.
 
 ## Contradictions & Debates
 
@@ -91,3 +94,5 @@ Somatic hypermutation (SHM) is the process by which activation-induced cytidine 
 - [[Cancro2020 - Age-Associated B Cells]]
 - [[Eisenbarth2025 - A Roadmap for Defining Extrafollicular B Cell Responses]] — consensus Perspective; mutational load as probability, not measure
 - [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]] — 41.6% vs 61.5% mutated; load 0.64% vs 0.99%; replacement 0.66% vs 1.21% — reduced selection
+- [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]]
+- [[Weiss2009 - Atypical Memory B Cells Expanded in Malaria-Endemic Area]]

@@ -2,8 +2,8 @@
 type: entity
 tags: [surface-markers, CD11c, ITGAX, integrin, DN2, age-associated-b-cells, extrafollicular]
 created: 2026-05-02
-updated: 2026-09-05
-sources: 17
+updated: 2026-09-14
+sources: 18
 ---
 
 # CD11c
@@ -52,6 +52,7 @@ CD11c (encoded by *ITGAX*) is an alpha integrin primarily expressed on dendritic
 - **CD11c is induced as part of the IFN-γ-driven DN2 conversion, reaching near-saturation in vitro.** The full cocktail drove **>95%** of naive B cells to an IgD⁻CD27⁻T-bet^hi^ phenotype that was **CD11c⁺**, and in SLE patient naive cultures **95% were CD11c⁺** at day 6. In patient blood, DN2 was defined as **CD11c^hi^CXCR5^neg^** (79% of the B_DN_ gate) against DN1 **CD11c^lo^CXCR5⁺** (17%) (see [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]], human, n=20 HD + n=40 SLE + in vitro reconstruction). Supports CD11c as the primary DN2 axis while showing it is inducible by a defined cytokine set rather than lineage-fixed.
 
 - **★ A depletion caveat that invalidates the obvious experiment: CD11c-DTR cannot be used to delete CD11c⁺ B cells after viral challenge.** The authors document that **activated B cells increase DTR transgene expression independently of *Itgax*** in vitro, and CD11c protein in vivo, so diphtheria toxin produced **global ablation of proliferating B cells** rather than selective loss of the CD11c⁺ subset; they restrict the system to memory-phase depletion (days 28/30) instead. In the same study *Itgax* is one of three genes — with *Tbx21* and *Fcrl5* — that are **lower in GC B cells**, i.e. CD11c tracks the GC-independent fate rather than the GC one (see [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], mouse, LCMV-Armstrong, n=3–5 mice/group).
+- **★ The earliest report in this wiki's corpus of CD11c on a human infection-associated atypical B cell — 2009, in malaria.** CD11c MFI was significantly higher on atypical MBC than on either classical MBC (**p = 0.030**) or naive B cells (**p = 0.002**) in paired comparisons within the same donors (see [[Weiss2009 - Atypical Memory B Cells Expanded in Malaria-Endemic Area]], n=12 Malian donors — 6 children 2–4 y + 6 adults, Wilcoxon matched-pairs, MFI). It is reported there as a **tissue-homing receptor** alongside CXCR3, within an "exhausted MBC" frame, not as the ABC/DN2 lineage marker it later became. ⚠ **CD11c was not in the gating panel** — it is measured on already-gated CD27⁻CD21⁻CD20⁺CD10⁻ cells, so this establishes that the malaria atypical compartment is CD11c-elevated on average, not that a CD11c⁺ subset was resolved within it.
 
 ## Contradictions & Debates
 
@@ -78,3 +79,4 @@ CD11c (encoded by *ITGAX*) is an alpha integrin primarily expressed on dendritic
 - [[Jenks2021 - B Cell Subset Composition in Cutaneous Lupus]]
 - [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]] — CD11c induced to >95% by the defined DN2-generating cocktail
 - [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]] — *Itgax* marks the GC-independent fate; CD11c-DTR unusable for early B cell depletion
+- [[Weiss2009 - Atypical Memory B Cells Expanded in Malaria-Endemic Area]]

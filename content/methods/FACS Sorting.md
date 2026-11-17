@@ -2,8 +2,8 @@
 type: method
 tags: [FACS-sorting, cell-sorting, flow-cytometry, BCR-sequencing, B-cell-subsets]
 created: 2026-05-02
-updated: 2026-09-06
-sources: 15
+updated: 2026-09-14
+sources: 16
 ---
 
 # FACS Sorting
@@ -37,6 +37,7 @@ Fluorescence-activated cell sorting (FACS sorting) uses the same principles as a
 - **Sorting is what makes the in vitro system interpretable — three distinct sorts in one study.** (1) Day-6 **IgD^neg^CD27^neg^ B_DN_** cells sort-purified out of Th1 and Th2 co-cultures for RNA-seq; (2) **10,000 cells per condition** sorted as ATAC-seq input; (3) SLE patient subsets sorted into **T-bet^hi^ DN2, T-bet^lo^ B_N_, DN1 memory and conventional switched memory** for the head-to-head differentiation assay. Sorted on a **FACSAria** (see [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]], human, n=20 HD + n=40 SLE + in vitro reconstruction). The third sort is what licenses the paper's strongest claim — that DN2 cells give ≥50-fold more ASCs than naive cells — because bulk culture could not have separated those starting populations.
 
 - **Sort buffer chosen by downstream assay, and magnetic pre-enrichment before the sorter.** In Song2022 CD4 T cells were first enriched by **magnetic negative selection** (EasyStep) before surface staining and sorting on a FACSAria; cells for **adoptive transfer** were sorted into complete RPMI and washed into sterile PBS, while cells for **RNA and Ig sequencing were sorted directly into RNAprotect Cell Reagent**. For RNA-seq, **three separate sorts were performed on different days, each pooling the spleens of four to six mice** per timepoint — the replicate structure behind every transcriptomic claim in the paper (see [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], mouse, LCMV-Armstrong + influenza PR8).
+- **Purity-driven division of labour between sorting methods within one study.** After negative-selection B cell enrichment (StemCell kit, >98% pure, mean 98.7%, 3–8 million B cells per donor), cells were stained for CD10/CD19/CD20/CD21/CD27 and sorted on a FACSAria into naive, classical and atypical MBC at 3×10⁵–10⁶ cells per population. **[[BCR Sequencing]] and the [[KREC Assay]] used these FACS-sorted fractions; microarray, phospho-flow and [[ELISpot]] used lower-purity [[Magnetic Bead Sorting|MACS]] fractions** — an explicit assignment by required purity rather than one method throughout (see [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]], n=4–6 sorted, chronic malaria cohort).
 
 ## Contradictions & Debates
 
@@ -60,3 +61,4 @@ None documented in current wiki sources.
 - [[Wang2006 - Flavivirus Activation of pDCs and TLR7 Signaling]]
 - [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]] — three-way sorting design (RNA-seq input, 10k-cell ATAC-seq input, SLE subset comparison)
 - [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]] — negative pre-enrichment before sorting; sort buffer matched to downstream assay; 3 sorts pooling 4–6 spleens
+- [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]]

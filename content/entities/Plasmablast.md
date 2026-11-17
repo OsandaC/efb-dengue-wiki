@@ -2,8 +2,8 @@
 type: entity
 tags: [b-cell-subsets, plasmablast, antibody-secreting-cells, CD38, CD27, extrafollicular, SLE, rituximab]
 created: 2026-05-02
-updated: 2026-09-05
-sources: 27
+updated: 2026-09-14
+sources: 29
 ---
 
 # Plasmablast
@@ -92,6 +92,9 @@ Plasmablasts are short-lived, rapidly dividing antibody-secreting B cells that a
 - **The ASC endpoint of the EF pathway is T-bet^lo^IRF4^hi^ — T-bet falls as the cell finishes differentiating.** The pathway runs **B_N_ →(anti-Ig, R848, IFN-γ)→ pre-ASC (T-bet^hi^IRF4^int^) →(R848, IL-21)→ ASC (T-bet^lo^IRF4^hi^)**, with ASCs gated as CD38^hi^CD27⁺ (see [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]], human, n=20 HD + n=40 SLE + in vitro reconstruction). Two constraints on ASC yield are worth carrying: **IL-21 is obligate** (no ASCs without it) and **BCR stimulation must be transient** — continuous anti-Ig gave 2.8% ASCs versus 49% with anti-Ig restricted to days 0–3. The T-bet^hi^→T-bet^lo^ transition is consistent with the compartment gradient reported in [[Stone2019 - T-bet Promotes ASC Differentiation by Limiting IFN-gamma Inflammation]] and gives a mechanism for it.
 
 - **★ An intermediate secretory state: these cells secrete antibody without a TLR stimulus, but need one to secrete autoantibody.** By ELISpot the sorted murine T-bet⁺CD11c⁺ population **already contained anti-LCMV IgG-secreting cells before R848**, increasing after — placing it between IgD^lo^CD38⁺GL-7⁻ memory B cells, which were **reliant** on TLR stimulation, and plasma cells (CD19^int^CD138⁺), which were **independent** of it. Yet on anti-dsDNA and anti-chromatin ELISpot the same cells **rarely secreted autoantibody in the absence of R848**, despite containing a higher frequency of autoreactive producers, so **further differentiation toward ASC is required before they contribute to serum autoreactivity** (see [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]], mouse, LCMV-Armstrong, n=3–5 mice/group). Directly relevant to reading a circulating atypical/DN2 frequency as a proxy for antibody output.
+- **★ A clean depletion control separating plasmablast antibody output from atypical-B-cell output.** Two negative-selection cocktails were applied to the same samples, differing **only** by anti-CD43 and anti-CD66b — markers the authors note are expressed on plasmablasts and plasma cells. The fraction retaining PB/PC produced ASC spots by ELISpot; the PB/PC-depleted fraction produced none, while atypical MBC were present in both. This establishes that the ELISpot signal in bulk B cells tracks PB/PC and **not** atypical MBC (see [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]], n=6, cross-sectional cohort; see [[Magnetic Bead Sorting]], [[ELISpot]]).
+- **Plasmablasts identified as CD19⁺CD20⁻CD21⁻ within the retained fraction**, with CD43 shown to be specific for the PB/PC compartment by histogram. A practical note for panel design: **CD43 and CD66b together are sufficient to deplete PB/PC by negative selection** without touching the target population with antibody (see [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]], n=6).
+- **A ten-fold atypical B cell expansion with no accompanying plasmablast expansion.** In chronically *Plasmodium*-exposed Malians, CD19⁺CD27⁺CD21⁻CD20⁻ plasma cells/plasmablasts were **similar in frequency to malaria-naive US adults**, while the CD27⁻CD21⁻ atypical compartment was expanded roughly ten-fold in the same donors (see [[Weiss2009 - Atypical Memory B Cells Expanded in Malaria-Endemic Area]], n=75 Malian + n=10 US, four-colour flow). Two readings are available and the paper cannot separate them: the atypical cells are not feeding the PB pool, or they feed a **short-lived** PB pool that a single cross-sectional draw between clinical episodes would miss — the authors raise the second explicitly, noting that *Pf*-specific antibodies rise across a season and are undetectable by the next one. ⚠ Note the gate excludes CD20⁻ cells from the atypical compartment by construction, so a PB-differentiating atypical cell would leave the atypical gate as it matured.
 
 ## Contradictions & Debates
 
@@ -130,3 +133,5 @@ Plasmablasts are short-lived, rapidly dividing antibody-secreting B cells that a
 - [[Kwissa2014 - Monocytes Drive Plasmablast Differentiation in Dengue]] — monocyte-driven in vitro plasmablast differentiation; BAFF/APRIL + IL-10 blockade
 - [[Zumaquero2019 - IFN-gamma Programs T-bet-hi B Cells for ASC Differentiation]] — pre-ASC (T-bet^hi^IRF4^int^) → ASC (T-bet^lo^IRF4^hi^); IL-21 obligate, BCR transient
 - [[Song2022 - Tfh Outside Germinal Centers Drive T-bet CD11c B Cells]] — T-bet⁺CD11c⁺ cells secrete IgG before R848 but need it for autoantibody — an intermediate pre-ASC state
+- [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]]
+- [[Weiss2009 - Atypical Memory B Cells Expanded in Malaria-Endemic Area]]

@@ -2,7 +2,7 @@
 type: analysis
 tags: [audit, external-citations, lint, quality-control]
 created: 2026-05-08
-updated: 2026-08-29
+updated: 2026-09-14
 ---
 
 # External Citation Audit
@@ -284,12 +284,11 @@ Each entry lists: citation as it appears, DOI (where found), the ingested source
 
 ---
 
-### 29. Portugal et al. 2015, *eLife*
-**Topic:** FCRL5⁺ atypical memory B cells in malaria
-**DOI:** `10.7554/eLife.07218`
-**Cited via:** [[Jenks2018 - DN2 B Cells and EF Pathway in SLE]]
-**Wiki locations:**
-- [[FCRL5]] — line 18
+### 29. ~~Portugal et al. 2015, *eLife*~~ ✅ **INGESTED 2026-09-14**
+**Topic:** FCRL5⁺ atypical memory B cells in malaria — and, as the primary shows, **FCRL4⁻**; BCR-signalling and effector-function loss
+**DOI:** `10.7554/eLife.07218` — ✅ **verified against the PDF and both citation APIs at ingest**
+**Now first-party:** [[Portugal2015 - Malaria Atypical MBCs Lack BCR Signaling and Effector Function]]
+**⚠ What the ingest changed:** the wiki had cited this paper second-hand on 15 pages, and **ten of them stated that its "poor PC differentiation" result used soluble anti-Ig**. It did not — the ASC assays used no anti-Ig at all. All ten corrected 2026-09-14. The paper also **retracts the FcRL4 claim** it is partly cited for elsewhere (Weiss 2009 staining attributed to mAb cross-reactivity with FcRL5/FcRL3).
 
 ---
 
@@ -685,7 +684,10 @@ Cancro2020 is a narrative review with **zero original data** and 185 references,
 **Wiki locations:** [[IL-21]], [[Age-Associated B Cell]], [[Double-Negative B Cell]], [[Atypical B Cell]]
 
 ### 77. Other Cancro2020-mediated primaries carried at lower weight
-Named in the review and supporting single bullets: **Kenderes et al. 2018** *Cell Rep* 24:824–37.e3 (T-bet⁺ IgM memory cells generate multi-lineage effector B cells — the multipotency claim on [[Memory B Cell]]); **Rubtsova et al. 2013** *PNAS* 110:E3216–24 (T-bet⁺ ABCs in gammaherpesvirus 68); **Barnett et al. 2016** *J Immunol* 197:1017–22 (B-cell-intrinsic T-bet required for chronic LCMV control); **Moir et al. 2008** *J Exp Med* 205:1797–805 (HIV tissue-like memory B cells); **Weiss et al. 2009** *J Immunol* 183:2176–82 (malaria atypical memory B cells); **Zinocker et al. 2015** *J Immunol* 194:929–39 (diverse V_H usage in malaria atypical memory); **Swain et al. 2017** *Cell Immunol* 321:52–60 (the homeostatic/limited-antigen alternative origin route); **Knox et al. 2017** *JCI Insight* 2:e92943 (T-bet⁺ B cells induced by human viral infections). None independently verified. Moir 2008 and Weiss 2009 are the canonical human atypical-memory primaries and are the strongest secondary ingest candidates after Di Niro 2015 and Zumaquero 2019.
+
+**⚠★ [2026-09-14] One of these is no longer external, and unpicking it exposed a three-into-one misattribution.** **Weiss et al. 2009** *J Immunol* 183:2176–82, DOI `10.4049/jimmunol.0901297` — ✅ **INGESTED 2026-09-14** as [[Weiss2009 - Atypical Memory B Cells Expanded in Malaria-Endemic Area]] (Semantic Scholar 356 / CrossRef 428 at ingest). Reading it settled a claim the wiki had carried on three pages: that malaria atypical MBC are **IFN-γ-driven** with **diverse V_H usage**, cited to Weiss. **Weiss 2009 measures neither** — it is four-colour flow cytometry, magnetic bead fractionation and IgG ELISpot, with no cytokine assay and no sequencing. Cancro's sentence attributes the founding description to Weiss (ref 94) and then says *"further findings from this group"* revealed IFN-γ dependence (**ref 25 = Obeng-Adjei et al. 2017**, *PLoS Pathog* 13:e1006576, "Malaria-induced interferon-gamma drives the expansion of Tbet^hi^ atypical memory B cells") and diverse V_H usage (**ref 96 = Zinocker et al. 2015**, *J Immunol* 194:929–39). **Both remain un-ingested and neither claim is first-party anywhere in this wiki.** Corrected at [[Atypical B Cell]], [[BCR Sequencing]] and [[Cancro2020 - Age-Associated B Cells]]. **Obeng-Adjei 2017 is added to this audit here** — it was never catalogued, because the wiki had been attributing its finding to Weiss. This is the second review-compression instance found on 2026-09-14; see entry 29 for the first.
+
+Named in the review and supporting single bullets: **Kenderes et al. 2018** *Cell Rep* 24:824–37.e3 (T-bet⁺ IgM memory cells generate multi-lineage effector B cells — the multipotency claim on [[Memory B Cell]]); **Rubtsova et al. 2013** *PNAS* 110:E3216–24 (T-bet⁺ ABCs in gammaherpesvirus 68); **Barnett et al. 2016** *J Immunol* 197:1017–22 (B-cell-intrinsic T-bet required for chronic LCMV control); **Moir et al. 2008** *J Exp Med* 205:1797–805 (HIV tissue-like memory B cells); **Weiss et al. 2009** *J Immunol* 183:2176–82 (malaria atypical memory B cells — ✅ **now ingested**, see above); **Zinocker et al. 2015** *J Immunol* 194:929–39 (diverse V_H usage in malaria atypical memory); **Swain et al. 2017** *Cell Immunol* 321:52–60 (the homeostatic/limited-antigen alternative origin route); **Knox et al. 2017** *JCI Insight* 2:e92943 (T-bet⁺ B cells induced by human viral infections). None independently verified. Moir 2008 and Weiss 2009 are the canonical human atypical-memory primaries; **Weiss 2009 is ingested (2026-09-14)** and **Moir 2008 is now the single highest-value un-ingested paper in this list** — its PDF is in `raw/`, and every HIV "tissue-like memory" claim in the wiki still rests on a review's paraphrase of it.
 **Wiki locations:** [[Memory B Cell]], [[T-bet]], [[CD27]], [[CD21]], [[Atypical B Cell]], [[Age-Associated B Cell]], [[BCR Sequencing]], [[IgM]]
 
 ---
@@ -704,7 +706,7 @@ Named in the review and supporting single bullets: **Kenderes et al. 2018** *Cel
 
 **Note on entries 67–77 (Cancro2020).** Bibliographic details were transcribed from the review's own Literature Cited section rather than retrieved externally, per curator direction that this ingest be PDF-only. That means author/year/journal/volume/pages are as-printed and unverified. **Seven of the eleven entries are author self-citations** (Cancro is senior or co-author on Hao 2011, Naradikian 2016, Russell Knode 2017, Sindhava 2017, and others) — expected for a review by the field's founding investigator, but it concentrates the review's evidentiary base in one laboratory and is worth recording as a structural feature of the source rather than a fault.
 
-**★ Highest-value ingest candidates surfaced by this pass:** Naradikian 2016 (the two-signal primary — most load-bearing external in the ingest), Di Niro 2015 (a second EF-SHM primary, in bacterial rather than autoimmune infection), Zumaquero 2019 (human, CD40-independent, co-authored by two existing wiki source authors), and Moir 2008 / Weiss 2009 (the canonical human atypical-memory primaries).
+**★ Highest-value ingest candidates surfaced by this pass:** Naradikian 2016 (the two-signal primary — most load-bearing external in the ingest), Di Niro 2015 (a second EF-SHM primary, in bacterial rather than autoimmune infection), Zumaquero 2019 (human, CD40-independent, co-authored by two existing wiki source authors), and Moir 2008 / Weiss 2009 (the canonical human atypical-memory primaries — **Weiss ✅ ingested 2026-09-14; Moir still outstanding**). ⚠ **Add Obeng-Adjei 2017** to this list: unpicking the Weiss misattribution (entry 77) showed it is the actual primary behind the wiki's IFN-γ→atypical-cell claim in infection.
 
 **Top-priority verifications (bare external cites — Pattern A):**
 1. William et al. 2002 — `10.1126/science.1073924` — in [[Double-Negative B Cell]]
